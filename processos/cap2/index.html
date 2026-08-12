@@ -1,0 +1,212 @@
+<!DOCTYPE html><html lang='pt-BR'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='icon' type='image/png' sizes='32x32' href='/favicon-32.png'><link rel='icon' type='image/png' sizes='192x192' href='/favicon-192.png'><link rel='apple-touch-icon' href='/apple-touch-icon.png'><link rel='icon' href='/favicon.ico' sizes='any'><link rel='preconnect' href='https://fonts.googleapis.com'><link rel='preconnect' href='https://fonts.gstatic.com' crossorigin><link href='https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500&display=swap' rel='stylesheet'><title>O metamodelo evolucionário estendido — Lógica Psicológica</title><style>
+:root{--olive:#5b5c2a;--olive-dk:#43441f;--sage:#9ca575;--sage-dk:#7c8054;--cream:#f8f3e6;--cream-dp:#efe7d3;--gilt:#a8894f;--gilt-lt:#c3a468;--ink:#2f2e24;--muted:#6c6a55;--card:#fffdf7;}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;} html,body{margin:0;padding:0;}
+body{font-family:'Plus Jakarta Sans',system-ui,-apple-system,Segoe UI,sans-serif;background:var(--cream);color:var(--ink);font-size:17px;line-height:1.62;font-weight:400;-webkit-font-smoothing:antialiased;}
+a{color:var(--olive);} strong{font-weight:700;color:var(--olive-dk);} em{color:var(--sage-dk);}
+:focus-visible{outline:2px solid var(--gilt);outline-offset:2px;}
+.topbar{position:sticky;top:0;z-index:30;background:rgba(248,243,230,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--cream-dp);}
+.topbar .in{max-width:1100px;margin:0 auto;padding:11px 20px;display:flex;align-items:center;gap:12px;}
+.topbar img{height:22px;display:block;}
+.topbar .sp{flex:1;}
+.topbar .tag{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);}
+.shell{display:flex;gap:34px;max-width:1100px;margin:0 auto;padding:0 20px;align-items:flex-start;}
+.side{flex:0 0 252px;width:252px;position:sticky;top:60px;align-self:flex-start;height:calc(100vh - 76px);overflow:hidden;background:linear-gradient(165deg,#5b5c2a,#3b3c1b);color:var(--cream);border-radius:0 0 16px 16px;padding:24px 20px 22px;display:flex;flex-direction:column;}
+.side .nav{flex:1 1 auto;overflow-y:auto;min-height:0;scrollbar-width:thin;scrollbar-color:rgba(248,243,230,.28) transparent;}
+.side .nav::-webkit-scrollbar{width:6px;} .side .nav::-webkit-scrollbar-thumb{background:rgba(248,243,230,.28);border-radius:3px;}
+.side .brand{display:block;margin-bottom:22px;}
+.side .brand img{width:100%;max-width:172px;height:auto;display:block;}
+.side .st{font-weight:800;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gilt-lt);margin:20px 0 8px;padding-top:16px;border-top:1px solid rgba(248,243,230,.18);}
+.side .st.first{margin-top:0;padding-top:0;border-top:none;}
+.side a{display:block;text-decoration:none;color:var(--cream);padding:10px 12px;border-radius:10px;font-size:15px;font-weight:700;line-height:1.3;margin-bottom:4px;border:1px solid transparent;}
+.side a .s{display:block;font-size:12.5px;font-weight:400;color:#d9d3bd;margin-top:3px;line-height:1.35;}
+.side a:hover{background:rgba(248,243,230,.10);}
+.side a.on{background:var(--cream);color:var(--olive-dk);border-color:var(--cream);}
+.side a.on .s{color:var(--muted);}
+.side .home{font-weight:800;font-size:13px;letter-spacing:.02em;padding:6px 12px;}
+.side .navlink{font-weight:700;font-size:13.5px;color:#e7e1cb;padding:6px 12px;}
+.side .sig{flex:0 0 auto;margin-top:16px;padding-top:16px;border-top:1px solid rgba(248,243,230,.18);display:flex;align-items:center;gap:11px;}
+.side .sig img{width:46px;height:46px;flex:none;border-radius:50%;object-fit:cover;object-position:center 18%;border:2px solid rgba(248,243,230,.35);}
+.side .sig .who{font-weight:800;font-size:12.5px;color:var(--cream);line-height:1.3;}
+.side .sig .who span{display:block;font-weight:400;font-size:11.5px;color:#cfc9b2;letter-spacing:.04em;margin-top:2px;}
+.side .sub{display:block;margin-top:14px;text-align:center;background:var(--cream);color:var(--olive-dk);font-weight:800;font-size:13px;letter-spacing:.02em;text-decoration:none;padding:12px 14px;border-radius:24px;transition:background .18s;}
+.side .sub:hover{background:#fff;color:var(--olive-dk);}
+.main{flex:1 1 auto;max-width:730px;width:100%;padding:0 0 50px;}
+.toc-fab{display:none;} .overlay{display:none;}
+@media(max-width:960px){
+ .shell{display:block;padding:0;} .main{max-width:760px;margin:0 auto;padding:0 20px 50px;}
+ .side{position:fixed;top:0;left:0;height:100vh;width:292px;z-index:60;transform:translateX(-100%);transition:transform .25s;box-shadow:2px 0 22px rgba(0,0,0,.28);padding:26px 22px;max-height:none;border-radius:0;}
+ .side.open{transform:none;}
+ .toc-fab{display:block;position:fixed;bottom:18px;right:18px;z-index:50;background:var(--olive-dk);color:var(--cream);font-weight:800;font-size:13px;letter-spacing:.04em;border:none;border-radius:30px;padding:13px 20px;box-shadow:0 4px 14px rgba(0,0,0,.24);cursor:pointer;}
+ .overlay{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:55;opacity:0;pointer-events:none;transition:opacity .25s;}
+ .overlay.open{display:block;opacity:1;pointer-events:auto;}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;}}
+.hero{padding:40px 0 6px;}
+.hero .kick{font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:12px;color:var(--gilt);margin:0 0 14px;}
+.hero h1{font-weight:800;font-size:46px;line-height:1.03;letter-spacing:-.022em;color:var(--ink);margin:0 0 16px;}
+.hero h1 .ac{color:var(--olive);}
+.hero p{color:var(--muted);font-size:17.5px;max-width:620px;margin:0;}
+.divider{width:56px;height:3px;background:var(--gilt-lt);border-radius:2px;margin:26px 0 4px;}
+h2{font-weight:800;color:var(--ink);font-size:25px;letter-spacing:-.015em;line-height:1.15;margin:38px 0 10px;scroll-margin-top:74px;}
+h3{font-weight:800;color:var(--olive);font-size:17px;letter-spacing:-.005em;margin:26px 0 6px;}
+p{margin:0 0 12px;}
+ul.clean{list-style:none;padding:0;margin:10px 0 14px;}
+ul.clean li{position:relative;padding:0 0 10px 26px;}
+ul.clean li::before{content:"\03A8";font-weight:800;color:var(--gilt);position:absolute;left:0;top:0;}
+.pull{font-weight:800;color:var(--olive-dk);font-size:23px;line-height:1.3;letter-spacing:-.015em;border-left:4px solid var(--gilt-lt);padding:6px 0 6px 20px;margin:28px 0;}
+.portas{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:26px 0 8px;}
+@media(max-width:720px){.portas{grid-template-columns:1fr;}}
+.porta{display:block;text-decoration:none;background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:20px 18px;transition:border-color .18s,transform .18s;}
+.porta:hover{border-color:var(--sage);transform:translateY(-2px);}
+.porta .pk{font-weight:800;font-size:16px;letter-spacing:-.01em;color:var(--ink);line-height:1.2;}
+.porta .pd{font-size:14.5px;color:var(--muted);margin-top:8px;line-height:1.45;}
+.porta .pa{display:block;margin-top:14px;font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gilt);}
+.temas{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0;}
+@media(max-width:560px){.temas{grid-template-columns:1fr;}}
+.tema{display:flex;flex-direction:column;text-decoration:none;background:var(--card);border:1px solid var(--cream-dp);border-top:4px solid var(--sage);border-radius:14px;padding:18px 18px 16px;transition:border-top-color .18s,box-shadow .18s,transform .18s;}
+.tema:hover{border-top-color:var(--olive);box-shadow:0 2px 14px rgba(67,68,31,.08);transform:translateY(-2px);}
+.tema .tk{font-weight:800;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gilt);}
+.tema .tt{font-weight:800;font-size:19px;letter-spacing:-.015em;color:var(--ink);margin:6px 0 5px;line-height:1.2;}
+.tema .td{font-size:14px;color:var(--muted);line-height:1.45;flex:1 1 auto;}
+.tema .tm{margin-top:12px;padding-top:10px;border-top:1px solid var(--cream-dp);font-weight:700;font-size:12.5px;color:var(--sage-dk);}
+.book{background:var(--cream-dp);border-radius:14px;padding:18px 20px;margin:18px 0 24px;}
+.book .bk{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:7px;}
+.book .bt{font-weight:800;font-size:19px;letter-spacing:-.015em;color:var(--ink);margin-bottom:4px;line-height:1.2;}
+.book .bsub{color:var(--muted);font-size:14px;margin-bottom:14px;line-height:1.4;}
+.book a{display:inline-block;font-weight:800;font-size:12.5px;letter-spacing:.02em;color:var(--cream);background:var(--olive);padding:11px 22px;border-radius:26px;text-decoration:none;}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0;}
+@media(max-width:560px){.cards{grid-template-columns:1fr;}}
+.card{background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:6px;}
+.card.live{border-color:var(--sage);box-shadow:0 2px 12px rgba(67,68,31,.06);}
+.card:not(.live){opacity:.7;}
+.card .ct{display:flex;align-items:center;justify-content:space-between;min-height:26px;}
+.card .n{font-weight:800;font-size:24px;color:var(--sage-dk);line-height:1;letter-spacing:-.02em;}
+.card .dt{font-weight:800;font-size:12px;letter-spacing:.1em;color:var(--gilt);}
+.card.bydate .dt{font-size:15px;color:var(--sage-dk);}
+.card .tt{font-weight:800;color:var(--ink);font-size:16.5px;line-height:1.25;letter-spacing:-.01em;margin-top:2px;}
+.card .pr{color:var(--muted);font-size:13.5px;}
+.card .acts{display:flex;gap:8px;margin-top:10px;}
+.card .go,.card .pdf{font-weight:800;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;padding:9px 16px;border-radius:20px;text-decoration:none;}
+.card .go{color:var(--cream);background:var(--olive);} .card .pdf{color:var(--olive-dk);border:1.5px solid var(--gilt-lt);}
+.card .soon{font-weight:800;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:10px;}
+.empty{background:var(--card);border:1px dashed var(--cream-dp);border-radius:14px;padding:26px;text-align:center;color:var(--muted);}
+.cta{position:relative;overflow:hidden;border-radius:16px;margin:30px 0 8px;background:linear-gradient(150deg,#5b5c2a,#43441f);color:var(--cream);display:grid;grid-template-columns:minmax(0,290px) minmax(0,1fr);}
+.cta .ph{width:100%;height:100%;min-height:330px;object-fit:cover;object-position:center 22%;display:block;opacity:.95;}
+.cta .in{padding:26px 26px 28px;align-self:center;}
+.cta .in .k{color:#ddd6bf;margin-bottom:6px;font-size:14.5px;}
+.cta .in h3{font-weight:800;font-size:22px;letter-spacing:-.015em;color:var(--cream);margin:0 0 14px;}
+.cta ul{list-style:none;padding:0;margin:0 0 18px;}
+.cta li{position:relative;padding:0 0 10px 24px;font-size:14.5px;color:#f1ecdc;line-height:1.45;}
+.cta li::before{content:"\03A8";color:var(--gilt-lt);position:absolute;left:0;font-weight:800;}
+.cta a.go{display:block;text-align:center;background:var(--cream);color:var(--olive-dk);font-weight:800;font-size:14.5px;text-decoration:none;padding:14px;border-radius:28px;}
+@media(max-width:720px){.cta{grid-template-columns:1fr;} .cta .ph{min-height:230px;height:230px;}}
+.foot{text-align:center;color:var(--muted);font-size:12.5px;margin-top:38px;padding-top:20px;border-top:1px solid var(--cream-dp);}
+.foot .foot-logo{height:30px;width:auto;display:inline-block;margin-bottom:8px;}
+.contato{margin-top:14px;font-size:12.5px;color:var(--muted);line-height:1.7;}
+.contato a{color:var(--gilt);text-decoration:none;} .contato .cnpj{font-size:11.5px;opacity:.85;}
+
+.mhero{padding:36px 0 4px;}
+.mhero .kick{font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:11.5px;color:var(--gilt);margin:0 0 12px;}
+.mhero h1{font-weight:800;font-size:42px;line-height:1.04;letter-spacing:-.022em;color:var(--ink);margin:0 0 10px;}
+.mhero .sub{font-weight:700;font-size:19px;color:var(--sage-dk);line-height:1.3;margin:0 0 12px;letter-spacing:-.01em;}
+.mhero .meta{font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);}
+.mhero .tema{margin:18px 0 0;padding-left:18px;border-left:4px solid var(--cream-dp);color:var(--muted);font-size:16.5px;}
+.usar{background:var(--cream-dp);border-radius:12px;padding:16px 18px;margin:24px 0 14px;font-size:14.5px;color:var(--muted);line-height:1.55;}
+.usar b{display:block;font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--olive-dk);margin-bottom:6px;}
+.pdfbtn{display:inline-block;font-weight:800;font-size:13px;letter-spacing:.02em;color:var(--cream);background:var(--olive);padding:13px 24px;border-radius:26px;text-decoration:none;}
+.ess{background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:20px 22px;margin:26px 0;}
+.ess .et{font-weight:800;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gilt);margin-bottom:12px;}
+.ess ul{list-style:none;padding:0;margin:0;}
+.ess li{position:relative;padding:0 0 12px 26px;font-size:15.8px;line-height:1.5;}
+.ess li:last-child{padding-bottom:0;}
+.ess li::before{content:"\03A8";position:absolute;left:0;top:0;color:var(--gilt-lt);font-weight:800;}
+details.sec{border-bottom:1px solid var(--cream-dp);}
+details.sec[open]{padding-bottom:16px;}
+details.sec summary{list-style:none;cursor:pointer;padding:18px 0;display:flex;align-items:baseline;gap:12px;}
+details.sec summary::-webkit-details-marker{display:none;}
+details.sec summary h2{font-weight:800;font-size:21px;letter-spacing:-.015em;color:var(--ink);margin:0;line-height:1.2;flex:1;}
+details.sec summary .arw{color:var(--gilt);font-weight:800;font-size:13px;transition:transform .2s;}
+details.sec[open] summary .arw{transform:rotate(90deg);}
+details.sec .lead{color:var(--sage-dk);font-weight:500;margin:0 0 14px;font-size:16px;}
+details.sec p{font-size:16.5px;}
+ul.key{list-style:none;padding:0;margin:12px 0;}
+ul.key li{position:relative;padding:0 0 11px 26px;font-size:16px;line-height:1.5;}
+ul.key li::before{content:"\03A8";position:absolute;left:0;top:0;color:var(--gilt);font-weight:800;}
+.dial{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0;}
+@media(max-width:620px){.dial{grid-template-columns:1fr;}}
+.dial .d{background:var(--card);border:1px solid var(--cream-dp);border-top:3px solid var(--sage);border-radius:12px;padding:14px 16px;}
+.dial .dt{font-weight:800;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--olive-dk);margin-bottom:7px;}
+.dial p{margin:0;font-size:14.5px;color:var(--muted);line-height:1.45;}
+.obs{background:var(--cream-dp);border-radius:12px;padding:16px 18px;margin:18px 0;}
+.obs h4{font-weight:800;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--olive-dk);margin:0 0 7px;}
+.obs p{margin:0;font-size:15.5px;}
+.callout{background:var(--card);border-left:4px solid var(--gilt-lt);border-radius:0 12px 12px 0;padding:16px 18px;margin:20px 0;font-size:15.5px;line-height:1.55;}
+.callout .co-t{font-weight:800;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--gilt);margin-bottom:7px;}
+span.ref{font-size:13.5px;color:var(--muted);}
+/* diagrama */
+figure.dg{margin:24px 0;background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:18px 16px 12px;}
+figure.dg svg{width:100%;height:auto;display:block;}
+figure.dg figcaption{margin-top:10px;font-size:13px;color:var(--muted);text-align:center;line-height:1.45;}
+.dg-t{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:10px;text-align:center;}
+/* ferramentas */
+.tools{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:32px 0 0;}
+@media(max-width:720px){.tools{grid-template-columns:1fr;}}
+.tool{background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:20px;}
+.tool .tt{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:14px;}
+.ck{display:flex;gap:11px;align-items:flex-start;padding:9px 0;font-size:15px;line-height:1.45;cursor:pointer;}
+.ck input{margin:4px 0 0;accent-color:var(--olive);width:17px;height:17px;flex:none;cursor:pointer;}
+.ck.done span{text-decoration:line-through;opacity:.5;}
+.qz{margin-bottom:18px;} .qz:last-child{margin-bottom:0;}
+.qz p{font-size:15px;margin:0 0 7px;line-height:1.45;font-weight:500;}
+.qz textarea{width:100%;min-height:66px;border:1px solid var(--cream-dp);border-radius:10px;background:var(--cream);font-family:inherit;font-size:14.5px;color:var(--ink);padding:10px 12px;resize:vertical;line-height:1.5;}
+.qz textarea:focus{outline:2px solid var(--gilt-lt);outline-offset:1px;}
+.savebar{display:flex;align-items:center;gap:12px;margin-top:16px;flex-wrap:wrap;}
+.savebar button{font-weight:800;font-size:11px;letter-spacing:.08em;text-transform:uppercase;border:1.5px solid var(--cream-dp);background:none;color:var(--olive-dk);border-radius:22px;padding:10px 18px;cursor:pointer;font-family:inherit;}
+.savebar button:hover{border-color:var(--gilt-lt);color:var(--gilt);}
+.saved{font-weight:800;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--sage-dk);opacity:0;transition:opacity .3s;}
+.saved.on{opacity:1;}
+.refs h2,.nmet h2{font-weight:800;font-size:21px;letter-spacing:-.015em;color:var(--ink);margin:34px 0 10px;}
+.refs ol{padding-left:20px;font-size:13.8px;color:var(--muted);line-height:1.6;}
+.refs li{margin-bottom:9px;}
+.nmet{background:var(--card);border-left:4px solid var(--gilt-lt);border-radius:0 12px 12px 0;padding:16px 20px;margin:26px 0 0;font-size:14px;color:var(--muted);line-height:1.6;}
+.nmet b{display:block;font-weight:800;font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--olive-dk);margin-bottom:7px;}
+.side .idx a{font-size:13.5px;font-weight:500;padding:7px 12px;line-height:1.3;}
+</style></head><body><div class='topbar'><div class='in'><a href='/'><img alt='Lógica Psicológica' src='/assets/logo.png'></a><div class='sp'></div><div class='tag'>Jornada da Leitura</div></div></div><div class='shell'><aside class='side' id='side'><a class='brand' href='/'><img alt='Lógica Psicológica' src='/assets/logo-creme.png'></a><div class='nav'><div class='st first'>Navegação</div><a class='home' href='/processos/'>&#8592; Encontros</a><a class='navlink' href='/'>Início do portal</a><div class='st'>Neste material</div><div class='idx'><a href='#s0'>Por que um <em>meta</em>modelo — e não mais uma escola</a><a href='#s1'>O núcleo evolucionário: variação, seleção e retenção</a><a href='#s2'>Os domínios do funcionamento — e por que “estendido”</a><a href='#s3'>Processos são ciclos, não caixas: a metáfora do vale</a><a href='#s4'>Um problema por vez — e a função acima da forma</a><a href='#s5'>Do sintoma à prosperidade: etapas, recaída e psicoeducação honesta</a><a href='#s6'>Medir para formular: MBC e Avaliação Ecológica Momentânea</a></div></div><div class='sig'><img alt='Prof. Júlio Gonçalves' src='/assets/julio.jpg'><div class='who'>Prof. Júlio Gonçalves<span>MSc · CRP 12/17614</span></div></div><a class='sub' href='https://psicojulio.com/comunidade-logica-psicologica/' target='_blank' rel='noopener'>Inscreva-se</a></aside><main class='main'><div class='mhero'><div class='kick'>Resumo de aula · Jornada da Leitura</div><h1>O metamodelo evolucionário estendido</h1><div class='sub'>Capítulo 2</div><div class='meta'>10/02/2026 · Apresentação de Prof. Júlio Gonçalves · Hofmann, Hayes &amp; Lorscheid — <em>Aprendendo a Terapia Baseada em Processos</em>, cap. 2</div><p class='tema'>O modelo que organiza os processos de mudança de qualquer abordagem — variação, seleção e retenção lidas nos domínios do funcionamento — e por que medir é parte de formular.</p></div><div class='usar'><b>Como usar</b>Abra as seções que quiser ler, marque o que pretende aplicar e responda o que fizer sentido. Tudo fica salvo neste aparelho — ninguém mais vê.</div><a class='pdfbtn' href='resumo.pdf'>&#8681; Baixar em PDF</a><div class='ess'><div class='et'>O essencial</div><ul><li><strong>O MEE não é uma abordagem: é um mapa.</strong> Ele organiza processos de mudança de qualquer orientação (DBT, ACT, TCC) sob uma lógica comum.</li><li><strong>Três eixos evolucionistas movem o modelo:</strong> <em>variação</em> (novas respostas), <em>seleção</em> (o que se torna mais provável) e <em>retenção</em> (o que se mantém por sua função — mesmo quando desadaptativo).</li><li><strong>O funcionamento é lido em seis domínios psicológicos</strong> — self, cognição, afeto, atenção, motivação, comportamento — atravessados por níveis (biofisiológico, sociocultural) e pelo contexto. Daí <em>estendido</em>.</li><li><strong>Processos são ciclos que se retroalimentam.</strong> A intervenção mira o núcleo que sustenta a rede, não o sintoma de superfície — e trabalha um problema por vez.</li><li><strong>Formular exige medir.</strong> Cuidado Baseado em Mensuração e Avaliação Ecológica Momentânea tornam visível qual processo alimenta qual, guiando onde intervir.</li></ul></div><details class='sec' id='s0' open><summary><h2>Por que um <em>meta</em>modelo — e não mais uma escola</h2><span class='arw'>&#9656;</span></summary><p>A segunda aula retomou o fio da primeira: os <strong>protocolos manualizados</strong> (ancorados em CID e DSM) são úteis para a pesquisa, mas engessam o olhar clínico quando tratam o paciente como se ele tivesse <em>apenas</em> a síndrome estudada. Se um número finito de intervenções se repete em protocolos de transtornos diferentes, faz mais sentido estudar <strong>as intervenções e os processos que elas movem</strong> do que multiplicar diagnósticos.</p><p>A <strong>Terapia Baseada em Processos (TBP)</strong> responde a isso com uma <strong>formulação em ajuste constante</strong>: identifica processos-alvo, intervém, reavalia e reformula. Isso tira do terapeuta a pressão do “jeito certo de fazer” — a intervenção é <em>tentativa e erro monitorada</em>, não aplicação cega de manual (Hofmann &amp; Hayes, 2019). O deslocamento é do nomotético para o idiográfico: o foco é <em>esta</em> pessoa, neste contexto (Hayes et al., 2019).</p><div class='callout note'><div class='co-t'>A pergunta que organiza</div>Em vez de “qual protocolo para este transtorno?”, a TBP pergunta “quais processos modificáveis, no contexto desta pessoa — e como se conectam?”.</div></details><details class='sec' id='s1'><summary><h2>O núcleo evolucionário: variação, seleção e retenção</h2><span class='arw'>&#9656;</span></summary><p>O <strong>Metamodelo Evolucionário Estendido (MEE)</strong> parte de uma ideia simples: o comportamento se desenvolve e se mantém pelos mesmos três eixos que a biologia evolutiva usa para explicar sistemas complexos — <strong>variação, seleção e retenção</strong> (Hayes, Hofmann &amp; Ciarrochi, 2020; Wilson et al., 2014).</p><div class='dial'><div class='d'><div class='dt'>Variação</div><p>Surgimento de novas respostas no repertório. Pouca variação — como no tédio que só encontra uma saída — já é fator de manutenção do sofrimento.</p></div><div class='d'><div class='dt'>Seleção</div><p>Entre as respostas possíveis, uma se torna mais provável por sua função (ex.: a substância que alivia o tédio de imediato).</p></div><div class='d'><div class='dt'>Retenção</div><p>O que “funciona” se mantém e se repete — mesmo desadaptativo —, porque cumpre uma função no contexto.</p></div></div><p>Ler um caso por esses eixos muda a pergunta clínica: não “como extinguir o comportamento?”, e sim “que <em>nova</em> resposta inserir (variação), o que a torna provável (seleção) e o que mantém a antiga no lugar (retenção)?”.</p><figure class='dg'><div class='dg-t'>O núcleo evolucionário</div><svg viewBox='0 0 720 132' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='O núcleo evolucionário'><defs><marker id='ar2' markerWidth='9' markerHeight='9' refX='7' refY='3' orient='auto'><path d='M0,0 L0,6 L7,3 z' fill='#a8894f'/></marker></defs><rect x='10.0' y='24' width='213.3' height='84' rx='12' fill='#fffdf7' stroke='#9ca575' stroke-width='1.4'/><text x='116.7' y='48' text-anchor='middle' font-family='Plus Jakarta Sans,sans-serif' font-size='10.5' font-weight='800' letter-spacing='1.4' fill='#a8894f'>VARIAÇÃO</text><text x='116.7' y='70' text-anchor='middle' font-family='Plus Jakarta Sans,sans-serif' font-size='12.5' fill='#2f2e24'>Novas respostas surgem no</text><text x='116.7' y='87' text-anchor='middle' font-family='Plus Jakarta Sans,sans-serif' font-size='12.5' fill='#2f2e24'>repertório</text><line x1='227.3' y1='66' x2='249.3' y2='66' stroke='#c3a468' stroke-width='1.6' marker-end='url(#ar2)'/><rect x='253.3' y='24' width='213.3' height='84' rx='12' fill='#fffdf7' stroke='#9ca575' stroke-width='1.4'/><text x='360.0' y='48' text-anchor='middle' font-family='Plus Jakarta Sans,sans-serif' font-size='10.5' font-weight='800' letter-spacing='1.4' fill='#a8894f'>SELEÇÃO</text><text x='360.0' y='70' text-anchor='middle' font-family='Plus Jakarta Sans,sans-serif' font-size='12.5' fill='#2f2e24'>Uma se torna provável por sua</text><text x='360.0' y='87' text-anchor='middle' font-family='Plus Jakarta Sans,sans-serif' font-size='12.5' fill='#2f2e24'>função</text><line x1='470.7' y1='66' x2='492.7' y2='66' stroke='#c3a468' stroke-width='1.6' marker-end='url(#ar2)'/><rect x='496.7' y='24' width='213.3' height='84' rx='12' fill='#fffdf7' stroke='#9ca575' stroke-width='1.4'/><text x='603.3' y='48' text-anchor='middle' font-family='Plus Jakarta Sans,sans-serif' font-size='10.5' font-weight='800' letter-spacing='1.4' fill='#a8894f'>RETENÇÃO</text><text x='603.3' y='70' text-anchor='middle' font-family='Plus Jakarta Sans,sans-serif' font-size='12.5' fill='#2f2e24'>O que funciona se mantém, mesmo</text><text x='603.3' y='87' text-anchor='middle' font-family='Plus Jakarta Sans,sans-serif' font-size='12.5' fill='#2f2e24'>desadaptativo</text></svg><figcaption>Os três eixos que o metamodelo usa para ler qualquer processo, em qualquer domínio.</figcaption></figure></details><details class='sec' id='s2'><summary><h2>Os domínios do funcionamento — e por que “estendido”</h2><span class='arw'>&#9656;</span></summary><p>O MEE lê o funcionamento humano em <strong>seis domínios psicológicos</strong>, que servem de mapa para localizar processos:</p><ul class='key'><li><b>Self</b> — como a pessoa se percebe e se narra (ex.: “não sou bom o suficiente”).</li><li><b>Cognição</b> — pensamentos, regras, crenças, modos de interpretar.</li><li><b>Afeto</b> — emoções e sua regulação.</li><li><b>Atenção</b> — para onde a pessoa dirige (ou fixa) o foco.</li><li><b>Motivação</b> — valores, metas, o que aproxima ou afasta.</li><li><b>Comportamento</b> — o que a pessoa faz, no nível observável.</li></ul><p>O modelo é <strong>evolucionário</strong> porque usa variação–seleção–retenção; e <strong>estendido</strong> porque lê esses domínios em <strong>múltiplos níveis</strong> — <em>biofisiológico</em> e <em>sociocultural</em> — e sob o <strong>contexto</strong>, que tem faces externas (ambiente, cultura) e internas (regras, crenças) (Hayes, Hofmann &amp; Ciarrochi, 2020). É essa leitura multinível que faz do MEE um <strong>guarda-chuva</strong>: técnicas de DBT, ACT ou TCC entram conforme o domínio e o processo-alvo — não conforme o rótulo diagnóstico.</p><div class='callout note'><div class='co-t'>O trabalho mais difícil</div>O manejo do <strong>contexto cultural</strong> costuma ser o mais desafiador: está entre os fatores que sustentam o sofrimento e raramente cabe no manual estreito.</div></details><details class='sec' id='s3'><summary><h2>Processos são ciclos, não caixas: a metáfora do vale</h2><span class='arw'>&#9656;</span></summary><p>Os processos não são compartimentos isolados — eles se <strong>retroalimentam</strong>. O tédio leva ao jogo, que eleva a dopamina, que reforça o ciclo: fecha-se uma alça de manutenção. Entender essas <em>relações</em> entre eventos psicológicos (por exemplo, a ligação entre tédio e impulsividade) rende mais ao clínico do que decorar protocolos, porque é o que permite formular hipóteses e prever (Hofmann &amp; Hayes, 2019).</p><p>Júlio usou a imagem de uma <strong>bolinha que rola para um “vale”</strong>: padrões repetidos (ruminar, isolar-se) têm um custo — o humor deprimido — e fazem a pessoa “cair” sempre no mesmo ponto. A terapia tira a bolinha do vale; mas, se os novos comportamentos não virarem <strong>hábito</strong> (retenção) e se o <strong>núcleo</strong> — a crença de incapacidade, a baixa autoestima — não for trabalhado, a bolinha volta a cair, mesmo com o humor já melhor. É um jeito intuitivo de dizer que intervir no sintoma de superfície não basta: é preciso mirar o processo que sustenta a <strong>rede</strong> (Borsboom, 2017).</p></details><details class='sec' id='s4'><summary><h2>Um problema por vez — e a função acima da forma</h2><span class='arw'>&#9656;</span></summary><p>Diante de um paciente com vários problemas interligados, a orientação foi <strong>trabalhar um problema por vez</strong>, começando pelo <strong>processo central</strong> — muitas vezes um só, como a <em>impulsividade</em>, por trás de vários comportamentos. E, antes de tentar reduzir um comportamento, perguntar <strong>qual é a sua função</strong>.</p><div class='obs'><h4>O caso Bill (exemplo da literatura)</h4><p>Num caso de depressão discutido no livro, a terapeuta focou ruminação e isolamento, mas não aprofundou a <em>função</em>. O isolamento de Bill <strong>protegia</strong> contra a crença de “não ser bom o suficiente” — um problema de self/autoestima. Enquanto a intervenção não tocasse essa crença de incapacidade relacional, o ciclo de sofrimento se mantinha.</p></div><p>A lição clínica: protocolos costumam não ajudar a <strong>ver a função</strong> do comportamento; a formulação por processos existe justamente para isso.</p></details><details class='sec' id='s5'><summary><h2>Do sintoma à prosperidade: etapas, recaída e psicoeducação honesta</h2><span class='arw'>&#9656;</span></summary><p>O tratamento se organiza em <strong>etapas interdependentes</strong>: avança-se conforme o paciente mostra prontidão para novas demandas. E não se encerra na melhora superficial — é preciso <strong>preparar para contextos futuros</strong> (trabalho, família, parentalidade), onde ainda falta repertório.</p><p>Daí a centralidade da <strong>prevenção de recaída</strong>: quando alguém acredita que “resolveu” e perde a crítica sobre o risco, cabe uma <strong>psicoeducação fria e real</strong> — os contextos mudam, e recaídas podem acontecer (Marlatt &amp; Gordon, 1985). Na redução de uso de substâncias, a escolha entre redução <em>gradual</em> e <em>abrupta</em> depende do dinamismo dos ciclos, do contexto e de quanto o uso afeta o funcionamento; se o paciente não consegue sair do contexto de uso, a redução gradual tende a ser mais indicada, e o <strong>manejo da contingência</strong> (dificultar o acesso) é parte do trabalho.</p><div class='callout note'><div class='co-t'>Nota de evidência</div>Em aula citou-se que interromper abruptamente comportamentos muito dopaminérgicos pode agravar a compulsão. A lógica <em>gradual-vs-abrupta dependente de contexto</em> é consistente com a tradição de prevenção de recaída e redução de danos; o mecanismo neuroquímico específico fica como ponto a aprofundar com fontes primárias.</div><p>Com a maturidade profissional, a meta se desloca da mera <strong>redução de sintomas</strong> para ajudar o paciente a <strong>prosperar</strong> na vida como um todo — exatamente o horizonte que a TBP assume (Hayes, Hofmann &amp; Ciarrochi, 2020).</p></details><details class='sec' id='s6'><summary><h2>Medir para formular: MBC e Avaliação Ecológica Momentânea</h2><span class='arw'>&#9656;</span></summary><p>Formular por processos exige <strong>medir</strong>. O <strong>Cuidado Baseado em Mensuração (MBC)</strong> é a aplicação sistemática de instrumentos para entender padrões de funcionamento — e vai <em>além</em> de acompanhar sintomas: ajuda a <strong>construir a rede</strong> do paciente, mostrando como os sintomas se integram ao contexto para informar decisões (Scott &amp; Lewis, 2015).</p><p>Vale distinguir dois usos:</p><ul class='clean'><li><b>Monitoramento de progresso</b> — avaliações sessão a sessão, com medidas idiográficas ou nomotéticas.</li><li><b>Mensuração de resultado</b> — instrumentos aplicados em intervalos maiores, para verificar a redução global dos sintomas.</li></ul><p>A ferramenta mais potente citada foi a <strong>Avaliação Ecológica Momentânea (AEM)</strong>: coleta dados <em>em tempo real</em> no cotidiano, gerando muitas medidas repetidas (Shiffman, Stone &amp; Hufford, 2008). Com elas dá para <strong>ver graficamente qual processo alimenta qual</strong> — por exemplo, a preocupação piorando o afeto negativo —, o que indica onde intervir. É especialmente útil em pacientes com <strong>oscilação alta</strong> (como no funcionamento borderline). E ajuda a psicoeducar que o processo é <strong>não linear</strong>: ao introduzir novas aprendizagens, os sintomas podem até piorar temporariamente antes de estabilizar.</p></details><div class='tools'><div class='tool'><div class='tt'>Levar para a prática</div><label class='ck'><input type='checkbox'><span>Numa formulação, nomeei processos nos domínios (self, cognição, afeto, atenção, motivação, comportamento) e como se conectam.</span></label><label class='ck'><input type='checkbox'><span>Perguntei “qual a função deste comportamento?” antes de tentar reduzi-lo.</span></label><label class='ck'><input type='checkbox'><span>Identifiquei o processo central (ex.: impulsividade, crença de incapacidade) que sustenta vários sintomas — e escolhi um problema por vez.</span></label><label class='ck'><input type='checkbox'><span>Pensei o caso em variação / seleção / retenção: que resposta nova inserir, o que reforça a antiga, o que a mantém.</span></label><label class='ck'><input type='checkbox'><span>Combinei alguma forma de mensuração (sessão a sessão ou AEM) para ver qual processo alimenta qual.</span></label></div><div class='tool'><div class='tt'>Para revisar — responda</div><div class='qz'><p>1. O que quer dizer cada eixo — variação, seleção e retenção — e por que a baixa variação de repertório funciona como fator de manutenção do sofrimento?</p><textarea placeholder='Sua resposta…'></textarea></div><div class='qz'><p>2. Por que o modelo se chama “estendido”? Como os seis domínios se relacionam com os níveis (biofisiológico, sociocultural) e com o contexto?</p><textarea placeholder='Sua resposta…'></textarea></div><div class='qz'><p>3. No caso de Bill, por que focar a <em>função</em> do isolamento (proteger da crença de “não ser bom o suficiente”) muda a intervenção em relação a apenas reduzir ruminação e isolamento?</p><textarea placeholder='Sua resposta…'></textarea></div><div class='qz'><p>4. Que diferença há entre monitorar progresso e mensurar resultado — e o que a Avaliação Ecológica Momentânea acrescenta à construção da rede do paciente?</p><textarea placeholder='Sua resposta…'></textarea></div></div></div><div class='savebar'><button id='exp'>Exportar respostas</button><button id='lmp'>Limpar</button><span class='saved' id='saved'>Salvo neste aparelho</span></div><div class='refs'><h2>Referências</h2><ol><li>Hofmann, S. G., &amp; Hayes, S. C. (2019). The future of intervention science: Process-based therapy. <em>Clinical Psychological Science, 7</em>(1), 37–50.</li><li>Hayes, S. C., Hofmann, S. G., &amp; Ciarrochi, J. (2020). A process-based approach to psychological diagnosis and treatment: The conceptual and treatment utility of an extended evolutionary meta-model. <em>Clinical Psychology Review, 82</em>, 101908.</li><li>Hayes, S. C., Hofmann, S. G., Stanton, C. E., Carpenter, J. K., Sanford, B. T., Curtiss, J. E., &amp; Ciarrochi, J. (2019). The role of the individual in the coming era of process-based therapy. <em>Behaviour Research and Therapy, 117</em>, 40–53.</li><li>Wilson, D. S., Hayes, S. C., Biglan, A., &amp; Embry, D. D. (2014). Evolving the future: Toward a science of intentional change. <em>Behavioral and Brain Sciences, 37</em>(4), 395–416.</li><li>Scott, K., &amp; Lewis, C. C. (2015). Using measurement-based care to enhance any treatment. <em>Cognitive and Behavioral Practice, 22</em>(1), 49–59.</li><li>Shiffman, S., Stone, A. A., &amp; Hufford, M. R. (2008). Ecological momentary assessment. <em>Annual Review of Clinical Psychology, 4</em>, 1–32.</li><li>Marlatt, G. A., &amp; Gordon, J. R. (Orgs.). (1985). <em>Relapse prevention: Maintenance strategies in the treatment of addictive behaviors.</em> New York: Guilford Press.</li><li>Borsboom, D. (2017). A network theory of mental disorders. <em>World Psychiatry, 16</em>(1), 5–13.</li><li>Hofmann, S. G., Hayes, S. C., &amp; Lorscheid, D. N. (2021). <em>Learning Process-Based Therapy: A Skills Training Manual for Targeting the Core Processes of Psychological Change in Clinical Practice.</em> Oakland, CA: New Harbinger. [Ed. bras.: <em>Aprendendo a Terapia Baseada em Processos</em>, cap. 2.]</li></ol></div><div class='nmet'><b>Nota de método</b>Desidentifiquei as perguntas trazidas por participantes (referiam-se a pacientes reais); “Bill” é caso didático da literatura de TBP, não paciente da turma. Os seis domínios seguem a nomenclatura do EEMM (afeto, cognição, atenção, self, motivação, comportamento); “níveis” (biofisiológico, sociocultural) e “contexto” compõem a parte estendida/multinível. A afirmação, feita em aula, de que interromper abruptamente comportamentos dopaminérgicos piora a compulsão foi apresentada como racional clínico (prevenção de recaída / redução de danos), com o mecanismo específico sinalizado como ponto a aprofundar. Referências formalizadas e conferidas por busca.</div><div class='cta'><img class='ph' alt='Prof. Júlio Gonçalves' src='/assets/julio.jpg'><div class='in'><div class='k'>Aprenda muito mais na</div><h3>Comunidade Lógica Psicológica</h3><ul><li>Aprofundar o raciocínio clínico com ciência, processos e análise funcional.</li><li>Estruturar uma prática ética, com pensamento crítico e evidências atualizadas.</li><li>Desenvolver o self clínico com supervisão, leituras guiadas e rede.</li></ul><a class='go' href='https://psicojulio.com/comunidade-logica-psicologica/' target='_blank' rel='noopener'>Participar da comunidade &#8594;</a></div></div><div class='foot'><img class='foot-logo' alt='Lógica Psicológica' src='/assets/logo.png'><div class='contato'><a href='mailto:contato@psicojulio.com'>contato@psicojulio.com</a> &middot; <a href='tel:+5547999338021'>(47) 99933-8021</a><br>Rua Concórdia, 703, São Vicente, Itajaí — 88309-645<br><span class='cnpj'>CNPJ 49.649.803/0001-60</span></div></div></main></div><button class='toc-fab' id='fab'>&#9776; Seções</button><div class='overlay' id='ov'></div><script>
+(function(){
+  var K='mat-Proc2-Metamodelo-EEMM-';
+  document.querySelectorAll('.ck input').forEach(function(c,i){
+    var k=K+'ck'+i;
+    try{ if(localStorage.getItem(k)==='1'){c.checked=true;c.closest('.ck').classList.add('done');} }catch(e){}
+    c.addEventListener('change',function(){
+      c.closest('.ck').classList.toggle('done',c.checked);
+      try{ localStorage.setItem(k,c.checked?'1':'0'); }catch(e){} flag();
+    });
+  });
+  document.querySelectorAll('.qz textarea').forEach(function(t,i){
+    var k=K+'q'+i;
+    try{ var v=localStorage.getItem(k); if(v)t.value=v; }catch(e){}
+    t.addEventListener('input',function(){ try{ localStorage.setItem(k,t.value); }catch(e){} flag(); });
+  });
+  var s=document.getElementById('saved'),tm;
+  function flag(){ if(!s)return; s.classList.add('on'); clearTimeout(tm); tm=setTimeout(function(){s.classList.remove('on');},1600); }
+  var b=document.getElementById('exp');
+  if(b) b.addEventListener('click',function(){
+    var out='RESPOSTAS — O metamodelo evolucionário estendido\n\n';
+    document.querySelectorAll('.qz').forEach(function(q){
+      out+= q.querySelector('p').innerText+'\n'+(q.querySelector('textarea').value||'(sem resposta)')+'\n\n';
+    });
+    var a=document.createElement('a');
+    a.href=URL.createObjectURL(new Blob([out],{type:'text/plain'}));
+    a.download='Proc2-Metamodelo-EEMM-respostas.txt'; a.click();
+  });
+  var l=document.getElementById('lmp');
+  if(l) l.addEventListener('click',function(){
+    if(!confirm('Apagar suas anotações deste material?'))return;
+    try{ Object.keys(localStorage).filter(function(k){return k.indexOf(K)===0;}).forEach(function(k){localStorage.removeItem(k);}); }catch(e){}
+    location.reload();
+  });
+  var f=document.getElementById('fab'),o=document.getElementById('ov'),sd=document.getElementById('side');
+  if(f)f.onclick=function(){sd.classList.toggle('open');o.classList.toggle('open');};
+  if(o)o.onclick=function(){sd.classList.remove('open');o.classList.remove('open');};
+})();
+</script></body></html>

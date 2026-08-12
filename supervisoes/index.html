@@ -1,0 +1,117 @@
+<!DOCTYPE html><html lang='pt-BR'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='icon' type='image/png' sizes='32x32' href='/favicon-32.png'><link rel='icon' type='image/png' sizes='192x192' href='/favicon-192.png'><link rel='apple-touch-icon' href='/apple-touch-icon.png'><link rel='icon' href='/favicon.ico' sizes='any'><link rel='preconnect' href='https://fonts.googleapis.com'><link rel='preconnect' href='https://fonts.gstatic.com' crossorigin><link href='https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500&display=swap' rel='stylesheet'><title>Supervisões realizadas — Lógica Psicológica</title><style>
+:root{--olive:#5b5c2a;--olive-dk:#43441f;--sage:#9ca575;--sage-dk:#7c8054;--cream:#f8f3e6;--cream-dp:#efe7d3;--gilt:#a8894f;--gilt-lt:#c3a468;--ink:#2f2e24;--muted:#6c6a55;--card:#fffdf7;}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;} html,body{margin:0;padding:0;}
+body{font-family:'Plus Jakarta Sans',system-ui,-apple-system,Segoe UI,sans-serif;background:var(--cream);color:var(--ink);font-size:17px;line-height:1.62;font-weight:400;-webkit-font-smoothing:antialiased;}
+a{color:var(--olive);} strong{font-weight:700;color:var(--olive-dk);} em{color:var(--sage-dk);}
+:focus-visible{outline:2px solid var(--gilt);outline-offset:2px;}
+.topbar{position:sticky;top:0;z-index:30;background:rgba(248,243,230,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--cream-dp);}
+.topbar .in{max-width:1100px;margin:0 auto;padding:11px 20px;display:flex;align-items:center;gap:12px;}
+.topbar img{height:22px;display:block;}
+.topbar .sp{flex:1;}
+.topbar .tag{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);}
+.shell{display:flex;gap:34px;max-width:1100px;margin:0 auto;padding:0 20px;align-items:flex-start;}
+.side{flex:0 0 252px;width:252px;position:sticky;top:60px;align-self:flex-start;height:calc(100vh - 76px);overflow:hidden;background:linear-gradient(165deg,#5b5c2a,#3b3c1b);color:var(--cream);border-radius:0 0 16px 16px;padding:24px 20px 22px;display:flex;flex-direction:column;}
+.side .nav{flex:1 1 auto;overflow-y:auto;min-height:0;scrollbar-width:thin;scrollbar-color:rgba(248,243,230,.28) transparent;}
+.side .nav::-webkit-scrollbar{width:6px;} .side .nav::-webkit-scrollbar-thumb{background:rgba(248,243,230,.28);border-radius:3px;}
+.side .brand{display:block;margin-bottom:22px;}
+.side .brand img{width:100%;max-width:172px;height:auto;display:block;}
+.side .st{font-weight:800;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gilt-lt);margin:20px 0 8px;padding-top:16px;border-top:1px solid rgba(248,243,230,.18);}
+.side .st.first{margin-top:0;padding-top:0;border-top:none;}
+.side a{display:block;text-decoration:none;color:var(--cream);padding:10px 12px;border-radius:10px;font-size:15px;font-weight:700;line-height:1.3;margin-bottom:4px;border:1px solid transparent;}
+.side a .s{display:block;font-size:12.5px;font-weight:400;color:#d9d3bd;margin-top:3px;line-height:1.35;}
+.side a:hover{background:rgba(248,243,230,.10);}
+.side a.on{background:var(--cream);color:var(--olive-dk);border-color:var(--cream);}
+.side a.on .s{color:var(--muted);}
+.side .home{font-weight:800;font-size:13px;letter-spacing:.02em;padding:6px 12px;}
+.side .navlink{font-weight:700;font-size:13.5px;color:#e7e1cb;padding:6px 12px;}
+.side .sig{flex:0 0 auto;margin-top:16px;padding-top:16px;border-top:1px solid rgba(248,243,230,.18);display:flex;align-items:center;gap:11px;}
+.side .sig img{width:46px;height:46px;flex:none;border-radius:50%;object-fit:cover;object-position:center 18%;border:2px solid rgba(248,243,230,.35);}
+.side .sig .who{font-weight:800;font-size:12.5px;color:var(--cream);line-height:1.3;}
+.side .sig .who span{display:block;font-weight:400;font-size:11.5px;color:#cfc9b2;letter-spacing:.04em;margin-top:2px;}
+.side .sub{display:block;margin-top:14px;text-align:center;background:var(--cream);color:var(--olive-dk);font-weight:800;font-size:13px;letter-spacing:.02em;text-decoration:none;padding:12px 14px;border-radius:24px;transition:background .18s;}
+.side .sub:hover{background:#fff;color:var(--olive-dk);}
+.main{flex:1 1 auto;max-width:730px;width:100%;padding:0 0 50px;}
+.toc-fab{display:none;} .overlay{display:none;}
+@media(max-width:960px){
+ .shell{display:block;padding:0;} .main{max-width:760px;margin:0 auto;padding:0 20px 50px;}
+ .side{position:fixed;top:0;left:0;height:100vh;width:292px;z-index:60;transform:translateX(-100%);transition:transform .25s;box-shadow:2px 0 22px rgba(0,0,0,.28);padding:26px 22px;max-height:none;border-radius:0;}
+ .side.open{transform:none;}
+ .toc-fab{display:block;position:fixed;bottom:18px;right:18px;z-index:50;background:var(--olive-dk);color:var(--cream);font-weight:800;font-size:13px;letter-spacing:.04em;border:none;border-radius:30px;padding:13px 20px;box-shadow:0 4px 14px rgba(0,0,0,.24);cursor:pointer;}
+ .overlay{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:55;opacity:0;pointer-events:none;transition:opacity .25s;}
+ .overlay.open{display:block;opacity:1;pointer-events:auto;}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;}}
+.hero{padding:40px 0 6px;}
+.hero .kick{font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:12px;color:var(--gilt);margin:0 0 14px;}
+.hero h1{font-weight:800;font-size:46px;line-height:1.03;letter-spacing:-.022em;color:var(--ink);margin:0 0 16px;}
+.hero h1 .ac{color:var(--olive);}
+.hero p{color:var(--muted);font-size:17.5px;max-width:620px;margin:0;}
+.divider{width:56px;height:3px;background:var(--gilt-lt);border-radius:2px;margin:26px 0 4px;}
+h2{font-weight:800;color:var(--ink);font-size:25px;letter-spacing:-.015em;line-height:1.15;margin:38px 0 10px;scroll-margin-top:74px;}
+h3{font-weight:800;color:var(--olive);font-size:17px;letter-spacing:-.005em;margin:26px 0 6px;}
+p{margin:0 0 12px;}
+ul.clean{list-style:none;padding:0;margin:10px 0 14px;}
+ul.clean li{position:relative;padding:0 0 10px 26px;}
+ul.clean li::before{content:"\03A8";font-weight:800;color:var(--gilt);position:absolute;left:0;top:0;}
+.pull{font-weight:800;color:var(--olive-dk);font-size:23px;line-height:1.3;letter-spacing:-.015em;border-left:4px solid var(--gilt-lt);padding:6px 0 6px 20px;margin:28px 0;}
+.portas{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:26px 0 8px;}
+@media(max-width:720px){.portas{grid-template-columns:1fr;}}
+.porta{display:block;text-decoration:none;background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:20px 18px;transition:border-color .18s,transform .18s;}
+.porta:hover{border-color:var(--sage);transform:translateY(-2px);}
+.porta .pk{font-weight:800;font-size:16px;letter-spacing:-.01em;color:var(--ink);line-height:1.2;}
+.porta .pd{font-size:14.5px;color:var(--muted);margin-top:8px;line-height:1.45;}
+.porta .pa{display:block;margin-top:14px;font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gilt);}
+.temas{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0;}
+@media(max-width:560px){.temas{grid-template-columns:1fr;}}
+.tema{display:flex;flex-direction:column;text-decoration:none;background:var(--card);border:1px solid var(--cream-dp);border-top:4px solid var(--sage);border-radius:14px;padding:18px 18px 16px;transition:border-top-color .18s,box-shadow .18s,transform .18s;}
+.tema:hover{border-top-color:var(--olive);box-shadow:0 2px 14px rgba(67,68,31,.08);transform:translateY(-2px);}
+.tema .tk{font-weight:800;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gilt);}
+.tema .tt{font-weight:800;font-size:19px;letter-spacing:-.015em;color:var(--ink);margin:6px 0 5px;line-height:1.2;}
+.tema .td{font-size:14px;color:var(--muted);line-height:1.45;flex:1 1 auto;}
+.tema .tm{margin-top:12px;padding-top:10px;border-top:1px solid var(--cream-dp);font-weight:700;font-size:12.5px;color:var(--sage-dk);}
+.book{background:var(--cream-dp);border-radius:14px;padding:18px 20px;margin:18px 0 24px;}
+.book .bk{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:7px;}
+.book .bt{font-weight:800;font-size:19px;letter-spacing:-.015em;color:var(--ink);margin-bottom:4px;line-height:1.2;}
+.book .bsub{color:var(--muted);font-size:14px;margin-bottom:14px;line-height:1.4;}
+.book a{display:inline-block;font-weight:800;font-size:12.5px;letter-spacing:.02em;color:var(--cream);background:var(--olive);padding:11px 22px;border-radius:26px;text-decoration:none;}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0;}
+@media(max-width:560px){.cards{grid-template-columns:1fr;}}
+.card{background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:6px;}
+.card.live{border-color:var(--sage);box-shadow:0 2px 12px rgba(67,68,31,.06);}
+.card:not(.live){opacity:.7;}
+.card .ct{display:flex;align-items:center;justify-content:space-between;min-height:26px;}
+.card .n{font-weight:800;font-size:24px;color:var(--sage-dk);line-height:1;letter-spacing:-.02em;}
+.card .dt{font-weight:800;font-size:12px;letter-spacing:.1em;color:var(--gilt);}
+.card.bydate .dt{font-size:15px;color:var(--sage-dk);}
+.card .tt{font-weight:800;color:var(--ink);font-size:16.5px;line-height:1.25;letter-spacing:-.01em;margin-top:2px;}
+.card .pr{color:var(--muted);font-size:13.5px;}
+.card .acts{display:flex;gap:8px;margin-top:10px;}
+.card .go,.card .pdf{font-weight:800;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;padding:9px 16px;border-radius:20px;text-decoration:none;}
+.card .go{color:var(--cream);background:var(--olive);} .card .pdf{color:var(--olive-dk);border:1.5px solid var(--gilt-lt);}
+.card .soon{font-weight:800;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:10px;}
+.empty{background:var(--card);border:1px dashed var(--cream-dp);border-radius:14px;padding:26px;text-align:center;color:var(--muted);}
+.cta{position:relative;overflow:hidden;border-radius:16px;margin:30px 0 8px;background:linear-gradient(150deg,#5b5c2a,#43441f);color:var(--cream);display:grid;grid-template-columns:minmax(0,290px) minmax(0,1fr);}
+.cta .ph{width:100%;height:100%;min-height:330px;object-fit:cover;object-position:center 22%;display:block;opacity:.95;}
+.cta .in{padding:26px 26px 28px;align-self:center;}
+.cta .in .k{color:#ddd6bf;margin-bottom:6px;font-size:14.5px;}
+.cta .in h3{font-weight:800;font-size:22px;letter-spacing:-.015em;color:var(--cream);margin:0 0 14px;}
+.cta ul{list-style:none;padding:0;margin:0 0 18px;}
+.cta li{position:relative;padding:0 0 10px 24px;font-size:14.5px;color:#f1ecdc;line-height:1.45;}
+.cta li::before{content:"\03A8";color:var(--gilt-lt);position:absolute;left:0;font-weight:800;}
+.cta a.go{display:block;text-align:center;background:var(--cream);color:var(--olive-dk);font-weight:800;font-size:14.5px;text-decoration:none;padding:14px;border-radius:28px;}
+@media(max-width:720px){.cta{grid-template-columns:1fr;} .cta .ph{min-height:230px;height:230px;}}
+.foot{text-align:center;color:var(--muted);font-size:12.5px;margin-top:38px;padding-top:20px;border-top:1px solid var(--cream-dp);}
+.foot .foot-logo{height:30px;width:auto;display:inline-block;margin-bottom:8px;}
+.contato{margin-top:14px;font-size:12.5px;color:var(--muted);line-height:1.7;}
+.contato a{color:var(--gilt);text-decoration:none;} .contato .cnpj{font-size:11.5px;opacity:.85;}
+</style></head><body><div class='topbar'><div class='in'><a href='../'><img alt='Lógica Psicológica' src='/assets/logo.png'></a><div class='sp'></div><div class='tag'>Supervisão Clínica</div></div></div><div class='shell'><aside class='side' id='side'><a class='brand' href='../'><img alt='Lógica Psicológica' src='/assets/logo-creme.png'></a><div class='nav'><div class='st first'>Navegação</div><a class='home' href='../'>&#8592; Início</a><a class='navlink' href='../#como-funciona'>Como funciona</a><div class='st'>Jornada da Leitura</div><a class='' href='../jornada/'>Temas lidos<span class='s'>Os livros já percorridos, encontro a encontro.</span></a><div class='st'>Aulas Livres</div><a class='' href='../aulas/'>Aulas realizadas<span class='s'>Um tema, um convidado que domina o terreno.</span></a><div class='st'>Supervisões Clínicas</div><a class='on' href='../supervisoes/'>Supervisões realizadas<span class='s'>Casos reais, formulados por processos.</span></a></div><div class='sig'><img alt='Prof. Júlio Gonçalves' src='/assets/julio.jpg'><div class='who'>Prof. Júlio Gonçalves<span>MSc · CRP 12/17614</span></div></div><a class='sub' href='https://psicojulio.com/comunidade-logica-psicologica/' target='_blank' rel='noopener'>Inscreva-se</a></aside><main class='main'><div class='hero'><div class='kick'>Supervisão Clínica</div><h1>Supervisões realizadas</h1><p>Casos reais, formulados por processos.</p><div class='divider'></div></div><h2>Materiais</h2><div class='cards'><div class='card bydate'><div class='ct'><span class='dt'>03/08</span></div><div class='tt'>Subjugação e violência</div><div class='pr'>&nbsp;</div><div class='soon'>em breve</div></div><div class='card bydate'><div class='ct'><span class='dt'>&mdash;</span></div><div class='tt'>Baixa adesão à terapia × Relação terapêutica dialética</div><div class='pr'>&nbsp;</div><div class='soon'>em breve</div></div><div class='card bydate'><div class='ct'><span class='dt'>&mdash;</span></div><div class='tt'>Subjugação para reparar passado</div><div class='pr'>&nbsp;</div><div class='soon'>em breve</div></div><div class='card bydate'><div class='ct'><span class='dt'>&mdash;</span></div><div class='tt'>Desconfiança e intolerância à incerteza</div><div class='pr'>&nbsp;</div><div class='soon'>em breve</div></div><div class='card bydate'><div class='ct'><span class='dt'>&mdash;</span></div><div class='tt'>Autocrítica acadêmica</div><div class='pr'>&nbsp;</div><div class='soon'>em breve</div></div><div class='card bydate'><div class='ct'><span class='dt'>&mdash;</span></div><div class='tt'>Ansiedade e desesperança moderada</div><div class='pr'>&nbsp;</div><div class='soon'>em breve</div></div><div class='card bydate'><div class='ct'><span class='dt'>&mdash;</span></div><div class='tt'>Externalização da responsabilidade e relação terapêutica</div><div class='pr'>&nbsp;</div><div class='soon'>em breve</div></div><div class='card bydate'><div class='ct'><span class='dt'>&mdash;</span></div><div class='tt'>Fusão e rigidez cognitiva</div><div class='pr'>&nbsp;</div><div class='soon'>em breve</div></div><div class='card bydate'><div class='ct'><span class='dt'>&mdash;</span></div><div class='tt'>Defeito e culpa</div><div class='pr'>&nbsp;</div><div class='soon'>em breve</div></div><div class='card bydate'><div class='ct'><span class='dt'>&mdash;</span></div><div class='tt'>Perfeccionismo e vergonha</div><div class='pr'>&nbsp;</div><div class='soon'>em breve</div></div><div class='card live bydate'><div class='ct'><span class='dt'>03/02</span></div><div class='tt'>Self desvalorizado e reativo</div><div class='pr'>&nbsp;</div><div class='acts'><a class='go' href='caso2/'>Abrir</a><a class='pdf' href='caso2/resumo.pdf'>PDF</a></div></div><div class='card live bydate'><div class='ct'><span class='dt'>20/01</span></div><div class='tt'>Jogos e apostas compulsivas</div><div class='pr'>&nbsp;</div><div class='acts'><a class='go' href='caso1/'>Abrir</a></div></div></div>
+<h2 id='como-funciona'>Como funciona a supervisão</h2>
+<p>Na Lógica Psicológica, a supervisão não corrige o que fazer com o paciente: ela desenvolve o raciocínio clínico do terapeuta. O trabalho corre em duas frentes que se sustentam.</p>
+<ul class='clean'>
+<li><strong>Formular por processos.</strong> Montar a rede que mantém o sofrimento — nó central, alça de manutenção, alavanca — e escolher poucos alvos de mudança, em vez de aplicar protocolo por diagnóstico.</li>
+<li><strong>Desenvolver competências clínicas</strong> de forma deliberada, com metas claras, feedback e uma relação de supervisão segura o bastante para expor dúvida e insegurança.</li>
+</ul>
+<h3>O que vira material</h3>
+<p>Cada caso publicado aqui nasce da transcrição de um encontro real e passa por desidentificação rigorosa: nomes, idade exata, cidade, profissão específica, valores e datas são removidos ou alterados, preservando apenas o padrão clínico necessário ao aprendizado. Os supervisionandos não são identificados. As referências são conferidas uma a uma, e onde a discussão afirmou mais do que a evidência sustenta, o ajuste aparece como nota de método no corpo do texto.</p>
+<div class='pull'>Supervisão clínica que desenvolve raciocínio, não receita de conduta.</div>
+<div class='cta'><img class='ph' alt='Prof. Júlio Gonçalves' src='/assets/julio.jpg'><div class='in'><div class='k'>Aprenda muito mais na</div><h3>Comunidade Lógica Psicológica</h3><ul><li>Aprofundar o raciocínio clínico com ciência, processos e análise funcional.</li><li>Estruturar uma prática ética, com pensamento crítico e evidências atualizadas.</li><li>Desenvolver o self clínico com supervisão, leituras guiadas e rede.</li></ul><a class='go' href='https://psicojulio.com/comunidade-logica-psicologica/' target='_blank' rel='noopener'>Participar da comunidade &#8594;</a></div></div><div class='foot'><img class='foot-logo' alt='Lógica Psicológica' src='/assets/logo.png'><div class='contato'><a href='mailto:contato@psicojulio.com'>contato@psicojulio.com</a> &middot; <a href='tel:+5547999338021'>(47) 99933-8021</a><br>Rua Concórdia, 703, São Vicente, Itajaí — 88309-645<br><span class='cnpj'>CNPJ 49.649.803/0001-60</span></div></div></main></div><button class='toc-fab' id='fab'>&#9776; Seções</button><div class='overlay' id='ov'></div><script>(function(){var f=document.getElementById('fab'),o=document.getElementById('ov'),s=document.getElementById('side');function c(){if(s)s.classList.remove('open');if(o)o.classList.remove('open');}if(f)f.onclick=function(){s.classList.toggle('open');o.classList.toggle('open');};if(o)o.onclick=c;})();</script></body></html>
