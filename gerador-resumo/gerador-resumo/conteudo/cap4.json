@@ -1,0 +1,132 @@
+{
+  "numero": 4,
+  "titulo": "Mensuração baseada em processos",
+  "titulo_curto": "MENSURAÇÃO BASEADA EM PROCESSOS",
+  "subtitulo": "Como saber se o tratamento está funcionando — e, mais que isso, o que está mudando e por quê. Do viés otimista do julgamento clínico ao modelo idionômico, com instrumentos construídos a partir da rede daquele paciente.",
+  "meta_capa": "10/03/2026 · APRESENTAÇÃO DE PROFA. NATÁLIA MATTIOLI (HUMANTRACK) · MEDIAÇÃO DE PROF. JÚLIO GONÇALVES · HOFMANN, HAYES & LORSCHEID — <i>APRENDENDO A TERAPIA BASEADA EM PROCESSOS</i>, CAP. 4",
+  "essencial": [
+    "<b>O julgamento clínico isolado é otimista demais.</b> Terapeutas tendem a se avaliar acima da média e a superestimar a melhora dos seus pacientes — enquanto 5% a 10% deles pioram durante o tratamento.",
+    "<b>Medir não é uma etapa inicial que se encerra.</b> A mensuração percorre a psicoterapia inteira e é construída junto com o paciente, sem pressa.",
+    "<b>Escala padronizada responde “melhorou?”; mensuração de processos responde “o que mudou e por quê”.</b> São perguntas diferentes, e a segunda é a que sustenta a TBP.",
+    "<b>O modelo idionômico inverte a ordem:</b> modela-se primeiro o indivíduo, e só depois se busca o padrão de grupo — porque comparar alguém com a média pressupõe uma estabilidade que os dados humanos não têm (erro ergódico).",
+    "<b>Na prática:</b> poucos itens, breves, frequentes, com ancoragem temporal e escala de 0 a 100 — escritos com as palavras do próprio paciente."
+  ],
+  "blocos": [
+    {"t": "h2", "v": "Por que medir: o julgamento clínico não basta"},
+    {"t": "p", "v": "Os três encontros anteriores trataram do surgimento da TBP e de sua oposição à lógica diagnóstica, dos domínios e processos básicos do funcionamento humano, e da leitura em rede. Este dá o passo seguinte: como obter mais precisão nas relações causais que a rede propõe."},
+    {"t": "p", "v": "Antes disso, uma ênfase que abriu o encontro: a TBP não é um modelo simples. Ela exige repertório real em cada domínio — neuropsicologia para os processos atencionais, psicologia cognitiva para cognição e self, e assim por diante. Sem esse domínio conceitual não se aprende a derivar relações causais individualizadas; e sem relações causais individualizadas, não há o que medir com sentido."},
+    {"t": "p", "v": "A pergunta que abre o tema da mensuração é desconfortável e simples: <b>como você sabe que o tratamento está funcionando? Quais critérios você usa para dizer que o paciente melhorou?</b> Qual foi o efeito das suas intervenções?"},
+    {"t": "p", "v": "A resposta honesta costuma envolver expertise, escuta e construção colaborativa — tudo legítimo. O problema é que o julgamento clínico, isolado, tem vieses documentados. Num estudo sobre autoavaliação de profissionais de saúde mental, a maioria dos clínicos avaliou as próprias habilidades como acima da média e estimou taxas de melhora dos seus pacientes na casa de 80% ou mais (Walfish, McAlister, O'Donnell &amp; Lambert, 2012). Os desfechos reais não acompanham essa estimativa. E há um dado que quase nunca aparece na percepção do terapeuta: <b>cerca de 5% a 10% dos pacientes pioram durante o tratamento</b> (Hansen, Lambert &amp; Forman, 2002; Lambert, 2013)."},
+    {"t": "p", "v": "Não é uma acusação de incompetência — é uma limitação estrutural de quem observa de dentro. É exatamente essa limitação que a mensuração sistemática cobre."},
+    {"t": "callout", "rotulo": "TRIANGULAÇÃO", "v": "Combinar dados quantitativos e qualitativos não é preciosismo metodológico: é a forma de compensar o que cada fonte, sozinha, não enxerga. <span class='nota'>(Ver a nota de método, ao final, sobre o que a literatura de predição clínica versus estatística de fato sustenta aqui.)</span>"},
+
+    {"t": "h2", "v": "De onde vem a mensuração: RCI, ROM e MBC"},
+    {"t": "p", "v": "A mensuração em psicologia não nasceu com a TBP. Vale conhecer os degraus, porque cada um resolveu um problema e deixou outro em aberto."},
+    {"t": "lista", "v": [
+      "<b>Psicometria clássica.</b> Os primeiros métodos estatísticos e as escalas padronizadas deram à área linguagem comum e comparabilidade — ao custo de sempre comparar o indivíduo com uma média.",
+      "<b>RCI — Índice de Mudança Confiável</b> (Jacobson &amp; Truax, 1991). Um divisor de águas: permitiu calcular se a mudança de um paciente específico é confiável e clinicamente significativa, a partir de dados intraindividuais. Pela primeira vez a pergunta “esse paciente mudou?” teve resposta que não dependia só da média do grupo.",
+      "<b>ROM — Routine Outcome Monitoring.</b> Com o OQ-45 (Lambert et al., 1996) consolidou-se a prática de monitorar rotineiramente o desfecho e devolver esse dado ao terapeuta como feedback. Metanálises indicam que sistemas de feedback melhoram desfechos, com efeito especialmente relevante nos casos que estão indo mal (Lambert, Whipple &amp; Kleinstäuber, 2018).",
+      "<b>MBC — Measurement-Based Care.</b> O termo ganhou força sobretudo na psiquiatria, deslocando o foco do instrumento para o processo de decisão clínica informado por medidas (Scott &amp; Lewis, 2015; Fortney et al., 2017)."
+    ]},
+    {"t": "p", "v": "<b>E então a crítica idionômica.</b> Hayes e Hofmann levantam a questão que reorganiza o campo: estamos medindo apenas se houve melhora, ou também o que está mudando e por quê? Daí o termo <i>idionômico</i> — combinação de <i>ídio</i> (os processos de mudança do indivíduo) com <i>nomo</i> (o padrão geral), numa ordem definida: o indivíduo vem antes da média (Hayes &amp; Hofmann, 2021; Hayes, Ciarrochi, Hofmann, Chin &amp; Sahdra, 2022)."},
+
+    {"t": "h2", "v": "Nomotético, ideográfico, idionômico — e o erro ergódico"},
+    {"t": "p", "v": "Três lógicas que convém não confundir."},
+    {"t": "cards", "v": [
+      {"rotulo": "NOMOTÉTICO", "texto": "Busca padrões universais: compara o paciente com a média de uma amostra. Sustenta pontos de corte e tabelas normativas."},
+      {"rotulo": "IDEOGRÁFICO", "texto": "Foca a mudança intraindividual: compara o paciente consigo mesmo ao longo do tempo. É o que permite análise longitudinal."},
+      {"rotulo": "IDIONÔMICO", "texto": "Não é meio-termo: é ordem de operações. Modela-se o indivíduo primeiro; o achado de grupo entra depois, se melhorar o ajuste ao caso."}
+    ]},
+    {"t": "p", "v": "A justificativa para essa inversão vem de um conceito emprestado da física. Um sistema é <b>ergódico</b> quando a média do grupo num dado momento equivale à média do indivíduo ao longo do tempo — o que exige que as variáveis sejam homogêneas entre pessoas e estáveis no tempo. Processos psicológicos raramente atendem a essas condições (Molenaar, 2004). Extrair a compreensão de um indivíduo a partir da média de um grupo é, portanto, um erro formal — não apenas uma imprecisão."},
+    {"t": "p", "v": "É esse problema que empurra o campo para a lógica de rede, já trabalhada no encontro anterior: entender o comportamento como interconexão dinâmica entre processos, e não como escore num traço."},
+    {"t": "callout", "rotulo": "O QUE ISSO MUDA NA CLÍNICA", "v": "Se o seu paciente não é a média, o escore normativo deixa de ser o veredito e vira uma das fontes de informação. <b>A pergunta central passa a ser: como estes processos se relacionam e variam dentro desta pessoa, ao longo do tempo?</b>"},
+
+    {"t": "h2", "v": "O MBC como raciocínio clínico, não como instrumento"},
+    {"t": "p", "v": "O MBC é melhor entendido como raciocínio clínico do que como conjunto de escalas: a avaliação sistemática do progresso do paciente por meio de medidas válidas, para embasar decisões clínicas."},
+    {"t": "p", "v": "Seus movimentos — avaliar, formular, revisar — não são etapas sequenciais que se cumprem e se abandonam. São dinâmicos e recorrem durante todo o tratamento."},
+    {"t": "fluxo", "rotulo": "O CICLO DO MBC", "legenda": "Os três movimentos recorrem durante todo o tratamento — não são fases que se encerram.", "v": [
+      {"rotulo": "AVALIAR", "texto": "Medidas válidas, breves e frequentes"},
+      {"rotulo": "FORMULAR", "texto": "Processos-alvo derivados da rede daquele caso"},
+      {"rotulo": "REVISAR", "texto": "Devolver ao paciente e decidir junto"}
+    ]},
+    {"t": "p", "v": "O ciclo só se fecha quando os dados são compartilhados com o paciente, o feedback dele é coletado e a decisão clínica é efetivamente tomada com base nisso. <b>Medir e guardar o resultado para si não é MBC.</b>"},
+    {"t": "p", "v": "Características que definem a mensuração nesse modelo:"},
+    {"t": "lista", "v": [
+      "<b>Transteórica</b> — não pertence a uma abordagem.",
+      "<b>Frequente</b>, com instrumentos breves.",
+      "<b>Sensível</b> a mudanças clinicamente significativas.",
+      "<b>Relevante para os dois lados</b> — para o paciente e para o terapeuta.",
+      "<b>Ampla no foco</b>: não só sintoma, mas funcionamento global (papéis sociais) e processos do tratamento (aliança, mecanismos de mudança)."
+    ]},
+
+    {"t": "h2", "v": "Os tipos de medida — e como ler uma escala de modo ideográfico"},
+    {"t": "p", "v": "Três famílias, com usos distintos:"},
+    {"t": "lista", "v": [
+      "<b>Escalas padronizadas de autorrelato.</b> Viés nomotético por construção: exigem validação psicométrica, são analisadas pela soma ou média dos escores e interpretadas por pontos de corte (como na DASS-21) ou tabelas normativas.",
+      "<b>Medidas individualizadas baseadas em metas</b>, como a Goal Attainment Scaling (Kiresuk &amp; Sherman, 1968), que constrói a régua a partir dos objetivos daquele paciente.",
+      "<b>Registros de automonitoramento</b>: diários e Avaliação Ecológica Momentânea (AEM)."
+    ]},
+    {"t": "p", "v": "A escala padronizada não precisa ser descartada — pode ser lida de outro jeito. Duas manobras aproveitam o instrumento sem herdar todas as suas limitações:"},
+    {"t": "p", "v": "<b>Primeira:</b> nem toda mudança de escore é clinicamente significativa, e o RCI é uma das formas de checar isso. <b>Segunda:</b> olhar item a item, e não só o escore total. O item traz informação qualitativa e permite avaliar o impacto de um processo específico na vida daquele paciente — por exemplo, os itens de fusão cognitiva, que dizem muito mais sobre o processo do que o total da escala."},
+
+    {"t": "h2", "v": "A PBAT e o mapa das medidas de processo"},
+    {"t": "p", "v": "A PBAT (Process-Based Assessment Tool; Ciarrochi, Sahdra, Hofmann &amp; Hayes, 2022) foi construída sobre o metamodelo evolucionário estendido, com um ou dois itens por domínio do EEMM, para auxiliar na mensuração de processos e no preenchimento da formulação em rede."},
+    {"t": "p", "v": "Dois pontos sobre o que ela é e o que ela não é. Primeiro: não é uma escala, e sim um conjunto de itens pensado para uso idionômico e coleta de alta densidade temporal — por isso não se valida pela psicometria clássica, mas por modelos de acompanhamento de casos únicos. Aplicações com análise de rede em nível individual já foram publicadas (Sanford et al., 2022)."},
+    {"t": "callout", "rotulo": "USO NO BRASIL", "v": "A PBAT não tem validação estabelecida no país. No encontro apresentou-se um recorte de amostra dos Estados Unidos, e o uso local foi recomendado em perspectiva qualitativa — como roteiro de entrevista, por exemplo —, não como instrumento com interpretação normativa."},
+    {"t": "p", "v": "Há ainda um mapa útil de instrumentos. Hayes, Hofmann e Ciarrochi (2020) varreram a literatura mundial sobre achados de mediação em ensaios de intervenções psicológicas — cerca de 55 mil estudos examinados — e identificaram 72 medidas que mediaram desfechos de forma replicada, cruzando-as com as dimensões do EEMM para identificar o que cada uma de fato mede."},
+    {"t": "p", "v": "O valor prático: quando você precisa medir um processo específico, existe um conjunto de instrumentos já testados como mediadores — em vez de escolher escala por familiaridade."},
+
+    {"t": "h2", "v": "Da rede ao formulário: AEM na prática"},
+    {"t": "p", "v": "O encontro trabalhou com Ana (caso fictício), engenheira de software com sintomas de ansiedade, isolamento social e crenças rígidas de perfeccionismo no trabalho. A formulação em rede reuniu dimensões psicológicas, ocupacionais e fisiológicas para identificar processos mantenedores — entre eles evitação de tarefas e fusão cognitiva."},
+    {"t": "p", "v": "Definidos os processos-alvo (evitação, fusão cognitiva e um self conceituado rígido), o passo seguinte foi construir a medida. Duas rotas: usar a PBAT, ou adaptar itens de medidas existentes — o exemplo foi o AAQ-II, que mede aceitação e flexibilidade psicológica — para montar um formulário personalizado de AEM."},
+    {"t": "h3", "v": "O que é AEM"},
+    {"t": "p", "v": "A Avaliação Ecológica Momentânea (AEM; em inglês, EMA) é a coleta de dados em tempo real, no ambiente natural do paciente — conceito que remonta aos anos 1990 (Stone &amp; Shiffman, 1994; Shiffman, Stone &amp; Hufford, 2008). Na prática clínica, formulários breves disparados no celular; em indicadores fisiológicos, dados de smartwatch. Uma revisão sistemática indica que aplicativos baseados em AEM captam informação com mais sensibilidade que métodos tradicionais de acompanhamento. <span class='nota'>[fonte a confirmar — ver nota de método]</span>"},
+    {"t": "h3", "v": "Como escrever os itens"},
+    {"t": "lista", "v": [
+      "<b>Breves</b> — poucos itens, respondidos em segundos.",
+      "<b>Com ancoragem temporal explícita</b> — “neste momento”, “na última hora”.",
+      "<b>Capturando contexto</b> — onde o paciente está, com quem.",
+      "<b>Intensidade de 0 a 100</b>, que aumenta a sensibilidade da percepção do paciente em comparação com escalas curtas."
+    ]},
+    {"t": "h3", "v": "Um exemplo real"},
+    {"t": "p", "v": "Foi demonstrado um instrumento de AEM construído para um paciente usando a terminologia dele próprio — inclusive uma escala nomeada por ele como “vibe de conquista”. O instrumento serviu para testar uma hipótese da formulação: que um desempenho acima da média levava à exaustão e, no dia seguinte, a comportamentos compulsivos. Os dados confirmaram a relação e devolveram ao paciente um feedback claro e imediatamente utilizável."},
+    {"t": "p", "v": "É o melhor resumo prático do tema: <b>a medida não veio de um catálogo — veio da rede daquele caso, e falava a língua de quem respondia.</b>"},
+    {"t": "callout", "rotulo": "DESAFIOS", "v": "Sobrecarga e adesão são o principal obstáculo: formulário demais mata a coleta. A psicoeducação é parte do método, não preliminar dele — sem entender para que serve medir, o paciente responde por obediência. E vale a ênfase com que o encontro se fechou: <b>a mensuração não precede a psicoterapia, percorre a psicoterapia, e se constrói junto com o paciente, sem pressa.</b>"}
+  ],
+  "referencias": [
+    "Ciarrochi, J., Sahdra, B., Hofmann, S. G., &amp; Hayes, S. C. (2022). Developing an item pool to assess processes of change in psychological interventions: The Process-Based Assessment Tool (PBAT). <i>Journal of Contextual Behavioral Science, 23</i>, 200–213.",
+    "Fortney, J. C., Unützer, J., Wrenn, G., Pyne, J. M., Smith, G. R., Schoenbaum, M., &amp; Harbin, H. T. (2017). A tipping point for measurement-based care. <i>Psychiatric Services, 68</i>(2), 179–188.",
+    "Grove, W. M., Zald, D. H., Lebow, B. S., Snitz, B. E., &amp; Nelson, C. (2000). Clinical versus mechanical prediction: A meta-analysis. <i>Psychological Assessment, 12</i>(1), 19–30.",
+    "Hansen, N. B., Lambert, M. J., &amp; Forman, E. M. (2002). The psychotherapy dose-response effect and its implications for treatment delivery services. <i>Clinical Psychology: Science and Practice, 9</i>(3), 329–343.",
+    "Hayes, S. C., Ciarrochi, J., Hofmann, S. G., Chin, F., &amp; Sahdra, B. (2022). Evolving an idionomic approach to processes of change: Towards a unified personalized science of human improvement. <i>Behaviour Research and Therapy, 156</i>, 104155.",
+    "Hayes, S. C., Hofmann, S. G., &amp; Ciarrochi, J. (2020). A process-based approach to psychological diagnosis and treatment: The conceptual and treatment utility of an extended evolutionary meta-model. <i>Clinical Psychology Review, 82</i>, 101908.",
+    "Jacobson, N. S., &amp; Truax, P. (1991). Clinical significance: A statistical approach to defining meaningful change in psychotherapy research. <i>Journal of Consulting and Clinical Psychology, 59</i>(1), 12–19.",
+    "Kiresuk, T. J., &amp; Sherman, R. E. (1968). Goal attainment scaling: A general method for evaluating comprehensive community mental health programs. <i>Community Mental Health Journal, 4</i>(6), 443–453.",
+    "Lambert, M. J. (2013). Outcome in psychotherapy: The past and important advances. <i>Psychotherapy, 50</i>(1), 42–51.",
+    "Lambert, M. J., Whipple, J. L., &amp; Kleinstäuber, M. (2018). Collecting and delivering progress feedback: A meta-analysis of routine outcome monitoring. <i>Psychotherapy, 55</i>(4), 520–537.",
+    "Meehl, P. E. (1954). <i>Clinical versus statistical prediction: A theoretical analysis and a review of the evidence.</i> Minneapolis: University of Minnesota Press.",
+    "Molenaar, P. C. M. (2004). A manifesto on psychology as idiographic science. <i>Measurement: Interdisciplinary Research and Perspectives, 2</i>(4), 201–218.",
+    "Sanford, B. T., Ciarrochi, J., Hofmann, S. G., Chin, F., Gates, K. M., &amp; Hayes, S. C. (2022). Toward empirical process-based case conceptualization: An idionomic network examination of the Process-Based Assessment Tool. <i>Journal of Contextual Behavioral Science, 25</i>, 10–25.",
+    "Scott, K., &amp; Lewis, C. C. (2015). Using measurement-based care to enhance any treatment. <i>Cognitive and Behavioral Practice, 22</i>(1), 49–59.",
+    "Shiffman, S., Stone, A. A., &amp; Hufford, M. R. (2008). Ecological momentary assessment. <i>Annual Review of Clinical Psychology, 4</i>, 1–32.",
+    "Stone, A. A., &amp; Shiffman, S. (1994). Ecological momentary assessment (EMA) in behavioral medicine. <i>Annals of Behavioral Medicine, 16</i>(3), 199–202.",
+    "Walfish, S., McAlister, B., O'Donnell, P., &amp; Lambert, M. J. (2012). An investigation of self-assessment bias in mental health providers. <i>Psychological Reports, 110</i>(2), 639–644."
+  ],
+  "nota_metodo": "O caso “Ana” é fictício, apresentado como tal em aula; o exemplo de instrumento individualizado foi desidentificado. Corrigi artefatos de transcrição: PEBAT → PBAT; Reis e Hoffman → Hayes e Hofmann; OK 45 → OQ-45; DAS 21 → DASS-21; AQ2 → AAQ-II. O número de medidas de processo replicadas foi ajustado para 72, conforme publicado. Sobre a triangulação: em aula afirmou-se que combinar método estatístico e clínico rende mais do que qualquer um isolado; a literatura clássica sustenta algo diferente — métodos mecânicos tendem a igualar ou superar o julgamento clínico isolado (Meehl, 1954; Grove et al., 2000). O argumento a favor da triangulação segue de pé, mas apoiado na fragilidade do julgamento isolado. A revisão sistemática sobre aplicativos de AEM foi citada em aula sem identificação da fonte e está marcada como [fonte a confirmar] em vez de receber citação atribuída. Referências de TBP/EEMM, PBAT e da revisão de mediadores conferidas por busca; as demais são obras de referência consolidadas da área.",
+  "checklist": [
+    "Escolhi 2 ou 3 processos-alvo a partir da formulação em rede — não a partir da minha escala favorita.",
+    "Cada processo-alvo tem medida correspondente, breve, com ancoragem temporal e escala de 0 a 100.",
+    "Os itens usam as palavras que o paciente de fato usa.",
+    "Combinei com o paciente para que serve medir, e ele sabe o que faremos com os dados.",
+    "Tenho um momento previsto para devolver os dados a ele e decidir junto o próximo passo.",
+    "Checei quanto tempo por dia estou pedindo — e se não estou pedindo demais."
+  ],
+  "perguntas": [
+    "Que evidência sustenta a afirmação de que o julgamento clínico isolado é insuficiente para monitorar desfecho?",
+    "Qual a diferença entre ideográfico e idionômico — e por que a ordem das operações importa?",
+    "O que é o erro ergódico, e por que ele inviabiliza a leitura puramente normativa de um caso?",
+    "Cite duas formas de extrair leitura ideográfica de uma escala padronizada.",
+    "Por que a PBAT não é validada pela psicometria clássica, e que uso dela é defensável no Brasil hoje?",
+    "Pense num paciente seu com evitação como processo central: escreva três itens de AEM para ele, com ancoragem temporal e escala de 0 a 100."
+  ]
+}
