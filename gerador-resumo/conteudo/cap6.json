@@ -1,0 +1,94 @@
+{
+  "numero": 6,
+  "titulo": "Processos atencionais",
+  "titulo_curto": "PROCESSOS ATENCIONAIS",
+  "slug": "Processos-Atencionais",
+  "subtitulo": "O domínio mais esquecido da clínica — e o mais basal. Da atenção como recurso limitado à atenção como processo treinável, com o looping da dor crônica como fio condutor.",
+  "meta_capa": "07/04/2026 · APRESENTAÇÃO DE PROFA. GIOVANA COGHETTO SGANZERLA · MEDIAÇÃO DE PROF. JÚLIO GONÇALVES · HOFMANN, HAYES &amp; LORSCHEID — <i>APRENDENDO A TERAPIA BASEADA EM PROCESSOS</i>, CAP. 6",
+  "meta_pagina": "07/04/2026 · Apresentação de Profa. Giovana Coghetto Sganzerla · Mediação de Prof. Júlio Gonçalves · Hofmann, Hayes &amp; Lorscheid — <em>Aprendendo a Terapia Baseada em Processos</em>, cap. 6",
+  "essencial": [
+    "<b>Processos básicos são o ponto cego da clínica.</b> Atenção e memória quase não aparecem na formação clínica — e, sem eles, a leitura do caso fica limitada por baixo.",
+    "<b>A atenção organiza a experiência.</b> Aquilo a que se atende ganha peso: influencia o que será memorizado, o que emociona e o que se faz. Ela é o primeiro plano da consciência.",
+    "<b>Três componentes:</b> direcionamento, sustentação e flexibilidade. É a modulação entre eles que produz estilos atencionais mais adaptativos ou mais custosos.",
+    "<b>A virada da TBP:</b> a atenção deixa de ser um viés que o paciente “tem” e passa a ser um processo treinável e funcional — o que muda a pergunta de “o que ele tem” para “o que está acontecendo”.",
+    "<b>O alvo é a flexibilidade, não a supressão do sintoma.</b> No caso da dor crônica, ampliar o repertório atencional reduz o sofrimento mais do que tentar apagar a dor."
+  ],
+  "blocos": [
+    {"t": "h2", "v": "Por que começar pelos processos básicos"},
+    {"t": "p", "v": "Depois das aulas sobre a crítica à ciência psicológica, o metamodelo, a leitura em rede, a mensuração e a formulação, o encontro abriu a série clínica — e abriu por onde quase ninguém começa. <b>Processos básicos como atenção e memória são pouco trabalhados na perspectiva clínica</b>, e a falta deles limita a clínica por baixo: sem entender como a atenção opera, boa parte do que se lê como cognição ou afeto fica sem explicação."},
+    {"t": "p", "v": "Há também um argumento de arquitetura. Na matriz da TBP, atenção, afeto e biofisiológico aparecem como os componentes mais fundamentais do comportamento humano — os processos sobre os quais os demais se assentam. A atenção é, nesse sentido, um <b>processo basal de mudança</b>: mexer nela move o resto da rede."},
+    {"t": "callout", "rotulo": "A PERGUNTA QUE ABRE O TEMA", "v": "“Eu não consigo parar de pensar nisso.” É uma das frases mais comuns em consultório — e quase sempre é lida como conteúdo de pensamento. <b>Ela é, antes disso, um relato atencional.</b>"},
+
+    {"t": "h2", "v": "Da atenção como recurso à atenção como processo"},
+    {"t": "p", "v": "Uma retrospectiva curta ajuda a situar a virada. A psicologia cognitiva clássica tratava a atenção como <b>recurso limitado</b>, algo que se esgota e se divide. A neurociência cognitiva a reorganizou como <b>redes atencionais</b> distribuídas no cérebro. A TCC tradicional a incorporou principalmente pela via dos <b>vieses</b> — atenção seletiva à ameaça, por exemplo."},
+    {"t": "p", "v": "Na TBP ela vira outra coisa: <b>um processo treinável e funcional</b>. A diferença não é semântica. Viés é algo que o paciente tem e que se descreve; processo é algo que está acontecendo, que se avalia no contexto e que se modifica. A avaliação fica mais dinâmica, mais contextual, e — o que importa clinicamente — passa a apontar para algo modificável."},
+
+    {"t": "h2", "v": "Os três componentes"},
+    {"t": "p", "v": "Os processos atencionais regulam <b>para onde</b>, <b>como</b> e <b>por quanto tempo</b> a atenção se mantém — e, por essa via, influenciam emoção, cognição e comportamento."},
+    {"t": "cards", "v": [
+      {"rotulo": "DIRECIONAMENTO", "texto": "A seleção: para onde a atenção vai, entre tudo o que compete pelo primeiro plano."},
+      {"rotulo": "SUSTENTAÇÃO", "texto": "A retenção: por quanto tempo ela permanece ali antes de escapar."},
+      {"rotulo": "FLEXIBILIDADE", "texto": "A capacidade de mudar o foco. É o componente mais frequentemente implicado nas dificuldades clínicas."}
+    ]},
+
+    {"t": "h2", "v": "Estilos atencionais e o custo clínico"},
+    {"t": "p", "v": "A modulação desses três componentes produz estilos — e é no estilo, não no componente isolado, que a clínica costuma esbarrar:"},
+    {"t": "lista", "v": [
+      "<b>Atenção rígida</b> — presa a um aspecto, com dificuldade de variação. É o padrão de transtornos somáticos e de boa parte dos quadros ansiosos.",
+      "<b>Foco disperso</b> — dificuldade de sustentar a atenção onde ela precisa ficar.",
+      "<b>Atenção deslocada no tempo</b> — excessivamente voltada ao passado (ruminação) ou ao futuro (preocupação), e por isso ausente do que está acontecendo."
+    ]},
+    {"t": "p", "v": "O impacto é sempre na mesma direção: <b>amplificação do sofrimento e queda da flexibilidade</b>. E o contraponto adaptativo tem nome — <i>mindfulness</i>, entendido aqui de forma precisa e sem misticismo: <b>atenção flexível somada a agir com consciência</b>. É esse o estado que as intervenções atencionais buscam."},
+
+    {"t": "h2", "v": "Maia: o looping atencional na dor crônica"},
+    {"t": "p", "v": "O caso que serviu de fio condutor foi o de Maia, adulta com dor crônica após um acidente de trabalho. Ela restringiu atividades e evita o trabalho por medo da dor. Sente raiva e um senso agudo de injustiça — havia avisado as chefias sobre o perigo do local antes do acidente — e oscila entre remoer o passado e temer o futuro."},
+    {"t": "p", "v": "A dor é um estímulo saliente: puxa a atenção sozinha. Mas o que mantém o quadro não é a dor — é o sistema que se organizou em volta dela."},
+    {"t": "fluxo", "rotulo": "O LOOPING ATENCIONAL", "ciclo": true, "legenda": "Cada etapa realimenta a anterior: a atenção amplifica a dor, que puxa mais atenção.", "v": [
+      {"rotulo": "FOCO NA DOR", "texto": "Monitoramento constante do corpo"},
+      {"rotulo": "RUMINAÇÃO E MEDO", "texto": "O acidente atrás, a piora à frente"},
+      {"rotulo": "RESTRIÇÃO", "texto": "Menos atividade, mais espaço para a dor"}
+    ]},
+    {"t": "p", "v": "O medo — de piorar, de nova lesão, de incapacidade — aumenta o monitoramento corporal. O monitoramento amplifica a percepção da dor. A dor amplificada alimenta ruminação, irritação e preocupação, que por sua vez restringem atividades e devolvem o foco ao corpo. <b>O sistema se sustenta sozinho.</b>"},
+    {"t": "p", "v": "Vale notar o que <i>não</i> aparece nessa leitura: um diagnóstico organizando a conduta. Na TBP, a intervenção mira os processos que mantêm o sistema funcionando — não a redução do sintoma como fim em si."},
+
+    {"t": "h2", "v": "O alvo: flexibilizar, não suprimir"},
+    {"t": "p", "v": "A prioridade da intervenção com Maia é <b>promover atenção mais flexível e ampliada</b>, impedindo que o foco se torne exclusivo na dor. Não se trata de distrair nem de negar a dor, e sim de devolver à paciente a possibilidade de alternar focos — o que reabre atividades, melhora a autorregulação e, por consequência, reduz o sofrimento."},
+    {"t": "p", "v": "É importante ver a ordem aqui: <b>a redução da dor percebida é efeito, não meta.</b> Quando a meta é apagar a dor, a própria tentativa vira mais um item do looping."},
+    {"t": "callout", "rotulo": "A SEGUNDA FLECHA", "v": "A aceitação da dor reduz sua intensidade percebida — não porque elimine o estímulo, mas porque diminui os processos reativos e cognitivos que o acompanham, ruminação e catastrofização à frente. <b>Sentir a primeira flecha sem disparar a segunda</b> evita a amplificação."},
+    {"t": "p", "v": "Um contraponto interessante apareceu na mediação: em contextos de exercício físico, <b>focar na dor</b> tratando-a como processo fisiológico e sem julgamento parece aumentar a tolerância e prolongar o movimento. Ou seja — não é o direcionamento em si que faz mal, é a função que ele cumpre. Atenção à dor com julgamento e medo amplifica; atenção à dor sem julgamento tolera. <span class='nota'>[fonte a confirmar — ver nota de método]</span>"},
+
+    {"t": "h2", "v": "Quando a atenção não é o alvo"},
+    {"t": "p", "v": "A aula fechou com um cuidado que evita o excesso de generalização. As intervenções apresentadas foram construídas para o contexto da dor crônica; outros quadros e outros estímulos podem pedir caminhos diferentes — inclusive <b>estratégias compensatórias</b> em vez de treino atencional, como costuma ser o caso em contextos neurodivergentes."},
+    {"t": "p", "v": "A regra permanece a mesma dos encontros anteriores: <b>a intervenção é modulada pela formulação do caso, não por protocolo</b>. Dito isso, há uma indicação bastante consistente — pacientes com alta ruminação e preocupação quase sempre pedem trabalho atencional."},
+    {"t": "p", "v": "E a nota final, na chave de aprendizagem: a terapia se parece com aprender a andar de bicicleta. Exige integração contínua de vários processos — atenção, cognição, comportamento — até que o funcionamento se torne fluido. <b>O objetivo não é dominar cada peça isoladamente, e sim que elas passem a operar juntas.</b>"}
+  ],
+  "referencias": [
+    "Bishop, S. R., Lau, M., Shapiro, S., Carlson, L., Anderson, N. D., Carmody, J., … Devins, G. (2004). Mindfulness: A proposed operational definition. <i>Clinical Psychology: Science and Practice, 11</i>(3), 230–241.",
+    "Hayes, S. C., Hofmann, S. G., &amp; Ciarrochi, J. (2020). A process-based approach to psychological diagnosis and treatment: The conceptual and treatment utility of an extended evolutionary meta-model. <i>Clinical Psychology Review, 82</i>, 101908.",
+    "Hofmann, S. G., Hayes, S. C., &amp; Lorscheid, D. N. (2021). <i>Learning Process-Based Therapy: A Skills Training Manual for Targeting the Core Processes of Psychological Change in Clinical Practice.</i> Oakland, CA: New Harbinger. [Ed. bras.: <i>Aprendendo a Terapia Baseada em Processos</i>, cap. 6.]",
+    "McCracken, L. M., &amp; Vowles, K. E. (2014). Acceptance and commitment therapy and mindfulness for chronic pain: Model, process, and progress. <i>American Psychologist, 69</i>(2), 178–187.",
+    "Nolen-Hoeksema, S., Wisco, B. E., &amp; Lyubomirsky, S. (2008). Rethinking rumination. <i>Perspectives on Psychological Science, 3</i>(5), 400–424.",
+    "Petersen, S. E., &amp; Posner, M. I. (2012). The attention system of the human brain: 20 years after. <i>Annual Review of Neuroscience, 35</i>, 73–89.",
+    "Posner, M. I., &amp; Petersen, S. E. (1990). The attention system of the human brain. <i>Annual Review of Neuroscience, 13</i>, 25–42.",
+    "Sullivan, M. J. L., Bishop, S. R., &amp; Pivik, J. (1995). The Pain Catastrophizing Scale: Development and validation. <i>Psychological Assessment, 7</i>(4), 524–532.",
+    "Vlaeyen, J. W. S., &amp; Linton, S. J. (2000). Fear-avoidance and its consequences in chronic musculoskeletal pain: A state of the art. <i>Pain, 85</i>(3), 317–332.",
+    "Wells, A. (1990). Panic disorder in association with relaxation induced anxiety: An attentional training approach to treatment. <i>Behavior Therapy, 21</i>(3), 273–280."
+  ],
+  "nota_metodo": "O caso “Maia” é ilustrativo e foi apresentado como tal em aula. A aula não citou fontes nominalmente: as referências listadas foram acrescentadas por mim como apoio de estudo, cobrindo os pontos tratados — as redes atencionais (Posner &amp; Petersen, 1990; Petersen &amp; Posner, 2012), a ruminação como processo transdiagnóstico (Nolen-Hoeksema et al., 2008), o modelo medo-evitação e a catastrofização na dor crônica (Vlaeyen &amp; Linton, 2000; Sullivan et al., 1995), aceitação e dor (McCracken &amp; Vowles, 2014), a definição operacional de <i>mindfulness</i> (Bishop et al., 2004), o treino atencional como técnica (Wells, 1990) e o metamodelo (Hayes et al., 2020). Duas afirmações feitas em aula ficaram marcadas como <i>[fonte a confirmar]</i> por terem sido citadas sem identificação de estudo: a de que focar na dor durante exercício físico, sem julgamento, aumenta a tolerância, e a de que a prática longa de atenção plena reduz sensação e percepção de dor. A metáfora das duas flechas é de origem budista e circula amplamente na literatura de terceira onda; foi mantida como metáfora, sem atribuição a um estudo. Sobre vocabulário: a aula usou “atenção, afeto e biofisiológico” como os componentes mais basais da matriz, leitura compatível com a série.",
+  "checklist": [
+    "Perguntei, na avaliação, para onde a atenção do paciente vai — e não só o que ele pensa.",
+    "Distingui direcionamento, sustentação e flexibilidade em vez de tratar tudo como “desatenção”.",
+    "Identifiquei o estilo atencional predominante: rígido, disperso ou deslocado no tempo.",
+    "Mapeei o que realimenta o foco — medo, evitação, ruminação, injustiça — e não só o estímulo.",
+    "Defini como alvo ampliar a flexibilidade atencional, não suprimir o sintoma.",
+    "Checei se, neste caso, o trabalho atencional é mesmo o alvo — ou se cabe estratégia compensatória."
+  ],
+  "perguntas": [
+    "Por que a atenção é descrita como processo basal — e o que se perde na formulação quando ela é ignorada?",
+    "Qual a diferença prática entre tratar a atenção como viés e tratá-la como processo treinável?",
+    "Descreva os três componentes atencionais e dê um exemplo clínico de falha em cada um.",
+    "No caso de Maia, o que exatamente mantém o looping — e por que reduzir a dor não é a meta?",
+    "O que significa “sentir a primeira flecha sem disparar a segunda”, em termos de processo?",
+    "Pegue um paciente seu com alta ruminação: qual componente atencional você trabalharia primeiro, e por quê?"
+  ]
+}
