@@ -1,0 +1,223 @@
+<!DOCTYPE html><html lang='pt-BR'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='icon' type='image/png' sizes='32x32' href='/favicon-32.png'><link rel='icon' type='image/png' sizes='192x192' href='/favicon-192.png'><link rel='apple-touch-icon' href='/apple-touch-icon.png'><link rel='icon' href='/favicon.ico' sizes='any'><link rel='preconnect' href='https://fonts.googleapis.com'><link rel='preconnect' href='https://fonts.gstatic.com' crossorigin><link href='https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500&display=swap' rel='stylesheet'><title>Processos comportamentais — Lógica Psicológica</title><style>
+:root{--olive:#5b5c2a;--olive-dk:#43441f;--sage:#9ca575;--sage-dk:#7c8054;--cream:#f8f3e6;--cream-dp:#efe7d3;--gilt:#a8894f;--gilt-lt:#c3a468;--ink:#2f2e24;--muted:#6c6a55;--card:#fffdf7;}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;} html,body{margin:0;padding:0;}
+body{font-family:'Plus Jakarta Sans',system-ui,-apple-system,Segoe UI,sans-serif;background:var(--cream);color:var(--ink);font-size:17px;line-height:1.62;font-weight:400;-webkit-font-smoothing:antialiased;}
+a{color:var(--olive);} strong{font-weight:700;color:var(--olive-dk);} em{color:var(--sage-dk);}
+:focus-visible{outline:2px solid var(--gilt);outline-offset:2px;}
+.topbar{position:sticky;top:0;z-index:30;background:rgba(248,243,230,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--cream-dp);}
+.topbar .in{max-width:1100px;margin:0 auto;padding:11px 20px;display:flex;align-items:center;gap:12px;}
+.topbar img{height:22px;display:block;}
+.topbar .sp{flex:1;}
+.topbar .tag{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);}
+.backlink{font-weight:800;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--olive-dk);text-decoration:none;border:1px solid var(--cream-dp);background:var(--card);border-radius:20px;padding:7px 14px;white-space:nowrap;line-height:1;transition:border-color .18s,color .18s;}
+.backlink:hover{border-color:var(--gilt-lt);color:var(--gilt);}
+@media(max-width:430px){.topbar .tag{display:none;}}
+.shell{display:flex;gap:34px;max-width:1100px;margin:0 auto;padding:0 20px;align-items:flex-start;}
+.side{flex:0 0 252px;width:252px;position:sticky;top:56px;align-self:flex-start;height:calc(100vh - 66px);overflow:hidden;background:linear-gradient(165deg,#5b5c2a,#3b3c1b);color:var(--cream);border-radius:0 0 16px 16px;padding:18px 18px 16px;display:flex;flex-direction:column;}
+.side .nav{flex:1 1 auto;overflow-y:auto;min-height:0;scrollbar-width:thin;scrollbar-color:rgba(248,243,230,.28) transparent;}
+.side .nav::-webkit-scrollbar{width:6px;} .side .nav::-webkit-scrollbar-thumb{background:rgba(248,243,230,.28);border-radius:3px;}
+.side .brand{display:block;margin-bottom:14px;}
+.side .brand img{width:100%;max-width:148px;height:auto;display:block;}
+.side .st{font-weight:800;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt-lt);margin:13px 0 6px;padding-top:11px;border-top:1px solid rgba(248,243,230,.18);}
+.side .st.first{margin-top:0;padding-top:0;border-top:none;}
+.side a{display:block;text-decoration:none;color:var(--cream);padding:8px 11px;border-radius:9px;font-size:14.5px;font-weight:700;line-height:1.25;margin-bottom:3px;border:1px solid transparent;}
+.side a .s{display:block;font-size:11.8px;font-weight:400;color:#d9d3bd;margin-top:2px;line-height:1.3;}
+.side a:hover{background:rgba(248,243,230,.10);}
+.side a.on{background:var(--cream);color:var(--olive-dk);border-color:var(--cream);}
+.side a.on .s{color:var(--muted);}
+.side .home{font-weight:800;font-size:12.5px;letter-spacing:.02em;padding:5px 11px;}
+.side .navlink{font-weight:700;font-size:13px;color:#e7e1cb;padding:5px 11px;}
+.side .sig{flex:0 0 auto;margin-top:12px;padding-top:12px;border-top:1px solid rgba(248,243,230,.18);display:flex;align-items:center;gap:11px;}
+.side .sig img{width:40px;height:40px;flex:none;border-radius:50%;object-fit:cover;object-position:center 18%;border:2px solid rgba(248,243,230,.35);}
+.side .sig .who{font-weight:800;font-size:12.5px;color:var(--cream);line-height:1.3;}
+.side .sig .who span{display:block;font-weight:400;font-size:11.5px;color:#cfc9b2;letter-spacing:.04em;margin-top:2px;}
+.side .sub{display:block;margin-top:10px;text-align:center;background:var(--cream);color:var(--olive-dk);font-weight:800;font-size:13px;letter-spacing:.02em;text-decoration:none;padding:10px 14px;border-radius:22px;transition:background .18s;}
+.side .sub:hover{background:#fff;color:var(--olive-dk);}
+.main{flex:1 1 auto;max-width:730px;width:100%;padding:0 0 50px;}
+.toc-fab{display:none;} .overlay{display:none;}
+@media(max-width:960px){
+ .shell{display:block;padding:0;} .main{max-width:760px;margin:0 auto;padding:0 20px 50px;}
+ .side{position:fixed;top:0;left:0;height:100vh;width:292px;z-index:60;transform:translateX(-100%);transition:transform .25s;box-shadow:2px 0 22px rgba(0,0,0,.28);padding:26px 22px;max-height:none;border-radius:0;}
+ .side.open{transform:none;}
+ .toc-fab{display:block;position:fixed;bottom:18px;right:18px;z-index:50;background:var(--olive-dk);color:var(--cream);font-weight:800;font-size:13px;letter-spacing:.04em;border:none;border-radius:30px;padding:13px 20px;box-shadow:0 4px 14px rgba(0,0,0,.24);cursor:pointer;}
+ .overlay{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:55;opacity:0;pointer-events:none;transition:opacity .25s;}
+ .overlay.open{display:block;opacity:1;pointer-events:auto;}
+}
+@media(min-width:961px) and (max-height:820px){
+ .side a .s{display:none;}
+ .side .brand{margin-bottom:10px;} .side .brand img{max-width:132px;}
+ .side .st{margin:10px 0 5px;padding-top:9px;}
+}
+@media(min-width:961px) and (max-height:680px){
+ .side .sig img{display:none;} .side .brand{display:none;}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;}}
+.hero{padding:40px 0 6px;}
+.hero .kick{font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:12px;color:var(--gilt);margin:0 0 14px;}
+.hero h1{font-weight:800;font-size:46px;line-height:1.03;letter-spacing:-.022em;color:var(--ink);margin:0 0 16px;}
+.hero h1 .ac{color:var(--olive);}
+.hero p{color:var(--muted);font-size:17.5px;max-width:620px;margin:0;}
+.divider{width:56px;height:3px;background:var(--gilt-lt);border-radius:2px;margin:26px 0 4px;}
+h2{font-weight:800;color:var(--ink);font-size:25px;letter-spacing:-.015em;line-height:1.15;margin:38px 0 10px;scroll-margin-top:74px;}
+h3{font-weight:800;color:var(--olive);font-size:17px;letter-spacing:-.005em;margin:26px 0 6px;}
+p{margin:0 0 12px;}
+ul.clean{list-style:none;padding:0;margin:10px 0 14px;}
+ul.clean li{position:relative;padding:0 0 10px 26px;}
+ul.clean li::before{content:"\03A8";font-weight:800;color:var(--gilt);position:absolute;left:0;top:0;}
+.pull{font-weight:800;color:var(--olive-dk);font-size:23px;line-height:1.3;letter-spacing:-.015em;border-left:4px solid var(--gilt-lt);padding:6px 0 6px 20px;margin:28px 0;}
+.portas{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:26px 0 8px;}
+@media(max-width:720px){.portas{grid-template-columns:1fr;}}
+.porta{display:block;text-decoration:none;background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:20px 18px;transition:border-color .18s,transform .18s;}
+.porta:hover{border-color:var(--sage);transform:translateY(-2px);}
+.porta .pk{font-weight:800;font-size:16px;letter-spacing:-.01em;color:var(--ink);line-height:1.2;}
+.porta .pd{font-size:14.5px;color:var(--muted);margin-top:8px;line-height:1.45;}
+.porta .pa{display:block;margin-top:14px;font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gilt);}
+.temas{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0;}
+@media(max-width:560px){.temas{grid-template-columns:1fr;}}
+.tema{display:flex;flex-direction:column;text-decoration:none;background:var(--card);border:1px solid var(--cream-dp);border-top:4px solid var(--sage);border-radius:14px;padding:18px 18px 16px;transition:border-top-color .18s,box-shadow .18s,transform .18s;}
+.tema:hover{border-top-color:var(--olive);box-shadow:0 2px 14px rgba(67,68,31,.08);transform:translateY(-2px);}
+.tema .tk{font-weight:800;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gilt);}
+.tema .tt{font-weight:800;font-size:19px;letter-spacing:-.015em;color:var(--ink);margin:6px 0 5px;line-height:1.2;}
+.tema .td{font-size:14px;color:var(--muted);line-height:1.45;flex:1 1 auto;}
+.tema .tm{margin-top:12px;padding-top:10px;border-top:1px solid var(--cream-dp);font-weight:700;font-size:12.5px;color:var(--sage-dk);}
+.book{background:var(--cream-dp);border-radius:14px;padding:18px 20px;margin:18px 0 24px;}
+.book .bk{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:7px;}
+.book .bt{font-weight:800;font-size:19px;letter-spacing:-.015em;color:var(--ink);margin-bottom:4px;line-height:1.2;}
+.book .bsub{color:var(--muted);font-size:14px;margin-bottom:14px;line-height:1.4;}
+.book a{display:inline-block;font-weight:800;font-size:12.5px;letter-spacing:.02em;color:var(--cream);background:var(--olive);padding:11px 22px;border-radius:26px;text-decoration:none;}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0;}
+@media(max-width:560px){.cards{grid-template-columns:1fr;}}
+.card{background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:6px;}
+.card.live{border-color:var(--sage);box-shadow:0 2px 12px rgba(67,68,31,.06);}
+.card:not(.live){opacity:.7;}
+.card .ct{display:flex;align-items:center;justify-content:space-between;min-height:26px;}
+.card .n{font-weight:800;font-size:24px;color:var(--sage-dk);line-height:1;letter-spacing:-.02em;}
+.card .dt{font-weight:800;font-size:12px;letter-spacing:.1em;color:var(--gilt);}
+.card.bydate .dt{font-size:15px;color:var(--sage-dk);}
+.card .tt{font-weight:800;color:var(--ink);font-size:16.5px;line-height:1.25;letter-spacing:-.01em;margin-top:2px;}
+.card .pr{color:var(--muted);font-size:13.5px;}
+.card .acts{display:flex;gap:8px;margin-top:10px;}
+.card .go,.card .pdf{font-weight:800;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;padding:9px 16px;border-radius:20px;text-decoration:none;}
+.card .go{color:var(--cream);background:var(--olive);} .card .pdf{color:var(--olive-dk);border:1.5px solid var(--gilt-lt);}
+.card .soon{font-weight:800;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:10px;}
+.empty{background:var(--card);border:1px dashed var(--cream-dp);border-radius:14px;padding:26px;text-align:center;color:var(--muted);}
+.cta{position:relative;overflow:hidden;border-radius:16px;margin:30px 0 8px;background:linear-gradient(150deg,#5b5c2a,#43441f);color:var(--cream);display:grid;grid-template-columns:minmax(0,290px) minmax(0,1fr);}
+.cta .ph{width:100%;height:100%;min-height:330px;object-fit:cover;object-position:center 22%;display:block;opacity:.95;}
+.cta .in{padding:26px 26px 28px;align-self:center;}
+.cta .in .k{color:#ddd6bf;margin-bottom:6px;font-size:14.5px;}
+.cta .in h3{font-weight:800;font-size:22px;letter-spacing:-.015em;color:var(--cream);margin:0 0 14px;}
+.cta ul{list-style:none;padding:0;margin:0 0 18px;}
+.cta li{position:relative;padding:0 0 10px 24px;font-size:14.5px;color:#f1ecdc;line-height:1.45;}
+.cta li::before{content:"\03A8";color:var(--gilt-lt);position:absolute;left:0;font-weight:800;}
+.cta a.go{display:block;text-align:center;background:var(--cream);color:var(--olive-dk);font-weight:800;font-size:14.5px;text-decoration:none;padding:14px;border-radius:28px;}
+@media(max-width:720px){.cta{grid-template-columns:1fr;} .cta .ph{min-height:230px;height:230px;}}
+.foot{text-align:center;color:var(--muted);font-size:12.5px;margin-top:38px;padding-top:20px;border-top:1px solid var(--cream-dp);}
+.foot .foot-logo{height:30px;width:auto;display:inline-block;margin-bottom:8px;}
+.contato{margin-top:14px;font-size:12.5px;color:var(--muted);line-height:1.7;}
+.contato a{color:var(--gilt);text-decoration:none;} .contato .cnpj{font-size:11.5px;opacity:.85;}
+
+.mhero{padding:36px 0 4px;}
+.mhero .kick{font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:11.5px;color:var(--gilt);margin:0 0 12px;}
+.mhero h1{font-weight:800;font-size:42px;line-height:1.04;letter-spacing:-.022em;color:var(--ink);margin:0 0 10px;}
+.mhero .sub{font-weight:700;font-size:19px;color:var(--sage-dk);line-height:1.3;margin:0 0 12px;letter-spacing:-.01em;}
+.mhero .meta{font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);}
+.mhero .tema{margin:18px 0 0;padding-left:18px;border-left:4px solid var(--cream-dp);color:var(--muted);font-size:16.5px;}
+.usar{background:var(--cream-dp);border-radius:12px;padding:16px 18px;margin:24px 0 14px;font-size:14.5px;color:var(--muted);line-height:1.55;}
+.usar b{display:block;font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--olive-dk);margin-bottom:6px;}
+.pdfbtn{display:inline-block;font-weight:800;font-size:13px;letter-spacing:.02em;color:var(--cream);background:var(--olive);padding:13px 24px;border-radius:26px;text-decoration:none;}
+.ess{background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:20px 22px;margin:26px 0;}
+.ess .et{font-weight:800;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gilt);margin-bottom:12px;}
+.ess ul{list-style:none;padding:0;margin:0;}
+.ess li{position:relative;padding:0 0 12px 26px;font-size:15.8px;line-height:1.5;}
+.ess li:last-child{padding-bottom:0;}
+.ess li::before{content:"\03A8";position:absolute;left:0;top:0;color:var(--gilt-lt);font-weight:800;}
+details.sec{border-bottom:1px solid var(--cream-dp);}
+details.sec[open]{padding-bottom:16px;}
+details.sec summary{list-style:none;cursor:pointer;padding:18px 0;display:flex;align-items:baseline;gap:12px;}
+details.sec summary::-webkit-details-marker{display:none;}
+details.sec summary h2{font-weight:800;font-size:21px;letter-spacing:-.015em;color:var(--ink);margin:0;line-height:1.2;flex:1;}
+details.sec summary .arw{color:var(--gilt);font-weight:800;font-size:13px;transition:transform .2s;}
+details.sec[open] summary .arw{transform:rotate(90deg);}
+details.sec .lead{color:var(--sage-dk);font-weight:500;margin:0 0 14px;font-size:16px;}
+details.sec p{font-size:16.5px;}
+ul.key{list-style:none;padding:0;margin:12px 0;}
+ul.key li{position:relative;padding:0 0 11px 26px;font-size:16px;line-height:1.5;}
+ul.key li::before{content:"\03A8";position:absolute;left:0;top:0;color:var(--gilt);font-weight:800;}
+.dial{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0;}
+@media(max-width:620px){.dial{grid-template-columns:1fr;}}
+.dial .d{background:var(--card);border:1px solid var(--cream-dp);border-top:3px solid var(--sage);border-radius:12px;padding:14px 16px;}
+.dial .dt{font-weight:800;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--olive-dk);margin-bottom:7px;}
+.dial p{margin:0;font-size:14.5px;color:var(--muted);line-height:1.45;}
+.obs{background:var(--cream-dp);border-radius:12px;padding:16px 18px;margin:18px 0;}
+.obs h4{font-weight:800;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--olive-dk);margin:0 0 7px;}
+.obs p{margin:0;font-size:15.5px;}
+.callout{background:var(--card);border-left:4px solid var(--gilt-lt);border-radius:0 12px 12px 0;padding:16px 18px;margin:20px 0;font-size:15.5px;line-height:1.55;}
+.callout .co-t{font-weight:800;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--gilt);margin-bottom:7px;}
+span.ref{font-size:13.5px;color:var(--muted);}
+/* diagrama */
+figure.dg{margin:24px 0;background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:18px 16px 12px;}
+figure.dg svg{width:100%;height:auto;display:block;}
+figure.dg figcaption{margin-top:10px;font-size:13px;color:var(--muted);text-align:center;line-height:1.45;}
+.dg-t{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:10px;text-align:center;}
+/* ferramentas */
+.tools{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:32px 0 0;}
+@media(max-width:720px){.tools{grid-template-columns:1fr;}}
+.tool{background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:20px;}
+.tool .tt{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:14px;}
+.ck{display:flex;gap:11px;align-items:flex-start;padding:9px 0;font-size:15px;line-height:1.45;cursor:pointer;}
+.ck input{margin:4px 0 0;accent-color:var(--olive);width:17px;height:17px;flex:none;cursor:pointer;}
+.ck.done span{text-decoration:line-through;opacity:.5;}
+.qz{margin-bottom:18px;} .qz:last-child{margin-bottom:0;}
+.qz p{font-size:15px;margin:0 0 7px;line-height:1.45;font-weight:500;}
+.qz textarea{width:100%;min-height:66px;border:1px solid var(--cream-dp);border-radius:10px;background:var(--cream);font-family:inherit;font-size:14.5px;color:var(--ink);padding:10px 12px;resize:vertical;line-height:1.5;}
+.qz textarea:focus{outline:2px solid var(--gilt-lt);outline-offset:1px;}
+.savebar{display:flex;align-items:center;gap:12px;margin-top:16px;flex-wrap:wrap;}
+.savebar button{font-weight:800;font-size:11px;letter-spacing:.08em;text-transform:uppercase;border:1.5px solid var(--cream-dp);background:none;color:var(--olive-dk);border-radius:22px;padding:10px 18px;cursor:pointer;font-family:inherit;}
+.savebar button:hover{border-color:var(--gilt-lt);color:var(--gilt);}
+.saved{font-weight:800;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--sage-dk);opacity:0;transition:opacity .3s;}
+.saved.on{opacity:1;}
+.refs h2,.nmet h2{font-weight:800;font-size:21px;letter-spacing:-.015em;color:var(--ink);margin:34px 0 10px;}
+.refs ol{padding-left:20px;font-size:13.8px;color:var(--muted);line-height:1.6;}
+.refs li{margin-bottom:9px;}
+.nmet{background:var(--card);border-left:4px solid var(--gilt-lt);border-radius:0 12px 12px 0;padding:16px 20px;margin:26px 0 0;font-size:14px;color:var(--muted);line-height:1.6;}
+.nmet b{display:block;font-weight:800;font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--olive-dk);margin-bottom:7px;}
+.side .idx a{font-size:13.5px;font-weight:500;padding:7px 12px;line-height:1.3;}
+</style></head><body><div class='topbar'><div class='in'><a href='/'><img alt='Lógica Psicológica' src='/assets/logo.png'></a><a class='backlink' href='/processos/' title='Voltar para Encontros'>&#8592; Voltar</a><div class='sp'></div><div class='tag'>Jornada da Leitura</div></div></div><div class='shell'><aside class='side' id='side'><a class='brand' href='/'><img alt='Lógica Psicológica' src='/assets/logo-creme.png'></a><div class='nav'><div class='st first'>Navegação</div><a class='home' href='/processos/'>&#8592; Encontros</a><a class='navlink' href='/'>Início do portal</a><div class='st'>Neste material</div><div class='idx'><a href='#s0'>O encontro que devolve a TBP à sua base</a><a href='#s1'>Topografia e função — e classe de respostas</a><a href='#s2'>Respondente: eliciação, condicionamento, habituação</a><a href='#s3'>Operante: reforço, punição e extinção</a><a href='#s4'>Esquemas de reforçamento e manutenção</a><a href='#s5'>Antecedentes: discriminativos e operações motivadoras</a><a href='#s6'>Esquiva e fuga, o caso Lucas e a tradução dos termos</a></div></div><div class='sig'><img alt='Prof. Júlio Gonçalves' src='/assets/julio.jpg'><div class='who'>Prof. Júlio Gonçalves<span>MSc · CRP 12/17614</span></div></div><a class='sub' href='https://psicojulio.com/comunidade-logica-psicologica/' target='_blank' rel='noopener'>Inscreva-se</a></aside><main class='main'><div class='mhero'><div class='kick'>Resumo de aula · Jornada da Leitura</div><h1>Processos comportamentais</h1><div class='sub'>Capítulo 11 · encerramento do ciclo</div><div class='meta'>16/06/2026 · Apresentação de Prof. Armando Macena de Lima Junior · Mediação de Prof. Júlio Gonçalves · Hofmann, Hayes &amp; Lorscheid — <em>Aprendendo a Terapia Baseada em Processos</em>, cap. 11</div><p class='tema'>O encontro que fecha o ciclo devolvendo a TBP à sua base: análise funcional. Topografia não é função, reforço não é prazer, e todo processo clínico é uma leitura interveniente de princípios comportamentais já estabelecidos.</p></div><div class='usar'><b>Como usar</b>Abra as seções que quiser ler, marque o que pretende aplicar e responda o que fizer sentido. Tudo fica salvo neste aparelho — ninguém mais vê.</div><a class='pdfbtn' href='resumo.pdf'>&#8681; Baixar em PDF</a><div class='ess'><div class='et'>O essencial</div><ul><li><strong>Topografia é a forma; função é a relação com o ambiente.</strong> O mesmo comportamento pode ter funções opostas — e a forma, sozinha, não diz nada.</li><li><strong>Reforço aumenta frequência; punição diminui.</strong> Sem juízo de valor embutido. Chamar de “prazeroso” ou “apetitivo” é trocar a definição funcional por uma suposição mentalista.</li><li><strong>Esquiva evita o contato; fuga encerra o contato já iniciado.</strong> As duas são reforçadas negativamente — e as duas custam repertório.</li><li><strong>Esquema contínuo instala; esquema variável mantém.</strong> Por isso a alta é planejada, e não apenas concedida.</li><li><strong>Os processos da TBP são leituras intervenientes de princípios comportamentais.</strong> Flexibilidade psicológica, valores e evitação experiencial têm tradução funcional — e ganham precisão nela.</li></ul></div><details class='sec' id='s0' open><summary><h2>O encontro que devolve a TBP à sua base</h2><span class='arw'>&#9656;</span></summary><p>Este é o décimo primeiro e último encontro do ciclo. Vieram antes as bases teóricas da TBP, o metamodelo evolucionário estendido, e os domínios de atenção, cognição, <em>self</em>, afeto e motivação. Fecha-se com o domínio comportamental — e com uma amarração que estava implícita desde o começo.</p><p>A amarração é esta: embora a TBP trate de eventos privados, <strong>sua estrutura central se apoia na análise do comportamento</strong>. A conexão com a análise funcional clássica não é um detalhe histórico; é o que dá sustentação lógica ao resto.</p><div class='callout note'><div class='co-t'>Sobre a linguagem mentalista</div>A apresentação partiu de uma formação em behaviorismo radical e discutiu abertamente a transição para uma linguagem mentalista dentro da TBP — entendida como forma de <strong>congregar raciocínios e pesquisas diferentes sob uma base epistemológica comum</strong>. É uma escolha deliberada, não um descuido conceitual: o preço da integração é alguma imprecisão de vocabulário, e vale saber que se está pagando esse preço.</div></details><details class='sec' id='s1'><summary><h2>Topografia e função — e classe de respostas</h2><span class='arw'>&#9656;</span></summary><p>O vocabulário básico da análise do comportamento não é enfeite acadêmico: é o que permite raciocinar sobre o caso. E a primeira distinção é a que mais economiza erro clínico.</p><ul class='key'><li><b>Topografia</b> — a <strong>forma</strong> do comportamento. O que se vê.</li><li><b>Função</b> — a <strong>relação</strong> entre a ação e o ambiente. Para que serve, o que a mantém.</li></ul><p>O exemplo trabalhado foi o consumo de álcool. Mesma topografia, funções distintas: pode ser <strong>reforçamento negativo</strong>, se serve para evitar estressores; pode ser <strong>reforçamento positivo</strong>, em contexto social. A conduta clínica muda inteiramente conforme a resposta — e a forma do comportamento não a entrega.</p><h3>Classe de respostas</h3><p>Classe de respostas é o agrupamento de comportamentos <strong>topograficamente distintos que compartilham a mesma função</strong>. A esquiva social, por exemplo, pode aparecer como recusar convites, faltar às aulas ou mexer no celular no meio do grupo. Três formas diferentes, uma função só: evitar o ambiente social.</p><p>É por isso que uma lista de comportamentos não organiza um caso, mas uma lista de <em>classes</em> organiza.</p></details><details class='sec' id='s2'><summary><h2>Respondente: eliciação, condicionamento, habituação</h2><span class='arw'>&#9656;</span></summary><p>O comportamento respondente opera em nível filogenético: é eliciado, não emitido. O exemplo usado foi o ciclo circadiano — a luz estimula a glândula pineal, a liberação de melatonina é modulada, e a sonolência aparece como resposta biológica, não aprendida.</p><h3>Condicionamento</h3><p>Estímulos neutros adquirem função pelo <strong>emparelhamento</strong> com estímulos incondicionados. O uniforme de trabalho e o trajeto diário passam a eliciar respostas autonômicas de ativação antes mesmo da chegada ao local — o organismo se prepara. Visto assim, é adaptação, não patologia; vira problema quando a ativação não encontra desligamento.</p><h3>Habituação e sensibilização</h3><ul class='key'><li><b>Habituação</b> — o efeito de um estímulo <strong>diminui com a repetição</strong>. O exemplo clínico foi o uso continuado de benzodiazepínicos.</li><li><b>Sensibilização</b> — o <strong>limiar de resposta diminui</strong>, e o organismo passa a reagir mais facilmente.</li></ul><p>No transtorno bipolar, a privação de sono aumenta a sensibilidade a episódios — ilustração de como o organismo se torna mais reativo a estressores ao longo do tempo (Harvey, 2008). É também um bom lembrete de que o nível biofisiológico não é pano de fundo: ele <strong>altera a função dos estímulos</strong>.</p></details><details class='sec' id='s3'><summary><h2>Operante: reforço, punição e extinção</h2><span class='arw'>&#9656;</span></summary><p>No condicionamento operante, o comportamento <strong>opera sobre o ambiente</strong>, e suas consequências alteram a probabilidade futura daquele comportamento.</p><div class='obs'><h4>Duas palavras que não são opinião</h4><p><strong>Reforço</strong> significa aumento de frequência. <strong>Punição</strong> significa diminuição. Ponto — independentemente de juízos de valor subjetivos. Descrever uma consequência como “apetitiva” ou “prazerosa” troca a definição funcional por uma suposição sobre o que se passa dentro da pessoa, e é justamente o tipo de deslize mentalista que faz a análise perder precisão.</p></div><h3>Extinção</h3><p>Extinção é a <strong>interrupção do reforçamento</strong>. E tem uma característica que confunde quem não a conhece: antes de diminuir, a taxa de respostas <strong>aumenta</strong> — é o <em>extinction burst</em>. A imagem usada foi o controle remoto sem pilha: a pessoa aperta com mais força, mais vezes, antes de desistir.</p><p>Clinicamente, isso significa que a piora inicial após retirar um reforçador pode ser sinal de que o procedimento está funcionando — e não de que falhou. Quem não sabe disso recua exatamente no pior momento.</p></details><details class='sec' id='s4'><summary><h2>Esquemas de reforçamento e manutenção</h2><span class='arw'>&#9656;</span></summary><p>Cinco esquemas, com exemplos de dentro da própria relação terapêutica:</p><ul class='key'><li><b>Contínuo</b> — cada resposta é reforçada.</li><li><b>Razão fixa</b> — o <em>feedback</em> do terapeuta depois de sete registros de monitoramento de humor.</li><li><b>Razão variável</b> — número imprevisível de respostas até o reforço.</li><li><b>Intervalo fixo</b> — reforço disponível após um tempo determinado.</li><li><b>Intervalo variável</b> — a imprevisibilidade das respostas a mensagens entre sessões.</li></ul><p>A regra prática que sai daí: <strong>esquemas variáveis sustentam o comportamento por muito mais tempo</strong>. É o que explica a criança que insiste no doce no mercado, e boa parte da persistência em relações interpessoais intermitentes.</p><div class='callout note'><div class='co-t'>Como usar isso na clínica</div>Para <strong>instalar</strong> um comportamento novo, reforço contínuo. Para <strong>manter</strong> a longo prazo, transição para esquemas variáveis e controle por regras. É um argumento técnico para o desmame planejado do acompanhamento — a alta bem feita é uma mudança de esquema, não uma interrupção.</div></details><details class='sec' id='s5'><summary><h2>Antecedentes: discriminativos e operações motivadoras</h2><span class='arw'>&#9656;</span></summary><ul class='key'><li><b>Estímulo discriminativo</b> — sinaliza que o reforço <strong>está disponível</strong>.</li><li><b>Estímulo delta</b> — sinaliza que <strong>não está</strong>.</li></ul><p>O exemplo: a esposa dormindo ou acordada como estímulo que muda a probabilidade de o paciente dormir sem medicação. O contexto dita a função.</p><h3>Generalização e discriminação</h3><p>A <strong>generalização</strong> é o que se quer da terapia: a assertividade desenvolvida em sessão se estende a outros contextos sociais. A <strong>discriminação</strong> é saber <em>quando</em> um comportamento é funcional. O exemplo foi de uma comunicação agressiva reforçada num relacionamento anterior e punida no atual — a pessoa precisa discriminar contextos, não trocar um padrão rígido por outro.</p><p>É o mesmo princípio de sempre, dito de outro jeito: gritar pode ser adaptativo num hospital e desastroso em casa. A topografia não é boa nem ruim; quem define é a relação funcional.</p><h3>Operações motivadoras</h3><p>Operações motivadoras são <strong>variáveis ambientais que determinam se uma consequência funcionará como reforçadora</strong> (Michael, 1993; Laraway et al., 2003). Não confundir com discriminativos: o discriminativo sinaliza <em>disponibilidade</em>; a operação motivadora altera o <em>valor</em> reforçador — e aqui vale o mesmo cuidado, descrever a alteração em termos de efeito sobre o comportamento, não em termos de “vontade” ou “desejo”.</p><ul class='key'><li><b>Transitivas</b> — tornam um estímulo relevante para acessar um reforçador (a chave que dá acesso à porta).</li><li><b>Reflexivas</b> — estabelecem funções condicionais para o reforçamento negativo.</li></ul><p>São conceitos especialmente úteis em contextos de terapia comportamental aplicada. E vem com um conselho de sobriedade: <strong>na prática clínica, o que importa é a lógica da análise funcional, não a memorização dos termos</strong>. Pergunte em que condições o comportamento ocorre e que efeitos produz; o que o mantém e o que o diminui. O nome técnico é útil para pensar e para conversar com colegas, não para preencher prontuário.</p></details><details class='sec' id='s6'><summary><h2>Esquiva e fuga, o caso Lucas e a tradução dos termos</h2><span class='arw'>&#9656;</span></summary><ul class='key'><li><b>Esquiva</b> — evitar o contato com o estímulo, antes que ele ocorra.</li><li><b>Fuga</b> — afastar-se do estímulo <strong>depois</strong> do contato.</li></ul><p>Ambas são reforçadas negativamente. A esquiva previne o contato com eventos privados desagradáveis; a fuga o encerra. E o mesmo estímulo pode <strong>punir um comportamento e reforçar outro</strong> — reduzir a chance de aceitar convites e, simultaneamente, reforçar o sair mais cedo do evento. A análise precisa dar conta dessas múltiplas relações, porque a topografia, de novo, não revela a função.</p><h3>O caso Lucas</h3><p><strong>Lucas</strong> (caso apresentado em aula, desidentificado), desenvolvedor de software de 28 anos, com hipótese de transtorno depressivo persistente e uso problemático de álcool.</p><p>A história importa: na infância, <strong>pedir ajuda era punido com críticas</strong>, enquanto <strong>a autossuficiência era reforçada</strong>. O resultado é um repertório limitado na vida adulta — não por falta de capacidade, mas porque a alternativa nunca foi selecionada.</p><p>Na vida atual, isso aparece como generalização do medo de crítica para o ambiente profissional, esquiva do <em>feedback</em> do gestor e ausência de repertório assertivo, o que mantém o isolamento e a sobrecarga. Operacionalizando a esquiva social: respostas monossilábicas, desvio de contato visual, preferência por trabalho remoto.</p><p>Quanto ao álcool no fim de semana, a leitura foi hipotética e assumida como tal: pode atenuar estados de desconforto ou ruminação, funcionando como reforçamento negativo — mas <strong>a função precisa exige investigação continuada</strong>. É um bom modelo de como sustentar uma hipótese sem fechá-la cedo demais.</p><div class='obs'><h4>Curto prazo mantém, longo prazo enfraquece</h4><p>As consequências de curto prazo — evitar a crítica — <strong>mantêm</strong> o padrão de esquiva. As de longo prazo — privação de suporte interpessoal, isolamento — <strong>enfraquecem</strong> o padrão e produzem sofrimento. E vale notar: a falta de relações sociais é, em si mesma, um fator de privação para o paciente, e portanto uma operação motivadora ativa no caso.</p></div><h3>Gerar variabilidade</h3><p>Se o repertório é estreito, o alvo é <strong>variabilidade comportamental</strong> — e as vias são o questionamento socrático, os experimentos comportamentais, a modelagem e a modelação. É assim que novas respostas entram no repertório, para só então poderem ser selecionadas.</p><h3>Análise molar, e a tradução dos termos</h3><p>Para a clínica, a proposta é uma <strong>análise molar</strong>: focar em classes de respostas selecionadas ao longo do tempo, em vez de episódios isolados (Baum, 2002). O modelo de seleção por consequências é análogo à seleção natural, com <strong>variação, seleção e retenção</strong> do repertório (Skinner, 1981) — exatamente os três eixos que a jornada usou desde o metamodelo.</p><p>Daí a síntese que encerrou o ciclo: <strong>os processos clínicos da TBP são leituras intervenientes de princípios comportamentais já estabelecidos</strong>. Flexibilidade psicológica, valores e evitação experiencial têm tradução funcional — e o objetivo terapêutico permanece reorganizar contingências de reforçamento e entender os fatores motivacionais e antecedentes.</p><div class='callout note'><div class='co-t'>Nomotético e idiográfico, de novo</div>Na discussão sobre transtorno bipolar, o ponto foi a necessidade de <strong>integrar os dois modelos</strong>: o nomotético não é dispensável em quadros com base biológica marcada, e o idiográfico é o que permite entender aquele paciente. É o mesmo argumento do encontro sobre mensuração, chegando por outro caminho.</div></details><div class='tools'><div class='tool'><div class='tt'>Levar para a prática</div><label class='ck'><input type='checkbox'><span>Descrevi a função do comportamento, e não só a sua forma.</span></label><label class='ck'><input type='checkbox'><span>Agrupei comportamentos diferentes em classes de resposta pela função comum.</span></label><label class='ck'><input type='checkbox'><span>Usei “reforço” e “punição” pelo efeito na frequência — sem embutir juízo de valor.</span></label><label class='ck'><input type='checkbox'><span>Avisei o paciente (e a mim) sobre o pico de respostas no início da extinção.</span></label><label class='ck'><input type='checkbox'><span>Planejei o esquema: contínuo para instalar, variável para manter.</span></label><label class='ck'><input type='checkbox'><span>Distingui esquiva de fuga no caso, e mapeei o que cada uma evita.</span></label><label class='ck'><input type='checkbox'><span>Separei as consequências de curto prazo (que mantêm) das de longo prazo (que enfraquecem).</span></label><label class='ck'><input type='checkbox'><span>Antes de esperar mudança, verifiquei se existe repertório alternativo — ou se preciso gerar variabilidade primeiro.</span></label></div><div class='tool'><div class='tt'>Para revisar — responda</div><div class='qz'><p>1. Dê um exemplo, de um caso seu, de mesma topografia com funções opostas.</p><textarea placeholder='Sua resposta…'></textarea></div><div class='qz'><p>2. Monte uma classe de respostas de um paciente seu: três comportamentos distintos com a mesma função.</p><textarea placeholder='Sua resposta…'></textarea></div><div class='qz'><p>3. Por que descrever uma consequência como “prazerosa” enfraquece a análise?</p><textarea placeholder='Sua resposta…'></textarea></div><div class='qz'><p>4. O que é o pico de extinção, e por que conhecê-lo muda a conduta do terapeuta?</p><textarea placeholder='Sua resposta…'></textarea></div><div class='qz'><p>5. Diferencie estímulo discriminativo de operação motivadora com um exemplo clínico.</p><textarea placeholder='Sua resposta…'></textarea></div><div class='qz'><p>6. Analise o caso Lucas: que história selecionou o repertório atual, e o que o mantém hoje?</p><textarea placeholder='Sua resposta…'></textarea></div><div class='qz'><p>7. Traduza para termos funcionais um conceito da TBP que você usa com frequência.</p><textarea placeholder='Sua resposta…'></textarea></div></div></div><div class='savebar'><button id='exp'>Exportar respostas</button><button id='lmp'>Limpar</button><span class='saved' id='saved'>Salvo neste aparelho</span></div><div class='refs'><h2>Referências</h2><ol><li>Baum, W. M. (2002). From molecular to molar: A paradigm shift in behavior analysis. <em>Journal of the Experimental Analysis of Behavior, 78</em>(1), 95–116.</li><li>Catania, A. C. (1999). <em>Aprendizagem: comportamento, linguagem e cognição</em> (4ª ed.). Artmed.</li><li>Ferster, C. B. (1973). A functional analysis of depression. <em>American Psychologist, 28</em>(10), 857–870.</li><li>Ferster, C. B., &amp; Skinner, B. F. (1957). <em>Schedules of reinforcement.</em> Appleton-Century-Crofts.</li><li>Harvey, A. G. (2008). Sleep and circadian rhythms in bipolar disorder: Seeking synchrony, harmony, and regulation. <em>American Journal of Psychiatry, 165</em>(7), 820–829.</li><li>Hayes, S. C., Barnes-Holmes, D., &amp; Roche, B. (Orgs.). (2001). <em>Relational frame theory.</em> Kluwer Academic.</li><li>Hayes, S. C., Hofmann, S. G., &amp; Ciarrochi, J. (2020). A process-based approach to psychological diagnosis and treatment. <em>Clinical Psychology Review, 82</em>, 101908.</li><li>Hayes, S. C., Wilson, K. G., Gifford, E. V., Follette, V. M., &amp; Strosahl, K. (1996). Experiential avoidance and behavioral disorders. <em>Journal of Consulting and Clinical Psychology, 64</em>(6), 1152–1168.</li><li>Laraway, S., Snycerski, S., Michael, J., &amp; Poling, A. (2003). Motivating operations and terms to describe them: Some further refinements. <em>Journal of Applied Behavior Analysis, 36</em>(3), 407–414.</li><li>Martell, C. R., Dimidjian, S., &amp; Herman-Dunn, R. (2010). <em>Behavioral activation for depression: A clinician's guide.</em> Guilford Press.</li><li>Michael, J. (1982). Distinguishing between discriminative and motivational functions of stimuli. <em>Journal of the Experimental Analysis of Behavior, 37</em>(1), 149–155.</li><li>Michael, J. (1993). Establishing operations. <em>The Behavior Analyst, 16</em>(2), 191–206.</li><li>Rescorla, R. A. (1988). Pavlovian conditioning: It's not what you think it is. <em>American Psychologist, 43</em>(3), 151–160.</li><li>Skinner, B. F. (1953). <em>Science and human behavior.</em> Macmillan.</li><li>Skinner, B. F. (1981). Selection by consequences. <em>Science, 213</em>(4507), 501–504.</li></ol></div><div class='nmet'><b>Nota de método</b>Os casos citados em aula estão desidentificados. A conversa de abertura e os encaminhamentos operacionais do encontro — logística de congresso, votação de temas futuros, agendamento de supervisões — foram omitidos por não integrarem o conteúdo, assim como as intervenções nominais de participantes. Dois pontos merecem conferência. Primeiro: no exemplo de análise funcional em episódio misto, a transcrição rotula a compra de substância como “punição negativa”, classificação que não se sustenta como transcrita; mantive o princípio geral — um mesmo contexto de desconforto pode gerar comportamentos distintos com consequências funcionais diferentes — sem reproduzir a rotulação ambígua. Segundo: a transcrição atribui à TBP a “filosofia analítica” como base epistemológica comum; a filosofia habitualmente invocada como base da ciência comportamental contextual e da TBP é o <strong>contextualismo funcional</strong>, e o texto foi redigido de forma neutra até que se confirme o que foi dito em aula. As referências de análise do comportamento, esquemas, operações motivadoras, análise molar e ritmo circadiano no transtorno bipolar foram acrescentadas para dar respaldo formal a afirmações feitas sem citação explícita. Nenhuma citação foi construída para preencher lacuna.</div><div class='cta'><img class='ph' alt='Prof. Júlio Gonçalves' src='/assets/julio.jpg'><div class='in'><div class='k'>Aprenda muito mais na</div><h3>Comunidade Lógica Psicológica</h3><ul><li>Aprofundar o raciocínio clínico com ciência, processos e análise funcional.</li><li>Estruturar uma prática ética, com pensamento crítico e evidências atualizadas.</li><li>Desenvolver o self clínico com supervisão, leituras guiadas e rede.</li></ul><a class='go' href='https://psicojulio.com/comunidade-logica-psicologica/' target='_blank' rel='noopener'>Participar da comunidade &#8594;</a></div></div><div class='foot'><img class='foot-logo' alt='Lógica Psicológica' src='/assets/logo.png'><div class='contato'><a href='mailto:contato@psicojulio.com'>contato@psicojulio.com</a> &middot; <a href='tel:+5547999338021'>(47) 99933-8021</a><br>Rua Concórdia, 703, São Vicente, Itajaí — 88309-645<br><span class='cnpj'>CNPJ 49.649.803/0001-60</span></div></div></main></div><button class='toc-fab' id='fab'>&#9776; Seções</button><div class='overlay' id='ov'></div><script>
+(function(){
+  var K='mat-Proc11-Processos-Comportamentais-';
+  document.querySelectorAll('.ck input').forEach(function(c,i){
+    var k=K+'ck'+i;
+    try{ if(localStorage.getItem(k)==='1'){c.checked=true;c.closest('.ck').classList.add('done');} }catch(e){}
+    c.addEventListener('change',function(){
+      c.closest('.ck').classList.toggle('done',c.checked);
+      try{ localStorage.setItem(k,c.checked?'1':'0'); }catch(e){} flag();
+    });
+  });
+  document.querySelectorAll('.qz textarea').forEach(function(t,i){
+    var k=K+'q'+i;
+    try{ var v=localStorage.getItem(k); if(v)t.value=v; }catch(e){}
+    t.addEventListener('input',function(){ try{ localStorage.setItem(k,t.value); }catch(e){} flag(); });
+  });
+  var s=document.getElementById('saved'),tm;
+  function flag(){ if(!s)return; s.classList.add('on'); clearTimeout(tm); tm=setTimeout(function(){s.classList.remove('on');},1600); }
+  var b=document.getElementById('exp');
+  if(b) b.addEventListener('click',function(){
+    var out='RESPOSTAS — Processos comportamentais\n\n';
+    document.querySelectorAll('.qz').forEach(function(q){
+      out+= q.querySelector('p').innerText+'\n'+(q.querySelector('textarea').value||'(sem resposta)')+'\n\n';
+    });
+    var a=document.createElement('a');
+    a.href=URL.createObjectURL(new Blob([out],{type:'text/plain'}));
+    a.download='Proc11-Processos-Comportamentais-respostas.txt'; a.click();
+  });
+  var l=document.getElementById('lmp');
+  if(l) l.addEventListener('click',function(){
+    if(!confirm('Apagar suas anotações deste material?'))return;
+    try{ Object.keys(localStorage).filter(function(k){return k.indexOf(K)===0;}).forEach(function(k){localStorage.removeItem(k);}); }catch(e){}
+    location.reload();
+  });
+  var f=document.getElementById('fab'),o=document.getElementById('ov'),sd=document.getElementById('side');
+  if(f)f.onclick=function(){sd.classList.toggle('open');o.classList.toggle('open');};
+  if(o)o.onclick=function(){sd.classList.remove('open');o.classList.remove('open');};
+})();
+</script></body></html>
