@@ -1,0 +1,263 @@
+<!DOCTYPE html><html lang='pt-BR'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='icon' type='image/png' sizes='32x32' href='/favicon-32.png'><link rel='icon' type='image/png' sizes='192x192' href='/favicon-192.png'><link rel='apple-touch-icon' href='/apple-touch-icon.png'><link rel='icon' href='/favicon.ico' sizes='any'><link rel='preconnect' href='https://fonts.googleapis.com'><link rel='preconnect' href='https://fonts.gstatic.com' crossorigin><link href='https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500&display=swap' rel='stylesheet'><title>Defeito e culpa — Lógica Psicológica</title><style>
+:root{--olive:#5b5c2a;--olive-dk:#43441f;--sage:#9ca575;--sage-dk:#7c8054;--cream:#f8f3e6;--cream-dp:#efe7d3;--gilt:#a8894f;--gilt-lt:#c3a468;--ink:#2f2e24;--muted:#6c6a55;--card:#fffdf7;}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;} html,body{margin:0;padding:0;}
+body{font-family:'Plus Jakarta Sans',system-ui,-apple-system,Segoe UI,sans-serif;background:var(--cream);color:var(--ink);font-size:17px;line-height:1.62;font-weight:400;-webkit-font-smoothing:antialiased;}
+a{color:var(--olive);} strong{font-weight:700;color:var(--olive-dk);} em{color:var(--sage-dk);}
+:focus-visible{outline:2px solid var(--gilt);outline-offset:2px;}
+.topbar{position:sticky;top:0;z-index:30;background:rgba(248,243,230,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--cream-dp);}
+.topbar .in{max-width:1100px;margin:0 auto;padding:11px 20px;display:flex;align-items:center;gap:12px;}
+.topbar img{height:22px;display:block;}
+.topbar .sp{flex:1;}
+.topbar .tag{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);}
+.backlink{font-weight:800;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--olive-dk);text-decoration:none;border:1px solid var(--cream-dp);background:var(--card);border-radius:20px;padding:7px 14px;white-space:nowrap;line-height:1;transition:border-color .18s,color .18s;}
+.backlink:hover{border-color:var(--gilt-lt);color:var(--gilt);}
+@media(max-width:430px){.topbar .tag{display:none;}}
+.shell{display:flex;gap:34px;max-width:1100px;margin:0 auto;padding:0 20px;align-items:flex-start;}
+.side{flex:0 0 252px;width:252px;position:sticky;top:56px;align-self:flex-start;height:calc(100vh - 66px);overflow:hidden;background:linear-gradient(165deg,#5b5c2a,#3b3c1b);color:var(--cream);border-radius:0 0 16px 16px;padding:18px 18px 16px;display:flex;flex-direction:column;}
+.side .nav{flex:1 1 auto;overflow-y:auto;min-height:0;scrollbar-width:thin;scrollbar-color:rgba(248,243,230,.28) transparent;}
+.side .nav::-webkit-scrollbar{width:6px;} .side .nav::-webkit-scrollbar-thumb{background:rgba(248,243,230,.28);border-radius:3px;}
+.side .brand{display:block;margin-bottom:14px;}
+.side .brand img{width:100%;max-width:148px;height:auto;display:block;}
+.side .st{font-weight:800;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt-lt);margin:13px 0 6px;padding-top:11px;border-top:1px solid rgba(248,243,230,.18);}
+.side .st.first{margin-top:0;padding-top:0;border-top:none;}
+.side a{display:block;text-decoration:none;color:var(--cream);padding:8px 11px;border-radius:9px;font-size:14.5px;font-weight:700;line-height:1.25;margin-bottom:3px;border:1px solid transparent;}
+.side a .s{display:block;font-size:11.8px;font-weight:400;color:#d9d3bd;margin-top:2px;line-height:1.3;}
+.side a:hover{background:rgba(248,243,230,.10);}
+.side a.on{background:var(--cream);color:var(--olive-dk);border-color:var(--cream);}
+.side a.on .s{color:var(--muted);}
+.side .home{font-weight:800;font-size:12.5px;letter-spacing:.02em;padding:5px 11px;}
+.side .navlink{font-weight:700;font-size:13px;color:#e7e1cb;padding:5px 11px;}
+.side .sig{flex:0 0 auto;margin-top:12px;padding-top:12px;border-top:1px solid rgba(248,243,230,.18);display:flex;align-items:center;gap:11px;}
+.side .sig img{width:40px;height:40px;flex:none;border-radius:50%;object-fit:cover;object-position:center 18%;border:2px solid rgba(248,243,230,.35);}
+.side .sig .who{font-weight:800;font-size:12.5px;color:var(--cream);line-height:1.3;}
+.side .sig .who span{display:block;font-weight:400;font-size:11.5px;color:#cfc9b2;letter-spacing:.04em;margin-top:2px;}
+.side .sub{display:block;margin-top:10px;text-align:center;background:var(--cream);color:var(--olive-dk);font-weight:800;font-size:13px;letter-spacing:.02em;text-decoration:none;padding:10px 14px;border-radius:22px;transition:background .18s;}
+.side .sub:hover{background:#fff;color:var(--olive-dk);}
+.main{flex:1 1 auto;max-width:730px;width:100%;padding:0 0 50px;}
+.toc-fab{display:none;} .overlay{display:none;}
+@media(max-width:960px){
+ .shell{display:block;padding:0;} .main{max-width:760px;margin:0 auto;padding:0 20px 50px;}
+ .side{position:fixed;top:0;left:0;height:100vh;width:292px;z-index:60;transform:translateX(-100%);transition:transform .25s;box-shadow:2px 0 22px rgba(0,0,0,.28);padding:26px 22px;max-height:none;border-radius:0;}
+ .side.open{transform:none;}
+ .toc-fab{display:block;position:fixed;bottom:18px;right:18px;z-index:50;background:var(--olive-dk);color:var(--cream);font-weight:800;font-size:13px;letter-spacing:.04em;border:none;border-radius:30px;padding:13px 20px;box-shadow:0 4px 14px rgba(0,0,0,.24);cursor:pointer;}
+ .overlay{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:55;opacity:0;pointer-events:none;transition:opacity .25s;}
+ .overlay.open{display:block;opacity:1;pointer-events:auto;}
+}
+@media(min-width:961px) and (max-height:820px){
+ .side a .s{display:none;}
+ .side .brand{margin-bottom:10px;} .side .brand img{max-width:132px;}
+ .side .st{margin:10px 0 5px;padding-top:9px;}
+}
+@media(min-width:961px) and (max-height:680px){
+ .side .sig img{display:none;} .side .brand{display:none;}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;}}
+.hero{padding:40px 0 6px;}
+.hero .kick{font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:12px;color:var(--gilt);margin:0 0 14px;}
+.hero h1{font-weight:800;font-size:46px;line-height:1.03;letter-spacing:-.022em;color:var(--ink);margin:0 0 16px;}
+.hero h1 .ac{color:var(--olive);}
+.hero p{color:var(--muted);font-size:17.5px;max-width:620px;margin:0;}
+.divider{width:56px;height:3px;background:var(--gilt-lt);border-radius:2px;margin:26px 0 4px;}
+h2{font-weight:800;color:var(--ink);font-size:25px;letter-spacing:-.015em;line-height:1.15;margin:38px 0 10px;scroll-margin-top:74px;}
+h3{font-weight:800;color:var(--olive);font-size:17px;letter-spacing:-.005em;margin:26px 0 6px;}
+p{margin:0 0 12px;}
+ul.clean{list-style:none;padding:0;margin:10px 0 14px;}
+ul.clean li{position:relative;padding:0 0 10px 26px;}
+ul.clean li::before{content:"\03A8";font-weight:800;color:var(--gilt);position:absolute;left:0;top:0;}
+.pull{font-weight:800;color:var(--olive-dk);font-size:23px;line-height:1.3;letter-spacing:-.015em;border-left:4px solid var(--gilt-lt);padding:6px 0 6px 20px;margin:28px 0;}
+.portas{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:26px 0 8px;}
+@media(max-width:720px){.portas{grid-template-columns:1fr;}}
+.porta{display:block;text-decoration:none;background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:20px 18px;transition:border-color .18s,transform .18s;}
+.porta:hover{border-color:var(--sage);transform:translateY(-2px);}
+.porta .pk{font-weight:800;font-size:16px;letter-spacing:-.01em;color:var(--ink);line-height:1.2;}
+.porta .pd{font-size:14.5px;color:var(--muted);margin-top:8px;line-height:1.45;}
+.porta .pa{display:block;margin-top:14px;font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gilt);}
+.temas{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0;}
+@media(max-width:560px){.temas{grid-template-columns:1fr;}}
+.tema{display:flex;flex-direction:column;text-decoration:none;background:var(--card);border:1px solid var(--cream-dp);border-top:4px solid var(--sage);border-radius:14px;padding:18px 18px 16px;transition:border-top-color .18s,box-shadow .18s,transform .18s;}
+.tema:hover{border-top-color:var(--olive);box-shadow:0 2px 14px rgba(67,68,31,.08);transform:translateY(-2px);}
+.tema .tk{font-weight:800;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gilt);}
+.tema .tt{font-weight:800;font-size:19px;letter-spacing:-.015em;color:var(--ink);margin:6px 0 5px;line-height:1.2;}
+.tema .td{font-size:14px;color:var(--muted);line-height:1.45;flex:1 1 auto;}
+.tema .tm{margin-top:12px;padding-top:10px;border-top:1px solid var(--cream-dp);font-weight:700;font-size:12.5px;color:var(--sage-dk);}
+.book{background:var(--cream-dp);border-radius:14px;padding:18px 20px;margin:18px 0 24px;}
+.book .bk{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:7px;}
+.book .bt{font-weight:800;font-size:19px;letter-spacing:-.015em;color:var(--ink);margin-bottom:4px;line-height:1.2;}
+.book .bsub{color:var(--muted);font-size:14px;margin-bottom:14px;line-height:1.4;}
+.book a{display:inline-block;font-weight:800;font-size:12.5px;letter-spacing:.02em;color:var(--cream);background:var(--olive);padding:11px 22px;border-radius:26px;text-decoration:none;}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0;}
+@media(max-width:560px){.cards{grid-template-columns:1fr;}}
+.card{background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:6px;}
+.card.live{border-color:var(--sage);box-shadow:0 2px 12px rgba(67,68,31,.06);}
+.card:not(.live){opacity:.7;}
+.card .ct{display:flex;align-items:center;justify-content:space-between;min-height:26px;}
+.card .n{font-weight:800;font-size:24px;color:var(--sage-dk);line-height:1;letter-spacing:-.02em;}
+.card .dt{font-weight:800;font-size:12px;letter-spacing:.1em;color:var(--gilt);}
+.card.bydate .dt{font-size:15px;color:var(--sage-dk);}
+.card .tt{font-weight:800;color:var(--ink);font-size:16.5px;line-height:1.25;letter-spacing:-.01em;margin-top:2px;}
+.card .pr{color:var(--muted);font-size:13.5px;}
+.card .acts{display:flex;gap:8px;margin-top:10px;}
+.card .go,.card .pdf{font-weight:800;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;padding:9px 16px;border-radius:20px;text-decoration:none;}
+.card .go{color:var(--cream);background:var(--olive);} .card .pdf{color:var(--olive-dk);border:1.5px solid var(--gilt-lt);}
+.card .soon{font-weight:800;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:10px;}
+.empty{background:var(--card);border:1px dashed var(--cream-dp);border-radius:14px;padding:26px;text-align:center;color:var(--muted);}
+.cta{position:relative;overflow:hidden;border-radius:16px;margin:30px 0 8px;background:linear-gradient(150deg,#5b5c2a,#43441f);color:var(--cream);display:grid;grid-template-columns:minmax(0,290px) minmax(0,1fr);}
+.cta .ph{width:100%;height:100%;min-height:330px;object-fit:cover;object-position:center 22%;display:block;opacity:.95;}
+.cta .in{padding:26px 26px 28px;align-self:center;}
+.cta .in .k{color:#ddd6bf;margin-bottom:6px;font-size:14.5px;}
+.cta .in h3{font-weight:800;font-size:22px;letter-spacing:-.015em;color:var(--cream);margin:0 0 14px;}
+.cta ul{list-style:none;padding:0;margin:0 0 18px;}
+.cta li{position:relative;padding:0 0 10px 24px;font-size:14.5px;color:#f1ecdc;line-height:1.45;}
+.cta li::before{content:"\03A8";color:var(--gilt-lt);position:absolute;left:0;font-weight:800;}
+.cta a.go{display:block;text-align:center;background:var(--cream);color:var(--olive-dk);font-weight:800;font-size:14.5px;text-decoration:none;padding:14px;border-radius:28px;}
+@media(max-width:720px){.cta{grid-template-columns:1fr;} .cta .ph{min-height:230px;height:230px;}}
+.foot{text-align:center;color:var(--muted);font-size:12.5px;margin-top:38px;padding-top:20px;border-top:1px solid var(--cream-dp);}
+.foot .foot-logo{height:30px;width:auto;display:inline-block;margin-bottom:8px;}
+.contato{margin-top:14px;font-size:12.5px;color:var(--muted);line-height:1.7;}
+.contato a{color:var(--gilt);text-decoration:none;} .contato .cnpj{font-size:11.5px;opacity:.85;}
+
+.mhero{padding:36px 0 4px;}
+.mhero .kick{font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:11.5px;color:var(--gilt);margin:0 0 12px;}
+.mhero h1{font-weight:800;font-size:42px;line-height:1.04;letter-spacing:-.022em;color:var(--ink);margin:0 0 10px;}
+.mhero .sub{font-weight:700;font-size:19px;color:var(--sage-dk);line-height:1.3;margin:0 0 12px;letter-spacing:-.01em;}
+.mhero .meta{font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);}
+.mhero .tema{margin:18px 0 0;padding-left:18px;border-left:4px solid var(--cream-dp);color:var(--muted);font-size:16.5px;}
+.usar{background:var(--cream-dp);border-radius:12px;padding:16px 18px;margin:24px 0 14px;font-size:14.5px;color:var(--muted);line-height:1.55;}
+.usar b{display:block;font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--olive-dk);margin-bottom:6px;}
+.pdfbtn{display:inline-block;font-weight:800;font-size:13px;letter-spacing:.02em;color:var(--cream);background:var(--olive);padding:13px 24px;border-radius:26px;text-decoration:none;}
+.ess{background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:20px 22px;margin:26px 0;}
+.ess .et{font-weight:800;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gilt);margin-bottom:12px;}
+.ess ul{list-style:none;padding:0;margin:0;}
+.ess li{position:relative;padding:0 0 12px 26px;font-size:15.8px;line-height:1.5;}
+.ess li:last-child{padding-bottom:0;}
+.ess li::before{content:"\03A8";position:absolute;left:0;top:0;color:var(--gilt-lt);font-weight:800;}
+details.sec{border-bottom:1px solid var(--cream-dp);}
+details.sec[open]{padding-bottom:16px;}
+details.sec summary{list-style:none;cursor:pointer;padding:18px 0;display:flex;align-items:baseline;gap:12px;}
+details.sec summary::-webkit-details-marker{display:none;}
+details.sec summary h2{font-weight:800;font-size:21px;letter-spacing:-.015em;color:var(--ink);margin:0;line-height:1.2;flex:1;}
+details.sec summary .arw{color:var(--gilt);font-weight:800;font-size:13px;transition:transform .2s;}
+details.sec[open] summary .arw{transform:rotate(90deg);}
+details.sec .lead{color:var(--sage-dk);font-weight:500;margin:0 0 14px;font-size:16px;}
+details.sec p{font-size:16.5px;}
+ul.key{list-style:none;padding:0;margin:12px 0;}
+ul.key li{position:relative;padding:0 0 11px 26px;font-size:16px;line-height:1.5;}
+ul.key li::before{content:"\03A8";position:absolute;left:0;top:0;color:var(--gilt);font-weight:800;}
+.dial{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0;}
+@media(max-width:620px){.dial{grid-template-columns:1fr;}}
+.dial .d{background:var(--card);border:1px solid var(--cream-dp);border-top:3px solid var(--sage);border-radius:12px;padding:14px 16px;}
+.dial .dt{font-weight:800;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--olive-dk);margin-bottom:7px;}
+.dial p{margin:0;font-size:14.5px;color:var(--muted);line-height:1.45;}
+.obs{background:var(--cream-dp);border-radius:12px;padding:16px 18px;margin:18px 0;}
+.obs h4{font-weight:800;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--olive-dk);margin:0 0 7px;}
+.obs p{margin:0;font-size:15.5px;}
+.callout{background:var(--card);border-left:4px solid var(--gilt-lt);border-radius:0 12px 12px 0;padding:16px 18px;margin:20px 0;font-size:15.5px;line-height:1.55;}
+.callout .co-t{font-weight:800;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--gilt);margin-bottom:7px;}
+span.ref{font-size:13.5px;color:var(--muted);}
+/* diagrama */
+figure.dg{margin:24px 0;background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:18px 16px 12px;}
+figure.dg svg{width:100%;height:auto;display:block;}
+figure.dg figcaption{margin-top:10px;font-size:13px;color:var(--muted);text-align:center;line-height:1.45;}
+.dg-t{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:10px;text-align:center;}
+/* ferramentas */
+.tools{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:32px 0 0;}
+@media(max-width:720px){.tools{grid-template-columns:1fr;}}
+.tool{background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:20px;}
+.tool .tt{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:14px;}
+.ck{display:flex;gap:11px;align-items:flex-start;padding:9px 0;font-size:15px;line-height:1.45;cursor:pointer;}
+.ck input{margin:4px 0 0;accent-color:var(--olive);width:17px;height:17px;flex:none;cursor:pointer;}
+.ck.done span{text-decoration:line-through;opacity:.5;}
+.qz{margin-bottom:18px;} .qz:last-child{margin-bottom:0;}
+.qz p{font-size:15px;margin:0 0 7px;line-height:1.45;font-weight:500;}
+.qz textarea{width:100%;min-height:66px;border:1px solid var(--cream-dp);border-radius:10px;background:var(--cream);font-family:inherit;font-size:14.5px;color:var(--ink);padding:10px 12px;resize:vertical;line-height:1.5;}
+.qz textarea:focus{outline:2px solid var(--gilt-lt);outline-offset:1px;}
+.savebar{display:flex;align-items:center;gap:12px;margin-top:16px;flex-wrap:wrap;}
+.savebar button{font-weight:800;font-size:11px;letter-spacing:.08em;text-transform:uppercase;border:1.5px solid var(--cream-dp);background:none;color:var(--olive-dk);border-radius:22px;padding:10px 18px;cursor:pointer;font-family:inherit;}
+.savebar button:hover{border-color:var(--gilt-lt);color:var(--gilt);}
+.saved{font-weight:800;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--sage-dk);opacity:0;transition:opacity .3s;}
+.saved.on{opacity:1;}
+.refs h2,.nmet h2{font-weight:800;font-size:21px;letter-spacing:-.015em;color:var(--ink);margin:34px 0 10px;}
+.refs ol{padding-left:20px;font-size:13.8px;color:var(--muted);line-height:1.6;}
+.refs li{margin-bottom:9px;}
+.nmet{background:var(--card);border-left:4px solid var(--gilt-lt);border-radius:0 12px 12px 0;padding:16px 20px;margin:26px 0 0;font-size:14px;color:var(--muted);line-height:1.6;}
+.nmet b{display:block;font-weight:800;font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--olive-dk);margin-bottom:7px;}
+.side .idx a{font-size:13.5px;font-weight:500;padding:7px 12px;line-height:1.3;}
+</style></head><body><div class='topbar'><div class='in'><a href='/'><img alt='Lógica Psicológica' src='/assets/logo.png'></a><a class='backlink' href='/supervisoes/' title='Voltar para Supervisões'>&#8592; Voltar</a><div class='sp'></div><div class='tag'>Supervisão Clínica</div></div></div><div class='shell'><aside class='side' id='side'><a class='brand' href='/'><img alt='Lógica Psicológica' src='/assets/logo-creme.png'></a><div class='nav'><div class='st first'>Navegação</div><a class='home' href='/supervisoes/'>&#8592; Supervisões</a><a class='navlink' href='/'>Início do portal</a><div class='st'>Neste material</div><div class='idx'><a href='#s0'>O caso, em uma página</a><a href='#s1'>Como a crença se sustenta hoje</a><a href='#s2'>A ordem da intervenção</a><a href='#s3'>O risco que ninguém vê</a><a href='#s4'>O que fica para a sua clínica</a></div></div><div class='sig'><img alt='Prof. Júlio Gonçalves' src='/assets/julio.jpg'><div class='who'>Prof. Júlio Gonçalves<span>MSc · CRP 12/17614</span></div></div><a class='sub' href='https://psicojulio.com/comunidade-logica-psicologica/' target='_blank' rel='noopener'>Inscreva-se</a></aside><main class='main'><div class='mhero'><div class='kick'>Supervisão clínica · Lógica Psicológica</div><h1>Defeito e culpa</h1><div class='sub'>17 de março de 2026</div><div class='meta'>Supervisão de caso · Mediação de Prof. Júlio Gonçalves · Terapia Baseada em Processos</div><p class='tema'>Comportamentos muito diferentes entre si cumprindo a mesma função: provar que não se é defeituosa. A supervisão organiza a rede e define a ordem — regular antes de reestruturar, reestruturar antes de esquema.</p></div><div class='obs' style='margin-bottom:18px'><h4>Sobre a desidentificação</h4><p>Este material é de estudo. O caso foi <strong>desidentificado</strong>: idade aproximada, ocupação, composição familiar, marcadores culturais e a forma concreta dos comportamentos foram generalizados ou substituídos. O que se preserva é a <strong>função</strong> dos processos e o raciocínio clínico — que é o que se aprende. O nome da terapeuta supervisionada não é mencionado.</p></div><div class='usar'><b>Como usar</b>Abra as seções que quiser ler, marque o que pretende aplicar e responda o que fizer sentido. Tudo fica salvo neste aparelho — ninguém mais vê.</div><a class='pdfbtn' href='resumo.pdf'>&#8681; Baixar em PDF</a><div class='ess'><div class='et'>O essencial</div><ul><li><strong>Comportamentos distintos, função idêntica.</strong> Trocar de emprego com frequência e uma relação extraconjugal anterior cumpriam o mesmo papel: <em>testar o próprio valor</em>.</li><li><strong>A crença central é de defeito herdado.</strong> “Sou filha de alguém ruim” vira “eu sou um produto ruim” — e tudo o que ela faz passa a ser teste dessa hipótese.</li><li><strong>Ela não tem, hoje, nenhum lugar de alívio.</strong> Interrompeu os comportamentos compensatórios sem repertório substituto. Isso é risco, não progresso.</li><li><strong>A ordem da intervenção é a decisão clínica principal:</strong> psicoeducação da rede e regulação emocional primeiro; reestruturação depois; esquema muito depois.</li><li><strong>Confrontar a idealização dos pais cedo demais aumenta a culpa.</strong> Sem estima e autonomia suficientes, o paciente não redistribui responsabilidade — ele a puxa para si.</li></ul></div><details class='sec' id='s0' open><summary><h2>O caso, em uma página</h2><span class='arw'>&#9656;</span></summary>
+<p>Mulher na casa dos 30, casada, com filhos, profissional da área da saúde em regime de turnos alternados, incluindo trabalho noturno. Procurou terapia por <strong>crises de ansiedade</strong> e por episódios de tristeza profunda ligados a eventos específicos. Fez uma pausa de dois meses e retornou relatando as crises — sem menção à tristeza.</p>
+<p>As crises cursam com tremores, taquicardia, falta de ar, náusea e cefaleia. Há comportamentos ansiosos desde a infância, com um padrão de manipulação do próprio cabelo que se mantém, de forma atenuada, até hoje.</p>
+<h3>A história que organizou a crença</h3>
+<ul class='key'><li>O <b>pai</b> era ausente, e foi descrito pela família como alguém que não foi bom marido nem bom padrasto para as filhas mais velhas da mãe. Falecido.</li><li>Ela é a <b>filha mais nova desse pai</b> — e, dentro de casa, era a que ele tratava de modo diferente das outras.</li><li>Uma <b>irmã participou da criação</b> e era agressiva com ela por coisas pequenas consideradas fora do lugar.</li><li>Com a <b>mãe</b>, mantinha uma relação descrita genericamente como de amizade; ela evita entrar em aspectos difíceis dessa relação.</li></ul>
+<div class='callout note'><div class='co-t'>A engrenagem que a supervisão nomeou</div>As figuras de conexão viam nela <strong>o espelho do pai</strong>. A crítica não vinha de fora: vinha de quem deveria ser vínculo. Ela internaliza a identidade negativa dele — “sou filha de alguém ruim” — e isso se converte na crença nuclear de <strong>ser um produto ruim</strong>, defeituosa por herança.</div>
+</details><details class='sec' id='s1'><summary><h2>Como a crença se sustenta hoje</h2><span class='arw'>&#9656;</span></summary>
+<h3>Atenção e comparação</h3>
+<p>Ela se compara constantemente — com irmãs, colegas de trabalho, pessoas da comunidade religiosa. E absorve comentários críticos que <strong>nem sequer são dirigidos a ela</strong>: uma crítica feita a uma terceira pessoa é processada como ameaça de desaprovação. É um estreitamento atencional operando a serviço da crença.</p>
+<p>Some-se a isso a regra de que ela não teria <em>direito</em> de se sentir mal, já que “tem tudo”. O sofrimento, além de existir, é ilegítimo — o que impede pedir ajuda e reforça o isolamento.</p>
+<h3>Os comportamentos compensatórios</h3>
+<p>Dois padrões aparentemente sem relação entre si:</p>
+<ul class='key'><li><b>Troca frequente de emprego</b>, atribuída ao gosto por novidade.</li><li><b>Uma relação extraconjugal anterior</b>, com um colega, na qual ela podia “ser ela mesma” sem a exigência de perfeição que sustenta no casamento.</li></ul>
+<p>A leitura da supervisão é que <strong>os dois cumprem a mesma função</strong>: testar o próprio valor, provar que não é defeituosa. São testes de competência da crença. Sobre a relação extraconjugal, há um detalhe funcional que confirma a hipótese — a escolha do parceiro recaiu sobre alguém que ela avaliava como menos disputado, para que fosse “só dela”. Não era desejo: era garantia de não rejeição.</p>
+<div class='obs'><h4>Um ponto que exige cuidado</h4><p>Essa relação <strong>tornou-se coercitiva</strong>: houve registro de imagens sem consentimento, usado como forma de pressão quando ela tentou se afastar. Isso não é apenas “um caso extraconjugal” na história clínica — é violência, e merece nomeação como tal na formulação, ainda que o trabalho terapêutico atual esteja em outro ponto.</p></div>
+<h3>Evitação e sobrecarga</h3>
+<p>Nas crises, isola-se e usa o sono como enfrentamento. Evita contatos sociais fora do trabalho e da comunidade religiosa, não gosta de receber visitas e não fala das próprias dificuldades com a família — para manter a imagem de quem tem domínio da própria vida e não expor a identidade vulnerável.</p>
+<p>O ciclo se fecha assim: comparação e cobrança ativam a crença → ela produz mais para provar que não é defeituosa → a sobrecarga fisiológica e o turno noturno desregulam → a crise chega → o isolamento protege a imagem → e a crença sai da rodada intacta.</p>
+<p>A exigência de perfeição, aliás, transborda para a maternidade: aparece também na cobrança em relação ao desenvolvimento de um dos filhos, alimentada por comentários da família.</p>
+</details><details class='sec' id='s2'><summary><h2>A ordem da intervenção</h2><span class='arw'>&#9656;</span></summary>
+<p>A pergunta que a supervisão respondeu não foi “qual técnica”, e sim <strong>em que ordem</strong>. E a resposta é uma sequência com justificativa clínica em cada degrau.</p>
+<h3>1. Psicoeducação da rede</h3>
+<p>Mostrar a ela como gatilhos sociais levam à ruminação e à comparação, ativando a identidade vulnerável. Isso vem antes de qualquer técnica de mudança de conteúdo, e tem valor próprio: torna o padrão visível de fora.</p>
+<h3>2. Contexto e história, por questionamento socrático</h3>
+<p>Perguntas que deslocam a responsabilidade da pessoa para a história: <em>em que você difere do seu pai? Que características ele tinha que você não tem?</em> O objetivo é gerar contraponto e romper a ideia de <strong>herança imutável</strong> — um destino que ela não escolheu e que não pode mudar.</p>
+<h3>3. Regulação emocional</h3>
+<p>Antes que a crise escale. A terapeuta já vinha introduzindo recursos de <strong>aterramento sensorial</strong> para trazê-la ao presente quando a comparação dispara, escolhendo o que fosse discreto e viável no ambiente de trabalho — critério de aplicabilidade que costuma decidir se a estratégia é usada ou não.</p>
+<h3>4. Reestruturação cognitiva clássica</h3>
+<ul class='key'><li><b>Exame de evidências</b> sobre a crença de ser defeituosa.</li><li><b>Contínuo cognitivo</b>: definir a crença, posicionar pessoas conhecidas num espectro de 0 a 100 e depois posicionar-se, para tornar visível a discrepância entre o que a crença afirma e o que a realidade sustenta.</li><li><b>Experimentos comportamentais</b> para testar pensamentos do tipo “isso é sobre mim” ou “fui ruim em fazer isso”.</li><li><b>Irreverência</b>, com cuidado, para questionar a exigência de perfeição estendida aos filhos: uma criança precisa mesmo ser perfeita?</li></ul>
+<h3>5. Esquema — mais adiante</h3>
+<div class='callout note'><div class='co-t'>Por que não trabalhar esquema agora</div>Ela ainda apresenta muita desregulação e comparação. E há um risco específico em confrontar cedo a idealização dos pais: sem estima, independência e autonomia suficientes, o paciente <strong>não redistribui a responsabilidade — ele a puxa para si</strong>. Em vez de reduzir culpa, o movimento a aumenta. Guardar para quando houver estrutura.</div>
+</details><details class='sec' id='s3'><summary><h2>O risco que ninguém vê</h2><span class='arw'>&#9656;</span></summary>
+<p>Há um dado no caso que merece destaque porque é fácil de ler como progresso: ela <strong>interrompeu os comportamentos compensatórios</strong> — encerrou a relação extraconjugal e restringiu contatos —, motivada pelo medo de perder a família.</p>
+<p>Só que isso significa que ela <strong>não tem, hoje, nenhum lugar de alívio</strong>. Ficou sem os recursos antigos e ainda não construiu os novos.</p>
+<div class='obs'><h4>A leitura correta</h4><p>Um paciente sem repertório para lidar com as próprias emoções é um paciente em risco, não um paciente melhorado. É o mesmo princípio que apareceu no caso de perfeccionismo e vergonha: <strong>retirar sem substituir deixa a vaga aberta</strong>. A pergunta clínica é sempre a mesma — quando a emoção vier, ela vai fazer o quê?</p></div>
+<p>Vale registrar também uma decisão de manejo bem tomada pela terapeuta: ela havia tentado uma técnica de escrita sobre a relação com o pai, a paciente se ativou muito e pausou o tratamento. No retorno, a terapeuta <strong>deixou o tema de lado deliberadamente</strong>, respeitando o tempo dela. Foi a leitura certa — e é exatamente o que fundamenta a ordem proposta na seção anterior.</p>
+<h3>Uma dúvida técnica que vale registrar</h3>
+<p>Surgiu na formulação a questão da <strong>direcionalidade das setas</strong> entre atenção, afeto e biofisiológico. A resposta: na prática, a seta é <strong>bidirecional</strong> — uma área retroalimenta a outra, e é essa reciprocidade que mantém o ciclo da desregulação. Numa rede, insistir em direção única costuma ser mais artefato de desenho do que achado clínico.</p>
+</details><details class='sec' id='s4'><summary><h2>O que fica para a sua clínica</h2><span class='arw'>&#9656;</span></summary>
+<ul class='key'><li><b>Procure a função, não o tema.</b> Trocar de emprego e uma relação paralela podem ser o mesmo comportamento, com roupas diferentes.</li><li><b>Crença de defeito herdado tem antídoto contextual:</b> devolver a história antes de discutir a evidência.</li><li><b>Paciente que parou de compensar precisa de substituto</b> — senão o que se ganhou em conduta se perde em risco.</li><li><b>Idealização dos pais não se confronta cedo.</b> Sem autonomia, o confronto vira culpa.</li><li><b>A ordem é a intervenção.</b> Boa parte do que separa supervisão útil de lista de técnicas é justamente decidir o que vem primeiro.</li></ul>
+</details><div class='tools'><div class='tool'><div class='tt'>Levar para a prática</div><label class='ck'><input type='checkbox'><span>Agrupei comportamentos topograficamente distintos que possam ter a mesma função.</span></label><label class='ck'><input type='checkbox'><span>Investiguei se a crença central é de defeito, e de onde ela foi herdada.</span></label><label class='ck'><input type='checkbox'><span>Verifiquei se a paciente absorve críticas dirigidas a terceiros como ameaça.</span></label><label class='ck'><input type='checkbox'><span>Checei se ela tem, hoje, algum recurso de alívio — e não só a retirada dos antigos.</span></label><label class='ck'><input type='checkbox'><span>Nomeei na formulação, com o termo correto, situações de violência presentes na história.</span></label><label class='ck'><input type='checkbox'><span>Fiz psicoeducação da rede antes de aplicar técnica de mudança de conteúdo.</span></label><label class='ck'><input type='checkbox'><span>Escolhi recursos de regulação que ela consiga usar no ambiente onde a crise ocorre.</span></label><label class='ck'><input type='checkbox'><span>Adiei trabalho de esquema até haver regulação e autonomia suficientes.</span></label></div><div class='tool'><div class='tt'>Para revisar — responda</div><div class='qz'><p>1. Que dois comportamentos diferentes de um paciente seu podem estar cumprindo a mesma função?</p><textarea placeholder='Sua resposta…'></textarea></div><div class='qz'><p>2. Como você faria psicoeducação da rede para alguém que acredita não ter direito de se sentir mal?</p><textarea placeholder='Sua resposta…'></textarea></div><div class='qz'><p>3. Escreva três perguntas socráticas para deslocar uma crença de defeito herdado.</p><textarea placeholder='Sua resposta…'></textarea></div><div class='qz'><p>4. Que paciente seu parou de compensar sem ter repertório substituto? O que você faria agora?</p><textarea placeholder='Sua resposta…'></textarea></div><div class='qz'><p>5. Como você montaria um contínuo cognitivo para a crença “sou um produto ruim”?</p><textarea placeholder='Sua resposta…'></textarea></div><div class='qz'><p>6. Que risco existe em confrontar a idealização dos pais antes da hora, e como você reconheceria esse momento?</p><textarea placeholder='Sua resposta…'></textarea></div><div class='qz'><p>7. Onde, na sua prática, você tem escolhido a técnica certa na ordem errada?</p><textarea placeholder='Sua resposta…'></textarea></div></div></div><div class='savebar'><button id='exp'>Exportar respostas</button><button id='lmp'>Limpar</button><span class='saved' id='saved'>Salvo neste aparelho</span></div><div class='refs'><h2>Referências</h2><ol><li>Beck, J. S. (2011). <em>Cognitive behavior therapy: Basics and beyond</em> (2ª ed.). Guilford Press.</li><li>Hayes, S. C., Hofmann, S. G., &amp; Ciarrochi, J. (2020). A process-based approach to psychological diagnosis and treatment. <em>Clinical Psychology Review, 82</em>, 101908.</li><li>Linehan, M. M. (2015). <em>DBT skills training manual</em> (2ª ed.). Guilford Press.</li><li>Nolen-Hoeksema, S., Wisco, B. E., &amp; Lyubomirsky, S. (2008). Rethinking rumination. <em>Perspectives on Psychological Science, 3</em>(5), 400–424.</li><li>Padesky, C. A. (1994). Schema change processes in cognitive therapy. <em>Clinical Psychology &amp; Psychotherapy, 1</em>(5), 267–278.</li><li>Young, J. E., Klosko, J. S., &amp; Weishaar, M. E. (2003). <em>Schema therapy: A practitioner's guide.</em> Guilford Press.</li></ol></div><div class='nmet'><b>Nota de método</b>Material de estudo desidentificado. Foram generalizados ou removidos: idade exata, ocupação específica, composição familiar detalhada, localidades, vínculos institucionais e dados sobre os filhos. A relação extraconjugal é mantida na formulação por ser central à leitura funcional do caso, descrita de forma genérica; o componente coercitivo é <strong>nomeado como violência</strong>, e não relativizado, ainda que a supervisão não o tenha tratado nesses termos — a acrescento aqui porque um material de estudo que reproduzisse a descrição sem nomeá-la ensinaria a não vê-la. Sobre a regulação emocional: a supervisão discutiu recursos concretos de aterramento sensorial, aqui descritos de forma genérica, porque estratégias baseadas em desconforto físico intenso pedem critério caso a caso e não devem ser adotadas como receita. O nome da terapeuta supervisionada e dos demais participantes não é mencionado. As referências foram acrescentadas para dar respaldo formal a intervenções discutidas sem citação explícita; nenhuma citação foi construída para preencher lacuna. Este material registra raciocínio clínico de supervisão e <strong>não substitui</strong> avaliação individualizada.</div><div class='cta'><img class='ph' alt='Prof. Júlio Gonçalves' src='/assets/julio.jpg'><div class='in'><div class='k'>Aprenda muito mais na</div><h3>Comunidade Lógica Psicológica</h3><ul><li>Aprofundar o raciocínio clínico com ciência, processos e análise funcional.</li><li>Estruturar uma prática ética, com pensamento crítico e evidências atualizadas.</li><li>Desenvolver o self clínico com supervisão, leituras guiadas e rede.</li></ul><a class='go' href='https://psicojulio.com/comunidade-logica-psicologica/' target='_blank' rel='noopener'>Participar da comunidade &#8594;</a></div></div><div class='foot'><img class='foot-logo' alt='Lógica Psicológica' src='/assets/logo.png'><div class='contato'><a href='mailto:contato@psicojulio.com'>contato@psicojulio.com</a> &middot; <a href='tel:+5547999338021'>(47) 99933-8021</a><br>Rua Concórdia, 703, São Vicente, Itajaí — 88309-645<br><span class='cnpj'>CNPJ 49.649.803/0001-60</span></div></div></main></div><button class='toc-fab' id='fab'>&#9776; Seções</button><div class='overlay' id='ov'></div><script>
+(function(){
+  var K='mat-Sup-2026-03-17-';
+  document.querySelectorAll('.ck input').forEach(function(c,i){
+    var k=K+'ck'+i;
+    try{ if(localStorage.getItem(k)==='1'){c.checked=true;c.closest('.ck').classList.add('done');} }catch(e){}
+    c.addEventListener('change',function(){
+      c.closest('.ck').classList.toggle('done',c.checked);
+      try{ localStorage.setItem(k,c.checked?'1':'0'); }catch(e){} flag();
+    });
+  });
+  document.querySelectorAll('.qz textarea').forEach(function(t,i){
+    var k=K+'q'+i;
+    try{ var v=localStorage.getItem(k); if(v)t.value=v; }catch(e){}
+    t.addEventListener('input',function(){ try{ localStorage.setItem(k,t.value); }catch(e){} flag(); });
+  });
+  var s=document.getElementById('saved'),tm;
+  function flag(){ if(!s)return; s.classList.add('on'); clearTimeout(tm); tm=setTimeout(function(){s.classList.remove('on');},1600); }
+  var b=document.getElementById('exp');
+  if(b) b.addEventListener('click',function(){
+    var out='RESPOSTAS — Defeito e culpa\n\n';
+    document.querySelectorAll('.qz').forEach(function(q){
+      out+= q.querySelector('p').innerText+'\n'+(q.querySelector('textarea').value||'(sem resposta)')+'\n\n';
+    });
+    var a=document.createElement('a');
+    a.href=URL.createObjectURL(new Blob([out],{type:'text/plain'}));
+    a.download='Sup-2026-03-17-respostas.txt'; a.click();
+  });
+  var l=document.getElementById('lmp');
+  if(l) l.addEventListener('click',function(){
+    if(!confirm('Apagar suas anotações deste material?'))return;
+    try{ Object.keys(localStorage).filter(function(k){return k.indexOf(K)===0;}).forEach(function(k){localStorage.removeItem(k);}); }catch(e){}
+    location.reload();
+  });
+  var f=document.getElementById('fab'),o=document.getElementById('ov'),sd=document.getElementById('side');
+  if(f)f.onclick=function(){sd.classList.toggle('open');o.classList.toggle('open');};
+  if(o)o.onclick=function(){sd.classList.remove('open');o.classList.remove('open');};
+})();
+</script></body></html>
