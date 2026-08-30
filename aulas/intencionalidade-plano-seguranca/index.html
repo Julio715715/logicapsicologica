@@ -1,0 +1,288 @@
+<!DOCTYPE html><html lang='pt-BR'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='icon' type='image/png' sizes='32x32' href='/favicon-32.png'><link rel='icon' type='image/png' sizes='192x192' href='/favicon-192.png'><link rel='apple-touch-icon' href='/apple-touch-icon.png'><link rel='icon' href='/favicon.ico' sizes='any'><link rel='preconnect' href='https://fonts.googleapis.com'><link rel='preconnect' href='https://fonts.gstatic.com' crossorigin><link href='https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500&display=swap' rel='stylesheet'><title>Avaliação da intencionalidade suicida e plano de segurança — Lógica Psicológica</title><style>
+:root{--olive:#5b5c2a;--olive-dk:#43441f;--sage:#9ca575;--sage-dk:#7c8054;--cream:#f8f3e6;--cream-dp:#efe7d3;--gilt:#a8894f;--gilt-lt:#c3a468;--ink:#2f2e24;--muted:#6c6a55;--card:#fffdf7;}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;} html,body{margin:0;padding:0;}
+body{font-family:'Plus Jakarta Sans',system-ui,-apple-system,Segoe UI,sans-serif;background:var(--cream);color:var(--ink);font-size:17px;line-height:1.62;font-weight:400;-webkit-font-smoothing:antialiased;}
+a{color:var(--olive);} strong{font-weight:700;color:var(--olive-dk);} em{color:var(--sage-dk);}
+:focus-visible{outline:2px solid var(--gilt);outline-offset:2px;}
+.topbar{position:sticky;top:0;z-index:30;background:rgba(248,243,230,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--cream-dp);}
+.topbar .in{max-width:1100px;margin:0 auto;padding:11px 20px;display:flex;align-items:center;gap:12px;}
+.topbar img{height:22px;display:block;}
+.topbar .sp{flex:1;}
+.topbar .tag{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);}
+.backlink{font-weight:800;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--olive-dk);text-decoration:none;border:1px solid var(--cream-dp);background:var(--card);border-radius:20px;padding:7px 14px;white-space:nowrap;line-height:1;transition:border-color .18s,color .18s;}
+.backlink:hover{border-color:var(--gilt-lt);color:var(--gilt);}
+@media(max-width:430px){.topbar .tag{display:none;}}
+.shell{display:flex;gap:34px;max-width:1100px;margin:0 auto;padding:0 20px;align-items:flex-start;}
+.side{flex:0 0 252px;width:252px;position:sticky;top:56px;align-self:flex-start;height:calc(100vh - 66px);overflow:hidden;background:linear-gradient(165deg,#5b5c2a,#3b3c1b);color:var(--cream);border-radius:0 0 16px 16px;padding:18px 18px 16px;display:flex;flex-direction:column;}
+.side .nav{flex:1 1 auto;overflow-y:auto;min-height:0;scrollbar-width:thin;scrollbar-color:rgba(248,243,230,.28) transparent;}
+.side .nav::-webkit-scrollbar{width:6px;} .side .nav::-webkit-scrollbar-thumb{background:rgba(248,243,230,.28);border-radius:3px;}
+.side .brand{display:block;margin-bottom:14px;}
+.side .brand img{width:100%;max-width:148px;height:auto;display:block;}
+.side .st{font-weight:800;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt-lt);margin:13px 0 6px;padding-top:11px;border-top:1px solid rgba(248,243,230,.18);}
+.side .st.first{margin-top:0;padding-top:0;border-top:none;}
+.side a{display:block;text-decoration:none;color:var(--cream);padding:8px 11px;border-radius:9px;font-size:14.5px;font-weight:700;line-height:1.25;margin-bottom:3px;border:1px solid transparent;}
+.side a .s{display:block;font-size:11.8px;font-weight:400;color:#d9d3bd;margin-top:2px;line-height:1.3;}
+.side a:hover{background:rgba(248,243,230,.10);}
+.side a.on{background:var(--cream);color:var(--olive-dk);border-color:var(--cream);}
+.side a.on .s{color:var(--muted);}
+.side .home{font-weight:800;font-size:12.5px;letter-spacing:.02em;padding:5px 11px;}
+.side .navlink{font-weight:700;font-size:13px;color:#e7e1cb;padding:5px 11px;}
+.side .sig{flex:0 0 auto;margin-top:12px;padding-top:12px;border-top:1px solid rgba(248,243,230,.18);display:flex;align-items:center;gap:11px;}
+.side .sig img{width:40px;height:40px;flex:none;border-radius:50%;object-fit:cover;object-position:center 18%;border:2px solid rgba(248,243,230,.35);}
+.side .sig .who{font-weight:800;font-size:12.5px;color:var(--cream);line-height:1.3;}
+.side .sig .who span{display:block;font-weight:400;font-size:11.5px;color:#cfc9b2;letter-spacing:.04em;margin-top:2px;}
+.side .sub{display:block;margin-top:10px;text-align:center;background:var(--cream);color:var(--olive-dk);font-weight:800;font-size:13px;letter-spacing:.02em;text-decoration:none;padding:10px 14px;border-radius:22px;transition:background .18s;}
+.side .sub:hover{background:#fff;color:var(--olive-dk);}
+.main{flex:1 1 auto;max-width:730px;width:100%;padding:0 0 50px;}
+.toc-fab{display:none;} .overlay{display:none;}
+@media(max-width:960px){
+ .shell{display:block;padding:0;} .main{max-width:760px;margin:0 auto;padding:0 20px 50px;}
+ .side{position:fixed;top:0;left:0;height:100vh;width:292px;z-index:60;transform:translateX(-100%);transition:transform .25s;box-shadow:2px 0 22px rgba(0,0,0,.28);padding:26px 22px;max-height:none;border-radius:0;}
+ .side.open{transform:none;}
+ .toc-fab{display:block;position:fixed;bottom:18px;right:18px;z-index:50;background:var(--olive-dk);color:var(--cream);font-weight:800;font-size:13px;letter-spacing:.04em;border:none;border-radius:30px;padding:13px 20px;box-shadow:0 4px 14px rgba(0,0,0,.24);cursor:pointer;}
+ .overlay{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:55;opacity:0;pointer-events:none;transition:opacity .25s;}
+ .overlay.open{display:block;opacity:1;pointer-events:auto;}
+}
+@media(min-width:961px) and (max-height:820px){
+ .side a .s{display:none;}
+ .side .brand{margin-bottom:10px;} .side .brand img{max-width:132px;}
+ .side .st{margin:10px 0 5px;padding-top:9px;}
+}
+@media(min-width:961px) and (max-height:680px){
+ .side .sig img{display:none;} .side .brand{display:none;}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;}}
+.hero{padding:40px 0 6px;}
+.hero .kick{font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:12px;color:var(--gilt);margin:0 0 14px;}
+.hero h1{font-weight:800;font-size:46px;line-height:1.03;letter-spacing:-.022em;color:var(--ink);margin:0 0 16px;}
+.hero h1 .ac{color:var(--olive);}
+.hero p{color:var(--muted);font-size:17.5px;max-width:620px;margin:0;}
+.divider{width:56px;height:3px;background:var(--gilt-lt);border-radius:2px;margin:26px 0 4px;}
+h2{font-weight:800;color:var(--ink);font-size:25px;letter-spacing:-.015em;line-height:1.15;margin:38px 0 10px;scroll-margin-top:74px;}
+h3{font-weight:800;color:var(--olive);font-size:17px;letter-spacing:-.005em;margin:26px 0 6px;}
+p{margin:0 0 12px;}
+ul.clean{list-style:none;padding:0;margin:10px 0 14px;}
+ul.clean li{position:relative;padding:0 0 10px 26px;}
+ul.clean li::before{content:"\03A8";font-weight:800;color:var(--gilt);position:absolute;left:0;top:0;}
+.pull{font-weight:800;color:var(--olive-dk);font-size:23px;line-height:1.3;letter-spacing:-.015em;border-left:4px solid var(--gilt-lt);padding:6px 0 6px 20px;margin:28px 0;}
+.portas{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:26px 0 8px;}
+@media(max-width:720px){.portas{grid-template-columns:1fr;}}
+.porta{display:block;text-decoration:none;background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:20px 18px;transition:border-color .18s,transform .18s;}
+.porta:hover{border-color:var(--sage);transform:translateY(-2px);}
+.porta .pk{font-weight:800;font-size:16px;letter-spacing:-.01em;color:var(--ink);line-height:1.2;}
+.porta .pd{font-size:14.5px;color:var(--muted);margin-top:8px;line-height:1.45;}
+.porta .pa{display:block;margin-top:14px;font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gilt);}
+.temas{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0;}
+@media(max-width:560px){.temas{grid-template-columns:1fr;}}
+.tema{display:flex;flex-direction:column;text-decoration:none;background:var(--card);border:1px solid var(--cream-dp);border-top:4px solid var(--sage);border-radius:14px;padding:18px 18px 16px;transition:border-top-color .18s,box-shadow .18s,transform .18s;}
+.tema:hover{border-top-color:var(--olive);box-shadow:0 2px 14px rgba(67,68,31,.08);transform:translateY(-2px);}
+.tema .tk{font-weight:800;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gilt);}
+.tema .tt{font-weight:800;font-size:19px;letter-spacing:-.015em;color:var(--ink);margin:6px 0 5px;line-height:1.2;}
+.tema .td{font-size:14px;color:var(--muted);line-height:1.45;flex:1 1 auto;}
+.tema .tm{margin-top:12px;padding-top:10px;border-top:1px solid var(--cream-dp);font-weight:700;font-size:12.5px;color:var(--sage-dk);}
+.book{background:var(--cream-dp);border-radius:14px;padding:18px 20px;margin:18px 0 24px;}
+.book .bk{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:7px;}
+.book .bt{font-weight:800;font-size:19px;letter-spacing:-.015em;color:var(--ink);margin-bottom:4px;line-height:1.2;}
+.book .bsub{color:var(--muted);font-size:14px;margin-bottom:14px;line-height:1.4;}
+.book a{display:inline-block;font-weight:800;font-size:12.5px;letter-spacing:.02em;color:var(--cream);background:var(--olive);padding:11px 22px;border-radius:26px;text-decoration:none;}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0;}
+@media(max-width:560px){.cards{grid-template-columns:1fr;}}
+.card{background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:6px;}
+.card.live{border-color:var(--sage);box-shadow:0 2px 12px rgba(67,68,31,.06);}
+.card:not(.live){opacity:.7;}
+.card .ct{display:flex;align-items:center;justify-content:space-between;min-height:26px;}
+.card .n{font-weight:800;font-size:24px;color:var(--sage-dk);line-height:1;letter-spacing:-.02em;}
+.card .dt{font-weight:800;font-size:12px;letter-spacing:.1em;color:var(--gilt);}
+.card.bydate .dt{font-size:15px;color:var(--sage-dk);}
+.card .tt{font-weight:800;color:var(--ink);font-size:16.5px;line-height:1.25;letter-spacing:-.01em;margin-top:2px;}
+.card .pr{color:var(--muted);font-size:13.5px;}
+.card .acts{display:flex;gap:8px;margin-top:10px;}
+.card .go,.card .pdf{font-weight:800;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;padding:9px 16px;border-radius:20px;text-decoration:none;}
+.card .go{color:var(--cream);background:var(--olive);} .card .pdf{color:var(--olive-dk);border:1.5px solid var(--gilt-lt);}
+.card .soon{font-weight:800;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:10px;}
+.empty{background:var(--card);border:1px dashed var(--cream-dp);border-radius:14px;padding:26px;text-align:center;color:var(--muted);}
+.cta{position:relative;overflow:hidden;border-radius:16px;margin:30px 0 8px;background:linear-gradient(150deg,#5b5c2a,#43441f);color:var(--cream);display:grid;grid-template-columns:minmax(0,290px) minmax(0,1fr);}
+.cta .ph{width:100%;height:100%;min-height:330px;object-fit:cover;object-position:center 22%;display:block;opacity:.95;}
+.cta .in{padding:26px 26px 28px;align-self:center;}
+.cta .in .k{color:#ddd6bf;margin-bottom:6px;font-size:14.5px;}
+.cta .in h3{font-weight:800;font-size:22px;letter-spacing:-.015em;color:var(--cream);margin:0 0 14px;}
+.cta ul{list-style:none;padding:0;margin:0 0 18px;}
+.cta li{position:relative;padding:0 0 10px 24px;font-size:14.5px;color:#f1ecdc;line-height:1.45;}
+.cta li::before{content:"\03A8";color:var(--gilt-lt);position:absolute;left:0;font-weight:800;}
+.cta a.go{display:block;text-align:center;background:var(--cream);color:var(--olive-dk);font-weight:800;font-size:14.5px;text-decoration:none;padding:14px;border-radius:28px;}
+@media(max-width:720px){.cta{grid-template-columns:1fr;} .cta .ph{min-height:230px;height:230px;}}
+.foot{text-align:center;color:var(--muted);font-size:12.5px;margin-top:38px;padding-top:20px;border-top:1px solid var(--cream-dp);}
+.foot .foot-logo{height:30px;width:auto;display:inline-block;margin-bottom:8px;}
+.contato{margin-top:14px;font-size:12.5px;color:var(--muted);line-height:1.7;}
+.contato a{color:var(--gilt);text-decoration:none;} .contato .cnpj{font-size:11.5px;opacity:.85;}
+
+.mhero{padding:36px 0 4px;}
+.mhero .kick{font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:11.5px;color:var(--gilt);margin:0 0 12px;}
+.mhero h1{font-weight:800;font-size:42px;line-height:1.04;letter-spacing:-.022em;color:var(--ink);margin:0 0 10px;}
+.mhero .sub{font-weight:700;font-size:19px;color:var(--sage-dk);line-height:1.3;margin:0 0 12px;letter-spacing:-.01em;}
+.mhero .meta{font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);}
+.mhero .tema{margin:18px 0 0;padding-left:18px;border-left:4px solid var(--cream-dp);color:var(--muted);font-size:16.5px;}
+.usar{background:var(--cream-dp);border-radius:12px;padding:16px 18px;margin:24px 0 14px;font-size:14.5px;color:var(--muted);line-height:1.55;}
+.usar b{display:block;font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--olive-dk);margin-bottom:6px;}
+.pdfbtn{display:inline-block;font-weight:800;font-size:13px;letter-spacing:.02em;color:var(--cream);background:var(--olive);padding:13px 24px;border-radius:26px;text-decoration:none;}
+.ess{background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:20px 22px;margin:26px 0;}
+.ess .et{font-weight:800;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gilt);margin-bottom:12px;}
+.ess ul{list-style:none;padding:0;margin:0;}
+.ess li{position:relative;padding:0 0 12px 26px;font-size:15.8px;line-height:1.5;}
+.ess li:last-child{padding-bottom:0;}
+.ess li::before{content:"\03A8";position:absolute;left:0;top:0;color:var(--gilt-lt);font-weight:800;}
+details.sec{border-bottom:1px solid var(--cream-dp);}
+details.sec[open]{padding-bottom:16px;}
+details.sec summary{list-style:none;cursor:pointer;padding:18px 0;display:flex;align-items:baseline;gap:12px;}
+details.sec summary::-webkit-details-marker{display:none;}
+details.sec summary h2{font-weight:800;font-size:21px;letter-spacing:-.015em;color:var(--ink);margin:0;line-height:1.2;flex:1;}
+details.sec summary .arw{color:var(--gilt);font-weight:800;font-size:13px;transition:transform .2s;}
+details.sec[open] summary .arw{transform:rotate(90deg);}
+details.sec .lead{color:var(--sage-dk);font-weight:500;margin:0 0 14px;font-size:16px;}
+details.sec p{font-size:16.5px;}
+ul.key{list-style:none;padding:0;margin:12px 0;}
+ul.key li{position:relative;padding:0 0 11px 26px;font-size:16px;line-height:1.5;}
+ul.key li::before{content:"\03A8";position:absolute;left:0;top:0;color:var(--gilt);font-weight:800;}
+.dial{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0;}
+@media(max-width:620px){.dial{grid-template-columns:1fr;}}
+.dial .d{background:var(--card);border:1px solid var(--cream-dp);border-top:3px solid var(--sage);border-radius:12px;padding:14px 16px;}
+.dial .dt{font-weight:800;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--olive-dk);margin-bottom:7px;}
+.dial p{margin:0;font-size:14.5px;color:var(--muted);line-height:1.45;}
+.obs{background:var(--cream-dp);border-radius:12px;padding:16px 18px;margin:18px 0;}
+.obs h4{font-weight:800;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--olive-dk);margin:0 0 7px;}
+.obs p{margin:0;font-size:15.5px;}
+.callout{background:var(--card);border-left:4px solid var(--gilt-lt);border-radius:0 12px 12px 0;padding:16px 18px;margin:20px 0;font-size:15.5px;line-height:1.55;}
+.callout .co-t{font-weight:800;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--gilt);margin-bottom:7px;}
+span.ref{font-size:13.5px;color:var(--muted);}
+/* diagrama */
+figure.dg{margin:24px 0;background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:18px 16px 12px;}
+figure.dg svg{width:100%;height:auto;display:block;}
+figure.dg figcaption{margin-top:10px;font-size:13px;color:var(--muted);text-align:center;line-height:1.45;}
+.dg-t{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:10px;text-align:center;}
+/* ferramentas */
+.tools{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:32px 0 0;}
+@media(max-width:720px){.tools{grid-template-columns:1fr;}}
+.tool{background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:20px;}
+.tool .tt{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:14px;}
+.ck{display:flex;gap:11px;align-items:flex-start;padding:9px 0;font-size:15px;line-height:1.45;cursor:pointer;}
+.ck input{margin:4px 0 0;accent-color:var(--olive);width:17px;height:17px;flex:none;cursor:pointer;}
+.ck.done span{text-decoration:line-through;opacity:.5;}
+.qz{margin-bottom:18px;} .qz:last-child{margin-bottom:0;}
+.qz p{font-size:15px;margin:0 0 7px;line-height:1.45;font-weight:500;}
+.qz textarea{width:100%;min-height:66px;border:1px solid var(--cream-dp);border-radius:10px;background:var(--cream);font-family:inherit;font-size:14.5px;color:var(--ink);padding:10px 12px;resize:vertical;line-height:1.5;}
+.qz textarea:focus{outline:2px solid var(--gilt-lt);outline-offset:1px;}
+.savebar{display:flex;align-items:center;gap:12px;margin-top:16px;flex-wrap:wrap;}
+.savebar button{font-weight:800;font-size:11px;letter-spacing:.08em;text-transform:uppercase;border:1.5px solid var(--cream-dp);background:none;color:var(--olive-dk);border-radius:22px;padding:10px 18px;cursor:pointer;font-family:inherit;}
+.savebar button:hover{border-color:var(--gilt-lt);color:var(--gilt);}
+.saved{font-weight:800;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--sage-dk);opacity:0;transition:opacity .3s;}
+.saved.on{opacity:1;}
+.refs h2,.nmet h2{font-weight:800;font-size:21px;letter-spacing:-.015em;color:var(--ink);margin:34px 0 10px;}
+.refs ol{padding-left:20px;font-size:13.8px;color:var(--muted);line-height:1.6;}
+.refs li{margin-bottom:9px;}
+.nmet{background:var(--card);border-left:4px solid var(--gilt-lt);border-radius:0 12px 12px 0;padding:16px 20px;margin:26px 0 0;font-size:14px;color:var(--muted);line-height:1.6;}
+.nmet b{display:block;font-weight:800;font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--olive-dk);margin-bottom:7px;}
+.side .idx a{font-size:13.5px;font-weight:500;padding:7px 12px;line-height:1.3;}
+</style></head><body><div class='topbar'><div class='in'><a href='/'><img alt='Lógica Psicológica' src='/assets/logo.png'></a><a class='backlink' href='/aulas/' title='Voltar para Aulas Livres'>&#8592; Voltar</a><div class='sp'></div><div class='tag'>Aulas Livres</div></div></div><div class='shell'><aside class='side' id='side'><a class='brand' href='/'><img alt='Lógica Psicológica' src='/assets/logo-creme.png'></a><div class='nav'><div class='st first'>Navegação</div><a class='home' href='/aulas/'>&#8592; Aulas</a><a class='navlink' href='/'>Início do portal</a><div class='st'>Neste material</div><div class='idx'><a href='#s0'>Quando o tema aparece, o enquadre muda</a><a href='#s1'>Avaliar a intencionalidade</a><a href='#s2'>Os três níveis, e o que cada um pede</a><a href='#s3'>A psicoeducação que sustenta o plano</a><a href='#s4'>O plano de segurança, passo a passo</a><a href='#s5'>Registro, deveres e cuidados do profissional</a></div></div><div class='sig'><img alt='Prof. Júlio Gonçalves' src='/assets/julio.jpg'><div class='who'>Prof. Júlio Gonçalves<span>MSc · CRP 12/17614</span></div></div><a class='sub' href='https://psicojulio.com/comunidade-logica-psicologica/' target='_blank' rel='noopener'>Inscreva-se</a></aside><main class='main'><div class='mhero'><div class='kick'>Resumo de aula · Aula livre</div><h1>Avalia&ccedil;&atilde;o da intencionalidade suicida e plano de seguran&ccedil;a</h1><div class='sub'>Aula livre</div><div class='meta'>Prof. Júlio Gonçalves · MSc · CRP 12/17614 · Aula livre</div><p class='tema'>Dois instrumentos que mudam a conduta quando o tema aparece na sessão: avaliar a intencionalidade com método, e construir com o paciente um plano que ele consiga usar sozinho, no pior momento.</p></div><div class='obs' style='margin-bottom:18px'><h4>Antes de ler</h4><p>Material de estudo <strong>dirigido a psicólogos</strong>. Ele descreve a lógica da avaliação de risco e da construção do plano de segurança; <strong>não substitui formação específica nem supervisão</strong>, e não é material para leitura por quem está em sofrimento agudo.</p><p>Seguindo recomendações internacionais de comunicação sobre suicídio, este material <strong>não nomeia meios nem métodos</strong> em nenhum momento — inclusive na parte sobre restrição de acesso, em que a conduta é descrita pela função e não pelo conteúdo. Duas outras alterações em relação ao conteúdo original estão sinalizadas no corpo do texto, com a justificativa.</p><p>Se você está passando por sofrimento agora, ligue <strong>188 (CVV)</strong>, disponível 24 horas, ou procure a emergência mais próxima.</p></div><div class='usar'><b>Como usar</b>Abra as seções que quiser ler, marque o que pretende aplicar e responda o que fizer sentido. Tudo fica salvo neste aparelho — ninguém mais vê.</div><a class='pdfbtn' href='resumo.pdf'>&#8681; Baixar em PDF</a><div class='ess'><div class='et'>O essencial</div><ul><li><strong>Quando o tema aparece, o enquadre muda.</strong> A pauta da sessão para. Avaliação de risco e plano de segurança passam à frente do que estava sendo trabalhado.</li><li><strong>Avaliar intencionalidade é diferente de avaliar sofrimento.</strong> Motivação, significado da morte, estado mental, tentativas prévias, existência de plano e fatores de risco compõem o quadro.</li><li><strong>O nível de risco define a conduta, não o diagnóstico.</strong> Risco baixo pede trabalho sobre fatores de risco; moderado e alto exigem plano de segurança construído imediatamente.</li><li><strong>Crise aguda é transitória — e essa é a psicoeducação central.</strong> O paciente precisa saber que o pico passa, e ter à mão o que fazer enquanto passa.</li><li><strong>O plano só funciona se for do paciente.</strong> Construído com ele, com as palavras dele, impresso e acessível em vários lugares. Plano guardado no prontuário não protege ninguém.</li></ul></div><details class='sec' id='s0' open><summary><h2>Quando o tema aparece, o enquadre muda</h2><span class='arw'>&#9656;</span></summary>
+<p>Ideação suicida é fenômeno complexo e multifatorial, e quase sempre exige abordagem estruturada — não improviso, não intuição.</p>
+<p>A regra prática que abre a aula é a mais importante de todas: <strong>quando o paciente traz pensamento ou comportamento dentro do campo da ideação suicida, para-se o que estava sendo feito</strong>. A pauta da sessão cede lugar à prevenção e à redução do comportamento de risco. Depois disso, o tratamento segue focado nessa demanda.</p>
+<p>Dois instrumentos organizam esse trabalho: a <strong>avaliação da intencionalidade</strong> e o <strong>plano de segurança</strong>. O primeiro responde a que distância se está do risco; o segundo dá ao paciente o que fazer quando o risco chegar.</p>
+<div class='callout note'><div class='co-t'>Um mito que precisa cair antes de tudo</div>Perguntar diretamente sobre ideação suicida <strong>não induz o comportamento</strong> nem aumenta a ideação — é achado consistente na literatura (Dazzi et al., 2014). O receio de “plantar a ideia” é um dos motivos pelos quais profissionais deixam de perguntar, e deixar de perguntar é o que custa caro.</div>
+</details><details class='sec' id='s1'><summary><h2>Avaliar a intencionalidade</h2><span class='arw'>&#9656;</span></summary>
+<p>O instrumento pode ser preenchido pelo próprio profissional, a partir do que colhe ao longo das sessões, ou aplicado como questionário. O que importa é que os componentes sejam cobertos — e não a forma.</p>
+<h3>O que compõe a avaliação</h3>
+<ul class='key'><li><b>Precipitantes</b> — o que está desencadeando; que problemas estão levando ao comportamento de risco.</li><li><b>Motivação</b> — o que ele quer alcançar. Livrar-se de um sentimento? De um problema? Da dor?</li><li><b>Significado da morte</b> — o que morrer representa para essa pessoa. Fim da dor, do vazio, de uma situação insuportável.</li><li><b>Estado mental atual</b> — desesperança, desespero, colapso existencial, embotamento afetivo, instabilidade do humor, ansiedade e inquietação, impulsividade, raiva, vergonha, dor, insônia, vazio, constrição cognitiva. Quanto pior o estado, maior o risco.</li><li><b>Nível de intencionalidade</b> — de ideias passivas de morte, que a pessoa rejeita, até ideias persistentes e incontroláveis, com o alívio antecipado e a percepção de que seria a única saída.</li><li><b>Tentativas prévias</b> — número, data da mais recente, intencionalidade e letalidade envolvidas. É dos preditores mais robustos.</li><li><b>Plano</b> — existência, grau de detalhamento, providências em curso, disponibilidade de acesso.</li></ul>
+<div class='obs'><h4>Sobre a constrição cognitiva</h4><p>Vale isolar esse item porque explica muito do que se vê em sessão: <strong>a pessoa não consegue olhar para evidências contrárias</strong> nem acessar motivos para viver. Não é teimosia nem má vontade — é um estreitamento do campo que a própria crise produz, e que se reverte quando ela passa. Saber disso muda a conduta: não se discute; espera-se a janela abrir.</p></div>
+<h3>Fatores de risco a rastrear</h3>
+<p>Transtorno mental; tentativa prévia; uso de álcool; história de violência física ou sexual; exposição ao suicídio de alguém próximo; suicídio na família; isolamento e ausência de rede de apoio; conflitos e rupturas afetivas; desemprego e ruína financeira; desonra; rigidez e perfeccionismo; conflito de identidade; dor; alta hospitalar recente; não adesão ao tratamento.</p>
+<p><strong>Quanto mais fatores presentes, maior a intencionalidade — e quanto mais fatores se resolvem, mais se preserva a vida do paciente.</strong> Essa é a lógica que orienta o trabalho de médio prazo.</p>
+<div class='callout note'><div class='co-t'>Instrumentos validados existem, e convém conhecê-los</div>A avaliação estruturada apresentada aqui organiza a coleta clínica. Para quem quiser ancorar em instrumentos com propriedades psicométricas estabelecidas, as referências no campo são a <strong>Columbia-Suicide Severity Rating Scale</strong> (Posner et al., 2011) e as escalas clássicas de Beck para ideação e para intenção suicida. Nenhum instrumento substitui a entrevista — mas usar um validado facilita comunicação entre profissionais e sustenta melhor o registro.</div>
+</details><details class='sec' id='s2'><summary><h2>Os três níveis, e o que cada um pede</h2><span class='arw'>&#9656;</span></summary>
+<ul class='key'><li><b>Risco baixo</b> — pensamentos suicidas ocasionais, sem plano.</li><li><b>Risco moderado</b> — pensamentos suicidas com plano de ação, sem caráter imediato.</li><li><b>Risco alto</b> — pensamentos, plano e meios disponíveis, com caráter imediato.</li></ul>
+<p>A classificação existe para definir onde focar:</p>
+<p><strong>No risco baixo</strong>, o trabalho é sobre os <strong>fatores de risco</strong> — entender em quais deles o paciente está inserido e começar a resolvê-los. É trabalho de médio prazo e é o que efetivamente reduz risco ao longo do tempo.</p>
+<p><strong>No risco moderado e no alto</strong>, constrói-se <strong>imediatamente</strong> o plano de segurança. Não na próxima sessão, não como tarefa de casa: ali.</p>
+<div class='obs'><h4>Duas coisas que a estratificação não dispensa</h4><p><strong>Reavaliação.</strong> Risco não é atributo estável; é estado. A classificação de hoje não vale para o mês que vem, e a alta hospitalar recente — que consta como fator de risco — é justamente um período de risco elevado.</p><p><strong>Articulação.</strong> Risco moderado e alto pedem coordenação com psiquiatria e, conforme o caso, com a rede de urgência. Sustentar sozinho um caso de alto risco não é mérito clínico.</p></div>
+</details><details class='sec' id='s3'><summary><h2>A psicoeducação que sustenta o plano</h2><span class='arw'>&#9656;</span></summary>
+<p>O plano de segurança abre com psicoeducação, e ela não é preâmbulo — é o que faz o resto funcionar.</p>
+<h3>A crise é transitória</h3>
+<p>A mensagem central é a <strong>temporariedade do estado mental</strong>: o pico da ideação passa. O paciente pode ter vários episódios ao longo de um dia, e com a estratégia certa consegue reduzir a intensidade de cada um.</p>
+<div class='callout note'><div class='co-t'>Uma precisão sobre a duração</div>Foi mencionada uma janela crítica de cerca de dez a vinte minutos. O <strong>princípio está correto e é muito bem sustentado</strong>: estudos com sobreviventes mostram que o intervalo entre a decisão e a tentativa é frequentemente muito curto — em parcela expressiva dos casos, inferior a dez minutos (Simon et al., 2001; Deisenhammer et al., 2009).<br><br>A duração exata, porém, varia muito entre pessoas e episódios, e apresentá-la como número fixo pode gerar expectativa que a experiência do paciente desmente — com o custo de ele concluir que “nem isso funciona comigo”. A formulação mais segura é a qualitativa: <strong>o pico é breve e passa, e o plano existe para atravessar esse intervalo</strong>.</div>
+<h3>Os outros pontos da psicoeducação</h3>
+<ul class='key'><li><b>Vínculo com o diagnóstico.</b> Frequentemente há um quadro de base — depressivo, bipolar, de personalidade — que precisa ser tratado para que o risco diminua ao longo do tempo.</li><li><b>Sobrecarga é fator de risco.</b> Reduzir carga interpessoal, cognitiva e emocional deixa a pessoa em melhores condições de lidar com os problemas que restarem.</li><li><b>A causa não é ela.</b> A ideação resulta de interação complexa de múltiplos fatores — conflitos, desemprego, transtorno, perdas, ruína financeira. <strong>Não é falha de caráter nem incapacidade de lidar com a vida</strong>, e dizer isso explicitamente tem efeito clínico.</li><li><b>Sinais de alerta existem e são reconhecíveis</b> — é o que o passo 1 do plano vai mapear.</li><li><b>Rede de apoio.</b> Muitas vezes é preciso ampliá-la, e orientar quem acompanha a pessoa.</li><li><b>Desconstruir estigmas</b> — fraqueza, falta de fé, ingratidão pela vida. Eles impedem o pedido de ajuda.</li></ul>
+<h3>A validação que abre a porta</h3>
+<p>A postura sugerida merece registro porque é contraintuitiva e é correta: <strong>validar que, diante de tanto sofrimento, aquela parece de fato a saída mais viável</strong> — e, na sequência, oferecer-se para trabalhar em outras saídas, começando pelo curto prazo.</p>
+<p>Não é concordar. É reconhecer a lógica interna do sofrimento em vez de discuti-la — o que, na prática, é o que permite que a conversa continue.</p>
+</details><details class='sec' id='s4'><summary><h2>O plano de segurança, passo a passo</h2><span class='arw'>&#9656;</span></summary>
+<p>O plano é instrumento <strong>personalizado e dinâmico</strong>, entregue ao paciente. A estrutura apresentada corresponde, em linhas gerais, à intervenção de plano de segurança descrita por Stanley e Brown (2012), que é a referência com melhor sustentação empírica no campo.</p>
+<p>Uma observação de formato que vale reter: o plano é montado em <strong>duas colunas</strong>, em fluxo contínuo, e não em linhas separadas — a organização visual contínua facilita a aplicação prática.</p>
+<h3>Passo 1 — Sinais de advertência</h3>
+<p>Os gatilhos que podem culminar em crise: brigas, isolamento, ruminação sobre pessoas específicas, sensações de desrealização e despersonalização.</p>
+<div class='obs'><h4>O ponto mais importante do passo 1</h4><p><strong>Os sinais não podem interagir.</strong> No dia em que um aparece, os outros precisam ser bloqueados: se brigou com alguém, não pode se isolar; se está ruminando e começa a desrealizar, aplica-se o plano imediatamente. <strong>Quanto mais sinais se somam, maior o risco</strong> — e a função do passo 1 é interromper a escalada antes que a crise se desenvolva.</p></div>
+<h3>Passo 2 — Estratégias que o paciente aplica sozinho</h3>
+<p>Recursos de distração e de regulação da ativação fisiológica, para atravessar o pico. Entre os discutidos: <strong>respiração diafragmática</strong>, ancoragem atencional no ambiente, caminhada ao ar livre, contagem regressiva, foco sustentado em um ponto fixo, leitura — vários deles especialmente úteis quando há desrealização e despersonalização.</p>
+<p>E a orientação de método: <strong>não se aplicam todas</strong>. Escolhem-se algumas, com o paciente, conforme o que funciona para ele.</p>
+<div class='callout note'><div class='co-t'>Uma alteração que fiz, e a razão</div>A aula listava também recursos baseados em <strong>desconforto físico intenso</strong> — choque térmico, sabor ardido, e um procedimento de fricção no mesmo local onde ocorre a autolesão. <strong>Não os reproduzi aqui</strong>, por três motivos.<br><br><b>Reproduzem a topografia do comportamento.</b> Uma técnica que aplica estímulo doloroso ao mesmo lugar da autolesão mantém a cadeia comportamental em vez de rompê-la, e pode funcionar como ensaio.<br><br><b>A evidência é fraca.</b> Estratégias de substituição são discutidas na literatura de redução de danos, mas não têm suporte que justifique apresentá-las como recurso padrão num material aberto.<br><br><b>Algumas têm contraindicação clínica.</b> Recursos de choque térmico existem em protocolos estruturados, com treinamento e triagem prévia — inclusive cardiológica. Fora desse enquadre, não devem ser distribuídos como menu.<br><br>As demais estratégias da lista original — atencionais e respiratórias — foram integralmente mantidas, e dão conta do objetivo declarado: romper a ativação e atravessar o pico.</div>
+<h3>Passo 3 — Pessoas e ambientes que distraem</h3>
+<p>Um parque, um lugar de que ele goste, um amigo cuja companhia funcione. Aqui não se pede ajuda — apenas se muda de contexto.</p>
+<h3>Passo 4 — Pessoas a quem pedir ajuda</h3>
+<p>A rede de apoio operacional: pessoas a quem ele consiga dizer que está em crise e que precisa de ajuda. <strong>Com telefone anotado</strong> — no meio de uma crise, ninguém procura contato.</p>
+<h3>Passo 5 — Profissionais e serviços</h3>
+<p>Nome e telefone do psicólogo e do psiquiatra, e os serviços de emergência e urgência mais próximos. No Brasil, cabe incluir o <strong>CVV (188)</strong>, disponível 24 horas, e o CAPS de referência.</p>
+<h3>Passo 6 — Tornar o ambiente seguro</h3>
+<p>A <strong>restrição de acesso a meios</strong> é, isoladamente, a medida de prevenção com melhor suporte empírico na literatura (Mann et al., 2005; Zalsman et al., 2016). O objetivo é criar distância entre o impulso e a ação — porque a crise é breve e a disponibilidade decide o desfecho.</p>
+<div class='obs'><h4>Como esta seção é tratada aqui</h4><p>Este material <strong>não enumera meios nem métodos</strong>, em nenhum momento — o que segue as recomendações internacionais de comunicação segura sobre suicídio, aplicáveis inclusive a materiais técnicos publicados em acesso aberto.</p><p>Na clínica, a conduta é conhecida e deve ser feita: identificar com o paciente o que precisa ser afastado do alcance imediato, definir <strong>quem</strong> fica responsável por isso — preferencialmente alguém da rede, e não o próprio paciente — e verificar se foi feito, em vez de assumir que sim.</p></div>
+<h3>Passo 7 — Motivos para viver</h3>
+<p>Construir com o paciente a lista do que ainda importa e do que ele perderia. Pode ser apoiada por um instrumento de motivos para viver, com gradação de importância.</p>
+<p>É o passo que faz a ponte com a constrição cognitiva: no meio da crise, ele não consegue acessar nada disso sozinho — por isso a lista precisa estar <strong>escrita, pronta, e feita quando ele estava melhor</strong>.</p>
+<div class='callout note'><div class='co-t'>O plano precisa sair do consultório</div>Impresso e distribuído: na carteira, no armário, na mesa de cabeceira, na cozinha. A intenção é que esteja <strong>ao alcance no momento em que a crise começa</strong>, e não guardado.<br><br>Um plano que existe apenas no prontuário do terapeuta não protege ninguém. E vale revisá-lo periodicamente — as pessoas da rede mudam, os sinais de advertência mudam, e um plano desatualizado dá falsa segurança.</div>
+</details><details class='sec' id='s5'><summary><h2>Registro, deveres e cuidados do profissional</h2><span class='arw'>&#9656;</span></summary>
+<div class='obs'><h4>Esta seção é acréscimo</h4><p>A aula tratou dos dois instrumentos. Esta seção reúne o que os cerca e que, num material publicado, não pode ficar implícito.</p></div>
+<h3>Registro</h3>
+<p>Avaliação de risco, nível estimado, conduta adotada e plano construído devem estar <strong>documentados no prontuário</strong>, com data. Não é burocracia defensiva: é o que permite acompanhar a evolução do risco e o que sustenta a decisão clínica se ela for questionada depois.</p>
+<h3>Notificação</h3>
+<p>No Brasil, <strong>tentativa de suicídio e demais formas de violência autoprovocada são de notificação compulsória</strong> pelos serviços de saúde, com prazo imediato. Vale conhecer o fluxo da rede local — a obrigação existe mesmo quando a conduta clínica está bem conduzida.</p>
+<h3>Sigilo</h3>
+<p>O Código de Ética prevê a quebra do sigilo quando necessária à proteção, pelo critério do <strong>menor prejuízo</strong>. Em risco alto, comunicar alguém da rede é conduta protetiva — e deve ser feita, sempre que possível, <strong>com o paciente sabendo o que será dito e a quem</strong>. Comunicar sem avisar custa o vínculo, e o vínculo é parte do que o mantém vivo.</p>
+<h3>O que não fazer</h3>
+<div class='callout note'><div class='co-t'>Contrato de não suicídio não é intervenção</div>A prática de pedir que o paciente assine um compromisso de não se matar <strong>não tem suporte empírico</strong> como medida de prevenção, e pode dar ao profissional uma falsa sensação de proteção — inclusive jurídica (Rudd, Mandrusiak &amp; Joiner, 2006). O que a evidência sustenta é o oposto: <strong>plano de segurança construído com o paciente</strong>, com passos que ele consiga executar.</div>
+<h3>Quem cuida de quem atende</h3>
+<p>Acompanhar caso de risco é desgastante, e o desgaste altera decisões clínicas. Supervisão, equipe e a possibilidade de dividir o caso não são conforto — são parte do manejo de risco.</p>
+</details><div class='tools'><div class='tool'><div class='tt'>Levar para a prática</div><label class='ck'><input type='checkbox'><span>Interrompi a pauta da sessão quando o tema apareceu, e avaliei antes de seguir.</span></label><label class='ck'><input type='checkbox'><span>Perguntei diretamente sobre ideação, sem receio de induzir o comportamento.</span></label><label class='ck'><input type='checkbox'><span>Cobri motivação, significado da morte, estado mental, tentativas prévias, plano e fatores de risco.</span></label><label class='ck'><input type='checkbox'><span>Estratifiquei o risco e defini a conduta a partir dele — e não a partir do diagnóstico.</span></label><label class='ck'><input type='checkbox'><span>Construí o plano de segurança na própria sessão em risco moderado ou alto.</span></label><label class='ck'><input type='checkbox'><span>Escolhi as estratégias do passo 2 com o paciente, e não entreguei uma lista pronta.</span></label><label class='ck'><input type='checkbox'><span>Defini quem, além do paciente, fica responsável por tornar o ambiente seguro — e verifiquei.</span></label><label class='ck'><input type='checkbox'><span>Fiz a lista de motivos para viver enquanto ele estava melhor, e deixei escrita.</span></label><label class='ck'><input type='checkbox'><span>Garanti que o plano saísse impresso e ficasse acessível em vários lugares.</span></label><label class='ck'><input type='checkbox'><span>Registrei avaliação, nível de risco e conduta no prontuário, com data.</span></label><label class='ck'><input type='checkbox'><span>Articulei com psiquiatria e com a rede quando o risco exigiu.</span></label><label class='ck'><input type='checkbox'><span>Levei o caso para supervisão ou equipe.</span></label></div><div class='tool'><div class='tt'>Para revisar — responda</div><div class='qz'><p>1. O que muda na sua sessão no momento em que o tema aparece? Descreva a sua sequência.</p><textarea placeholder='Sua resposta…'></textarea></div><div class='qz'><p>2. Que componentes da avaliação de intencionalidade você costuma deixar de fora — e por quê?</p><textarea placeholder='Sua resposta…'></textarea></div><div class='qz'><p>3. Como você explicaria a um paciente que o pico da crise é breve, sem prometer um tempo exato?</p><textarea placeholder='Sua resposta…'></textarea></div><div class='qz'><p>4. Escreva como você validaria a lógica do sofrimento sem concordar com a saída.</p><textarea placeholder='Sua resposta…'></textarea></div><div class='qz'><p>5. Que estratégias do passo 2 você escolheria com um paciente seu? Como testaria se funcionam?</p><textarea placeholder='Sua resposta…'></textarea></div><div class='qz'><p>6. Quem, na rede de um paciente seu, poderia assumir a tarefa do passo 6? Como você abordaria essa pessoa?</p><textarea placeholder='Sua resposta…'></textarea></div><div class='qz'><p>7. Como você conduziria uma quebra de sigilo protetiva sem romper o vínculo?</p><textarea placeholder='Sua resposta…'></textarea></div><div class='qz'><p>8. O que você registra hoje no prontuário sobre risco? O que falta?</p><textarea placeholder='Sua resposta…'></textarea></div></div></div><div class='savebar'><button id='exp'>Exportar respostas</button><button id='lmp'>Limpar</button><span class='saved' id='saved'>Salvo neste aparelho</span></div><div class='refs'><h2>Referências</h2><ol><li>BRASIL. Ministério da Saúde. Portaria nº 1.271, de 6 de junho de 2014. Define a Lista Nacional de Notificação Compulsória (inclui violência autoprovocada, com notificação imediata).</li><li>Conselho Federal de Psicologia. Resolução CFP nº 10/2005. Código de Ética Profissional do Psicólogo.</li><li>Dazzi, T., Gribble, R., Wessely, S., &amp; Fear, N. T. (2014). Does asking about suicide and related behaviours induce suicidal ideation? What is the evidence? <em>Psychological Medicine, 44</em>(16), 3361–3363.</li><li>Deisenhammer, E. A., Ing, C.-M., Strauss, R., Kemmler, G., Hinterhuber, H., &amp; Weiss, E. M. (2009). The duration of the suicidal process: How much time is left for intervention between consideration and accomplishment of a suicide attempt? <em>Journal of Clinical Psychiatry, 70</em>(1), 19–24.</li><li>Mann, J. J., Apter, A., Bertolote, J., et al. (2005). Suicide prevention strategies: A systematic review. <em>JAMA, 294</em>(16), 2064–2074.</li><li>Posner, K., Brown, G. K., Stanley, B., et al. (2011). The Columbia-Suicide Severity Rating Scale: Initial validity and internal consistency findings. <em>American Journal of Psychiatry, 168</em>(12), 1266–1277.</li><li>Rudd, M. D., Mandrusiak, M., &amp; Joiner, T. E. (2006). The case against no-suicide contracts: The commitment to treatment statement as a practice alternative. <em>Journal of Clinical Psychology, 62</em>(2), 243–251.</li><li>Simon, T. R., Swann, A. C., Powell, K. E., Potter, L. B., Kresnow, M., &amp; O'Carroll, P. W. (2001). Characteristics of impulsive suicide attempts and attempters. <em>Suicide and Life-Threatening Behavior, 32</em>(supl.), 49–59.</li><li>Stanley, B., &amp; Brown, G. K. (2012). Safety planning intervention: A brief intervention to mitigate suicide risk. <em>Cognitive and Behavioral Practice, 19</em>(2), 256–264.</li><li>World Health Organization. (2023). <em>Preventing suicide: A resource for media professionals</em> (atualização). WHO.</li><li>Zalsman, G., Hawton, K., Wasserman, D., et al. (2016). Suicide prevention strategies revisited: 10-year systematic review. <em>The Lancet Psychiatry, 3</em>(7), 646–659.</li></ol></div><div class='nmet'><b>Nota de método</b>Material dirigido a profissionais. Não substitui formação específica nem supervisão.<br><br><strong>Comunicação segura.</strong> Seguindo recomendações internacionais, o material não nomeia meios nem métodos em nenhum ponto — inclusive na seção de restrição de acesso, em que a conduta é descrita pela função. A restrição de meios é a medida isolada com melhor suporte empírico em prevenção, e nada se perde ao descrevê-la sem enumerar.<br><br><strong>Duas alterações em relação ao conteúdo original, ambas sinalizadas no texto.</strong> Primeira: foram omitidos os recursos baseados em desconforto físico intenso listados entre as estratégias de regulação — choque térmico, sabor ardido e fricção no local da autolesão. O último reproduz a topografia do comportamento e pode manter a cadeia em vez de rompê-la; a evidência para estratégias de substituição é fraca; e recursos de choque térmico existem em protocolos estruturados, com treinamento e triagem clínica prévia, o que não se compatibiliza com uma lista aberta. As estratégias atencionais e respiratórias foram integralmente mantidas. Segunda: a janela de dez a vinte minutos foi convertida em formulação qualitativa — o princípio de que a crise aguda é breve é bem sustentado (Simon et al., 2001; Deisenhammer et al., 2009), mas a duração varia, e um número fixo pode levar o paciente a concluir que a estratégia não funciona com ele.<br><br><strong>Acréscimos.</strong> A seção sobre registro, notificação compulsória, sigilo e contrato de não suicídio não constava da aula e foi incluída porque, num material publicado, esses pontos não podem ficar implícitos. Foram também acrescentados a ancoragem do plano na intervenção de Stanley e Brown, a menção a instrumentos validados de avaliação, e o achado de que perguntar sobre suicídio não induz o comportamento.</div><div class='cta'><img class='ph' alt='Prof. Júlio Gonçalves' src='/assets/julio.jpg'><div class='in'><div class='k'>Aprenda muito mais na</div><h3>Comunidade Lógica Psicológica</h3><ul><li>Aprofundar o raciocínio clínico com ciência, processos e análise funcional.</li><li>Estruturar uma prática ética, com pensamento crítico e evidências atualizadas.</li><li>Desenvolver o self clínico com supervisão, leituras guiadas e rede.</li></ul><a class='go' href='https://psicojulio.com/comunidade-logica-psicologica/' target='_blank' rel='noopener'>Participar da comunidade &#8594;</a></div></div><div class='foot'><img class='foot-logo' alt='Lógica Psicológica' src='/assets/logo.png'><div class='contato'><a href='mailto:contato@psicojulio.com'>contato@psicojulio.com</a> &middot; <a href='tel:+5547999338021'>(47) 99933-8021</a><br>Rua Concórdia, 703, São Vicente, Itajaí — 88309-645<br><span class='cnpj'>CNPJ 49.649.803/0001-60</span></div></div></main></div><button class='toc-fab' id='fab'>&#9776; Seções</button><div class='overlay' id='ov'></div><script>
+(function(){
+  var K='mat-Aula-Plano-Seguranca-';
+  document.querySelectorAll('.ck input').forEach(function(c,i){
+    var k=K+'ck'+i;
+    try{ if(localStorage.getItem(k)==='1'){c.checked=true;c.closest('.ck').classList.add('done');} }catch(e){}
+    c.addEventListener('change',function(){
+      c.closest('.ck').classList.toggle('done',c.checked);
+      try{ localStorage.setItem(k,c.checked?'1':'0'); }catch(e){} flag();
+    });
+  });
+  document.querySelectorAll('.qz textarea').forEach(function(t,i){
+    var k=K+'q'+i;
+    try{ var v=localStorage.getItem(k); if(v)t.value=v; }catch(e){}
+    t.addEventListener('input',function(){ try{ localStorage.setItem(k,t.value); }catch(e){} flag(); });
+  });
+  var s=document.getElementById('saved'),tm;
+  function flag(){ if(!s)return; s.classList.add('on'); clearTimeout(tm); tm=setTimeout(function(){s.classList.remove('on');},1600); }
+  var b=document.getElementById('exp');
+  if(b) b.addEventListener('click',function(){
+    var out='RESPOSTAS — Avaliação da intencionalidade suicida e plano de segurança\n\n';
+    document.querySelectorAll('.qz').forEach(function(q){
+      out+= q.querySelector('p').innerText+'\n'+(q.querySelector('textarea').value||'(sem resposta)')+'\n\n';
+    });
+    var a=document.createElement('a');
+    a.href=URL.createObjectURL(new Blob([out],{type:'text/plain'}));
+    a.download='Aula-Plano-Seguranca-respostas.txt'; a.click();
+  });
+  var l=document.getElementById('lmp');
+  if(l) l.addEventListener('click',function(){
+    if(!confirm('Apagar suas anotações deste material?'))return;
+    try{ Object.keys(localStorage).filter(function(k){return k.indexOf(K)===0;}).forEach(function(k){localStorage.removeItem(k);}); }catch(e){}
+    location.reload();
+  });
+  var f=document.getElementById('fab'),o=document.getElementById('ov'),sd=document.getElementById('side');
+  if(f)f.onclick=function(){sd.classList.toggle('open');o.classList.toggle('open');};
+  if(o)o.onclick=function(){sd.classList.remove('open');o.classList.remove('open');};
+})();
+</script></body></html>
