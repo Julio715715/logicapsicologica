@@ -1,0 +1,276 @@
+<!DOCTYPE html><html lang='pt-BR'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='icon' type='image/png' sizes='32x32' href='/favicon-32.png'><link rel='icon' type='image/png' sizes='192x192' href='/favicon-192.png'><link rel='apple-touch-icon' href='/apple-touch-icon.png'><link rel='icon' href='/favicon.ico' sizes='any'><link rel='preconnect' href='https://fonts.googleapis.com'><link rel='preconnect' href='https://fonts.gstatic.com' crossorigin><link href='https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500&display=swap' rel='stylesheet'><title>Subjugação e violência — Lógica Psicológica</title><style>
+:root{--olive:#5b5c2a;--olive-dk:#43441f;--sage:#9ca575;--sage-dk:#7c8054;--cream:#f8f3e6;--cream-dp:#efe7d3;--gilt:#a8894f;--gilt-lt:#c3a468;--ink:#2f2e24;--muted:#6c6a55;--card:#fffdf7;}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;} html,body{margin:0;padding:0;}
+body{font-family:'Plus Jakarta Sans',system-ui,-apple-system,Segoe UI,sans-serif;background:var(--cream);color:var(--ink);font-size:17px;line-height:1.62;font-weight:400;-webkit-font-smoothing:antialiased;}
+a{color:var(--olive);} strong{font-weight:700;color:var(--olive-dk);} em{color:var(--sage-dk);}
+:focus-visible{outline:2px solid var(--gilt);outline-offset:2px;}
+.topbar{position:sticky;top:0;z-index:30;background:rgba(248,243,230,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--cream-dp);}
+.topbar .in{max-width:1100px;margin:0 auto;padding:11px 20px;display:flex;align-items:center;gap:12px;}
+.topbar img{height:22px;display:block;}
+.topbar .sp{flex:1;}
+.topbar .tag{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);}
+.backlink{font-weight:800;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--olive-dk);text-decoration:none;border:1px solid var(--cream-dp);background:var(--card);border-radius:20px;padding:7px 14px;white-space:nowrap;line-height:1;transition:border-color .18s,color .18s;}
+.backlink:hover{border-color:var(--gilt-lt);color:var(--gilt);}
+@media(max-width:430px){.topbar .tag{display:none;}}
+.shell{display:flex;gap:34px;max-width:1100px;margin:0 auto;padding:0 20px;align-items:flex-start;}
+.side{flex:0 0 252px;width:252px;position:sticky;top:56px;align-self:flex-start;height:calc(100vh - 66px);overflow:hidden;background:linear-gradient(165deg,#5b5c2a,#3b3c1b);color:var(--cream);border-radius:0 0 16px 16px;padding:18px 18px 16px;display:flex;flex-direction:column;}
+.side .nav{flex:1 1 auto;overflow-y:auto;min-height:0;scrollbar-width:thin;scrollbar-color:rgba(248,243,230,.28) transparent;}
+.side .nav::-webkit-scrollbar{width:6px;} .side .nav::-webkit-scrollbar-thumb{background:rgba(248,243,230,.28);border-radius:3px;}
+.side .brand{display:block;margin-bottom:14px;}
+.side .brand img{width:100%;max-width:148px;height:auto;display:block;}
+.side .st{font-weight:800;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt-lt);margin:13px 0 6px;padding-top:11px;border-top:1px solid rgba(248,243,230,.18);}
+.side .st.first{margin-top:0;padding-top:0;border-top:none;}
+.side a{display:block;text-decoration:none;color:var(--cream);padding:8px 11px;border-radius:9px;font-size:14.5px;font-weight:700;line-height:1.25;margin-bottom:3px;border:1px solid transparent;}
+.side a .s{display:block;font-size:11.8px;font-weight:400;color:#d9d3bd;margin-top:2px;line-height:1.3;}
+.side a:hover{background:rgba(248,243,230,.10);}
+.side a.on{background:var(--cream);color:var(--olive-dk);border-color:var(--cream);}
+.side a.on .s{color:var(--muted);}
+.side .home{font-weight:800;font-size:12.5px;letter-spacing:.02em;padding:5px 11px;}
+.side .navlink{font-weight:700;font-size:13px;color:#e7e1cb;padding:5px 11px;}
+.side .sig{flex:0 0 auto;margin-top:12px;padding-top:12px;border-top:1px solid rgba(248,243,230,.18);display:flex;align-items:center;gap:11px;}
+.side .sig img{width:40px;height:40px;flex:none;border-radius:50%;object-fit:cover;object-position:center 18%;border:2px solid rgba(248,243,230,.35);}
+.side .sig .who{font-weight:800;font-size:12.5px;color:var(--cream);line-height:1.3;}
+.side .sig .who span{display:block;font-weight:400;font-size:11.5px;color:#cfc9b2;letter-spacing:.04em;margin-top:2px;}
+.side .sub{display:block;margin-top:10px;text-align:center;background:var(--cream);color:var(--olive-dk);font-weight:800;font-size:13px;letter-spacing:.02em;text-decoration:none;padding:10px 14px;border-radius:22px;transition:background .18s;}
+.side .sub:hover{background:#fff;color:var(--olive-dk);}
+.main{flex:1 1 auto;max-width:730px;width:100%;padding:0 0 50px;}
+.toc-fab{display:none;} .overlay{display:none;}
+@media(max-width:960px){
+ .shell{display:block;padding:0;} .main{max-width:760px;margin:0 auto;padding:0 20px 50px;}
+ .side{position:fixed;top:0;left:0;height:100vh;width:292px;z-index:60;transform:translateX(-100%);transition:transform .25s;box-shadow:2px 0 22px rgba(0,0,0,.28);padding:26px 22px;max-height:none;border-radius:0;}
+ .side.open{transform:none;}
+ .toc-fab{display:block;position:fixed;bottom:18px;right:18px;z-index:50;background:var(--olive-dk);color:var(--cream);font-weight:800;font-size:13px;letter-spacing:.04em;border:none;border-radius:30px;padding:13px 20px;box-shadow:0 4px 14px rgba(0,0,0,.24);cursor:pointer;}
+ .overlay{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:55;opacity:0;pointer-events:none;transition:opacity .25s;}
+ .overlay.open{display:block;opacity:1;pointer-events:auto;}
+}
+@media(min-width:961px) and (max-height:820px){
+ .side a .s{display:none;}
+ .side .brand{margin-bottom:10px;} .side .brand img{max-width:132px;}
+ .side .st{margin:10px 0 5px;padding-top:9px;}
+}
+@media(min-width:961px) and (max-height:680px){
+ .side .sig img{display:none;} .side .brand{display:none;}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;}}
+.hero{padding:40px 0 6px;}
+.hero .kick{font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:12px;color:var(--gilt);margin:0 0 14px;}
+.hero h1{font-weight:800;font-size:46px;line-height:1.03;letter-spacing:-.022em;color:var(--ink);margin:0 0 16px;}
+.hero h1 .ac{color:var(--olive);}
+.hero p{color:var(--muted);font-size:17.5px;max-width:620px;margin:0;}
+.divider{width:56px;height:3px;background:var(--gilt-lt);border-radius:2px;margin:26px 0 4px;}
+h2{font-weight:800;color:var(--ink);font-size:25px;letter-spacing:-.015em;line-height:1.15;margin:38px 0 10px;scroll-margin-top:74px;}
+h3{font-weight:800;color:var(--olive);font-size:17px;letter-spacing:-.005em;margin:26px 0 6px;}
+p{margin:0 0 12px;}
+ul.clean{list-style:none;padding:0;margin:10px 0 14px;}
+ul.clean li{position:relative;padding:0 0 10px 26px;}
+ul.clean li::before{content:"\03A8";font-weight:800;color:var(--gilt);position:absolute;left:0;top:0;}
+.pull{font-weight:800;color:var(--olive-dk);font-size:23px;line-height:1.3;letter-spacing:-.015em;border-left:4px solid var(--gilt-lt);padding:6px 0 6px 20px;margin:28px 0;}
+.portas{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:26px 0 8px;}
+@media(max-width:720px){.portas{grid-template-columns:1fr;}}
+.porta{display:block;text-decoration:none;background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:20px 18px;transition:border-color .18s,transform .18s;}
+.porta:hover{border-color:var(--sage);transform:translateY(-2px);}
+.porta .pk{font-weight:800;font-size:16px;letter-spacing:-.01em;color:var(--ink);line-height:1.2;}
+.porta .pd{font-size:14.5px;color:var(--muted);margin-top:8px;line-height:1.45;}
+.porta .pa{display:block;margin-top:14px;font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gilt);}
+.temas{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0;}
+@media(max-width:560px){.temas{grid-template-columns:1fr;}}
+.tema{display:flex;flex-direction:column;text-decoration:none;background:var(--card);border:1px solid var(--cream-dp);border-top:4px solid var(--sage);border-radius:14px;padding:18px 18px 16px;transition:border-top-color .18s,box-shadow .18s,transform .18s;}
+.tema:hover{border-top-color:var(--olive);box-shadow:0 2px 14px rgba(67,68,31,.08);transform:translateY(-2px);}
+.tema .tk{font-weight:800;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gilt);}
+.tema .tt{font-weight:800;font-size:19px;letter-spacing:-.015em;color:var(--ink);margin:6px 0 5px;line-height:1.2;}
+.tema .td{font-size:14px;color:var(--muted);line-height:1.45;flex:1 1 auto;}
+.tema .tm{margin-top:12px;padding-top:10px;border-top:1px solid var(--cream-dp);font-weight:700;font-size:12.5px;color:var(--sage-dk);}
+.book{background:var(--cream-dp);border-radius:14px;padding:18px 20px;margin:18px 0 24px;}
+.book .bk{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:7px;}
+.book .bt{font-weight:800;font-size:19px;letter-spacing:-.015em;color:var(--ink);margin-bottom:4px;line-height:1.2;}
+.book .bsub{color:var(--muted);font-size:14px;margin-bottom:14px;line-height:1.4;}
+.book a{display:inline-block;font-weight:800;font-size:12.5px;letter-spacing:.02em;color:var(--cream);background:var(--olive);padding:11px 22px;border-radius:26px;text-decoration:none;}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0;}
+@media(max-width:560px){.cards{grid-template-columns:1fr;}}
+.card{background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:6px;}
+.card.live{border-color:var(--sage);box-shadow:0 2px 12px rgba(67,68,31,.06);}
+.card:not(.live){opacity:.7;}
+.card .ct{display:flex;align-items:center;justify-content:space-between;min-height:26px;}
+.card .n{font-weight:800;font-size:24px;color:var(--sage-dk);line-height:1;letter-spacing:-.02em;}
+.card .dt{font-weight:800;font-size:12px;letter-spacing:.1em;color:var(--gilt);}
+.card.bydate .dt{font-size:15px;color:var(--sage-dk);}
+.card .tt{font-weight:800;color:var(--ink);font-size:16.5px;line-height:1.25;letter-spacing:-.01em;margin-top:2px;}
+.card .pr{color:var(--muted);font-size:13.5px;}
+.card .acts{display:flex;gap:8px;margin-top:10px;}
+.card .go,.card .pdf{font-weight:800;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;padding:9px 16px;border-radius:20px;text-decoration:none;}
+.card .go{color:var(--cream);background:var(--olive);} .card .pdf{color:var(--olive-dk);border:1.5px solid var(--gilt-lt);}
+.card .soon{font-weight:800;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:10px;}
+.empty{background:var(--card);border:1px dashed var(--cream-dp);border-radius:14px;padding:26px;text-align:center;color:var(--muted);}
+.cta{position:relative;overflow:hidden;border-radius:16px;margin:30px 0 8px;background:linear-gradient(150deg,#5b5c2a,#43441f);color:var(--cream);display:grid;grid-template-columns:minmax(0,290px) minmax(0,1fr);}
+.cta .ph{width:100%;height:100%;min-height:330px;object-fit:cover;object-position:center 22%;display:block;opacity:.95;}
+.cta .in{padding:26px 26px 28px;align-self:center;}
+.cta .in .k{color:#ddd6bf;margin-bottom:6px;font-size:14.5px;}
+.cta .in h3{font-weight:800;font-size:22px;letter-spacing:-.015em;color:var(--cream);margin:0 0 14px;}
+.cta ul{list-style:none;padding:0;margin:0 0 18px;}
+.cta li{position:relative;padding:0 0 10px 24px;font-size:14.5px;color:#f1ecdc;line-height:1.45;}
+.cta li::before{content:"\03A8";color:var(--gilt-lt);position:absolute;left:0;font-weight:800;}
+.cta a.go{display:block;text-align:center;background:var(--cream);color:var(--olive-dk);font-weight:800;font-size:14.5px;text-decoration:none;padding:14px;border-radius:28px;}
+@media(max-width:720px){.cta{grid-template-columns:1fr;} .cta .ph{min-height:230px;height:230px;}}
+.foot{text-align:center;color:var(--muted);font-size:12.5px;margin-top:38px;padding-top:20px;border-top:1px solid var(--cream-dp);}
+.foot .foot-logo{height:30px;width:auto;display:inline-block;margin-bottom:8px;}
+.contato{margin-top:14px;font-size:12.5px;color:var(--muted);line-height:1.7;}
+.contato a{color:var(--gilt);text-decoration:none;} .contato .cnpj{font-size:11.5px;opacity:.85;}
+
+.mhero{padding:36px 0 4px;}
+.mhero .kick{font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:11.5px;color:var(--gilt);margin:0 0 12px;}
+.mhero h1{font-weight:800;font-size:42px;line-height:1.04;letter-spacing:-.022em;color:var(--ink);margin:0 0 10px;}
+.mhero .sub{font-weight:700;font-size:19px;color:var(--sage-dk);line-height:1.3;margin:0 0 12px;letter-spacing:-.01em;}
+.mhero .meta{font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);}
+.mhero .tema{margin:18px 0 0;padding-left:18px;border-left:4px solid var(--cream-dp);color:var(--muted);font-size:16.5px;}
+.usar{background:var(--cream-dp);border-radius:12px;padding:16px 18px;margin:24px 0 14px;font-size:14.5px;color:var(--muted);line-height:1.55;}
+.usar b{display:block;font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--olive-dk);margin-bottom:6px;}
+.pdfbtn{display:inline-block;font-weight:800;font-size:13px;letter-spacing:.02em;color:var(--cream);background:var(--olive);padding:13px 24px;border-radius:26px;text-decoration:none;}
+.ess{background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:20px 22px;margin:26px 0;}
+.ess .et{font-weight:800;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gilt);margin-bottom:12px;}
+.ess ul{list-style:none;padding:0;margin:0;}
+.ess li{position:relative;padding:0 0 12px 26px;font-size:15.8px;line-height:1.5;}
+.ess li:last-child{padding-bottom:0;}
+.ess li::before{content:"\03A8";position:absolute;left:0;top:0;color:var(--gilt-lt);font-weight:800;}
+details.sec{border-bottom:1px solid var(--cream-dp);}
+details.sec[open]{padding-bottom:16px;}
+details.sec summary{list-style:none;cursor:pointer;padding:18px 0;display:flex;align-items:baseline;gap:12px;}
+details.sec summary::-webkit-details-marker{display:none;}
+details.sec summary h2{font-weight:800;font-size:21px;letter-spacing:-.015em;color:var(--ink);margin:0;line-height:1.2;flex:1;}
+details.sec summary .arw{color:var(--gilt);font-weight:800;font-size:13px;transition:transform .2s;}
+details.sec[open] summary .arw{transform:rotate(90deg);}
+details.sec .lead{color:var(--sage-dk);font-weight:500;margin:0 0 14px;font-size:16px;}
+details.sec p{font-size:16.5px;}
+ul.key{list-style:none;padding:0;margin:12px 0;}
+ul.key li{position:relative;padding:0 0 11px 26px;font-size:16px;line-height:1.5;}
+ul.key li::before{content:"\03A8";position:absolute;left:0;top:0;color:var(--gilt);font-weight:800;}
+.dial{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0;}
+@media(max-width:620px){.dial{grid-template-columns:1fr;}}
+.dial .d{background:var(--card);border:1px solid var(--cream-dp);border-top:3px solid var(--sage);border-radius:12px;padding:14px 16px;}
+.dial .dt{font-weight:800;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--olive-dk);margin-bottom:7px;}
+.dial p{margin:0;font-size:14.5px;color:var(--muted);line-height:1.45;}
+.obs{background:var(--cream-dp);border-radius:12px;padding:16px 18px;margin:18px 0;}
+.obs h4{font-weight:800;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--olive-dk);margin:0 0 7px;}
+.obs p{margin:0;font-size:15.5px;}
+.callout{background:var(--card);border-left:4px solid var(--gilt-lt);border-radius:0 12px 12px 0;padding:16px 18px;margin:20px 0;font-size:15.5px;line-height:1.55;}
+.callout .co-t{font-weight:800;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--gilt);margin-bottom:7px;}
+span.ref{font-size:13.5px;color:var(--muted);}
+/* diagrama */
+figure.dg{margin:24px 0;background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:18px 16px 12px;}
+figure.dg svg{width:100%;height:auto;display:block;}
+figure.dg figcaption{margin-top:10px;font-size:13px;color:var(--muted);text-align:center;line-height:1.45;}
+.dg-t{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:10px;text-align:center;}
+/* ferramentas */
+.tools{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:32px 0 0;}
+@media(max-width:720px){.tools{grid-template-columns:1fr;}}
+.tool{background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:20px;}
+.tool .tt{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:14px;}
+.ck{display:flex;gap:11px;align-items:flex-start;padding:9px 0;font-size:15px;line-height:1.45;cursor:pointer;}
+.ck input{margin:4px 0 0;accent-color:var(--olive);width:17px;height:17px;flex:none;cursor:pointer;}
+.ck.done span{text-decoration:line-through;opacity:.5;}
+.qz{margin-bottom:18px;} .qz:last-child{margin-bottom:0;}
+.qz p{font-size:15px;margin:0 0 7px;line-height:1.45;font-weight:500;}
+.qz textarea{width:100%;min-height:66px;border:1px solid var(--cream-dp);border-radius:10px;background:var(--cream);font-family:inherit;font-size:14.5px;color:var(--ink);padding:10px 12px;resize:vertical;line-height:1.5;}
+.qz textarea:focus{outline:2px solid var(--gilt-lt);outline-offset:1px;}
+.savebar{display:flex;align-items:center;gap:12px;margin-top:16px;flex-wrap:wrap;}
+.savebar button{font-weight:800;font-size:11px;letter-spacing:.08em;text-transform:uppercase;border:1.5px solid var(--cream-dp);background:none;color:var(--olive-dk);border-radius:22px;padding:10px 18px;cursor:pointer;font-family:inherit;}
+.savebar button:hover{border-color:var(--gilt-lt);color:var(--gilt);}
+.saved{font-weight:800;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--sage-dk);opacity:0;transition:opacity .3s;}
+.saved.on{opacity:1;}
+.refs h2,.nmet h2{font-weight:800;font-size:21px;letter-spacing:-.015em;color:var(--ink);margin:34px 0 10px;}
+.refs ol{padding-left:20px;font-size:13.8px;color:var(--muted);line-height:1.6;}
+.refs li{margin-bottom:9px;}
+.nmet{background:var(--card);border-left:4px solid var(--gilt-lt);border-radius:0 12px 12px 0;padding:16px 20px;margin:26px 0 0;font-size:14px;color:var(--muted);line-height:1.6;}
+.nmet b{display:block;font-weight:800;font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--olive-dk);margin-bottom:7px;}
+.side .idx a{font-size:13.5px;font-weight:500;padding:7px 12px;line-height:1.3;}
+</style></head><body><div class='topbar'><div class='in'><a href='/'><img alt='Lógica Psicológica' src='/assets/logo.png'></a><a class='backlink' href='/supervisoes/' title='Voltar para Supervisões'>&#8592; Voltar</a><div class='sp'></div><div class='tag'>Supervisão Clínica</div></div></div><div class='shell'><aside class='side' id='side'><a class='brand' href='/'><img alt='Lógica Psicológica' src='/assets/logo-creme.png'></a><div class='nav'><div class='st first'>Navegação</div><a class='home' href='/supervisoes/'>&#8592; Supervisões</a><a class='navlink' href='/'>Início do portal</a><div class='st'>Neste material</div><div class='idx'><a href='#s0'>O caso, em uma página</a><a href='#s1'>Risco e segurança — o acréscimo deste material</a><a href='#s2'>O que sustenta a permanência</a><a href='#s3'>Pré-contemplação: validar sem banalizar</a><a href='#s4'>A relação terapêutica como modelo — e seus cuidados</a><a href='#s5'>O plano em três fases, e o que fica</a></div></div><div class='sig'><img alt='Prof. Júlio Gonçalves' src='/assets/julio.jpg'><div class='who'>Prof. Júlio Gonçalves<span>MSc · CRP 12/17614</span></div></div><a class='sub' href='https://psicojulio.com/comunidade-logica-psicologica/' target='_blank' rel='noopener'>Inscreva-se</a></aside><main class='main'><div class='mhero'><div class='kick'>Supervisão clínica · Lógica Psicológica</div><h1>Subjuga&ccedil;&atilde;o e viol&ecirc;ncia</h1><div class='sub'>3 de agosto de 2026</div><div class='meta'>Supervisão de caso · Mediação de Prof. Júlio Gonçalves · Terapia Baseada em Processos</div><p class='tema'>Como sustentar o trabalho com quem ainda não pretende sair de um relacionamento violento — sem pressionar, e sem que a validação vire banalização.</p></div><div class='obs' style='margin-bottom:18px'><h4>Antes de ler</h4><p>Este material discute um caso de <strong>violência por parceiro íntimo em curso</strong>. O caso foi desidentificado: idade, datas, localidades, composição familiar e circunstâncias específicas foram generalizadas ou removidas.</p><p>A supervisão tratou sobretudo da <strong>estratégia relacional</strong> — como sustentar o vínculo com uma paciente que ainda não pretende sair do relacionamento. Este material acrescenta uma seção sobre <strong>avaliação de risco, segurança e deveres legais</strong>, que a discussão não cobriu e sem a qual o restante seria incompleto. O acréscimo está sinalizado como tal.</p></div><div class='usar'><b>Como usar</b>Abra as seções que quiser ler, marque o que pretende aplicar e responda o que fizer sentido. Tudo fica salvo neste aparelho — ninguém mais vê.</div><a class='pdfbtn' href='resumo.pdf'>&#8681; Baixar em PDF</a><div class='ess'><div class='et'>O essencial</div><ul><li><strong>Validar a permanência não é validar a violência.</strong> A postura é de acolhimento com <em>ênfase explícita na gravidade</em> a cada relato de agressão. As duas coisas convivem, e precisam conviver.</li><li><strong>Pressionar a saída em pré-contemplação produz racionalização e barganha.</strong> A prioridade é confiança e conexão com a dor da perda do ideal — não convencimento.</li><li><strong>O foco atencional na urgência impede ver o longo prazo.</strong> Resolver o problema de hoje consome tudo, e as consequências acumuladas nunca entram no campo de visão.</li><li><strong>Uma criança presenciou a violência.</strong> Isso muda o quadro: deixa de ser apenas questão do casal e passa a envolver proteção infantil e deveres legais.</li><li><strong>Rede e independência vêm antes da decisão.</strong> Sem renda, sem moradia alternativa e sem apoio, a saída não é uma escolha disponível — é uma exigência sem meio.</li></ul></div><details class='sec' id='s0' open><summary><h2>O caso, em uma página</h2><span class='arw'>&#9656;</span></summary>
+<p>Mulher jovem, mãe, em acompanhamento há cerca de dois anos e meio. Buscou terapia após o fim de um casamento marcado por traições e por episódios de violência.</p>
+<h3>Quadro</h3>
+<ul class='key'><li><b>Esquiva emocional</b>, choro frequente, medo de julgamento e dependência de reasseguramento.</li><li><b>Objetivos interrompidos</b> por falta de confiança e medo de errar — inclusive aprender a dirigir.</li><li><b>Atenção capturada pela urgência</b>: a saúde dos filhos e os problemas imediatos ocupam o campo inteiro, e o planejamento de longo prazo não acontece.</li><li><b>Sem renda própria</b>, com dificuldade de estabelecer limites e preocupação excessiva com a opinião de terceiros.</li><li><b>Rede de apoio limitada</b>: a mãe mora em outra cidade e o pai não oferece o suporte desejado.</li></ul>
+<h3>O que apareceu na supervisão</h3>
+<p>Nos meses anteriores, ela sofreu <strong>três episódios de agressão física pelo parceiro atual</strong> — um deles <strong>diante de um dos filhos, ainda pequeno</strong>. Manteve os fatos ocultos da terapia por vergonha.</p>
+<p>Houve ganhos reais no processo: autoestima e autocuidado melhoraram. A dificuldade está em aprofundar o tema central — a realidade da violência ainda não é plenamente reconhecida por ela.</p>
+<div class='callout note'><div class='co-t'>Duas barreiras concretas, e não psicológicas</div>A moradia depende da proximidade com a família do parceiro, e não há renda própria. Enquanto isso não mudar, <strong>sair não é uma opção disponível</strong> — é uma exigência sem meio. Qualquer plano que ignore essa camada material vira cobrança.</div>
+</details><details class='sec' id='s1'><summary><h2>Risco e segurança — o acréscimo deste material</h2><span class='arw'>&#9656;</span></summary>
+<div class='obs'><h4>Sinalizando o que é acréscimo</h4><p>A supervisão concentrou-se, com razão, na estratégia relacional. Esta seção <strong>não reproduz o que foi discutido</strong>: ela cobre a camada de risco e de dever legal, sem a qual um material de estudo sobre violência em curso ensinaria pela metade.</p></div>
+<h3>Avaliação de risco é tarefa distinta da formulação</h3>
+<p>Formular processos e avaliar risco de letalidade são coisas diferentes, e a segunda não sai da primeira. A frequência crescente das agressões, a presença de crianças, o isolamento da rede e a dependência econômica são <strong>fatores de risco reconhecidos</strong>, e existem instrumentos estruturados para dimensioná-los — o mais conhecido deles é a <em>Danger Assessment</em> (Campbell, Webster &amp; Glass, 2009).</p>
+<p>A escala qualitativa de gravidade sugerida na supervisão — leve, moderada, grave, registrada em prontuário para acompanhar os relatos — <strong>é útil e cumpre outra função</strong>: organiza o acompanhamento clínico e permite devolver o padrão à paciente mais adiante. Ela não substitui a avaliação de risco.</p>
+<h3>Plano de segurança</h3>
+<p>Um plano de segurança pode ser construído <strong>mesmo com alguém que não pretende sair do relacionamento</strong> — e talvez sobretudo nesse caso. Ele não pressupõe a decisão de sair; pressupõe que, se houver uma escalada, exista algo pensado antes.</p>
+<p>Em linhas gerais, um plano cobre: quem pode ser acionado e como, para onde ir se for preciso sair de casa, o que precisa estar acessível, e quais serviços de proteção existem na região. A construção é feita com a paciente, respeitando o que ela avalia como seguro — inclusive porque um plano mal ajustado pode aumentar o risco se for descoberto.</p>
+<h3>A criança que presenciou</h3>
+<div class='callout note'><div class='co-t'>Isso muda o enquadramento do caso</div>No Brasil, a criança que <strong>presencia</strong> violência doméstica é reconhecida como <strong>vítima de violência psicológica</strong> (Lei nº 13.431/2017). O Estatuto da Criança e do Adolescente estabelece o dever de comunicação ao Conselho Tutelar diante de suspeita ou confirmação de maus-tratos (Lei nº 8.069/1990, arts. 13 e 245).<br><br>Isso não é detalhe burocrático nem contradiz o cuidado com o vínculo: é obrigação legal, e ignorá-la expõe a criança e o profissional. O Código de Ética prevê a quebra do sigilo quando necessária à proteção, pelo critério do <strong>menor prejuízo</strong> (Resolução CFP nº 10/2005).</div>
+<p>O manejo clínico dessa obrigação é parte do trabalho, não um evento à parte: comunicar à paciente o que será feito e por quê, sustentando a aliança em vez de romper com ela. E vale lembrar que a exposição de crianças à violência doméstica tem efeitos documentados sobre desenvolvimento e saúde mental (Holt, Buckley &amp; Whelan, 2008) — o que também é conteúdo de psicoeducação possível com a paciente, no tempo dela.</p>
+<h3>Informar a família não é automaticamente proteger</h3>
+<p>Um dado do caso ilustra bem: ela precisa medir muito as palavras ao falar com o pai sobre a agressão, porque <strong>há risco real de reação violenta dele</strong>. Rede de apoio não é sinônimo de rede segura, e supor o contrário pode ampliar o perigo em vez de reduzi-lo.</p>
+</details><details class='sec' id='s2'><summary><h2>O que sustenta a permanência</h2><span class='arw'>&#9656;</span></summary>
+<p>A leitura da supervisão identificou o que mantém o padrão — e nenhum dos fatores é "gostar de sofrer":</p>
+<ul class='key'><li><b>Normas de gênero</b> e a regra de <strong>“ter que aguentar”</strong>.</li><li><b>Ausência de direção de vida clara</b>, que deixa o relacionamento como único projeto em curso.</li><li><b>Esquema de abandono forte</b> — permanecer evita a dor que sair produziria.</li><li><b>Esquemas de dependência e incompetência</b>, que aparecem como justificativas racionais para não trabalhar ou não dirigir.</li><li><b>Autossacrifício e busca de aprovação</b>, a serem trabalhados gradualmente.</li></ul>
+<h3>O conflito entre mulher e mãe</h3>
+<p>Uma hipótese levantada no grupo e que merece registro: a ambivalência pode vir de um <strong>conflito entre os papéis de mulher e de mãe</strong> — ela aceita o abuso na tentativa de garantir uma figura paterna para os filhos, possivelmente repetindo padrões da própria infância.</p>
+<p>Se a hipótese se confirmar, ela reorganiza a conversa: o custo de sair deixa de ser só solidão e passa a ser, na cabeça dela, tirar algo dos filhos. É um argumento que não se desmonta com informação — precisa ser trabalhado como valor em conflito.</p>
+<h3>A idealização construída no intervalo</h3>
+<p>Houve um período longo sem violência física, e nesse intervalo ela construiu uma <strong>idealização do parceiro</strong>. É por isso que a pressão para sair tende a produzir racionalização e barganha: o que se pede que ela abandone não é o agressor da última semana, é a versão idealizada que ela viveu por mais de um ano.</p>
+<p>Daí a orientação de conectar-se primeiro com <strong>a dor da perda desse ideal</strong>. Sem esse luto, o argumento racional não encontra onde pousar.</p>
+<div class='obs'><h4>Sobre o “estou bem”</h4><p>Ela costuma relatar que está bem com o parceiro. A conduta sugerida não é discordar, e sim <strong>investigar o que “bem” significa</strong> — o que costuma expor a ausência de comunicação e o distanciamento real da relação. É a mesma lógica de trabalhar a definição da palavra, e não o veredito.</p></div>
+</details><details class='sec' id='s3'><summary><h2>Pré-contemplação: validar sem banalizar</h2><span class='arw'>&#9656;</span></summary>
+<p>O objetivo final é o fim do padrão abusivo. Mas a paciente está em <strong>pré-contemplação</strong> (Prochaska &amp; DiClemente, 1983), e isso define a conduta possível agora: o foco é confiança terapêutica, não mudança comportamental direta.</p>
+<p>O equilíbrio exigido é delicado e vale enunciar com clareza:</p>
+<ul class='key'><li><b>Não pressionar</b> a saída imediata do relacionamento.</li><li><b>Validar a dor</b> e o vínculo atual, incluindo a perda do ideal.</li><li><b>E, a cada relato de agressão, adotar postura de ênfase e preocupação explícitas</b> — a gravidade nomeada, todas as vezes.</li></ul>
+<div class='callout note'><div class='co-t'>O risco de cada lado</div>Pressionar produz defensividade, racionalização e afastamento — e paciente afastada perde o único lugar onde a violência é nomeada.<br><br>Mas acolher sem marcar a gravidade produz <strong>banalização</strong>: se o terapeuta recebe o relato de agressão com a mesma temperatura de qualquer outro assunto, ele confirma a leitura de que aquilo é normal. As duas falhas são simétricas, e a segunda é a mais fácil de cometer sem perceber.</div>
+<h3>Validar a demora em contar</h3>
+<p>Ela ocultou as agressões por vergonha. A orientação foi explícita: <strong>validar o esforço de proteger o vínculo terapêutico, sem culpabilizá-la pela demora</strong>. Quem se culpa por ter escondido tende a esconder de novo.</p>
+<h3>Trabalhar o foco atencional</h3>
+<p>O viés atencional na resolução imediata de problemas impede a visualização das consequências de longo prazo. Isso é alvo clínico por si — deslocar o foco é condição para que qualquer conversa sobre futuro tenha onde acontecer.</p>
+<p>Um recurso concreto trazido no grupo: pedir que ela <strong>liste as características de um relacionamento ideal</strong>, para depois comparar com a realidade. A comparação é feita por ela, não pelo terapeuta.</p>
+</details><details class='sec' id='s4'><summary><h2>A relação terapêutica como modelo — e seus cuidados</h2><span class='arw'>&#9656;</span></summary>
+<p>A orientação central de manejo: usar a relação terapêutica como <strong>modelo de vínculo protetivo</strong> — uma postura de cuidado e validação que ofereça o que falta na vida externa dela, e que permita aprender a aceitar erros e cuidado sem contrapartida.</p>
+<p>Foi sugerido também um recurso de esperança: pedir que ela feche os olhos e <strong>visualize um futuro com um parceiro que atenda às suas necessidades emocionais</strong>, para confrontar a crença de que a situação atual é a única possibilidade. A desesperança, aqui, é fator de manutenção como qualquer outro.</p>
+<div class='obs'><h4>Três cuidados com esse modelo</h4><p><strong>Proteção sem tutela.</strong> Oferecer cuidado a quem tem esquema de dependência exige atenção para não instalar mais uma relação em que outra pessoa decide. O modelo é de vínculo seguro, não de substituição de figura de autoridade.</p><p><strong>Gênero na sala.</strong> Um terapeuta homem atendendo uma mulher em situação de violência precisa considerar que ela pode projetar medos e receios sobre ele. Isso não desqualifica o trabalho — mas pede que o tema seja nomeável na sessão em vez de silencioso.</p><p><strong>Relações fora do consultório.</strong> Havia dúvida sobre se um conhecido em comum poderia estar afetando o vínculo, ainda que a paciente nunca tenha trazido o assunto. Vale avaliar de forma ativa: a paciente pode estar calculando o que diz, e o silêncio dela não é evidência de que não há problema.</p></div>
+<p>Vale ainda o encaminhamento registrado no encontro: levar o caso a consultoria específica e buscar formação especializada em relações abusivas. Reconhecer o limite do próprio repertório num caso de risco não é fragilidade — é parte da conduta.</p>
+</details><details class='sec' id='s5'><summary><h2>O plano em três fases, e o que fica</h2><span class='arw'>&#9656;</span></summary>
+<h3>As três fases</h3>
+<ul class='key'><li><b>Primeira</b> — foco total na relação terapêutica e na <strong>avaliação implícita</strong> do problema, sem confronto direto.</li><li><b>Segunda</b> — trabalho no entorno: organização da rede de apoio e promoção de independência em <strong>pequenas decisões</strong>, construindo autonomia por acumulação.</li><li><b>Terceira</b> — abordagem das escolhas de relacionamento e da repetição de padrões.</li></ul>
+<p>A lógica é a mesma que atravessa outras supervisões desta série: <strong>não se pede a alguém que abandone um recurso sem que exista outro no lugar</strong>. Aqui o "outro lugar" é literal — renda, moradia, rede. A construção é lenta porque as barreiras são materiais, não porque a paciente é lenta.</p>
+<div class='callout note'><div class='co-t'>A ressalva que a gradualidade exige</div>Plano gradual e risco em curso convivem, mas com uma condição: <strong>a fase um não suspende a avaliação de risco</strong>. Se a gravidade escalar, a sequência muda — e é para isso que servem o monitoramento e o plano de segurança construídos desde o início. Gradualidade é estratégia clínica, não espera.</div>
+<h3>O que fica para a sua clínica</h3>
+<ul class='key'><li><b>Validar a permanência e nomear a gravidade são compatíveis</b> — e a segunda precisa aparecer todas as vezes.</li><li><b>Avalie risco com método próprio.</b> Formulação de processos não substitui avaliação de letalidade.</li><li><b>Plano de segurança não pressupõe a decisão de sair.</b></li><li><b>Criança que presencia é vítima</b>, com consequências legais e clínicas próprias.</li><li><b>Rede de apoio não é automaticamente rede segura.</b></li><li><b>Barreira material não se resolve com insight.</b> Sem renda e sem moradia, a saída não está disponível.</li><li><b>Reconheça o limite do seu repertório</b> e busque consultoria em casos de risco.</li></ul>
+</details><div class='tools'><div class='tool'><div class='tt'>Levar para a prática</div><label class='ck'><input type='checkbox'><span>Avaliei risco com método próprio, e não deduzi risco a partir da formulação de processos.</span></label><label class='ck'><input type='checkbox'><span>Nomeei a gravidade de forma explícita a cada relato de agressão.</span></label><label class='ck'><input type='checkbox'><span>Construí um plano de segurança mesmo sem a paciente pretender sair do relacionamento.</span></label><label class='ck'><input type='checkbox'><span>Verifiquei se há crianças expostas à violência e agi conforme os deveres legais.</span></label><label class='ck'><input type='checkbox'><span>Comuniquei à paciente o que seria feito e por quê, sustentando a aliança.</span></label><label class='ck'><input type='checkbox'><span>Checei se a rede de apoio disponível é de fato segura.</span></label><label class='ck'><input type='checkbox'><span>Validei a demora em relatar, sem culpabilizar.</span></label><label class='ck'><input type='checkbox'><span>Mapeei as barreiras materiais antes de discutir decisões.</span></label><label class='ck'><input type='checkbox'><span>Busquei consultoria ou formação específica diante do limite do meu repertório.</span></label></div><div class='tool'><div class='tt'>Para revisar — responda</div><div class='qz'><p>1. Como você nomearia a gravidade de uma agressão sem pressionar a saída do relacionamento?</p><textarea placeholder='Sua resposta…'></textarea></div><div class='qz'><p>2. Que instrumentos ou critérios você usa hoje para avaliar risco em violência por parceiro íntimo?</p><textarea placeholder='Sua resposta…'></textarea></div><div class='qz'><p>3. Como você construiria um plano de segurança com alguém que não pretende sair?</p><textarea placeholder='Sua resposta…'></textarea></div><div class='qz'><p>4. Que deveres legais se aplicam quando há criança exposta à violência? Como você conduziria isso mantendo a aliança?</p><textarea placeholder='Sua resposta…'></textarea></div><div class='qz'><p>5. Que rede de apoio de um paciente seu você presumiu segura sem verificar?</p><textarea placeholder='Sua resposta…'></textarea></div><div class='qz'><p>6. Que barreiras materiais você pode estar tratando como resistência psicológica?</p><textarea placeholder='Sua resposta…'></textarea></div><div class='qz'><p>7. Em que ponto você reconheceria que o caso exige consultoria especializada?</p><textarea placeholder='Sua resposta…'></textarea></div></div></div><div class='savebar'><button id='exp'>Exportar respostas</button><button id='lmp'>Limpar</button><span class='saved' id='saved'>Salvo neste aparelho</span></div><div class='refs'><h2>Referências</h2><ol><li>BRASIL. Lei nº 8.069, de 13 de julho de 1990. Estatuto da Criança e do Adolescente (arts. 13 e 245).</li><li>BRASIL. Lei nº 10.778, de 24 de novembro de 2003. Notificação compulsória de violência contra a mulher atendida em serviços de saúde.</li><li>BRASIL. Lei nº 11.340, de 7 de agosto de 2006. Lei Maria da Penha.</li><li>BRASIL. Lei nº 13.431, de 4 de abril de 2017. Sistema de garantia de direitos da criança e do adolescente vítima ou testemunha de violência.</li><li>Campbell, J. C. (2002). Health consequences of intimate partner violence. <em>The Lancet, 359</em>(9314), 1331–1336.</li><li>Campbell, J. C., Webster, D. W., &amp; Glass, N. (2009). The Danger Assessment: Validation of a lethality risk assessment instrument for intimate partner femicide. <em>Journal of Interpersonal Violence, 24</em>(4), 653–674.</li><li>Conselho Federal de Psicologia. Resolução CFP nº 10/2005. Código de Ética Profissional do Psicólogo.</li><li>Hayes, S. C., Hofmann, S. G., &amp; Ciarrochi, J. (2020). A process-based approach to psychological diagnosis and treatment. <em>Clinical Psychology Review, 82</em>, 101908.</li><li>Holt, S., Buckley, H., &amp; Whelan, S. (2008). The impact of exposure to domestic violence on children and young people: A review of the literature. <em>Child Abuse &amp; Neglect, 32</em>(8), 797–810.</li><li>Kohlenberg, R. J., &amp; Tsai, M. (1991). <em>Functional analytic psychotherapy.</em> Plenum Press.</li><li>Linehan, M. M. (2015). <em>DBT skills training manual</em> (2ª ed.). Guilford Press.</li><li>Miller, W. R., &amp; Rollnick, S. (2013). <em>Motivational interviewing: Helping people change</em> (3ª ed.). Guilford Press.</li><li>Prochaska, J. O., &amp; DiClemente, C. C. (1983). Stages and processes of self-change of smoking: Toward an integrative model of change. <em>Journal of Consulting and Clinical Psychology, 51</em>(3), 390–395.</li><li>Walker, L. E. A. (2016). <em>The battered woman syndrome</em> (4ª ed.). Springer.</li><li>Young, J. E., Klosko, J. S., &amp; Weishaar, M. E. (2003). <em>Schema therapy: A practitioner's guide.</em> Guilford Press.</li></ol></div><div class='nmet'><b>Nota de método</b>Material de estudo desidentificado. Foram generalizados ou removidos: idade, datas, localidades, composição familiar detalhada, idade da criança envolvida e circunstâncias específicas dos episódios. Os episódios de violência são referidos por sua ocorrência e gravidade, sem descrição.<br><br>A seção sobre <strong>risco, segurança e deveres legais</strong> é acréscimo deste material, e está sinalizada como tal no corpo do texto: a supervisão concentrou-se na estratégia relacional, que é o que ela se propôs a discutir, e um material de estudo publicado sobre violência em curso que reproduzisse apenas essa camada ensinaria pela metade. O acréscimo cobre avaliação de risco com instrumento próprio, plano de segurança construído independentemente da decisão de sair, e os deveres decorrentes da exposição de criança à violência — reconhecida na legislação brasileira como violência psicológica contra a criança. Nada nessa seção contradiz a orientação da supervisão: gradualidade clínica e avaliação de risco são camadas distintas e simultâneas.<br><br>O conteúdo sobre plano de segurança é mantido em nível geral, adequado à leitura profissional, sem detalhamento operacional. A hipótese sobre o conflito entre os papéis de mulher e mãe é apresentada como hipótese levantada em grupo. O nome do terapeuta supervisionado e dos demais participantes não é mencionado. As referências legais e clínicas foram acrescentadas para dar respaldo formal a afirmações feitas sem citação explícita; nenhuma citação foi construída para preencher lacuna. Este material registra raciocínio clínico de supervisão e <strong>não substitui</strong> avaliação individualizada nem orientação jurídica.</div><div class='cta'><img class='ph' alt='Prof. Júlio Gonçalves' src='/assets/julio.jpg'><div class='in'><div class='k'>Aprenda muito mais na</div><h3>Comunidade Lógica Psicológica</h3><ul><li>Aprofundar o raciocínio clínico com ciência, processos e análise funcional.</li><li>Estruturar uma prática ética, com pensamento crítico e evidências atualizadas.</li><li>Desenvolver o self clínico com supervisão, leituras guiadas e rede.</li></ul><a class='go' href='https://psicojulio.com/comunidade-logica-psicologica/' target='_blank' rel='noopener'>Participar da comunidade &#8594;</a></div></div><div class='foot'><img class='foot-logo' alt='Lógica Psicológica' src='/assets/logo.png'><div class='contato'><a href='mailto:contato@psicojulio.com'>contato@psicojulio.com</a> &middot; <a href='tel:+5547999338021'>(47) 99933-8021</a><br>Rua Concórdia, 703, São Vicente, Itajaí — 88309-645<br><span class='cnpj'>CNPJ 49.649.803/0001-60</span></div></div></main></div><button class='toc-fab' id='fab'>&#9776; Seções</button><div class='overlay' id='ov'></div><script>
+(function(){
+  var K='mat-Sup-2026-08-03-';
+  document.querySelectorAll('.ck input').forEach(function(c,i){
+    var k=K+'ck'+i;
+    try{ if(localStorage.getItem(k)==='1'){c.checked=true;c.closest('.ck').classList.add('done');} }catch(e){}
+    c.addEventListener('change',function(){
+      c.closest('.ck').classList.toggle('done',c.checked);
+      try{ localStorage.setItem(k,c.checked?'1':'0'); }catch(e){} flag();
+    });
+  });
+  document.querySelectorAll('.qz textarea').forEach(function(t,i){
+    var k=K+'q'+i;
+    try{ var v=localStorage.getItem(k); if(v)t.value=v; }catch(e){}
+    t.addEventListener('input',function(){ try{ localStorage.setItem(k,t.value); }catch(e){} flag(); });
+  });
+  var s=document.getElementById('saved'),tm;
+  function flag(){ if(!s)return; s.classList.add('on'); clearTimeout(tm); tm=setTimeout(function(){s.classList.remove('on');},1600); }
+  var b=document.getElementById('exp');
+  if(b) b.addEventListener('click',function(){
+    var out='RESPOSTAS — Subjugação e violência\n\n';
+    document.querySelectorAll('.qz').forEach(function(q){
+      out+= q.querySelector('p').innerText+'\n'+(q.querySelector('textarea').value||'(sem resposta)')+'\n\n';
+    });
+    var a=document.createElement('a');
+    a.href=URL.createObjectURL(new Blob([out],{type:'text/plain'}));
+    a.download='Sup-2026-08-03-respostas.txt'; a.click();
+  });
+  var l=document.getElementById('lmp');
+  if(l) l.addEventListener('click',function(){
+    if(!confirm('Apagar suas anotações deste material?'))return;
+    try{ Object.keys(localStorage).filter(function(k){return k.indexOf(K)===0;}).forEach(function(k){localStorage.removeItem(k);}); }catch(e){}
+    location.reload();
+  });
+  var f=document.getElementById('fab'),o=document.getElementById('ov'),sd=document.getElementById('side');
+  if(f)f.onclick=function(){sd.classList.toggle('open');o.classList.toggle('open');};
+  if(o)o.onclick=function(){sd.classList.remove('open');o.classList.remove('open');};
+})();
+</script></body></html>
