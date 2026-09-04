@@ -1,0 +1,302 @@
+<!DOCTYPE html><html lang='pt-BR'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='icon' type='image/png' sizes='32x32' href='/favicon-32.png'><link rel='icon' type='image/png' sizes='192x192' href='/favicon-192.png'><link rel='apple-touch-icon' href='/apple-touch-icon.png'><link rel='icon' href='/favicon.ico' sizes='any'><link rel='preconnect' href='https://fonts.googleapis.com'><link rel='preconnect' href='https://fonts.gstatic.com' crossorigin><link href='https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500&display=swap' rel='stylesheet'><title>Transdiagnóstico e transtorno por uso de substâncias — Lógica Psicológica</title><style>
+:root{--olive:#5b5c2a;--olive-dk:#43441f;--sage:#9ca575;--sage-dk:#7c8054;--cream:#f8f3e6;--cream-dp:#efe7d3;--gilt:#a8894f;--gilt-lt:#c3a468;--ink:#2f2e24;--muted:#6c6a55;--card:#fffdf7;}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;} html,body{margin:0;padding:0;}
+body{font-family:'Plus Jakarta Sans',system-ui,-apple-system,Segoe UI,sans-serif;background:var(--cream);color:var(--ink);font-size:17px;line-height:1.62;font-weight:400;-webkit-font-smoothing:antialiased;}
+a{color:var(--olive);} strong{font-weight:700;color:var(--olive-dk);} em{color:var(--sage-dk);}
+:focus-visible{outline:2px solid var(--gilt);outline-offset:2px;}
+.topbar{position:sticky;top:0;z-index:30;background:rgba(248,243,230,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--cream-dp);}
+.topbar .in{max-width:1100px;margin:0 auto;padding:11px 20px;display:flex;align-items:center;gap:12px;}
+.topbar img{height:22px;display:block;}
+.topbar .sp{flex:1;}
+.topbar .tag{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);}
+.backlink{font-weight:800;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--olive-dk);text-decoration:none;border:1px solid var(--cream-dp);background:var(--card);border-radius:20px;padding:7px 14px;white-space:nowrap;line-height:1;transition:border-color .18s,color .18s;}
+.backlink:hover{border-color:var(--gilt-lt);color:var(--gilt);}
+@media(max-width:430px){.topbar .tag{display:none;}}
+.shell{display:flex;gap:34px;max-width:1100px;margin:0 auto;padding:0 20px;align-items:flex-start;}
+.side{flex:0 0 252px;width:252px;position:sticky;top:56px;align-self:flex-start;height:calc(100vh - 66px);overflow:hidden;background:linear-gradient(165deg,#5b5c2a,#3b3c1b);color:var(--cream);border-radius:0 0 16px 16px;padding:18px 18px 16px;display:flex;flex-direction:column;}
+.side .nav{flex:1 1 auto;overflow-y:auto;min-height:0;scrollbar-width:thin;scrollbar-color:rgba(248,243,230,.28) transparent;}
+.side .nav::-webkit-scrollbar{width:6px;} .side .nav::-webkit-scrollbar-thumb{background:rgba(248,243,230,.28);border-radius:3px;}
+.side .brand{display:block;margin-bottom:14px;}
+.side .brand img{width:100%;max-width:148px;height:auto;display:block;}
+.side .st{font-weight:800;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt-lt);margin:13px 0 6px;padding-top:11px;border-top:1px solid rgba(248,243,230,.18);}
+.side .st.first{margin-top:0;padding-top:0;border-top:none;}
+.side a{display:block;text-decoration:none;color:var(--cream);padding:8px 11px;border-radius:9px;font-size:14.5px;font-weight:700;line-height:1.25;margin-bottom:3px;border:1px solid transparent;}
+.side a .s{display:block;font-size:11.8px;font-weight:400;color:#d9d3bd;margin-top:2px;line-height:1.3;}
+.side a:hover{background:rgba(248,243,230,.10);}
+.side a.on{background:var(--cream);color:var(--olive-dk);border-color:var(--cream);}
+.side a.on .s{color:var(--muted);}
+.side .home{font-weight:800;font-size:12.5px;letter-spacing:.02em;padding:5px 11px;}
+.side .navlink{font-weight:700;font-size:13px;color:#e7e1cb;padding:5px 11px;}
+.side .sig{flex:0 0 auto;margin-top:12px;padding-top:12px;border-top:1px solid rgba(248,243,230,.18);display:flex;align-items:center;gap:11px;}
+.side .sig img{width:40px;height:40px;flex:none;border-radius:50%;object-fit:cover;object-position:center 18%;border:2px solid rgba(248,243,230,.35);}
+.side .sig .who{font-weight:800;font-size:12.5px;color:var(--cream);line-height:1.3;}
+.side .sig .who span{display:block;font-weight:400;font-size:11.5px;color:#cfc9b2;letter-spacing:.04em;margin-top:2px;}
+.side .sub{display:block;margin-top:10px;text-align:center;background:var(--cream);color:var(--olive-dk);font-weight:800;font-size:13px;letter-spacing:.02em;text-decoration:none;padding:10px 14px;border-radius:22px;transition:background .18s;}
+.side .sub:hover{background:#fff;color:var(--olive-dk);}
+.main{flex:1 1 auto;max-width:730px;width:100%;padding:0 0 50px;}
+.toc-fab{display:none;} .overlay{display:none;}
+@media(max-width:960px){
+ .shell{display:block;padding:0;} .main{max-width:760px;margin:0 auto;padding:0 20px 50px;}
+ .side{position:fixed;top:0;left:0;height:100vh;width:292px;z-index:60;transform:translateX(-100%);transition:transform .25s;box-shadow:2px 0 22px rgba(0,0,0,.28);padding:26px 22px;max-height:none;border-radius:0;}
+ .side.open{transform:none;}
+ .toc-fab{display:block;position:fixed;bottom:18px;right:18px;z-index:50;background:var(--olive-dk);color:var(--cream);font-weight:800;font-size:13px;letter-spacing:.04em;border:none;border-radius:30px;padding:13px 20px;box-shadow:0 4px 14px rgba(0,0,0,.24);cursor:pointer;}
+ .overlay{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:55;opacity:0;pointer-events:none;transition:opacity .25s;}
+ .overlay.open{display:block;opacity:1;pointer-events:auto;}
+}
+@media(min-width:961px) and (max-height:820px){
+ .side a .s{display:none;}
+ .side .brand{margin-bottom:10px;} .side .brand img{max-width:132px;}
+ .side .st{margin:10px 0 5px;padding-top:9px;}
+}
+@media(min-width:961px) and (max-height:680px){
+ .side .sig img{display:none;} .side .brand{display:none;}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;}}
+.hero{padding:40px 0 6px;}
+.hero .kick{font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:12px;color:var(--gilt);margin:0 0 14px;}
+.hero h1{font-weight:800;font-size:46px;line-height:1.03;letter-spacing:-.022em;color:var(--ink);margin:0 0 16px;}
+.hero h1 .ac{color:var(--olive);}
+.hero p{color:var(--muted);font-size:17.5px;max-width:620px;margin:0;}
+.divider{width:56px;height:3px;background:var(--gilt-lt);border-radius:2px;margin:26px 0 4px;}
+h2{font-weight:800;color:var(--ink);font-size:25px;letter-spacing:-.015em;line-height:1.15;margin:38px 0 10px;scroll-margin-top:74px;}
+h3{font-weight:800;color:var(--olive);font-size:17px;letter-spacing:-.005em;margin:26px 0 6px;}
+p{margin:0 0 12px;}
+ul.clean{list-style:none;padding:0;margin:10px 0 14px;}
+ul.clean li{position:relative;padding:0 0 10px 26px;}
+ul.clean li::before{content:"\03A8";font-weight:800;color:var(--gilt);position:absolute;left:0;top:0;}
+.pull{font-weight:800;color:var(--olive-dk);font-size:23px;line-height:1.3;letter-spacing:-.015em;border-left:4px solid var(--gilt-lt);padding:6px 0 6px 20px;margin:28px 0;}
+.portas{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:26px 0 8px;}
+@media(max-width:720px){.portas{grid-template-columns:1fr;}}
+.porta{display:block;text-decoration:none;background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:20px 18px;transition:border-color .18s,transform .18s;}
+.porta:hover{border-color:var(--sage);transform:translateY(-2px);}
+.porta .pk{font-weight:800;font-size:16px;letter-spacing:-.01em;color:var(--ink);line-height:1.2;}
+.porta .pd{font-size:14.5px;color:var(--muted);margin-top:8px;line-height:1.45;}
+.porta .pa{display:block;margin-top:14px;font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gilt);}
+.temas{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0;}
+@media(max-width:560px){.temas{grid-template-columns:1fr;}}
+.tema{display:flex;flex-direction:column;text-decoration:none;background:var(--card);border:1px solid var(--cream-dp);border-top:4px solid var(--sage);border-radius:14px;padding:18px 18px 16px;transition:border-top-color .18s,box-shadow .18s,transform .18s;}
+.tema:hover{border-top-color:var(--olive);box-shadow:0 2px 14px rgba(67,68,31,.08);transform:translateY(-2px);}
+.tema .tk{font-weight:800;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gilt);}
+.tema .tt{font-weight:800;font-size:19px;letter-spacing:-.015em;color:var(--ink);margin:6px 0 5px;line-height:1.2;}
+.tema .td{font-size:14px;color:var(--muted);line-height:1.45;flex:1 1 auto;}
+.tema .tm{margin-top:12px;padding-top:10px;border-top:1px solid var(--cream-dp);font-weight:700;font-size:12.5px;color:var(--sage-dk);}
+.book{background:var(--cream-dp);border-radius:14px;padding:18px 20px;margin:18px 0 24px;}
+.book .bk{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:7px;}
+.book .bt{font-weight:800;font-size:19px;letter-spacing:-.015em;color:var(--ink);margin-bottom:4px;line-height:1.2;}
+.book .bsub{color:var(--muted);font-size:14px;margin-bottom:14px;line-height:1.4;}
+.book a{display:inline-block;font-weight:800;font-size:12.5px;letter-spacing:.02em;color:var(--cream);background:var(--olive);padding:11px 22px;border-radius:26px;text-decoration:none;}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0;}
+@media(max-width:560px){.cards{grid-template-columns:1fr;}}
+.card{background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:6px;}
+.card.live{border-color:var(--sage);box-shadow:0 2px 12px rgba(67,68,31,.06);}
+.card:not(.live){opacity:.7;}
+.card .ct{display:flex;align-items:center;justify-content:space-between;min-height:26px;}
+.card .n{font-weight:800;font-size:24px;color:var(--sage-dk);line-height:1;letter-spacing:-.02em;}
+.card .dt{font-weight:800;font-size:12px;letter-spacing:.1em;color:var(--gilt);}
+.card.bydate .dt{font-size:15px;color:var(--sage-dk);}
+.card .tt{font-weight:800;color:var(--ink);font-size:16.5px;line-height:1.25;letter-spacing:-.01em;margin-top:2px;}
+.card .pr{color:var(--muted);font-size:13.5px;}
+.card .acts{display:flex;gap:8px;margin-top:10px;}
+.card .go,.card .pdf{font-weight:800;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;padding:9px 16px;border-radius:20px;text-decoration:none;}
+.card .go{color:var(--cream);background:var(--olive);} .card .pdf{color:var(--olive-dk);border:1.5px solid var(--gilt-lt);}
+.card .soon{font-weight:800;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:10px;}
+.empty{background:var(--card);border:1px dashed var(--cream-dp);border-radius:14px;padding:26px;text-align:center;color:var(--muted);}
+.cta{position:relative;overflow:hidden;border-radius:16px;margin:30px 0 8px;background:linear-gradient(150deg,#5b5c2a,#43441f);color:var(--cream);display:grid;grid-template-columns:minmax(0,290px) minmax(0,1fr);}
+.cta .ph{width:100%;height:100%;min-height:330px;object-fit:cover;object-position:center 22%;display:block;opacity:.95;}
+.cta .in{padding:26px 26px 28px;align-self:center;}
+.cta .in .k{color:#ddd6bf;margin-bottom:6px;font-size:14.5px;}
+.cta .in h3{font-weight:800;font-size:22px;letter-spacing:-.015em;color:var(--cream);margin:0 0 14px;}
+.cta ul{list-style:none;padding:0;margin:0 0 18px;}
+.cta li{position:relative;padding:0 0 10px 24px;font-size:14.5px;color:#f1ecdc;line-height:1.45;}
+.cta li::before{content:"\03A8";color:var(--gilt-lt);position:absolute;left:0;font-weight:800;}
+.cta a.go{display:block;text-align:center;background:var(--cream);color:var(--olive-dk);font-weight:800;font-size:14.5px;text-decoration:none;padding:14px;border-radius:28px;}
+@media(max-width:720px){.cta{grid-template-columns:1fr;} .cta .ph{min-height:230px;height:230px;}}
+.foot{text-align:center;color:var(--muted);font-size:12.5px;margin-top:38px;padding-top:20px;border-top:1px solid var(--cream-dp);}
+.foot .foot-logo{height:30px;width:auto;display:inline-block;margin-bottom:8px;}
+.contato{margin-top:14px;font-size:12.5px;color:var(--muted);line-height:1.7;}
+.contato a{color:var(--gilt);text-decoration:none;} .contato .cnpj{font-size:11.5px;opacity:.85;}
+
+.mhero{padding:36px 0 4px;}
+.mhero .kick{font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:11.5px;color:var(--gilt);margin:0 0 12px;}
+.mhero h1{font-weight:800;font-size:42px;line-height:1.04;letter-spacing:-.022em;color:var(--ink);margin:0 0 10px;}
+.mhero .sub{font-weight:700;font-size:19px;color:var(--sage-dk);line-height:1.3;margin:0 0 12px;letter-spacing:-.01em;}
+.mhero .meta{font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);}
+.mhero .tema{margin:18px 0 0;padding-left:18px;border-left:4px solid var(--cream-dp);color:var(--muted);font-size:16.5px;}
+.usar{background:var(--cream-dp);border-radius:12px;padding:16px 18px;margin:24px 0 14px;font-size:14.5px;color:var(--muted);line-height:1.55;}
+.usar b{display:block;font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--olive-dk);margin-bottom:6px;}
+.pdfbtn{display:inline-block;font-weight:800;font-size:13px;letter-spacing:.02em;color:var(--cream);background:var(--olive);padding:13px 24px;border-radius:26px;text-decoration:none;}
+.ess{background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:20px 22px;margin:26px 0;}
+.ess .et{font-weight:800;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gilt);margin-bottom:12px;}
+.ess ul{list-style:none;padding:0;margin:0;}
+.ess li{position:relative;padding:0 0 12px 26px;font-size:15.8px;line-height:1.5;}
+.ess li:last-child{padding-bottom:0;}
+.ess li::before{content:"\03A8";position:absolute;left:0;top:0;color:var(--gilt-lt);font-weight:800;}
+details.sec{border-bottom:1px solid var(--cream-dp);}
+details.sec[open]{padding-bottom:16px;}
+details.sec summary{list-style:none;cursor:pointer;padding:18px 0;display:flex;align-items:baseline;gap:12px;}
+details.sec summary::-webkit-details-marker{display:none;}
+details.sec summary h2{font-weight:800;font-size:21px;letter-spacing:-.015em;color:var(--ink);margin:0;line-height:1.2;flex:1;}
+details.sec summary .arw{color:var(--gilt);font-weight:800;font-size:13px;transition:transform .2s;}
+details.sec[open] summary .arw{transform:rotate(90deg);}
+details.sec .lead{color:var(--sage-dk);font-weight:500;margin:0 0 14px;font-size:16px;}
+details.sec p{font-size:16.5px;}
+ul.key{list-style:none;padding:0;margin:12px 0;}
+ul.key li{position:relative;padding:0 0 11px 26px;font-size:16px;line-height:1.5;}
+ul.key li::before{content:"\03A8";position:absolute;left:0;top:0;color:var(--gilt);font-weight:800;}
+.dial{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0;}
+@media(max-width:620px){.dial{grid-template-columns:1fr;}}
+.dial .d{background:var(--card);border:1px solid var(--cream-dp);border-top:3px solid var(--sage);border-radius:12px;padding:14px 16px;}
+.dial .dt{font-weight:800;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--olive-dk);margin-bottom:7px;}
+.dial p{margin:0;font-size:14.5px;color:var(--muted);line-height:1.45;}
+.obs{background:var(--cream-dp);border-radius:12px;padding:16px 18px;margin:18px 0;}
+.obs h4{font-weight:800;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--olive-dk);margin:0 0 7px;}
+.obs p{margin:0;font-size:15.5px;}
+.callout{background:var(--card);border-left:4px solid var(--gilt-lt);border-radius:0 12px 12px 0;padding:16px 18px;margin:20px 0;font-size:15.5px;line-height:1.55;}
+.callout .co-t{font-weight:800;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--gilt);margin-bottom:7px;}
+span.ref{font-size:13.5px;color:var(--muted);}
+/* diagrama */
+figure.dg{margin:24px 0;background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:18px 16px 12px;}
+figure.dg svg{width:100%;height:auto;display:block;}
+figure.dg figcaption{margin-top:10px;font-size:13px;color:var(--muted);text-align:center;line-height:1.45;}
+.dg-t{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:10px;text-align:center;}
+/* ferramentas */
+.tools{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:32px 0 0;}
+@media(max-width:720px){.tools{grid-template-columns:1fr;}}
+.tool{background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:20px;}
+.tool .tt{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:14px;}
+.ck{display:flex;gap:11px;align-items:flex-start;padding:9px 0;font-size:15px;line-height:1.45;cursor:pointer;}
+.ck input{margin:4px 0 0;accent-color:var(--olive);width:17px;height:17px;flex:none;cursor:pointer;}
+.ck.done span{text-decoration:line-through;opacity:.5;}
+.qz{margin-bottom:18px;} .qz:last-child{margin-bottom:0;}
+.qz p{font-size:15px;margin:0 0 7px;line-height:1.45;font-weight:500;}
+.qz textarea{width:100%;min-height:66px;border:1px solid var(--cream-dp);border-radius:10px;background:var(--cream);font-family:inherit;font-size:14.5px;color:var(--ink);padding:10px 12px;resize:vertical;line-height:1.5;}
+.qz textarea:focus{outline:2px solid var(--gilt-lt);outline-offset:1px;}
+.savebar{display:flex;align-items:center;gap:12px;margin-top:16px;flex-wrap:wrap;}
+.savebar button{font-weight:800;font-size:11px;letter-spacing:.08em;text-transform:uppercase;border:1.5px solid var(--cream-dp);background:none;color:var(--olive-dk);border-radius:22px;padding:10px 18px;cursor:pointer;font-family:inherit;}
+.savebar button:hover{border-color:var(--gilt-lt);color:var(--gilt);}
+.saved{font-weight:800;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--sage-dk);opacity:0;transition:opacity .3s;}
+.saved.on{opacity:1;}
+.refs h2,.nmet h2{font-weight:800;font-size:21px;letter-spacing:-.015em;color:var(--ink);margin:34px 0 10px;}
+.refs ol{padding-left:20px;font-size:13.8px;color:var(--muted);line-height:1.6;}
+.refs li{margin-bottom:9px;}
+.nmet{background:var(--card);border-left:4px solid var(--gilt-lt);border-radius:0 12px 12px 0;padding:16px 20px;margin:26px 0 0;font-size:14px;color:var(--muted);line-height:1.6;}
+.nmet b{display:block;font-weight:800;font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--olive-dk);margin-bottom:7px;}
+.side .idx a{font-size:13.5px;font-weight:500;padding:7px 12px;line-height:1.3;}
+
+/* gabarito expansível */
+.qz .gab{margin-top:8px;border-top:1px solid #E9E3CE;padding-top:8px;}
+.qz .gab summary{cursor:pointer;list-style:none;font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#A8894F;}
+.qz .gab summary::-webkit-details-marker{display:none;}
+.qz .gab summary::before{content:'+ ';font-weight:800;}
+.qz .gab[open] summary::before{content:'\2212 ';}
+.qz .gab-in{margin-top:8px;background:#F8F3E6;border-left:2px solid #C3A468;border-radius:0 6px 6px 0;padding:10px 12px;font-size:.94rem;line-height:1.55;color:#403F32;}
+.qz .gab-in p{margin:0 0 6px;}.qz .gab-in p:last-child{margin:0;}
+
+/* gabarito expansível */
+.qz .gab{margin-top:8px;border-top:1px solid #E9E3CE;padding-top:8px;}
+.qz .gab summary{cursor:pointer;list-style:none;font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#A8894F;}
+.qz .gab summary::-webkit-details-marker{display:none;}
+.qz .gab summary::before{content:'+ ';font-weight:800;}
+.qz .gab[open] summary::before{content:'\2212 ';}
+.qz .gab-in{margin-top:8px;background:#F8F3E6;border-left:2px solid #C3A468;border-radius:0 6px 6px 0;padding:10px 12px;font-size:.94rem;line-height:1.55;color:#403F32;}
+.qz .gab-in p{margin:0 0 6px;}.qz .gab-in p:last-child{margin:0;}
+</style></head><body><div class='topbar'><div class='in'><a href='/'><img alt='Lógica Psicológica' src='/assets/logo.png'></a><a class='backlink' href='/aulas/' title='Voltar para Aulas Livres'>&#8592; Voltar</a><div class='sp'></div><div class='tag'>Aulas Livres</div></div></div><div class='shell'><aside class='side' id='side'><a class='brand' href='/'><img alt='Lógica Psicológica' src='/assets/logo-creme.png'></a><div class='nav'><div class='st first'>Navegação</div><a class='home' href='/aulas/'>&#8592; Aulas</a><a class='navlink' href='/'>Início do portal</a><div class='st'>Neste material</div><div class='idx'><a href='#s0'>Por que o psicólogo precisa entender o cérebro aqui</a><a href='#s1'>O vocabulário que organiza o manejo</a><a href='#s2'>Recompensa, neuroadaptação e saliência</a><a href='#s3'>Início precoce, e o que se recupera</a><a href='#s4'>Do caso ao gatilho: viés atencional e contexto</a><a href='#s5'>Dependências comportamentais</a><a href='#s6'>Manejo: crenças, fissura, vínculo</a></div></div><div class='sig'><img alt='Prof. Júlio Gonçalves' src='/assets/julio.jpg'><div class='who'>Prof. Júlio Gonçalves<span>MSc · CRP 12/17614</span></div></div><a class='sub' href='https://psicojulio.com/comunidade-logica-psicologica/' target='_blank' rel='noopener'>Inscreva-se</a></aside><main class='main'><div class='mhero'><div class='kick'>Resumo de aula · Aula livre</div><h1>Transdiagn&oacute;stico e transtorno por uso de subst&acirc;ncias</h1><div class='sub'>3 de setembro de 2026</div><div class='meta'>Apresentação de Maísa Gelain Marin · Mediação de Prof. Júlio Gonçalves · Aula livre</div><p class='tema'>Por que o transtorno por uso de substâncias é lido como transtorno do cérebro, o que a neuroadaptação muda no prognóstico, e por que o vínculo não julgador é condição técnica — não gentileza.</p></div><div class='obs' style='margin-bottom:18px'><h4>Sobre este material</h4><p>Material de estudo <strong>dirigido a psicólogos</strong>. O caso apresentado em aula está desidentificado e perguntas de participantes aparecem sem identificação nominal.</p><p>Não são reproduzidos doses, vias de uso, combinações ou qualquer detalhe operacional sobre substâncias — a classificação farmacológica é mantida por ser conteúdo clínico necessário. Três moderações empíricas em relação ao que foi apresentado estão sinalizadas no corpo do texto, com a justificativa.</p></div><div class='usar'><b>Como usar</b>Abra as seções que quiser ler, marque o que pretende aplicar e responda o que fizer sentido. Tudo fica salvo neste aparelho — ninguém mais vê.</div><a class='pdfbtn' href='resumo.pdf'>&#8681; Baixar em PDF</a><div class='ess'><div class='et'>O essencial</div><ul><li><strong>É transtorno crônico, progressivo — e tratável.</strong> As três coisas ao mesmo tempo. Tratar como falha moral erra o alvo; tratar como sentença erra a esperança.</li><li><strong>A neuroadaptação desloca a linha de base do prazer.</strong> O cérebro passa a exigir mais para atingir a homeostase, e prazeres naturais perdem valor relativo diante das pistas da substância.</li><li><strong>O gatilho quase nunca é a substância.</strong> É o contexto emparelhado a ela — lugares, pessoas, horários, rotinas. Por isso, às vezes, é preciso mudar o ambiente e não só o comportamento.</li><li><strong>Fissura é episódio, não estado.</strong> Ela sobe, atinge um pico e cede. O manejo existe para atravessar esse intervalo, não para eliminá-la.</li><li><strong>O mundo já confronta o paciente.</strong> A sessão precisa ser o lugar onde ele consegue ser honesto sobre recaída — vínculo não julgador é requisito técnico do tratamento.</li></ul></div><details class='sec' id='s0' open><summary><h2>Por que o psicólogo precisa entender o cérebro aqui</h2><span class='arw'>&#9656;</span></summary>
+<p>A aula partiu de um enquadramento que organiza tudo o que vem depois: o transtorno por uso de substâncias é considerado um <strong>transtorno do cérebro</strong>, em razão das neuroadaptações produzidas pelo consumo — e é ao mesmo tempo <strong>crônico, progressivo e tratável</strong>.</p>
+<p>Não é detalhe teórico. Sem entender os mecanismos cerebrais, o clínico tende a ler recaída como falta de vontade e fissura como desculpa — e a conduzir o caso a partir dessa leitura.</p>
+<h3>A dimensão do problema</h3>
+<p>Foram apresentados dados de vigilância internacional: cerca de <strong>296 milhões de pessoas</strong> entre 15 e 64 anos usaram drogas psicoativas em 2021, com aproximadamente <strong>0,6 milhão de mortes anuais</strong> atribuíveis ao uso. Foram citadas ainda a crise de opioides nos Estados Unidos e a prevalência de cannabis e cocaína na América Latina e no Caribe.</p>
+<div class='obs'><h4>Uma correção de fonte</h4><p>Esses números foram atribuídos em aula à OMS e à OPAS. A fonte primária dessas estimativas é o <strong>Relatório Mundial sobre Drogas do UNODC</strong>, escritório das Nações Unidas que consolida os dados de prevalência e mortalidade. A informação está correta; a atribuição precisava ser ajustada, porque é ela que o leitor vai procurar.</p></div>
+<h3>Comorbidades</h3>
+<p>Quadros frequentemente associados: ansiedade, TDAH, transtorno da personalidade <em>borderline</em>, bipolaridade e depressão — muitas vezes ligados a tentativas de <strong>automedicação</strong> ou de evitação emocional. É a leitura funcional entrando cedo: a substância cumpre função, e identificar qual muda o plano.</p>
+</details><details class='sec' id='s1'><summary><h2>O vocabulário que organiza o manejo</h2><span class='arw'>&#9656;</span></summary>
+<ul class='key'><li><b>Abstinência</b> — o conjunto de sintomas decorrentes da interrupção do uso.</li><li><b>Tolerância</b> — necessidade de quantidades maiores para obter o mesmo efeito.</li><li><b>Fissura</b> (<em>craving</em>) — desejo urgente e intenso de usar.</li><li><b>Intoxicação</b> — presença da substância no organismo, com os efeitos correspondentes.</li><li><b>Reforço negativo</b> — o uso mantido pelo <b>alívio</b> de estados emocionais negativos, e não pela busca de prazer.</li></ul>
+<p>O último conceito é o que mais muda a conduta. Quando o uso passa a ser mantido por alívio, ele deixa de responder a argumentos sobre prazer, custo ou consequência — e passa a funcionar como qualquer outra esquiva.</p>
+<h3>Paciente intoxicado</h3>
+<div class='callout note'><div class='co-t'>Conduta objetiva</div>Em estado de intoxicação, <strong>o atendimento não deve prosseguir</strong>. A recomendação é encaminhar para desintoxicação. Não é rigidez de enquadre: com a substância ativa, não há condições de aprendizagem, o conteúdo da sessão não se retém, e o risco de conduzir mal aumenta.</div>
+<h3>Diferenciar uso recreativo de dependência</h3>
+<p>Foi uma das dúvidas mais frequentes do grupo — consumo diário de cannabis ou de álcool é dependência? A orientação foi investigar quatro coisas: <strong>frequência</strong>, <strong>prejuízos funcionais</strong>, <strong>pensamentos associados</strong> ao uso e <strong>tentativas malsucedidas de interrupção</strong>.</p>
+<p>Repare que apenas a primeira é sobre quantidade. As outras três são sobre função e controle — e são elas que decidem.</p>
+<h3>Classificação por ação no sistema nervoso central</h3>
+<ul class='key'><li><b>Depressoras</b> — álcool, benzodiazepínicos, opioides.</li><li><b>Estimulantes</b> — cocaína, nicotina, cafeína em altas doses.</li><li><b>Perturbadoras</b> — cannabis e alucinógenos.</li></ul>
+<p>Sobre a cannabis, a observação da aula: apresenta <strong>menor potencial de dependência</strong> que outras substâncias e ainda assim <strong>gera prejuízos funcionais</strong> — as duas coisas convivem, e a primeira não anula a segunda.</p>
+<p>Foi discutida também a normalização cultural do álcool, consumido com naturalidade desde a infância em muitas regiões — o que torna especialmente difícil, para o paciente e para a família, reconhecer o problema quando ele se instala.</p>
+</details><details class='sec' id='s2'><summary><h2>Recompensa, neuroadaptação e saliência</h2><span class='arw'>&#9656;</span></summary>
+<h3>O sistema de recompensa</h3>
+<p>O mecanismo central é a liberação de <strong>dopamina no núcleo accumbens</strong>. Com o uso repetido, instala-se a <strong>neuroadaptação</strong>: mudanças estruturais e funcionais em que o cérebro passa a exigir concentrações maiores para atingir a homeostase — <strong>deslocando a linha de base de prazer</strong> da pessoa.</p>
+<p>É a explicação neurobiológica de algo que aparece no consultório como anedonia: não é que nada mais dê prazer; é que o parâmetro mudou.</p>
+<h3>Os sistemas envolvidos</h3>
+<ul class='key'><li><b>Motivação</b> — córtex órbito-frontal.</li><li><b>Memória e aprendizagem</b> — hipocampo e amígdala, onde as pistas se emparelham ao uso.</li><li><b>Controle e planejamento</b> — córtex pré-frontal.</li></ul>
+<p>O prejuízo nessas áreas compromete <strong>funções executivas</strong> — controle inibitório, tomada de decisão, planejamento —, o que dificulta até tarefas cotidianas. Aqui está a resposta técnica para a pergunta “por que ele não simplesmente para”: a estrutura que executaria o “parar” é justamente uma das afetadas.</p>
+<h3>Estresse e o ciclo vicioso</h3>
+<p>A ativação do <strong>eixo HPA</strong> e a liberação de cortisol em resposta ao estresse fecham a alça: o estresse gera necessidade da substância, o uso alivia, a abstinência produz mais estresse. É reforço negativo operando em nível fisiológico.</p>
+<h3>Saliência aumentada</h3>
+<p>O cérebro passa a <strong>priorizar estímulos relacionados à substância</strong> em detrimento de recompensas naturais — comida, sexo, segurança. Não é que essas coisas deixem de importar racionalmente; é que perdem valor relativo na competição por atenção e motivação.</p>
+</details><details class='sec' id='s3'><summary><h2>Início precoce, e o que se recupera</h2><span class='arw'>&#9656;</span></summary>
+<p>Uma pergunta do grupo abriu o tema mais delicado da aula: a neuroadaptação permanece em quem começou a usar na adolescência?</p>
+<p>A resposta foi que o <strong>córtex pré-frontal conclui sua formação por volta dos 25 anos</strong>, de modo que o início precoce aumenta a vulnerabilidade e pode tornar as alterações mais persistentes — o que ajuda a justificar a necessidade de tratamento medicamentoso associado à psicoterapia.</p>
+<div class='callout note'><div class='co-t'>Uma moderação importante</div>A aula descreveu as mudanças como <strong>permanentes</strong>, e a metáfora usada foi a de uma lesão física irreversível. O ponto de fundo está certo: a neuroadaptação é <b>persistente</b>, a recaída é possibilidade real, e o suporte farmacológico frequentemente é necessário.<br><br>Mas “permanente” é forte demais para o que se sabe. Há evidência de <strong>recuperação parcial</strong> de marcadores dopaminérgicos com abstinência prolongada — meses, não semanas —, ainda que sem retorno completo ao ponto inicial e com déficits cognitivos que podem persistir.<br><br>A diferença importa clinicamente: <strong>desesperança é fator de recaída</strong>. Dizer ao paciente que o dano é irreversível pode produzir exatamente o desfecho que se quer evitar. A formulação defensável é a intermediária — o cérebro se recupera em parte, leva tempo, e conviver com limitação não impede construir uma vida com valor.</div>
+<p>A conclusão prática da aula continua válida e é boa: a terapia ajuda a construir uma vida orientada por <strong>valores</strong>, com aceitação das limitações orgânicas — em vez de prometer restituição integral.</p>
+</details><details class='sec' id='s4'><summary><h2>Do caso ao gatilho: viés atencional e contexto</h2><span class='arw'>&#9656;</span></summary>
+<p>O caso apresentado — aqui desidentificado — envolvia um homem na casa dos 30, com uso de cocaína iniciado no fim da adolescência. A análise focou a <strong>fissura intensa</strong>, os <strong>gatilhos ambientais</strong> (lugares de uso, mensagens de conhecidos) e a perda de controle inibitório.</p>
+<p>O padrão neurobiológico descrito: <strong>hiperatividade a pistas associadas ao uso</strong> e <strong>hipoatividade a recompensas naturais</strong>. O cérebro responde muito ao que lembra a substância e pouco ao resto.</p>
+<h3>Viés atencional</h3>
+<p>Definido como a tendência a priorizar estímulos condicionados ao uso em detrimento dos demais estímulos do ambiente. Ambientes e rotinas — inclusive trabalho e lazer, quando associados ao consumo — tornam-se <strong>pistas</strong> que dificultam a manutenção da abstinência.</p>
+<div class='obs'><h4>A consequência clínica desconfortável</h4><p>Em certos casos é necessária <strong>mudança radical de contexto</strong>. Não é fracasso da terapia nem falta de esforço do paciente: é reconhecimento de que o ambiente inteiro está emparelhado ao uso, e de que treinar recusa dentro dele é treinar contra uma desvantagem estrutural.</p><p>Vale dimensionar o custo: mudar de emprego, de círculo social ou de cidade tem preço alto, e a decisão é do paciente. O papel do clínico é tornar o custo visível dos dois lados — o de mudar e o de permanecer.</p></div>
+<p>Foi enfatizado também que o tratamento exige <strong>resiliência do profissional</strong>: associações contextuais podem desencadear recaída mesmo depois de o paciente dominar estratégias de enfrentamento.</p>
+</details><details class='sec' id='s5'><summary><h2>Dependências comportamentais</h2><span class='arw'>&#9656;</span></summary>
+<p>No manual diagnóstico, a única dependência comportamental formalmente reconhecida é o <strong>transtorno do jogo</strong>. A aula mencionou a expectativa de inclusão futura de padrões como uso excessivo de internet, redes sociais, compras, pornografia e exercício físico.</p>
+<p>Foram relatadas associações consistentes, na pesquisa da apresentadora, entre <strong>uso excessivo de internet</strong> e sintomas de estresse, depressão e transtornos de ansiedade.</p>
+<div class='callout note'><div class='co-t'>Uma ressalva sobre nomenclatura</div>A aula citou uma obra de divulgação sobre pornografia e cérebro. Vale registrar o estado da questão: <strong>“dependência de pornografia” não é diagnóstico reconhecido</strong>. A CID-11 inclui o <b>transtorno do comportamento sexual compulsivo</b> — e o classifica entre os transtornos do <b>controle de impulsos</b>, não entre as dependências, precisamente porque a equivalência com substâncias é contestada na literatura.<br><br>A distinção não é preciosismo: ela muda o modelo explicativo oferecido ao paciente e o vocabulário usado com ele. Sofrimento real com uso compulsivo existe e merece tratamento — o que não está estabelecido é chamá-lo de vício.</div>
+</details><details class='sec' id='s6'><summary><h2>Manejo: crenças, fissura, vínculo</h2><span class='arw'>&#9656;</span></summary>
+<h3>As crenças que sustentam o uso</h3>
+<p>No modelo cognitivo, quatro tipos aparecem com regularidade: crenças <strong>de alívio</strong> (“hoje eu mereço”), <strong>antecipatórias</strong> (sobre o que a substância vai proporcionar), <strong>permissivas</strong> (que autorizam o uso desta vez) e <strong>de controle</strong> (“eu consigo parar quando quiser”).</p>
+<p>Mapear qual delas opera em cada momento da cadeia é o que permite intervir antes do uso, e não depois.</p>
+<h3>Manejo da fissura</h3>
+<p>A fissura é <strong>episódio, não estado</strong>: sobe, atinge um pico e cede. As estratégias discutidas — distração, contato com suporte social, mudança de ambiente, técnicas de imagem, cartões de enfrentamento, recursos de regulação fisiológica e avaliação das consequências — existem para <strong>atravessar esse intervalo</strong>, não para eliminar o fenômeno.</p>
+<div class='obs'><h4>Duas notas sobre esta seção</h4><p><strong>Sobre a duração.</strong> Foi mencionada uma janela média de vinte a trinta minutos. O princípio é bem sustentado — episódios de fissura são autolimitados —, mas a duração varia bastante entre pessoas e situações. Prometer um tempo fixo cria expectativa que a experiência do paciente pode desmentir, com o custo de ele concluir que a estratégia não funciona.</p><p><strong>Sobre os recursos de choque térmico</strong>, mencionados entre as estratégias: eles existem em protocolos estruturados, com treinamento e triagem clínica prévia, inclusive cardiológica. Por isso aparecem aqui descritos genericamente, e não como item de uma lista a ser distribuída.</p></div>
+<h3>Abordagens</h3>
+<p>Foram destacadas as terapias contextuais — ACT e DBT —, além de treinos de habilidades e de enfrentamento para o manejo dos sintomas de abstinência.</p>
+<h3>O vínculo como requisito técnico</h3>
+<div class='callout note'><div class='co-t'>O ponto em que apresentadora e mediador convergiram</div>O maior desafio é a <strong>avaliação e a motivação</strong>, e por isso a entrevista motivacional é central — para evitar o confronto.<br><br>O argumento decisivo: <strong>o mundo externo já confronta o paciente o tempo todo</strong>. Se a sessão também confrontar, ele deixa de relatar recaída — e o terapeuta perde a única informação que permitiria ajustar o plano. Ambiente seguro e não julgador não é gentileza: é a condição para que os dados cheguem.</div>
+<h3>Da TCC clássica à leitura por processos</h3>
+<p>O fecho retomou uma discussão recorrente na comunidade: a exigência de protocolos rígidos pode ter afastado a humanidade da prática inicial da TCC. A leitura por processos organiza competências — atenção, memória, emoção, comportamento — de forma <strong>transdiagnóstica</strong>, permitindo usar técnicas de origens diferentes conforme o <strong>estágio de mudança</strong> do paciente.</p>
+<p>É exatamente o caso deste domínio: o mesmo paciente pode precisar de entrevista motivacional numa fase, treino de habilidades em outra, e trabalho de valores em outra — e a decisão não sai do diagnóstico, sai de onde ele está.</p>
+</details><div class='tools'><div class='tool'><div class='tt'>Levar para a prática</div><label class='ck'><input type='checkbox'><span>Investiguei frequência, prejuízo funcional, pensamentos associados e tentativas de interrupção — e não só a quantidade.</span></label><label class='ck'><input type='checkbox'><span>Identifiquei a função do uso: alívio, automedicação, evitação, ou busca de efeito.</span></label><label class='ck'><input type='checkbox'><span>Não conduzi sessão com o paciente intoxicado, e encaminhei conforme o caso.</span></label><label class='ck'><input type='checkbox'><span>Mapeei os gatilhos contextuais — lugares, pessoas, horários, rotinas — e não apenas a substância.</span></label><label class='ck'><input type='checkbox'><span>Avaliei com o paciente o custo de mudar de contexto e o de permanecer nele.</span></label><label class='ck'><input type='checkbox'><span>Nomeei as crenças de alívio, antecipatórias, permissivas e de controle na cadeia do uso.</span></label><label class='ck'><input type='checkbox'><span>Tratei a fissura como episódio a atravessar, sem prometer duração exata.</span></label><label class='ck'><input type='checkbox'><span>Sustentei ambiente não julgador para que a recaída pudesse ser relatada.</span></label><label class='ck'><input type='checkbox'><span>Ajustei a técnica ao estágio de mudança, e não ao diagnóstico.</span></label><label class='ck'><input type='checkbox'><span>Falei sobre prognóstico sem prometer restituição integral nem decretar dano irreversível.</span></label></div><div class='tool'><div class='tt'>Para revisar — responda</div><div class='qz'><p>1. O que significa dizer que o transtorno por uso de substâncias é crônico, progressivo e tratável ao mesmo tempo?</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver comentário</summary><div class='gab-in'><b>Crônico</b> porque as neuroadaptações persistem e o risco de recaída acompanha a pessoa por muito tempo. <b>Progressivo</b> porque, sem tratamento, o padrão tende a se agravar — mais tolerância, mais prejuízo funcional, mais estreitamento de repertório. <b>Tratável</b> porque existem intervenções eficazes, psicoterápicas e farmacológicas. As três afirmações precisam andar juntas: sem a primeira, trata-se como falha de caráter; sem a terceira, trata-se como sentença.</div></details></div><div class='qz'><p>2. Como você diferenciaria uso recreativo de dependência num paciente que usa diariamente? Que quatro perguntas faria?</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver comentário</summary><div class='gab-in'>As quatro perguntas são <b>frequência</b>, <b>prejuízos funcionais</b>, <b>pensamentos associados</b> ao uso e <b>tentativas malsucedidas de interrupção</b>. Só a primeira é sobre quantidade; as outras três são sobre função e controle, e são elas que decidem. Uso diário sem prejuízo, sem preocupação e com interrupção possível é quadro diferente de uso menos frequente que a pessoa não consegue parar.</div></details></div><div class='qz'><p>3. Explique a neuroadaptação e o deslocamento da linha de base do prazer. O que isso responde sobre o “por que ele não para”?</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver comentário</summary><div class='gab-in'>Neuroadaptação são mudanças estruturais e funcionais em que o cérebro passa a exigir concentrações maiores de dopamina para atingir a homeostase — o que <b>desloca a linha de base do prazer</b>. Sobre o “por que ele não para”: as áreas de controle inibitório, tomada de decisão e planejamento estão entre as prejudicadas, ou seja, <b>a estrutura que executaria o parar é uma das afetadas</b>.</div></details></div><div class='qz'><p>4. O que é saliência aumentada, e como ela aparece no relato de um paciente?</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver comentário</summary><div class='gab-in'>É a priorização, pelo cérebro, dos <b>estímulos relacionados à substância</b> em detrimento de recompensas naturais como comida, sexo e segurança. No relato aparece como anedonia seletiva — nada mais tem graça —, como atenção capturada por qualquer menção ao uso, e como dificuldade de se interessar por atividades que antes importavam, sem que a pessoa tenha decidido isso.</div></details></div><div class='qz'><p>5. Por que o gatilho quase nunca é a substância? Dê um exemplo de pista contextual de um caso seu.</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver critérios</summary><div class='gab-in'>Não há resposta certa. Uma boa resposta reconhece que o gatilho é o <b>contexto emparelhado</b> à substância — lugares, pessoas, horários, rotinas, e até trabalho e lazer quando associados ao consumo. É o viés atencional operando: o cérebro responde às pistas antes de a pessoa perceber que houve uma pista.</div></details></div><div class='qz'><p>6. Como você abordaria com um paciente a possibilidade de mudança radical de contexto?</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver critérios</summary><div class='gab-in'>Não há resposta certa, e a pergunta é delicada. Uma boa resposta apresenta a mudança de contexto como <b>decisão do paciente</b>, com o custo dimensionado dos dois lados — o de mudar e o de permanecer — e sem tratá-la como fracasso da terapia. Vale explicitar o argumento técnico: treinar recusa dentro de um ambiente inteiramente emparelhado ao uso é treinar contra desvantagem estrutural.</div></details></div><div class='qz'><p>7. Que crenças de alívio, antecipatórias, permissivas e de controle você já ouviu na sua clínica?</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver critérios</summary><div class='gab-in'>Não há resposta certa. Uma boa resposta distingue os quatro tipos com exemplos reais: <b>alívio</b> (“hoje eu mereço”), <b>antecipatória</b> (o que a substância vai proporcionar), <b>permissiva</b> (o que autoriza o uso desta vez) e <b>de controle</b> (“eu paro quando quiser”). O ganho de mapeá-las é poder intervir <b>antes</b> do uso, em algum ponto da cadeia, e não depois.</div></details></div><div class='qz'><p>8. Como você falaria sobre prognóstico com alguém que usa há muitos anos, sem prometer demais nem tirar a esperança?</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver critérios</summary><div class='gab-in'>Não há resposta certa, e é a pergunta que mais exige cuidado. Uma boa resposta evita os dois extremos: não promete restituição integral, e <b>não decreta dano irreversível</b> — porque desesperança é fator de recaída. A formulação defensável é a intermediária: a recuperação é parcial e lenta, algumas limitações podem permanecer, e é possível construir uma vida com valor convivendo com elas.</div></details></div></div></div><div class='savebar'><button id='exp'>Exportar respostas</button><button id='lmp'>Limpar</button><span class='saved' id='saved'>Salvo neste aparelho</span></div><div class='refs'><h2>Referências</h2><ol><li>Beck, A. T., Wright, F. D., Newman, C. F., &amp; Liese, B. S. (1993). <em>Cognitive therapy of substance abuse.</em> Guilford Press.</li><li>Casey, B. J., Jones, R. M., &amp; Hare, T. A. (2008). The adolescent brain. <em>Annals of the New York Academy of Sciences, 1124</em>, 111–126.</li><li>Field, M., &amp; Cox, W. M. (2008). Attentional bias in addictive behaviors: A review of its development, causes, and consequences. <em>Drug and Alcohol Dependence, 97</em>(1–2), 1–20.</li><li>Grant, J. E., Potenza, M. N., Weinstein, A., &amp; Gorelick, D. A. (2010). Introduction to behavioral addictions. <em>American Journal of Drug and Alcohol Abuse, 36</em>(5), 233–241.</li><li>Hayes, S. C., Hofmann, S. G., &amp; Ciarrochi, J. (2020). A process-based approach to psychological diagnosis and treatment. <em>Clinical Psychology Review, 82</em>, 101908.</li><li>Hayes, S. C., Strosahl, K. D., &amp; Wilson, K. G. (2012). <em>Acceptance and commitment therapy</em> (2ª ed.). Guilford Press.</li><li>Koob, G. F., &amp; Volkow, N. D. (2016). Neurobiology of addiction: A neurocircuitry analysis. <em>The Lancet Psychiatry, 3</em>(8), 760–773.</li><li>Linehan, M. M. (2015). <em>DBT skills training manual</em> (2ª ed.). Guilford Press.</li><li>Marlatt, G. A., &amp; Donovan, D. M. (Orgs.). (2005). <em>Relapse prevention</em> (2ª ed.). Guilford Press.</li><li>Miller, W. R., &amp; Rollnick, S. (2013). <em>Motivational interviewing: Helping people change</em> (3ª ed.). Guilford Press.</li><li>Organização Mundial da Saúde. (2019). <em>Classificação Internacional de Doenças (CID-11)</em> — transtorno do comportamento sexual compulsivo.</li><li>Prochaska, J. O., &amp; DiClemente, C. C. (1983). Stages and processes of self-change of smoking. <em>Journal of Consulting and Clinical Psychology, 51</em>(3), 390–395.</li><li>Robinson, T. E., &amp; Berridge, K. C. (1993). The neural basis of drug craving: An incentive-sensitization theory of addiction. <em>Brain Research Reviews, 18</em>(3), 247–291.</li><li>Sinha, R. (2008). Chronic stress, drug use, and vulnerability to addiction. <em>Annals of the New York Academy of Sciences, 1141</em>, 105–130.</li><li>United Nations Office on Drugs and Crime. (2023). <em>World Drug Report 2023.</em> UNODC.</li><li>Volkow, N. D., Chang, L., Wang, G.-J., et al. (2001). Loss of dopamine transporters in methamphetamine abusers recovers with protracted abstinence. <em>Journal of Neuroscience, 21</em>(23), 9414–9418.</li></ol></div><div class='nmet'><b>Nota de método</b>Material de estudo dirigido a psicólogos. O caso apresentado em aula está desidentificado — idade aproximada, sem localidade nem circunstâncias específicas — e as perguntas de participantes aparecem sem identificação nominal. Os assuntos operacionais e as tratativas profissionais discutidas no encontro foram omitidos por não integrarem o conteúdo. Não são reproduzidos doses, vias de uso ou combinações; a classificação farmacológica foi mantida por ser conteúdo clínico necessário.<br><br><strong>Três moderações empíricas, sinalizadas no texto.</strong> Primeira: as estimativas de prevalência e mortalidade foram atribuídas em aula à OMS e à OPAS; a fonte primária é o Relatório Mundial sobre Drogas do UNODC, e a atribuição foi corrigida. Segunda: a neuroadaptação foi descrita como permanente, com metáfora de lesão irreversível — o texto mantém <b>persistente</b>, porque há evidência de recuperação parcial de marcadores dopaminérgicos com abstinência prolongada, ainda que incompleta e lenta; a diferença importa porque desesperança é fator de recaída. Terceira: a janela de vinte a trinta minutos para a fissura foi convertida em formulação qualitativa, pelo mesmo motivo aplicado ao material sobre plano de segurança.<br><br><strong>Uma ressalva de nomenclatura.</strong> A obra de divulgação sobre pornografia citada em aula sustenta um modelo de dependência que não corresponde à classificação vigente: a CID-11 reconhece o transtorno do comportamento sexual compulsivo entre os transtornos do <b>controle de impulsos</b>, e não entre as dependências, porque a equivalência com substâncias é contestada na literatura. O sofrimento é real e merece tratamento; o que não está estabelecido é o rótulo.<br><br>Os recursos de regulação baseados em choque térmico, mencionados entre as estratégias de manejo da fissura, estão descritos de forma genérica: existem em protocolos estruturados, com treinamento e triagem clínica prévia. As referências foram acrescentadas para dar respaldo formal a afirmações feitas sem citação explícita; nenhuma citação foi construída para preencher lacuna.</div><div class='cta'><img class='ph' alt='Prof. Júlio Gonçalves' src='/assets/julio.jpg'><div class='in'><div class='k'>Aprenda muito mais na</div><h3>Comunidade Lógica Psicológica</h3><ul><li>Aprofundar o raciocínio clínico com ciência, processos e análise funcional.</li><li>Estruturar uma prática ética, com pensamento crítico e evidências atualizadas.</li><li>Desenvolver o self clínico com supervisão, leituras guiadas e rede.</li></ul><a class='go' href='https://psicojulio.com/comunidade-logica-psicologica/' target='_blank' rel='noopener'>Participar da comunidade &#8594;</a></div></div><div class='foot'><img class='foot-logo' alt='Lógica Psicológica' src='/assets/logo.png'><div class='contato'><a href='mailto:contato@psicojulio.com'>contato@psicojulio.com</a> &middot; <a href='tel:+5547999338021'>(47) 99933-8021</a><br>Rua Concórdia, 703, São Vicente, Itajaí — 88309-645<br><span class='cnpj'>CNPJ 49.649.803/0001-60</span></div></div></main></div><button class='toc-fab' id='fab'>&#9776; Seções</button><div class='overlay' id='ov'></div><script>
+(function(){
+  var K='mat-Aula-TUS-';
+  document.querySelectorAll('.ck input').forEach(function(c,i){
+    var k=K+'ck'+i;
+    try{ if(localStorage.getItem(k)==='1'){c.checked=true;c.closest('.ck').classList.add('done');} }catch(e){}
+    c.addEventListener('change',function(){
+      c.closest('.ck').classList.toggle('done',c.checked);
+      try{ localStorage.setItem(k,c.checked?'1':'0'); }catch(e){} flag();
+    });
+  });
+  document.querySelectorAll('.qz textarea').forEach(function(t,i){
+    var k=K+'q'+i;
+    try{ var v=localStorage.getItem(k); if(v)t.value=v; }catch(e){}
+    t.addEventListener('input',function(){ try{ localStorage.setItem(k,t.value); }catch(e){} flag(); });
+  });
+  var s=document.getElementById('saved'),tm;
+  function flag(){ if(!s)return; s.classList.add('on'); clearTimeout(tm); tm=setTimeout(function(){s.classList.remove('on');},1600); }
+  var b=document.getElementById('exp');
+  if(b) b.addEventListener('click',function(){
+    var out='RESPOSTAS — Transdiagnóstico e transtorno por uso de substâncias\n\n';
+    document.querySelectorAll('.qz').forEach(function(q){
+      out+= q.querySelector('p').innerText+'\n'+(q.querySelector('textarea').value||'(sem resposta)')+'\n\n';
+    });
+    var a=document.createElement('a');
+    a.href=URL.createObjectURL(new Blob([out],{type:'text/plain'}));
+    a.download='Aula-TUS-respostas.txt'; a.click();
+  });
+  var l=document.getElementById('lmp');
+  if(l) l.addEventListener('click',function(){
+    if(!confirm('Apagar suas anotações deste material?'))return;
+    try{ Object.keys(localStorage).filter(function(k){return k.indexOf(K)===0;}).forEach(function(k){localStorage.removeItem(k);}); }catch(e){}
+    location.reload();
+  });
+  var f=document.getElementById('fab'),o=document.getElementById('ov'),sd=document.getElementById('side');
+  if(f)f.onclick=function(){sd.classList.toggle('open');o.classList.toggle('open');};
+  if(o)o.onclick=function(){sd.classList.remove('open');o.classList.remove('open');};
+})();
+</script></body></html>
