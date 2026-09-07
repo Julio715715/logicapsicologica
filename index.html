@@ -115,7 +115,63 @@ ul.clean li::before{content:"\03A8";font-weight:800;color:var(--gilt);position:a
 .foot .foot-logo{height:30px;width:auto;display:inline-block;margin-bottom:8px;}
 .contato{margin-top:14px;font-size:12.5px;color:var(--muted);line-height:1.7;}
 .contato a{color:var(--gilt);text-decoration:none;} .contato .cnpj{font-size:11.5px;opacity:.85;}
-</style></head><body><div class='topbar'><div class='in'><a href='./'><img alt='Lógica Psicológica' src='/assets/logo.png'></a><div class='sp'></div><div class='tag'>Acervo</div></div></div><div class='shell'><aside class='side' id='side'><a class='brand' href='./'><img alt='Lógica Psicológica' src='/assets/logo-creme.png'></a><div class='nav'><div class='st first'>Navegação</div><a class='home' href='./'>&#8592; Início</a><a class='navlink' href='#como-funciona'>Como funciona</a><div class='st'>Jornada da Leitura</div><a class='' href='jornada/'>Temas lidos<span class='s'>Os livros já percorridos, encontro a encontro.</span></a><div class='st'>Aulas Livres</div><a class='' href='aulas/'>Aulas realizadas<span class='s'>Um tema, um convidado que domina o terreno.</span></a><div class='st'>Supervisões Clínicas</div><a class='' href='supervisoes/'>Supervisões realizadas<span class='s'>Casos reais, formulados por processos.</span></a></div><div class='sig'><img alt='Prof. Júlio Gonçalves' src='/assets/julio.jpg'><div class='who'>Prof. Júlio Gonçalves<span>MSc · CRP 12/17614</span></div></div><a class='sub' href='https://psicojulio.com/comunidade-logica-psicologica/' target='_blank' rel='noopener'>Inscreva-se</a></aside><main class='main'><div class='hero'><div class='kick'>Acervo de materiais</div><h1>O que fica<br>depois do <span class='ac'>encontro</span></h1><p>Leituras, aulas e supervisões da Lógica Psicológica — cada encontro vira material de estudo escrito, com referência conferida e evidência modulada. Página interativa e PDF preenchível.</p><div class='divider'></div></div><div class='portas'><a class='porta' href='jornada/'><div class='pk'>Jornada da Leitura</div><div class='pd'>Acompanha um livro, capítulo a capítulo.</div><span class='pa'>Abrir &#8594;</span></a><a class='porta' href='aulas/'><div class='pk'>Aulas Livres</div><div class='pd'>Um tema, um convidado que domina o terreno.</div><span class='pa'>Abrir &#8594;</span></a><a class='porta' href='supervisoes/'><div class='pk'>Supervisões Clínicas</div><div class='pd'>Casos reais, formulados por processos.</div><span class='pa'>Abrir &#8594;</span></a><a class='pcard' href='/newsletter/'><div class='pk'>Newsletter</div><div class='pd'>Achados recentes, com os limites de cada um.</div><span class='pa'>Abrir &#8594;</span></a></div>
+
+.nlbox{display:block;text-decoration:none;background:var(--card);border:1px solid var(--cream-dp);
+border-left:4px solid var(--gilt);border-radius:14px;padding:20px 22px;margin:14px 0 8px;
+transition:border-color .18s,transform .18s;}
+.nlbox:hover{border-color:var(--sage);border-left-color:var(--gilt);transform:translateY(-2px);}
+.nlbox .nk{font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gilt);}
+.nlbox .nt{font-weight:800;font-size:19px;letter-spacing:-.01em;color:var(--ink);margin-top:6px;line-height:1.2;}
+.nlbox .nd{font-size:14.5px;color:var(--muted);margin-top:8px;line-height:1.45;max-width:60ch;}
+.nlbox .nl{display:flex;flex-wrap:wrap;align-items:baseline;gap:10px;margin-top:14px;
+padding-top:12px;border-top:1px solid var(--cream-dp);}
+.nlbox .ned{font-weight:800;font-size:13.5px;color:var(--ink);}
+.nlbox .nres{font-size:13.5px;color:var(--muted);flex:1;min-width:220px;}
+.nlbox .na{font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gilt);}
+
+.nlbox{background:var(--olive-dk);border:1px solid var(--olive-dk);border-left:4px solid var(--gilt-lt);}
+.nlbox:hover{border-color:var(--sage);border-left-color:var(--gilt-lt);}
+.nlbox .nk{color:var(--sage);}
+.nlbox .nt{color:#f8f3e6;}
+.nlbox .nd{color:#ddd8c4;}
+.nlbox .nl{border-top-color:rgba(248,243,230,.22);}
+.nlbox .ned{color:#f8f3e6;}
+.nlbox .nres{color:#c9c6b0;}
+.nlbox .na{color:var(--gilt-lt);}
+/* destaque do material mais recente */
+.novo{display:block;text-decoration:none;background:var(--card);border:1px solid var(--cream-dp);
+border-radius:14px;padding:18px 20px;margin:14px 0 0;transition:border-color .18s,transform .18s;}
+.novo:hover{border-color:var(--sage);transform:translateY(-2px);}
+.novo .nvk{font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gilt);}
+.novo .nvt{font-weight:800;font-size:17.5px;color:var(--ink);margin-top:6px;line-height:1.25;}
+.novo .nvm{font-size:13.5px;color:var(--muted);margin-top:6px;}
+.novo .nva{display:inline-block;margin-top:12px;font-weight:800;font-size:11px;letter-spacing:.12em;
+text-transform:uppercase;color:var(--gilt);}
+.porta .pn{display:block;margin-top:10px;font-size:12.5px;font-weight:800;color:var(--sage-dk);
+letter-spacing:.02em;}
+/* barra lateral da home: quem escreve + convite */
+.bio{padding:2px 0 0;}
+.bio .bt{font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--sage);
+margin-bottom:12px;}
+.bio .bf{display:flex;gap:12px;align-items:center;margin-bottom:12px;}
+.bio .bf img{width:56px;height:56px;border-radius:50%;object-fit:cover;border:1.5px solid rgba(248,243,230,.35);}
+.bio .bn{font-weight:800;font-size:14.5px;color:#f8f3e6;line-height:1.2;}
+.bio .bc{font-size:12px;color:var(--sage);margin-top:3px;}
+.bio p{font-size:12.8px;line-height:1.55;color:#ddd8c4;margin:0 0 9px;}
+.bio .sep{height:1px;background:rgba(248,243,230,.2);margin:16px 0 14px;}
+.bio .ct{font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--sage);
+margin-bottom:8px;}
+.atual{font-size:12.5px;color:var(--muted);margin-top:18px;}
+
+.quem{display:grid;grid-template-columns:132px 1fr;gap:22px;align-items:start;
+background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:22px 24px;margin:16px 0 26px;}
+.quem img{width:132px;height:132px;border-radius:12px;object-fit:cover;}
+.quem .qn{font-weight:800;font-size:18px;color:var(--ink);line-height:1.2;}
+.quem .qc{font-size:13px;color:var(--gilt);font-weight:800;letter-spacing:.04em;margin-top:4px;}
+.quem p{margin:11px 0 0;font-size:14.8px;line-height:1.6;color:var(--muted);}
+.quem p strong{color:var(--ink);}
+@media(max-width:720px){.quem{grid-template-columns:1fr;}.quem img{width:96px;height:96px;}}
+</style></head><body><div class='topbar'><div class='in'><a href='./'><img alt='Lógica Psicológica' src='/assets/logo.png'></a><div class='sp'></div><div class='tag'>Acervo</div></div></div><div class='shell'><aside class='side' id='side'><a class='brand' href='./'><img alt='Lógica Psicológica' src='/assets/logo-creme.png'></a><div class='nav'><div class='st first'>Navegação</div><a class='home' href='./'>&#8592; Início</a><a class='navlink' href='#como-funciona'>Como funciona</a><div class='st'>Jornada da Leitura</div><a class='' href='jornada/'>Temas lidos<span class='s'>Os livros já percorridos, encontro a encontro.</span></a><div class='st'>Aulas Livres</div><a class='' href='aulas/'>Aulas realizadas<span class='s'>Um tema, um convidado que domina o terreno.</span></a><div class='st'>Supervisões Clínicas</div><a class='' href='supervisoes/'>Supervisões realizadas<span class='s'>Casos reais, formulados por processos.</span></a><div class='st'>Newsletter</div><a class='' href='newsletter/'>O que saiu no último mês<span class='s'>Achados recentes, com os limites de cada um.</span></a></div><div class='sig'><img alt='Prof. Júlio Gonçalves' src='/assets/julio.jpg'><div class='who'>Prof. Júlio Gonçalves<span>MSc · CRP 12/17614</span></div></div><a class='sub' href='https://psicojulio.com/comunidade-logica-psicologica/' target='_blank' rel='noopener'>Inscreva-se</a></aside><main class='main'><div class='hero'><div class='kick'>Acervo de materiais</div><h1>O que fica<br>depois do <span class='ac'>encontro</span></h1><p>Leituras, aulas e supervisões da Lógica Psicológica — cada encontro vira material de estudo escrito, com referência conferida e evidência modulada. Página interativa e PDF preenchível.</p><div class='atual'>Acervo atualizado em setembro de 2026 &middot; 32 materiais publicados</div><div class='divider'></div></div><div class='portas'><a class='porta' href='jornada/'><div class='pk'>Jornada da Leitura</div><div class='pd'>Acompanha um livro, capítulo a capítulo.</div><span class='pn'>14 encontros publicados &middot; 2 trilhas</span><span class='pa'>Abrir &#8594;</span></a><a class='porta' href='aulas/'><div class='pk'>Aulas Livres</div><div class='pd'>Um tema, um convidado que domina o terreno.</div><span class='pn'>5 aulas publicadas</span><span class='pa'>Abrir &#8594;</span></a><a class='porta' href='supervisoes/'><div class='pk'>Supervisões Clínicas</div><div class='pd'>Casos reais, formulados por processos.</div><span class='pn'>12 casos publicados</span><span class='pa'>Abrir &#8594;</span></a></div><a class='novo' href='/aulas/transdiagnostico-substancias/'><div class='nvk'>Publicado agora</div><div class='nvt'>Transdiagnóstico e transtorno por uso de substâncias</div><div class='nvm'>Aula livre &middot; 03/09/2026 &middot; Maísa Gelain Marin</div><span class='nva'>Abrir o material &#8594;</span></a><a class='nlbox' href='/newsletter/'><div class='nk'>Newsletter &middot; mensal</div><div class='nt'>O que saiu no último mês</div><div class='nd'>Achados recentes da psicologia, em três linhas cada. Cada item traz o desenho do estudo, o que muda na clínica e &mdash; sempre &mdash; o que ele <strong>não</strong> autoriza dizer.</div><div class='nl'><span class='ned'>Edição de setembro de 2026</span><span class='nres'>Efeitos duradouros &middot; vídeo &times; presencial &middot; leitura de metanálise</span><span class='na'>Ler &#8594;</span></div></a>
 <h2 id='como-funciona'>Como funciona</h2>
 <p>Os acervos deste portal nascem de encontros ao vivo diferentes, mas todos passam pelo mesmo tratamento depois que o encontro acaba. É esse tratamento que faz o material valer como estudo, e não como lembrança da conversa.</p>
 <ul class='clean'>
@@ -126,8 +182,4 @@ ul.clean li::before{content:"\03A8";font-weight:800;color:var(--gilt);position:a
 <li><strong>Cada material vem em duas formas:</strong> página interativa e PDF preenchível, com checklist de prática e perguntas de revisão.</li>
 </ul>
 <div class='pull'>Aula que só entusiasma não muda clínica. O que muda é sair com uma hipótese nova para testar na próxima sessão.</div>
-<h3>Os acervos</h3>
-<p><strong>Jornada da Leitura</strong> — ciclos que acompanham um livro, capítulo a capítulo, com encontros quinzenais e discussão mediada. A leitura é tratada como treino de raciocínio, não como cumprimento de tabela.</p>
-<p><strong>Aulas livres</strong> — encontros avulsos sobre temas que atravessam a clínica e não cabem num programa sequencial. O critério de escolha é clínico, não de audiência: entra o que o psicólogo encontra no consultório e para o que a formação de base costuma dar pouca coisa.</p>
-<p><strong>Supervisões clínicas</strong> — casos reais discutidos em supervisão, formulados por processos: a rede que mantém o sofrimento, o nó central, a alavanca e a decisão de por onde começar. Supervisão que desenvolve raciocínio, não que receita conduta.</p>
-<div class='cta'><img class='ph' alt='Prof. Júlio Gonçalves' src='/assets/julio.jpg'><div class='in'><div class='k'>Aprenda muito mais na</div><h3>Comunidade Lógica Psicológica</h3><ul><li>Aprofundar o raciocínio clínico com ciência, processos e análise funcional.</li><li>Estruturar uma prática ética, com pensamento crítico e evidências atualizadas.</li><li>Desenvolver o self clínico com supervisão, leituras guiadas e rede.</li></ul><a class='go' href='https://psicojulio.com/comunidade-logica-psicologica/' target='_blank' rel='noopener'>Participar da comunidade &#8594;</a></div></div><div class='foot'><img class='foot-logo' alt='Lógica Psicológica' src='/assets/logo.png'><div class='contato'><a href='mailto:contato@psicojulio.com'>contato@psicojulio.com</a> &middot; <a href='tel:+5547999338021'>(47) 99933-8021</a><br>Rua Concórdia, 703, São Vicente, Itajaí — 88309-645<br><span class='cnpj'>CNPJ 49.649.803/0001-60</span></div></div></main></div><button class='toc-fab' id='fab'>&#9776; Seções</button><div class='overlay' id='ov'></div><script>(function(){var f=document.getElementById('fab'),o=document.getElementById('ov'),s=document.getElementById('side');function c(){if(s)s.classList.remove('open');if(o)o.classList.remove('open');}if(f)f.onclick=function(){s.classList.toggle('open');o.classList.toggle('open');};if(o)o.onclick=c;})();</script></body></html>
+<div class='quem'><img alt='Prof. Júlio Gonçalves' src='/assets/julio.jpg'><div><div class='qn'>Prof. Júlio Gonçalves</div><div class='qc'>MSc &middot; CRP 12/17614</div><p><strong>Psicólogo clínico e professor universitário.</strong> Trabalha com Terapia Baseada em Processos, transdiagnóstico e prática baseada em evidências.</p><p>Supervisiona casos, conduz as jornadas de leitura e escreve os materiais deste acervo — conferindo as referências uma a uma e registrando, quando é o caso, onde a evidência sustenta menos do que a fala sugeria.</p></div></div><div class='cta'><img class='ph' alt='Prof. Júlio Gonçalves' src='/assets/julio.jpg'><div class='in'><div class='k'>Aprenda muito mais na</div><h3>Comunidade Lógica Psicológica</h3><ul><li>Aprofundar o raciocínio clínico com ciência, processos e análise funcional.</li><li>Estruturar uma prática ética, com pensamento crítico e evidências atualizadas.</li><li>Desenvolver o self clínico com supervisão, leituras guiadas e rede.</li></ul><a class='go' href='https://psicojulio.com/comunidade-logica-psicologica/' target='_blank' rel='noopener'>Participar da comunidade &#8594;</a></div></div><div class='foot'><img class='foot-logo' alt='Lógica Psicológica' src='/assets/logo.png'><div class='contato'><a href='mailto:contato@psicojulio.com'>contato@psicojulio.com</a> &middot; <a href='tel:+5547999338021'>(47) 99933-8021</a><br>Rua Concórdia, 703, São Vicente, Itajaí — 88309-645<br><span class='cnpj'>CNPJ 49.649.803/0001-60</span></div></div></main></div><button class='toc-fab' id='fab'>&#9776; Seções</button><div class='overlay' id='ov'></div><script>(function(){var f=document.getElementById('fab'),o=document.getElementById('ov'),s=document.getElementById('side');function c(){if(s)s.classList.remove('open');if(o)o.classList.remove('open');}if(f)f.onclick=function(){s.classList.toggle('open');o.classList.toggle('open');};if(o)o.onclick=c;})();</script></body></html>
