@@ -201,41 +201,105 @@ figure.dg figcaption{margin-top:10px;font-size:13px;color:var(--muted);text-alig
 .nw-d summary{cursor:pointer;list-style:none;font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#A8894F;}
 .nw-d summary::-webkit-details-marker{display:none;}
 .nw-d summary::before{content:'+ ';}
-.nw-d[open] summary::before{content:'\2212 ';}
-.nw-in{margin-top:12px;}
-.nw-c{background:#FBF7EC;border-left:2px solid #C3A468;border-radius:0 6px 6px 0;padding:10px 14px;margin-bottom:10px;}
+.nw-d[open] summary::before{content:'2 ';}
+.nw-in{margin-top:14px;}
+.ficha{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px;}
+.ficha .chip{background:#F1ECE0;border-radius:999px;padding:6px 13px;font-size:12.5px;color:#403F32;}
+.ficha .chip b{display:block;font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#A8894F;margin-bottom:1px;}
+.nwfig{margin:0 0 14px;background:#FFFDF7;border:1px solid #EFE7D3;border-radius:10px;padding:14px 16px;}
+.nwfig svg{width:100%;height:auto;display:block;}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px;}
+.nw-c{background:#FBF7EC;border-left:2px solid #C3A468;border-radius:0 8px 8px 0;padding:12px 15px;}
 .nw-c.lim{border-left-color:#A05A3C;background:#FAF3EE;}
-.nw-c > b{display:block;font-size:.7rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#A8894F;margin-bottom:6px;}
+.nw-c > b{display:block;font-size:.7rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#A8894F;margin-bottom:8px;}
 .nw-c.lim > b{color:#A05A3C;}
-.nw-c p{margin:0 0 6px;}.nw-c p:last-child{margin:0;}
-.nw-f{font-size:.86rem;color:#6C6A55;line-height:1.5;}
+.nw-c ul{margin:0;padding:0;list-style:none;}
+.nw-c li{position:relative;padding-left:15px;margin-bottom:7px;font-size:14.2px;line-height:1.5;color:#403F32;}
+.nw-c li:last-child{margin-bottom:0;}
+.nw-c li:before{content:'';position:absolute;left:0;top:8px;width:5px;height:5px;border-radius:50%;background:#C3A468;}
+.nw-c.lim li:before{background:#A05A3C;}
+.nw-q{background:#43441F;border-radius:10px;padding:14px 17px;margin-bottom:12px;color:#F0EDE0;font-size:15px;line-height:1.5;}
+.nw-q span{display:block;font-size:.68rem;font-weight:800;letter-spacing:.11em;text-transform:uppercase;color:#9CA575;margin-bottom:6px;}
+.nw-f{font-size:.85rem;color:#6C6A55;line-height:1.5;}
 .nw-f a{color:#856832;font-weight:700;white-space:nowrap;}
-</style></head><body><div class='topbar'><div class='in'><a href='/'><img alt='Lógica Psicológica' src='/assets/logo.png'></a><a class='backlink' href='/newsletter/' title='Voltar para a Newsletter'>&#8592; Voltar</a><div class='sp'></div><div class='tag'>Newsletter</div></div></div><div class='shell'><aside class='side' id='side'><a class='brand' href='/'><img alt='Lógica Psicológica' src='/assets/logo-creme.png'></a><div class='nav'><div class='st first'>Navegação</div><a class='home' href='/newsletter/'>&#8592; Edições</a><a class='navlink' href='/'>Início do portal</a><div class='st'>Nesta edição</div><div class='idx'><a href='#i1'>Efeitos da psicoterapia se sustentam por anos</a><a href='#i2'>Vídeo e presencial: sem diferença de eficácia</a><a href='#i3'>Ler metanálises com mais critério</a></div></div><div class='sig'><img alt='Prof. Júlio Gonçalves' src='/assets/julio.jpg'><div class='who'>Prof. Júlio Gonçalves<span>MSc · CRP 12/17614</span></div></div><a class='sub' href='https://psicojulio.com/comunidade-logica-psicologica/' target='_blank' rel='noopener'>Inscreva-se</a></aside><main class='main'><div class='mhero'><div class='kick'>Newsletter · Lógica Psicológica</div><h1>O que saiu no último mês</h1><div class='sub'>Edição de setembro de 2026</div><div class='meta'>Seleção e comentário de Prof. Júlio Gonçalves · Três achados publicados entre maio e agosto de 2026</div><p class='tema'>Três estudos que chegaram nas últimas semanas e que mudam alguma coisa na conversa com o paciente — cada um com o que ele sustenta e com o que ele não autoriza dizer.</p></div><div class='usar'><b>Como ler</b>Cada item traz o achado em três linhas. Se interessar, abra: dentro estão o desenho do estudo, o que muda na clínica e o limite do que ele permite afirmar. O link leva à fonte original.</div><article class='nw' id='i1'>
-<div class='nw-k'>Metanálise · World Psychiatry</div>
-<h3>Os efeitos da psicoterapia para depressão se sustentam por anos</h3>
-<p class='nw-r'>Uma metanálise abrangente reuniu ensaios randomizados com seguimento de seis meses ou mais e encontrou que o benefício da psicoterapia para depressão em adultos <strong>persiste vários anos após o término</strong> do tratamento, em comparação com condições-controle.</p>
+@media(max-width:760px){.duo{grid-template-columns:1fr;}}
+</style></head><body><div class='topbar'><div class='in'><a href='/'><img alt='Lógica Psicológica' src='/assets/logo.png'></a><a class='backlink' href='/newsletter/' title='Voltar para a Newsletter'>&#8592; Voltar</a><div class='sp'></div><div class='tag'>Newsletter</div></div></div><div class='shell'><aside class='side' id='side'><a class='brand' href='/'><img alt='Lógica Psicológica' src='/assets/logo-creme.png'></a><div class='nav'><div class='st first'>Navegação</div><a class='home' href='/newsletter/'>&#8592; Edições</a><a class='navlink' href='/'>Início do portal</a><div class='st'>Nesta edição</div><div class='idx'><a href='#i1'>Efeitos da psicoterapia se sustentam por anos</a><a href='#i2'>Vídeo e presencial: sem diferença de eficácia</a><a href='#i3'>Ler metanálises com mais critério</a></div></div><div class='sig'><img alt='Prof. Júlio Gonçalves' src='/assets/julio.jpg'><div class='who'>Prof. Júlio Gonçalves<span>MSc · CRP 12/17614</span></div></div><a class='sub' href='https://psicojulio.com/comunidade-logica-psicologica/' target='_blank' rel='noopener'>Inscreva-se</a></aside><main class='main'><div class='mhero'><div class='kick'>Newsletter · Lógica Psicológica</div><h1>O que saiu no último mês</h1><div class='sub'>Edição de setembro de 2026</div><div class='meta'>Seleção e comentário de Prof. Júlio Gonçalves · Três achados publicados entre maio e agosto de 2026</div><p class='tema'>Três estudos que chegaram nas últimas semanas e que mudam alguma coisa na conversa com o paciente — cada um com o que ele sustenta e com o que ele não autoriza dizer.</p></div><div class='usar'><b>Como ler</b>Cada item traz o achado em três linhas. Abrindo, você encontra a ficha do estudo, uma figura do resultado, o que muda na clínica ao lado do que ele não autoriza dizer, e uma pergunta para levar à prática.</div><article class='nw' id='i1'>
+<div class='nw-k'>Metanálise &middot; World Psychiatry</div><h3>Os efeitos da psicoterapia para depressão se sustentam por anos</h3><p class='nw-r'>Metanálise de ensaios randomizados com seguimento longo encontrou que o benefício da psicoterapia para depressão em adultos <strong>persiste vários anos após o término</strong> do tratamento, comparado a condições-controle.</p>
 <details class='nw-d'><summary>Ler completo</summary><div class='nw-in'>
-<div class='nw-c'><b>O que foi feito</b><p>Foram incluídos ensaios randomizados que compararam psicoterapias para depressão adulta com condições-controle — cuidado habitual, lista de espera ou outras — e que relataram desfechos a partir de seis meses após a randomização. O desfecho principal foi a diferença média padronizada, complementada por taxas de resposta e risco relativo.</p></div>
-<div class='nw-c'><b>O que muda na clínica</b><p>É argumento para a conversa sobre expectativa e alta. O efeito não é apenas alívio durante o acompanhamento: há sustentação depois. Isso muda o que se pode dizer ao paciente que pergunta se vai precisar de terapia para sempre, e reforça o valor de trabalhar prevenção de recaída durante o tratamento, e não como tópico final.</p></div>
-<div class='nw-c lim'><b>O que o estudo não autoriza dizer</b><p>Os próprios autores pedem <strong>cautela na leitura dos desfechos além de dois anos</strong>, pelo número reduzido de estudos com seguimento longo. Também não permite comparar modalidades entre si, nem afirmar que qualquer psicoterapia produz o mesmo efeito duradouro — a comparação é com controle, não entre abordagens.</p></div>
+<div class='ficha'><span class='chip'><b>Desenho</b>metanálise de ECRs</span><span class='chip'><b>Seguimento</b>6 meses ou mais</span><span class='chip'><b>Comparação</b>contra controle</span><span class='chip'><b>Desfecho</b>sintomas depressivos</span></div>
+<figure class='nwfig'><svg viewBox='0 0 660 128' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Linha do tempo do seguimento: 6 meses, 1 ano, 2 anos e além'>
+<line x1='24' y1='72' x2='636' y2='72' stroke='#E9E3CE' stroke-width='2'/>
+<line x1='24' y1='72' x2='470' y2='72' stroke='#7f8a58' stroke-width='3'/>
+<line x1='470' y1='72' x2='636' y2='72' stroke='#c9c2a8' stroke-width='3' stroke-dasharray='6 5'/>
+<circle cx='24' cy='72' r='6' fill='#7f8a58'/><circle cx='172' cy='72' r='6' fill='#7f8a58'/>
+<circle cx='320' cy='72' r='6' fill='#7f8a58'/><circle cx='470' cy='72' r='6' fill='#7f8a58'/>
+<circle cx='620' cy='72' r='6' fill='#fff' stroke='#c9c2a8' stroke-width='2.4'/>
+<text x='24' y='56' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='12' font-weight='800' fill='#2f2e24'>fim</text>
+<text x='172' y='56' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='12' font-weight='800' fill='#2f2e24'>6 meses</text>
+<text x='320' y='56' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='12' font-weight='800' fill='#2f2e24'>1 ano</text>
+<text x='470' y='56' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='12' font-weight='800' fill='#2f2e24'>2 anos</text>
+<text x='620' y='56' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='12' font-weight='800' fill='#8d876f'>além</text>
+<text x='24' y='104' font-family="Plus Jakarta Sans,sans-serif" font-size='11.5' fill='#6c6a55'>benefício mantido em relação ao controle</text>
+<text x='636' y='104' text-anchor='end' font-family="Plus Jakarta Sans,sans-serif" font-size='11.5' fill='#8d876f'>poucos estudos — ler com cautela</text>
+</svg></figure>
+<div class='duo'>
+<div class='nw-c'><b>Muda na clínica</b><ul><li>Argumento concreto para a conversa sobre alta e expectativa.</li><li>Reforça trabalhar prevenção de recaída <em>durante</em>, não no fim.</li><li>Muda o que se responde a quem pergunta se vai precisar de terapia para sempre.</li></ul></div>
+<div class='nw-c lim'><b>Não autoriza dizer</b><ul><li>Que uma modalidade é melhor que outra — a comparação é com controle.</li><li>Que o efeito além de dois anos está bem estabelecido: são poucos estudos.</li><li>Que qualquer psicoterapia produz o mesmo efeito duradouro.</li></ul></div>
+</div>
+<div class='nw-q'><span>Pergunta para levar à prática</span>Se o efeito se sustenta por anos, o que na sua última sessão com um paciente que teve alta ajudaria a sustentar — e o que você deixou de fazer?</div>
 <div class='nw-f'>Cuijpers, P., Miguel, C., Kaya Aglio, E., van Straten, A., et al. (2026). Long-term effects of psychotherapies for depression: an advanced meta-analysis. <em>World Psychiatry</em>. <a href='https://onlinelibrary.wiley.com/doi/10.1002/wps.70065' target='_blank' rel='noopener'>Ver o estudo &#8599;</a></div>
 </div></details></article><article class='nw' id='i2'>
-<div class='nw-k'>Revisão sistemática e metanálise multinível · JMIR</div>
-<h3>Terapia por vídeo e presencial: sem diferença de eficácia, com uma ressalva grande</h3>
-<p class='nw-r'>Revisão com critérios metodológicos estritos comparou psicoterapia síncrona por vídeo e presencial em adultos. Ao longo de 41 tamanhos de efeito, <strong>não houve diferença significativa na redução de sintomas</strong> (g = −0,09). A heterogeneidade entre estudos, porém, foi substancial.</p>
+<div class='nw-k'>Revisão sistemática e metanálise multinível &middot; JMIR</div><h3>Terapia por vídeo e presencial: sem diferença de eficácia, com uma ressalva grande</h3><p class='nw-r'>Comparação entre psicoterapia síncrona por vídeo e presencial em adultos. Ao longo de 41 tamanhos de efeito, <strong>não houve diferença significativa</strong> na redução de sintomas. A incerteza entre estudos, porém, é grande.</p>
 <details class='nw-d'><summary>Ler completo</summary><div class='nw-in'>
-<div class='nw-c'><b>O que foi feito</b><p>Busca em bases bibliográficas até maio de 2025, com atualização em março de 2026. Dos 11.386 registros identificados, 12 ensaios randomizados atenderam aos critérios — dose mínima de tratamento de 500 minutos, exposição híbrida limitada a um terço das sessões e condução por profissionais de saúde. Diagnósticos incluídos: TEPT, depressão, TOC, bulimia nervosa, transtorno de ansiedade generalizada e dor somatoforme.</p></div>
-<div class='nw-c'><b>O que muda na clínica</b><p>Sustenta o atendimento por vídeo como formato defensável para adultos, em quadros comuns, quando o tratamento tem dose adequada. Para a realidade brasileira, em que o online ampliou muito o acesso, é o tipo de dado que serve tanto para conversar com o paciente quanto para responder a colegas céticos — sem precisar recorrer a impressão pessoal.</p></div>
-<div class='nw-c lim'><b>O que o estudo não autoriza dizer</b><p>Não autoriza dizer que “dá na mesma” em qualquer caso. A base de evidência é <strong>pequena e predominantemente ocidental</strong>, e o intervalo de predição de 95% foi amplo (−1,65 a 1,46), o que significa que em um caso ou contexto particular a diferença pode ser relevante nos dois sentidos. Também não cobre crianças, atendimento em grupo, formatos por telefone ou assíncronos.</p></div>
+<div class='ficha'><span class='chip'><b>Estudos</b>12 ECRs</span><span class='chip'><b>Tamanhos de efeito</b>41</span><span class='chip'><b>Efeito combinado</b>g = &minus;0,09</span><span class='chip'><b>Triagem</b>11.386 registros</span></div>
+<figure class='nwfig'><svg viewBox='0 0 660 150' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Efeito combinado próximo de zero, com intervalo de predição amplo'>
+<line x1='330' y1='24' x2='330' y2='104' stroke='#2f2e24' stroke-width='1.6'/>
+<text x='330' y='18' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='11' font-weight='800' fill='#2f2e24'>sem diferença</text>
+<line x1='96' y1='64' x2='560' y2='64' stroke='#c9c2a8' stroke-width='10' stroke-linecap='round'/>
+<line x1='300' y1='64' x2='340' y2='64' stroke='#7f8a58' stroke-width='10' stroke-linecap='round'/>
+<polygon points='318,52 330,64 318,76 306,64' fill='#43441f'/>
+<text x='96' y='96' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='11.5' fill='#8d876f'>&minus;1,65</text>
+<text x='560' y='96' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='11.5' fill='#8d876f'>1,46</text>
+<text x='330' y='96' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='11.5' font-weight='800' fill='#43441f'>g = &minus;0,09</text>
+<text x='96' y='124' font-family="Plus Jakarta Sans,sans-serif" font-size='11.5' fill='#6c6a55'>presencial melhor</text>
+<text x='560' y='124' text-anchor='end' font-family="Plus Jakarta Sans,sans-serif" font-size='11.5' fill='#6c6a55'>vídeo melhor</text>
+<text x='96' y='142' font-family="Plus Jakarta Sans,sans-serif" font-size='11' font-style='italic' fill='#8d876f'>faixa clara: intervalo de predição de 95% &mdash; onde um próximo estudo pode cair</text>
+</svg></figure>
+<div class='duo'>
+<div class='nw-c'><b>Muda na clínica</b><ul><li>Sustenta o vídeo como formato defensável em adultos, com dose adequada.</li><li>Serve para conversar com o paciente e com colegas céticos sem recorrer a impressão.</li><li>Cobre TEPT, depressão, TOC, bulimia, TAG e dor somatoforme.</li></ul></div>
+<div class='nw-c lim'><b>Não autoriza dizer</b><ul><li>Que “dá na mesma” em qualquer caso: o intervalo de predição é amplo nos dois sentidos.</li><li>Que vale para crianças, grupo, telefone ou formatos assíncronos.</li><li>Que a base é robusta — ela é pequena e predominantemente ocidental.</li></ul></div>
+</div>
+<div class='nw-q'><span>Pergunta para levar à prática</span>Você atenderia por vídeo o seu caso mais grave? Se não, o que exatamente muda — e isso está na evidência ou na sua preferência?</div>
 <div class='nw-f'>Comparing video-based and face-to-face psychotherapy: systematic review and multilevel meta-analysis across mental disorders (2026). <em>Journal of Medical Internet Research</em>. <a href='https://doi.org/10.2196/89177' target='_blank' rel='noopener'>Ver o estudo &#8599;</a></div>
 </div></details></article><article class='nw' id='i3'>
-<div class='nw-k'>Revisão metodológica · Clinical Psychology Review</div>
-<h3>Um chamado para ler metanálises com mais critério</h3>
-<p class='nw-r'>Revisão publicada em agosto argumenta que ensaios randomizados e metanálises em psicoterapia seguem limitados por <strong>fragilidades metodológicas e confusão conceitual</strong> — e propõe distinções que mudam a forma de interpretar resultado de tratamento.</p>
+<div class='nw-k'>Revisão metodológica &middot; Clinical Psychology Review</div><h3>Um chamado para ler metanálises com mais critério</h3><p class='nw-r'>Revisão argumenta que ensaios e metanálises em psicoterapia seguem limitados por <strong>fragilidades metodológicas e confusão conceitual</strong> — e propõe distinções que mudam a forma de interpretar resultado de tratamento.</p>
 <details class='nw-d'><summary>Ler completo</summary><div class='nw-in'>
-<div class='nw-c'><b>O que foi feito</b><p>O texto separa conceitos que costumam ser tratados como equivalentes: <strong>resposta</strong> e <strong>efeito</strong>; <strong>mudança mínima importante</strong> e <strong>menor diferença que vale a pena</strong>; e medidas <strong>absolutas</strong> versus <strong>relativas</strong> de efeito. Defende razões de chances e diferenças médias padronizadas como índices mais generalizáveis, complementados por taxas de eventos nos grupos controle e experimental.</p></div>
-<div class='nw-c'><b>O que muda na clínica</b><p>É leitura de método, não de conduta — e por isso vale para tudo o que se lê depois. A distinção entre responder e melhorar, em particular, é a que mais se perde na divulgação: um tratamento pode ter taxa de resposta alta e efeito modesto sobre o controle, e as duas informações contam histórias diferentes ao paciente.</p></div>
-<div class='nw-c lim'><b>O que o estudo não autoriza dizer</b><p>Não é um estudo de eficácia e não altera nenhuma recomendação clínica específica. Serve para calibrar leitura — e é justamente por isso que não deve ser citado como se dissesse algo sobre qual terapia usar.</p></div>
+<div class='ficha'><span class='chip'><b>Tipo</b>revisão metodológica</span><span class='chip'><b>Foco</b>como ler efeito</span><span class='chip'><b>Propõe</b>razão de chances e DMP</span><span class='chip'><b>Publicado</b>agosto de 2026</span></div>
+<figure class='nwfig'><svg viewBox='0 0 660 158' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Três pares de conceitos que costumam ser confundidos'>
+<rect x='0' y='6' width='206' height='64' rx='9' fill='#eef1e4' stroke='#9ca575' stroke-width='1.3'/>
+<text x='103' y='32' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='13' font-weight='800' fill='#2f2e24'>resposta</text>
+<text x='103' y='54' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='11.5' fill='#6c6a55'>quantos melhoraram</text>
+<text x='226' y='44' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='15' fill='#a8894f'>&ne;</text>
+<rect x='248' y='6' width='206' height='64' rx='9' fill='#f6efdf' stroke='#c3a468' stroke-width='1.3'/>
+<text x='351' y='32' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='13' font-weight='800' fill='#2f2e24'>efeito</text>
+<text x='351' y='54' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='11.5' fill='#6c6a55'>quanto acima do controle</text>
+<rect x='0' y='84' width='206' height='64' rx='9' fill='#eef1e4' stroke='#9ca575' stroke-width='1.3'/>
+<text x='103' y='110' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='13' font-weight='800' fill='#2f2e24'>medida absoluta</text>
+<text x='103' y='132' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='11.5' fill='#6c6a55'>o tamanho da mudança</text>
+<text x='226' y='122' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='15' fill='#a8894f'>&ne;</text>
+<rect x='248' y='84' width='206' height='64' rx='9' fill='#f6efdf' stroke='#c3a468' stroke-width='1.3'/>
+<text x='351' y='110' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='13' font-weight='800' fill='#2f2e24'>medida relativa</text>
+<text x='351' y='132' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='11.5' fill='#6c6a55'>o quanto melhor que o outro</text>
+<text x='478' y='40' font-family="Plus Jakarta Sans,sans-serif" font-size='11.5' font-style='italic' fill='#6c6a55'>Os dois lados</text>
+<text x='478' y='58' font-family="Plus Jakarta Sans,sans-serif" font-size='11.5' font-style='italic' fill='#6c6a55'>contam histórias</text>
+<text x='478' y='76' font-family="Plus Jakarta Sans,sans-serif" font-size='11.5' font-style='italic' fill='#6c6a55'>diferentes ao</text>
+<text x='478' y='94' font-family="Plus Jakarta Sans,sans-serif" font-size='11.5' font-style='italic' fill='#6c6a55'>paciente.</text>
+</svg></figure>
+<div class='duo'>
+<div class='nw-c'><b>Muda na clínica</b><ul><li>Distinguir <em>responder</em> de <em>melhorar</em> muda o que se diz ao paciente.</li><li>Pedir sempre a taxa de eventos nos dois grupos, não só o efeito.</li><li>Calibra a leitura de tudo o que se lê depois — inclusive desta newsletter.</li></ul></div>
+<div class='nw-c lim'><b>Não autoriza dizer</b><ul><li>Nada sobre qual terapia usar: não é estudo de eficácia.</li><li>Não altera nenhuma recomendação clínica específica.</li><li>Não substitui a leitura do estudo primário que se pretende citar.</li></ul></div>
+</div>
+<div class='nw-q'><span>Pergunta para levar à prática</span>Da última vez que você citou um estudo para um paciente ou num post, você estava falando de resposta ou de efeito?</div>
 <div class='nw-f'>Furukawa, T. A., et al. (2026). Rethinking and advancing meta-analyses and randomized trials of psychotherapies. <em>Clinical Psychology Review, 129</em>, 102797. <a href='https://pubmed.ncbi.nlm.nih.gov/42636717/' target='_blank' rel='noopener'>Ver o estudo &#8599;</a></div>
 </div></details></article><div class='nmet'><b>Nota de método</b>A seleção é editorial e não pretende ser exaustiva: privilegia achados com desenho sólido e consequência prática para quem atende. Cada item é <strong>parafraseado</strong> a partir do resumo publicado, sem transcrição, e traz o link para a fonte primária — a leitura do original continua sendo responsabilidade de quem for citar. O campo <em>o que o estudo não autoriza dizer</em> é parte fixa do formato: existe para que a newsletter informe sem alimentar o entusiasmo que costuma acompanhar achado novo.</div><div class='cta'><img class='ph' alt='Prof. Júlio Gonçalves' src='/assets/julio.jpg'><div class='in'><div class='k'>Aprenda muito mais na</div><h3>Comunidade Lógica Psicológica</h3><ul><li>Aprofundar o raciocínio clínico com ciência, processos e análise funcional.</li><li>Estruturar uma prática ética, com pensamento crítico e evidências atualizadas.</li><li>Desenvolver o self clínico com supervisão, leituras guiadas e rede.</li></ul><a class='go' href='https://psicojulio.com/comunidade-logica-psicologica/' target='_blank' rel='noopener'>Participar da comunidade &#8594;</a></div></div><div class='foot'><img class='foot-logo' alt='Lógica Psicológica' src='/assets/logo.png'><div class='contato'><a href='mailto:contato@psicojulio.com'>contato@psicojulio.com</a> &middot; <a href='tel:+5547999338021'>(47) 99933-8021</a><br>Rua Concórdia, 703, São Vicente, Itajaí — 88309-645<br><span class='cnpj'>CNPJ 49.649.803/0001-60</span></div></div></main></div><button class='toc-fab' id='fab'>&#9776; Seções</button><div class='overlay' id='ov'></div><script>
 (function(){
