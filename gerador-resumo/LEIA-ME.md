@@ -49,8 +49,8 @@ newsletter/                 edições numeradas (pasta por data: 2026-09/)
 Cada material é uma pasta com `index.html` e `resumo.pdf`.
 As edições da newsletter têm `index.html` e `edicao-01.pdf`.
 
-**Números atuais:** 32 materiais, 201 perguntas com gabarito (100%),
-26 figuras SVG, 3 itens na Edição 1 (definitiva, v44).
+**Números atuais:** 33 materiais, 209 perguntas com gabarito (100%),
+29 figuras SVG, 3 itens na Edição 1 (definitiva, v44).
 
 ---
 
@@ -68,7 +68,7 @@ As edições da newsletter têm `index.html` e `edicao-01.pdf`.
 | `referencias.py` | Gera as três direções de design (A editorial, B manifesto, C assimétrica) para comparação. |
 | `build_local.py` | Gera a **cópia de conferência** com caminhos relativos, para abrir do disco. |
 | `figs_tus.py`, `figs_aulas.py` | Figuras SVG das aulas. |
-| `aula_*.py`, `sup_*.py` | Conteúdo dos materiais que ainda têm fonte. |
+| `aula_*.py`, `sup_*.py` | Conteúdo dos materiais que ainda têm fonte. `aula_tept.py` (com `figs_tept.py` e `indices_tept.py`) é o modelo mais recente e traz o **glue de aula** (`pagina_aula` + `gen_resumo.gerar`), que antes ficava só no chat. |
 | `gab_*.py` | Gabaritos por trilha. |
 
 ---
@@ -154,9 +154,10 @@ AQ2 → AAQ-II · hipotivação → hipoativação · metas Smart → SMART
   Artmed Experience (15 a 17/10/2026), o experimento de caso único de
   Lavefjord et al. (2026) sobre a hipótese da centralidade, e a trend das
   fotos anos 80 lida pela pesquisa sobre nostalgia (Sedikides & Wildschut).
-  Geradores: `edicao01_site.py` (página, índice, home, nome da seção; roda
-  sobre a página **original** de teste, não é idempotente) e
-  `edicao01_pdf.py` (PDF de uma página, folga zero).
+  Geradores: `edicao01_site.py` (página, índice, home sem foto na bio, nome da
+  seção; roda sobre a página **original** de teste, não é idempotente),
+  `edicao01_pdf.py` (PDF de uma página, folga zero) e `menu_lateral.py`
+  (telas baixas deixam de esconder a foto e o logo do menu; 39 páginas).
   O fluxo segue: eu levanto a pauta, você aprova, eu escrevo.
   Candidatos ainda na gaveta para a Edição 2: o ensaio randomizado do chatbot
   Therabot e a carta que o contesta; a reação do público a esse ensaio; o
@@ -169,6 +170,10 @@ AQ2 → AAQ-II · hipotivação → hipoativação · metas Smart → SMART
   (*muda na clínica* × *não autoriza dizer*), bloco oliva com ação em
   processos mais pergunta crítica, e o PDF de uma página na direção
   editorial (`edicao.py` / `edicao01_pdf.py`), com miniatura clicável no alto da página.
+
+- **Aula TEPT complexo (09/09/2026):** feita a partir das anotações do Gemini e do
+  chat, sem transcrição integral (a gravação não estava mais no Drive). Se a
+  transcrição ou o .mp4 aparecer, revisar o texto contra ela.
 
 - **Trilha Psicoterapeutas Eficazes:** 6 capítulos ainda sem material.
 - **Consentimento** para uso dos casos de supervisão em material público:

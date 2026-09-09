@@ -18,7 +18,7 @@ newsletter/                 edições numeradas, sem periodicidade fixa (pasta p
 Cada material é uma pasta com `index.html` e `resumo.pdf`.
 As edições da newsletter têm `index.html` e `edicao-NN.pdf` (uma página A4).
 
-Hoje: 32 materiais publicados, 201 perguntas com gabarito, 23 figuras.
+Hoje: 33 materiais publicados, 209 perguntas com gabarito, 29 figuras.
 
 ## Publicação
 

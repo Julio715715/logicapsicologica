@@ -1,0 +1,415 @@
+<!DOCTYPE html><html lang='pt-BR'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='icon' type='image/png' sizes='32x32' href='/favicon-32.png'><link rel='icon' type='image/png' sizes='192x192' href='/favicon-192.png'><link rel='apple-touch-icon' href='/apple-touch-icon.png'><link rel='icon' href='/favicon.ico' sizes='any'><link rel='preconnect' href='https://fonts.googleapis.com'><link rel='preconnect' href='https://fonts.gstatic.com' crossorigin><link href='https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500&display=swap' rel='stylesheet'><title>Tratando o TEPT complexo — Lógica Psicológica</title><style>
+:root{--olive:#5b5c2a;--olive-dk:#43441f;--sage:#9ca575;--sage-dk:#7c8054;--cream:#f8f3e6;--cream-dp:#efe7d3;--gilt:#a8894f;--gilt-lt:#c3a468;--ink:#2f2e24;--muted:#6c6a55;--card:#fffdf7;}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;} html,body{margin:0;padding:0;}
+body{font-family:'Plus Jakarta Sans',system-ui,-apple-system,Segoe UI,sans-serif;background:var(--cream);color:var(--ink);font-size:17px;line-height:1.62;font-weight:400;-webkit-font-smoothing:antialiased;}
+a{color:var(--olive);} strong{font-weight:700;color:var(--olive-dk);} em{color:var(--sage-dk);}
+:focus-visible{outline:2px solid var(--gilt);outline-offset:2px;}
+.topbar{position:sticky;top:0;z-index:30;background:rgba(248,243,230,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--cream-dp);}
+.topbar .in{max-width:1100px;margin:0 auto;padding:11px 20px;display:flex;align-items:center;gap:12px;}
+.topbar img{height:22px;display:block;}
+.topbar .sp{flex:1;}
+.topbar .tag{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);}
+.backlink{font-weight:800;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--olive-dk);text-decoration:none;border:1px solid var(--cream-dp);background:var(--card);border-radius:20px;padding:7px 14px;white-space:nowrap;line-height:1;transition:border-color .18s,color .18s;}
+.backlink:hover{border-color:var(--gilt-lt);color:var(--gilt);}
+@media(max-width:430px){.topbar .tag{display:none;}}
+.shell{display:flex;gap:34px;max-width:1100px;margin:0 auto;padding:0 20px;align-items:flex-start;}
+.side{flex:0 0 252px;width:252px;position:sticky;top:56px;align-self:flex-start;height:calc(100vh - 66px);overflow:hidden;background:linear-gradient(165deg,#5b5c2a,#3b3c1b);color:var(--cream);border-radius:0 0 16px 16px;padding:18px 18px 16px;display:flex;flex-direction:column;}
+.side .nav{flex:1 1 auto;overflow-y:auto;min-height:0;scrollbar-width:thin;scrollbar-color:rgba(248,243,230,.28) transparent;}
+.side .nav::-webkit-scrollbar{width:6px;} .side .nav::-webkit-scrollbar-thumb{background:rgba(248,243,230,.28);border-radius:3px;}
+.side .brand{display:block;margin-bottom:14px;}
+.side .brand img{width:100%;max-width:148px;height:auto;display:block;}
+.side .st{font-weight:800;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt-lt);margin:13px 0 6px;padding-top:11px;border-top:1px solid rgba(248,243,230,.18);}
+.side .st.first{margin-top:0;padding-top:0;border-top:none;}
+.side a{display:block;text-decoration:none;color:var(--cream);padding:8px 11px;border-radius:9px;font-size:14.5px;font-weight:700;line-height:1.25;margin-bottom:3px;border:1px solid transparent;}
+.side a .s{display:block;font-size:11.8px;font-weight:400;color:#d9d3bd;margin-top:2px;line-height:1.3;}
+.side a:hover{background:rgba(248,243,230,.10);}
+.side a.on{background:var(--cream);color:var(--olive-dk);border-color:var(--cream);}
+.side a.on .s{color:var(--muted);}
+.side .home{font-weight:800;font-size:12.5px;letter-spacing:.02em;padding:5px 11px;}
+.side .navlink{font-weight:700;font-size:13px;color:#e7e1cb;padding:5px 11px;}
+.side .sig{flex:0 0 auto;margin-top:12px;padding-top:12px;border-top:1px solid rgba(248,243,230,.18);display:flex;align-items:center;gap:11px;}
+.side .sig img{width:40px;height:40px;flex:none;border-radius:50%;object-fit:cover;object-position:center 18%;border:2px solid rgba(248,243,230,.35);}
+.side .sig .who{font-weight:800;font-size:12.5px;color:var(--cream);line-height:1.3;}
+.side .sig .who span{display:block;font-weight:400;font-size:11.5px;color:#cfc9b2;letter-spacing:.04em;margin-top:2px;}
+.side .sub{display:block;margin-top:10px;text-align:center;background:var(--cream);color:var(--olive-dk);font-weight:800;font-size:13px;letter-spacing:.02em;text-decoration:none;padding:10px 14px;border-radius:22px;transition:background .18s;}
+.side .sub:hover{background:#fff;color:var(--olive-dk);}
+.main{flex:1 1 auto;max-width:730px;width:100%;padding:0 0 50px;}
+.toc-fab{display:none;} .overlay{display:none;}
+@media(max-width:960px){
+ .shell{display:block;padding:0;} .main{max-width:760px;margin:0 auto;padding:0 20px 50px;}
+ .side{position:fixed;top:0;left:0;height:100vh;width:292px;z-index:60;transform:translateX(-100%);transition:transform .25s;box-shadow:2px 0 22px rgba(0,0,0,.28);padding:26px 22px;max-height:none;border-radius:0;}
+ .side.open{transform:none;}
+ .toc-fab{display:block;position:fixed;bottom:18px;right:18px;z-index:50;background:var(--olive-dk);color:var(--cream);font-weight:800;font-size:13px;letter-spacing:.04em;border:none;border-radius:30px;padding:13px 20px;box-shadow:0 4px 14px rgba(0,0,0,.24);cursor:pointer;}
+ .overlay{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:55;opacity:0;pointer-events:none;transition:opacity .25s;}
+ .overlay.open{display:block;opacity:1;pointer-events:auto;}
+}
+@media(min-width:961px) and (max-height:820px){
+ .side a .s{display:none;}
+ .side .brand{margin-bottom:10px;} .side .brand img{max-width:132px;}
+ .side .st{margin:10px 0 5px;padding-top:9px;}
+}
+@media(min-width:961px) and (max-height:680px){
+ .side .brand img{max-width:110px;}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;}}
+.hero{padding:40px 0 6px;}
+.hero .kick{font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:12px;color:var(--gilt);margin:0 0 14px;}
+.hero h1{font-weight:800;font-size:46px;line-height:1.03;letter-spacing:-.022em;color:var(--ink);margin:0 0 16px;}
+.hero h1 .ac{color:var(--olive);}
+.hero p{color:var(--muted);font-size:17.5px;max-width:620px;margin:0;}
+.divider{width:56px;height:3px;background:var(--gilt-lt);border-radius:2px;margin:26px 0 4px;}
+h2{font-weight:800;color:var(--ink);font-size:25px;letter-spacing:-.015em;line-height:1.15;margin:38px 0 10px;scroll-margin-top:74px;}
+h3{font-weight:800;color:var(--olive);font-size:17px;letter-spacing:-.005em;margin:26px 0 6px;}
+p{margin:0 0 12px;}
+ul.clean{list-style:none;padding:0;margin:10px 0 14px;}
+ul.clean li{position:relative;padding:0 0 10px 26px;}
+ul.clean li::before{content:"\03A8";font-weight:800;color:var(--gilt);position:absolute;left:0;top:0;}
+.pull{font-weight:800;color:var(--olive-dk);font-size:23px;line-height:1.3;letter-spacing:-.015em;border-left:4px solid var(--gilt-lt);padding:6px 0 6px 20px;margin:28px 0;}
+.portas{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:26px 0 8px;}
+@media(max-width:720px){.portas{grid-template-columns:1fr;}}
+.porta{display:block;text-decoration:none;background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:20px 18px;transition:border-color .18s,transform .18s;}
+.porta:hover{border-color:var(--sage);transform:translateY(-2px);}
+.porta .pk{font-weight:800;font-size:16px;letter-spacing:-.01em;color:var(--ink);line-height:1.2;}
+.porta .pd{font-size:14.5px;color:var(--muted);margin-top:8px;line-height:1.45;}
+.porta .pa{display:block;margin-top:14px;font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gilt);}
+.temas{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0;}
+@media(max-width:560px){.temas{grid-template-columns:1fr;}}
+.tema{display:flex;flex-direction:column;text-decoration:none;background:var(--card);border:1px solid var(--cream-dp);border-top:4px solid var(--sage);border-radius:14px;padding:18px 18px 16px;transition:border-top-color .18s,box-shadow .18s,transform .18s;}
+.tema:hover{border-top-color:var(--olive);box-shadow:0 2px 14px rgba(67,68,31,.08);transform:translateY(-2px);}
+.tema .tk{font-weight:800;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gilt);}
+.tema .tt{font-weight:800;font-size:19px;letter-spacing:-.015em;color:var(--ink);margin:6px 0 5px;line-height:1.2;}
+.tema .td{font-size:14px;color:var(--muted);line-height:1.45;flex:1 1 auto;}
+.tema .tm{margin-top:12px;padding-top:10px;border-top:1px solid var(--cream-dp);font-weight:700;font-size:12.5px;color:var(--sage-dk);}
+.book{background:var(--cream-dp);border-radius:14px;padding:18px 20px;margin:18px 0 24px;}
+.book .bk{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:7px;}
+.book .bt{font-weight:800;font-size:19px;letter-spacing:-.015em;color:var(--ink);margin-bottom:4px;line-height:1.2;}
+.book .bsub{color:var(--muted);font-size:14px;margin-bottom:14px;line-height:1.4;}
+.book a{display:inline-block;font-weight:800;font-size:12.5px;letter-spacing:.02em;color:var(--cream);background:var(--olive);padding:11px 22px;border-radius:26px;text-decoration:none;}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0;}
+@media(max-width:560px){.cards{grid-template-columns:1fr;}}
+.card{background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:6px;}
+.card.live{border-color:var(--sage);box-shadow:0 2px 12px rgba(67,68,31,.06);}
+.card:not(.live){opacity:.7;}
+.card .ct{display:flex;align-items:center;justify-content:space-between;min-height:26px;}
+.card .n{font-weight:800;font-size:24px;color:var(--sage-dk);line-height:1;letter-spacing:-.02em;}
+.card .dt{font-weight:800;font-size:12px;letter-spacing:.1em;color:var(--gilt);}
+.card.bydate .dt{font-size:15px;color:var(--sage-dk);}
+.card .tt{font-weight:800;color:var(--ink);font-size:16.5px;line-height:1.25;letter-spacing:-.01em;margin-top:2px;}
+.card .pr{color:var(--muted);font-size:13.5px;}
+.card .acts{display:flex;gap:8px;margin-top:10px;}
+.card .go,.card .pdf{font-weight:800;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;padding:9px 16px;border-radius:20px;text-decoration:none;}
+.card .go{color:var(--cream);background:var(--olive);} .card .pdf{color:var(--olive-dk);border:1.5px solid var(--gilt-lt);}
+.card .soon{font-weight:800;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:10px;}
+.empty{background:var(--card);border:1px dashed var(--cream-dp);border-radius:14px;padding:26px;text-align:center;color:var(--muted);}
+.cta{position:relative;overflow:hidden;border-radius:16px;margin:30px 0 8px;background:linear-gradient(150deg,#5b5c2a,#43441f);color:var(--cream);display:grid;grid-template-columns:minmax(0,290px) minmax(0,1fr);}
+.cta .ph{width:100%;height:100%;min-height:330px;object-fit:cover;object-position:center 22%;display:block;opacity:.95;}
+.cta .in{padding:26px 26px 28px;align-self:center;}
+.cta .in .k{color:#ddd6bf;margin-bottom:6px;font-size:14.5px;}
+.cta .in h3{font-weight:800;font-size:22px;letter-spacing:-.015em;color:var(--cream);margin:0 0 14px;}
+.cta ul{list-style:none;padding:0;margin:0 0 18px;}
+.cta li{position:relative;padding:0 0 10px 24px;font-size:14.5px;color:#f1ecdc;line-height:1.45;}
+.cta li::before{content:"\03A8";color:var(--gilt-lt);position:absolute;left:0;font-weight:800;}
+.cta a.go{display:block;text-align:center;background:var(--cream);color:var(--olive-dk);font-weight:800;font-size:14.5px;text-decoration:none;padding:14px;border-radius:28px;}
+@media(max-width:720px){.cta{grid-template-columns:1fr;} .cta .ph{min-height:230px;height:230px;}}
+.foot{text-align:center;color:var(--muted);font-size:12.5px;margin-top:38px;padding-top:20px;border-top:1px solid var(--cream-dp);}
+.foot .foot-logo{height:30px;width:auto;display:inline-block;margin-bottom:8px;}
+.contato{margin-top:14px;font-size:12.5px;color:var(--muted);line-height:1.7;}
+.contato a{color:var(--gilt);text-decoration:none;} .contato .cnpj{font-size:11.5px;opacity:.85;}
+
+.mhero{padding:36px 0 4px;}
+.mhero .kick{font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:11.5px;color:var(--gilt);margin:0 0 12px;}
+.mhero h1{font-weight:800;font-size:42px;line-height:1.04;letter-spacing:-.022em;color:var(--ink);margin:0 0 10px;}
+.mhero .sub{font-weight:700;font-size:19px;color:var(--sage-dk);line-height:1.3;margin:0 0 12px;letter-spacing:-.01em;}
+.mhero .meta{font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);}
+.mhero .tema{margin:18px 0 0;padding-left:18px;border-left:4px solid var(--cream-dp);color:var(--muted);font-size:16.5px;}
+.usar{background:var(--cream-dp);border-radius:12px;padding:16px 18px;margin:24px 0 14px;font-size:14.5px;color:var(--muted);line-height:1.55;}
+.usar b{display:block;font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--olive-dk);margin-bottom:6px;}
+.pdfbtn{display:inline-block;font-weight:800;font-size:13px;letter-spacing:.02em;color:var(--cream);background:var(--olive);padding:13px 24px;border-radius:26px;text-decoration:none;}
+.ess{background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:20px 22px;margin:26px 0;}
+.ess .et{font-weight:800;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gilt);margin-bottom:12px;}
+.ess ul{list-style:none;padding:0;margin:0;}
+.ess li{position:relative;padding:0 0 12px 26px;font-size:15.8px;line-height:1.5;}
+.ess li:last-child{padding-bottom:0;}
+.ess li::before{content:"\03A8";position:absolute;left:0;top:0;color:var(--gilt-lt);font-weight:800;}
+details.sec{border-bottom:1px solid var(--cream-dp);}
+details.sec[open]{padding-bottom:16px;}
+details.sec summary{list-style:none;cursor:pointer;padding:18px 0;display:flex;align-items:baseline;gap:12px;}
+details.sec summary::-webkit-details-marker{display:none;}
+details.sec summary h2{font-weight:800;font-size:21px;letter-spacing:-.015em;color:var(--ink);margin:0;line-height:1.2;flex:1;}
+details.sec summary .arw{color:var(--gilt);font-weight:800;font-size:13px;transition:transform .2s;}
+details.sec[open] summary .arw{transform:rotate(90deg);}
+details.sec .lead{color:var(--sage-dk);font-weight:500;margin:0 0 14px;font-size:16px;}
+details.sec p{font-size:16.5px;}
+ul.key{list-style:none;padding:0;margin:12px 0;}
+ul.key li{position:relative;padding:0 0 11px 26px;font-size:16px;line-height:1.5;}
+ul.key li::before{content:"\03A8";position:absolute;left:0;top:0;color:var(--gilt);font-weight:800;}
+.dial{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0;}
+@media(max-width:620px){.dial{grid-template-columns:1fr;}}
+.dial .d{background:var(--card);border:1px solid var(--cream-dp);border-top:3px solid var(--sage);border-radius:12px;padding:14px 16px;}
+.dial .dt{font-weight:800;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--olive-dk);margin-bottom:7px;}
+.dial p{margin:0;font-size:14.5px;color:var(--muted);line-height:1.45;}
+.obs{background:var(--cream-dp);border-radius:12px;padding:16px 18px;margin:18px 0;}
+.obs h4{font-weight:800;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--olive-dk);margin:0 0 7px;}
+.obs p{margin:0;font-size:15.5px;}
+.callout{background:var(--card);border-left:4px solid var(--gilt-lt);border-radius:0 12px 12px 0;padding:16px 18px;margin:20px 0;font-size:15.5px;line-height:1.55;}
+.callout .co-t{font-weight:800;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--gilt);margin-bottom:7px;}
+span.ref{font-size:13.5px;color:var(--muted);}
+/* diagrama */
+figure.dg{margin:24px 0;background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:18px 16px 12px;}
+figure.dg svg{width:100%;height:auto;display:block;}
+figure.dg figcaption{margin-top:10px;font-size:13px;color:var(--muted);text-align:center;line-height:1.45;}
+.dg-t{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:10px;text-align:center;}
+/* ferramentas */
+.tools{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:32px 0 0;}
+@media(max-width:720px){.tools{grid-template-columns:1fr;}}
+.tool{background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:20px;}
+.tool .tt{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:14px;}
+.ck{display:flex;gap:11px;align-items:flex-start;padding:9px 0;font-size:15px;line-height:1.45;cursor:pointer;}
+.ck input{margin:4px 0 0;accent-color:var(--olive);width:17px;height:17px;flex:none;cursor:pointer;}
+.ck.done span{text-decoration:line-through;opacity:.5;}
+.qz{margin-bottom:18px;} .qz:last-child{margin-bottom:0;}
+.qz p{font-size:15px;margin:0 0 7px;line-height:1.45;font-weight:500;}
+.qz textarea{width:100%;min-height:66px;border:1px solid var(--cream-dp);border-radius:10px;background:var(--cream);font-family:inherit;font-size:14.5px;color:var(--ink);padding:10px 12px;resize:vertical;line-height:1.5;}
+.qz textarea:focus{outline:2px solid var(--gilt-lt);outline-offset:1px;}
+.savebar{display:flex;align-items:center;gap:12px;margin-top:16px;flex-wrap:wrap;}
+.savebar button{font-weight:800;font-size:11px;letter-spacing:.08em;text-transform:uppercase;border:1.5px solid var(--cream-dp);background:none;color:var(--olive-dk);border-radius:22px;padding:10px 18px;cursor:pointer;font-family:inherit;}
+.savebar button:hover{border-color:var(--gilt-lt);color:var(--gilt);}
+.saved{font-weight:800;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--sage-dk);opacity:0;transition:opacity .3s;}
+.saved.on{opacity:1;}
+.refs h2,.nmet h2{font-weight:800;font-size:21px;letter-spacing:-.015em;color:var(--ink);margin:34px 0 10px;}
+.refs ol{padding-left:20px;font-size:13.8px;color:var(--muted);line-height:1.6;}
+.refs li{margin-bottom:9px;}
+.nmet{background:var(--card);border-left:4px solid var(--gilt-lt);border-radius:0 12px 12px 0;padding:16px 20px;margin:26px 0 0;font-size:14px;color:var(--muted);line-height:1.6;}
+.nmet b{display:block;font-weight:800;font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--olive-dk);margin-bottom:7px;}
+.side .idx a{font-size:13.5px;font-weight:500;padding:7px 12px;line-height:1.3;}
+
+/* gabarito expansível */
+.qz .gab{margin-top:8px;border-top:1px solid #E9E3CE;padding-top:8px;}
+.qz .gab summary{cursor:pointer;list-style:none;font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#A8894F;}
+.qz .gab summary::-webkit-details-marker{display:none;}
+.qz .gab summary::before{content:'+ ';font-weight:800;}
+.qz .gab[open] summary::before{content:'\2212 ';}
+.qz .gab-in{margin-top:8px;background:#F8F3E6;border-left:2px solid #C3A468;border-radius:0 6px 6px 0;padding:10px 12px;font-size:.94rem;line-height:1.55;color:#403F32;}
+.qz .gab-in p{margin:0 0 6px;}.qz .gab-in p:last-child{margin:0;}
+
+/* gabarito expansível */
+.qz .gab{margin-top:8px;border-top:1px solid #E9E3CE;padding-top:8px;}
+.qz .gab summary{cursor:pointer;list-style:none;font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#A8894F;}
+.qz .gab summary::-webkit-details-marker{display:none;}
+.qz .gab summary::before{content:'+ ';font-weight:800;}
+.qz .gab[open] summary::before{content:'\2212 ';}
+.qz .gab-in{margin-top:8px;background:#F8F3E6;border-left:2px solid #C3A468;border-radius:0 6px 6px 0;padding:10px 12px;font-size:.94rem;line-height:1.55;color:#403F32;}
+.qz .gab-in p{margin:0 0 6px;}.qz .gab-in p:last-child{margin:0;}
+
+/* gabarito expansível */
+.qz .gab{margin-top:8px;border-top:1px solid #E9E3CE;padding-top:8px;}
+.qz .gab summary{cursor:pointer;list-style:none;font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#A8894F;}
+.qz .gab summary::-webkit-details-marker{display:none;}
+.qz .gab summary::before{content:'+ ';font-weight:800;}
+.qz .gab[open] summary::before{content:'\2212 ';}
+.qz .gab-in{margin-top:8px;background:#F8F3E6;border-left:2px solid #C3A468;border-radius:0 6px 6px 0;padding:10px 12px;font-size:.94rem;line-height:1.55;color:#403F32;}
+.qz .gab-in p{margin:0 0 6px;}.qz .gab-in p:last-child{margin:0;}
+</style></head><body><div class='topbar'><div class='in'><a href='/'><img alt='Lógica Psicológica' src='/assets/logo.png'></a><a class='backlink' href='/aulas/' title='Voltar para Aulas Livres'>&#8592; Voltar</a><div class='sp'></div><div class='tag'>Aulas Livres</div></div></div><div class='shell'><aside class='side' id='side'><a class='brand' href='/'><img alt='Lógica Psicológica' src='/assets/logo-creme.png'></a><div class='nav'><div class='st first'>Navegação</div><a class='home' href='/aulas/'>&#8592; Aulas</a><a class='navlink' href='/'>Início do portal</a><div class='st'>Neste material</div><div class='idx'><a href='#s0'>Por que o trauma complexo virou assunto de todo clínico</a><a href='#s1'>O DBT-PTSD: para quem, de onde veio, o que sustenta</a><a href='#s2'>TEPT clássico, TEPT complexo e o borderline</a><a href='#s3'>A rede de memória traumática e o custo da evitação</a><a href='#s4'>As quatro fases e o time de consultoria</a><a href='#s5'>Exposição: como funciona e os três formatos</a><a href='#s6'>A invalidação traumática como segundo trauma</a><a href='#s7'>Mente sábia estendida e a exposição na cadeira vazia</a><a href='#s8'>Antidissociação e ancoragem, inclusive online</a><a href='#s9'>Vida de valor, despedida, e o que a conversa final levantou</a></div></div><div class='sig'><img alt='Prof. Júlio Gonçalves' src='/assets/julio.jpg'><div class='who'>Prof. Júlio Gonçalves<span>MSc · CRP 12/17614</span></div></div><a class='sub' href='https://psicojulio.com/comunidade-logica-psicologica/' target='_blank' rel='noopener'>Inscreva-se</a></aside><main class='main'><div class='mhero'><div class='kick'>Resumo de aula · Aula livre</div><h1>Tratando o TEPT complexo</h1><div class='sub'>27 de abril de 2026</div><div class='meta'>Apresentação de Andressa Juliana · Mediação de Prof. Júlio Gonçalves · Aula livre</div><p class='tema'>O que o TEPT complexo acrescenta ao TEPT clássico, por que a evitação da memória é o problema central, e como o DBT-PTSD organiza exposição, invalidação traumática e mente sábia num mesmo tratamento.</p></div><div class='obs' style='margin-bottom:18px'><h4>Sobre este material</h4><p>Material de estudo <strong>dirigido a psicólogos</strong>. A aula apresenta um protocolo que exige formação formal, time de consultoria e supervisão; o texto descreve o modelo para que o clínico reconheça o quadro e saiba o que o tratamento envolve, e não para que o aplique a partir daqui.</p><p>Perguntas de participantes aparecem sem identificação nominal. Não há caso clínico. Os recursos sensoriais de ancoragem citados em aula estão descritos de forma genérica, pelo motivo explicado na nota de método. Este resumo foi escrito a partir das anotações da reunião e do chat, e não de transcrição integral, o que também está registrado na nota.</p></div><div class='usar'><b>Como usar</b>Abra as seções que quiser ler, marque o que pretende aplicar e responda o que fizer sentido. Tudo fica salvo neste aparelho — ninguém mais vê.</div><a class='pdfbtn' href='resumo.pdf'>&#8681; Baixar em PDF</a><div class='ess'><div class='et'>O essencial</div><ul><li><strong>A memória traumática é uma rede, e o gatilho acende a rede inteira.</strong> Fragmentos sensoriais, cognitivos, emocionais e corporais ligados entre si, sem começo, meio e fim. Por isso a pessoa revive em vez de lembrar.</li><li><strong>Evitar custa caro e não segura.</strong> Quanto mais a memória é suprimida, mais intensa ela volta. Tratar só o comportamento de risco deixa o problema central no lugar.</li><li><strong>A invalidação é um segundo trauma.</strong> Tentar contar e não ser acreditado, ser punido, ou nunca ter contado a ninguém. No DBT-PTSD isso recebe exposição própria.</li><li><strong>Mente sábia vem antes da exposição, e é o que a torna suportável.</strong> Bondade, compaixão, alegria solidária e equanimidade são treinadas na preparação. Depois, é o adulto em mente sábia que revisita a cena.</li><li><strong>TEPT complexo e borderline se sobrepõem demais para não serem rastreados juntos.</strong> Num quadro, rastrear o outro. A diferença mais útil está na função do comportamento impulsivo, e não na sua forma.</li></ul></div><details class='sec' id='s0' open><summary><h2>Por que o trauma complexo virou assunto de todo clínico</h2><span class='arw'>&#9656;</span></summary>
+<p>A aula abriu com uma observação sobre o campo: o trauma complexo vem ganhando espaço próprio em congressos, e quem trabalha com transtornos da personalidade, em especial com o <em>borderline</em>, esbarra nele o tempo todo. Uma parte considerável do que se lê como personalidade foi construída em volta de experiências repetidas de violência.</p>
+<p>Dois pontos do enquadramento inicial valem guardar. O primeiro é que trauma não é só o evento violento e visível; o trauma complexo afeta os modelos de funcionamento da pessoa, o jeito como ela se vê, se relaciona e regula o que sente. O segundo é que o próprio formato social pode retraumatizar: a família que não acredita, a instituição que não age, o consultório que trata o relato como exagero. É aqui que a discussão encontra a dimensão sociocultural da Terapia Baseada em Processos: o ambiente que invalida faz parte da rede, e não do pano de fundo.</p>
+<div class='callout note'><div class='co-t'>O que a aula se propôs</div>Apresentar o modelo do TEPT, a diferença entre TEPT clássico e TEPT complexo, e a lógica do DBT-PTSD, um protocolo <strong>altamente especializado</strong>, que exige formação formal, participação em time de consultoria e supervisão. O objetivo declarado foi que o clínico reconheça a necessidade de um trabalho específico para esses pacientes, e não que saia aplicando o protocolo.</div>
+</details><details class='sec' id='s1'><summary><h2>O DBT-PTSD: para quem, de onde veio, o que sustenta</h2><span class='arw'>&#9656;</span></summary>
+<h3>Para quem</h3>
+<p>O protocolo foi desenvolvido para <strong>adultos que sofreram violência interpessoal na infância e na adolescência</strong>, sobretudo sexual, em geral recorrente e repetida. É um público bem delimitado. A aula registrou que o tratamento não foi desenhado para violência que ocorre apenas na vida adulta.</p>
+<h3>De onde veio</h3>
+<p>O desenvolvimento é de Martin Bohus, na Alemanha, em contexto de internação, com pacientes que ficavam até três meses no hospital. Bohus questionou uma premissa consolidada: a de que pacientes com padrão <em>borderline</em> e TEPT não deveriam passar por exposição no estágio um do tratamento, antes de estabilizar os comportamentos de risco. Os estudos dele mostraram que os pacientes não aumentavam comportamentos de risco durante a exposição, e que processar a memória traumática era justamente o que os diminuía.</p>
+<h3>De que ele é feito</h3>
+<p>A estrutura é a da Terapia Comportamental Dialética. O núcleo da exposição vem dos protocolos cognitivo-comportamentais para TEPT. E o tratamento incorporou ferramentas da Terapia de Aceitação e Compromisso e da Terapia Focada na Compaixão, o que aparece com força na prática de mente sábia.</p>
+<h3>O que sustenta</h3>
+<ul class='key'><li><b>2013</b>: ensaio randomizado em regime residencial, comparando DBT-PTSD com lista de espera e tratamento usual, em mulheres com TEPT após abuso sexual na infância, com e sem transtorno da personalidade <em>borderline</em>.</li><li><b>2020</b>: ensaio com <strong>193 mulheres</strong>, comparando DBT-PTSD com terapia de processamento cognitivo. O DBT-PTSD teve resultado melhor no desfecho primário, com mais remissão sintomática e menos abandono precoce.</li><li><b>2024</b>: metanálise das variantes de DBT para TEPT, com 13 estudos e <strong>663 participantes</strong>, encontrando efeito moderado na gravidade dos sintomas em relação ao controle, com melhora também em depressão, dissociação, sintomas <em>borderline</em> e autolesão.</li></ul>
+<p>Os resultados foram consistentes entre o tratamento intensivo em internação e o ambulatorial.</p>
+<div class='obs'><h4>Uma moderação de leitura</h4><p>A aula falou em <em>superioridade significativa</em> do DBT-PTSD sobre a terapia de processamento cognitivo. É verdade, e a diferença foi estatisticamente significativa no desfecho primário. Mas a diferença média entre os grupos na escala clínica foi modesta, e a terapia de processamento cognitivo também produziu ganho grande. A leitura defensável é que o DBT-PTSD foi <strong>melhor num quadro em que já se esperava que exposição funcionasse</strong>, e com menos abandono, o que para essa população pesa tanto quanto o tamanho do efeito. Nada disso enfraquece a mensagem central da aula: exposição em pacientes com desregulação grave é viável e ajuda.</p></div>
+</details><details class='sec' id='s2'><summary><h2>TEPT clássico, TEPT complexo e o borderline</h2><span class='arw'>&#9656;</span></summary>
+<h3>Os dois quadros</h3>
+<p>O <strong>TEPT clássico</strong> tem três eixos: revivência (intrusões, <em>flashbacks</em>, pesadelos), evitação de lembranças e hipervigilância. O <strong>TEPT complexo</strong>, descrito na CID-11, tem esses três eixos e mais três, que aparecem depois de exposição prolongada e repetida: problemas de regulação do afeto, autoconceito predominantemente negativo (culpa, vergonha, sentir-se estragado) e relacionamentos perturbados. A formulação da aula é precisa: nesses casos a <strong>personalidade foi construída ao redor do trauma</strong>.</p>
+<h3>A sobreposição com o borderline</h3>
+<p>Existe uma sobreposição enorme entre TEPT complexo e transtorno da personalidade <em>borderline</em>, e o diagnóstico diferencial é difícil. A aula ofereceu duas pistas.</p>
+<ul class='key'><li><b>A função do comportamento impulsivo.</b> No TEPT complexo, a impulsividade está a serviço do enfrentamento das memórias traumáticas: a pessoa faz para não lembrar, para não sentir o que a lembrança traz. Isso é o que o clínico consegue investigar em sessão, e é a pista mais útil.</li><li><b>A relação com a solidão.</b> Como observação clínica da apresentadora, pacientes com TEPT complexo tendem a tolerar e até preferir ficar sozinhos, enquanto pacientes com padrão <em>borderline</em> demandam validação social e sofrem mais ao ficar sós.</li></ul>
+<div class='callout note'><div class='co-t'>Implicação direta</div>Rastrear ativamente TEPT complexo em pacientes com diagnóstico de <em>borderline</em>, e vice-versa. A segunda pista é observação clínica, e não critério; serve para levantar hipótese, e não para fechar diagnóstico.</div>
+</details><details class='sec' id='s3'><summary><h2>A rede de memória traumática e o custo da evitação</h2><span class='arw'>&#9656;</span></summary>
+<p>Este é o pedaço da aula que mais organiza o resto. Pela repetição das experiências, o trauma se organiza em <strong>redes</strong>. A memória não fica guardada de forma linear, com começo, meio e fim, mas fragmentada e descontextualizada, em elementos ligados entre si: sensoriais (sufocamento, náusea), cognitivos (cognições de culpa), emocionais (medo, vergonha) e corporais.</p>
+<figure class='dg'><div class='dg-t'>A rede de memória traumática</div>
+<svg viewBox='0 0 720 236' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Cinco elementos da memória traumática ligados entre si; um gatilho ativa um elemento e a rede inteira responde'>
+<line x1='150' y1='70' x2='360' y2='118' stroke='#c9c2a8' stroke-width='2'/>
+<line x1='150' y1='70' x2='570' y2='70' stroke='#c9c2a8' stroke-width='2'/>
+<line x1='150' y1='70' x2='210' y2='190' stroke='#c9c2a8' stroke-width='2'/>
+<line x1='570' y1='70' x2='360' y2='118' stroke='#c9c2a8' stroke-width='2'/>
+<line x1='570' y1='70' x2='510' y2='190' stroke='#c9c2a8' stroke-width='2'/>
+<line x1='210' y1='190' x2='360' y2='118' stroke='#c9c2a8' stroke-width='2'/>
+<line x1='510' y1='190' x2='360' y2='118' stroke='#c9c2a8' stroke-width='2'/>
+<line x1='210' y1='190' x2='510' y2='190' stroke='#c9c2a8' stroke-width='2'/>
+<rect x='84' y='46' width='132' height='48' rx='10' fill='#f1ece0' stroke='#9ca575' stroke-width='1.3'/>
+<text x='150' y='66' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='12' font-weight='800' fill='#2f2e24'>sensorial</text>
+<text x='150' y='83' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' fill='#6c6a55'>sufocamento, náusea</text>
+<rect x='504' y='46' width='132' height='48' rx='10' fill='#f1ece0' stroke='#9ca575' stroke-width='1.3'/>
+<text x='570' y='66' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='12' font-weight='800' fill='#2f2e24'>cognitivo</text>
+<text x='570' y='83' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' fill='#6c6a55'>“a culpa foi minha”</text>
+<rect x='294' y='94' width='132' height='48' rx='10' fill='#43441f'/>
+<text x='360' y='114' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='12' font-weight='800' fill='#f0ede0'>emocional</text>
+<text x='360' y='131' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' fill='#9ca575'>medo, vergonha, nojo</text>
+<rect x='144' y='166' width='132' height='48' rx='10' fill='#f1ece0' stroke='#9ca575' stroke-width='1.3'/>
+<text x='210' y='186' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='12' font-weight='800' fill='#2f2e24'>corporal</text>
+<text x='210' y='203' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' fill='#6c6a55'>tensão, paralisia</text>
+<rect x='444' y='166' width='132' height='48' rx='10' fill='#f1ece0' stroke='#9ca575' stroke-width='1.3'/>
+<text x='510' y='186' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='12' font-weight='800' fill='#2f2e24'>comportamental</text>
+<text x='510' y='203' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' fill='#6c6a55'>fugir, apagar, machucar-se</text>
+<path d='M14 70 L78 70' stroke='#a05a3c' stroke-width='2.4' marker-end='url(#gt)'/>
+<text x='14' y='56' font-family="Plus Jakarta Sans,sans-serif" font-size='11' font-weight='800' fill='#a05a3c'>gatilho</text>
+<defs><marker id='gt' markerWidth='8' markerHeight='8' refX='6' refY='4' orient='auto'><path d='M0,0 L8,4 L0,8 z' fill='#a05a3c'/></marker></defs>
+<text x='660' y='140' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' font-style='italic' fill='#8d876f'>sem começo,</text>
+<text x='660' y='156' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' font-style='italic' fill='#8d876f'>meio e fim</text>
+</svg>
+<figcaption>A memória não fica guardada como história, mas como elementos ligados entre si. Basta um gatilho tocar um deles para a rede inteira acender, e a pessoa revive no presente.</figcaption></figure>
+<p>Quando um gatilho ativa um elemento, a rede inteira pode acender, e a pessoa <strong>revive a experiência no presente</strong>. É isso que justifica a exposição: não há como contextualizar a memória sem acessá-la.</p>
+<h3>O que a evitação faz</h3>
+<p>O paciente com trauma complexo evita as lembranças, e isso demanda uma energia que não se sustenta o tempo inteiro. Quanto mais a memória é suprimida, mais intensa ela volta, em inundações emocionais que puxam comportamentos de risco mais intensos: uso de substâncias, autolesão. Daí a conclusão da aula, que vale como regra de formulação: <strong>tratar só o comportamento de risco tende a ser ineficaz</strong>, porque o problema central, a memória traumática, continua lá.</p>
+<h3>As emoções que mais aparecem, e a função de cada uma</h3>
+<ul class='key'><li><b>Vergonha</b>: ligada à tentativa de evitar exclusão, e com frequência uma resposta secundária à culpa.</li><li><b>Culpa</b>: pode servir para proteger a única relação que a criança tinha, ou para explicar o evento como algo que ela fez. Culpa dá a sensação de controle onde havia impotência.</li><li><b>Nojo</b>: emoção protetora que, na infância, sem diferenciação clara entre corpo e self, passa a ser vivida como se a pessoa inteira fosse nojenta.</li><li><b>Impotência</b>: o pano de fundo das outras três.</li></ul>
+<p>Ler essas emoções pela função é o que permite, mais adiante, reprocessar o sentido delas em vez de discutir se são justificadas.</p>
+</details><details class='sec' id='s4'><summary><h2>As quatro fases e o time de consultoria</h2><span class='arw'>&#9656;</span></summary>
+<figure class='dg'><div class='dg-t'>As quatro fases do DBT-PTSD</div>
+<svg viewBox='0 0 720 150' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Quatro fases em sequência: preparação e habilidades, exposição, vida de valor, despedida'>
+<rect x='0' y='16' width='168' height='92' rx='10' fill='#f1ece0' stroke='#9ca575' stroke-width='1.3'/>
+<text x='84' y='42' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='11' font-weight='800' letter-spacing='1.2' fill='#a8894f'>1 · PREPARAÇÃO</text>
+<text x='84' y='64' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#2f2e24'>psicoeducação, acordos,</text>
+<text x='84' y='80' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#2f2e24'>mente sábia, plano de crise,</text>
+<text x='84' y='96' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#2f2e24'>valores e metas</text>
+<path d='M172 62 L180 62' stroke='#8d876f' stroke-width='2'/>
+<rect x='184' y='16' width='168' height='92' rx='10' fill='#43441f'/>
+<text x='268' y='42' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='11' font-weight='800' letter-spacing='1.2' fill='#9ca575'>2 · EXPOSIÇÃO</text>
+<text x='268' y='64' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#f0ede0'>in vivo, à invalidação,</text>
+<text x='268' y='80' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#f0ede0'>à mente sábia</text>
+<text x='268' y='96' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' font-style='italic' fill='#9ca575'>pela pior memória primeiro</text>
+<path d='M356 62 L364 62' stroke='#8d876f' stroke-width='2'/>
+<rect x='368' y='16' width='168' height='92' rx='10' fill='#f1ece0' stroke='#9ca575' stroke-width='1.3'/>
+<text x='452' y='42' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='11' font-weight='800' letter-spacing='1.2' fill='#a8894f'>3 · VIDA DE VALOR</text>
+<text x='452' y='64' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#2f2e24'>corpo e sexualidade,</text>
+<text x='452' y='80' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#2f2e24'>metas, prevenção de</text>
+<text x='452' y='96' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#2f2e24'>nova violência</text>
+<path d='M540 62 L548 62' stroke='#8d876f' stroke-width='2'/>
+<rect x='552' y='16' width='168' height='92' rx='10' fill='#f1ece0' stroke='#9ca575' stroke-width='1.3'/>
+<text x='636' y='42' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='11' font-weight='800' letter-spacing='1.2' fill='#a8894f'>4 · DESPEDIDA</text>
+<text x='636' y='64' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#2f2e24'>carta a si mesmo,</text>
+<text x='636' y='80' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#2f2e24'>sessões de reforço,</text>
+<text x='636' y='96' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#2f2e24'>prevenção de recaída</text>
+<text x='360' y='138' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' font-style='italic' fill='#8d876f'>a passagem da fase 1 para a 2 é decidida com o time de consultoria, e o paciente apresenta o próprio modelo do trauma</text>
+</svg>
+<figcaption>Mente sábia e plano de crise entram antes da exposição, e não depois. É isso que torna o modelo mais compassivo do que a inundação sugere.</figcaption></figure>
+<h3>Preparação</h3>
+<p>A primeira fase reúne psicoeducação, acordos (entre eles o compromisso de não suicídio), prática de mente sábia, construção do plano de crise e o mapeamento de valores e metas, na estratégia chamada de <strong>caminho antigo e caminho novo</strong>: o que a vida tem sido, e o que ela pode ser se o trauma deixar de organizá-la.</p>
+<p>O treino de habilidades pode ser conduzido pelo próprio terapeuta, individualmente; o protocolo não exige grupo de habilidades separado. O foco é o que a exposição vai pedir: noções básicas de regulação emocional e <strong>habilidades antidissociativas</strong>.</p>
+<h3>Critérios para começar a expor</h3>
+<p>Os critérios apresentados são relativamente simples: um período de quatro semanas sem comportamentos de risco à vida e abstinência de autolesão. A prontidão, porém, não é decisão solitária do terapeuta: é decidida em <strong>reunião com o time de consultoria</strong>, na qual o paciente apresenta o próprio modelo do trauma, o que por si já é parte do tratamento.</p>
+<div class='callout note'><div class='co-t'>O time não é opcional</div>O DBT-PTSD exige participação em time de consultoria específico. A função é dupla: identificar pontos cegos do terapeuta e prevenir o esgotamento de quem trabalha com esse material todos os dias. A aula tratou o time como parte estrutural do tratamento, e não como apoio.</div>
+</details><details class='sec' id='s5'><summary><h2>Exposição: como funciona e os três formatos</h2><span class='arw'>&#9656;</span></summary>
+<h3>O mecanismo</h3>
+<p>A exposição funciona por <strong>aprendizagem inibitória</strong>: cria-se uma nova rede, mais segura, que passa a ser ativada no lugar da rede traumática original. O paciente revive emoções e sensações do trauma sem interpretar que a morte ou o perigo são iminentes, e a memória pode ser contextualizada e integrada como algo do passado.</p>
+<p>Há um segundo efeito, que a aula destacou: a exposição cria a experiência de ser acolhido por alguém que não julga. Isso reduz a vergonha, permite reavaliar as cognições do trauma com recursos de adulto e abre caminho para a aceitação radical do que aconteceu.</p>
+<h3>Por onde começar</h3>
+<p>Paradoxalmente, pela memória que gera <strong>mais angústia e mais intrusões</strong>. A razão é a própria rede: memórias de menor intensidade tendiam a ativar a pior memória de qualquer jeito, pelos elementos interligados. Começar pela pior é começar pelo nó que puxa os outros.</p>
+<figure class='dg'><div class='dg-t'>Três formatos de exposição, três alvos</div>
+<svg viewBox='0 0 720 176' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Exposição in vivo, exposição à invalidação traumática e exposição à mente sábia, com o alvo de cada uma'>
+<rect x='0' y='10' width='226' height='156' rx='11' fill='#fffdf7' stroke='#9ca575' stroke-width='1.3'/>
+<text x='18' y='36' font-family="Plus Jakarta Sans,sans-serif" font-size='11' font-weight='800' letter-spacing='1.2' fill='#a8894f'>IN VIVO</text>
+<text x='18' y='60' font-family="Plus Jakarta Sans,sans-serif" font-size='12' font-weight='800' fill='#2f2e24'>alvo: a memória do evento</text>
+<text x='18' y='84' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#6c6a55'>narrar a pior memória, olhos</text>
+<text x='18' y='100' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#6c6a55'>fechados, sem esquiva nem</text>
+<text x='18' y='116' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#6c6a55'>dissociação; sessão gravada</text>
+<text x='18' y='146' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' font-style='italic' fill='#43441f'>aprendizagem inibitória</text>
+<rect x='247' y='10' width='226' height='156' rx='11' fill='#fffdf7' stroke='#a05a3c' stroke-width='1.4'/>
+<text x='265' y='36' font-family="Plus Jakarta Sans,sans-serif" font-size='11' font-weight='800' letter-spacing='1.2' fill='#a05a3c'>À INVALIDAÇÃO</text>
+<text x='265' y='60' font-family="Plus Jakarta Sans,sans-serif" font-size='12' font-weight='800' fill='#2f2e24'>alvo: o que veio depois</text>
+<text x='265' y='84' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#6c6a55'>a tentativa de contar e não</text>
+<text x='265' y='100' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#6c6a55'>ser acreditado, ser punido,</text>
+<text x='265' y='116' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#6c6a55'>ou nunca ter contado</text>
+<text x='265' y='146' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' font-style='italic' fill='#a05a3c'>falha do ambiente, não da pessoa</text>
+<rect x='494' y='10' width='226' height='156' rx='11' fill='#43441f'/>
+<text x='512' y='36' font-family="Plus Jakarta Sans,sans-serif" font-size='11' font-weight='800' letter-spacing='1.2' fill='#9ca575'>À MENTE SÁBIA</text>
+<text x='512' y='60' font-family="Plus Jakarta Sans,sans-serif" font-size='12' font-weight='800' fill='#f0ede0'>alvo: o autoconceito</text>
+<text x='512' y='84' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#ddd8c4'>o adulto, em mente sábia,</text>
+<text x='512' y='100' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#ddd8c4'>observa a cena na cadeira</text>
+<text x='512' y='116' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#ddd8c4'>vazia e reprocessa o sentido</text>
+<text x='512' y='146' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' font-style='italic' fill='#9ca575'>culpa, vergonha, autoaversão</text>
+</svg>
+<figcaption>A exposição in vivo cuida da memória. As outras duas cuidam do que o TEPT complexo acrescenta ao TEPT clássico: a invalidação e o self construído em volta do trauma.</figcaption></figure>
+<h3>A exposição in vivo</h3>
+<p>O paciente narra a memória de olhos fechados, no presente. O terapeuta <strong>bloqueia as estratégias de evitação</strong> (rir, mudar de assunto, resumir) e a dissociação, para que a memória seja confrontada como ela é. A sessão é gravada e o paciente ouve a gravação em casa, por cerca de trinta minutos ao dia. Para manter o paciente ancorado, o protocolo usa recursos como assento instável ou contato de mãos com o terapeuta, sempre combinados antes.</p>
+<p>O que interrompe a exposição é a queda da ativação emocional junto com a redução dos sintomas de revivência: quando as intrusões e os <em>flashbacks</em> deixam de aparecer com a mesma frequência.</p>
+</details><details class='sec' id='s6'><summary><h2>A invalidação traumática como segundo trauma</h2><span class='arw'>&#9656;</span></summary>
+<p>Este foi o ponto que mais rendeu perguntas. O trauma complexo costuma ser uma <strong>dupla questão</strong>: a violência interpessoal e o ambiente que invalida a criança. A invalidação pode ser a tentativa de contar e ser punida, desacreditada ou culpada; pode ser o adulto que acredita e não faz nada; pode ser a família que mantém o contato com o agressor e trata o ocorrido como se não fosse nada; e pode ser nunca ter contado a ninguém.</p>
+<p>Uma participante perguntou se o adulto que acredita mas <em>coloca debaixo do tapete</em> configura invalidação. A resposta foi que sim: não denunciar, não proteger, seguir a vida como se nada tivesse acontecido é invalidação, mesmo sem uma palavra de descrédito.</p>
+<h3>Como se faz</h3>
+<p>O paciente escreve previamente a experiência de invalidação, que muitas vezes é mais de uma. Em sessão, narra de olhos fechados, primeiro o evento completo e depois só os pontos críticos, os que mais o ativam. O terapeuta ajuda a acessar todos os elementos: as reações dos outros, o que o paciente sentiu e pensou naquele momento. E intercala a narrativa com perguntas sobre o presente, para sustentar a <strong>dupla consciência</strong>: a pessoa é observadora da memória, e não está de novo dentro dela.</p>
+<h3>Para quê</h3>
+<p>O objetivo é atualizar a memória: permitir que o paciente veja o evento como <strong>falha do ambiente, e não dele</strong>, e acesse a emoção primária do episódio, quase sempre a tristeza, em vez da secundária, quase sempre a raiva. A exposição é interrompida quando a ativação cai e a revivência rareia.</p>
+<div class='callout note'><div class='co-t'>Implicação de formulação</div>A invalidação traumática é tratada como trauma separado, com exposição própria. Na rede do caso, isso significa dois nós, e não um: o evento e a resposta do ambiente ao evento. Muitas vezes é o segundo que sustenta a vergonha.</div>
+</details><details class='sec' id='s7'><summary><h2>Mente sábia estendida e a exposição na cadeira vazia</h2><span class='arw'>&#9656;</span></summary>
+<p>O DBT-PTSD tem uma prática de mente sábia própria, mais completa do que a dos manuais padrão de DBT, e o paciente a pratica extensivamente antes de qualquer exposição. Ela é adaptada com uma <strong>cadeira vazia</strong>, que paciente e terapeuta observam, e que representa o lugar da prática.</p>
+<h3>Os quatro elementos</h3>
+<ul class='key'><li><b>Bondade amorosa</b>: treinar uma visão menos hostil de si.</li><li><b>Compaixão</b>: cuidar da própria dor com coragem.</li><li><b>Alegria solidária</b>: reconhecer pequenos sinais positivos.</li><li><b>Equanimidade e sabedoria</b>: ver a realidade como ela é sem ser destruído por ela.</li></ul>
+<p>A prática usa visualizações guiadas, como regar uma planta frágil ou a imagem da árvore e das raízes. E é <strong>personalizada</strong>: o paciente descreve uma experiência própria, de filme ou de livro, que o conecta a cada elemento, e o terapeuta grava uma segunda prática guiada incluindo essas referências.</p>
+<h3>A exposição à mente sábia</h3>
+<p>É o formato que trabalha o que o TEPT complexo tem de específico: o autoconceito negativo e a autoaversão. Com a mente sábia ativada, o adulto observa a cena na cadeira vazia e responde a perguntas do terapeuta sobre o evento. Reprocessa os significados: de quem era a responsabilidade, se a culpa pertence a ele, se a culpa foi uma tentativa de dar sentido à impotência.</p>
+<p>Diferente da exposição in vivo, esta não termina por métrica de intrusão. Termina quando o terapeuta avalia que o paciente reprocessou e consegue olhar a situação com compaixão, aceitação e sem culpa.</p>
+<p>Uma participante observou no chat que o procedimento lembra a terapia do esquema. A semelhança existe, e a diferença está no lugar de onde se olha: aqui, quem revisita a cena é o adulto em mente sábia, treinado para isso durante semanas, e não uma parte que o terapeuta convoca.</p>
+</details><details class='sec' id='s8'><summary><h2>Antidissociação e ancoragem, inclusive online</h2><span class='arw'>&#9656;</span></summary>
+<p>Dissociar durante a exposição anula a exposição. Por isso o terapeuta guia o paciente de volta ao presente com habilidades antidissociativas simples: perguntar a hora, o dia, onde estão; pedir que descreva o ambiente; interagir diretamente, pedindo que olhe para o terapeuta. É o mesmo repertório de tolerância ao mal-estar da DBT, usado com precisão dentro da sessão.</p>
+<ul class='key'><li><b>Descrição do presente</b>: local, data, o que se vê e se ouve.</li><li><b>Corpo</b>: movimentar-se, pressionar os pés no chão, contrair e relaxar músculos.</li><li><b>Estímulos sensoriais intensos</b>: usados como âncora, com escolha combinada previamente com o paciente.</li><li><b>Encorajamento interpessoal</b>: o terapeuta traz o paciente de volta pela relação.</li></ul>
+<p>Os pacientes montam um <strong>kit de sobrevivência à crise</strong>, com objetos que possam carregar consigo e que funcionem como âncora fora da sessão.</p>
+<h3>Online</h3>
+<p>Perguntaram como fazer a exposição à mente sábia à distância. A resposta foi que dá para adaptar: a cadeira vazia funciona na tela, e um objeto na mão do paciente pode cumprir a função de ancoragem. A ressalva é importante: em casos difíceis, com dissociação intensa, o encaminhamento para exposição presencial pode ser necessário. Uma participante lembrou que a prática depende de <em>mindfulness</em> bem conduzido, tanto por quem guia quanto por quem pratica, e que isso não é para todo paciente em qualquer momento.</p>
+<p>Perguntaram também sobre a relação com o EMDR. A apresentadora respondeu que não conhecia o método o suficiente para comparar, e a pergunta ficou em aberto, o que é a resposta honesta quando se ensina um protocolo específico.</p>
+</details><details class='sec' id='s9'><summary><h2>Vida de valor, despedida, e o que a conversa final levantou</h2><span class='arw'>&#9656;</span></summary>
+<h3>Depois da exposição</h3>
+<p>A terceira fase constrói uma vida de valor: trabalha a percepção corporal e a sexualidade, frequentemente afetadas, define metas futuras e trabalha a prevenção de a pessoa se colocar em novas situações de violência. Na despedida, o paciente escreve e lê em sessão uma <strong>carta a si mesmo</strong>, com a mente sábia ativada, resumindo a jornada. Seguem sessões de reforço e prevenção de recaída.</p>
+<h3>Adesão, cultura e postura</h3>
+<p>A conversa final entre apresentadora e mediador tocou em três coisas que não estão no manual.</p>
+<p>A primeira é a <strong>adesão</strong>. O protocolo é relativamente novo no Brasil, e a exposição começa pela pior memória, o que soa como inundação. A ponderação foi que o modelo é mais compassivo do que parece, justamente porque a mente sábia entra desde o início. Ainda assim, a adesão de pacientes brasileiros a tratamentos longos e exigentes é baixa, e a fidelidade ao protocolo vai precisar de alguma flexibilidade e adaptação cultural.</p>
+<p>A segunda é a <strong>capacidade cognitiva</strong>. Um modelo assim pede que o paciente acompanhe um racional complexo. Nem todos conseguem, e isso precisa entrar na avaliação de prontidão.</p>
+<p>A terceira é a <strong>postura do terapeuta</strong>. O mediador defendeu uma postura mais firme, próxima da médica, para sustentar o engajamento: em alguns momentos o terapeuta trabalha por convencimento, e não só pela motivação que o paciente traz, sobretudo para que a prática de mente sábia aconteça de fato entre as sessões.</p>
+<h3>Materiais</h3>
+<p>Há pouca coisa em português além dos artigos de Bohus, e o manual completo é restrito a quem passa pelo treinamento. Foi mencionada a possibilidade de um novo treinamento no Brasil, com foco em exposição à invalidação traumática. A conclusão da noite foi que o tema tem material para uma semana de aulas, e que tratar trauma, mesmo sem ser o foco de todo clínico, é inevitável com pacientes mais crônicos.</p>
+</details><div class='tools'><div class='tool'><div class='tt'>Levar para a prática</div><label class='ck'><input type='checkbox'><span>Rastreei TEPT complexo em pacientes com diagnóstico de borderline, e o inverso.</span></label><label class='ck'><input type='checkbox'><span>Investiguei a função do comportamento impulsivo: ele serve para não lembrar, para não sentir?</span></label><label class='ck'><input type='checkbox'><span>Mapeei a rede da memória traumática do paciente, incluindo os elementos sensoriais e corporais.</span></label><label class='ck'><input type='checkbox'><span>Identifiquei a invalidação traumática como nó próprio, separado do evento.</span></label><label class='ck'><input type='checkbox'><span>Distingui, com o paciente, a emoção primária do episódio da emoção secundária que aparece no relato.</span></label><label class='ck'><input type='checkbox'><span>Li a culpa e a vergonha pela função que cumpriram, antes de discutir se são justificadas.</span></label><label class='ck'><input type='checkbox'><span>Avaliei se tratar só o comportamento de risco está deixando o problema central intocado.</span></label><label class='ck'><input type='checkbox'><span>Verifiquei minha própria prontidão para exposição: formação, time de consultoria, supervisão.</span></label><label class='ck'><input type='checkbox'><span>Combinei com o paciente âncoras antidissociativas antes de qualquer trabalho com a memória.</span></label><label class='ck'><input type='checkbox'><span>Encaminhei para tratamento especializado quando o caso pediu, em vez de improvisar exposição.</span></label></div><div class='tool'><div class='tt'>Para revisar — responda</div><div class='qz'><p>1. O que o TEPT complexo acrescenta ao TEPT clássico, segundo a CID-11? Por que isso muda o alvo do tratamento?</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver comentário</summary><div class='gab-in'>Aos três eixos do TEPT clássico (revivência, evitação e hipervigilância) a CID-11 acrescenta três perturbações da auto-organização: <b>desregulação do afeto</b>, <b>autoconceito negativo</b> (culpa, vergonha, sentir-se estragado) e <b>relacionamentos perturbados</b>. O alvo muda porque a memória do evento não é o único problema: a personalidade foi construída em volta do trauma, e por isso o DBT-PTSD tem exposição própria para o autoconceito (mente sábia) e para o ambiente que invalidou (invalidação traumática).</div></details></div><div class='qz'><p>2. Explique a rede de memória traumática. Por que ela justifica a exposição e por que a evitação falha?</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver comentário</summary><div class='gab-in'>A memória traumática não fica guardada como história, mas como <b>elementos interligados</b>: sensoriais, cognitivos, emocionais e corporais. Um gatilho toca um elemento e a rede inteira acende, e a pessoa revive em vez de lembrar. A exposição é justificada porque só acessando a rede é possível contextualizá-la e criar uma rede nova, mais segura, por aprendizagem inibitória. A evitação falha porque custa energia que não se sustenta, e porque a memória suprimida volta mais intensa, puxando comportamentos de risco.</div></details></div><div class='qz'><p>3. Que pista a aula ofereceu para diferenciar TEPT complexo de padrão borderline a partir do comportamento impulsivo?</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver comentário</summary><div class='gab-in'>A <b>função</b> do comportamento impulsivo: no TEPT complexo ele está a serviço do enfrentamento das memórias, a pessoa faz para não lembrar ou não sentir o que a lembrança traz. A aula ofereceu uma segunda pista, como observação clínica e não critério: a tolerância ou preferência por ficar só no TEPT complexo, contra a demanda de validação social no padrão borderline. A primeira pista é a que se investiga em sessão; a segunda levanta hipótese.</div></details></div><div class='qz'><p>4. Por que a exposição começa pela pior memória, e não pela mais leve?</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver comentário</summary><div class='gab-in'>Porque, pela lógica da rede, memórias de menor intensidade tendiam a ativar a pior memória de qualquer forma, pelos elementos interligados. Começar pela mais leve não poupava o paciente; só adiava. Começar pela pior é começar pelo nó que puxa os outros. O que torna isso suportável é a preparação: mente sábia, plano de crise e âncoras antidissociativas vêm antes.</div></details></div><div class='qz'><p>5. O que é invalidação traumática e por que ela recebe exposição própria?</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver comentário</summary><div class='gab-in'>É a resposta do ambiente ao trauma: tentar contar e ser punido, desacreditado ou culpado; o adulto que acredita e não age; a família que mantém o contato com o agressor; ou nunca ter contado a ninguém. Recebe exposição própria porque é um <b>segundo trauma</b>, com rede própria, e muitas vezes é ele que sustenta a vergonha. O objetivo dessa exposição é atualizar a memória como falha do ambiente, e não da pessoa, e acessar a emoção primária, quase sempre a tristeza, no lugar da raiva.</div></details></div><div class='qz'><p>6. Pense num paciente seu com história de violência repetida. Onde você localizaria a invalidação na rede dele?</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver critérios</summary><div class='gab-in'>Não há resposta certa. Uma boa resposta localiza a invalidação como <b>nó separado</b> do evento, com suas próprias ligações: para a vergonha, para a desconfiança de que alguém vá acreditar de novo, para o silêncio em sessão. Vale reconhecer que o nunca ter contado também é invalidação, e que ela pode estar ativa no presente, na família que segue tratando o assunto como inexistente. O erro comum é tratar a invalidação como contexto do trauma, e não como parte da rede.</div></details></div><div class='qz'><p>7. Como você combinaria com um paciente as âncoras antidissociativas antes de qualquer trabalho com a memória?</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver critérios</summary><div class='gab-in'>Não há resposta certa. Uma boa resposta combina as âncoras <b>antes</b>, com o paciente escolhendo o que funciona para ele: descrição do presente, movimento do corpo, um objeto na mão, o contato pela relação. Inclui um sinal combinado para quando a dissociação começar, e um acordo sobre o que o terapeuta vai fazer nesse momento. O erro comum é escolher a âncora no meio da crise, ou impor um recurso que o paciente não testou.</div></details></div><div class='qz'><p>8. Qual é a sua posição sobre a postura firme, de convencimento, defendida na conversa final? Em que caso ela ajudaria e em que caso atrapalharia?</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver critérios</summary><div class='gab-in'>Não há resposta certa, e é a pergunta que mais divide. Uma boa resposta reconhece os dois lados: a postura firme sustenta engajamento em tratamentos exigentes, em que a motivação do paciente oscila e a prática entre sessões decide o resultado; e a mesma postura pode reproduzir invalidação num paciente cuja história é de adultos que decidiam por ele. O critério é a função: firmeza a serviço do que o paciente disse querer no caminho novo, e não a serviço do protocolo. O erro comum é escolher um lado sem olhar para o paciente à frente.</div></details></div></div></div><div class='savebar'><button id='exp'>Exportar respostas</button><button id='lmp'>Limpar</button><span class='saved' id='saved'>Salvo neste aparelho</span></div><div class='refs'><h2>Referências</h2><ol><li>Bohus, M., Dyer, A. S., Priebe, K., Kr&uuml;ger, A., Kleindienst, N., Schmahl, C., Niedtfeld, I., &amp; Steil, R. (2013). Dialectical behaviour therapy for post-traumatic stress disorder after childhood sexual abuse in patients with and without borderline personality disorder: A randomised controlled trial. <em>Psychotherapy and Psychosomatics, 82</em>(4), 221–233.</li><li>Bohus, M., Kleindienst, N., Hahn, C., M&uuml;ller-Engelmann, M., Ludäscher, P., Steil, R., Fydrich, T., Kuehner, C., Resick, P. A., Stiglmayr, C., Schmahl, C., &amp; Priebe, K. (2020). Dialectical behavior therapy for posttraumatic stress disorder (DBT-PTSD) compared with cognitive processing therapy (CPT) in complex presentations of PTSD in women survivors of childhood abuse: A randomized clinical trial. <em>JAMA Psychiatry, 77</em>(12), 1235–1245.</li><li>Bohus, M., Schmahl, C., Fydrich, T., Steil, R., M&uuml;ller-Engelmann, M., Herzog, J., Ludäscher, P., Kleindienst, N., &amp; Priebe, K. (2019). A research programme to evaluate DBT-PTSD, a modular treatment approach for complex PTSD after childhood abuse. <em>Borderline Personality Disorder and Emotion Dysregulation, 6</em>, 7.</li><li>Brewin, C. R., Cloitre, M., Hyland, P., et al. (2017). A review of current evidence regarding the ICD-11 proposals for diagnosing PTSD and complex PTSD. <em>Clinical Psychology Review, 58</em>, 1–15.</li><li>Craske, M. G., Treanor, M., Conway, C. C., Zbozinek, T., &amp; Vervliet, B. (2014). Maximizing exposure therapy: An inhibitory learning approach. <em>Behaviour Research and Therapy, 58</em>, 10–23.</li><li>Ford, J. D., &amp; Courtois, C. A. (2014). Complex PTSD, affect dysregulation, and borderline personality disorder. <em>Borderline Personality Disorder and Emotion Dysregulation, 1</em>, 9.</li><li>Hayes, S. C., Hofmann, S. G., &amp; Ciarrochi, J. (2020). A process-based approach to psychological diagnosis and treatment. <em>Clinical Psychology Review, 82</em>, 101908.</li><li>Linehan, M. M. (2015). <em>DBT skills training manual</em> (2ª ed.). Guilford Press.</li><li>Organização Mundial da Saúde. (2019). <em>Classificação Internacional de Doenças, 11ª revisão (CID-11)</em>: transtorno de estresse pós-traumático complexo (6B41).</li><li>Prillinger, K., Goreis, A., Macura, S., Hajek Gross, C., Lozar, A., Fanninger, S., Mayer, A., Oppenauer, C., Plener, P. L., &amp; Kothgassner, O. D. (2024). A systematic review and meta-analysis on the efficacy of dialectical behavior therapy variants for the treatment of post-traumatic stress disorder. <em>European Journal of Psychotraumatology, 15</em>(1), 2406662.</li><li>Steil, R., Dittmann, C., M&uuml;ller-Engelmann, M., Dyer, A., Maasch, A.-M., &amp; Priebe, K. (2018). Dialectical behaviour therapy for posttraumatic stress disorder related to childhood sexual abuse: A pilot study in an outpatient treatment setting. <em>European Journal of Psychotraumatology, 9</em>(1), 1423832.</li></ol></div><div class='nmet'><b>Nota de método</b>Material dirigido a psicólogos. Descreve um protocolo que exige formação formal, time de consultoria e supervisão; não habilita ninguém a aplicá-lo.<br><br><strong>Fonte deste resumo.</strong> Diferente dos demais materiais do acervo, este foi escrito a partir das <b>anotações automáticas da reunião</b> e do chat dos participantes, e não de transcrição integral, porque a transcrição não estava disponível. As anotações são detalhadas, mas resumem falas; onde havia dúvida sobre a formulação exata da apresentadora, o texto preferiu a versão mais cautelosa. Se a transcrição aparecer, o material pode ser revisado contra ela.<br><br><strong>Artefatos corrigidos.</strong> As anotações registram o autor do protocolo como <em>Borros</em>; trata-se de Martin Bohus. O nome do instituto que traria o autor ao Brasil aparece nas anotações de forma incerta e foi omitido.<br><br><strong>Uma moderação empírica, sinalizada no texto.</strong> A superioridade do DBT-PTSD sobre a terapia de processamento cognitivo no ensaio de 2020 é real e significativa, mas a diferença média entre os grupos foi modesta, e o comparador também produziu ganho grande; o texto registra as duas coisas. A metanálise citada em aula com 663 participantes corresponde a Prillinger et al. (2024), que encontrou efeito moderado contra controle.<br><br><strong>Uma omissão de segurança.</strong> Os recursos sensoriais de ancoragem citados em aula, entre eles sabor ardido e temperatura, estão descritos de forma genérica, como em outros materiais deste acervo: existem dentro de protocolos estruturados, com triagem e treinamento, e não como lista aberta. As estratégias de descrição do presente, corpo e relação foram integralmente mantidas. Os critérios de prontidão para exposição estão reproduzidos como apresentados em aula e devem ser conferidos no manual por quem for aplicá-los.<br><br><strong>Acréscimos.</strong> As referências foram acrescentadas para dar respaldo formal ao que foi dito sem citação explícita: os ensaios de 2013 e 2020, o programa de pesquisa de 2019, a metanálise de 2024, a descrição do TEPT complexo na CID-11 e a base da aprendizagem inibitória. Nenhuma citação foi construída para preencher lacuna. A observação sobre a semelhança com a terapia do esquema veio do chat e foi comentada no texto; a pergunta sobre EMDR ficou em aberto, como ficou na aula.</div><div class='cta'><img class='ph' alt='Prof. Júlio Gonçalves' src='/assets/julio.jpg'><div class='in'><div class='k'>Aprenda muito mais na</div><h3>Comunidade Lógica Psicológica</h3><ul><li>Aprofundar o raciocínio clínico com ciência, processos e análise funcional.</li><li>Estruturar uma prática ética, com pensamento crítico e evidências atualizadas.</li><li>Desenvolver o self clínico com supervisão, leituras guiadas e rede.</li></ul><a class='go' href='https://psicojulio.com/comunidade-logica-psicologica/' target='_blank' rel='noopener'>Participar da comunidade &#8594;</a></div></div><div class='foot'><img class='foot-logo' alt='Lógica Psicológica' src='/assets/logo.png'><div class='contato'><a href='mailto:contato@psicojulio.com'>contato@psicojulio.com</a> &middot; <a href='tel:+5547999338021'>(47) 99933-8021</a><br>Rua Concórdia, 703, São Vicente, Itajaí — 88309-645<br><span class='cnpj'>CNPJ 49.649.803/0001-60</span></div></div></main></div><button class='toc-fab' id='fab'>&#9776; Seções</button><div class='overlay' id='ov'></div><script>
+(function(){
+  var K='mat-Aula-TEPT-';
+  document.querySelectorAll('.ck input').forEach(function(c,i){
+    var k=K+'ck'+i;
+    try{ if(localStorage.getItem(k)==='1'){c.checked=true;c.closest('.ck').classList.add('done');} }catch(e){}
+    c.addEventListener('change',function(){
+      c.closest('.ck').classList.toggle('done',c.checked);
+      try{ localStorage.setItem(k,c.checked?'1':'0'); }catch(e){} flag();
+    });
+  });
+  document.querySelectorAll('.qz textarea').forEach(function(t,i){
+    var k=K+'q'+i;
+    try{ var v=localStorage.getItem(k); if(v)t.value=v; }catch(e){}
+    t.addEventListener('input',function(){ try{ localStorage.setItem(k,t.value); }catch(e){} flag(); });
+  });
+  var s=document.getElementById('saved'),tm;
+  function flag(){ if(!s)return; s.classList.add('on'); clearTimeout(tm); tm=setTimeout(function(){s.classList.remove('on');},1600); }
+  var b=document.getElementById('exp');
+  if(b) b.addEventListener('click',function(){
+    var out='RESPOSTAS — Tratando o TEPT complexo\n\n';
+    document.querySelectorAll('.qz').forEach(function(q){
+      out+= q.querySelector('p').innerText+'\n'+(q.querySelector('textarea').value||'(sem resposta)')+'\n\n';
+    });
+    var a=document.createElement('a');
+    a.href=URL.createObjectURL(new Blob([out],{type:'text/plain'}));
+    a.download='Aula-TEPT-respostas.txt'; a.click();
+  });
+  var l=document.getElementById('lmp');
+  if(l) l.addEventListener('click',function(){
+    if(!confirm('Apagar suas anotações deste material?'))return;
+    try{ Object.keys(localStorage).filter(function(k){return k.indexOf(K)===0;}).forEach(function(k){localStorage.removeItem(k);}); }catch(e){}
+    location.reload();
+  });
+  var f=document.getElementById('fab'),o=document.getElementById('ov'),sd=document.getElementById('side');
+  if(f)f.onclick=function(){sd.classList.toggle('open');o.classList.toggle('open');};
+  if(o)o.onclick=function(){sd.classList.remove('open');o.classList.remove('open');};
+})();
+</script></body></html>
