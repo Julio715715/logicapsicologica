@@ -12,11 +12,11 @@ processos/                  trilha TBP (cap1…cap11)
 psicoterapeutas-eficazes/   trilha Miller & Moyers (cap2…)
 aulas/                      aulas livres
 supervisoes/                supervisões clínicas
-newsletter/                 edições mensais (uma pasta por mês, ex.: 2026-09/)
+newsletter/                 edições numeradas, sem periodicidade fixa (pasta por data, ex.: 2026-09/)
 ```
 
 Cada material é uma pasta com `index.html` e `resumo.pdf`.
-As edições da newsletter têm só `index.html` — não geram PDF.
+As edições da newsletter têm `index.html` e `edicao-NN.pdf` (uma página A4).
 
 Hoje: 32 materiais publicados, 201 perguntas com gabarito, 23 figuras.
 
