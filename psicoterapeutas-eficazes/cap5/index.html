@@ -1,0 +1,347 @@
+<!DOCTYPE html><html lang='pt-BR'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='icon' type='image/png' sizes='32x32' href='/favicon-32.png'><link rel='icon' type='image/png' sizes='192x192' href='/favicon-192.png'><link rel='apple-touch-icon' href='/apple-touch-icon.png'><link rel='icon' href='/favicon.ico' sizes='any'><link rel='preconnect' href='https://fonts.googleapis.com'><link rel='preconnect' href='https://fonts.gstatic.com' crossorigin><link href='https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500&display=swap' rel='stylesheet'><title>Consideração positiva — Lógica Psicológica</title><style>
+:root{--olive:#5b5c2a;--olive-dk:#43441f;--sage:#9ca575;--sage-dk:#7c8054;--cream:#f8f3e6;--cream-dp:#efe7d3;--gilt:#a8894f;--gilt-lt:#c3a468;--ink:#2f2e24;--muted:#6c6a55;--card:#fffdf7;}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;} html,body{margin:0;padding:0;}
+body{font-family:'Plus Jakarta Sans',system-ui,-apple-system,Segoe UI,sans-serif;background:var(--cream);color:var(--ink);font-size:17px;line-height:1.62;font-weight:400;-webkit-font-smoothing:antialiased;}
+a{color:var(--olive);} strong{font-weight:700;color:var(--olive-dk);} em{color:var(--sage-dk);}
+:focus-visible{outline:2px solid var(--gilt);outline-offset:2px;}
+.topbar{position:sticky;top:0;z-index:30;background:rgba(248,243,230,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--cream-dp);}
+.topbar .in{max-width:1100px;margin:0 auto;padding:11px 20px;display:flex;align-items:center;gap:12px;}
+.topbar img{height:22px;display:block;}
+.topbar .sp{flex:1;}
+.topbar .tag{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);}
+.backlink{font-weight:800;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--olive-dk);text-decoration:none;border:1px solid var(--cream-dp);background:var(--card);border-radius:20px;padding:7px 14px;white-space:nowrap;line-height:1;transition:border-color .18s,color .18s;}
+.backlink:hover{border-color:var(--gilt-lt);color:var(--gilt);}
+@media(max-width:430px){.topbar .tag{display:none;}}
+.shell{display:flex;gap:34px;max-width:1100px;margin:0 auto;padding:0 20px;align-items:flex-start;}
+.side{flex:0 0 252px;width:252px;position:sticky;top:56px;align-self:flex-start;height:calc(100vh - 66px);overflow:hidden;background:linear-gradient(165deg,#5b5c2a,#3b3c1b);color:var(--cream);border-radius:0 0 16px 16px;padding:18px 18px 16px;display:flex;flex-direction:column;}
+.side .nav{flex:1 1 auto;overflow-y:auto;min-height:0;scrollbar-width:thin;scrollbar-color:rgba(248,243,230,.28) transparent;}
+.side .nav::-webkit-scrollbar{width:6px;} .side .nav::-webkit-scrollbar-thumb{background:rgba(248,243,230,.28);border-radius:3px;}
+.side .brand{display:block;margin-bottom:14px;}
+.side .brand img{width:100%;max-width:148px;height:auto;display:block;}
+.side .st{font-weight:800;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt-lt);margin:13px 0 6px;padding-top:11px;border-top:1px solid rgba(248,243,230,.18);}
+.side .st.first{margin-top:0;padding-top:0;border-top:none;}
+.side a{display:block;text-decoration:none;color:var(--cream);padding:8px 11px;border-radius:9px;font-size:14.5px;font-weight:700;line-height:1.25;margin-bottom:3px;border:1px solid transparent;}
+.side a .s{display:block;font-size:11.8px;font-weight:400;color:#d9d3bd;margin-top:2px;line-height:1.3;}
+.side a:hover{background:rgba(248,243,230,.10);}
+.side a.on{background:var(--cream);color:var(--olive-dk);border-color:var(--cream);}
+.side a.on .s{color:var(--muted);}
+.side .home{font-weight:800;font-size:12.5px;letter-spacing:.02em;padding:5px 11px;}
+.side .navlink{font-weight:700;font-size:13px;color:#e7e1cb;padding:5px 11px;}
+.side .sig{flex:0 0 auto;margin-top:12px;padding-top:12px;border-top:1px solid rgba(248,243,230,.18);display:flex;align-items:center;gap:11px;}
+.side .sig img{width:40px;height:40px;flex:none;border-radius:50%;object-fit:cover;object-position:center 18%;border:2px solid rgba(248,243,230,.35);}
+.side .sig .who{font-weight:800;font-size:12.5px;color:var(--cream);line-height:1.3;}
+.side .sig .who span{display:block;font-weight:400;font-size:11.5px;color:#cfc9b2;letter-spacing:.04em;margin-top:2px;}
+.side .sub{display:block;margin-top:10px;text-align:center;background:var(--cream);color:var(--olive-dk);font-weight:800;font-size:13px;letter-spacing:.02em;text-decoration:none;padding:10px 14px;border-radius:22px;transition:background .18s;}
+.side .sub:hover{background:#fff;color:var(--olive-dk);}
+.main{flex:1 1 auto;max-width:730px;width:100%;padding:0 0 50px;}
+.toc-fab{display:none;} .overlay{display:none;}
+@media(max-width:960px){
+ .shell{display:block;padding:0;} .main{max-width:760px;margin:0 auto;padding:0 20px 50px;}
+ .side{position:fixed;top:0;left:0;height:100vh;width:292px;z-index:60;transform:translateX(-100%);transition:transform .25s;box-shadow:2px 0 22px rgba(0,0,0,.28);padding:26px 22px;max-height:none;border-radius:0;}
+ .side.open{transform:none;}
+ .toc-fab{display:block;position:fixed;bottom:18px;right:18px;z-index:50;background:var(--olive-dk);color:var(--cream);font-weight:800;font-size:13px;letter-spacing:.04em;border:none;border-radius:30px;padding:13px 20px;box-shadow:0 4px 14px rgba(0,0,0,.24);cursor:pointer;}
+ .overlay{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:55;opacity:0;pointer-events:none;transition:opacity .25s;}
+ .overlay.open{display:block;opacity:1;pointer-events:auto;}
+}
+@media(min-width:961px) and (max-height:820px){
+ .side a .s{display:none;}
+ .side .brand{margin-bottom:10px;} .side .brand img{max-width:132px;}
+ .side .st{margin:10px 0 5px;padding-top:9px;}
+}
+@media(min-width:961px) and (max-height:680px){
+ .side .brand img{max-width:110px;}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;}}
+.hero{padding:40px 0 6px;}
+.hero .kick{font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:12px;color:var(--gilt);margin:0 0 14px;}
+.hero h1{font-weight:800;font-size:46px;line-height:1.03;letter-spacing:-.022em;color:var(--ink);margin:0 0 16px;}
+.hero h1 .ac{color:var(--olive);}
+.hero p{color:var(--muted);font-size:17.5px;max-width:620px;margin:0;}
+.divider{width:56px;height:3px;background:var(--gilt-lt);border-radius:2px;margin:26px 0 4px;}
+h2{font-weight:800;color:var(--ink);font-size:25px;letter-spacing:-.015em;line-height:1.15;margin:38px 0 10px;scroll-margin-top:74px;}
+h3{font-weight:800;color:var(--olive);font-size:17px;letter-spacing:-.005em;margin:26px 0 6px;}
+p{margin:0 0 12px;}
+ul.clean{list-style:none;padding:0;margin:10px 0 14px;}
+ul.clean li{position:relative;padding:0 0 10px 26px;}
+ul.clean li::before{content:"\03A8";font-weight:800;color:var(--gilt);position:absolute;left:0;top:0;}
+.pull{font-weight:800;color:var(--olive-dk);font-size:23px;line-height:1.3;letter-spacing:-.015em;border-left:4px solid var(--gilt-lt);padding:6px 0 6px 20px;margin:28px 0;}
+.portas{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:26px 0 8px;}
+@media(max-width:720px){.portas{grid-template-columns:1fr;}}
+.porta{display:block;text-decoration:none;background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:20px 18px;transition:border-color .18s,transform .18s;}
+.porta:hover{border-color:var(--sage);transform:translateY(-2px);}
+.porta .pk{font-weight:800;font-size:16px;letter-spacing:-.01em;color:var(--ink);line-height:1.2;}
+.porta .pd{font-size:14.5px;color:var(--muted);margin-top:8px;line-height:1.45;}
+.porta .pa{display:block;margin-top:14px;font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gilt);}
+.temas{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0;}
+@media(max-width:560px){.temas{grid-template-columns:1fr;}}
+.tema{display:flex;flex-direction:column;text-decoration:none;background:var(--card);border:1px solid var(--cream-dp);border-top:4px solid var(--sage);border-radius:14px;padding:18px 18px 16px;transition:border-top-color .18s,box-shadow .18s,transform .18s;}
+.tema:hover{border-top-color:var(--olive);box-shadow:0 2px 14px rgba(67,68,31,.08);transform:translateY(-2px);}
+.tema .tk{font-weight:800;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gilt);}
+.tema .tt{font-weight:800;font-size:19px;letter-spacing:-.015em;color:var(--ink);margin:6px 0 5px;line-height:1.2;}
+.tema .td{font-size:14px;color:var(--muted);line-height:1.45;flex:1 1 auto;}
+.tema .tm{margin-top:12px;padding-top:10px;border-top:1px solid var(--cream-dp);font-weight:700;font-size:12.5px;color:var(--sage-dk);}
+.book{background:var(--cream-dp);border-radius:14px;padding:18px 20px;margin:18px 0 24px;}
+.book .bk{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:7px;}
+.book .bt{font-weight:800;font-size:19px;letter-spacing:-.015em;color:var(--ink);margin-bottom:4px;line-height:1.2;}
+.book .bsub{color:var(--muted);font-size:14px;margin-bottom:14px;line-height:1.4;}
+.book a{display:inline-block;font-weight:800;font-size:12.5px;letter-spacing:.02em;color:var(--cream);background:var(--olive);padding:11px 22px;border-radius:26px;text-decoration:none;}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0;}
+@media(max-width:560px){.cards{grid-template-columns:1fr;}}
+.card{background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:6px;}
+.card.live{border-color:var(--sage);box-shadow:0 2px 12px rgba(67,68,31,.06);}
+.card:not(.live){opacity:.7;}
+.card .ct{display:flex;align-items:center;justify-content:space-between;min-height:26px;}
+.card .n{font-weight:800;font-size:24px;color:var(--sage-dk);line-height:1;letter-spacing:-.02em;}
+.card .dt{font-weight:800;font-size:12px;letter-spacing:.1em;color:var(--gilt);}
+.card.bydate .dt{font-size:15px;color:var(--sage-dk);}
+.card .tt{font-weight:800;color:var(--ink);font-size:16.5px;line-height:1.25;letter-spacing:-.01em;margin-top:2px;}
+.card .pr{color:var(--muted);font-size:13.5px;}
+.card .acts{display:flex;gap:8px;margin-top:10px;}
+.card .go,.card .pdf{font-weight:800;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;padding:9px 16px;border-radius:20px;text-decoration:none;}
+.card .go{color:var(--cream);background:var(--olive);} .card .pdf{color:var(--olive-dk);border:1.5px solid var(--gilt-lt);}
+.card .soon{font-weight:800;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:10px;}
+.empty{background:var(--card);border:1px dashed var(--cream-dp);border-radius:14px;padding:26px;text-align:center;color:var(--muted);}
+.cta{position:relative;overflow:hidden;border-radius:16px;margin:30px 0 8px;background:linear-gradient(150deg,#5b5c2a,#43441f);color:var(--cream);display:grid;grid-template-columns:minmax(0,290px) minmax(0,1fr);}
+.cta .ph{width:100%;height:100%;min-height:330px;object-fit:cover;object-position:center 22%;display:block;opacity:.95;}
+.cta .in{padding:26px 26px 28px;align-self:center;}
+.cta .in .k{color:#ddd6bf;margin-bottom:6px;font-size:14.5px;}
+.cta .in h3{font-weight:800;font-size:22px;letter-spacing:-.015em;color:var(--cream);margin:0 0 14px;}
+.cta ul{list-style:none;padding:0;margin:0 0 18px;}
+.cta li{position:relative;padding:0 0 10px 24px;font-size:14.5px;color:#f1ecdc;line-height:1.45;}
+.cta li::before{content:"\03A8";color:var(--gilt-lt);position:absolute;left:0;font-weight:800;}
+.cta a.go{display:block;text-align:center;background:var(--cream);color:var(--olive-dk);font-weight:800;font-size:14.5px;text-decoration:none;padding:14px;border-radius:28px;}
+@media(max-width:720px){.cta{grid-template-columns:1fr;} .cta .ph{min-height:230px;height:230px;}}
+.foot{text-align:center;color:var(--muted);font-size:12.5px;margin-top:38px;padding-top:20px;border-top:1px solid var(--cream-dp);}
+.foot .foot-logo{height:30px;width:auto;display:inline-block;margin-bottom:8px;}
+.contato{margin-top:14px;font-size:12.5px;color:var(--muted);line-height:1.7;}
+.contato a{color:var(--gilt);text-decoration:none;} .contato .cnpj{font-size:11.5px;opacity:.85;}
+
+.mhero{padding:36px 0 4px;}
+.mhero .kick{font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:11.5px;color:var(--gilt);margin:0 0 12px;}
+.mhero h1{font-weight:800;font-size:42px;line-height:1.04;letter-spacing:-.022em;color:var(--ink);margin:0 0 10px;}
+.mhero .sub{font-weight:700;font-size:19px;color:var(--sage-dk);line-height:1.3;margin:0 0 12px;letter-spacing:-.01em;}
+.mhero .meta{font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);}
+.mhero .tema{margin:18px 0 0;padding-left:18px;border-left:4px solid var(--cream-dp);color:var(--muted);font-size:16.5px;}
+.usar{background:var(--cream-dp);border-radius:12px;padding:16px 18px;margin:24px 0 14px;font-size:14.5px;color:var(--muted);line-height:1.55;}
+.usar b{display:block;font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--olive-dk);margin-bottom:6px;}
+.pdfbtn{display:inline-block;font-weight:800;font-size:13px;letter-spacing:.02em;color:var(--cream);background:var(--olive);padding:13px 24px;border-radius:26px;text-decoration:none;}
+.ess{background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:20px 22px;margin:26px 0;}
+.ess .et{font-weight:800;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gilt);margin-bottom:12px;}
+.ess ul{list-style:none;padding:0;margin:0;}
+.ess li{position:relative;padding:0 0 12px 26px;font-size:15.8px;line-height:1.5;}
+.ess li:last-child{padding-bottom:0;}
+.ess li::before{content:"\03A8";position:absolute;left:0;top:0;color:var(--gilt-lt);font-weight:800;}
+details.sec{border-bottom:1px solid var(--cream-dp);}
+details.sec[open]{padding-bottom:16px;}
+details.sec summary{list-style:none;cursor:pointer;padding:18px 0;display:flex;align-items:baseline;gap:12px;}
+details.sec summary::-webkit-details-marker{display:none;}
+details.sec summary h2{font-weight:800;font-size:21px;letter-spacing:-.015em;color:var(--ink);margin:0;line-height:1.2;flex:1;}
+details.sec summary .arw{color:var(--gilt);font-weight:800;font-size:13px;transition:transform .2s;}
+details.sec[open] summary .arw{transform:rotate(90deg);}
+details.sec .lead{color:var(--sage-dk);font-weight:500;margin:0 0 14px;font-size:16px;}
+details.sec p{font-size:16.5px;}
+ul.key{list-style:none;padding:0;margin:12px 0;}
+ul.key li{position:relative;padding:0 0 11px 26px;font-size:16px;line-height:1.5;}
+ul.key li::before{content:"\03A8";position:absolute;left:0;top:0;color:var(--gilt);font-weight:800;}
+.dial{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0;}
+@media(max-width:620px){.dial{grid-template-columns:1fr;}}
+.dial .d{background:var(--card);border:1px solid var(--cream-dp);border-top:3px solid var(--sage);border-radius:12px;padding:14px 16px;}
+.dial .dt{font-weight:800;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--olive-dk);margin-bottom:7px;}
+.dial p{margin:0;font-size:14.5px;color:var(--muted);line-height:1.45;}
+.obs{background:var(--cream-dp);border-radius:12px;padding:16px 18px;margin:18px 0;}
+.obs h4{font-weight:800;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--olive-dk);margin:0 0 7px;}
+.obs p{margin:0;font-size:15.5px;}
+.callout{background:var(--card);border-left:4px solid var(--gilt-lt);border-radius:0 12px 12px 0;padding:16px 18px;margin:20px 0;font-size:15.5px;line-height:1.55;}
+.callout .co-t{font-weight:800;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--gilt);margin-bottom:7px;}
+span.ref{font-size:13.5px;color:var(--muted);}
+/* diagrama */
+figure.dg{margin:24px 0;background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:18px 16px 12px;}
+figure.dg svg{width:100%;height:auto;display:block;}
+figure.dg figcaption{margin-top:10px;font-size:13px;color:var(--muted);text-align:center;line-height:1.45;}
+.dg-t{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:10px;text-align:center;}
+/* ferramentas */
+.tools{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:32px 0 0;}
+@media(max-width:720px){.tools{grid-template-columns:1fr;}}
+.tool{background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:20px;}
+.tool .tt{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:14px;}
+.ck{display:flex;gap:11px;align-items:flex-start;padding:9px 0;font-size:15px;line-height:1.45;cursor:pointer;}
+.ck input{margin:4px 0 0;accent-color:var(--olive);width:17px;height:17px;flex:none;cursor:pointer;}
+.ck.done span{text-decoration:line-through;opacity:.5;}
+.qz{margin-bottom:18px;} .qz:last-child{margin-bottom:0;}
+.qz p{font-size:15px;margin:0 0 7px;line-height:1.45;font-weight:500;}
+.qz textarea{width:100%;min-height:66px;border:1px solid var(--cream-dp);border-radius:10px;background:var(--cream);font-family:inherit;font-size:14.5px;color:var(--ink);padding:10px 12px;resize:vertical;line-height:1.5;}
+.qz textarea:focus{outline:2px solid var(--gilt-lt);outline-offset:1px;}
+.savebar{display:flex;align-items:center;gap:12px;margin-top:16px;flex-wrap:wrap;}
+.savebar button{font-weight:800;font-size:11px;letter-spacing:.08em;text-transform:uppercase;border:1.5px solid var(--cream-dp);background:none;color:var(--olive-dk);border-radius:22px;padding:10px 18px;cursor:pointer;font-family:inherit;}
+.savebar button:hover{border-color:var(--gilt-lt);color:var(--gilt);}
+.saved{font-weight:800;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--sage-dk);opacity:0;transition:opacity .3s;}
+.saved.on{opacity:1;}
+.refs h2,.nmet h2{font-weight:800;font-size:21px;letter-spacing:-.015em;color:var(--ink);margin:34px 0 10px;}
+.refs ol{padding-left:20px;font-size:13.8px;color:var(--muted);line-height:1.6;}
+.refs li{margin-bottom:9px;}
+.nmet{background:var(--card);border-left:4px solid var(--gilt-lt);border-radius:0 12px 12px 0;padding:16px 20px;margin:26px 0 0;font-size:14px;color:var(--muted);line-height:1.6;}
+.nmet b{display:block;font-weight:800;font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--olive-dk);margin-bottom:7px;}
+.side .idx a{font-size:13.5px;font-weight:500;padding:7px 12px;line-height:1.3;}
+
+/* gabarito expansível */
+.qz .gab{margin-top:8px;border-top:1px solid #E9E3CE;padding-top:8px;}
+.qz .gab summary{cursor:pointer;list-style:none;font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#A8894F;}
+.qz .gab summary::-webkit-details-marker{display:none;}
+.qz .gab summary::before{content:'+ ';font-weight:800;}
+.qz .gab[open] summary::before{content:'\2212 ';}
+.qz .gab-in{margin-top:8px;background:#F8F3E6;border-left:2px solid #C3A468;border-radius:0 6px 6px 0;padding:10px 12px;font-size:.94rem;line-height:1.55;color:#403F32;}
+.qz .gab-in p{margin:0 0 6px;}.qz .gab-in p:last-child{margin:0;}
+
+/* gabarito expansível */
+.qz .gab{margin-top:8px;border-top:1px solid #E9E3CE;padding-top:8px;}
+.qz .gab summary{cursor:pointer;list-style:none;font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#A8894F;}
+.qz .gab summary::-webkit-details-marker{display:none;}
+.qz .gab summary::before{content:'+ ';font-weight:800;}
+.qz .gab[open] summary::before{content:'\2212 ';}
+.qz .gab-in{margin-top:8px;background:#F8F3E6;border-left:2px solid #C3A468;border-radius:0 6px 6px 0;padding:10px 12px;font-size:.94rem;line-height:1.55;color:#403F32;}
+.qz .gab-in p{margin:0 0 6px;}.qz .gab-in p:last-child{margin:0;}
+</style></head><body><div class='topbar'><div class='in'><a href='/'><img alt='Lógica Psicológica' src='/assets/logo.png'></a><a class='backlink' href='/psicoterapeutas-eficazes/' title='Voltar para Encontros'>&#8592; Voltar</a><div class='sp'></div><div class='tag'>Jornada da Leitura</div></div></div><div class='shell'><aside class='side' id='side'><a class='brand' href='/'><img alt='Lógica Psicológica' src='/assets/logo-creme.png'></a><div class='nav'><div class='st first'>Navegação</div><a class='home' href='/psicoterapeutas-eficazes/'>&#8592; Encontros</a><a class='navlink' href='/'>Início do portal</a><div class='st'>Neste material</div><div class='idx'><a href='#s0'>Antes do capítulo: o vício de argumentar</a><a href='#s1'>As três condições, e o que elas fazem no corpo</a><a href='#s2'>Crescimento em vez de patologia</a><a href='#s3'>Avaliar não é reconhecer</a><a href='#s4'>Afirmar sem reforçar o que adoece</a><a href='#s5'>Apoio cordial, responsividade e os limites da intimidade</a><a href='#s6'>Quando a afirmação faz mal</a><a href='#s7'>Perceber, admirar, valorizar. E o estudo da validação</a></div></div><div class='sig'><img alt='Prof. Júlio Gonçalves' src='/assets/julio.jpg'><div class='who'>Prof. Júlio Gonçalves<span>MSc · CRP 12/17614</span></div></div><a class='sub' href='https://psicojulio.com/comunidade-logica-psicologica/' target='_blank' rel='noopener'>Inscreva-se</a></aside><main class='main'><div class='mhero'><div class='kick'>Resumo de aula · Jornada da Leitura</div><h1>Considera&ccedil;&atilde;o positiva</h1><div class='sub'>Capítulo 5</div><div class='meta'>14/09/2026 · Apresentação de Jéssica Rodrigues · Mediação de Prof. Júlio Gonçalves · Miller &amp; Moyers, <em>Effective Psychotherapists</em>, cap. 5</div><p class='tema'>A habilidade que mais parece atitude e menos parece técnica. O que a consideração positiva faz no corpo de quem é atendido, a diferença entre avaliar e reconhecer, quando afirmar faz mal, e o que um estudo de validação pura mostra e não mostra.</p></div><div class='obs' style='margin-bottom:18px'><h4>Sobre este material</h4><p>Ficha de leitura do capítulo e discussão do encontro, <strong>dirigidas a psicólogos</strong>. O conteúdo do livro aparece parafraseado, sem transcrição. Os exemplos clínicos trazidos pela apresentadora e pelo mediador estão desidentificados, e as falas de participantes aparecem sem nome.</p><p>Este resumo foi escrito a partir das anotações automáticas da reunião, e não de transcrição integral; onde a formulação exata era incerta, o texto ficou com a versão mais cautelosa. Uma moderação empírica sobre o estudo citado no fim do encontro está sinalizada no corpo do texto.</p></div><div class='usar'><b>Como usar</b>Abra as seções que quiser ler, marque o que pretende aplicar e responda o que fizer sentido. Tudo fica salvo neste aparelho — ninguém mais vê.</div><a class='pdfbtn' href='resumo.pdf'>&#8681; Baixar em PDF</a><div class='ess'><div class='et'>O essencial</div><ul><li><strong>Consideração positiva muda o estado em que a pessoa escuta.</strong> Empatia, genuinidade e aceitação incondicional ativam o sistema de apego e baixam o de ameaça. O que vem depois é ouvido de outro lugar.</li><li><strong>Reconhecer não é avaliar.</strong> “Estou orgulhosa de você” julga. “Tu ficou quinze dias sem beber” reconhece um esforço real. O segundo gera mais segurança e engajamento.</li><li><strong>Afirmação pede exemplo da própria sessão.</strong> Vazia, ela soa a manipulação. Específica, ela é crível. A especificidade vem da atenção plena, e não de um repertório de frases.</li><li><strong>Afirmar o que adoece é o risco.</strong> Reforçar perfeccionismo, evitação ou a crença de que todos são confiáveis é validar a estratégia que mantém o problema.</li><li><strong>Validação retém; mudança ainda precisa de estratégia.</strong> No estudo citado, a terapia de validação teve zero abandono. Nos últimos meses, o uso de opioides voltou a subir nesse grupo. Os dois dados importam.</li></ul></div><details class='sec' id='s0' open><summary><h2>Antes do capítulo: o vício de argumentar</h2><span class='arw'>&#9656;</span></summary>
+<p>O mediador abriu o encontro com o problema que o capítulo vem responder: profissionais iniciantes entram em processo de <strong>argumentação e convencimento</strong> com quem atendem. Tentam provar que a pessoa está errada, que o pensamento é distorcido, que o comportamento não faz sentido. Isso vai na direção contrária das práticas dialéticas e humanistas, e costuma produzir o que se quer evitar.</p>
+<p>O enquadramento foi cuidadoso para não cair no outro extremo: redução de sintoma é relevante. O que o papel profissional pede é ir além do protocolo rígido e aproximar a pessoa de uma vida com significado, e isso passa pela aceitação e pela consideração positiva. A postura não substitui a técnica; ela é a condição para a técnica funcionar.</p>
+</details><details class='sec' id='s1'><summary><h2>As três condições, e o que elas fazem no corpo</h2><span class='arw'>&#9656;</span></summary>
+<p>A apresentadora organizou o capítulo a partir das três condições de Carl Rogers.</p>
+<ul class='key'><li><b>Empatia</b>: compreender os significados internos da pessoa, inclusive as dualidades emocionais que ela mesma não resolveu.</li><li><b>Genuinidade</b>: coerência entre o que o profissional sente, pensa e expressa.</li><li><b>Consideração positiva incondicional</b>: cordialidade, aceitação, respeito e apoio, independentes dos valores da pessoa.</li></ul>
+<figure class='dg'><div class='dg-t'>As três condições e o que elas fazem</div>
+<svg viewBox='0 0 720 190' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Empatia, genuinidade e consideração positiva incondicional ativam o sistema de apego e reduzem o sistema de ameaça'>
+<rect x='0' y='12' width='200' height='60' rx='10' fill='#f1ece0' stroke='#9ca575' stroke-width='1.3'/>
+<text x='100' y='37' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='12.5' font-weight='800' fill='#2f2e24'>Empatia</text>
+<text x='100' y='56' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' fill='#6c6a55'>entender os significados internos</text>
+<rect x='0' y='84' width='200' height='60' rx='10' fill='#f1ece0' stroke='#9ca575' stroke-width='1.3'/>
+<text x='100' y='109' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='12.5' font-weight='800' fill='#2f2e24'>Genuinidade</text>
+<text x='100' y='128' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' fill='#6c6a55'>sentir, pensar e expressar coerentes</text>
+<rect x='0' y='156' width='200' height='30' rx='10' fill='#43441f'/>
+<text x='100' y='176' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='11.5' font-weight='800' fill='#f0ede0'>Consideração positiva</text>
+<defs><marker id='c1' markerWidth='8' markerHeight='8' refX='6' refY='4' orient='auto'><path d='M0,0 L8,4 L0,8 z' fill='#8d876f'/></marker></defs>
+<path d='M204 42 L300 84' stroke='#8d876f' stroke-width='2' marker-end='url(#c1)'/>
+<path d='M204 114 L300 100' stroke='#8d876f' stroke-width='2' marker-end='url(#c1)'/>
+<path d='M204 171 L300 116' stroke='#8d876f' stroke-width='2' marker-end='url(#c1)'/>
+<rect x='306' y='62' width='150' height='76' rx='10' fill='#fffdf7' stroke='#43441f' stroke-width='1.5'/>
+<text x='381' y='94' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='12' font-weight='800' fill='#2f2e24'>na pessoa</text>
+<text x='381' y='114' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='12' font-weight='800' fill='#2f2e24'>atendida</text>
+<path d='M460 84 L520 58' stroke='#8d876f' stroke-width='2' marker-end='url(#c1)'/>
+<path d='M460 116 L520 142' stroke='#8d876f' stroke-width='2' marker-end='url(#c1)'/>
+<rect x='526' y='26' width='194' height='58' rx='10' fill='#eef1e4' stroke='#9ca575' stroke-width='1.3'/>
+<text x='623' y='50' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='12' font-weight='800' fill='#43441f'>sistema de apego</text>
+<text x='623' y='70' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' fill='#6c6a55'>ativa: segurança, aproximação</text>
+<rect x='526' y='116' width='194' height='58' rx='10' fill='#faf3ee' stroke='#a05a3c' stroke-width='1.3'/>
+<text x='623' y='140' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='12' font-weight='800' fill='#a05a3c'>sistema de ameaça</text>
+<text x='623' y='160' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' fill='#6c6a55'>reduz: defesa, esquiva</text>
+</svg>
+<figcaption>A leitura fisiológica trazida no encontro: as condições de Rogers não são só clima. Elas mudam o estado em que a pessoa escuta o que o terapeuta diz depois.</figcaption></figure>
+<p>A leitura que o encontro acrescentou foi fisiológica: essas atitudes <strong>ativam o sistema de apego e reduzem o sistema de ameaça</strong> em quem é atendido. Não é decoração do vínculo; é o que decide de que estado a pessoa vai escutar o que vier depois.</p>
+<h3>Quando o terapeuta não está disposto</h3>
+<p>A apresentadora levantou a pergunta que costuma ficar de fora: e quando o profissional está exausto, atende por obrigação ou está em conflito com demandas próprias? A genuinidade não se finge. Os caminhos apontados foram três: fazer o próprio processo terapêutico, para sustentar a genuinidade; encaminhar a pessoa a outro profissional; ou, quando o problema é reação a comportamentos específicos, separar o comportamento da pessoa das próprias crenças de quem atende.</p>
+</details><details class='sec' id='s2'><summary><h2>Crescimento em vez de patologia</h2><span class='arw'>&#9656;</span></summary>
+<p>Um problema recorrente na terapia cognitivo-comportamental, segundo a apresentadora, é o excesso de psicoeducação e o foco na patologia. O exemplo trazido foi o de uma cliente jovem adulta com quadro ansioso e suspeita de neurodivergência, que tinha medo de receber mais um diagnóstico, porque as vivências anteriores tinham sido de medicação em excesso e isolamento na família. Para ela, o rótulo não era informação; era ameaça.</p>
+<p>O consenso do grupo foi priorizar o <strong>crescimento pessoal e os aspectos positivos</strong> em vez da fixação estrita na patologia. Isso não elimina avaliação nem diagnóstico; muda o lugar deles na conversa.</p>
+<h3>Protocolos e liberdade clínica</h3>
+<p>O mediador e a apresentadora discutiram a aplicação rígida de protocolos aprovados por listas oficiais de tratamentos. Protocolos visam eliminar sintomas, e nisso são bons; o que negligenciam é a percepção das necessidades singulares de quem está na sala. A apresentadora acrescentou que atenção plena e presença são o que permite ao profissional perceber o caminho adequado no caso concreto.</p>
+<div class='callout note'><div class='co-t'>O excesso de explicação</div>O mediador relatou simulações de atendimento feitas em viagem com uma colega: movidos pela própria angústia, os profissionais abandonavam a validação empática para oferecer explicações fora de contexto. A apresentadora completou: adotar uma posição de <strong>não saber</strong> e manter a atenção plena preserva a curiosidade clínica. Explicar demais costuma ser sinal de que o terapeuta precisou se acalmar.</div>
+</details><details class='sec' id='s3'><summary><h2>Avaliar não é reconhecer</h2><span class='arw'>&#9656;</span></summary>
+<p>A distinção mais prática do encontro. <strong>Avaliar</strong> é emitir julgamento, mesmo positivo: “estou orgulhosa de você”. <strong>Reconhecer</strong> é apontar esforço real e conquista específica: quinze dias sem álcool, as tarefas do dia concluídas apesar do estado depressivo. A apresentadora concluiu que priorizar o reconhecimento gera mais segurança e mais engajamento, porque a pessoa não fica dependente da aprovação de quem atende.</p>
+<h3>O contraponto: orgulho como reparação</h3>
+<p>Uma participante ponderou que frases como “tenho muito orgulho de você” podem ser profundamente curativas para quem cresceu em privação emocional, desde que desvinculadas de aprovação condicional por desempenho. Mediador e apresentadora concordaram: a intervenção depende da <strong>função que exerce no vínculo</strong>. A mesma frase repara numa relação e cria dependência em outra. Não há regra que dispense ler o caso.</p>
+</details><details class='sec' id='s4'><summary><h2>Afirmar sem reforçar o que adoece</h2><span class='arw'>&#9656;</span></summary>
+<p>A apresentadora alertou para o risco de reforçar, sem perceber, crenças disfuncionais e estratégias compensatórias, como o <strong>perfeccionismo</strong>. Elogiar a entrega impecável de alguém que adoece para entregar impecável é validar a estratégia que mantém o problema. O mediador fez uma autocrítica pública sobre erros do passado nessa direção, reforçando o perfeccionismo de clientes sem ponderar o custo emocional das exigências que ele mesmo compartilhava.</p>
+<h3>Aceitação e mudança</h3>
+<p>O mediador trouxe o outro lado do equilíbrio: em situações críticas, como ideação suicida ou desregulação emocional grave, ficar estritamente na aceitação pode ser ineficaz ou arriscado. Aceitação e intervenção ativa de mudança precisam andar juntas. A apresentadora concordou e refletiu sobre equívocos recentes decorrentes de aplicar leituras teóricas de forma rígida.</p>
+<div class='callout note'><div class='co-t'>Leitura em processos</div>A pergunta que resolve o dilema é funcional: o que esta afirmação vai fortalecer? Se fortalece o comportamento a serviço de valores, afirma. Se fortalece a estratégia que a pessoa usa para não sentir, para não errar ou para não se expor, a afirmação vira parte do problema.</div>
+</details><details class='sec' id='s5'><summary><h2>Apoio cordial, responsividade e os limites da intimidade</h2><span class='arw'>&#9656;</span></summary>
+<p>A apresentadora fechou a parte do capítulo com três práticas.</p>
+<ul class='key'><li><b>Apoio cordial</b>: expressões de calor humano que reafirmam o vínculo.</li><li><b>Responsividade única</b>: conectar a fala de agora a relatos anteriores, mostrando que a pessoa é lembrada e acompanhada.</li><li><b>Limites da intimidade</b>: excesso de intimidade ou de divulgação da vida pessoal do profissional viola limites e produz desfechos negativos. A atenção vai para os pontos fortes da pessoa atendida, não para a história de quem atende.</li></ul>
+<h3>Observações simples e complexas</h3>
+<p>Afirmar aspectos positivos ajuda sobretudo quem opera com a distorção de desvalorização, e por isso pede <strong>exemplos extraídos da própria sessão</strong>. As observações simples custam pouco: agradecer o aviso de atraso, notar que o plano de ação foi cumprido. As complexas custam mais: encontrar o que é admirável em alguém que só relata erro e negatividade. Nos dois casos, o efeito é a pessoa se sentir mais estimulada, mais otimista e mais disposta a correr riscos e tomar decisões difíceis.</p>
+<h3>Numa sociedade que cobra</h3>
+<p>Quem procura atendimento costuma viver cercado de crítica familiar e social, com a sensação de nunca ser bom o suficiente. O espaço clínico supre uma carência de reconhecimento que o ambiente não oferece. E a consideração positiva não é só verbal: <strong>congruência</strong> entre o que o profissional promete e o que faz é parte dela. Prometer disponibilidade e não responder mensagens quebra confiança mais do que qualquer frase mal escolhida.</p>
+</details><details class='sec' id='s6'><summary><h2>Quando a afirmação faz mal</h2><span class='arw'>&#9656;</span></summary>
+<p>O capítulo registra a crítica psicanalítica clássica: satisfazer a necessidade de apreciação pode afastar a pessoa do autoexame necessário ao amadurecimento. A pesquisa indica que os benefícios superam os riscos, mas os riscos existem, e a apresentadora listou quando a afirmação prejudica:</p>
+<ul class='key'><li>quando é <b>vazia ou superficial</b>;</li><li>quando é percebida como <b>manipulação ou crítica disfarçada</b>;</li><li>quando <b>reforça conteúdos e estratégias não adaptativos</b>.</li></ul>
+<h3>Validar o quê</h3>
+<p>Os exemplos contrastantes foram os mais úteis do encontro. Validação <strong>não adaptativa</strong>: concordar que as pessoas são intrinsecamente confiáveis, ou desencorajar a exposição (“se faz mal, é melhor não se expor”). Validação <strong>adaptativa</strong>: contextualizar o medo na história de vida da pessoa e, ao mesmo tempo, investigar os custos de longo prazo da evitação, como nos quadros de ansiedade. Validar a emoção não é validar a esquiva.</p>
+</details><details class='sec' id='s7'><summary><h2>Perceber, admirar, valorizar. E o estudo da validação</h2><span class='arw'>&#9656;</span></summary>
+<figure class='dg'><div class='dg-t'>Perceber, admirar, valorizar</div>
+<svg viewBox='0 0 720 128' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Três tempos da afirmação: perceber com atenção plena, admirar qualidades legítimas, valorizar ajudando a pessoa a ver o que não via'>
+<rect x='0' y='14' width='220' height='100' rx='10' fill='#f1ece0' stroke='#9ca575' stroke-width='1.3'/>
+<text x='18' y='40' font-family="Plus Jakarta Sans,sans-serif" font-size='11' font-weight='800' letter-spacing='1.2' fill='#a8894f'>1 · PERCEBER</text>
+<text x='18' y='64' font-family="Plus Jakarta Sans,sans-serif" font-size='11.5' fill='#2f2e24'>atenção plena e olhar curioso;</text>
+<text x='18' y='82' font-family="Plus Jakarta Sans,sans-serif" font-size='11.5' fill='#2f2e24'>posição de não saber</text>
+<path d='M224 64 L246 64' stroke='#8d876f' stroke-width='2'/>
+<rect x='250' y='14' width='220' height='100' rx='10' fill='#fffdf7' stroke='#43441f' stroke-width='1.5'/>
+<text x='268' y='40' font-family="Plus Jakarta Sans,sans-serif" font-size='11' font-weight='800' letter-spacing='1.2' fill='#43441f'>2 · ADMIRAR</text>
+<text x='268' y='64' font-family="Plus Jakarta Sans,sans-serif" font-size='11.5' fill='#2f2e24'>encontrar qualidades legítimas,</text>
+<text x='268' y='82' font-family="Plus Jakarta Sans,sans-serif" font-size='11.5' fill='#2f2e24'>com exemplo da própria sessão</text>
+<path d='M474 64 L496 64' stroke='#8d876f' stroke-width='2'/>
+<rect x='500' y='14' width='220' height='100' rx='10' fill='#43441f'/>
+<text x='518' y='40' font-family="Plus Jakarta Sans,sans-serif" font-size='11' font-weight='800' letter-spacing='1.2' fill='#9ca575'>3 · VALORIZAR</text>
+<text x='518' y='64' font-family="Plus Jakarta Sans,sans-serif" font-size='11.5' fill='#f0ede0'>ajudar a pessoa a enxergar</text>
+<text x='518' y='82' font-family="Plus Jakarta Sans,sans-serif" font-size='11.5' fill='#f0ede0'>o que nela ainda era invisível</text>
+</svg>
+<figcaption>Sem o primeiro tempo, o terceiro vira elogio vazio. É a atenção plena que torna a afirmação específica, e é a especificidade que a torna crível.</figcaption></figure>
+<p>Os três tempos práticos: <strong>perceber</strong>, com atenção plena e olhar curioso (conceito que a apresentadora trouxe da supervisão em DBT); <strong>admirar</strong>, identificando qualidades legítimas; e <strong>valorizar</strong>, ajudando a pessoa a enxergar potencialidades que antes eram invisíveis para ela.</p>
+<h3>O estudo</h3>
+<p>Para fechar, a apresentadora relatou um ensaio de Marsha Linehan com mulheres dependentes de opioides e com transtorno da personalidade, divididas entre DBT e uma <strong>terapia de validação abrangente</strong>: cordialidade, genuinidade, aceitação e validação, sem os componentes centrais de mudança da DBT, combinada com um programa de doze passos. Ao longo do tratamento, os dois grupos reduziram psicopatologia e comportamento parassuicida de forma parecida. A diferença que chamou atenção foi a retenção: <strong>nenhum abandono</strong> no grupo de validação, contra 36% na DBT.</p>
+<figure class='dg'><div class='dg-t'>O estudo da terapia de validação (Linehan et al., 2002)</div>
+<svg viewBox='0 0 720 170' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Abandono: 36 por cento na DBT e zero na terapia de validação abrangente; nos últimos quatro meses, o uso de opioides subiu no grupo de validação e se manteve na DBT'>
+<text x='0' y='28' font-family="Plus Jakarta Sans,sans-serif" font-size='11' font-weight='800' letter-spacing='1.2' fill='#a8894f'>ABANDONO DO TRATAMENTO</text>
+<text x='0' y='58' font-family="Plus Jakarta Sans,sans-serif" font-size='11.5' fill='#2f2e24'>DBT</text>
+<rect x='60' y='46' width='144' height='16' rx='4' fill='#a05a3c'/>
+<text x='212' y='59' font-family="Plus Jakarta Sans,sans-serif" font-size='11.5' font-weight='800' fill='#2f2e24'>36%</text>
+<text x='0' y='88' font-family="Plus Jakarta Sans,sans-serif" font-size='11.5' fill='#2f2e24'>Validação</text>
+<rect x='60' y='76' width='2' height='16' rx='1' fill='#43441f'/>
+<text x='70' y='89' font-family="Plus Jakarta Sans,sans-serif" font-size='11.5' font-weight='800' fill='#2f2e24'>0%</text>
+<text x='0' y='120' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' font-style='italic' fill='#8d876f'>23 mulheres, 12 meses de tratamento;</text>
+<text x='0' y='136' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' font-style='italic' fill='#8d876f'>ambos os grupos reduziram uso e psicopatologia</text>
+<rect x='390' y='14' width='330' height='142' rx='11' fill='#fffdf7' stroke='#EFE7D3' stroke-width='1.4'/>
+<text x='410' y='40' font-family="Plus Jakarta Sans,sans-serif" font-size='11' font-weight='800' letter-spacing='1.2' fill='#a8894f'>O QUE O ENCONTRO NÃO CITOU</text>
+<text x='410' y='68' font-family="Plus Jakarta Sans,sans-serif" font-size='11.5' fill='#2f2e24'>Nos últimos quatro meses, o uso de</text>
+<text x='410' y='86' font-family="Plus Jakarta Sans,sans-serif" font-size='11.5' fill='#2f2e24'>opioides voltou a subir no grupo de</text>
+<text x='410' y='104' font-family="Plus Jakarta Sans,sans-serif" font-size='11.5' fill='#2f2e24'>validação; na DBT, os ganhos se mantiveram.</text>
+<text x='410' y='134' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' font-style='italic' fill='#a05a3c'>validação retém; mudança ainda precisa de estratégia</text>
+</svg>
+<figcaption>O dado de retenção é real e impressiona. O mesmo estudo, lido inteiro, também mostra o limite da validação sozinha.</figcaption></figure>
+<div class='obs'><h4>Uma moderação empírica</h4><p>O estudo existe e o dado de retenção é esse mesmo. Duas coisas precisam ficar junto dele. Primeira: eram <strong>23 mulheres</strong>, doze de um lado e onze do outro; zero abandono é onze de onze. Segunda: nos <strong>últimos quatro meses</strong> do tratamento, o uso de opioides voltou a subir no grupo de validação, enquanto o grupo de DBT manteve os ganhos. A conclusão das autoras foi que a validação sustenta a pessoa no tratamento, e que a mudança de comportamento ainda precisa das estratégias de mudança. É uma leitura mais interessante do que “validação basta”, e é a que combina com o resto do encontro.</p></div>
+<p>A conversa final foi sobre isso: a fidelização que essas práticas produzem melhora o prognóstico porque mantém a pessoa no tratamento tempo suficiente para o resto acontecer. O mediador encerrou ressaltando a densidade do capítulo e pedindo que o grupo reveja o conteúdo para extrair um <strong>denominador comum de postura clínica</strong>.</p>
+</details><div class='tools'><div class='tool'><div class='tt'>Levar para a prática</div><label class='ck'><input type='checkbox'><span>Percebi quando entrei em argumentação com o paciente, e saí dela.</span></label><label class='ck'><input type='checkbox'><span>Reconheci esforço específico da sessão em vez de emitir avaliação genérica.</span></label><label class='ck'><input type='checkbox'><span>Extraí a afirmação de um exemplo real da sessão, e não de um repertório de frases.</span></label><label class='ck'><input type='checkbox'><span>Antes de afirmar, perguntei o que a afirmação vai fortalecer: valor ou estratégia de esquiva.</span></label><label class='ck'><input type='checkbox'><span>Validei a emoção sem validar a evitação.</span></label><label class='ck'><input type='checkbox'><span>Conectei a fala de hoje a algo que o paciente contou antes.</span></label><label class='ck'><input type='checkbox'><span>Notei quando expliquei demais para acalmar a mim mesmo.</span></label><label class='ck'><input type='checkbox'><span>Cumpri o que prometi em disponibilidade e resposta.</span></label><label class='ck'><input type='checkbox'><span>Avaliei minha disposição genuína para este caso, e o que fazer se ela não estiver lá.</span></label><label class='ck'><input type='checkbox'><span>Em risco ou desregulação grave, combinei aceitação com estratégia ativa de mudança.</span></label></div><div class='tool'><div class='tt'>Para revisar — responda</div><div class='qz'><p>1. Quais são as três condições de Rogers e o que o encontro acrescentou sobre o efeito delas no corpo de quem é atendido?</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver comentário</summary><div class='gab-in'><b>Empatia</b> (compreender os significados internos da pessoa, inclusive as dualidades emocionais), <b>genuinidade</b> (coerência entre o que o profissional sente, pensa e expressa) e <b>consideração positiva incondicional</b> (cordialidade, aceitação, respeito e apoio, independentes dos valores da pessoa). O encontro acrescentou a leitura fisiológica: essas atitudes ativam o sistema de apego e reduzem o sistema de ameaça, o que muda o estado em que a pessoa escuta o que vem depois.</div></details></div><div class='qz'><p>2. Explique a diferença entre avaliar e reconhecer, com um exemplo de cada.</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver comentário</summary><div class='gab-in'><b>Avaliar</b> é emitir um julgamento sobre a pessoa, mesmo positivo: “estou orgulhosa de você”. <b>Reconhecer</b> é apontar esforço real e específico: “tu ficou quinze dias sem beber”, “tu fez as tarefas do dia mesmo naquele estado”. O reconhecimento gera mais segurança e engajamento porque não depende da aprovação de quem atende, e porque é verificável pela própria pessoa.</div></details></div><div class='qz'><p>3. Em que situações a afirmação prejudica, segundo o capítulo? Dê um exemplo de validação não adaptativa e um de adaptativa.</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver comentário</summary><div class='gab-in'>Quando é vazia ou superficial, quando é percebida como manipulação ou crítica disfarçada, e quando reforça conteúdos ou estratégias não adaptativos. <b>Não adaptativa</b>: concordar que as pessoas são intrinsecamente confiáveis, ou dizer que é melhor não se expor se a exposição faz mal. <b>Adaptativa</b>: contextualizar o medo na história da pessoa e, junto, investigar o custo de longo prazo da evitação. Validar a emoção sem validar a esquiva.</div></details></div><div class='qz'><p>4. O que o estudo de Linehan sobre terapia de validação mostra, e o que ele não autoriza concluir?</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver comentário</summary><div class='gab-in'>Mostra que uma terapia feita de cordialidade, genuinidade, aceitação e validação, sem os componentes de mudança da DBT, <b>manteve todas as participantes no tratamento</b> (zero abandono, contra 36% na DBT) e reduziu psicopatologia e parassuicídio de forma parecida ao longo do ano. Não autoriza concluir que validação basta: eram 23 mulheres, e nos últimos quatro meses o uso de opioides voltou a subir no grupo de validação, enquanto a DBT manteve os ganhos. Validação retém; mudança precisa de estratégia.</div></details></div><div class='qz'><p>5. Pense num paciente que tu elogiou recentemente. O elogio fortaleceu um valor ou uma estratégia compensatória? Como tu sabe?</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver critérios</summary><div class='gab-in'>Não há resposta certa. Uma boa resposta identifica com precisão o comportamento elogiado e pergunta o que ele estava a serviço: de um valor da pessoa (aproximação, cuidado, coragem) ou de uma estratégia para não sentir, não errar, não se expor (perfeccionismo, agradar, evitar). O critério é a função, e a evidência é o que aconteceu depois: se o elogio aumentou rigidez e cobrança, fortaleceu a estratégia. O erro comum é julgar pela forma do comportamento, e não pela função.</div></details></div><div class='qz'><p>6. A frase “tenho orgulho de você” repara ou cria dependência? Descreva um caso teu em que faria cada coisa, e o critério que tu usaria para decidir.</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver critérios</summary><div class='gab-in'>Não há resposta certa. Uma boa resposta descreve um caso de privação emocional em que a frase repara, porque vem desvinculada de desempenho, e um caso em que a pessoa já organiza a vida em volta da aprovação dos outros, em que a mesma frase alimenta a dependência. O critério é a função no vínculo: o que a frase fortalece nesta relação, com esta história. O erro comum é decidir pela regra (nunca dizer, ou sempre dizer) sem olhar o caso.</div></details></div><div class='qz'><p>7. Como tu percebe, em sessão, que está explicando demais? O que faz no lugar?</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver critérios</summary><div class='gab-in'>Não há resposta certa. Uma boa resposta reconhece o sinal interno (a angústia diante do silêncio ou da dor do outro, a pressa de resolver) e o sinal externo (a pessoa se cala, concorda depressa, perde o fio). No lugar, a posição de não saber: uma pergunta curiosa, um reflexo empático, ou simplesmente esperar. O erro comum é tratar a explicação como a intervenção, quando ela costuma ser regulação do próprio terapeuta.</div></details></div></div></div><div class='savebar'><button id='exp'>Exportar respostas</button><button id='lmp'>Limpar</button><span class='saved' id='saved'>Salvo neste aparelho</span></div><div class='refs'><h2>Referências</h2><ol><li>Farber, B. A., Suzuki, J. Y., &amp; Lynch, D. A. (2018). Positive regard and psychotherapy outcome: A meta-analytic review. <em>Psychotherapy, 55</em>(4), 411–423.</li><li>Gilbert, P. (2014). The origins and nature of compassion focused therapy. <em>British Journal of Clinical Psychology, 53</em>(1), 6–41.</li><li>Linehan, M. M. (1993). <em>Cognitive-behavioral treatment of borderline personality disorder.</em> Guilford Press.</li><li>Linehan, M. M., Dimeff, L. A., Reynolds, S. K., Comtois, K. A., Welch, S. S., Heagerty, P., &amp; Kivlahan, D. R. (2002). Dialectical behavior therapy versus comprehensive validation therapy plus 12-step for the treatment of opioid dependent women meeting criteria for borderline personality disorder. <em>Drug and Alcohol Dependence, 67</em>(1), 13–26.</li><li>Miller, W. R., &amp; Moyers, T. B. (2021). <em>Effective psychotherapists: Clinical skills that improve client outcomes.</em> Guilford Press.</li><li>Miller, W. R., &amp; Rollnick, S. (2013). <em>Motivational interviewing: Helping people change</em> (3ª ed.). Guilford Press.</li><li>Norcross, J. C., &amp; Lambert, M. J. (Orgs.). (2019). <em>Psychotherapy relationships that work</em> (3ª ed., Vol. 1). Oxford University Press.</li><li>Rogers, C. R. (1957). The necessary and sufficient conditions of therapeutic personality change. <em>Journal of Consulting Psychology, 21</em>(2), 95–103.</li></ol></div><div class='nmet'><b>Nota de método</b>Este material reúne a ficha de leitura do capítulo e a discussão do encontro; o conteúdo do livro aparece <strong>parafraseado</strong>, sem transcrição. Os exemplos clínicos citados estão desidentificados (a cliente mencionada pela apresentadora aparece como jovem adulta com quadro ansioso e suspeita de neurodivergência, sem idade nem diagnósticos específicos), as falas de participantes aparecem sem nome, e a autocrítica do mediador foi mantida porque foi feita em público e tem valor didático.<br><br><strong>Fonte.</strong> Este resumo foi escrito a partir das anotações automáticas da reunião e do chat, e não de transcrição integral, que não estava disponível. Onde havia dúvida sobre a formulação exata, o texto preferiu a versão mais cautelosa.<br><br><strong>Artefatos corrigidos.</strong> As anotações registram a autora do estudo final como <em>Marília</em>; trata-se de Marsha Linehan. A referência a protocolos “aprovados pelo FDA” foi convertida em “listas oficiais de tratamentos”, porque a agência não aprova psicoterapias; o sentido da crítica foi mantido.<br><br><strong>Uma moderação empírica, sinalizada no texto.</strong> O estudo de Linehan et al. (2002) teve 23 participantes, e nos últimos quatro meses o grupo de validação voltou a aumentar o uso de opioides enquanto a DBT manteve os ganhos. O dado de retenção citado no encontro é correto; o texto acrescenta o restante do resultado porque ele muda a conclusão que se pode tirar.<br><br><strong>Acréscimos.</strong> A leitura em processos da pergunta “o que esta afirmação vai fortalecer” foi desenvolvida no texto a partir da discussão. As referências de Rogers, da metanálise de consideração positiva, da terapia focada na compaixão (base da leitura sobre sistemas de apego e ameaça) e do estudo de validação foram acrescentadas para dar respaldo formal ao que foi dito sem citação explícita; nenhuma citação foi construída para preencher lacuna.</div><div class='cta'><img class='ph' alt='Prof. Júlio Gonçalves' src='/assets/julio.jpg'><div class='in'><div class='k'>Aprenda muito mais na</div><h3>Comunidade Lógica Psicológica</h3><ul><li>Aprofundar o raciocínio clínico com ciência, processos e análise funcional.</li><li>Estruturar uma prática ética, com pensamento crítico e evidências atualizadas.</li><li>Desenvolver o self clínico com supervisão, leituras guiadas e rede.</li></ul><a class='go' href='https://psicojulio.com/comunidade-logica-psicologica/' target='_blank' rel='noopener'>Participar da comunidade &#8594;</a></div></div><div class='foot'><img class='foot-logo' alt='Lógica Psicológica' src='/assets/logo.png'><div class='contato'><a href='mailto:contato@psicojulio.com'>contato@psicojulio.com</a> &middot; <a href='tel:+5547999338021'>(47) 99933-8021</a><br>Rua Concórdia, 703, São Vicente, Itajaí — 88309-645<br><span class='cnpj'>CNPJ 49.649.803/0001-60</span></div></div></main></div><button class='toc-fab' id='fab'>&#9776; Seções</button><div class='overlay' id='ov'></div><script>
+(function(){
+  var K='mat-Cap5-Consideracao-';
+  document.querySelectorAll('.ck input').forEach(function(c,i){
+    var k=K+'ck'+i;
+    try{ if(localStorage.getItem(k)==='1'){c.checked=true;c.closest('.ck').classList.add('done');} }catch(e){}
+    c.addEventListener('change',function(){
+      c.closest('.ck').classList.toggle('done',c.checked);
+      try{ localStorage.setItem(k,c.checked?'1':'0'); }catch(e){} flag();
+    });
+  });
+  document.querySelectorAll('.qz textarea').forEach(function(t,i){
+    var k=K+'q'+i;
+    try{ var v=localStorage.getItem(k); if(v)t.value=v; }catch(e){}
+    t.addEventListener('input',function(){ try{ localStorage.setItem(k,t.value); }catch(e){} flag(); });
+  });
+  var s=document.getElementById('saved'),tm;
+  function flag(){ if(!s)return; s.classList.add('on'); clearTimeout(tm); tm=setTimeout(function(){s.classList.remove('on');},1600); }
+  var b=document.getElementById('exp');
+  if(b) b.addEventListener('click',function(){
+    var out='RESPOSTAS — Consideração positiva\n\n';
+    document.querySelectorAll('.qz').forEach(function(q){
+      out+= q.querySelector('p').innerText+'\n'+(q.querySelector('textarea').value||'(sem resposta)')+'\n\n';
+    });
+    var a=document.createElement('a');
+    a.href=URL.createObjectURL(new Blob([out],{type:'text/plain'}));
+    a.download='Cap5-Consideracao-respostas.txt'; a.click();
+  });
+  var l=document.getElementById('lmp');
+  if(l) l.addEventListener('click',function(){
+    if(!confirm('Apagar suas anotações deste material?'))return;
+    try{ Object.keys(localStorage).filter(function(k){return k.indexOf(K)===0;}).forEach(function(k){localStorage.removeItem(k);}); }catch(e){}
+    location.reload();
+  });
+  var f=document.getElementById('fab'),o=document.getElementById('ov'),sd=document.getElementById('side');
+  if(f)f.onclick=function(){sd.classList.toggle('open');o.classList.toggle('open');};
+  if(o)o.onclick=function(){sd.classList.remove('open');o.classList.remove('open');};
+})();
+</script></body></html>
