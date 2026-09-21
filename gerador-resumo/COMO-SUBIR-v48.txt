@@ -1,0 +1,9 @@
+Pacote v48 (21/09/2026). Copie o conteúdo desta pasta sobre a RAIZ do repositório
+(mesmo nível do index.html), substituindo o que existir. Novo desde o v47:
+
+- dependencias-tecnologicas/   trilha inteira (índice + aula1 … aula6)
+- supervisoes/aceitacao-antes-da-mudanca/   supervisão de 21/09
+- index.html, jornada/index.html, aulas/index.html, supervisoes/index.html, README.md   (contadores e cards)
+- gerador-resumo/   scripts novos e o LEIA-ME atualizado
+
+Pode apagar do repositório: aulas/comportamento-ludico/ (virou o vídeo 1 da trilha).

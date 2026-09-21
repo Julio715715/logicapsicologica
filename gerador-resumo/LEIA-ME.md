@@ -40,17 +40,18 @@ index.html                  home
 assets/                     logo.png, logo-creme.png, julio.jpg
 jornada/                    hub das trilhas de leitura
   processos/                11 encontros — Hofmann, Hayes & Lorscheid
-  psicoterapeutas-eficazes/ 3 de 9 — Miller & Moyers
-aulas/                      5 aulas livres
-supervisoes/                12 casos, desidentificados
+  psicoterapeutas-eficazes/ 4 de 9 — Miller & Moyers
+  dependencias-tecnologicas/ disciplina gravada do Júlio, 6 vídeos (aula1…aula6)
+aulas/                      6 aulas livres
+supervisoes/                13 casos, desidentificados
 newsletter/                 edições numeradas (pasta por data: 2026-09/)
 ```
 
 Cada material é uma pasta com `index.html` e `resumo.pdf`.
 As edições da newsletter têm `index.html` e `edicao-01.pdf`.
 
-**Números atuais:** 33 materiais, 209 perguntas com gabarito (100%),
-29 figuras SVG, 3 itens na Edição 1 (definitiva, v44).
+**Números atuais (v48, 21/09/2026):** 41 materiais, 259 perguntas com gabarito (100%),
+44 figuras SVG, 3 itens na Edição 1 (definitiva, v44).
 
 ---
 
@@ -175,6 +176,27 @@ AQ2 → AAQ-II · hipotivação → hipoativação · metas Smart → SMART
   chat, sem transcrição integral (a gravação não estava mais no Drive). Se a
   transcrição ou o .mp4 aparecer, revisar o texto contra ela.
 
-- **Trilha Psicoterapeutas Eficazes:** 6 capítulos ainda sem material.
+- **Trilha 'Dependências tecnológicas' (17/09/2026):** a disciplina gravada do
+  Júlio virou trilha da Jornada (`/dependencias-tecnologicas/`, índice gerado por
+  `trilha_dt.py`, lista VIDEOS). Vídeo 1 = `aula_ludico.py` + `figs_ludico.py`
+  (transcrição + slides). Fluxo combinado: ele manda os slides/transcrição de
+  cada vídeo, eu faço texto + PDF na hora, e o pacote para subir só no fim, para
+  economizar dados. Para cada vídeo novo: script `aula_*.py` no molde, acrescentar
+  a linha em VIDEOS e rodar `trilha_dt.py`.
+  Estado em 21/09: vídeos 1 a 6 publicados (`aula_ludico.py`, `aula_dt2.py` …
+  `aula_dt6.py`). Vídeos 5 e 6 abrem o bloco de transtorno do jogo; o 7 é a
+  avaliação diagnóstica. A aula solta `aulas/comportamento-ludico/` saiu do
+  índice de Aulas Livres (o conteúdo é o vídeo 1 da trilha); a pasta pode ser
+  apagada do repositório.
+
+- **Supervisão 21/09/2026 (`sup_2109.py`):** aceitação antes da mudança
+  (`supervisoes/aceitacao-antes-da-mudanca/`). Feita das anotações do Gemini,
+  com o texto de apoio da aula 5 do Descomplicando a DBT incorporado numa seção
+  própria (pedido do Júlio). Gabarito inline no spec (`'gabarito'`), como nos
+  materiais da trilha DT; não precisa de arquivo `gab_*.py`.
+
+- **Trilha Psicoterapeutas Eficazes:** cap5 (Consideração positiva, 14/09) feito
+  das anotações do Gemini (`pe_cap5.py`, `figs_pe5.py`, com o glue
+  `pagina_jornada`). Restam 5 capítulos; próximo: Genuinidade (21/09).
 - **Consentimento** para uso dos casos de supervisão em material público:
   decisão sua, anterior ao deploy.

@@ -1,0 +1,382 @@
+<!DOCTYPE html><html lang='pt-BR'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='icon' type='image/png' sizes='32x32' href='/favicon-32.png'><link rel='icon' type='image/png' sizes='192x192' href='/favicon-192.png'><link rel='apple-touch-icon' href='/apple-touch-icon.png'><link rel='icon' href='/favicon.ico' sizes='any'><link rel='preconnect' href='https://fonts.googleapis.com'><link rel='preconnect' href='https://fonts.gstatic.com' crossorigin><link href='https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500&display=swap' rel='stylesheet'><title>Critérios diagnósticos do transtorno do jogo: os nove sinais, o ciclo e o que especificar — Lógica Psicológica</title><style>
+:root{--olive:#5b5c2a;--olive-dk:#43441f;--sage:#9ca575;--sage-dk:#7c8054;--cream:#f8f3e6;--cream-dp:#efe7d3;--gilt:#a8894f;--gilt-lt:#c3a468;--ink:#2f2e24;--muted:#6c6a55;--card:#fffdf7;}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;} html,body{margin:0;padding:0;}
+body{font-family:'Plus Jakarta Sans',system-ui,-apple-system,Segoe UI,sans-serif;background:var(--cream);color:var(--ink);font-size:17px;line-height:1.62;font-weight:400;-webkit-font-smoothing:antialiased;}
+a{color:var(--olive);} strong{font-weight:700;color:var(--olive-dk);} em{color:var(--sage-dk);}
+:focus-visible{outline:2px solid var(--gilt);outline-offset:2px;}
+.topbar{position:sticky;top:0;z-index:30;background:rgba(248,243,230,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--cream-dp);}
+.topbar .in{max-width:1100px;margin:0 auto;padding:11px 20px;display:flex;align-items:center;gap:12px;}
+.topbar img{height:22px;display:block;}
+.topbar .sp{flex:1;}
+.topbar .tag{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);}
+.backlink{font-weight:800;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--olive-dk);text-decoration:none;border:1px solid var(--cream-dp);background:var(--card);border-radius:20px;padding:7px 14px;white-space:nowrap;line-height:1;transition:border-color .18s,color .18s;}
+.backlink:hover{border-color:var(--gilt-lt);color:var(--gilt);}
+@media(max-width:430px){.topbar .tag{display:none;}}
+.shell{display:flex;gap:34px;max-width:1100px;margin:0 auto;padding:0 20px;align-items:flex-start;}
+.side{flex:0 0 252px;width:252px;position:sticky;top:56px;align-self:flex-start;height:calc(100vh - 66px);overflow:hidden;background:linear-gradient(165deg,#5b5c2a,#3b3c1b);color:var(--cream);border-radius:0 0 16px 16px;padding:18px 18px 16px;display:flex;flex-direction:column;}
+.side .nav{flex:1 1 auto;overflow-y:auto;min-height:0;scrollbar-width:thin;scrollbar-color:rgba(248,243,230,.28) transparent;}
+.side .nav::-webkit-scrollbar{width:6px;} .side .nav::-webkit-scrollbar-thumb{background:rgba(248,243,230,.28);border-radius:3px;}
+.side .brand{display:block;margin-bottom:14px;}
+.side .brand img{width:100%;max-width:148px;height:auto;display:block;}
+.side .st{font-weight:800;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt-lt);margin:13px 0 6px;padding-top:11px;border-top:1px solid rgba(248,243,230,.18);}
+.side .st.first{margin-top:0;padding-top:0;border-top:none;}
+.side a{display:block;text-decoration:none;color:var(--cream);padding:8px 11px;border-radius:9px;font-size:14.5px;font-weight:700;line-height:1.25;margin-bottom:3px;border:1px solid transparent;}
+.side a .s{display:block;font-size:11.8px;font-weight:400;color:#d9d3bd;margin-top:2px;line-height:1.3;}
+.side a:hover{background:rgba(248,243,230,.10);}
+.side a.on{background:var(--cream);color:var(--olive-dk);border-color:var(--cream);}
+.side a.on .s{color:var(--muted);}
+.side .home{font-weight:800;font-size:12.5px;letter-spacing:.02em;padding:5px 11px;}
+.side .navlink{font-weight:700;font-size:13px;color:#e7e1cb;padding:5px 11px;}
+.side .sig{flex:0 0 auto;margin-top:12px;padding-top:12px;border-top:1px solid rgba(248,243,230,.18);display:flex;align-items:center;gap:11px;}
+.side .sig img{width:40px;height:40px;flex:none;border-radius:50%;object-fit:cover;object-position:center 18%;border:2px solid rgba(248,243,230,.35);}
+.side .sig .who{font-weight:800;font-size:12.5px;color:var(--cream);line-height:1.3;}
+.side .sig .who span{display:block;font-weight:400;font-size:11.5px;color:#cfc9b2;letter-spacing:.04em;margin-top:2px;}
+.side .sub{display:block;margin-top:10px;text-align:center;background:var(--cream);color:var(--olive-dk);font-weight:800;font-size:13px;letter-spacing:.02em;text-decoration:none;padding:10px 14px;border-radius:22px;transition:background .18s;}
+.side .sub:hover{background:#fff;color:var(--olive-dk);}
+.main{flex:1 1 auto;max-width:730px;width:100%;padding:0 0 50px;}
+.toc-fab{display:none;} .overlay{display:none;}
+@media(max-width:960px){
+ .shell{display:block;padding:0;} .main{max-width:760px;margin:0 auto;padding:0 20px 50px;}
+ .side{position:fixed;top:0;left:0;height:100vh;width:292px;z-index:60;transform:translateX(-100%);transition:transform .25s;box-shadow:2px 0 22px rgba(0,0,0,.28);padding:26px 22px;max-height:none;border-radius:0;}
+ .side.open{transform:none;}
+ .toc-fab{display:block;position:fixed;bottom:18px;right:18px;z-index:50;background:var(--olive-dk);color:var(--cream);font-weight:800;font-size:13px;letter-spacing:.04em;border:none;border-radius:30px;padding:13px 20px;box-shadow:0 4px 14px rgba(0,0,0,.24);cursor:pointer;}
+ .overlay{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:55;opacity:0;pointer-events:none;transition:opacity .25s;}
+ .overlay.open{display:block;opacity:1;pointer-events:auto;}
+}
+@media(min-width:961px) and (max-height:820px){
+ .side a .s{display:none;}
+ .side .brand{margin-bottom:10px;} .side .brand img{max-width:132px;}
+ .side .st{margin:10px 0 5px;padding-top:9px;}
+}
+@media(min-width:961px) and (max-height:680px){
+ .side .brand img{max-width:110px;}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;}}
+.hero{padding:40px 0 6px;}
+.hero .kick{font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:12px;color:var(--gilt);margin:0 0 14px;}
+.hero h1{font-weight:800;font-size:46px;line-height:1.03;letter-spacing:-.022em;color:var(--ink);margin:0 0 16px;}
+.hero h1 .ac{color:var(--olive);}
+.hero p{color:var(--muted);font-size:17.5px;max-width:620px;margin:0;}
+.divider{width:56px;height:3px;background:var(--gilt-lt);border-radius:2px;margin:26px 0 4px;}
+h2{font-weight:800;color:var(--ink);font-size:25px;letter-spacing:-.015em;line-height:1.15;margin:38px 0 10px;scroll-margin-top:74px;}
+h3{font-weight:800;color:var(--olive);font-size:17px;letter-spacing:-.005em;margin:26px 0 6px;}
+p{margin:0 0 12px;}
+ul.clean{list-style:none;padding:0;margin:10px 0 14px;}
+ul.clean li{position:relative;padding:0 0 10px 26px;}
+ul.clean li::before{content:"\03A8";font-weight:800;color:var(--gilt);position:absolute;left:0;top:0;}
+.pull{font-weight:800;color:var(--olive-dk);font-size:23px;line-height:1.3;letter-spacing:-.015em;border-left:4px solid var(--gilt-lt);padding:6px 0 6px 20px;margin:28px 0;}
+.portas{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:26px 0 8px;}
+@media(max-width:720px){.portas{grid-template-columns:1fr;}}
+.porta{display:block;text-decoration:none;background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:20px 18px;transition:border-color .18s,transform .18s;}
+.porta:hover{border-color:var(--sage);transform:translateY(-2px);}
+.porta .pk{font-weight:800;font-size:16px;letter-spacing:-.01em;color:var(--ink);line-height:1.2;}
+.porta .pd{font-size:14.5px;color:var(--muted);margin-top:8px;line-height:1.45;}
+.porta .pa{display:block;margin-top:14px;font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gilt);}
+.temas{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0;}
+@media(max-width:560px){.temas{grid-template-columns:1fr;}}
+.tema{display:flex;flex-direction:column;text-decoration:none;background:var(--card);border:1px solid var(--cream-dp);border-top:4px solid var(--sage);border-radius:14px;padding:18px 18px 16px;transition:border-top-color .18s,box-shadow .18s,transform .18s;}
+.tema:hover{border-top-color:var(--olive);box-shadow:0 2px 14px rgba(67,68,31,.08);transform:translateY(-2px);}
+.tema .tk{font-weight:800;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gilt);}
+.tema .tt{font-weight:800;font-size:19px;letter-spacing:-.015em;color:var(--ink);margin:6px 0 5px;line-height:1.2;}
+.tema .td{font-size:14px;color:var(--muted);line-height:1.45;flex:1 1 auto;}
+.tema .tm{margin-top:12px;padding-top:10px;border-top:1px solid var(--cream-dp);font-weight:700;font-size:12.5px;color:var(--sage-dk);}
+.book{background:var(--cream-dp);border-radius:14px;padding:18px 20px;margin:18px 0 24px;}
+.book .bk{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:7px;}
+.book .bt{font-weight:800;font-size:19px;letter-spacing:-.015em;color:var(--ink);margin-bottom:4px;line-height:1.2;}
+.book .bsub{color:var(--muted);font-size:14px;margin-bottom:14px;line-height:1.4;}
+.book a{display:inline-block;font-weight:800;font-size:12.5px;letter-spacing:.02em;color:var(--cream);background:var(--olive);padding:11px 22px;border-radius:26px;text-decoration:none;}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0;}
+@media(max-width:560px){.cards{grid-template-columns:1fr;}}
+.card{background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:6px;}
+.card.live{border-color:var(--sage);box-shadow:0 2px 12px rgba(67,68,31,.06);}
+.card:not(.live){opacity:.7;}
+.card .ct{display:flex;align-items:center;justify-content:space-between;min-height:26px;}
+.card .n{font-weight:800;font-size:24px;color:var(--sage-dk);line-height:1;letter-spacing:-.02em;}
+.card .dt{font-weight:800;font-size:12px;letter-spacing:.1em;color:var(--gilt);}
+.card.bydate .dt{font-size:15px;color:var(--sage-dk);}
+.card .tt{font-weight:800;color:var(--ink);font-size:16.5px;line-height:1.25;letter-spacing:-.01em;margin-top:2px;}
+.card .pr{color:var(--muted);font-size:13.5px;}
+.card .acts{display:flex;gap:8px;margin-top:10px;}
+.card .go,.card .pdf{font-weight:800;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;padding:9px 16px;border-radius:20px;text-decoration:none;}
+.card .go{color:var(--cream);background:var(--olive);} .card .pdf{color:var(--olive-dk);border:1.5px solid var(--gilt-lt);}
+.card .soon{font-weight:800;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:10px;}
+.empty{background:var(--card);border:1px dashed var(--cream-dp);border-radius:14px;padding:26px;text-align:center;color:var(--muted);}
+.cta{position:relative;overflow:hidden;border-radius:16px;margin:30px 0 8px;background:linear-gradient(150deg,#5b5c2a,#43441f);color:var(--cream);display:grid;grid-template-columns:minmax(0,290px) minmax(0,1fr);}
+.cta .ph{width:100%;height:100%;min-height:330px;object-fit:cover;object-position:center 22%;display:block;opacity:.95;}
+.cta .in{padding:26px 26px 28px;align-self:center;}
+.cta .in .k{color:#ddd6bf;margin-bottom:6px;font-size:14.5px;}
+.cta .in h3{font-weight:800;font-size:22px;letter-spacing:-.015em;color:var(--cream);margin:0 0 14px;}
+.cta ul{list-style:none;padding:0;margin:0 0 18px;}
+.cta li{position:relative;padding:0 0 10px 24px;font-size:14.5px;color:#f1ecdc;line-height:1.45;}
+.cta li::before{content:"\03A8";color:var(--gilt-lt);position:absolute;left:0;font-weight:800;}
+.cta a.go{display:block;text-align:center;background:var(--cream);color:var(--olive-dk);font-weight:800;font-size:14.5px;text-decoration:none;padding:14px;border-radius:28px;}
+@media(max-width:720px){.cta{grid-template-columns:1fr;} .cta .ph{min-height:230px;height:230px;}}
+.foot{text-align:center;color:var(--muted);font-size:12.5px;margin-top:38px;padding-top:20px;border-top:1px solid var(--cream-dp);}
+.foot .foot-logo{height:30px;width:auto;display:inline-block;margin-bottom:8px;}
+.contato{margin-top:14px;font-size:12.5px;color:var(--muted);line-height:1.7;}
+.contato a{color:var(--gilt);text-decoration:none;} .contato .cnpj{font-size:11.5px;opacity:.85;}
+
+.mhero{padding:36px 0 4px;}
+.mhero .kick{font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:11.5px;color:var(--gilt);margin:0 0 12px;}
+.mhero h1{font-weight:800;font-size:42px;line-height:1.04;letter-spacing:-.022em;color:var(--ink);margin:0 0 10px;}
+.mhero .sub{font-weight:700;font-size:19px;color:var(--sage-dk);line-height:1.3;margin:0 0 12px;letter-spacing:-.01em;}
+.mhero .meta{font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);}
+.mhero .tema{margin:18px 0 0;padding-left:18px;border-left:4px solid var(--cream-dp);color:var(--muted);font-size:16.5px;}
+.usar{background:var(--cream-dp);border-radius:12px;padding:16px 18px;margin:24px 0 14px;font-size:14.5px;color:var(--muted);line-height:1.55;}
+.usar b{display:block;font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--olive-dk);margin-bottom:6px;}
+.pdfbtn{display:inline-block;font-weight:800;font-size:13px;letter-spacing:.02em;color:var(--cream);background:var(--olive);padding:13px 24px;border-radius:26px;text-decoration:none;}
+.ess{background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:20px 22px;margin:26px 0;}
+.ess .et{font-weight:800;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gilt);margin-bottom:12px;}
+.ess ul{list-style:none;padding:0;margin:0;}
+.ess li{position:relative;padding:0 0 12px 26px;font-size:15.8px;line-height:1.5;}
+.ess li:last-child{padding-bottom:0;}
+.ess li::before{content:"\03A8";position:absolute;left:0;top:0;color:var(--gilt-lt);font-weight:800;}
+details.sec{border-bottom:1px solid var(--cream-dp);}
+details.sec[open]{padding-bottom:16px;}
+details.sec summary{list-style:none;cursor:pointer;padding:18px 0;display:flex;align-items:baseline;gap:12px;}
+details.sec summary::-webkit-details-marker{display:none;}
+details.sec summary h2{font-weight:800;font-size:21px;letter-spacing:-.015em;color:var(--ink);margin:0;line-height:1.2;flex:1;}
+details.sec summary .arw{color:var(--gilt);font-weight:800;font-size:13px;transition:transform .2s;}
+details.sec[open] summary .arw{transform:rotate(90deg);}
+details.sec .lead{color:var(--sage-dk);font-weight:500;margin:0 0 14px;font-size:16px;}
+details.sec p{font-size:16.5px;}
+ul.key{list-style:none;padding:0;margin:12px 0;}
+ul.key li{position:relative;padding:0 0 11px 26px;font-size:16px;line-height:1.5;}
+ul.key li::before{content:"\03A8";position:absolute;left:0;top:0;color:var(--gilt);font-weight:800;}
+.dial{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0;}
+@media(max-width:620px){.dial{grid-template-columns:1fr;}}
+.dial .d{background:var(--card);border:1px solid var(--cream-dp);border-top:3px solid var(--sage);border-radius:12px;padding:14px 16px;}
+.dial .dt{font-weight:800;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--olive-dk);margin-bottom:7px;}
+.dial p{margin:0;font-size:14.5px;color:var(--muted);line-height:1.45;}
+.obs{background:var(--cream-dp);border-radius:12px;padding:16px 18px;margin:18px 0;}
+.obs h4{font-weight:800;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--olive-dk);margin:0 0 7px;}
+.obs p{margin:0;font-size:15.5px;}
+.callout{background:var(--card);border-left:4px solid var(--gilt-lt);border-radius:0 12px 12px 0;padding:16px 18px;margin:20px 0;font-size:15.5px;line-height:1.55;}
+.callout .co-t{font-weight:800;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--gilt);margin-bottom:7px;}
+span.ref{font-size:13.5px;color:var(--muted);}
+/* diagrama */
+figure.dg{margin:24px 0;background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:18px 16px 12px;}
+figure.dg svg{width:100%;height:auto;display:block;}
+figure.dg figcaption{margin-top:10px;font-size:13px;color:var(--muted);text-align:center;line-height:1.45;}
+.dg-t{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:10px;text-align:center;}
+/* ferramentas */
+.tools{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:32px 0 0;}
+@media(max-width:720px){.tools{grid-template-columns:1fr;}}
+.tool{background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:20px;}
+.tool .tt{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:14px;}
+.ck{display:flex;gap:11px;align-items:flex-start;padding:9px 0;font-size:15px;line-height:1.45;cursor:pointer;}
+.ck input{margin:4px 0 0;accent-color:var(--olive);width:17px;height:17px;flex:none;cursor:pointer;}
+.ck.done span{text-decoration:line-through;opacity:.5;}
+.qz{margin-bottom:18px;} .qz:last-child{margin-bottom:0;}
+.qz p{font-size:15px;margin:0 0 7px;line-height:1.45;font-weight:500;}
+.qz textarea{width:100%;min-height:66px;border:1px solid var(--cream-dp);border-radius:10px;background:var(--cream);font-family:inherit;font-size:14.5px;color:var(--ink);padding:10px 12px;resize:vertical;line-height:1.5;}
+.qz textarea:focus{outline:2px solid var(--gilt-lt);outline-offset:1px;}
+.savebar{display:flex;align-items:center;gap:12px;margin-top:16px;flex-wrap:wrap;}
+.savebar button{font-weight:800;font-size:11px;letter-spacing:.08em;text-transform:uppercase;border:1.5px solid var(--cream-dp);background:none;color:var(--olive-dk);border-radius:22px;padding:10px 18px;cursor:pointer;font-family:inherit;}
+.savebar button:hover{border-color:var(--gilt-lt);color:var(--gilt);}
+.saved{font-weight:800;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--sage-dk);opacity:0;transition:opacity .3s;}
+.saved.on{opacity:1;}
+.refs h2,.nmet h2{font-weight:800;font-size:21px;letter-spacing:-.015em;color:var(--ink);margin:34px 0 10px;}
+.refs ol{padding-left:20px;font-size:13.8px;color:var(--muted);line-height:1.6;}
+.refs li{margin-bottom:9px;}
+.nmet{background:var(--card);border-left:4px solid var(--gilt-lt);border-radius:0 12px 12px 0;padding:16px 20px;margin:26px 0 0;font-size:14px;color:var(--muted);line-height:1.6;}
+.nmet b{display:block;font-weight:800;font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--olive-dk);margin-bottom:7px;}
+.side .idx a{font-size:13.5px;font-weight:500;padding:7px 12px;line-height:1.3;}
+
+/* gabarito expansível */
+.qz .gab{margin-top:8px;border-top:1px solid #E9E3CE;padding-top:8px;}
+.qz .gab summary{cursor:pointer;list-style:none;font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#A8894F;}
+.qz .gab summary::-webkit-details-marker{display:none;}
+.qz .gab summary::before{content:'+ ';font-weight:800;}
+.qz .gab[open] summary::before{content:'\2212 ';}
+.qz .gab-in{margin-top:8px;background:#F8F3E6;border-left:2px solid #C3A468;border-radius:0 6px 6px 0;padding:10px 12px;font-size:.94rem;line-height:1.55;color:#403F32;}
+.qz .gab-in p{margin:0 0 6px;}.qz .gab-in p:last-child{margin:0;}
+
+/* gabarito expansível */
+.qz .gab{margin-top:8px;border-top:1px solid #E9E3CE;padding-top:8px;}
+.qz .gab summary{cursor:pointer;list-style:none;font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#A8894F;}
+.qz .gab summary::-webkit-details-marker{display:none;}
+.qz .gab summary::before{content:'+ ';font-weight:800;}
+.qz .gab[open] summary::before{content:'\2212 ';}
+.qz .gab-in{margin-top:8px;background:#F8F3E6;border-left:2px solid #C3A468;border-radius:0 6px 6px 0;padding:10px 12px;font-size:.94rem;line-height:1.55;color:#403F32;}
+.qz .gab-in p{margin:0 0 6px;}.qz .gab-in p:last-child{margin:0;}
+</style></head><body><div class='topbar'><div class='in'><a href='/'><img alt='Lógica Psicológica' src='/assets/logo.png'></a><a class='backlink' href='/dependencias-tecnologicas/' title='Voltar para Encontros'>&#8592; Voltar</a><div class='sp'></div><div class='tag'>Jornada da Leitura</div></div></div><div class='shell'><aside class='side' id='side'><a class='brand' href='/'><img alt='Lógica Psicológica' src='/assets/logo-creme.png'></a><div class='nav'><div class='st first'>Navegação</div><a class='home' href='/dependencias-tecnologicas/'>&#8592; Encontros</a><a class='navlink' href='/'>Início do portal</a><div class='st'>Neste material</div><div class='idx'><a href='#s0'>Critério A: os nove sinais</a><a href='#s1'>Tolerância: o gráfico da dopamina</a><a href='#s2'>O ciclo que mantém o jogo</a><a href='#s3'>Critério B, gravidade e curso</a><a href='#s4'>Dois perfis e o risco</a><a href='#s5'>Quem adoece e quando</a><a href='#s6'>Aspectos controversos</a><a href='#s7'>Lendo em processos</a></div></div><div class='sig'><img alt='Prof. Júlio Gonçalves' src='/assets/julio.jpg'><div class='who'>Prof. Júlio Gonçalves<span>MSc · CRP 12/17614</span></div></div><a class='sub' href='https://psicojulio.com/comunidade-logica-psicologica/' target='_blank' rel='noopener'>Inscreva-se</a></aside><main class='main'><div class='mhero'><div class='kick'>Resumo de aula · Jornada da Leitura</div><h1>Crit&eacute;rios diagn&oacute;sticos do transtorno do jogo: os nove sinais, o ciclo e o que especificar</h1><div class='sub'>Vídeo 6</div><div class='meta'>Prof. Júlio Gonçalves · Disciplina Avaliação e tratamento das dependências tecnológicas · Vídeo 6</div><p class='tema'>Os nove critérios do DSM-5-TR e a regra dos quatro em doze meses, o ciclo que mantém o jogo, gravidade e curso, dois perfis de jogador, quem adoece e quando, e o que ainda está em disputa no diagnóstico.</p></div><div class='obs' style='margin-bottom:18px'><h4>Sobre este material</h4><p>Material de estudo <strong>dirigido a psicólogos</strong>, escrito a partir dos slides do sexto vídeo da disciplina, sobre os critérios diagnósticos do transtorno do jogo no DSM-5-TR. Não havia transcrição.</p><p>Os slides mostram os critérios 3 a 9 por extenso; os critérios 1 e 2 foram completados a partir do manual. Duas moderações e um aviso sobre fontes estão sinalizados no texto e na nota de método.</p></div><div class='usar'><b>Como usar</b>Abra as seções que quiser ler, marque o que pretende aplicar e responda o que fizer sentido. Tudo fica salvo neste aparelho — ninguém mais vê.</div><a class='pdfbtn' href='resumo.pdf'>&#8681; Baixar em PDF</a><div class='ess'><div class='et'>O essencial</div><ul><li><strong>Quatro de nove, em doze meses, com sofrimento ou prejuízo.</strong> Essa é a regra do critério A. O critério B exclui o que o episódio maníaco explica melhor.</li><li><strong>Os nove se agrupam em quatro famílias.</strong> Tolerância e abstinência; controle, preocupação e função; chasing e mentira; dano e resgate financeiro. Ajuda a lembrar e a perguntar.</li><li><strong>Os mais frequentes são preocupação e chasing; os menos frequentes marcam a forma grave.</strong> Perder relação ou emprego e depender de outros para pagar dívidas aparecem mais nos casos de 8 ou 9 critérios.</li><li><strong>Contar critérios dá a gravidade; o calendário dá o curso.</strong> Leve, moderada, grave. Episódico ou persistente. Remissão inicial de 3 a 12 meses; sustentada a partir de 12.</li><li><strong>O ciclo é o que se trata.</strong> Precipitante, cognição permissiva, comportamento, reforço, consequência, emoção negativa, que vira o próximo precipitante.</li><li><strong>Dois jogadores, duas funções.</strong> O deprimido joga para não sentir; o ansioso e impulsivo joga para sentir. A pergunta pelo risco de suicídio é obrigatória nos dois.</li></ul></div><details class='sec' id='s0' open><summary><h2>Critério A: os nove sinais</h2><span class='arw'>&#9656;</span></summary>
+<figure class='dg'><div class='dg-t'>Nove critérios, quatro famílias</div>
+<svg viewBox='0 0 720 250' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Os nove critérios do DSM-5-TR para transtorno do jogo agrupados em quatro famílias: dependência, controle e função, caça e ocultação, dano'>
+<rect x='0' y='6' width='172' height='170' rx='10' fill='#f1ece0' stroke='#9ca575' stroke-width='1.3'/>
+<text x='12' y='30' font-family="Plus Jakarta Sans,sans-serif" font-size='10' font-weight='800' letter-spacing='1.2' fill='#a8894f'>PARECE SUBST&Acirc;NCIA</text>
+<text x='12' y='58' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#2f2e24'><tspan font-weight='800'>1</tspan> tolerância: precisa</text>
+<text x='12' y='73' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#2f2e24'>apostar mais para sentir</text>
+<text x='12' y='88' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#2f2e24'>a mesma excitação</text>
+<text x='12' y='114' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#2f2e24'><tspan font-weight='800'>2</tspan> abstinência: inquieto</text>
+<text x='12' y='129' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#2f2e24'>ou irritado ao tentar</text>
+<text x='12' y='144' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#2f2e24'>reduzir ou parar</text>
+<rect x='182' y='6' width='172' height='170' rx='10' fill='#f1ece0' stroke='#9ca575' stroke-width='1.3'/>
+<text x='194' y='30' font-family="Plus Jakarta Sans,sans-serif" font-size='10' font-weight='800' letter-spacing='1.2' fill='#a8894f'>CONTROLE E FUN&Ccedil;&Atilde;O</text>
+<text x='194' y='58' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#2f2e24'><tspan font-weight='800'>3</tspan> esforços repetidos e</text>
+<text x='194' y='73' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#2f2e24'>malsucedidos de controlar</text>
+<text x='194' y='99' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#2f2e24'><tspan font-weight='800'>4</tspan> preocupação frequente</text>
+<text x='194' y='114' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#2f2e24'>com o jogo</text>
+<text x='194' y='140' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#2f2e24'><tspan font-weight='800'>5</tspan> joga quando se sente</text>
+<text x='194' y='155' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#2f2e24'>angustiado</text>
+<rect x='364' y='6' width='172' height='170' rx='10' fill='#fffdf7' stroke='#a05a3c' stroke-width='1.4'/>
+<text x='376' y='30' font-family="Plus Jakarta Sans,sans-serif" font-size='10' font-weight='800' letter-spacing='1.2' fill='#a05a3c'>CA&Ccedil;A E OCULTA&Ccedil;&Atilde;O</text>
+<text x='376' y='58' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#2f2e24'><tspan font-weight='800'>6</tspan> depois de perder, volta</text>
+<text x='376' y='73' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#2f2e24'>outro dia para ficar quite</text>
+<text x='376' y='88' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#2f2e24'>(chasing)</text>
+<text x='376' y='114' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#2f2e24'><tspan font-weight='800'>7</tspan> mente para esconder</text>
+<text x='376' y='129' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#2f2e24'>a extensão do</text>
+<text x='376' y='144' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#2f2e24'>envolvimento</text>
+<rect x='546' y='6' width='174' height='170' rx='10' fill='#f1ece0' stroke='#9ca575' stroke-width='1.3'/>
+<text x='558' y='30' font-family="Plus Jakarta Sans,sans-serif" font-size='10' font-weight='800' letter-spacing='1.2' fill='#a8894f'>DANO</text>
+<text x='558' y='58' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#2f2e24'><tspan font-weight='800'>8</tspan> prejudicou ou perdeu</text>
+<text x='558' y='73' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#2f2e24'>relação, emprego ou</text>
+<text x='558' y='88' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#2f2e24'>oportunidade</text>
+<text x='558' y='114' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#2f2e24'><tspan font-weight='800'>9</tspan> depende de outros para</text>
+<text x='558' y='129' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#2f2e24'>saldar dívidas</text>
+<text x='558' y='144' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#2f2e24'>desesperadoras do jogo</text>
+<rect x='120' y='194' width='480' height='48' rx='10' fill='#43441f'/>
+<text x='360' y='214' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='12' font-weight='800' fill='#f0ede0'>4 ou mais, em 12 meses, com sofrimento ou prejuízo</text>
+<text x='360' y='232' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' fill='#9ca575'>e não explicado por episódio maníaco (critério B)</text>
+</svg>
+<figcaption>Os critérios 1 e 2 são os que aproximam o jogo das substâncias; 6 e 7 são os mais frequentes; 8 e 9 são os menos frequentes e marcam a forma grave.</figcaption></figure>
+<p>O DSM-5-TR define o transtorno do jogo como <strong>comportamento de jogo problemático persistente e recorrente</strong>, que leva a sofrimento ou comprometimento clinicamente significativo, indicado pela presença de <strong>quatro ou mais</strong> dos nove critérios num período de <strong>doze meses</strong>. Os slides mostram os critérios 3 a 9 por extenso; os dois primeiros estão completados aqui a partir do manual, porque sem eles a lista não fecha.</p>
+<ul class='key'><li><b>1. Tolerância</b>: necessidade de apostar quantias crescentes de dinheiro para alcançar a excitação desejada.</li><li><b>2. Abstinência</b>: inquietação ou irritabilidade quando tenta reduzir ou parar de jogar.</li><li><b>3.</b> Fez esforços repetidos e <b>malsucedidos</b> no sentido de controlar, reduzir ou interromper.</li><li><b>4.</b> <b>Preocupação</b> frequente com o jogo: reviver experiências passadas, planejar a próxima, pensar em como conseguir dinheiro.</li><li><b>5.</b> Frequentemente joga quando se sente <b>angustiado</b> (impotência, culpa, ansiedade, depressão).</li><li><b>6.</b> Após perder dinheiro, frequentemente volta outro dia <b>para ficar quite</b>. É o chasing do vídeo 5.</li><li><b>7.</b> <b>Mente</b> para esconder a extensão do seu envolvimento com o jogo.</li><li><b>8.</b> Prejudicou ou <b>perdeu um relacionamento significativo</b>, o emprego ou uma oportunidade educacional ou profissional em razão do jogo.</li><li><b>9.</b> <b>Depende de outras pessoas</b> para obter dinheiro a fim de saldar situações financeiras desesperadoras causadas pelo jogo.</li></ul>
+<h3>As quatro famílias</h3>
+<p>Vale ler os nove em quatro grupos, porque é assim que eles se perguntam. Os critérios 1 e 2 são os que <strong>aproximam o jogo das substâncias</strong>: tolerância e abstinência, sem droga nenhuma. Foi por causa deles que o DSM-5 tirou o jogo patológico do capítulo de controle dos impulsos e o colocou junto das dependências. Os critérios 3, 4 e 5 descrevem <strong>controle e função</strong>: a pessoa não consegue parar, pensa no jogo o tempo todo e joga para regular o que sente. Os critérios 6 e 7 são a <strong>caça e a ocultação</strong>, o par que mais aparece na prática. E os critérios 8 e 9 são o <strong>dano</strong>, os menos frequentes e os que marcam a forma grave.</p>
+<div class='obs'><h4>O que o slide comenta sobre o critério 5</h4><p>O slide observa que os estudos apontam relação estreita entre disfunção executiva e certos perfis de personalidade e o transtorno do jogo, o que abre espaço para investigar níveis de suscetibilidade. Na prática, é o aviso de que jogar quando angustiado não é só um sintoma a contar: é uma pista sobre quanto a pessoa dispõe de outras formas de regulação. As duas citações do slide (Moreira, 2004; Dash, 2019) não puderam ser conferidas e por isso não estão nas referências.</p></div>
+</details><details class='sec' id='s1'><summary><h2>Tolerância: o gráfico da dopamina</h2><span class='arw'>&#9656;</span></summary>
+<p>Para explicar o critério 1, o vídeo usa um esquema de <strong>taxa dopaminérgica basal</strong> diante de estímulos naturais. A cada ciclo de estímulo (1, 2, 3, 4), o pico sobe mais alto e a linha de base desce mais fundo. A leitura é a da tolerância: precisa de mais para sentir o mesmo, e entre um pico e outro a pessoa fica abaixo de onde estava antes de começar. O slide liga isso diretamente ao humor: em adolescentes, problemas externalizantes (comportamento antissocial, controle da raiva) e internalizantes (sofrimento emocional, baixa autoestima); em adultos, mais sintomas depressivos e ansiosos.</p>
+<div class='obs'><h4>Uma moderação</h4><p>O gráfico é um esquema didático, e vale apresentá-lo como tal. Para substâncias, a regulação para baixo dos receptores dopaminérgicos com uso repetido está bem documentada. Para o jogo, o que existe é evidência de alteração na resposta do sistema de recompensa, com achados que vão em mais de uma direção, e não uma curva tão limpa quanto a do slide. O que a clínica sustenta sem dúvida é o fenômeno comportamental: aumento progressivo das quantias apostadas e mal-estar quando reduz. É por ele que o critério se preenche, e não pelo mecanismo.</p></div>
+</details><details class='sec' id='s2'><summary><h2>O ciclo que mantém o jogo</h2><span class='arw'>&#9656;</span></summary>
+<figure class='dg'><div class='dg-t'>O ciclo sucessivo de feedback</div>
+<svg viewBox='0 0 720 236' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Seis etapas em ciclo: precipitantes, cognições, comportamento, reforço, consequência, emoções negativas reativas, que voltam aos precipitantes'>
+<defs><marker id='cf' markerWidth='8' markerHeight='8' refX='6' refY='4' orient='auto'><path d='M0,0 L8,4 L0,8 z' fill='#8d876f'/></marker></defs>
+<rect x='0' y='10' width='150' height='92' rx='10' fill='#f1ece0' stroke='#9ca575' stroke-width='1.2'/>
+<text x='12' y='32' font-family="Plus Jakarta Sans,sans-serif" font-size='11' font-weight='800' fill='#2f2e24'>Precipitantes</text>
+<text x='12' y='52' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' fill='#6c6a55'>tédio, estresse,</text>
+<text x='12' y='67' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' fill='#6c6a55'>briga familiar</text>
+<path d='M154 56 L178 56' stroke='#8d876f' stroke-width='2' marker-end='url(#cf)'/>
+<rect x='182' y='10' width='170' height='92' rx='10' fill='#f1ece0' stroke='#9ca575' stroke-width='1.2'/>
+<text x='194' y='32' font-family="Plus Jakarta Sans,sans-serif" font-size='11' font-weight='800' fill='#2f2e24'>Cognições</text>
+<text x='194' y='52' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' fill='#6c6a55'>"só vou jogar 10 min",</text>
+<text x='194' y='67' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' fill='#6c6a55'>"preciso checar o que</text>
+<text x='194' y='82' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' fill='#6c6a55'>estão dizendo"</text>
+<path d='M356 56 L380 56' stroke='#8d876f' stroke-width='2' marker-end='url(#cf)'/>
+<rect x='384' y='10' width='150' height='92' rx='10' fill='#43441f'/>
+<text x='396' y='32' font-family="Plus Jakarta Sans,sans-serif" font-size='11' font-weight='800' fill='#f0ede0'>Comportamento</text>
+<text x='396' y='52' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' fill='#9ca575'>horas de jogo,</text>
+<text x='396' y='67' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' fill='#9ca575'>apostas, verificação</text>
+<path d='M538 56 L562 56' stroke='#8d876f' stroke-width='2' marker-end='url(#cf)'/>
+<rect x='566' y='10' width='154' height='92' rx='10' fill='#f1ece0' stroke='#9ca575' stroke-width='1.2'/>
+<text x='578' y='32' font-family="Plus Jakarta Sans,sans-serif" font-size='11' font-weight='800' fill='#2f2e24'>Reforço</text>
+<text x='578' y='52' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' fill='#6c6a55'>prazer ou alívio:</text>
+<text x='578' y='67' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' fill='#6c6a55'>sensação de controle,</text>
+<text x='578' y='82' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' fill='#6c6a55'>distração dos problemas</text>
+<path d='M643 106 L643 130' stroke='#8d876f' stroke-width='2' marker-end='url(#cf)'/>
+<rect x='566' y='134' width='154' height='92' rx='10' fill='#fffdf7' stroke='#a05a3c' stroke-width='1.3'/>
+<text x='578' y='156' font-family="Plus Jakarta Sans,sans-serif" font-size='11' font-weight='800' fill='#2f2e24'>Consequência</text>
+<text x='578' y='176' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' fill='#6c6a55'>culpa, perda de tempo,</text>
+<text x='578' y='191' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' fill='#6c6a55'>insônia, isolamento</text>
+<path d='M562 180 L538 180' stroke='#8d876f' stroke-width='2' marker-end='url(#cf)'/>
+<rect x='364' y='134' width='170' height='92' rx='10' fill='#fffdf7' stroke='#a05a3c' stroke-width='1.3'/>
+<text x='376' y='156' font-family="Plus Jakarta Sans,sans-serif" font-size='11' font-weight='800' fill='#2f2e24'>Emoções negativas</text>
+<text x='376' y='176' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' fill='#6c6a55'>reativas: tristeza,</text>
+<text x='376' y='191' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' fill='#6c6a55'>frustração, vergonha</text>
+<path d='M360 180 L200 180 L200 130 L75 130 L75 108' fill='none' stroke='#8d876f' stroke-width='2' stroke-dasharray='5 4' marker-end='url(#cf)'/>
+<text x='215' y='170' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' font-style='italic' fill='#8d876f'>viram o próximo precipitante</text>
+</svg>
+<figcaption>O ciclo dos slides, redesenhado. As emoções da última etapa são o material da primeira: a vergonha de ontem é o precipitante de hoje.</figcaption></figure>
+<p>O slide seguinte desenha o <strong>ciclo sucessivo de feedback</strong>, e é a peça mais útil do vídeo para quem vai tratar. Seis etapas: <strong>precipitantes</strong> (tédio, estresse, briga familiar); <strong>cognições</strong> permissivas ("só vou jogar dez minutos", "preciso checar o que estão dizendo"); o <strong>comportamento</strong> (horas de jogo, apostas, verificação); o <strong>reforço</strong>, prazer ou alívio, com sensação de controle e distração dos problemas; as <strong>consequências</strong> (culpa, perda de tempo, insônia, isolamento); e as <strong>emoções negativas reativas</strong> (tristeza, frustração, vergonha), que fecham o ciclo virando o próximo precipitante.</p>
+<p>O texto do slide acrescenta o que sustenta o ciclo: as <strong>estratégias compensatórias</strong> baseadas na crença "não posso perder, senão terei falhado" ou "não posso demonstrar que dependo disso". A manutenção do ciclo gera consequências punitivas, e em adolescentes o risco de insucesso acadêmico, reprovação ou abandono escolar, problemas psicossociais e de sono é maior.</p>
+<div class='callout note'><div class='co-t'>Onde entrar</div>Cada etapa é um ponto de entrada possível, e a escolha depende do paciente. A cognição permissiva é a entrada mais rápida (pegar o "só dez minutos" no ato). O reforço é a entrada mais durável (encontrar outra fonte de controle e de distração, ou tratar o problema do qual ele se distrai). A emoção reativa é a entrada que evita a recaída (o que fazer com a vergonha de ontem para que ela não vire a aposta de hoje). O erro comum é tratar só o comportamento, que é a única etapa que o ciclo repõe sozinho.</div>
+</details><details class='sec' id='s3'><summary><h2>Critério B, gravidade e curso</h2><span class='arw'>&#9656;</span></summary>
+<figure class='dg'><div class='dg-t'>Gravidade e curso: o que especificar</div>
+<svg viewBox='0 0 720 214' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Três faixas de gravidade por número de critérios e quatro especificadores de curso'>
+<rect x='0' y='8' width='226' height='78' rx='9' fill='#f1ece0' stroke='#9ca575' stroke-width='1.2'/>
+<text x='12' y='30' font-family="Plus Jakarta Sans,sans-serif" font-size='11' font-weight='800' fill='#2f2e24'>Leve · 4 ou 5 critérios</text>
+<text x='12' y='50' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' fill='#6c6a55'>em geral preocupação com o</text>
+<text x='12' y='65' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' fill='#6c6a55'>jogo e tentar recuperar perdas</text>
+<rect x='247' y='8' width='226' height='78' rx='9' fill='#f1ece0' stroke='#9ca575' stroke-width='1.2'/>
+<text x='259' y='30' font-family="Plus Jakarta Sans,sans-serif" font-size='11' font-weight='800' fill='#2f2e24'>Moderada · 6 ou 7 critérios</text>
+<rect x='494' y='8' width='226' height='78' rx='9' fill='#fffdf7' stroke='#a05a3c' stroke-width='1.4'/>
+<text x='506' y='30' font-family="Plus Jakarta Sans,sans-serif" font-size='11' font-weight='800' fill='#2f2e24'>Grave · 8 ou 9 critérios</text>
+<text x='506' y='50' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' fill='#6c6a55'>perder relações ou oportunidades</text>
+<text x='506' y='65' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' fill='#6c6a55'>e depender de outros para pagar</text>
+<line x1='0' y1='104' x2='720' y2='104' stroke='#d9d3c1' stroke-width='1'/>
+<text x='0' y='126' font-family="Plus Jakarta Sans,sans-serif" font-size='10' font-weight='800' letter-spacing='1.2' fill='#a8894f'>CURSO</text>
+<text x='0' y='148' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#2f2e24'><tspan font-weight='800'>Episódico</tspan>: preencheu os critérios mais de uma vez, com os sintomas cedendo por vários meses entre os períodos.</text>
+<text x='0' y='168' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#2f2e24'><tspan font-weight='800'>Persistente</tspan>: sintomas contínuos, preenchendo os critérios por vários anos.</text>
+<text x='0' y='188' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#2f2e24'><tspan font-weight='800'>Remissão inicial</tspan>: nenhum critério preenchido por 3 meses ou mais, e menos de 12.</text>
+<text x='0' y='208' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#2f2e24'><tspan font-weight='800'>Remissão sustentada</tspan>: nenhum critério preenchido por 12 meses ou mais.</text>
+</svg>
+<figcaption>A contagem de critérios dá a gravidade; o calendário dá o curso. Os dois entram no diagnóstico.</figcaption></figure>
+<p>O <strong>critério B</strong> é uma exclusão: o comportamento de jogo não é mais bem explicado por um episódio maníaco. Em mania, apostar entra num quadro de expansividade, impulsividade e gasto excessivo que se resolve com o episódio; não é transtorno do jogo. Vale perguntar por outros sinais de mania sempre que o jogo aparece em surtos.</p>
+<h3>Gravidade, pela contagem</h3>
+<p><strong>Leve</strong>, com 4 ou 5 critérios: os preenchidos com maior frequência costumam ser a preocupação com o jogo e a tentativa de recuperar as perdas. <strong>Moderada</strong>, com 6 ou 7. <strong>Grave</strong>, com 8 ou 9: colocar em risco relacionamentos ou oportunidades profissionais e depender de outros para cobrir as perdas são os critérios menos frequentes e aparecem mais entre pessoas com a forma mais grave.</p>
+<h3>Curso, pelo calendário</h3>
+<p>O slide usa um calendário de doze meses para mostrar os quatro especificadores. <strong>Episódico</strong>: satisfaz os critérios mais de uma vez, com os sintomas cedendo entre os períodos por no mínimo vários meses. <strong>Persistente</strong>: sintomas contínuos, satisfazendo os critérios por vários anos. <strong>Em remissão inicial</strong>: depois do diagnóstico, nenhum critério preenchido por pelo menos 3 meses e menos de 12. <strong>Em remissão sustentada</strong>: nenhum critério preenchido por 12 meses ou mais.</p>
+<div class='obs'><h4>Por que registrar o curso</h4><p>O especificador de remissão obriga a acompanhar o paciente com a lista na mão, mês a mês, e não só pela sensação de melhora. E o episódico avisa: um período bom de vários meses não é alta. É intervalo.</p></div>
+</details><details class='sec' id='s4'><summary><h2>Dois perfis de jogador, e o risco que não se pergunta sozinho</h2><span class='arw'>&#9656;</span></summary>
+<p>O vídeo descreve dois perfis, que o DSM-5-TR traz na seção de características associadas e que a literatura de caminhos para o jogo problemático também reconhece.</p>
+<ul class='key'><li><b>Deprimidos</b>: indivíduos deprimidos e solitários, que podem jogar quando se sentem impotentes, culpados ou deprimidos. Jogam <strong>para não sentir</strong>.</li><li><b>Ansiosos</b>: indivíduos impulsivos, competitivos, cheios de energia, inquietos, que se entediam com facilidade; podem se mostrar preocupados com a aprovação dos outros e generosos a ponto da extravagância quando ganham. Jogam <strong>para sentir</strong>.</li></ul>
+<p>A distinção importa porque a função é oposta, e o tratamento que serve a um não serve ao outro: o primeiro precisa de outra forma de regular o afeto negativo; o segundo, de outra fonte de estimulação e de um freio.</p>
+<h3>O dado que obriga a perguntar</h3>
+<p>O slide traz o número do manual: <strong>até metade</strong> das pessoas em tratamento para transtorno do jogo tem ideação suicida, e cerca de <strong>17%</strong> tentaram suicídio. É uma taxa alta o suficiente para tornar a avaliação de risco parte obrigatória da primeira entrevista de qualquer paciente com jogo problemático, e para repeti-la nos momentos de perda grande, de descoberta pela família e de dívida que estoura. Não é um item para quando o paciente trouxer.</p>
+</details><details class='sec' id='s5'><summary><h2>Quem adoece, quando, e em que contexto</h2><span class='arw'>&#9656;</span></summary>
+<h3>O curso ao longo da vida</h3>
+<p>O gráfico do slide mostra o investimento em jogo (tempo, dinheiro) por faixa etária, para homens e mulheres, com pico entre os 26 e os 35 anos e queda depois. As anotações resumem o que muda em cada fase:</p>
+<ul class='key'><li><b>Início precoce</b> (até os 15): baixa competência social, desregulação emocional, não participa de esportes, joga para regular emoções. Taxas mais elevadas entre crianças e adolescentes, forte base genética. Podem melhorar, mas com maior tendência à recaída.</li><li><b>Fase de pico</b>: um ou dois jogos concentram o problema; fica intenso em fases estressantes. Progressão lenta, com aumento gradual dos investimentos; mulheres têm um leve pico de progressão a mais que homens.</li><li><b>Início tardio</b>: comum em mulheres, com curso mais curto. Mulheres buscam tratamento com mais frequência que homens jovens. Transtorno depressivo maior, bipolar e ansiedade são mais comuns entre mulheres; personalidade antissocial e uso de substâncias, entre homens.</li></ul>
+<div class='callout note'><div class='co-t'>Um aviso sobre as fontes desse gráfico</div>As anotações do slide misturam duas literaturas: a do transtorno do jogo, que é o tema do vídeo, e a do transtorno de jogos pela internet (as horas médias por dia e a menção a gêneros de jogo vêm da segunda). As fontes citadas no slide (APA, 2013; Wichstrøm et al., 2016; Rehbein et al., 2019) não puderam ser conferidas neste material e por isso não estão nas referências. O desenho geral do curso, com pico no adulto jovem, início precoce mais grave e início tardio feminino, coincide com o que o DSM-5-TR descreve.</div>
+<h3>Cultura e gênero</h3>
+<p>A tabela do slide reproduz a seção de questões diagnósticas do manual. Há atividades de jogo <strong>específicas de certas culturas</strong> (dominós, rinhas de galo, corridas de cavalo); nos Estados Unidos, as taxas de prevalência são mais altas entre afro-americanos do que entre americanos de origem europeia, semelhantes entre hispano-americanos, e altas em populações indígenas. Homens desenvolvem o transtorno em taxas mais elevadas e tendem a apostar em cartas, esportes e corridas; mulheres tendem a preferir caça-níqueis e bingo. Jogos via internet ou videogame são mais comuns em RPG, tiros, simulação e habilidades cognitivas (aqui, de novo, o slide cruza para o transtorno de jogos).</p>
+<p>Para a clínica brasileira, a lição da tabela não são os números norte-americanos, e sim a pergunta: <strong>qual é o jogo</strong> deste paciente, em qual contexto cultural ele acontece, e o que é normativo ali. A resposta muda a avaliação e muda o que se pode pedir que ele deixe.</p>
+<h3>Consequências funcionais</h3>
+<p>Colocar em risco ou perder relacionamentos importantes; problemas gerados por mentiras e empréstimos; impacto no emprego ou nos estudos, por absenteísmo ou baixo desempenho; saúde geral debilitada, com uso elevado de serviços médicos. Em termos de comorbidades, o manual lista taquicardia e angina, transtornos por uso de substâncias, depressivos, de ansiedade e da personalidade.</p>
+</details><details class='sec' id='s6'><summary><h2>Aspectos controversos no diagnóstico</h2><span class='arw'>&#9656;</span></summary>
+<p>O vídeo fecha com quatro pontos em disputa, e eles servem de ponte para o resto da disciplina, porque valem mais para as dependências tecnológicas em geral do que para o jogo de azar em particular.</p>
+<ul class='key'><li><b>Generalização diagnóstica</b>: há risco de patologizar comportamentos normativos, especialmente em populações jovens com alta exposição digital.</li><li><b>Tempo versus prejuízo funcional</b>: há quem defenda que a quantidade de tempo não deve ser critério primário; o foco deve ser prejuízo e compulsividade. É a posição que o vídeo 3 já tinha adotado.</li><li><b>Diferenças culturais e contextuais</b>: o que é problemático num país pode não ser em outro. O exemplo do slide são os profissionais de e-sports, para quem horas de jogo são trabalho.</li><li><b>Outros comportamentos digitais problemáticos</b> (redes sociais, smartphones, pornografia) ainda não têm critérios formais nas classificações diagnósticas.</li></ul>
+<p>Repare que o transtorno do jogo é, dos quadros da disciplina, o mais bem estabelecido: tem critérios, especificadores, dados de curso e tratamento com evidência. Os quatro pontos acima mostram por que ele serve de modelo e, ao mesmo tempo, por que o modelo não se transfere sem cuidado para o resto.</p>
+</details><details class='sec' id='s7'><summary><h2>Lendo o vídeo em processos</h2><span class='arw'>&#9656;</span></summary>
+<p>Os critérios descrevem o produto; o ciclo descreve o processo. Para a formulação, o que o vídeo entrega é isto:</p>
+<ul class='key'><li><b>O critério 5 é a função.</b> Jogar quando angustiado diz o que o jogo faz pela pessoa, e o perfil (deprimido ou ansioso) diz em que direção: baixar afeto negativo ou levantar afeto positivo.</li><li><b>Os critérios 1 e 2 são a alça biológica</b>, e o gráfico da dopamina é o esquema dela, com a moderação feita acima.</li><li><b>O critério 6 é a alça cognitiva</b> que o vídeo 5 já tinha marcado: chasing sustentado pela ideia de sorte e azar.</li><li><b>Os critérios 7, 8 e 9 são o custo social</b>, e são também o que alimenta a vergonha que fecha o ciclo e reabre o precipitante.</li><li><b>O curso é o que se monitora</b>: episódico ou persistente muda a expectativa; remissão inicial e sustentada dão o marco para o acompanhamento.</li></ul>
+<p>Na prática: contar os critérios para diagnosticar e classificar, desenhar o ciclo para tratar, e voltar aos critérios, mês a mês, para saber se o ciclo foi mesmo interrompido.</p>
+</details><div class='tools'><div class='tool'><div class='tt'>Levar para a prática</div><label class='ck'><input type='checkbox'><span>Percorri os nove critérios com o paciente, e não só os que ele trouxe; anotei quais e quantos.</span></label><label class='ck'><input type='checkbox'><span>Confirmei o período de doze meses e o sofrimento ou prejuízo antes de fechar o diagnóstico.</span></label><label class='ck'><input type='checkbox'><span>Descartei episódio maníaco quando o jogo aparece em surtos de gasto e expansividade.</span></label><label class='ck'><input type='checkbox'><span>Classifiquei a gravidade pela contagem (leve, moderada, grave) e registrei o especificador de curso.</span></label><label class='ck'><input type='checkbox'><span>Desenhei o ciclo com o paciente: precipitante, cognição permissiva, comportamento, reforço, consequência, emoção reativa.</span></label><label class='ck'><input type='checkbox'><span>Identifiquei o perfil (joga para não sentir ou joga para sentir) e ajustei a função-alvo.</span></label><label class='ck'><input type='checkbox'><span>Avaliei risco de suicídio na primeira entrevista e nos momentos de perda grande, descoberta pela família ou dívida.</span></label><label class='ck'><input type='checkbox'><span>Perguntei qual é o jogo, em que contexto cultural, e o que é normativo ali antes de decidir o que pedir que ele deixe.</span></label><label class='ck'><input type='checkbox'><span>Acompanhei a remissão com a lista de critérios, mês a mês, em vez de pela sensação de melhora.</span></label></div><div class='tool'><div class='tt'>Para revisar — responda</div><div class='qz'><p>1. Enuncie a regra do critério A e liste os nove critérios agrupados nas quatro famílias.</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver comentário</summary><div class='gab-in'>Comportamento de jogo problemático persistente e recorrente, com sofrimento ou prejuízo clinicamente significativo, indicado por quatro ou mais critérios em doze meses. Parece substância: 1 tolerância, 2 abstinência. Controle e função: 3 esforços malsucedidos de controlar, 4 preocupação frequente, 5 joga quando angustiado. Caça e ocultação: 6 volta para ficar quite, 7 mente sobre a extensão. Dano: 8 prejudicou ou perdeu relação, emprego ou oportunidade, 9 depende de outros para saldar dívidas do jogo. Critério B: não é mais bem explicado por episódio maníaco.</div></details></div><div class='qz'><p>2. Quais critérios são os mais frequentes e quais são os menos frequentes, e o que isso diz sobre a gravidade?</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver comentário</summary><div class='gab-in'>Os mais frequentes são a preocupação com o jogo e a tentativa de recuperar as perdas, típicos da forma leve (4 ou 5 critérios). Os menos frequentes são colocar em risco relacionamentos ou oportunidades e depender de outros para cobrir as perdas, que aparecem mais na forma grave (8 ou 9). Ou seja, a gravidade não é só a contagem: os critérios de dano tendem a chegar por último.</div></details></div><div class='qz'><p>3. Descreva as seis etapas do ciclo sucessivo de feedback e explique por que a última etapa reabre a primeira.</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver comentário</summary><div class='gab-in'>Precipitantes (tédio, estresse, briga familiar); cognições permissivas ("só dez minutos", "preciso checar"); comportamento (horas de jogo, apostas, verificação); reforço (prazer ou alívio, sensação de controle, distração); consequências (culpa, perda de tempo, insônia, isolamento); emoções negativas reativas (tristeza, frustração, vergonha). A última reabre a primeira porque a vergonha e a frustração de ontem são exatamente o tipo de estado que serve de precipitante hoje; o ciclo produz o seu próprio combustível.</div></details></div><div class='qz'><p>4. Diferencie os quatro especificadores de curso (episódico, persistente, remissão inicial, remissão sustentada) pelos prazos.</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver comentário</summary><div class='gab-in'>Episódico: preencheu os critérios mais de uma vez, com os sintomas cedendo por no mínimo vários meses entre os períodos. Persistente: sintomas contínuos, preenchendo os critérios por vários anos. Remissão inicial: depois do diagnóstico, nenhum critério preenchido por pelo menos 3 meses e menos de 12. Remissão sustentada: nenhum critério preenchido por 12 meses ou mais.</div></details></div><div class='qz'><p>5. Quais são os dois perfis de jogador descritos, e como a função do jogo muda de um para o outro?</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver comentário</summary><div class='gab-in'>Deprimidos: solitários, jogam quando se sentem impotentes, culpados ou deprimidos; a função é baixar o afeto negativo, jogar para não sentir. Ansiosos: impulsivos, competitivos, cheios de energia, inquietos, entediam-se fácil, preocupados com aprovação e extravagantes quando ganham; a função é levantar o afeto positivo, jogar para sentir. Como a função é oposta, o substituto que o tratamento precisa oferecer também é.</div></details></div><div class='qz'><p>6. Pense num paciente teu com jogo problemático. Em que etapa do ciclo tu entraria primeiro, e por quê?</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver critérios</summary><div class='gab-in'>Não há resposta certa. Uma boa resposta escolhe a etapa a partir do paciente e justifica: a cognição permissiva quando o paciente já monitora bem os gatilhos e precisa de um freio no ato; o reforço quando o jogo é a única fonte de controle ou de alívio que ele tem, o que exige construir outra; a emoção reativa quando a recaída vem sempre pela vergonha do dia anterior. O erro comum é entrar pelo comportamento (reduzir horas ou valor) sem mexer no que o repõe.</div></details></div></div></div><div class='savebar'><button id='exp'>Exportar respostas</button><button id='lmp'>Limpar</button><span class='saved' id='saved'>Salvo neste aparelho</span></div><div class='refs'><h2>Referências</h2><ol><li>American Psychiatric Association. (2022). <em>Manual diagnóstico e estatístico de transtornos mentais: DSM-5-TR</em> (5. ed., texto revisado). Artmed.</li><li>Blaszczynski, A., &amp; Nower, L. (2002). A pathways model of problem and pathological gambling. <em>Addiction, 97</em>(5), 487–499.</li><li>Ladouceur, R., Sylvain, C., Boutin, C., &amp; Doucet, C. (2002). <em>Understanding and treating the pathological gambler.</em> Wiley.</li><li>Potenza, M. N., Balodis, I. M., Derevensky, J., Grant, J. E., Petry, N. M., Verdejo-Garcia, A., &amp; Yip, S. W. (2019). Gambling disorder. <em>Nature Reviews Disease Primers, 5</em>, 51.</li><li>Sharpe, L. (2002). A reformulated cognitive-behavioral model of problem gambling: A biopsychosocial perspective. <em>Clinical Psychology Review, 22</em>(1), 1–25.</li><li>World Health Organization. (2019). <em>International classification of diseases, 11th revision (ICD-11)</em>: 6C50 Gambling disorder.</li></ol></div><div class='nmet'><b>Nota de método</b>Material dirigido a psicólogos. É o sexto vídeo de uma disciplina de pós-graduação; a avaliação diagnóstica das demandas de dependência tecnológica vem no vídeo 7.<br><br><strong>Fonte.</strong> Este resumo foi escrito a partir dos <b>slides</b> do vídeo, sem transcrição da fala. Os slides apresentam os critérios 3 a 9 por extenso; os critérios 1 e 2 foram completados a partir do DSM-5-TR e estão indicados como tal. O agrupamento em quatro famílias, o quadro "onde entrar" no ciclo, a leitura dos dois perfis pela função e a seção final em processos foram desenvolvidos pelo autor do material a partir da lógica da disciplina.<br><br><strong>Duas moderações, sinalizadas no texto.</strong> Primeira: o gráfico da taxa dopaminérgica basal foi apresentado como esquema didático; a regulação para baixo dos receptores está bem documentada para substâncias, e para o jogo a evidência de alteração no sistema de recompensa existe, mas com achados em mais de uma direção. Segunda: as anotações do gráfico de curso por idade misturam a literatura do transtorno do jogo com a do transtorno de jogos pela internet (horas médias diárias, gêneros de jogo); o texto avisa onde isso ocorre.<br><br><strong>Fontes não conferidas.</strong> As citações que aparecem nos slides sem dados completos (Moreira, 2004; Dash, 2019; Wichstrøm et al., 2016; Rehbein et al., 2019) não puderam ser localizadas com segurança e ficaram fora das referências, que trazem apenas o manual e obras que sustentam o que o texto afirma. Nenhuma citação foi construída para preencher lacuna.<br><br><strong>Sobre o dado de suicídio.</strong> A taxa citada é do manual e foi mantida porque o material se dirige a profissionais; o texto a converte em conduta (avaliação de risco obrigatória e repetida), sem qualquer detalhe além da prevalência.</div><div class='cta'><img class='ph' alt='Prof. Júlio Gonçalves' src='/assets/julio.jpg'><div class='in'><div class='k'>Aprenda muito mais na</div><h3>Comunidade Lógica Psicológica</h3><ul><li>Aprofundar o raciocínio clínico com ciência, processos e análise funcional.</li><li>Estruturar uma prática ética, com pensamento crítico e evidências atualizadas.</li><li>Desenvolver o self clínico com supervisão, leituras guiadas e rede.</li></ul><a class='go' href='https://psicojulio.com/comunidade-logica-psicologica/' target='_blank' rel='noopener'>Participar da comunidade &#8594;</a></div></div><div class='foot'><img class='foot-logo' alt='Lógica Psicológica' src='/assets/logo.png'><div class='contato'><a href='mailto:contato@psicojulio.com'>contato@psicojulio.com</a> &middot; <a href='tel:+5547999338021'>(47) 99933-8021</a><br>Rua Concórdia, 703, São Vicente, Itajaí — 88309-645<br><span class='cnpj'>CNPJ 49.649.803/0001-60</span></div></div></main></div><button class='toc-fab' id='fab'>&#9776; Seções</button><div class='overlay' id='ov'></div><script>
+(function(){
+  var K='mat-Aula-DT6-';
+  document.querySelectorAll('.ck input').forEach(function(c,i){
+    var k=K+'ck'+i;
+    try{ if(localStorage.getItem(k)==='1'){c.checked=true;c.closest('.ck').classList.add('done');} }catch(e){}
+    c.addEventListener('change',function(){
+      c.closest('.ck').classList.toggle('done',c.checked);
+      try{ localStorage.setItem(k,c.checked?'1':'0'); }catch(e){} flag();
+    });
+  });
+  document.querySelectorAll('.qz textarea').forEach(function(t,i){
+    var k=K+'q'+i;
+    try{ var v=localStorage.getItem(k); if(v)t.value=v; }catch(e){}
+    t.addEventListener('input',function(){ try{ localStorage.setItem(k,t.value); }catch(e){} flag(); });
+  });
+  var s=document.getElementById('saved'),tm;
+  function flag(){ if(!s)return; s.classList.add('on'); clearTimeout(tm); tm=setTimeout(function(){s.classList.remove('on');},1600); }
+  var b=document.getElementById('exp');
+  if(b) b.addEventListener('click',function(){
+    var out='RESPOSTAS — Critérios diagnósticos do transtorno do jogo: os nove sinais, o ciclo e o que especificar\n\n';
+    document.querySelectorAll('.qz').forEach(function(q){
+      out+= q.querySelector('p').innerText+'\n'+(q.querySelector('textarea').value||'(sem resposta)')+'\n\n';
+    });
+    var a=document.createElement('a');
+    a.href=URL.createObjectURL(new Blob([out],{type:'text/plain'}));
+    a.download='Aula-DT6-respostas.txt'; a.click();
+  });
+  var l=document.getElementById('lmp');
+  if(l) l.addEventListener('click',function(){
+    if(!confirm('Apagar suas anotações deste material?'))return;
+    try{ Object.keys(localStorage).filter(function(k){return k.indexOf(K)===0;}).forEach(function(k){localStorage.removeItem(k);}); }catch(e){}
+    location.reload();
+  });
+  var f=document.getElementById('fab'),o=document.getElementById('ov'),sd=document.getElementById('side');
+  if(f)f.onclick=function(){sd.classList.toggle('open');o.classList.toggle('open');};
+  if(o)o.onclick=function(){sd.classList.remove('open');o.classList.remove('open');};
+})();
+</script></body></html>

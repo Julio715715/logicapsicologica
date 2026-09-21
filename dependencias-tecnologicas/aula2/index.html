@@ -1,0 +1,323 @@
+<!DOCTYPE html><html lang='pt-BR'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='icon' type='image/png' sizes='32x32' href='/favicon-32.png'><link rel='icon' type='image/png' sizes='192x192' href='/favicon-192.png'><link rel='apple-touch-icon' href='/apple-touch-icon.png'><link rel='icon' href='/favicon.ico' sizes='any'><link rel='preconnect' href='https://fonts.googleapis.com'><link rel='preconnect' href='https://fonts.gstatic.com' crossorigin><link href='https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500&display=swap' rel='stylesheet'><title>Como os produtos exploram o que a evolução deixou: seis ganchos do design digital — Lógica Psicológica</title><style>
+:root{--olive:#5b5c2a;--olive-dk:#43441f;--sage:#9ca575;--sage-dk:#7c8054;--cream:#f8f3e6;--cream-dp:#efe7d3;--gilt:#a8894f;--gilt-lt:#c3a468;--ink:#2f2e24;--muted:#6c6a55;--card:#fffdf7;}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;} html,body{margin:0;padding:0;}
+body{font-family:'Plus Jakarta Sans',system-ui,-apple-system,Segoe UI,sans-serif;background:var(--cream);color:var(--ink);font-size:17px;line-height:1.62;font-weight:400;-webkit-font-smoothing:antialiased;}
+a{color:var(--olive);} strong{font-weight:700;color:var(--olive-dk);} em{color:var(--sage-dk);}
+:focus-visible{outline:2px solid var(--gilt);outline-offset:2px;}
+.topbar{position:sticky;top:0;z-index:30;background:rgba(248,243,230,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--cream-dp);}
+.topbar .in{max-width:1100px;margin:0 auto;padding:11px 20px;display:flex;align-items:center;gap:12px;}
+.topbar img{height:22px;display:block;}
+.topbar .sp{flex:1;}
+.topbar .tag{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);}
+.backlink{font-weight:800;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--olive-dk);text-decoration:none;border:1px solid var(--cream-dp);background:var(--card);border-radius:20px;padding:7px 14px;white-space:nowrap;line-height:1;transition:border-color .18s,color .18s;}
+.backlink:hover{border-color:var(--gilt-lt);color:var(--gilt);}
+@media(max-width:430px){.topbar .tag{display:none;}}
+.shell{display:flex;gap:34px;max-width:1100px;margin:0 auto;padding:0 20px;align-items:flex-start;}
+.side{flex:0 0 252px;width:252px;position:sticky;top:56px;align-self:flex-start;height:calc(100vh - 66px);overflow:hidden;background:linear-gradient(165deg,#5b5c2a,#3b3c1b);color:var(--cream);border-radius:0 0 16px 16px;padding:18px 18px 16px;display:flex;flex-direction:column;}
+.side .nav{flex:1 1 auto;overflow-y:auto;min-height:0;scrollbar-width:thin;scrollbar-color:rgba(248,243,230,.28) transparent;}
+.side .nav::-webkit-scrollbar{width:6px;} .side .nav::-webkit-scrollbar-thumb{background:rgba(248,243,230,.28);border-radius:3px;}
+.side .brand{display:block;margin-bottom:14px;}
+.side .brand img{width:100%;max-width:148px;height:auto;display:block;}
+.side .st{font-weight:800;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt-lt);margin:13px 0 6px;padding-top:11px;border-top:1px solid rgba(248,243,230,.18);}
+.side .st.first{margin-top:0;padding-top:0;border-top:none;}
+.side a{display:block;text-decoration:none;color:var(--cream);padding:8px 11px;border-radius:9px;font-size:14.5px;font-weight:700;line-height:1.25;margin-bottom:3px;border:1px solid transparent;}
+.side a .s{display:block;font-size:11.8px;font-weight:400;color:#d9d3bd;margin-top:2px;line-height:1.3;}
+.side a:hover{background:rgba(248,243,230,.10);}
+.side a.on{background:var(--cream);color:var(--olive-dk);border-color:var(--cream);}
+.side a.on .s{color:var(--muted);}
+.side .home{font-weight:800;font-size:12.5px;letter-spacing:.02em;padding:5px 11px;}
+.side .navlink{font-weight:700;font-size:13px;color:#e7e1cb;padding:5px 11px;}
+.side .sig{flex:0 0 auto;margin-top:12px;padding-top:12px;border-top:1px solid rgba(248,243,230,.18);display:flex;align-items:center;gap:11px;}
+.side .sig img{width:40px;height:40px;flex:none;border-radius:50%;object-fit:cover;object-position:center 18%;border:2px solid rgba(248,243,230,.35);}
+.side .sig .who{font-weight:800;font-size:12.5px;color:var(--cream);line-height:1.3;}
+.side .sig .who span{display:block;font-weight:400;font-size:11.5px;color:#cfc9b2;letter-spacing:.04em;margin-top:2px;}
+.side .sub{display:block;margin-top:10px;text-align:center;background:var(--cream);color:var(--olive-dk);font-weight:800;font-size:13px;letter-spacing:.02em;text-decoration:none;padding:10px 14px;border-radius:22px;transition:background .18s;}
+.side .sub:hover{background:#fff;color:var(--olive-dk);}
+.main{flex:1 1 auto;max-width:730px;width:100%;padding:0 0 50px;}
+.toc-fab{display:none;} .overlay{display:none;}
+@media(max-width:960px){
+ .shell{display:block;padding:0;} .main{max-width:760px;margin:0 auto;padding:0 20px 50px;}
+ .side{position:fixed;top:0;left:0;height:100vh;width:292px;z-index:60;transform:translateX(-100%);transition:transform .25s;box-shadow:2px 0 22px rgba(0,0,0,.28);padding:26px 22px;max-height:none;border-radius:0;}
+ .side.open{transform:none;}
+ .toc-fab{display:block;position:fixed;bottom:18px;right:18px;z-index:50;background:var(--olive-dk);color:var(--cream);font-weight:800;font-size:13px;letter-spacing:.04em;border:none;border-radius:30px;padding:13px 20px;box-shadow:0 4px 14px rgba(0,0,0,.24);cursor:pointer;}
+ .overlay{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:55;opacity:0;pointer-events:none;transition:opacity .25s;}
+ .overlay.open{display:block;opacity:1;pointer-events:auto;}
+}
+@media(min-width:961px) and (max-height:820px){
+ .side a .s{display:none;}
+ .side .brand{margin-bottom:10px;} .side .brand img{max-width:132px;}
+ .side .st{margin:10px 0 5px;padding-top:9px;}
+}
+@media(min-width:961px) and (max-height:680px){
+ .side .brand img{max-width:110px;}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;}}
+.hero{padding:40px 0 6px;}
+.hero .kick{font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:12px;color:var(--gilt);margin:0 0 14px;}
+.hero h1{font-weight:800;font-size:46px;line-height:1.03;letter-spacing:-.022em;color:var(--ink);margin:0 0 16px;}
+.hero h1 .ac{color:var(--olive);}
+.hero p{color:var(--muted);font-size:17.5px;max-width:620px;margin:0;}
+.divider{width:56px;height:3px;background:var(--gilt-lt);border-radius:2px;margin:26px 0 4px;}
+h2{font-weight:800;color:var(--ink);font-size:25px;letter-spacing:-.015em;line-height:1.15;margin:38px 0 10px;scroll-margin-top:74px;}
+h3{font-weight:800;color:var(--olive);font-size:17px;letter-spacing:-.005em;margin:26px 0 6px;}
+p{margin:0 0 12px;}
+ul.clean{list-style:none;padding:0;margin:10px 0 14px;}
+ul.clean li{position:relative;padding:0 0 10px 26px;}
+ul.clean li::before{content:"\03A8";font-weight:800;color:var(--gilt);position:absolute;left:0;top:0;}
+.pull{font-weight:800;color:var(--olive-dk);font-size:23px;line-height:1.3;letter-spacing:-.015em;border-left:4px solid var(--gilt-lt);padding:6px 0 6px 20px;margin:28px 0;}
+.portas{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:26px 0 8px;}
+@media(max-width:720px){.portas{grid-template-columns:1fr;}}
+.porta{display:block;text-decoration:none;background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:20px 18px;transition:border-color .18s,transform .18s;}
+.porta:hover{border-color:var(--sage);transform:translateY(-2px);}
+.porta .pk{font-weight:800;font-size:16px;letter-spacing:-.01em;color:var(--ink);line-height:1.2;}
+.porta .pd{font-size:14.5px;color:var(--muted);margin-top:8px;line-height:1.45;}
+.porta .pa{display:block;margin-top:14px;font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gilt);}
+.temas{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0;}
+@media(max-width:560px){.temas{grid-template-columns:1fr;}}
+.tema{display:flex;flex-direction:column;text-decoration:none;background:var(--card);border:1px solid var(--cream-dp);border-top:4px solid var(--sage);border-radius:14px;padding:18px 18px 16px;transition:border-top-color .18s,box-shadow .18s,transform .18s;}
+.tema:hover{border-top-color:var(--olive);box-shadow:0 2px 14px rgba(67,68,31,.08);transform:translateY(-2px);}
+.tema .tk{font-weight:800;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gilt);}
+.tema .tt{font-weight:800;font-size:19px;letter-spacing:-.015em;color:var(--ink);margin:6px 0 5px;line-height:1.2;}
+.tema .td{font-size:14px;color:var(--muted);line-height:1.45;flex:1 1 auto;}
+.tema .tm{margin-top:12px;padding-top:10px;border-top:1px solid var(--cream-dp);font-weight:700;font-size:12.5px;color:var(--sage-dk);}
+.book{background:var(--cream-dp);border-radius:14px;padding:18px 20px;margin:18px 0 24px;}
+.book .bk{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:7px;}
+.book .bt{font-weight:800;font-size:19px;letter-spacing:-.015em;color:var(--ink);margin-bottom:4px;line-height:1.2;}
+.book .bsub{color:var(--muted);font-size:14px;margin-bottom:14px;line-height:1.4;}
+.book a{display:inline-block;font-weight:800;font-size:12.5px;letter-spacing:.02em;color:var(--cream);background:var(--olive);padding:11px 22px;border-radius:26px;text-decoration:none;}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0;}
+@media(max-width:560px){.cards{grid-template-columns:1fr;}}
+.card{background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:6px;}
+.card.live{border-color:var(--sage);box-shadow:0 2px 12px rgba(67,68,31,.06);}
+.card:not(.live){opacity:.7;}
+.card .ct{display:flex;align-items:center;justify-content:space-between;min-height:26px;}
+.card .n{font-weight:800;font-size:24px;color:var(--sage-dk);line-height:1;letter-spacing:-.02em;}
+.card .dt{font-weight:800;font-size:12px;letter-spacing:.1em;color:var(--gilt);}
+.card.bydate .dt{font-size:15px;color:var(--sage-dk);}
+.card .tt{font-weight:800;color:var(--ink);font-size:16.5px;line-height:1.25;letter-spacing:-.01em;margin-top:2px;}
+.card .pr{color:var(--muted);font-size:13.5px;}
+.card .acts{display:flex;gap:8px;margin-top:10px;}
+.card .go,.card .pdf{font-weight:800;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;padding:9px 16px;border-radius:20px;text-decoration:none;}
+.card .go{color:var(--cream);background:var(--olive);} .card .pdf{color:var(--olive-dk);border:1.5px solid var(--gilt-lt);}
+.card .soon{font-weight:800;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:10px;}
+.empty{background:var(--card);border:1px dashed var(--cream-dp);border-radius:14px;padding:26px;text-align:center;color:var(--muted);}
+.cta{position:relative;overflow:hidden;border-radius:16px;margin:30px 0 8px;background:linear-gradient(150deg,#5b5c2a,#43441f);color:var(--cream);display:grid;grid-template-columns:minmax(0,290px) minmax(0,1fr);}
+.cta .ph{width:100%;height:100%;min-height:330px;object-fit:cover;object-position:center 22%;display:block;opacity:.95;}
+.cta .in{padding:26px 26px 28px;align-self:center;}
+.cta .in .k{color:#ddd6bf;margin-bottom:6px;font-size:14.5px;}
+.cta .in h3{font-weight:800;font-size:22px;letter-spacing:-.015em;color:var(--cream);margin:0 0 14px;}
+.cta ul{list-style:none;padding:0;margin:0 0 18px;}
+.cta li{position:relative;padding:0 0 10px 24px;font-size:14.5px;color:#f1ecdc;line-height:1.45;}
+.cta li::before{content:"\03A8";color:var(--gilt-lt);position:absolute;left:0;font-weight:800;}
+.cta a.go{display:block;text-align:center;background:var(--cream);color:var(--olive-dk);font-weight:800;font-size:14.5px;text-decoration:none;padding:14px;border-radius:28px;}
+@media(max-width:720px){.cta{grid-template-columns:1fr;} .cta .ph{min-height:230px;height:230px;}}
+.foot{text-align:center;color:var(--muted);font-size:12.5px;margin-top:38px;padding-top:20px;border-top:1px solid var(--cream-dp);}
+.foot .foot-logo{height:30px;width:auto;display:inline-block;margin-bottom:8px;}
+.contato{margin-top:14px;font-size:12.5px;color:var(--muted);line-height:1.7;}
+.contato a{color:var(--gilt);text-decoration:none;} .contato .cnpj{font-size:11.5px;opacity:.85;}
+
+.mhero{padding:36px 0 4px;}
+.mhero .kick{font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:11.5px;color:var(--gilt);margin:0 0 12px;}
+.mhero h1{font-weight:800;font-size:42px;line-height:1.04;letter-spacing:-.022em;color:var(--ink);margin:0 0 10px;}
+.mhero .sub{font-weight:700;font-size:19px;color:var(--sage-dk);line-height:1.3;margin:0 0 12px;letter-spacing:-.01em;}
+.mhero .meta{font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);}
+.mhero .tema{margin:18px 0 0;padding-left:18px;border-left:4px solid var(--cream-dp);color:var(--muted);font-size:16.5px;}
+.usar{background:var(--cream-dp);border-radius:12px;padding:16px 18px;margin:24px 0 14px;font-size:14.5px;color:var(--muted);line-height:1.55;}
+.usar b{display:block;font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--olive-dk);margin-bottom:6px;}
+.pdfbtn{display:inline-block;font-weight:800;font-size:13px;letter-spacing:.02em;color:var(--cream);background:var(--olive);padding:13px 24px;border-radius:26px;text-decoration:none;}
+.ess{background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:20px 22px;margin:26px 0;}
+.ess .et{font-weight:800;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gilt);margin-bottom:12px;}
+.ess ul{list-style:none;padding:0;margin:0;}
+.ess li{position:relative;padding:0 0 12px 26px;font-size:15.8px;line-height:1.5;}
+.ess li:last-child{padding-bottom:0;}
+.ess li::before{content:"\03A8";position:absolute;left:0;top:0;color:var(--gilt-lt);font-weight:800;}
+details.sec{border-bottom:1px solid var(--cream-dp);}
+details.sec[open]{padding-bottom:16px;}
+details.sec summary{list-style:none;cursor:pointer;padding:18px 0;display:flex;align-items:baseline;gap:12px;}
+details.sec summary::-webkit-details-marker{display:none;}
+details.sec summary h2{font-weight:800;font-size:21px;letter-spacing:-.015em;color:var(--ink);margin:0;line-height:1.2;flex:1;}
+details.sec summary .arw{color:var(--gilt);font-weight:800;font-size:13px;transition:transform .2s;}
+details.sec[open] summary .arw{transform:rotate(90deg);}
+details.sec .lead{color:var(--sage-dk);font-weight:500;margin:0 0 14px;font-size:16px;}
+details.sec p{font-size:16.5px;}
+ul.key{list-style:none;padding:0;margin:12px 0;}
+ul.key li{position:relative;padding:0 0 11px 26px;font-size:16px;line-height:1.5;}
+ul.key li::before{content:"\03A8";position:absolute;left:0;top:0;color:var(--gilt);font-weight:800;}
+.dial{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0;}
+@media(max-width:620px){.dial{grid-template-columns:1fr;}}
+.dial .d{background:var(--card);border:1px solid var(--cream-dp);border-top:3px solid var(--sage);border-radius:12px;padding:14px 16px;}
+.dial .dt{font-weight:800;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--olive-dk);margin-bottom:7px;}
+.dial p{margin:0;font-size:14.5px;color:var(--muted);line-height:1.45;}
+.obs{background:var(--cream-dp);border-radius:12px;padding:16px 18px;margin:18px 0;}
+.obs h4{font-weight:800;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--olive-dk);margin:0 0 7px;}
+.obs p{margin:0;font-size:15.5px;}
+.callout{background:var(--card);border-left:4px solid var(--gilt-lt);border-radius:0 12px 12px 0;padding:16px 18px;margin:20px 0;font-size:15.5px;line-height:1.55;}
+.callout .co-t{font-weight:800;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--gilt);margin-bottom:7px;}
+span.ref{font-size:13.5px;color:var(--muted);}
+/* diagrama */
+figure.dg{margin:24px 0;background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:18px 16px 12px;}
+figure.dg svg{width:100%;height:auto;display:block;}
+figure.dg figcaption{margin-top:10px;font-size:13px;color:var(--muted);text-align:center;line-height:1.45;}
+.dg-t{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:10px;text-align:center;}
+/* ferramentas */
+.tools{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:32px 0 0;}
+@media(max-width:720px){.tools{grid-template-columns:1fr;}}
+.tool{background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:20px;}
+.tool .tt{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:14px;}
+.ck{display:flex;gap:11px;align-items:flex-start;padding:9px 0;font-size:15px;line-height:1.45;cursor:pointer;}
+.ck input{margin:4px 0 0;accent-color:var(--olive);width:17px;height:17px;flex:none;cursor:pointer;}
+.ck.done span{text-decoration:line-through;opacity:.5;}
+.qz{margin-bottom:18px;} .qz:last-child{margin-bottom:0;}
+.qz p{font-size:15px;margin:0 0 7px;line-height:1.45;font-weight:500;}
+.qz textarea{width:100%;min-height:66px;border:1px solid var(--cream-dp);border-radius:10px;background:var(--cream);font-family:inherit;font-size:14.5px;color:var(--ink);padding:10px 12px;resize:vertical;line-height:1.5;}
+.qz textarea:focus{outline:2px solid var(--gilt-lt);outline-offset:1px;}
+.savebar{display:flex;align-items:center;gap:12px;margin-top:16px;flex-wrap:wrap;}
+.savebar button{font-weight:800;font-size:11px;letter-spacing:.08em;text-transform:uppercase;border:1.5px solid var(--cream-dp);background:none;color:var(--olive-dk);border-radius:22px;padding:10px 18px;cursor:pointer;font-family:inherit;}
+.savebar button:hover{border-color:var(--gilt-lt);color:var(--gilt);}
+.saved{font-weight:800;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--sage-dk);opacity:0;transition:opacity .3s;}
+.saved.on{opacity:1;}
+.refs h2,.nmet h2{font-weight:800;font-size:21px;letter-spacing:-.015em;color:var(--ink);margin:34px 0 10px;}
+.refs ol{padding-left:20px;font-size:13.8px;color:var(--muted);line-height:1.6;}
+.refs li{margin-bottom:9px;}
+.nmet{background:var(--card);border-left:4px solid var(--gilt-lt);border-radius:0 12px 12px 0;padding:16px 20px;margin:26px 0 0;font-size:14px;color:var(--muted);line-height:1.6;}
+.nmet b{display:block;font-weight:800;font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--olive-dk);margin-bottom:7px;}
+.side .idx a{font-size:13.5px;font-weight:500;padding:7px 12px;line-height:1.3;}
+
+/* gabarito expansível */
+.qz .gab{margin-top:8px;border-top:1px solid #E9E3CE;padding-top:8px;}
+.qz .gab summary{cursor:pointer;list-style:none;font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#A8894F;}
+.qz .gab summary::-webkit-details-marker{display:none;}
+.qz .gab summary::before{content:'+ ';font-weight:800;}
+.qz .gab[open] summary::before{content:'\2212 ';}
+.qz .gab-in{margin-top:8px;background:#F8F3E6;border-left:2px solid #C3A468;border-radius:0 6px 6px 0;padding:10px 12px;font-size:.94rem;line-height:1.55;color:#403F32;}
+.qz .gab-in p{margin:0 0 6px;}.qz .gab-in p:last-child{margin:0;}
+
+/* gabarito expansível */
+.qz .gab{margin-top:8px;border-top:1px solid #E9E3CE;padding-top:8px;}
+.qz .gab summary{cursor:pointer;list-style:none;font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#A8894F;}
+.qz .gab summary::-webkit-details-marker{display:none;}
+.qz .gab summary::before{content:'+ ';font-weight:800;}
+.qz .gab[open] summary::before{content:'\2212 ';}
+.qz .gab-in{margin-top:8px;background:#F8F3E6;border-left:2px solid #C3A468;border-radius:0 6px 6px 0;padding:10px 12px;font-size:.94rem;line-height:1.55;color:#403F32;}
+.qz .gab-in p{margin:0 0 6px;}.qz .gab-in p:last-child{margin:0;}
+</style></head><body><div class='topbar'><div class='in'><a href='/'><img alt='Lógica Psicológica' src='/assets/logo.png'></a><a class='backlink' href='/dependencias-tecnologicas/' title='Voltar para Encontros'>&#8592; Voltar</a><div class='sp'></div><div class='tag'>Jornada da Leitura</div></div></div><div class='shell'><aside class='side' id='side'><a class='brand' href='/'><img alt='Lógica Psicológica' src='/assets/logo-creme.png'></a><div class='nav'><div class='st first'>Navegação</div><a class='home' href='/dependencias-tecnologicas/'>&#8592; Encontros</a><a class='navlink' href='/'>Início do portal</a><div class='st'>Neste material</div><div class='idx'><a href='#s0'>O que o UX design faz com a evolução</a><a href='#s1'>1. Sensibilidade à recompensa imediata</a><a href='#s2'>2. Atenção seletiva a estímulos sociais</a><a href='#s3'>3. Busca por novidade e exploração</a><a href='#s4'>4. Economia cognitiva e automatismo</a><a href='#s5'>5. Competição e hierarquia</a><a href='#s6'>6. Estímulos visuais preparados</a><a href='#s7'>O que fazer com isso na formulação</a></div></div><div class='sig'><img alt='Prof. Júlio Gonçalves' src='/assets/julio.jpg'><div class='who'>Prof. Júlio Gonçalves<span>MSc · CRP 12/17614</span></div></div><a class='sub' href='https://psicojulio.com/comunidade-logica-psicologica/' target='_blank' rel='noopener'>Inscreva-se</a></aside><main class='main'><div class='mhero'><div class='kick'>Resumo de aula · Jornada da Leitura</div><h1>Como os produtos exploram o que a evolu&ccedil;&atilde;o deixou: seis ganchos do design digital</h1><div class='sub'>Vídeo 2</div><div class='meta'>Prof. Júlio Gonçalves · Disciplina Avaliação e tratamento das dependências tecnológicas · Vídeo 2</div><p class='tema'>O design digital não inventa desejo: ele encontra mecanismos que a seleção natural deixou prontos e entrega o estímulo em dose e frequência que o ambiente ancestral nunca entregou. Seis desses mecanismos, e o que fazer com eles na formulação.</p></div><div class='obs' style='margin-bottom:18px'><h4>Sobre este material</h4><p>Material de estudo <strong>dirigido a psicólogos</strong>, escrito a partir dos slides do segundo vídeo da disciplina, que apresenta seis mecanismos evolutivos e o recurso de design que explora cada um. Não havia transcrição; onde o slide era telegráfico, o texto desenvolve o raciocínio e diz que está desenvolvendo.</p><p>Como o vídeo 1, este conteúdo serve também como <strong>psicoeducação</strong>: é o mapa da arquitetura em que o paciente vive. Duas moderações empíricas estão sinalizadas no corpo do texto.</p></div><div class='usar'><b>Como usar</b>Abra as seções que quiser ler, marque o que pretende aplicar e responda o que fizer sentido. Tudo fica salvo neste aparelho — ninguém mais vê.</div><a class='pdfbtn' href='resumo.pdf'>&#8681; Baixar em PDF</a><div class='ess'><div class='et'>O essencial</div><ul><li><strong>O produto não cria o mecanismo; ele sabe onde apertar.</strong> Recompensa, atenção ao social, novidade, automatismo, hierarquia e estímulo preparado já existiam. O design só mudou a dose.</li><li><strong>Reforço variável é o motor.</strong> Likes e notificações que às vezes vêm e às vezes não seguem o esquema da máquina caça-níqueis, o mais resistente à extinção.</li><li><strong>A rolagem infinita vende novidade, e o cérebro compra.</strong> A curiosidade que achava recurso e abrigo hoje acha mais um vídeo. Sempre há algo novo, por desenho.</li><li><strong>O hábito é o objetivo do produto.</strong> Uso rápido, repetido e sem reflexão. Desbloquear o celular sem perceber é sucesso de design, e é o que a clínica precisa desmontar.</li><li><strong>Na formulação, a pergunta é qual gancho sustenta este uso.</strong> Comparação social, tédio, status, novidade. O mesmo aplicativo prende pacientes diferentes por mecanismos diferentes.</li></ul></div><details class='sec' id='s0' open><summary><h2>O que o UX design faz com a evolução</h2><span class='arw'>&#9656;</span></summary>
+<p>O vídeo 1 terminou com uma promessa: mostrar como a armadilha é montada. Este vídeo cumpre. A tese é simples e vale guardar inteira: o <strong>design de experiência do usuário</strong> (UX) explora mecanismos evolutivos. Nenhum dos mecanismos foi inventado por uma empresa; todos foram selecionados ao longo de milhares de anos porque resolviam problemas de sobrevivência e de reprodução. O que o produto faz é identificar o mecanismo e entregar o estímulo que o dispara em dose, frequência e forma que o ambiente ancestral nunca entregou.</p>
+<figure class='dg'><div class='dg-t'>Seis mecanismos antigos, seis ganchos de design</div>
+<svg viewBox='0 0 720 318' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Seis pares: mecanismo evolutivo e o recurso de design que o explora'>
+<rect x='0' y='8' width='226' height='92' rx='10' fill='#f1ece0' stroke='#9ca575' stroke-width='1.3'/>
+<text x='16' y='30' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' font-weight='800' letter-spacing='1.2' fill='#a8894f'>1 · RECOMPENSA IMEDIATA</text>
+<text x='16' y='52' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#2f2e24'>alimento e informação eram raros</text>
+<text x='16' y='76' font-family="Plus Jakarta Sans,sans-serif" font-size='11' font-weight='800' fill='#a05a3c'>likes, notificações, reforço variável</text>
+<rect x='247' y='8' width='226' height='92' rx='10' fill='#f1ece0' stroke='#9ca575' stroke-width='1.3'/>
+<text x='263' y='30' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' font-weight='800' letter-spacing='1.2' fill='#a8894f'>2 · ATENÇÃO AO SOCIAL</text>
+<text x='263' y='52' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#2f2e24'>rosto, status e coesão do grupo</text>
+<text x='263' y='76' font-family="Plus Jakarta Sans,sans-serif" font-size='11' font-weight='800' fill='#a05a3c'>feed, reações, comparação constante</text>
+<rect x='494' y='8' width='226' height='92' rx='10' fill='#f1ece0' stroke='#9ca575' stroke-width='1.3'/>
+<text x='510' y='30' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' font-weight='800' letter-spacing='1.2' fill='#a8894f'>3 · NOVIDADE</text>
+<text x='510' y='52' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#2f2e24'>curiosidade achava recurso e abrigo</text>
+<text x='510' y='76' font-family="Plus Jakarta Sans,sans-serif" font-size='11' font-weight='800' fill='#a05a3c'>rolagem infinita, aleatoriedade</text>
+<rect x='0' y='116' width='226' height='92' rx='10' fill='#f1ece0' stroke='#9ca575' stroke-width='1.3'/>
+<text x='16' y='138' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' font-weight='800' letter-spacing='1.2' fill='#a8894f'>4 · AUTOMATISMO</text>
+<text x='16' y='160' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#2f2e24'>automatizar poupava energia</text>
+<text x='16' y='184' font-family="Plus Jakarta Sans,sans-serif" font-size='11' font-weight='800' fill='#a05a3c'>uso rápido, repetido, sem reflexão</text>
+<rect x='247' y='116' width='226' height='92' rx='10' fill='#f1ece0' stroke='#9ca575' stroke-width='1.3'/>
+<text x='263' y='138' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' font-weight='800' letter-spacing='1.2' fill='#a8894f'>5 · HIERARQUIA</text>
+<text x='263' y='160' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#2f2e24'>posição no grupo dava recurso</text>
+<text x='263' y='184' font-family="Plus Jakarta Sans,sans-serif" font-size='11' font-weight='800' fill='#a05a3c'>rankings, medalhas, seguidores</text>
+<rect x='494' y='116' width='226' height='92' rx='10' fill='#f1ece0' stroke='#9ca575' stroke-width='1.3'/>
+<text x='510' y='138' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' font-weight='800' letter-spacing='1.2' fill='#a8894f'>6 · ESTÍMULO PREPARADO</text>
+<text x='510' y='160' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#2f2e24'>rosto, olho, movimento, cor viva</text>
+<text x='510' y='184' font-family="Plus Jakarta Sans,sans-serif" font-size='11' font-weight='800' fill='#a05a3c'>ícones com face, cores, animação</text>
+<rect x='120' y='232' width='480' height='70' rx='11' fill='#43441f'/>
+<text x='360' y='260' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='12' font-weight='800' fill='#f0ede0'>o que o design faz: pega um mecanismo que já existe</text>
+<text x='360' y='282' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#9ca575'>e entrega o estímulo em dose, frequência e forma que o ambiente ancestral nunca entregou</text>
+</svg>
+<figcaption>Nenhum dos seis foi inventado pelo produto. O produto só sabe onde apertar. Na clínica, a pergunta é qual deles sustenta o uso deste paciente.</figcaption></figure>
+<p>Os slides organizam seis desses pares, sempre no mesmo formato: o contexto evolutivo de um lado, o recurso de design do outro. O texto segue a mesma ordem.</p>
+</details><details class='sec' id='s1'><summary><h2>1. Sensibilidade à recompensa imediata</h2><span class='arw'>&#9656;</span></summary>
+<p><strong>Contexto evolutivo.</strong> No ambiente ancestral, encontrar alimento ou informação nova era vital e raro. O cérebro passou a valorizar essas experiências com liberação de dopamina, marcando o evento como algo a repetir.</p>
+<p><strong>No design digital.</strong> Likes, notificações, mensagens novas e conquistas em jogos ativam o mesmo sistema. E são <strong>reforçadores intermitentes</strong>: o modelo é o do reforço variável, o mesmo do jogo de azar. Não é a recompensa que prende; é a incerteza de quando ela vem.</p>
+<figure class='dg'><div class='dg-t'>A alça que os seis ganchos alimentam</div>
+<svg viewBox='0 0 720 150' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Alça: pista, ação, recompensa variável, retorno à pista'>
+<defs><marker id='al' markerWidth='8' markerHeight='8' refX='6' refY='4' orient='auto'><path d='M0,0 L8,4 L0,8 z' fill='#8d876f'/></marker></defs>
+<rect x='0' y='30' width='200' height='70' rx='10' fill='#f1ece0' stroke='#9ca575' stroke-width='1.3'/>
+<text x='100' y='58' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='12.5' font-weight='800' fill='#2f2e24'>pista</text>
+<text x='100' y='80' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#6c6a55'>notificação, tédio, rosto no ícone</text>
+<path d='M204 65 L252 65' stroke='#8d876f' stroke-width='2' marker-end='url(#al)'/>
+<rect x='260' y='30' width='200' height='70' rx='10' fill='#fffdf7' stroke='#43441f' stroke-width='1.5'/>
+<text x='360' y='58' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='12.5' font-weight='800' fill='#2f2e24'>ação barata</text>
+<text x='360' y='80' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#6c6a55'>desbloquear, rolar, tocar</text>
+<path d='M464 65 L512 65' stroke='#8d876f' stroke-width='2' marker-end='url(#al)'/>
+<rect x='520' y='30' width='200' height='70' rx='10' fill='#43441f'/>
+<text x='620' y='58' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='12.5' font-weight='800' fill='#f0ede0'>recompensa variável</text>
+<text x='620' y='80' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#9ca575'>às vezes vem, às vezes não</text>
+<path d='M620 104 L620 128 L100 128 L100 106' fill='none' stroke='#a05a3c' stroke-width='2' marker-end='url(#al)'/>
+<text x='360' y='142' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' font-style='italic' fill='#a05a3c'>a incerteza da recompensa é o que fortalece a alça, como na máquina caça-níqueis</text>
+</svg>
+<figcaption>Reforço em esquema variável: o comportamento que às vezes é recompensado resiste mais à extinção do que o que é sempre recompensado. É o esquema do jogo de azar, e é o do feed.</figcaption></figure>
+<div class='obs'><h4>Uma moderação</h4><p>Vale repetir a distinção do vídeo 1. A dopamina responde mais ao <em>querer</em> e à antecipação do que ao prazer consumado. É por isso que a recompensa variável funciona tão bem: o sistema dispara na expectativa, e a expectativa nunca se resolve. Dizer ao paciente que ele "busca dopamina" está certo; dizer que ele busca prazer explica mal o uso que segue sem prazer nenhum.</p></div>
+</details><details class='sec' id='s2'><summary><h2>2. Atenção seletiva a estímulos sociais</h2><span class='arw'>&#9656;</span></summary>
+<p><strong>Contexto evolutivo.</strong> Estar atento a expressões faciais, a status e a relações interpessoais aumentava a coesão do grupo, e a coesão do grupo era sobrevivência. Quem lia mal o rosto do outro ficava de fora.</p>
+<p><strong>No design digital.</strong> As redes sociais amplificam essas pistas com fotos, reações, seguidores e algoritmos que priorizam conteúdo de alta interação. O resultado é <strong>comparação social constante</strong>, que o slide liga a compulsão, ansiedade e baixa autoestima.</p>
+<div class='obs'><h4>Uma moderação</h4><p>O mecanismo é bem descrito, mas a ligação entre uso de redes e sofrimento é menos forte na literatura do que a intuição sugere: em amostras grandes, a associação entre tempo de tela e bem-estar é pequena, e a direção causal é disputada. O que se sustenta melhor é o efeito da <em>comparação</em> e do uso passivo, e não do tempo em si. Na clínica isso muda a pergunta: em vez de quanto o paciente usa, o que ele faz e com quem se compara enquanto usa.</p></div>
+</details><details class='sec' id='s3'><summary><h2>3. Busca por novidade e exploração</h2><span class='arw'>&#9656;</span></summary>
+<p><strong>Contexto evolutivo.</strong> Curiosidade e exploração ajudavam a encontrar recursos, abrigo e aliados. O organismo que parava de explorar cedo perdia para o que seguia olhando.</p>
+<p><strong>No design digital.</strong> A rolagem infinita, as recomendações automáticas e a <strong>aleatoriedade</strong> dos feeds exploram exatamente essa tendência: sempre há algo novo para descobrir, e o fim nunca chega. Repare que a aleatoriedade aqui é o mesmo ingrediente do mecanismo 1: novidade imprevisível é recompensa variável com outro nome.</p>
+<div class='callout note'><div class='co-t'>Para a sessão</div>O paciente que "só ia dar uma olhada" e ficou uma hora não falhou em força de vontade. Ele entrou num ambiente desenhado para não ter ponto de parada. Nomear isso reduz a culpa e abre a intervenção óbvia: criar o ponto de parada que o produto tirou.</div>
+</details><details class='sec' id='s4'><summary><h2>4. Economia cognitiva e automatismo</h2><span class='arw'>&#9656;</span></summary>
+<p><strong>Contexto evolutivo.</strong> Automatizar comportamentos poupava energia para lidar com ameaças e com decisões complexas. Hábito é o cérebro economizando para o que importa.</p>
+<p><strong>No design digital.</strong> Os aplicativos são otimizados para uso rápido e repetitivo, criando hábitos e rotinas automáticas sem reflexão crítica. O exemplo do slide é preciso: <strong>desbloquear o celular sem perceber</strong>. Do ponto de vista do produto, isso é o objetivo alcançado; do ponto de vista clínico, é o comportamento que precisa voltar a passar pela consciência antes de qualquer outra coisa.</p>
+<p>Hábito, na definição da psicologia, é comportamento disparado por pista de contexto, com pouca dependência de intenção. Por isso a intervenção que começa por motivação costuma falhar: o gesto acontece antes da motivação entrar em cena. O que funciona é mexer na pista e no atrito.</p>
+</details><details class='sec' id='s5'><summary><h2>5. Competição e hierarquia</h2><span class='arw'>&#9656;</span></summary>
+<p><strong>Contexto evolutivo.</strong> Estar em boa posição no grupo garantia acesso a recursos e a parceiros. Status era moeda antes de existir moeda.</p>
+<p><strong>No design digital.</strong> Rankings, curtidas, conquistas e medalhas simulam status e prestígio, reforçando o engajamento. O jogo entrega hierarquia visível a cada partida; a rede entrega seguidores como placar. É a mesma busca por "algo valioso" do vídeo 1, com o status como o valioso da vez.</p>
+</details><details class='sec' id='s6'><summary><h2>6. Estímulos visuais preparados</h2><span class='arw'>&#9656;</span></summary>
+<p><strong>Contexto evolutivo.</strong> A espécie desenvolveu sensibilidade a estímulos visuais biologicamente relevantes: rostos, olhos, movimento súbito, cores vivas. Esses elementos indicavam perigo ou oportunidade social, e a atenção a eles vinha pronta, sem aprendizagem.</p>
+<p><strong>No design digital.</strong> Interfaces usam cores chamativas, ícones com olhos ou faces e elementos em movimento para capturar atenção, explorando essa predisposição. Ícones de notificação e emojis são o exemplo do slide: um rosto minúsculo no canto da tela ainda é um rosto para o sistema que o detecta.</p>
+<p>Esse é o mecanismo mais difícil de contornar por decisão, porque opera antes da decisão. Daí as intervenções de ambiente que funcionam melhor do que as de intenção: tela em escala de cinza, ícones sem selo, notificações visuais desligadas.</p>
+</details><details class='sec' id='s7'><summary><h2>O que fazer com isso na formulação</h2><span class='arw'>&#9656;</span></summary>
+<p>Os seis mecanismos servem a duas coisas na clínica.</p>
+<p>A primeira é <strong>psicoeducação</strong>, no sentido exato do vídeo 1: mostrar ao paciente que o uso dele apoia-se em mecanismos que todo mundo tem, e que o produto foi construído para apertá-los. Isso desloca a culpa do caráter para o contexto sem tirar a responsabilidade pela mudança.</p>
+<p>A segunda é <strong>formulação</strong>. O mesmo aplicativo prende pacientes diferentes por mecanismos diferentes: um está preso pela comparação social, outro pela novidade que preenche o tédio, outro pelo status do ranking, outro por hábito puro que já não entrega nada. A pergunta de avaliação é qual gancho sustenta o uso deste paciente, porque a intervenção muda conforme a resposta. Para o gancho 4, atrito e pista; para o 2, o que ele faz enquanto usa e com quem se compara; para o 1 e o 3, ponto de parada e substituição da recompensa variável por recompensa previsível.</p>
+<div class='callout note'><div class='co-t'>Leitura em processos</div>Na rede do caso, o uso de tela raramente é o nó central. Ele costuma ser a saída barata de um processo que está antes: evitação de tédio, de solidão, de tarefa aversiva, de comparação que dói. Os seis ganchos explicam por que a saída é tão barata; a formulação precisa achar de que o paciente está saindo.</div>
+<h3>O que vem no próximo vídeo</h3>
+<p>Um alinhamento conceitual do que é, afinal, dependência tecnológica: onde termina o uso intenso e começa o transtorno.</p>
+</details><div class='tools'><div class='tool'><div class='tt'>Levar para a prática</div><label class='ck'><input type='checkbox'><span>Identifiquei qual dos seis ganchos sustenta o uso deste paciente, em vez de tratar "tela" como um alvo único.</span></label><label class='ck'><input type='checkbox'><span>Perguntei o que ele faz enquanto usa, e não só quanto usa.</span></label><label class='ck'><input type='checkbox'><span>Distingui querer de gostar ao ouvir o relato: o uso ainda entrega prazer ou só antecipação?</span></label><label class='ck'><input type='checkbox'><span>Mapeei as pistas de contexto que disparam o gesto automático.</span></label><label class='ck'><input type='checkbox'><span>Propus intervenções de ambiente (atrito, ponto de parada, notificações) antes de contar com motivação.</span></label><label class='ck'><input type='checkbox'><span>Usei os mecanismos para reduzir culpa sem retirar a responsabilidade pela mudança.</span></label><label class='ck'><input type='checkbox'><span>Procurei, na rede do caso, de que o paciente está saindo quando entra na tela.</span></label></div><div class='tool'><div class='tt'>Para revisar — responda</div><div class='qz'><p>1. Explique por que o reforço variável é o motor de likes, notificações e feeds, e o que ele tem em comum com o jogo de azar.</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver comentário</summary><div class='gab-in'>No esquema de reforço variável, a recompensa vem em intervalos ou proporções imprevisíveis. O comportamento reforçado assim é o mais resistente à extinção: a pessoa continua porque a próxima pode ser a que vem. Likes, notificações e a rolagem entregam recompensa exatamente desse jeito, às vezes sim, às vezes não. É o esquema da máquina caça-níqueis, e o sistema dopaminérgico dispara na antecipação, não no prêmio.</div></details></div><div class='qz'><p>2. Quais dos seis mecanismos operam antes da decisão consciente, e por que isso muda o tipo de intervenção?</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver comentário</summary><div class='gab-in'>O <b>automatismo</b> (o gesto disparado pela pista, antes da intenção) e os <b>estímulos preparados</b> (rosto, olho, cor, movimento, que capturam atenção sem aprendizagem). Como operam antes da decisão, intervenções que dependem de decidir melhor chegam atrasadas. O que funciona é mexer no ambiente: atrito, pista, cor da tela, notificações, ponto de parada.</div></details></div><div class='qz'><p>3. Por que o slide liga a atenção seletiva ao social a ansiedade e baixa autoestima, e que ressalva a literatura pede?</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver comentário</summary><div class='gab-in'>Porque redes sociais amplificam pistas de status e induzem comparação social constante, e a comparação para baixo custa autoestima. A ressalva: em amostras grandes, a associação entre tempo de uso e bem-estar é pequena e de direção disputada; o que se sustenta melhor é o efeito da comparação e do uso passivo. A pergunta clínica útil é o que a pessoa faz e com quem se compara enquanto usa.</div></details></div><div class='qz'><p>4. Descreva um paciente teu com uso problemático de tela. Qual gancho sustenta o uso dele, e como tu chegou a essa resposta?</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver critérios</summary><div class='gab-in'>Não há resposta certa. Uma boa resposta nomeia um gancho principal (ou dois) e diz como chegou lá: pelo que o paciente relata sentir logo antes de pegar o celular, pelo que faz quando está dentro, pelo que acontece quando a recompensa não vem. O erro comum é responder pelo aplicativo ("é o Instagram") em vez de pelo mecanismo, ou listar os seis sem escolher.</div></details></div><div class='qz'><p>5. Como tu explicaria a um paciente a ideia de que o produto não inventa o desejo, sem que ele saia da sessão se sentindo vítima?</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver critérios</summary><div class='gab-in'>Não há resposta certa. Uma boa resposta explica que o mecanismo é de todo mundo e que o produto foi desenhado para apertá-lo, e no mesmo movimento mostra que conhecer o mecanismo é o que permite escolher o ambiente e as regras. A responsabilidade sai do caráter e vai para o manejo do contexto. O erro comum é parar na primeira metade e deixar o paciente com a conclusão de que não há o que fazer.</div></details></div><div class='qz'><p>6. Que intervenção de ambiente tu proporia para o gancho do automatismo, e como testaria se funcionou?</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver critérios</summary><div class='gab-in'>Não há resposta certa. Uma boa resposta propõe algo que muda a pista ou o atrito (celular fora do quarto, ícone fora da tela inicial, senha longa, tela em cinza) e define o teste antes: um registro simples de quantas vezes o gesto aconteceu por dia, comparando a semana anterior com a seguinte. O erro comum é propor a intervenção sem medida, e concluir pelo relato geral.</div></details></div></div></div><div class='savebar'><button id='exp'>Exportar respostas</button><button id='lmp'>Limpar</button><span class='saved' id='saved'>Salvo neste aparelho</span></div><div class='refs'><h2>Referências</h2><ol><li>Alter, A. (2017). <em>Irresistible: The rise of addictive technology and the business of keeping us hooked.</em> Penguin Press.</li><li>Berridge, K. C., &amp; Robinson, T. E. (2016). Liking, wanting, and the incentive-sensitization theory of addiction. <em>American Psychologist, 71</em>(8), 670–679.</li><li>Eyal, N. (2014). <em>Hooked: How to build habit-forming products.</em> Portfolio.</li><li>Ferster, C. B., &amp; Skinner, B. F. (1957). <em>Schedules of reinforcement.</em> Appleton-Century-Crofts.</li><li>Li, N. P., van Vugt, M., &amp; Colarelli, S. M. (2018). The evolutionary mismatch hypothesis: Implications for psychological science. <em>Current Directions in Psychological Science, 27</em>(1), 38–44.</li><li>Montag, C., Lachmann, B., Herrlich, M., &amp; Zweig, K. (2019). Addictive features of social media/messenger platforms and freemium games against the background of psychological and economic theories. <em>International Journal of Environmental Research and Public Health, 16</em>(14), 2612.</li><li>Orben, A., &amp; Przybylski, A. K. (2019). The association between adolescent well-being and digital technology use. <em>Nature Human Behaviour, 3</em>(2), 173–182.</li><li>Seligman, M. E. P. (1971). Phobias and preparedness. <em>Behavior Therapy, 2</em>(3), 307–320.</li><li>Wood, W., &amp; Rünger, D. (2016). Psychology of habit. <em>Annual Review of Psychology, 67</em>, 289–314.</li></ol></div><div class='nmet'><b>Nota de método</b>Material dirigido a psicólogos. É o segundo vídeo de uma disciplina de pós-graduação e trata de fundamentos; avaliação e intervenção vêm nos vídeos seguintes.<br><br><strong>Fonte.</strong> Este resumo foi escrito a partir dos <b>slides</b> do vídeo, sem transcrição da fala. Os seis pares (contexto evolutivo e recurso de design) reproduzem o conteúdo dos slides em paráfrase; os trechos que ligam os mecanismos entre si, a definição de hábito e a seção final sobre formulação foram desenvolvidos pelo autor do material a partir da lógica da aula, e o texto assume isso onde ocorre.<br><br><strong>Duas moderações empíricas, sinalizadas no texto.</strong> Primeira: a "liberação de dopamina" dos slides foi lida pela distinção entre querer e gostar (Berridge e Robinson), porque é ela que explica o poder do reforço variável e o uso sem prazer. Segunda: a ligação entre redes sociais e ansiedade ou baixa autoestima foi mantida como mecanismo plausível, com a ressalva de que a associação entre tempo de uso e bem-estar é pequena nas amostras grandes (Orben e Przybylski) e de que o efeito mais bem sustentado é o da comparação e do uso passivo.<br><br><strong>Acréscimos.</strong> As referências foram acrescentadas para dar respaldo formal ao que os slides afirmam sem citação: os esquemas de reforço, o modelo do gancho de produto, o descompasso evolutivo, a psicologia do hábito, a preparação biológica para certos estímulos e a análise dos recursos aditivos das plataformas. Nenhuma citação foi construída para preencher lacuna.</div><div class='cta'><img class='ph' alt='Prof. Júlio Gonçalves' src='/assets/julio.jpg'><div class='in'><div class='k'>Aprenda muito mais na</div><h3>Comunidade Lógica Psicológica</h3><ul><li>Aprofundar o raciocínio clínico com ciência, processos e análise funcional.</li><li>Estruturar uma prática ética, com pensamento crítico e evidências atualizadas.</li><li>Desenvolver o self clínico com supervisão, leituras guiadas e rede.</li></ul><a class='go' href='https://psicojulio.com/comunidade-logica-psicologica/' target='_blank' rel='noopener'>Participar da comunidade &#8594;</a></div></div><div class='foot'><img class='foot-logo' alt='Lógica Psicológica' src='/assets/logo.png'><div class='contato'><a href='mailto:contato@psicojulio.com'>contato@psicojulio.com</a> &middot; <a href='tel:+5547999338021'>(47) 99933-8021</a><br>Rua Concórdia, 703, São Vicente, Itajaí — 88309-645<br><span class='cnpj'>CNPJ 49.649.803/0001-60</span></div></div></main></div><button class='toc-fab' id='fab'>&#9776; Seções</button><div class='overlay' id='ov'></div><script>
+(function(){
+  var K='mat-Aula-DT2-';
+  document.querySelectorAll('.ck input').forEach(function(c,i){
+    var k=K+'ck'+i;
+    try{ if(localStorage.getItem(k)==='1'){c.checked=true;c.closest('.ck').classList.add('done');} }catch(e){}
+    c.addEventListener('change',function(){
+      c.closest('.ck').classList.toggle('done',c.checked);
+      try{ localStorage.setItem(k,c.checked?'1':'0'); }catch(e){} flag();
+    });
+  });
+  document.querySelectorAll('.qz textarea').forEach(function(t,i){
+    var k=K+'q'+i;
+    try{ var v=localStorage.getItem(k); if(v)t.value=v; }catch(e){}
+    t.addEventListener('input',function(){ try{ localStorage.setItem(k,t.value); }catch(e){} flag(); });
+  });
+  var s=document.getElementById('saved'),tm;
+  function flag(){ if(!s)return; s.classList.add('on'); clearTimeout(tm); tm=setTimeout(function(){s.classList.remove('on');},1600); }
+  var b=document.getElementById('exp');
+  if(b) b.addEventListener('click',function(){
+    var out='RESPOSTAS — Como os produtos exploram o que a evolução deixou: seis ganchos do design digital\n\n';
+    document.querySelectorAll('.qz').forEach(function(q){
+      out+= q.querySelector('p').innerText+'\n'+(q.querySelector('textarea').value||'(sem resposta)')+'\n\n';
+    });
+    var a=document.createElement('a');
+    a.href=URL.createObjectURL(new Blob([out],{type:'text/plain'}));
+    a.download='Aula-DT2-respostas.txt'; a.click();
+  });
+  var l=document.getElementById('lmp');
+  if(l) l.addEventListener('click',function(){
+    if(!confirm('Apagar suas anotações deste material?'))return;
+    try{ Object.keys(localStorage).filter(function(k){return k.indexOf(K)===0;}).forEach(function(k){localStorage.removeItem(k);}); }catch(e){}
+    location.reload();
+  });
+  var f=document.getElementById('fab'),o=document.getElementById('ov'),sd=document.getElementById('side');
+  if(f)f.onclick=function(){sd.classList.toggle('open');o.classList.toggle('open');};
+  if(o)o.onclick=function(){sd.classList.remove('open');o.classList.remove('open');};
+})();
+</script></body></html>

@@ -10,6 +10,7 @@ assets/                     logo, foto, imagens compartilhadas
 jornada/                    hub das Jornadas da Leitura
 processos/                  trilha TBP (cap1…cap11)
 psicoterapeutas-eficazes/   trilha Miller & Moyers (cap2…)
+dependencias-tecnologicas/  trilha da disciplina gravada (aula1…aula6)
 aulas/                      aulas livres
 supervisoes/                supervisões clínicas
 newsletter/                 edições numeradas, sem periodicidade fixa (pasta por data, ex.: 2026-09/)
@@ -18,7 +19,7 @@ newsletter/                 edições numeradas, sem periodicidade fixa (pasta p
 Cada material é uma pasta com `index.html` e `resumo.pdf`.
 As edições da newsletter têm `index.html` e `edicao-NN.pdf` (uma página A4).
 
-Hoje: 33 materiais publicados, 209 perguntas com gabarito, 29 figuras.
+Hoje: 41 materiais publicados, 259 perguntas com gabarito, 44 figuras.
 
 ## Publicação
 
