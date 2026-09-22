@@ -41,7 +41,7 @@ assets/                     logo.png, logo-creme.png, julio.jpg
 jornada/                    hub das trilhas de leitura
   processos/                11 encontros — Hofmann, Hayes & Lorscheid
   psicoterapeutas-eficazes/ 4 de 9 — Miller & Moyers
-  dependencias-tecnologicas/ disciplina gravada do Júlio, 12 vídeos (aula1…aula12)
+  dependencias-tecnologicas/ disciplina gravada do Júlio, 9 vídeos (aula1…aula9)
 aulas/                      6 aulas livres
 supervisoes/                13 casos, desidentificados
 newsletter/                 edições numeradas (pasta por data: 2026-09/)
@@ -50,8 +50,8 @@ newsletter/                 edições numeradas (pasta por data: 2026-09/)
 Cada material é uma pasta com `index.html` e `resumo.pdf`.
 As edições da newsletter têm `index.html` e `edicao-01.pdf`.
 
-**Números atuais (v50, 21/09/2026):** 47 materiais, 295 perguntas com gabarito (100%),
-53 figuras SVG, 3 itens na Edição 1 (definitiva, v44).
+**Números atuais (v49, 21/09/2026):** 44 materiais, 277 perguntas com gabarito (100%),
+48 figuras SVG, 3 itens na Edição 1 (definitiva, v44).
 
 ---
 
@@ -183,10 +183,9 @@ AQ2 → AAQ-II · hipotivação → hipoativação · metas Smart → SMART
   cada vídeo, eu faço texto + PDF na hora, e o pacote para subir só no fim, para
   economizar dados. Para cada vídeo novo: script `aula_*.py` no molde, acrescentar
   a linha em VIDEOS e rodar `trilha_dt.py`.
-  Estado em 21/09: vídeos 1 a 12 publicados (`aula_ludico.py`, `aula_dt2.py` …
-  `aula_dt12.py`). Vídeos 5 e 6: transtorno do jogo; 7: avaliação diagnóstica;
-  8: etapas do processo interventivo; 9: entrevista motivacional; 10 a 12: estágios
-  (pré-contemplação, contemplação, preparação). Próximo (13): valores e programação de atividades. A aula solta `aulas/comportamento-ludico/` saiu do
+  Estado em 21/09: vídeos 1 a 9 publicados (`aula_ludico.py`, `aula_dt2.py` …
+  `aula_dt9.py`). Vídeos 5 e 6: transtorno do jogo; 7: avaliação diagnóstica;
+  8: etapas do processo interventivo; 9: entrevista motivacional. Próximo (10): pré-contemplação. A aula solta `aulas/comportamento-ludico/` saiu do
   índice de Aulas Livres (o conteúdo é o vídeo 1 da trilha); a pasta pode ser
   apagada do repositório.
 

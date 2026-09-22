@@ -18,9 +18,6 @@ VIDEOS = [
     (7, 'aula7', u'Avaliação diagnóstica: formulação de caso, avaliação ecológica momentânea e as escalas', u'Avaliação'),
     (8, 'aula8', u'Etapas do processo interventivo: fármacos, grupos de apoio, o protocolo STICA e as três fases', u'Intervenção'),
     (9, 'aula9', u'Entrevista motivacional: os estágios de mudança e a pergunta certa para cada um', u'Intervenção'),
-    (10, 'aula10', u'Pré-contemplação: o ciclo, as crenças sobre o acaso e o que a neurobiologia diz (e o que não diz)', u'Estágios de mudança'),
-    (11, 'aula11', u'Contemplação: a balança de vantagens e desvantagens e a discrepância entre valores e comportamento', u'Estágios de mudança'),
-    (12, 'aula12', u'Preparação: metas SMART, escala de alcance, ativação e o manejo do impulso', u'Estágios de mudança'),
 ]
 TOTAL_PREVISTO = None  # None = não anunciar total; a trilha cresce conforme os vídeos chegam
 

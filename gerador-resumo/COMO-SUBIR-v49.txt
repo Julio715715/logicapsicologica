@@ -1,0 +1,8 @@
+Pacote v49 (21/09/2026). Copie o conteúdo desta pasta sobre a RAIZ do repositório
+(mesmo nível do index.html), substituindo o que existir. Pressupõe o v48 já no ar.
+Novo desde o v48:
+
+- dependencias-tecnologicas/aula7, aula8, aula9   (vídeos 7 a 9, com resumo.pdf)
+- dependencias-tecnologicas/index.html            (9 vídeos)
+- index.html, jornada/index.html, README.md       (contadores e "Publicado agora")
+- gerador-resumo/aula_dt7.py, aula_dt8.py, aula_dt9.py, trilha_dt.py, LEIA-ME.md
