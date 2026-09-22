@@ -42,7 +42,7 @@ jornada/                    hub das trilhas de leitura
   processos/                11 encontros — Hofmann, Hayes & Lorscheid
   psicoterapeutas-eficazes/ 4 de 9 — Miller & Moyers
   dependencias-tecnologicas/ disciplina gravada do Júlio, 21 vídeos (aula1…aula21), trilha completa
-aulas/                      6 aulas livres
+aulas/                      7 aulas livres
 supervisoes/                13 casos, desidentificados
 newsletter/                 edições numeradas (pasta por data: 2026-09/)
 ```
@@ -50,8 +50,8 @@ newsletter/                 edições numeradas (pasta por data: 2026-09/)
 Cada material é uma pasta com `index.html` e `resumo.pdf`.
 As edições da newsletter têm `index.html` e `edicao-01.pdf`.
 
-**Números atuais (v51, 22/09/2026):** 56 materiais, 349 perguntas com gabarito (100%),
-63 figuras SVG, 3 itens na Edição 1 (definitiva, v44).
+**Números atuais (v52, 22/09/2026):** 57 materiais, 357 perguntas com gabarito (100%),
+78 figuras SVG, 3 itens na Edição 1 (definitiva, v44).
 
 ---
 
@@ -191,6 +191,10 @@ AQ2 → AAQ-II · hipotivação → hipoativação · metas Smart → SMART
   à recaída; 21: psicoeducação para famílias. A disciplina termina no 21. A aula solta `aulas/comportamento-ludico/` saiu do
   índice de Aulas Livres (o conteúdo é o vídeo 1 da trilha); a pasta pode ser
   apagada do repositório.
+
+- **Aula livre 12/09/2026 (`aula_dbt_aceitacao.py`):** Aceitação em DBT (Descomplicando a DBT),
+  feita da transcrição completa; 15 figuras, `aulas/dbt-aceitacao-validacao/`. Usa o glue
+  `pagina_aula` de `aula_tept.py`.
 
 - **Supervisão 21/09/2026 (`sup_2109.py`):** aceitação antes da mudança
   (`supervisoes/aceitacao-antes-da-mudanca/`). Feita das anotações do Gemini,

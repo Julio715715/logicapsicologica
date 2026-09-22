@@ -1,0 +1,5 @@
+Pacote v52 (22/09/2026). Copie o conteúdo desta pasta sobre a RAIZ do repositório. Pressupõe v48 a v51 no ar.
+Novo desde o v51:
+- aulas/dbt-aceitacao-validacao/   (aula livre 12/09, Aceitação em DBT, com resumo.pdf)
+- aulas/index.html, index.html, README.md   (7 aulas, 57 materiais, "Publicado agora")
+- gerador-resumo/aula_dbt_aceitacao.py, LEIA-ME.md
