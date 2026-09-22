@@ -1,0 +1,8 @@
+Pacote v50 (21/09/2026). Copie o conteúdo desta pasta sobre a RAIZ do repositório
+(mesmo nível do index.html), substituindo o que existir. Pressupõe o v48 e o v49 já no ar.
+Novo desde o v49:
+
+- dependencias-tecnologicas/aula10, aula11, aula12   (vídeos 10 a 12, com resumo.pdf)
+- dependencias-tecnologicas/index.html               (12 vídeos)
+- index.html, jornada/index.html, README.md          (contadores e "Publicado agora")
+- gerador-resumo/aula_dt10.py, aula_dt11.py, aula_dt12.py, trilha_dt.py, LEIA-ME.md

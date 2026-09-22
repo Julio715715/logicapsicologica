@@ -1,0 +1,321 @@
+<!DOCTYPE html><html lang='pt-BR'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='icon' type='image/png' sizes='32x32' href='/favicon-32.png'><link rel='icon' type='image/png' sizes='192x192' href='/favicon-192.png'><link rel='apple-touch-icon' href='/apple-touch-icon.png'><link rel='icon' href='/favicon.ico' sizes='any'><link rel='preconnect' href='https://fonts.googleapis.com'><link rel='preconnect' href='https://fonts.gstatic.com' crossorigin><link href='https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500&display=swap' rel='stylesheet'><title>Preparação: metas SMART, escala de alcance, ativação e o manejo do impulso — Lógica Psicológica</title><style>
+:root{--olive:#5b5c2a;--olive-dk:#43441f;--sage:#9ca575;--sage-dk:#7c8054;--cream:#f8f3e6;--cream-dp:#efe7d3;--gilt:#a8894f;--gilt-lt:#c3a468;--ink:#2f2e24;--muted:#6c6a55;--card:#fffdf7;}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;} html,body{margin:0;padding:0;}
+body{font-family:'Plus Jakarta Sans',system-ui,-apple-system,Segoe UI,sans-serif;background:var(--cream);color:var(--ink);font-size:17px;line-height:1.62;font-weight:400;-webkit-font-smoothing:antialiased;}
+a{color:var(--olive);} strong{font-weight:700;color:var(--olive-dk);} em{color:var(--sage-dk);}
+:focus-visible{outline:2px solid var(--gilt);outline-offset:2px;}
+.topbar{position:sticky;top:0;z-index:30;background:rgba(248,243,230,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--cream-dp);}
+.topbar .in{max-width:1100px;margin:0 auto;padding:11px 20px;display:flex;align-items:center;gap:12px;}
+.topbar img{height:22px;display:block;}
+.topbar .sp{flex:1;}
+.topbar .tag{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);}
+.backlink{font-weight:800;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--olive-dk);text-decoration:none;border:1px solid var(--cream-dp);background:var(--card);border-radius:20px;padding:7px 14px;white-space:nowrap;line-height:1;transition:border-color .18s,color .18s;}
+.backlink:hover{border-color:var(--gilt-lt);color:var(--gilt);}
+@media(max-width:430px){.topbar .tag{display:none;}}
+.shell{display:flex;gap:34px;max-width:1100px;margin:0 auto;padding:0 20px;align-items:flex-start;}
+.side{flex:0 0 252px;width:252px;position:sticky;top:56px;align-self:flex-start;height:calc(100vh - 66px);overflow:hidden;background:linear-gradient(165deg,#5b5c2a,#3b3c1b);color:var(--cream);border-radius:0 0 16px 16px;padding:18px 18px 16px;display:flex;flex-direction:column;}
+.side .nav{flex:1 1 auto;overflow-y:auto;min-height:0;scrollbar-width:thin;scrollbar-color:rgba(248,243,230,.28) transparent;}
+.side .nav::-webkit-scrollbar{width:6px;} .side .nav::-webkit-scrollbar-thumb{background:rgba(248,243,230,.28);border-radius:3px;}
+.side .brand{display:block;margin-bottom:14px;}
+.side .brand img{width:100%;max-width:148px;height:auto;display:block;}
+.side .st{font-weight:800;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt-lt);margin:13px 0 6px;padding-top:11px;border-top:1px solid rgba(248,243,230,.18);}
+.side .st.first{margin-top:0;padding-top:0;border-top:none;}
+.side a{display:block;text-decoration:none;color:var(--cream);padding:8px 11px;border-radius:9px;font-size:14.5px;font-weight:700;line-height:1.25;margin-bottom:3px;border:1px solid transparent;}
+.side a .s{display:block;font-size:11.8px;font-weight:400;color:#d9d3bd;margin-top:2px;line-height:1.3;}
+.side a:hover{background:rgba(248,243,230,.10);}
+.side a.on{background:var(--cream);color:var(--olive-dk);border-color:var(--cream);}
+.side a.on .s{color:var(--muted);}
+.side .home{font-weight:800;font-size:12.5px;letter-spacing:.02em;padding:5px 11px;}
+.side .navlink{font-weight:700;font-size:13px;color:#e7e1cb;padding:5px 11px;}
+.side .sig{flex:0 0 auto;margin-top:12px;padding-top:12px;border-top:1px solid rgba(248,243,230,.18);display:flex;align-items:center;gap:11px;}
+.side .sig img{width:40px;height:40px;flex:none;border-radius:50%;object-fit:cover;object-position:center 18%;border:2px solid rgba(248,243,230,.35);}
+.side .sig .who{font-weight:800;font-size:12.5px;color:var(--cream);line-height:1.3;}
+.side .sig .who span{display:block;font-weight:400;font-size:11.5px;color:#cfc9b2;letter-spacing:.04em;margin-top:2px;}
+.side .sub{display:block;margin-top:10px;text-align:center;background:var(--cream);color:var(--olive-dk);font-weight:800;font-size:13px;letter-spacing:.02em;text-decoration:none;padding:10px 14px;border-radius:22px;transition:background .18s;}
+.side .sub:hover{background:#fff;color:var(--olive-dk);}
+.main{flex:1 1 auto;max-width:730px;width:100%;padding:0 0 50px;}
+.toc-fab{display:none;} .overlay{display:none;}
+@media(max-width:960px){
+ .shell{display:block;padding:0;} .main{max-width:760px;margin:0 auto;padding:0 20px 50px;}
+ .side{position:fixed;top:0;left:0;height:100vh;width:292px;z-index:60;transform:translateX(-100%);transition:transform .25s;box-shadow:2px 0 22px rgba(0,0,0,.28);padding:26px 22px;max-height:none;border-radius:0;}
+ .side.open{transform:none;}
+ .toc-fab{display:block;position:fixed;bottom:18px;right:18px;z-index:50;background:var(--olive-dk);color:var(--cream);font-weight:800;font-size:13px;letter-spacing:.04em;border:none;border-radius:30px;padding:13px 20px;box-shadow:0 4px 14px rgba(0,0,0,.24);cursor:pointer;}
+ .overlay{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:55;opacity:0;pointer-events:none;transition:opacity .25s;}
+ .overlay.open{display:block;opacity:1;pointer-events:auto;}
+}
+@media(min-width:961px) and (max-height:820px){
+ .side a .s{display:none;}
+ .side .brand{margin-bottom:10px;} .side .brand img{max-width:132px;}
+ .side .st{margin:10px 0 5px;padding-top:9px;}
+}
+@media(min-width:961px) and (max-height:680px){
+ .side .brand img{max-width:110px;}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;}}
+.hero{padding:40px 0 6px;}
+.hero .kick{font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:12px;color:var(--gilt);margin:0 0 14px;}
+.hero h1{font-weight:800;font-size:46px;line-height:1.03;letter-spacing:-.022em;color:var(--ink);margin:0 0 16px;}
+.hero h1 .ac{color:var(--olive);}
+.hero p{color:var(--muted);font-size:17.5px;max-width:620px;margin:0;}
+.divider{width:56px;height:3px;background:var(--gilt-lt);border-radius:2px;margin:26px 0 4px;}
+h2{font-weight:800;color:var(--ink);font-size:25px;letter-spacing:-.015em;line-height:1.15;margin:38px 0 10px;scroll-margin-top:74px;}
+h3{font-weight:800;color:var(--olive);font-size:17px;letter-spacing:-.005em;margin:26px 0 6px;}
+p{margin:0 0 12px;}
+ul.clean{list-style:none;padding:0;margin:10px 0 14px;}
+ul.clean li{position:relative;padding:0 0 10px 26px;}
+ul.clean li::before{content:"\03A8";font-weight:800;color:var(--gilt);position:absolute;left:0;top:0;}
+.pull{font-weight:800;color:var(--olive-dk);font-size:23px;line-height:1.3;letter-spacing:-.015em;border-left:4px solid var(--gilt-lt);padding:6px 0 6px 20px;margin:28px 0;}
+.portas{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:26px 0 8px;}
+@media(max-width:720px){.portas{grid-template-columns:1fr;}}
+.porta{display:block;text-decoration:none;background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:20px 18px;transition:border-color .18s,transform .18s;}
+.porta:hover{border-color:var(--sage);transform:translateY(-2px);}
+.porta .pk{font-weight:800;font-size:16px;letter-spacing:-.01em;color:var(--ink);line-height:1.2;}
+.porta .pd{font-size:14.5px;color:var(--muted);margin-top:8px;line-height:1.45;}
+.porta .pa{display:block;margin-top:14px;font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gilt);}
+.temas{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0;}
+@media(max-width:560px){.temas{grid-template-columns:1fr;}}
+.tema{display:flex;flex-direction:column;text-decoration:none;background:var(--card);border:1px solid var(--cream-dp);border-top:4px solid var(--sage);border-radius:14px;padding:18px 18px 16px;transition:border-top-color .18s,box-shadow .18s,transform .18s;}
+.tema:hover{border-top-color:var(--olive);box-shadow:0 2px 14px rgba(67,68,31,.08);transform:translateY(-2px);}
+.tema .tk{font-weight:800;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gilt);}
+.tema .tt{font-weight:800;font-size:19px;letter-spacing:-.015em;color:var(--ink);margin:6px 0 5px;line-height:1.2;}
+.tema .td{font-size:14px;color:var(--muted);line-height:1.45;flex:1 1 auto;}
+.tema .tm{margin-top:12px;padding-top:10px;border-top:1px solid var(--cream-dp);font-weight:700;font-size:12.5px;color:var(--sage-dk);}
+.book{background:var(--cream-dp);border-radius:14px;padding:18px 20px;margin:18px 0 24px;}
+.book .bk{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:7px;}
+.book .bt{font-weight:800;font-size:19px;letter-spacing:-.015em;color:var(--ink);margin-bottom:4px;line-height:1.2;}
+.book .bsub{color:var(--muted);font-size:14px;margin-bottom:14px;line-height:1.4;}
+.book a{display:inline-block;font-weight:800;font-size:12.5px;letter-spacing:.02em;color:var(--cream);background:var(--olive);padding:11px 22px;border-radius:26px;text-decoration:none;}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0;}
+@media(max-width:560px){.cards{grid-template-columns:1fr;}}
+.card{background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:6px;}
+.card.live{border-color:var(--sage);box-shadow:0 2px 12px rgba(67,68,31,.06);}
+.card:not(.live){opacity:.7;}
+.card .ct{display:flex;align-items:center;justify-content:space-between;min-height:26px;}
+.card .n{font-weight:800;font-size:24px;color:var(--sage-dk);line-height:1;letter-spacing:-.02em;}
+.card .dt{font-weight:800;font-size:12px;letter-spacing:.1em;color:var(--gilt);}
+.card.bydate .dt{font-size:15px;color:var(--sage-dk);}
+.card .tt{font-weight:800;color:var(--ink);font-size:16.5px;line-height:1.25;letter-spacing:-.01em;margin-top:2px;}
+.card .pr{color:var(--muted);font-size:13.5px;}
+.card .acts{display:flex;gap:8px;margin-top:10px;}
+.card .go,.card .pdf{font-weight:800;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;padding:9px 16px;border-radius:20px;text-decoration:none;}
+.card .go{color:var(--cream);background:var(--olive);} .card .pdf{color:var(--olive-dk);border:1.5px solid var(--gilt-lt);}
+.card .soon{font-weight:800;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:10px;}
+.empty{background:var(--card);border:1px dashed var(--cream-dp);border-radius:14px;padding:26px;text-align:center;color:var(--muted);}
+.cta{position:relative;overflow:hidden;border-radius:16px;margin:30px 0 8px;background:linear-gradient(150deg,#5b5c2a,#43441f);color:var(--cream);display:grid;grid-template-columns:minmax(0,290px) minmax(0,1fr);}
+.cta .ph{width:100%;height:100%;min-height:330px;object-fit:cover;object-position:center 22%;display:block;opacity:.95;}
+.cta .in{padding:26px 26px 28px;align-self:center;}
+.cta .in .k{color:#ddd6bf;margin-bottom:6px;font-size:14.5px;}
+.cta .in h3{font-weight:800;font-size:22px;letter-spacing:-.015em;color:var(--cream);margin:0 0 14px;}
+.cta ul{list-style:none;padding:0;margin:0 0 18px;}
+.cta li{position:relative;padding:0 0 10px 24px;font-size:14.5px;color:#f1ecdc;line-height:1.45;}
+.cta li::before{content:"\03A8";color:var(--gilt-lt);position:absolute;left:0;font-weight:800;}
+.cta a.go{display:block;text-align:center;background:var(--cream);color:var(--olive-dk);font-weight:800;font-size:14.5px;text-decoration:none;padding:14px;border-radius:28px;}
+@media(max-width:720px){.cta{grid-template-columns:1fr;} .cta .ph{min-height:230px;height:230px;}}
+.foot{text-align:center;color:var(--muted);font-size:12.5px;margin-top:38px;padding-top:20px;border-top:1px solid var(--cream-dp);}
+.foot .foot-logo{height:30px;width:auto;display:inline-block;margin-bottom:8px;}
+.contato{margin-top:14px;font-size:12.5px;color:var(--muted);line-height:1.7;}
+.contato a{color:var(--gilt);text-decoration:none;} .contato .cnpj{font-size:11.5px;opacity:.85;}
+
+.mhero{padding:36px 0 4px;}
+.mhero .kick{font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:11.5px;color:var(--gilt);margin:0 0 12px;}
+.mhero h1{font-weight:800;font-size:42px;line-height:1.04;letter-spacing:-.022em;color:var(--ink);margin:0 0 10px;}
+.mhero .sub{font-weight:700;font-size:19px;color:var(--sage-dk);line-height:1.3;margin:0 0 12px;letter-spacing:-.01em;}
+.mhero .meta{font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);}
+.mhero .tema{margin:18px 0 0;padding-left:18px;border-left:4px solid var(--cream-dp);color:var(--muted);font-size:16.5px;}
+.usar{background:var(--cream-dp);border-radius:12px;padding:16px 18px;margin:24px 0 14px;font-size:14.5px;color:var(--muted);line-height:1.55;}
+.usar b{display:block;font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--olive-dk);margin-bottom:6px;}
+.pdfbtn{display:inline-block;font-weight:800;font-size:13px;letter-spacing:.02em;color:var(--cream);background:var(--olive);padding:13px 24px;border-radius:26px;text-decoration:none;}
+.ess{background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:20px 22px;margin:26px 0;}
+.ess .et{font-weight:800;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gilt);margin-bottom:12px;}
+.ess ul{list-style:none;padding:0;margin:0;}
+.ess li{position:relative;padding:0 0 12px 26px;font-size:15.8px;line-height:1.5;}
+.ess li:last-child{padding-bottom:0;}
+.ess li::before{content:"\03A8";position:absolute;left:0;top:0;color:var(--gilt-lt);font-weight:800;}
+details.sec{border-bottom:1px solid var(--cream-dp);}
+details.sec[open]{padding-bottom:16px;}
+details.sec summary{list-style:none;cursor:pointer;padding:18px 0;display:flex;align-items:baseline;gap:12px;}
+details.sec summary::-webkit-details-marker{display:none;}
+details.sec summary h2{font-weight:800;font-size:21px;letter-spacing:-.015em;color:var(--ink);margin:0;line-height:1.2;flex:1;}
+details.sec summary .arw{color:var(--gilt);font-weight:800;font-size:13px;transition:transform .2s;}
+details.sec[open] summary .arw{transform:rotate(90deg);}
+details.sec .lead{color:var(--sage-dk);font-weight:500;margin:0 0 14px;font-size:16px;}
+details.sec p{font-size:16.5px;}
+ul.key{list-style:none;padding:0;margin:12px 0;}
+ul.key li{position:relative;padding:0 0 11px 26px;font-size:16px;line-height:1.5;}
+ul.key li::before{content:"\03A8";position:absolute;left:0;top:0;color:var(--gilt);font-weight:800;}
+.dial{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0;}
+@media(max-width:620px){.dial{grid-template-columns:1fr;}}
+.dial .d{background:var(--card);border:1px solid var(--cream-dp);border-top:3px solid var(--sage);border-radius:12px;padding:14px 16px;}
+.dial .dt{font-weight:800;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--olive-dk);margin-bottom:7px;}
+.dial p{margin:0;font-size:14.5px;color:var(--muted);line-height:1.45;}
+.obs{background:var(--cream-dp);border-radius:12px;padding:16px 18px;margin:18px 0;}
+.obs h4{font-weight:800;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--olive-dk);margin:0 0 7px;}
+.obs p{margin:0;font-size:15.5px;}
+.callout{background:var(--card);border-left:4px solid var(--gilt-lt);border-radius:0 12px 12px 0;padding:16px 18px;margin:20px 0;font-size:15.5px;line-height:1.55;}
+.callout .co-t{font-weight:800;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--gilt);margin-bottom:7px;}
+span.ref{font-size:13.5px;color:var(--muted);}
+/* diagrama */
+figure.dg{margin:24px 0;background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:18px 16px 12px;}
+figure.dg svg{width:100%;height:auto;display:block;}
+figure.dg figcaption{margin-top:10px;font-size:13px;color:var(--muted);text-align:center;line-height:1.45;}
+.dg-t{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:10px;text-align:center;}
+/* ferramentas */
+.tools{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:32px 0 0;}
+@media(max-width:720px){.tools{grid-template-columns:1fr;}}
+.tool{background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:20px;}
+.tool .tt{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:14px;}
+.ck{display:flex;gap:11px;align-items:flex-start;padding:9px 0;font-size:15px;line-height:1.45;cursor:pointer;}
+.ck input{margin:4px 0 0;accent-color:var(--olive);width:17px;height:17px;flex:none;cursor:pointer;}
+.ck.done span{text-decoration:line-through;opacity:.5;}
+.qz{margin-bottom:18px;} .qz:last-child{margin-bottom:0;}
+.qz p{font-size:15px;margin:0 0 7px;line-height:1.45;font-weight:500;}
+.qz textarea{width:100%;min-height:66px;border:1px solid var(--cream-dp);border-radius:10px;background:var(--cream);font-family:inherit;font-size:14.5px;color:var(--ink);padding:10px 12px;resize:vertical;line-height:1.5;}
+.qz textarea:focus{outline:2px solid var(--gilt-lt);outline-offset:1px;}
+.savebar{display:flex;align-items:center;gap:12px;margin-top:16px;flex-wrap:wrap;}
+.savebar button{font-weight:800;font-size:11px;letter-spacing:.08em;text-transform:uppercase;border:1.5px solid var(--cream-dp);background:none;color:var(--olive-dk);border-radius:22px;padding:10px 18px;cursor:pointer;font-family:inherit;}
+.savebar button:hover{border-color:var(--gilt-lt);color:var(--gilt);}
+.saved{font-weight:800;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--sage-dk);opacity:0;transition:opacity .3s;}
+.saved.on{opacity:1;}
+.refs h2,.nmet h2{font-weight:800;font-size:21px;letter-spacing:-.015em;color:var(--ink);margin:34px 0 10px;}
+.refs ol{padding-left:20px;font-size:13.8px;color:var(--muted);line-height:1.6;}
+.refs li{margin-bottom:9px;}
+.nmet{background:var(--card);border-left:4px solid var(--gilt-lt);border-radius:0 12px 12px 0;padding:16px 20px;margin:26px 0 0;font-size:14px;color:var(--muted);line-height:1.6;}
+.nmet b{display:block;font-weight:800;font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--olive-dk);margin-bottom:7px;}
+.side .idx a{font-size:13.5px;font-weight:500;padding:7px 12px;line-height:1.3;}
+
+/* gabarito expansível */
+.qz .gab{margin-top:8px;border-top:1px solid #E9E3CE;padding-top:8px;}
+.qz .gab summary{cursor:pointer;list-style:none;font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#A8894F;}
+.qz .gab summary::-webkit-details-marker{display:none;}
+.qz .gab summary::before{content:'+ ';font-weight:800;}
+.qz .gab[open] summary::before{content:'\2212 ';}
+.qz .gab-in{margin-top:8px;background:#F8F3E6;border-left:2px solid #C3A468;border-radius:0 6px 6px 0;padding:10px 12px;font-size:.94rem;line-height:1.55;color:#403F32;}
+.qz .gab-in p{margin:0 0 6px;}.qz .gab-in p:last-child{margin:0;}
+
+/* gabarito expansível */
+.qz .gab{margin-top:8px;border-top:1px solid #E9E3CE;padding-top:8px;}
+.qz .gab summary{cursor:pointer;list-style:none;font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#A8894F;}
+.qz .gab summary::-webkit-details-marker{display:none;}
+.qz .gab summary::before{content:'+ ';font-weight:800;}
+.qz .gab[open] summary::before{content:'\2212 ';}
+.qz .gab-in{margin-top:8px;background:#F8F3E6;border-left:2px solid #C3A468;border-radius:0 6px 6px 0;padding:10px 12px;font-size:.94rem;line-height:1.55;color:#403F32;}
+.qz .gab-in p{margin:0 0 6px;}.qz .gab-in p:last-child{margin:0;}
+</style></head><body><div class='topbar'><div class='in'><a href='/'><img alt='Lógica Psicológica' src='/assets/logo.png'></a><a class='backlink' href='/dependencias-tecnologicas/' title='Voltar para Encontros'>&#8592; Voltar</a><div class='sp'></div><div class='tag'>Jornada da Leitura</div></div></div><div class='shell'><aside class='side' id='side'><a class='brand' href='/'><img alt='Lógica Psicológica' src='/assets/logo-creme.png'></a><div class='nav'><div class='st first'>Navegação</div><a class='home' href='/dependencias-tecnologicas/'>&#8592; Encontros</a><a class='navlink' href='/'>Início do portal</a><div class='st'>Neste material</div><div class='idx'><a href='#s0'>A ficha do estágio</a><a href='#s1'>Metas SMART</a><a href='#s2'>Escala de alcance</a><a href='#s3'>Quadrantes e ativação</a><a href='#s4'>O elefante e o condutor</a><a href='#s5'>Ferramentas para o impulso</a><a href='#s6'>Lendo em processos</a></div></div><div class='sig'><img alt='Prof. Júlio Gonçalves' src='/assets/julio.jpg'><div class='who'>Prof. Júlio Gonçalves<span>MSc · CRP 12/17614</span></div></div><a class='sub' href='https://psicojulio.com/comunidade-logica-psicologica/' target='_blank' rel='noopener'>Inscreva-se</a></aside><main class='main'><div class='mhero'><div class='kick'>Resumo de aula · Jornada da Leitura</div><h1>Prepara&ccedil;&atilde;o: metas SMART, escala de alcance, ativa&ccedil;&atilde;o e o manejo do impulso</h1><div class='sub'>Vídeo 12</div><div class='meta'>Prof. Júlio Gonçalves · Disciplina Avaliação e tratamento das dependências tecnológicas · Vídeo 12</div><p class='tema'>O paciente que quer mudar e não sabe como: metas SMART em vez de "parar", uma escala de cinco níveis para medir o alcance, os quadrantes em que a dependência se instala, a ativação que precede o humor, e o manejo do impulso com o elefante e o condutor.</p></div><div class='obs' style='margin-bottom:18px'><h4>Sobre este material</h4><p>Material de estudo <strong>dirigido a psicólogos</strong>, escrito a partir dos slides do décimo segundo vídeo da disciplina, sobre a fase de preparação. Não havia transcrição.</p><p>É o vídeo mais denso da série de estágios: metas, escala de alcance, quadrantes do estado, ativação, o elefante e o condutor, e duas listas de ferramentas para o impulso. Os exercícios de regulação fisiológica estão descritos em termos gerais, sem instruções.</p></div><div class='usar'><b>Como usar</b>Abra as seções que quiser ler, marque o que pretende aplicar e responda o que fizer sentido. Tudo fica salvo neste aparelho — ninguém mais vê.</div><a class='pdfbtn' href='resumo.pdf'>&#8681; Baixar em PDF</a><div class='ess'><div class='et'>O essencial</div><ul><li><strong>Preparação: "eu quero mudar, mas não sei bem como".</strong> O paciente está motivado, mas precisa de orientação prática. Pode ter tentado reduzir sem sucesso sustentado.</li><li><strong>A meta é SMART, e não "parar".</strong> "Usar o computador por no máximo duas horas por dia nos dias de semana, a partir da próxima semana" tem específico, mensurável, atingível, relevante e prazo.</li><li><strong>Cinco níveis de alcance, com a meta no meio.</strong> De menos dois (mais de três horas) a mais dois (zero horas e substituiu). O dia de duas horas e meia é um menos um, não um fracasso.</li><li><strong>A dependência se instala nos quadrantes desagradáveis.</strong> Tenso ou desmotivado, a tela é a resposta. Seleção de atividades é o que ocupa esses quadrantes com outra coisa.</li><li><strong>A ativação vem antes do humor.</strong> Atividades bem planejadas sobem primeiro; o humor pode cair no começo. É a fase crítica, e o paciente precisa saber disso antes.</li><li><strong>O elefante obedece ao condutor enquanto quiser.</strong> Sistema 1 e sistema 2. Manejo do impulso é arranjar o caminho para o elefante, e não vencer o cabo de guerra.</li></ul></div><details class='sec' id='s0' open><summary><h2>Preparação: a ficha do estágio</h2><span class='arw'>&#9656;</span></summary>
+<p>O terceiro estágio, na frase do paciente: <em>"Eu quero mudar, mas não sei bem como."</em></p>
+<ul class='key'><li><b>Características</b>: o paciente está motivado, mas precisa de orientação prática. Pode ter tentado reduzir o uso, mas sem sucesso sustentado.</li><li><b>Perguntas</b>: se já pensou em alguma estratégia para reduzir o tempo de uso; o que acha que precisa para conseguir mudar; quais horários ou situações seriam mais fáceis para começar.</li><li><b>Intervenção</b>: definir metas terapêuticas realistas (SMART) e planejar estratégias específicas: apps de bloqueio, agenda offline, substituições.</li></ul>
+<p>A terceira pergunta merece destaque: <strong>onde é mais fácil começar</strong>. Não onde é mais grave. O paciente em preparação já tentou e falhou; a primeira meta tem que ser a que ele consegue cumprir, porque o que está em jogo é a autoeficácia, e não as horas.</p>
+</details><details class='sec' id='s1'><summary><h2>Metas SMART: em vez de "parar"</h2><span class='arw'>&#9656;</span></summary>
+<p>O slide usa o modelo SMART: <b>S</b> (específica), "reduzir o uso de internet para três horas por dia"; <b>M</b> (mensurável), monitorado por registros diários; <b>A</b> (atingível), baseado no histórico do paciente; <b>R</b> (relevante), vinculada a valores pessoais; <b>T</b> (temporal), prazo definido, "até o final do mês".</p>
+<p>E o exemplo que o slide destaca: em vez de simplesmente <strong>"parar de jogar"</strong>, definir como meta <strong>"usar o computador por no máximo duas horas por dia durante os dias de semana"</strong>, a partir da próxima semana. Repare no que essa formulação faz: tem número, tem dias, tem data de início, deixa o fim de semana fora (atingível) e admite uso (funcional). "Parar de jogar" falha em todos os cinco critérios e ainda entrega ao paciente uma meta que ele já não cumpriu sozinho.</p>
+<div class='obs'><h4>O R é o que segura os outros quatro</h4><p>"Vinculada a valores pessoais" liga a meta ao caminho sonhado do vídeo 11. Uma meta de duas horas que não está ligada a nada dura até a primeira noite ruim; uma meta de duas horas que existe para o paciente ter tempo de estudar para a prova que ele quer passar dura mais. Ao escrever a meta, vale escrever o para quê ao lado.</p></div>
+</details><details class='sec' id='s2'><summary><h2>A escala de alcance da meta</h2><span class='arw'>&#9656;</span></summary>
+<figure class='dg'><div class='dg-t'>Níveis de alcance da meta</div>
+<svg viewBox='0 0 720 190' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Escala de menos dois a mais dois: mais de três horas, entre duas e três, até duas horas que é a meta, até uma hora, zero horas com substituição por atividades saudáveis'>
+<line x1='60' y1='40' x2='660' y2='40' stroke='#9ca575' stroke-width='2'/>
+<g font-family="Plus Jakarta Sans,sans-serif" font-size='11' fill='#2f2e24' text-anchor='middle'>
+<circle cx='90' cy='40' r='9' fill='#a05a3c'/><text x='90' y='44' font-size='10' font-weight='800' fill='#fff'>&minus;2</text>
+<text x='90' y='72'>mais de 3 h</text><text x='90' y='87'>no dia</text>
+<circle cx='225' cy='40' r='9' fill='#c9a48c'/><text x='225' y='44' font-size='10' font-weight='800' fill='#fff'>&minus;1</text>
+<text x='225' y='72'>entre 2 e 3 h</text>
+<circle cx='360' cy='40' r='12' fill='#43441f'/><text x='360' y='44' font-size='10' font-weight='800' fill='#fff'>0</text>
+<text x='360' y='72' font-weight='800'>até 2 h no dia</text><text x='360' y='87' font-size='10' fill='#6c6a55'>meta alcançada</text>
+<circle cx='495' cy='40' r='9' fill='#9ca575'/><text x='495' y='44' font-size='10' font-weight='800' fill='#fff'>+1</text>
+<text x='495' y='72'>até 1 h</text>
+<circle cx='630' cy='40' r='9' fill='#43441f'/><text x='630' y='44' font-size='10' font-weight='800' fill='#fff'>+2</text>
+<text x='630' y='72'>0 h e substituiu</text><text x='630' y='87'>por atividade saudável</text>
+</g>
+<rect x='120' y='118' width='480' height='58' rx='10' fill='#f1ece0' stroke='#9ca575' stroke-width='1.2'/>
+<text x='360' y='142' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='11' font-weight='800' fill='#2f2e24'>a meta está no meio, e não no topo</text>
+<text x='360' y='161' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='10' fill='#6c6a55'>o dia em que ele jogou 2h30 é um &minus;1, e não um fracasso; o dia sem jogo só vale +2 se algo entrou no lugar</text>
+</svg>
+<figcaption>A escala dos slides para a meta de duas horas nos dias de semana. Cinco níveis em vez de dois (cumpriu, não cumpriu) mudam o que o paciente registra e o que o terapeuta consegue ver.</figcaption></figure>
+<p>O slide seguinte apresenta os <strong>níveis de alcance da meta</strong>, uma escala de cinco pontos para a meta de duas horas. <b>+2</b>: jogou zero horas no dia e substituiu o tempo com atividades saudáveis. <b>+1</b>: jogou até uma hora. <b>0</b>: jogou até duas horas, meta alcançada. <b>&minus;1</b>: jogou entre duas e três horas. <b>&minus;2</b>: jogou mais de três horas.</p>
+<p>Dois detalhes fazem a escala funcionar. A meta está no <strong>zero</strong>, no meio, e não no topo: cumprir é o esperado, e não o máximo. E o +2 exige <strong>substituição</strong>, e não só abstinência: um dia sem jogar e sem fazer nada no lugar é um +1 no máximo, porque foi um dia em que o quadrante desagradável ficou vazio, e quadrante vazio é onde a recaída começa. Para o paciente, a escala muda o registro: em vez de "falhei" ou "consegui", ele anota um número, e o número de terça (&minus;1) conversa com o de quarta (+1) de um jeito que "falhei" e "consegui" não conversam. Para o terapeuta, é a medida semanal da EMA (vídeo 7) já pronta.</p>
+</details><details class='sec' id='s3'><summary><h2>Os quadrantes do estado e a ativação que precede o humor</h2><span class='arw'>&#9656;</span></summary>
+<figure class='dg'><div class='dg-t'>Onde a dependência se instala: os quadrantes do estado</div>
+<svg viewBox='0 0 720 250' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Quatro quadrantes cruzando ativo e inativo com contexto desagradável e agradável; os dois quadrantes desagradáveis são onde os comportamentos de dependência se desenvolvem; ao lado, curva de ativação subindo antes do humor'>
+<line x1='200' y1='20' x2='200' y2='230' stroke='#2f2e24' stroke-width='1.6'/>
+<line x1='40' y1='125' x2='360' y2='125' stroke='#2f2e24' stroke-width='1.6'/>
+<text x='200' y='14' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='10' font-weight='800' letter-spacing='1.2' fill='#8d876f'>ATIVO</text>
+<text x='200' y='246' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='10' font-weight='800' letter-spacing='1.2' fill='#8d876f'>INATIVO</text>
+<text x='36' y='125' text-anchor='end' font-family="Plus Jakarta Sans,sans-serif" font-size='9' font-weight='800' fill='#a05a3c' transform='rotate(-90 36 125)'>CONTEXTO DESAGRAD&Aacute;VEL</text>
+<text x='366' y='125' text-anchor='start' font-family="Plus Jakarta Sans,sans-serif" font-size='9' font-weight='800' fill='#43441f' transform='rotate(90 366 125)'>CONTEXTO AGRAD&Aacute;VEL</text>
+<rect x='44' y='24' width='152' height='97' rx='8' fill='#fffdf7' stroke='#a05a3c' stroke-width='1.2'/>
+<text x='120' y='58' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' fill='#a05a3c'>irritado, nervoso,</text>
+<text x='120' y='74' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' fill='#a05a3c'>tenso, ansioso</text>
+<rect x='44' y='129' width='152' height='97' rx='8' fill='#fffdf7' stroke='#a05a3c' stroke-width='1.2'/>
+<text x='120' y='168' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' fill='#a05a3c'>cansado, triste,</text>
+<text x='120' y='184' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' fill='#a05a3c'>desmotivado, infeliz</text>
+<rect x='204' y='24' width='152' height='97' rx='8' fill='#f1ece0' stroke='#9ca575' stroke-width='1.2'/>
+<text x='280' y='58' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' fill='#43441f'>esperançoso, motivado,</text>
+<text x='280' y='74' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' fill='#43441f'>feliz, entusiasmado</text>
+<rect x='204' y='129' width='152' height='97' rx='8' fill='#f1ece0' stroke='#9ca575' stroke-width='1.2'/>
+<text x='280' y='168' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' fill='#43441f'>calmo, relaxado,</text>
+<text x='280' y='184' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='10.5' fill='#43441f'>tranquilo, pleno</text>
+<line x1='430' y1='40' x2='430' y2='210' stroke='#2f2e24' stroke-width='1.4'/>
+<line x1='430' y1='210' x2='710' y2='210' stroke='#2f2e24' stroke-width='1.4'/>
+<text x='570' y='228' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='10' fill='#6c6a55'>tempo</text>
+<polyline points='450,150 480,145 510,138 540,130 570,120 600,108 630,92 660,70 690,50' fill='none' stroke='#43441f' stroke-width='2.4'/>
+<polyline points='450,170 480,178 510,180 540,178 570,168 600,150 630,125 660,95 690,60' fill='none' stroke='#a05a3c' stroke-width='2.4'/>
+<text x='452' y='142' font-family="Plus Jakarta Sans,sans-serif" font-size='10' font-weight='800' fill='#43441f'>ativação</text>
+<text x='452' y='195' font-family="Plus Jakarta Sans,sans-serif" font-size='10' font-weight='800' fill='#a05a3c'>humor</text>
+<text x='560' y='60' font-family="Plus Jakarta Sans,sans-serif" font-size='9.5' font-style='italic' fill='#a05a3c'>fase crítica: pode haver</text>
+<text x='560' y='73' font-family="Plus Jakarta Sans,sans-serif" font-size='9.5' font-style='italic' fill='#a05a3c'>queda no humor no início</text>
+</svg>
+<figcaption>À esquerda, os dois quadrantes desagradáveis são onde a dependência se desenvolve: a tela é o que a pessoa faz quando está tensa ou quando está desmotivada. À direita, a ativação planejada sobe antes do humor, e o humor pode cair no começo.</figcaption></figure>
+<p>Dois esboços à mão. O primeiro cruza dois eixos: <strong>ativo e inativo</strong>, na vertical; <strong>contexto desagradável e agradável</strong>, na horizontal. Nos quadrantes desagradáveis: ativo (irritado, nervoso, tenso, ansioso) e inativo (cansado, triste, desmotivado, infeliz). Nos agradáveis: ativo (esperançoso, motivado, feliz, entusiasmado) e inativo (calmo, relaxado, tranquilo, pleno). A anotação do slide: <strong>é nos quadrantes desagradáveis que se desenvolvem os comportamentos de dependência</strong>. É a função, de novo: tenso, a tela baixa a ativação; desmotivado, a tela ocupa o vazio. E a meta de duas horas só se sustenta se esses dois quadrantes ganharem outra ocupação.</p>
+<p>O segundo esboço é a lógica da ativação comportamental: duas curvas no tempo, <strong>ativação</strong> (atividades bem planejadas) subindo primeiro, e <strong>humor</strong> subindo depois, com uma <strong>fase crítica</strong> no início em que o humor pode cair. Depois, correlação positiva. A anotação: a seleção de atividades é extremamente importante para que essa correlação negativa inicial seja suprimida o máximo possível.</p>
+<div class='callout note'><div class='co-t'>O que dizer ao paciente antes de começar</div>Que as primeiras semanas podem ser piores. Que ele vai fazer coisas que ainda não dão prazer, porque o prazer vem atrás da ação, e não na frente. E que a escolha das atividades é o que encurta essa fase: coisas que ele já gostou um dia, com gente, fora de casa, no horário em que ele jogaria. Quem não é avisado lê a queda inicial do humor como prova de que a mudança não funciona, e volta para a tela no terceiro dia.</div>
+</details><details class='sec' id='s4'><summary><h2>Manejo da impulsividade: o elefante e o condutor</h2><span class='arw'>&#9656;</span></summary>
+<p>Para o manejo do impulso, o vídeo usa a alegoria de Jonathan Haidt: o <strong>cérebro emocional</strong> (sistema 1) é um elefante; o <strong>cérebro racional</strong> (sistema 2) é o condutor. Os dois convivem bem. O animal obedece ao condutor, mas apenas enquanto estiver disposto. Quando concordam, tudo transcorre; e quando divergem? Se o elefante escolhe um caminho pela direita (acreditar em hipóteses) e o condutor quer ir pela esquerda (olhar as evidências), quem tem mais probabilidade de ganhar? No elefante do slide estão escritos os seus componentes: vieses de atenção, condicionamento, crenças, vieses de memória, emoções aprendidas.</p>
+<p>O slide seguinte apoia a alegoria em Kahneman, <em>Rápido e devagar</em>. O <strong>sistema 1</strong> é rápido, instintivo e emocional, guiado por experiências passadas e associações: velocidade (reage em milissegundos, útil em perigo), intuição (atalhos mentais e padrões) e erro potencial (vieses e reações impulsivas). O <strong>sistema 2</strong> é lento, deliberado e analítico, entra quando é preciso planejar, decidir com complexidade ou corrigir o sistema 1: raciocínio lógico, autocontrole (freios às respostas automáticas) e esforço cognitivo (consome energia e cansa).</p>
+<div class='obs'><h4>O que a alegoria ensina sobre estratégia</h4><p>Se o condutor perde o cabo de guerra, a estratégia não pode ser "ter mais força de vontade". Tem que ser <strong>arranjar o caminho</strong>: tirar a tela de onde o elefante a acha, colocar a atividade onde o elefante passa, e dar ao condutor dez minutos de vantagem. É exatamente a lógica da lista seguinte. E vale lembrar, como o próprio Kahneman lembra, que os dois sistemas são uma metáfora útil, e não duas regiões do cérebro; o que importa para a clínica é a assimetria: o automático é rápido e barato, o deliberado é lento e cansa, e o ambiente decide qual dos dois ganha na maior parte das vezes.</p></div>
+</details><details class='sec' id='s5'><summary><h2>Ferramentas para o impulso</h2><span class='arw'>&#9656;</span></summary>
+<h3>Ideias para o manejo do impulso</h3>
+<ul class='key'><li><b>Bloqueio de apps</b>: aplicativos como Forest, StayFocusd ou Freedom, para limitar tempo ou bloquear apps específicos.</li><li><b>Monitoramento de tempo de tela</b>: Screen Time (iOS) ou Bem-estar Digital (Android), para acompanhar e revisar o uso diário.</li><li><b>Atraso voluntário da resposta</b>: ao sentir vontade de usar ou gastar, esperar dez minutos antes de agir; nesse tempo, respirar, andar ou registrar o impulso. É a vantagem do condutor sobre o elefante: o impulso tem pico e queda, e dez minutos costumam bastar para a queda.</li><li><b>Limite de gasto diário</b>: um teto por dia (o slide sugere vinte reais) e registro de cada compra em planilha ou app de finanças.</li><li><b>Registro de impulsos, sentimentos e motivos</b>: anotar o momento do impulso, o gatilho emocional e o contexto num diário de autorregulação. É a EMA (vídeo 7) no nível do episódio.</li><li><b>Ambiente digital limpo</b>: tirar atalhos de apps impulsivos da tela inicial, desativar notificações automáticas e deixar o celular longe ao fazer tarefas. É arranjar o caminho do elefante.</li></ul>
+<h3>Exercícios de regulação fisiológica e distrativos</h3>
+<p>O último slide traz duas listas para o momento em que o impulso ou a ativação sobem. Na coluna de <strong>regulação fisiológica</strong>: respiração lenta com contagem (inspirar, segurar, expirar mais devagar, repetir); exercício físico regular (corrida, flexões, pular corda); mudança de temperatura; escaneamento corporal (atenção parte a parte, dos pés à cabeça, soltando a tensão); e estímulos sensoriais intensos (sabores fortes, cheiros marcantes, texturas). Na coluna de <strong>exercícios distrativos</strong>: contagens (regressiva de cem, de um em um, ou seguir o ponteiro dos segundos); quebra-cabeças ou jogos que dirijam a atenção para uma tarefa lúdica; vídeos ou programas engraçados (filmes repetidos ajudam, porque a previsibilidade dá sensação de controle); lista de gratidão; e aterramento (foco nos cinco sentidos no momento presente, segurar um objeto físico). O slide fecha: <strong>mindfulness pode ser uma boa pedida</strong>.</p>
+<div class='callout note'><div class='co-t'>Duas observações</div>Primeira: as técnicas de regulação fisiológica são as de tolerância ao mal-estar da DBT; servem para atravessar o pico do impulso, e não para tratar o que o produz. Segunda: na coluna distrativa, "jogos e videogames" para quem tem dependência de jogos é a exceção óbvia; a lista é genérica e o terapeuta adapta. O critério para escolher é o quadrante: para o ativo-desagradável (tenso), regulação fisiológica; para o inativo-desagradável (desmotivado), distração ativa e, melhor ainda, a atividade planejada da seção anterior.</div>
+</details><details class='sec' id='s6'><summary><h2>Lendo o vídeo em processos</h2><span class='arw'>&#9656;</span></summary>
+<p>A preparação é o estágio em que a formulação vira plano, e o vídeo entrega cada peça do plano ligada a um nó.</p>
+<ul class='key'><li><b>A meta SMART</b> é o comportamento-alvo, com o valor ao lado (R). Sem o R, é só um número.</li><li><b>A escala de alcance</b> é a medida, e o +2 com substituição garante que a medida inclua a função, e não só a abstinência.</li><li><b>Os quadrantes</b> são o mapa dos antecedentes: em que estado a tela entra. <b>A ativação</b> é a intervenção sobre o quadrante inativo-desagradável, com o aviso da fase crítica.</li><li><b>O elefante e o condutor</b> são o modelo do controle: o automático ganha do deliberado, e por isso se intervém no ambiente e no tempo (bloqueio, ambiente limpo, atraso de dez minutos), e não na força de vontade.</li><li><b>As técnicas de regulação e distração</b> são a resposta alternativa para o pico do impulso; escolhidas pelo quadrante, e não pela lista.</li></ul>
+<p>Na prática: meta com para quê, escala de cinco níveis, atividade planejada no horário da tela, ambiente arranjado contra o elefante, e uma técnica para o pico, ensaiada na sessão antes de ser necessária.</p>
+</details><div class='tools'><div class='tool'><div class='tt'>Levar para a prática</div><label class='ck'><input type='checkbox'><span>Comecei pela situação em que é mais fácil mudar, e não pela mais grave.</span></label><label class='ck'><input type='checkbox'><span>Escrevi a meta em formato SMART, com o para quê (valor) ao lado.</span></label><label class='ck'><input type='checkbox'><span>Evitei "parar" como meta; combinei um limite com dias, horários e data de início.</span></label><label class='ck'><input type='checkbox'><span>Montei com o paciente a escala de cinco níveis, com a meta no zero e substituição no +2.</span></label><label class='ck'><input type='checkbox'><span>Identifiquei em que quadrante do estado a tela entra para este paciente.</span></label><label class='ck'><input type='checkbox'><span>Planejei atividades para ocupar esse quadrante no horário em que ele usaria a tela.</span></label><label class='ck'><input type='checkbox'><span>Avisei da fase crítica: o humor pode cair antes de subir.</span></label><label class='ck'><input type='checkbox'><span>Arranjei o ambiente (bloqueio, notificações, atalhos, distância do celular) em vez de contar com força de vontade.</span></label><label class='ck'><input type='checkbox'><span>Ensaiei na sessão uma técnica para o pico do impulso, escolhida pelo quadrante.</span></label></div><div class='tool'><div class='tt'>Para revisar — responda</div><div class='qz'><p>1. Descreva a ficha da preparação: características, perguntas e intervenção.</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver comentário</summary><div class='gab-in'>Características: motivado, mas precisa de orientação prática; pode ter tentado reduzir sem sucesso sustentado. Perguntas: se já pensou em estratégia para reduzir; o que acha que precisa para conseguir mudar; quais horários ou situações seriam mais fáceis para começar. Intervenção: metas SMART e estratégias específicas (apps de bloqueio, agenda offline, substituições).</div></details></div><div class='qz'><p>2. Reescreva "parar de jogar" como meta SMART e explique o que cada letra acrescenta.</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver comentário</summary><div class='gab-in'>Por exemplo: "usar o computador por no máximo duas horas por dia nos dias de semana, a partir da próxima semana, para ter tempo de estudar". S: número e dias, e não "parar". M: registro diário e escala de alcance. A: duas horas nos dias de semana, com fim de semana livre, com base no histórico. R: ligada ao valor (o estudo, o caminho sonhado). T: data de início e prazo de revisão.</div></details></div><div class='qz'><p>3. Descreva a escala de alcance da meta e explique por que a meta fica no zero e o +2 exige substituição.</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver comentário</summary><div class='gab-in'>+2: zero horas e substituiu por atividade saudável; +1: até uma hora; 0: até duas horas, meta alcançada; −1: entre duas e três; −2: mais de três. A meta no zero faz do cumprimento o esperado, e não o máximo, e dá espaço para registrar tanto o dia acima quanto o abaixo sem virar fracasso ou façanha. O +2 exige substituição porque um dia sem tela e sem nada no lugar deixa o quadrante desagradável vazio, que é onde a recaída começa.</div></details></div><div class='qz'><p>4. O que os quadrantes do estado mostram sobre onde a dependência se instala, e o que a curva de ativação e humor acrescenta?</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver comentário</summary><div class='gab-in'>Os quadrantes cruzam ativo e inativo com contexto agradável e desagradável; a dependência se desenvolve nos dois desagradáveis (tenso e desmotivado), porque a tela é o que baixa a ativação num e ocupa o vazio no outro. A curva mostra que, com atividades bem planejadas, a ativação sobe antes do humor, e que o humor pode cair no início (fase crítica); a seleção das atividades encurta essa fase, e o paciente precisa ser avisado dela antes.</div></details></div><div class='qz'><p>5. Explique a alegoria do elefante e do condutor e o que ela implica para a estratégia de manejo do impulso.</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver comentário</summary><div class='gab-in'>O cérebro emocional (sistema 1) é o elefante: rápido, automático, feito de vieses de atenção e memória, condicionamento, crenças e emoções aprendidas. O racional (sistema 2) é o condutor: lento, deliberado, cansa. O elefante obedece enquanto quer; num cabo de guerra, ganha. Logo a estratégia não é mais força de vontade, e sim arranjar o caminho: tirar a tela de onde o elefante a encontra, colocar a atividade onde ele passa, e dar ao condutor dez minutos de vantagem (atraso da resposta, bloqueio, ambiente limpo).</div></details></div><div class='qz'><p>6. Pense num paciente teu em preparação. Qual seria a primeira meta SMART dele, em que quadrante a tela entra, e o que tu colocaria no lugar?</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver critérios</summary><div class='gab-in'>Não há resposta certa. Uma boa resposta escolhe a situação mais fácil (e não a mais grave), escreve a meta com número, dias, data e para quê, identifica o quadrante (tenso ou desmotivado) em que a tela entra para esse paciente e propõe, para o mesmo horário, uma atividade que ele já gostou um dia, de preferência com gente e fora de casa, com o aviso da fase crítica. O erro comum é começar pela redução mais ambiciosa e deixar o horário da tela vazio.</div></details></div></div></div><div class='savebar'><button id='exp'>Exportar respostas</button><button id='lmp'>Limpar</button><span class='saved' id='saved'>Salvo neste aparelho</span></div><div class='refs'><h2>Referências</h2><ol><li>Haidt, J. (2006). <em>The happiness hypothesis: Finding modern truth in ancient wisdom.</em> Basic Books.</li><li>Kahneman, D. (2012). <em>Rápido e devagar: Duas formas de pensar.</em> Objetiva.</li><li>Kiresuk, T. J., &amp; Sherman, R. E. (1968). Goal attainment scaling: A general method for evaluating comprehensive community mental health programs. <em>Community Mental Health Journal, 4</em>(6), 443–453.</li><li>Linehan, M. M. (2015). <em>DBT skills training manual</em> (2nd ed.). Guilford Press.</li><li>Martell, C. R., Dimidjian, S., &amp; Herman-Dunn, R. (2010). <em>Behavioral activation for depression: A clinician's guide.</em> Guilford Press.</li><li>Miller, W. R., &amp; Rollnick, S. (2023). <em>Entrevista motivacional: Ajudando pessoas a mudar e crescer</em> (4. ed.). Artmed.</li></ol></div><div class='nmet'><b>Nota de método</b>Material dirigido a psicólogos. É o décimo segundo vídeo de uma disciplina de pós-graduação; valores e programação de atividades vêm no vídeo 13.<br><br><strong>Fonte.</strong> Este resumo foi escrito a partir dos <b>slides</b> do vídeo, sem transcrição da fala. Os quadros "o R é o que segura os outros quatro", "o que dizer ao paciente antes de começar", "o que a alegoria ensina sobre estratégia", as duas observações sobre as listas de técnicas e a seção final em processos foram desenvolvidos pelo autor do material a partir da lógica da disciplina. Os dois esboços à mão (quadrantes e curvas) foram redesenhados mantendo os elementos e as palavras.<br><br><strong>Sobre as técnicas.</strong> Os exercícios de regulação fisiológica do slide (mudança de temperatura, estímulos sensoriais intensos) estão descritos em termos gerais, sem instruções de aplicação, por escolha editorial deste material; a fonte para o detalhe é o manual de habilidades da DBT, nas referências. A escala de alcance da meta segue a lógica do Goal Attainment Scaling (Kiresuk e Sherman, 1968), citado como respaldo; o slide não cita fonte. A alegoria do elefante é atribuída no slide a Jonathan Haidt, e os dois sistemas a Kahneman, e as duas obras estão nas referências; o material acrescenta a ressalva do próprio Kahneman de que os sistemas são metáfora, e não anatomia.<br><br>Nenhuma citação foi construída para preencher lacuna.</div><div class='cta'><img class='ph' alt='Prof. Júlio Gonçalves' src='/assets/julio.jpg'><div class='in'><div class='k'>Aprenda muito mais na</div><h3>Comunidade Lógica Psicológica</h3><ul><li>Aprofundar o raciocínio clínico com ciência, processos e análise funcional.</li><li>Estruturar uma prática ética, com pensamento crítico e evidências atualizadas.</li><li>Desenvolver o self clínico com supervisão, leituras guiadas e rede.</li></ul><a class='go' href='https://psicojulio.com/comunidade-logica-psicologica/' target='_blank' rel='noopener'>Participar da comunidade &#8594;</a></div></div><div class='foot'><img class='foot-logo' alt='Lógica Psicológica' src='/assets/logo.png'><div class='contato'><a href='mailto:contato@psicojulio.com'>contato@psicojulio.com</a> &middot; <a href='tel:+5547999338021'>(47) 99933-8021</a><br>Rua Concórdia, 703, São Vicente, Itajaí — 88309-645<br><span class='cnpj'>CNPJ 49.649.803/0001-60</span></div></div></main></div><button class='toc-fab' id='fab'>&#9776; Seções</button><div class='overlay' id='ov'></div><script>
+(function(){
+  var K='mat-Aula-DT12-';
+  document.querySelectorAll('.ck input').forEach(function(c,i){
+    var k=K+'ck'+i;
+    try{ if(localStorage.getItem(k)==='1'){c.checked=true;c.closest('.ck').classList.add('done');} }catch(e){}
+    c.addEventListener('change',function(){
+      c.closest('.ck').classList.toggle('done',c.checked);
+      try{ localStorage.setItem(k,c.checked?'1':'0'); }catch(e){} flag();
+    });
+  });
+  document.querySelectorAll('.qz textarea').forEach(function(t,i){
+    var k=K+'q'+i;
+    try{ var v=localStorage.getItem(k); if(v)t.value=v; }catch(e){}
+    t.addEventListener('input',function(){ try{ localStorage.setItem(k,t.value); }catch(e){} flag(); });
+  });
+  var s=document.getElementById('saved'),tm;
+  function flag(){ if(!s)return; s.classList.add('on'); clearTimeout(tm); tm=setTimeout(function(){s.classList.remove('on');},1600); }
+  var b=document.getElementById('exp');
+  if(b) b.addEventListener('click',function(){
+    var out='RESPOSTAS — Preparação: metas SMART, escala de alcance, ativação e o manejo do impulso\n\n';
+    document.querySelectorAll('.qz').forEach(function(q){
+      out+= q.querySelector('p').innerText+'\n'+(q.querySelector('textarea').value||'(sem resposta)')+'\n\n';
+    });
+    var a=document.createElement('a');
+    a.href=URL.createObjectURL(new Blob([out],{type:'text/plain'}));
+    a.download='Aula-DT12-respostas.txt'; a.click();
+  });
+  var l=document.getElementById('lmp');
+  if(l) l.addEventListener('click',function(){
+    if(!confirm('Apagar suas anotações deste material?'))return;
+    try{ Object.keys(localStorage).filter(function(k){return k.indexOf(K)===0;}).forEach(function(k){localStorage.removeItem(k);}); }catch(e){}
+    location.reload();
+  });
+  var f=document.getElementById('fab'),o=document.getElementById('ov'),sd=document.getElementById('side');
+  if(f)f.onclick=function(){sd.classList.toggle('open');o.classList.toggle('open');};
+  if(o)o.onclick=function(){sd.classList.remove('open');o.classList.remove('open');};
+})();
+</script></body></html>

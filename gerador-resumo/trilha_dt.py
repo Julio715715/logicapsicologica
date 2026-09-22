@@ -21,15 +21,6 @@ VIDEOS = [
     (10, 'aula10', u'Pré-contemplação: o ciclo, as crenças sobre o acaso e o que a neurobiologia diz (e o que não diz)', u'Estágios de mudança'),
     (11, 'aula11', u'Contemplação: a balança de vantagens e desvantagens e a discrepância entre valores e comportamento', u'Estágios de mudança'),
     (12, 'aula12', u'Preparação: metas SMART, escala de alcance, ativação e o manejo do impulso', u'Estágios de mudança'),
-    (13, 'aula13', u'Valores e programação de atividades: o que importa, o que se faz, e a agenda que repõe a função', u'Estágios de mudança'),
-    (14, 'aula14', u'Ação e manutenção: reforçar o que funciona, ajustar o que não, e ler os sinais de retorno', u'Estágios de mudança'),
-    (15, 'aula15', u'Análise de desfechos e solução de problemas: a fase intermediária começa pelo que a tela evitava', u'Fase intermediária'),
-    (16, 'aula16', u'RPD e reatribuição: o pensamento "decepcionei meu pai" e a torta da responsabilidade', u'Fase intermediária'),
-    (17, 'aula17', u'Continuum cognitivo: de "sou um fracasso" a "tu está onde?"', u'Fase intermediária'),
-    (18, 'aula18', u'Exposição imaginada: a cena como um filme, para o que a tela evita', u'Fase intermediária'),
-    (19, 'aula19', u'Ensaios comportamentais: direitos assertivos, role play em três tempos e dezoito cenas para treinar', u'Fase intermediária'),
-    (20, 'aula20', u'Prevenção à recaída: seis passos e uma tabela de riscos e proteções', u'Fase final'),
-    (21, 'aula21', u'Psicoeducação para cuidadores e familiares: quatro módulos para a casa em que a tela mora', u'Família'),
 ]
 TOTAL_PREVISTO = None  # None = não anunciar total; a trilha cresce conforme os vídeos chegam
 
