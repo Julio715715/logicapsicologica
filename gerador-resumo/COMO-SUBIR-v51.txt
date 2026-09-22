@@ -1,0 +1,8 @@
+Pacote v51 (22/09/2026). Copie o conteúdo desta pasta sobre a RAIZ do repositório
+(mesmo nível do index.html), substituindo o que existir. Pressupõe v48, v49 e v50 já no ar.
+Novo desde o v50:
+
+- dependencias-tecnologicas/aula13 … aula21   (vídeos 13 a 21, com resumo.pdf) — trilha completa
+- dependencias-tecnologicas/index.html        (21 vídeos, "trilha completa")
+- index.html, jornada/index.html, README.md   (56 materiais; "Publicado agora" aponta para a trilha)
+- gerador-resumo/aula_dt13.py … aula_dt21.py, trilha_dt.py, LEIA-ME.md

@@ -1,0 +1,276 @@
+<!DOCTYPE html><html lang='pt-BR'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='icon' type='image/png' sizes='32x32' href='/favicon-32.png'><link rel='icon' type='image/png' sizes='192x192' href='/favicon-192.png'><link rel='apple-touch-icon' href='/apple-touch-icon.png'><link rel='icon' href='/favicon.ico' sizes='any'><link rel='preconnect' href='https://fonts.googleapis.com'><link rel='preconnect' href='https://fonts.gstatic.com' crossorigin><link href='https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500&display=swap' rel='stylesheet'><title>Prevenção à recaída: seis passos e uma tabela de riscos e proteções — Lógica Psicológica</title><style>
+:root{--olive:#5b5c2a;--olive-dk:#43441f;--sage:#9ca575;--sage-dk:#7c8054;--cream:#f8f3e6;--cream-dp:#efe7d3;--gilt:#a8894f;--gilt-lt:#c3a468;--ink:#2f2e24;--muted:#6c6a55;--card:#fffdf7;}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;} html,body{margin:0;padding:0;}
+body{font-family:'Plus Jakarta Sans',system-ui,-apple-system,Segoe UI,sans-serif;background:var(--cream);color:var(--ink);font-size:17px;line-height:1.62;font-weight:400;-webkit-font-smoothing:antialiased;}
+a{color:var(--olive);} strong{font-weight:700;color:var(--olive-dk);} em{color:var(--sage-dk);}
+:focus-visible{outline:2px solid var(--gilt);outline-offset:2px;}
+.topbar{position:sticky;top:0;z-index:30;background:rgba(248,243,230,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--cream-dp);}
+.topbar .in{max-width:1100px;margin:0 auto;padding:11px 20px;display:flex;align-items:center;gap:12px;}
+.topbar img{height:22px;display:block;}
+.topbar .sp{flex:1;}
+.topbar .tag{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);}
+.backlink{font-weight:800;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--olive-dk);text-decoration:none;border:1px solid var(--cream-dp);background:var(--card);border-radius:20px;padding:7px 14px;white-space:nowrap;line-height:1;transition:border-color .18s,color .18s;}
+.backlink:hover{border-color:var(--gilt-lt);color:var(--gilt);}
+@media(max-width:430px){.topbar .tag{display:none;}}
+.shell{display:flex;gap:34px;max-width:1100px;margin:0 auto;padding:0 20px;align-items:flex-start;}
+.side{flex:0 0 252px;width:252px;position:sticky;top:56px;align-self:flex-start;height:calc(100vh - 66px);overflow:hidden;background:linear-gradient(165deg,#5b5c2a,#3b3c1b);color:var(--cream);border-radius:0 0 16px 16px;padding:18px 18px 16px;display:flex;flex-direction:column;}
+.side .nav{flex:1 1 auto;overflow-y:auto;min-height:0;scrollbar-width:thin;scrollbar-color:rgba(248,243,230,.28) transparent;}
+.side .nav::-webkit-scrollbar{width:6px;} .side .nav::-webkit-scrollbar-thumb{background:rgba(248,243,230,.28);border-radius:3px;}
+.side .brand{display:block;margin-bottom:14px;}
+.side .brand img{width:100%;max-width:148px;height:auto;display:block;}
+.side .st{font-weight:800;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt-lt);margin:13px 0 6px;padding-top:11px;border-top:1px solid rgba(248,243,230,.18);}
+.side .st.first{margin-top:0;padding-top:0;border-top:none;}
+.side a{display:block;text-decoration:none;color:var(--cream);padding:8px 11px;border-radius:9px;font-size:14.5px;font-weight:700;line-height:1.25;margin-bottom:3px;border:1px solid transparent;}
+.side a .s{display:block;font-size:11.8px;font-weight:400;color:#d9d3bd;margin-top:2px;line-height:1.3;}
+.side a:hover{background:rgba(248,243,230,.10);}
+.side a.on{background:var(--cream);color:var(--olive-dk);border-color:var(--cream);}
+.side a.on .s{color:var(--muted);}
+.side .home{font-weight:800;font-size:12.5px;letter-spacing:.02em;padding:5px 11px;}
+.side .navlink{font-weight:700;font-size:13px;color:#e7e1cb;padding:5px 11px;}
+.side .sig{flex:0 0 auto;margin-top:12px;padding-top:12px;border-top:1px solid rgba(248,243,230,.18);display:flex;align-items:center;gap:11px;}
+.side .sig img{width:40px;height:40px;flex:none;border-radius:50%;object-fit:cover;object-position:center 18%;border:2px solid rgba(248,243,230,.35);}
+.side .sig .who{font-weight:800;font-size:12.5px;color:var(--cream);line-height:1.3;}
+.side .sig .who span{display:block;font-weight:400;font-size:11.5px;color:#cfc9b2;letter-spacing:.04em;margin-top:2px;}
+.side .sub{display:block;margin-top:10px;text-align:center;background:var(--cream);color:var(--olive-dk);font-weight:800;font-size:13px;letter-spacing:.02em;text-decoration:none;padding:10px 14px;border-radius:22px;transition:background .18s;}
+.side .sub:hover{background:#fff;color:var(--olive-dk);}
+.main{flex:1 1 auto;max-width:730px;width:100%;padding:0 0 50px;}
+.toc-fab{display:none;} .overlay{display:none;}
+@media(max-width:960px){
+ .shell{display:block;padding:0;} .main{max-width:760px;margin:0 auto;padding:0 20px 50px;}
+ .side{position:fixed;top:0;left:0;height:100vh;width:292px;z-index:60;transform:translateX(-100%);transition:transform .25s;box-shadow:2px 0 22px rgba(0,0,0,.28);padding:26px 22px;max-height:none;border-radius:0;}
+ .side.open{transform:none;}
+ .toc-fab{display:block;position:fixed;bottom:18px;right:18px;z-index:50;background:var(--olive-dk);color:var(--cream);font-weight:800;font-size:13px;letter-spacing:.04em;border:none;border-radius:30px;padding:13px 20px;box-shadow:0 4px 14px rgba(0,0,0,.24);cursor:pointer;}
+ .overlay{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:55;opacity:0;pointer-events:none;transition:opacity .25s;}
+ .overlay.open{display:block;opacity:1;pointer-events:auto;}
+}
+@media(min-width:961px) and (max-height:820px){
+ .side a .s{display:none;}
+ .side .brand{margin-bottom:10px;} .side .brand img{max-width:132px;}
+ .side .st{margin:10px 0 5px;padding-top:9px;}
+}
+@media(min-width:961px) and (max-height:680px){
+ .side .brand img{max-width:110px;}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;}}
+.hero{padding:40px 0 6px;}
+.hero .kick{font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:12px;color:var(--gilt);margin:0 0 14px;}
+.hero h1{font-weight:800;font-size:46px;line-height:1.03;letter-spacing:-.022em;color:var(--ink);margin:0 0 16px;}
+.hero h1 .ac{color:var(--olive);}
+.hero p{color:var(--muted);font-size:17.5px;max-width:620px;margin:0;}
+.divider{width:56px;height:3px;background:var(--gilt-lt);border-radius:2px;margin:26px 0 4px;}
+h2{font-weight:800;color:var(--ink);font-size:25px;letter-spacing:-.015em;line-height:1.15;margin:38px 0 10px;scroll-margin-top:74px;}
+h3{font-weight:800;color:var(--olive);font-size:17px;letter-spacing:-.005em;margin:26px 0 6px;}
+p{margin:0 0 12px;}
+ul.clean{list-style:none;padding:0;margin:10px 0 14px;}
+ul.clean li{position:relative;padding:0 0 10px 26px;}
+ul.clean li::before{content:"\03A8";font-weight:800;color:var(--gilt);position:absolute;left:0;top:0;}
+.pull{font-weight:800;color:var(--olive-dk);font-size:23px;line-height:1.3;letter-spacing:-.015em;border-left:4px solid var(--gilt-lt);padding:6px 0 6px 20px;margin:28px 0;}
+.portas{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:26px 0 8px;}
+@media(max-width:720px){.portas{grid-template-columns:1fr;}}
+.porta{display:block;text-decoration:none;background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:20px 18px;transition:border-color .18s,transform .18s;}
+.porta:hover{border-color:var(--sage);transform:translateY(-2px);}
+.porta .pk{font-weight:800;font-size:16px;letter-spacing:-.01em;color:var(--ink);line-height:1.2;}
+.porta .pd{font-size:14.5px;color:var(--muted);margin-top:8px;line-height:1.45;}
+.porta .pa{display:block;margin-top:14px;font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gilt);}
+.temas{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0;}
+@media(max-width:560px){.temas{grid-template-columns:1fr;}}
+.tema{display:flex;flex-direction:column;text-decoration:none;background:var(--card);border:1px solid var(--cream-dp);border-top:4px solid var(--sage);border-radius:14px;padding:18px 18px 16px;transition:border-top-color .18s,box-shadow .18s,transform .18s;}
+.tema:hover{border-top-color:var(--olive);box-shadow:0 2px 14px rgba(67,68,31,.08);transform:translateY(-2px);}
+.tema .tk{font-weight:800;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gilt);}
+.tema .tt{font-weight:800;font-size:19px;letter-spacing:-.015em;color:var(--ink);margin:6px 0 5px;line-height:1.2;}
+.tema .td{font-size:14px;color:var(--muted);line-height:1.45;flex:1 1 auto;}
+.tema .tm{margin-top:12px;padding-top:10px;border-top:1px solid var(--cream-dp);font-weight:700;font-size:12.5px;color:var(--sage-dk);}
+.book{background:var(--cream-dp);border-radius:14px;padding:18px 20px;margin:18px 0 24px;}
+.book .bk{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:7px;}
+.book .bt{font-weight:800;font-size:19px;letter-spacing:-.015em;color:var(--ink);margin-bottom:4px;line-height:1.2;}
+.book .bsub{color:var(--muted);font-size:14px;margin-bottom:14px;line-height:1.4;}
+.book a{display:inline-block;font-weight:800;font-size:12.5px;letter-spacing:.02em;color:var(--cream);background:var(--olive);padding:11px 22px;border-radius:26px;text-decoration:none;}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0;}
+@media(max-width:560px){.cards{grid-template-columns:1fr;}}
+.card{background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:6px;}
+.card.live{border-color:var(--sage);box-shadow:0 2px 12px rgba(67,68,31,.06);}
+.card:not(.live){opacity:.7;}
+.card .ct{display:flex;align-items:center;justify-content:space-between;min-height:26px;}
+.card .n{font-weight:800;font-size:24px;color:var(--sage-dk);line-height:1;letter-spacing:-.02em;}
+.card .dt{font-weight:800;font-size:12px;letter-spacing:.1em;color:var(--gilt);}
+.card.bydate .dt{font-size:15px;color:var(--sage-dk);}
+.card .tt{font-weight:800;color:var(--ink);font-size:16.5px;line-height:1.25;letter-spacing:-.01em;margin-top:2px;}
+.card .pr{color:var(--muted);font-size:13.5px;}
+.card .acts{display:flex;gap:8px;margin-top:10px;}
+.card .go,.card .pdf{font-weight:800;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;padding:9px 16px;border-radius:20px;text-decoration:none;}
+.card .go{color:var(--cream);background:var(--olive);} .card .pdf{color:var(--olive-dk);border:1.5px solid var(--gilt-lt);}
+.card .soon{font-weight:800;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:10px;}
+.empty{background:var(--card);border:1px dashed var(--cream-dp);border-radius:14px;padding:26px;text-align:center;color:var(--muted);}
+.cta{position:relative;overflow:hidden;border-radius:16px;margin:30px 0 8px;background:linear-gradient(150deg,#5b5c2a,#43441f);color:var(--cream);display:grid;grid-template-columns:minmax(0,290px) minmax(0,1fr);}
+.cta .ph{width:100%;height:100%;min-height:330px;object-fit:cover;object-position:center 22%;display:block;opacity:.95;}
+.cta .in{padding:26px 26px 28px;align-self:center;}
+.cta .in .k{color:#ddd6bf;margin-bottom:6px;font-size:14.5px;}
+.cta .in h3{font-weight:800;font-size:22px;letter-spacing:-.015em;color:var(--cream);margin:0 0 14px;}
+.cta ul{list-style:none;padding:0;margin:0 0 18px;}
+.cta li{position:relative;padding:0 0 10px 24px;font-size:14.5px;color:#f1ecdc;line-height:1.45;}
+.cta li::before{content:"\03A8";color:var(--gilt-lt);position:absolute;left:0;font-weight:800;}
+.cta a.go{display:block;text-align:center;background:var(--cream);color:var(--olive-dk);font-weight:800;font-size:14.5px;text-decoration:none;padding:14px;border-radius:28px;}
+@media(max-width:720px){.cta{grid-template-columns:1fr;} .cta .ph{min-height:230px;height:230px;}}
+.foot{text-align:center;color:var(--muted);font-size:12.5px;margin-top:38px;padding-top:20px;border-top:1px solid var(--cream-dp);}
+.foot .foot-logo{height:30px;width:auto;display:inline-block;margin-bottom:8px;}
+.contato{margin-top:14px;font-size:12.5px;color:var(--muted);line-height:1.7;}
+.contato a{color:var(--gilt);text-decoration:none;} .contato .cnpj{font-size:11.5px;opacity:.85;}
+
+.mhero{padding:36px 0 4px;}
+.mhero .kick{font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:11.5px;color:var(--gilt);margin:0 0 12px;}
+.mhero h1{font-weight:800;font-size:42px;line-height:1.04;letter-spacing:-.022em;color:var(--ink);margin:0 0 10px;}
+.mhero .sub{font-weight:700;font-size:19px;color:var(--sage-dk);line-height:1.3;margin:0 0 12px;letter-spacing:-.01em;}
+.mhero .meta{font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);}
+.mhero .tema{margin:18px 0 0;padding-left:18px;border-left:4px solid var(--cream-dp);color:var(--muted);font-size:16.5px;}
+.usar{background:var(--cream-dp);border-radius:12px;padding:16px 18px;margin:24px 0 14px;font-size:14.5px;color:var(--muted);line-height:1.55;}
+.usar b{display:block;font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--olive-dk);margin-bottom:6px;}
+.pdfbtn{display:inline-block;font-weight:800;font-size:13px;letter-spacing:.02em;color:var(--cream);background:var(--olive);padding:13px 24px;border-radius:26px;text-decoration:none;}
+.ess{background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:20px 22px;margin:26px 0;}
+.ess .et{font-weight:800;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gilt);margin-bottom:12px;}
+.ess ul{list-style:none;padding:0;margin:0;}
+.ess li{position:relative;padding:0 0 12px 26px;font-size:15.8px;line-height:1.5;}
+.ess li:last-child{padding-bottom:0;}
+.ess li::before{content:"\03A8";position:absolute;left:0;top:0;color:var(--gilt-lt);font-weight:800;}
+details.sec{border-bottom:1px solid var(--cream-dp);}
+details.sec[open]{padding-bottom:16px;}
+details.sec summary{list-style:none;cursor:pointer;padding:18px 0;display:flex;align-items:baseline;gap:12px;}
+details.sec summary::-webkit-details-marker{display:none;}
+details.sec summary h2{font-weight:800;font-size:21px;letter-spacing:-.015em;color:var(--ink);margin:0;line-height:1.2;flex:1;}
+details.sec summary .arw{color:var(--gilt);font-weight:800;font-size:13px;transition:transform .2s;}
+details.sec[open] summary .arw{transform:rotate(90deg);}
+details.sec .lead{color:var(--sage-dk);font-weight:500;margin:0 0 14px;font-size:16px;}
+details.sec p{font-size:16.5px;}
+ul.key{list-style:none;padding:0;margin:12px 0;}
+ul.key li{position:relative;padding:0 0 11px 26px;font-size:16px;line-height:1.5;}
+ul.key li::before{content:"\03A8";position:absolute;left:0;top:0;color:var(--gilt);font-weight:800;}
+.dial{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0;}
+@media(max-width:620px){.dial{grid-template-columns:1fr;}}
+.dial .d{background:var(--card);border:1px solid var(--cream-dp);border-top:3px solid var(--sage);border-radius:12px;padding:14px 16px;}
+.dial .dt{font-weight:800;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--olive-dk);margin-bottom:7px;}
+.dial p{margin:0;font-size:14.5px;color:var(--muted);line-height:1.45;}
+.obs{background:var(--cream-dp);border-radius:12px;padding:16px 18px;margin:18px 0;}
+.obs h4{font-weight:800;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--olive-dk);margin:0 0 7px;}
+.obs p{margin:0;font-size:15.5px;}
+.callout{background:var(--card);border-left:4px solid var(--gilt-lt);border-radius:0 12px 12px 0;padding:16px 18px;margin:20px 0;font-size:15.5px;line-height:1.55;}
+.callout .co-t{font-weight:800;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--gilt);margin-bottom:7px;}
+span.ref{font-size:13.5px;color:var(--muted);}
+/* diagrama */
+figure.dg{margin:24px 0;background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:18px 16px 12px;}
+figure.dg svg{width:100%;height:auto;display:block;}
+figure.dg figcaption{margin-top:10px;font-size:13px;color:var(--muted);text-align:center;line-height:1.45;}
+.dg-t{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:10px;text-align:center;}
+/* ferramentas */
+.tools{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:32px 0 0;}
+@media(max-width:720px){.tools{grid-template-columns:1fr;}}
+.tool{background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:20px;}
+.tool .tt{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:14px;}
+.ck{display:flex;gap:11px;align-items:flex-start;padding:9px 0;font-size:15px;line-height:1.45;cursor:pointer;}
+.ck input{margin:4px 0 0;accent-color:var(--olive);width:17px;height:17px;flex:none;cursor:pointer;}
+.ck.done span{text-decoration:line-through;opacity:.5;}
+.qz{margin-bottom:18px;} .qz:last-child{margin-bottom:0;}
+.qz p{font-size:15px;margin:0 0 7px;line-height:1.45;font-weight:500;}
+.qz textarea{width:100%;min-height:66px;border:1px solid var(--cream-dp);border-radius:10px;background:var(--cream);font-family:inherit;font-size:14.5px;color:var(--ink);padding:10px 12px;resize:vertical;line-height:1.5;}
+.qz textarea:focus{outline:2px solid var(--gilt-lt);outline-offset:1px;}
+.savebar{display:flex;align-items:center;gap:12px;margin-top:16px;flex-wrap:wrap;}
+.savebar button{font-weight:800;font-size:11px;letter-spacing:.08em;text-transform:uppercase;border:1.5px solid var(--cream-dp);background:none;color:var(--olive-dk);border-radius:22px;padding:10px 18px;cursor:pointer;font-family:inherit;}
+.savebar button:hover{border-color:var(--gilt-lt);color:var(--gilt);}
+.saved{font-weight:800;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--sage-dk);opacity:0;transition:opacity .3s;}
+.saved.on{opacity:1;}
+.refs h2,.nmet h2{font-weight:800;font-size:21px;letter-spacing:-.015em;color:var(--ink);margin:34px 0 10px;}
+.refs ol{padding-left:20px;font-size:13.8px;color:var(--muted);line-height:1.6;}
+.refs li{margin-bottom:9px;}
+.nmet{background:var(--card);border-left:4px solid var(--gilt-lt);border-radius:0 12px 12px 0;padding:16px 20px;margin:26px 0 0;font-size:14px;color:var(--muted);line-height:1.6;}
+.nmet b{display:block;font-weight:800;font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--olive-dk);margin-bottom:7px;}
+.side .idx a{font-size:13.5px;font-weight:500;padding:7px 12px;line-height:1.3;}
+
+/* gabarito expansível */
+.qz .gab{margin-top:8px;border-top:1px solid #E9E3CE;padding-top:8px;}
+.qz .gab summary{cursor:pointer;list-style:none;font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#A8894F;}
+.qz .gab summary::-webkit-details-marker{display:none;}
+.qz .gab summary::before{content:'+ ';font-weight:800;}
+.qz .gab[open] summary::before{content:'\2212 ';}
+.qz .gab-in{margin-top:8px;background:#F8F3E6;border-left:2px solid #C3A468;border-radius:0 6px 6px 0;padding:10px 12px;font-size:.94rem;line-height:1.55;color:#403F32;}
+.qz .gab-in p{margin:0 0 6px;}.qz .gab-in p:last-child{margin:0;}
+
+/* gabarito expansível */
+.qz .gab{margin-top:8px;border-top:1px solid #E9E3CE;padding-top:8px;}
+.qz .gab summary{cursor:pointer;list-style:none;font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#A8894F;}
+.qz .gab summary::-webkit-details-marker{display:none;}
+.qz .gab summary::before{content:'+ ';font-weight:800;}
+.qz .gab[open] summary::before{content:'\2212 ';}
+.qz .gab-in{margin-top:8px;background:#F8F3E6;border-left:2px solid #C3A468;border-radius:0 6px 6px 0;padding:10px 12px;font-size:.94rem;line-height:1.55;color:#403F32;}
+.qz .gab-in p{margin:0 0 6px;}.qz .gab-in p:last-child{margin:0;}
+</style></head><body><div class='topbar'><div class='in'><a href='/'><img alt='Lógica Psicológica' src='/assets/logo.png'></a><a class='backlink' href='/dependencias-tecnologicas/' title='Voltar para Encontros'>&#8592; Voltar</a><div class='sp'></div><div class='tag'>Jornada da Leitura</div></div></div><div class='shell'><aside class='side' id='side'><a class='brand' href='/'><img alt='Lógica Psicológica' src='/assets/logo-creme.png'></a><div class='nav'><div class='st first'>Navegação</div><a class='home' href='/dependencias-tecnologicas/'>&#8592; Encontros</a><a class='navlink' href='/'>Início do portal</a><div class='st'>Neste material</div><div class='idx'><a href='#s0'>Os seis passos</a><a href='#s1'>A tabela</a><a href='#s2'>Lendo em processos</a></div></div><div class='sig'><img alt='Prof. Júlio Gonçalves' src='/assets/julio.jpg'><div class='who'>Prof. Júlio Gonçalves<span>MSc · CRP 12/17614</span></div></div><a class='sub' href='https://psicojulio.com/comunidade-logica-psicologica/' target='_blank' rel='noopener'>Inscreva-se</a></aside><main class='main'><div class='mhero'><div class='kick'>Resumo de aula · Jornada da Leitura</div><h1>Preven&ccedil;&atilde;o &agrave; reca&iacute;da: seis passos e uma tabela de riscos e prote&ccedil;&otilde;es</h1><div class='sub'>Vídeo 20</div><div class='meta'>Prof. Júlio Gonçalves · Disciplina Avaliação e tratamento das dependências tecnológicas · Vídeo 20</div><p class='tema'>A fase final em seis passos: avaliar fatores de risco, conscientizar, desenvolver habilidades de enfrentamento, plano de ação personalizado, monitoramento contínuo e reforço de conquistas; e a tabela que junta tudo por dimensão.</p></div><div class='obs' style='margin-bottom:18px'><h4>Sobre este material</h4><p>Material de estudo <strong>dirigido a psicólogos</strong>, escrito a partir dos slides do vigésimo vídeo da disciplina, sobre a fase final: prevenção à recaída. Não havia transcrição.</p><p>A tabela de riscos e proteções é o exemplo do slide para um paciente advogado, e foi mantida como vinheta.</p></div><div class='usar'><b>Como usar</b>Abra as seções que quiser ler, marque o que pretende aplicar e responda o que fizer sentido. Tudo fica salvo neste aparelho — ninguém mais vê.</div><a class='pdfbtn' href='resumo.pdf'>&#8681; Baixar em PDF</a><div class='ess'><div class='et'>O essencial</div><ul><li><strong>Prevenção de recaída começa pela avaliação de risco.</strong> Estressores, padrões de pensamento e situações disparadoras deste paciente, antes de qualquer estratégia.</li><li><strong>O plano de ação é para quando os sintomas voltarem.</strong> Passos concretos em caso de sinais específicos ou situações difíceis. Um guia, e não uma promessa.</li><li><strong>Monitoramento contínuo pega o sinal cedo.</strong> Diários, escalas de humor, acompanhamento regular. É a EMA do vídeo 7 mantida depois da alta.</li><li><strong>Reforçar conquistas é fortalecer autoeficácia.</strong> Celebrar o progresso, por menor que seja, é o que sustenta a crença de superar desafios.</li><li><strong>Cada risco tem uma proteção na mesma linha.</strong> Psicossocial, comportamental, cognitivo-emocional, ambiental. A tabela é a formulação de manutenção do paciente.</li></ul></div><details class='sec' id='s0' open><summary><h2>A fase final: seis passos</h2><span class='arw'>&#9656;</span></summary>
+<p>A fase final tem por objetivo consolidar mudanças, manter ganhos e prevenir recaídas. O quadro lista o que a compõe: reforço da autoeficácia; planejamento de situações de risco; plano de ação em caso de recaída; discussão sobre o uso funcional da internet; rotina saudável; acompanhamento do progresso com tarefas entre sessões. Os dois slides seguintes organizam o trabalho em seis passos.</p>
+<ul class='key'><li><b>1. Avaliação de fatores de risco.</b> Antes de implementar estratégias, uma avaliação minuciosa dos fatores de risco individuais: eventos estressores, padrões de pensamento disfuncionais e situações desencadeadoras que aumentam a vulnerabilidade à recaída.</li><li><b>2. Conscientização e psicoeducação.</b> Promover a conscientização do paciente sobre a própria condição e os desencadeadores; educar sobre os sinais precoces e sobre as estratégias de enfrentamento eficazes.</li><li><b>3. Desenvolvimento de habilidades de enfrentamento.</b> Regulação emocional, resolução de problemas e manejo do estresse; habilidades sociais, para fortalecer os relacionamentos.</li><li><b>4. Plano de ação personalizado.</b> Em colaboração com o paciente, um plano com passos concretos a seguir em caso de surgimento de sintomas específicos ou situações desafiadoras: um guia prático para enfrentar potenciais desafios.</li><li><b>5. Monitoramento contínuo.</b> Um sistema para identificar precocemente sinais de alerta: diários, escalas de avaliação de humor e acompanhamento regular das mudanças nos padrões.</li><li><b>6. Reforço de conquistas e autoeficácia.</b> Reforçar as conquistas alcançadas durante a terapia; celebrar os progressos, por menores que sejam, contribui para a motivação contínua e a crença de superar desafios.</li></ul>
+<div class='obs'><h4>O que os seis passos têm de novo</h4><p>Quase nada, e é essa a lição. Regulação emocional é o vídeo 12; solução de problemas, o 15; habilidades sociais, o 19; monitoramento, o 7; sinais precoces, o 14. A prevenção de recaída não é uma técnica nova; é a organização das anteriores em torno de uma pergunta: o que este paciente vai fazer, sem o terapeuta, quando a situação de risco aparecer? O passo 4 é a resposta escrita, e o passo 1 é o que diz quais situações são essas.</p></div>
+</details><details class='sec' id='s1'><summary><h2>A tabela de riscos e proteções</h2><span class='arw'>&#9656;</span></summary>
+<figure class='dg'><div class='dg-t'>Fatores de risco e de proteção, por dimensão</div>
+<svg viewBox='0 0 720 270' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Tabela de quatro dimensões, psicossocial, comportamental, cognitiva e emocional, ambiental, com o fator de risco e o fator de proteção correspondente do exemplo'>
+<rect x='0' y='6' width='120' height='24' rx='5' fill='#43441f'/><text x='60' y='22' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='9.5' font-weight='800' fill='#f0ede0'>DIMENS&Atilde;O</text>
+<rect x='126' y='6' width='290' height='24' rx='5' fill='#a05a3c'/><text x='271' y='22' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='9.5' font-weight='800' fill='#fff'>RISCO</text>
+<rect x='422' y='6' width='298' height='24' rx='5' fill='#9ca575'/><text x='571' y='22' text-anchor='middle' font-family="Plus Jakarta Sans,sans-serif" font-size='9.5' font-weight='800' fill='#fff'>PROTE&Ccedil;&Atilde;O</text>
+<g font-family="Plus Jakarta Sans,sans-serif" font-size='10' fill='#2f2e24'>
+<text x='6' y='56' font-weight='800'>Psicossocial</text>
+<text x='132' y='50'>carga horária de trabalho</text><text x='132' y='64'>semanal excessiva</text>
+<text x='428' y='50'>atividades valorosas para equilibrar o</text><text x='428' y='64'>orçamento corporal; sono e alimentação</text>
+<line x1='0' y1='78' x2='720' y2='78' stroke='#d9d3c1'/>
+<text x='6' y='104' font-weight='800'>Comportamental</text>
+<text x='132' y='98'>fazer tudo sozinho, tirando tempo</text><text x='132' y='112'>do sono; evitar situações temidas</text>
+<text x='428' y='98'>apoio de profissionais, consultoria,</text><text x='428' y='112'>estagiário; solução de problemas,</text><text x='428' y='126'>adiamento da preocupação, exposição</text>
+<line x1='0' y1='140' x2='720' y2='140' stroke='#d9d3c1'/>
+<text x='6' y='166' font-weight='800'>Cognitivo e</text><text x='6' y='180' font-weight='800'>emocional</text>
+<text x='132' y='160'>alta sensibilidade ao estresse nas</text><text x='132' y='174'>interações com clientes; intolerância</text><text x='132' y='188'>à incerteza</text>
+<text x='428' y='160'>habilidade de regulação emocional;</text><text x='428' y='174'>contestação cognitiva</text>
+<line x1='0' y1='202' x2='720' y2='202' stroke='#d9d3c1'/>
+<text x='6' y='232' font-weight='800'>Ambiental</text>
+<text x='132' y='226'>estressores ocupacionais: a escolha</text><text x='132' y='240'>da profissão (advocacia ou concurso)</text>
+<text x='428' y='226'>escolha e manutenção de um projeto</text><text x='428' y='240'>de vida baseado nos valores</text>
+</g>
+</svg>
+<figcaption>A tabela do slide, para um paciente advogado. Cada risco tem uma proteção na mesma linha, e as proteções são as técnicas dos vídeos anteriores com o nome do paciente.</figcaption></figure>
+<p>O último slide junta tudo numa tabela para um paciente específico, um advogado, em quatro dimensões.</p>
+<ul class='key'><li><b>Psicossocial</b>. Risco: estressores significativos, especificamente carga horária de trabalho semanal excessiva. Proteção: atividades valorosas para equilibrar o orçamento corporal; hábitos de sono e alimentação regulares.</li><li><b>Comportamental</b>. Risco: fazer tudo sozinho, mesmo que implique usar tempo que não possui (retira tempo do sono); evitação de situações temidas. Proteção: apoio de profissionais mais habilitados, consultoria, estagiário; aplicação de solução de problemas, adiamento da preocupação e exposição direta, sempre que possível.</li><li><b>Cognitivo e emocional</b>. Risco: alta sensibilidade ao estresse, principalmente nas interações com clientes, gerando ansiedade; intolerância à incerteza. Proteção: habilidade de regulação emocional; contestação cognitiva.</li><li><b>Ambiental</b>. Risco: estressores ocupacionais em relação à escolha da profissão (manter-se na advocacia ou fazer concurso). Proteção: escolha e manutenção de um projeto de vida baseado nos valores.</li></ul>
+<p>Três coisas para notar. Primeira: cada risco tem a proteção <strong>na mesma linha</strong>, e a proteção é uma técnica da disciplina com o nome do paciente ("estagiário" é solução de problemas aplicada; "projeto de vida baseado nos valores" é o vídeo 13). Segunda: a tabela não menciona a tela em nenhuma linha. O risco de recaída deste paciente não é o celular; é a carga horária, o fazer tudo sozinho, a sensibilidade ao cliente e a dúvida sobre a profissão. A tela é onde ele vai parar se esses quatro voltarem. Terceira: a dimensão ambiental tem a proteção mais lenta (um projeto de vida), e é a que mais sustenta as outras.</p>
+<div class='callout note'><div class='co-t'>Como montar a tabela com o paciente</div>Uma linha por sessão, nas últimas sessões. Começar pelo risco: "quando tu recaiu ou quase recaiu, o que estava acontecendo?" A resposta cai numa das quatro dimensões. Depois a proteção: "e o que, de tudo que a gente fez, teria segurado?" A resposta é uma técnica que ele já conhece. A tabela pronta vai com ele, e o plano de ação (passo 4) é a coluna da direita em ordem: o que fazer primeiro quando o sinal da esquerda aparecer.</div>
+</details><details class='sec' id='s2'><summary><h2>Lendo o vídeo em processos</h2><span class='arw'>&#9656;</span></summary>
+<ul class='key'><li><b>A tabela é a formulação de manutenção</b>: os riscos são os antecedentes que reativam a alça velha, e as proteções são as respostas alternativas que a rede nova já tem. Não há técnica nova porque não há nó novo; há a mesma rede sem o terapeuta.</li><li><b>O risco não é a tela.</b> É o contexto (carga horária), o comportamento (fazer sozinho), a cognição e o afeto (sensibilidade, incerteza) e o projeto de vida. A tela é o destino da alça, e não o gatilho.</li><li><b>O monitoramento contínuo é a discriminação</b> que permite agir no primeiro elo e não no último. Os sinais do vídeo 14 são o que se monitora.</li><li><b>Autoeficácia é o nó de self</b> que sustenta a manutenção quando a novidade acaba. Reforçar conquistas pequenas é alimentar esse nó com evidência.</li><li><b>Uso funcional da internet</b> é a meta realista: a rede nova inclui a tela, no lugar certo e com a função certa.</li></ul>
+</details><div class='tools'><div class='tool'><div class='tt'>Levar para a prática</div><label class='ck'><input type='checkbox'><span>Avaliei os fatores de risco deste paciente (estressores, pensamentos, situações) antes de propor estratégias.</span></label><label class='ck'><input type='checkbox'><span>Ensinei os sinais precoces de recaída, a partir da lista que o paciente deu no vídeo 14.</span></label><label class='ck'><input type='checkbox'><span>Conferi que as habilidades de enfrentamento foram treinadas, e não só explicadas.</span></label><label class='ck'><input type='checkbox'><span>Escrevi com o paciente o plano de ação: o que fazer primeiro quando cada sinal aparecer.</span></label><label class='ck'><input type='checkbox'><span>Deixei um sistema de monitoramento (diário, escala, EMA) funcionando depois da alta.</span></label><label class='ck'><input type='checkbox'><span>Reforcei conquistas concretas e nomeei a autoeficácia que elas mostram.</span></label><label class='ck'><input type='checkbox'><span>Montei a tabela de riscos e proteções nas quatro dimensões, com uma proteção por risco.</span></label><label class='ck'><input type='checkbox'><span>Conferi que a tabela fala do contexto do paciente, e não só da tela.</span></label><label class='ck'><input type='checkbox'><span>Combinei o que é uso funcional de internet para este paciente.</span></label></div><div class='tool'><div class='tt'>Para revisar — responda</div><div class='qz'><p>1. Liste os seis passos da prevenção à recaída e o que cada um envolve.</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver comentário</summary><div class='gab-in'>1, avaliação de fatores de risco: estressores, pensamentos disfuncionais, situações disparadoras. 2, conscientização e psicoeducação: condição, desencadeadores, sinais precoces, estratégias. 3, habilidades de enfrentamento: regulação emocional, solução de problemas, manejo do estresse, habilidades sociais. 4, plano de ação personalizado: passos concretos em caso de sintomas ou situações difíceis. 5, monitoramento contínuo: diários, escalas de humor, acompanhamento regular. 6, reforço de conquistas e autoeficácia: celebrar progressos, por menores que sejam.</div></details></div><div class='qz'><p>2. Por que a prevenção de recaída "quase não tem técnica nova", e o que ela tem de específico?</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver comentário</summary><div class='gab-in'>Porque regulação, solução de problemas, habilidades sociais, monitoramento e sinais precoces já foram trabalhados nos vídeos anteriores. O específico é a pergunta que organiza tudo: o que este paciente vai fazer, sem o terapeuta, quando a situação de risco aparecer. O passo 1 diz quais situações são essas e o passo 4 é a resposta escrita.</div></details></div><div class='qz'><p>3. Descreva as quatro dimensões da tabela do slide, com o risco e a proteção de cada uma.</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver comentário</summary><div class='gab-in'>Psicossocial: carga horária excessiva; atividades valorosas, sono e alimentação regulares. Comportamental: fazer tudo sozinho tirando tempo do sono, evitar situações temidas; apoio de profissionais, consultoria, estagiário, solução de problemas, adiamento da preocupação, exposição direta. Cognitivo e emocional: sensibilidade ao estresse com clientes, intolerância à incerteza; regulação emocional, contestação cognitiva. Ambiental: dúvida entre advocacia e concurso; projeto de vida baseado nos valores.</div></details></div><div class='qz'><p>4. Por que a tabela do exemplo não menciona a tela, e o que isso diz sobre onde está o risco?</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver comentário</summary><div class='gab-in'>Porque o risco de recaída não é o celular: é a carga horária, o fazer tudo sozinho, a sensibilidade ao cliente e a dúvida sobre a profissão. A tela é onde ele vai parar se esses quatro voltarem, ou seja, é o destino da alça, e não o gatilho. Prevenir recaída é proteger os quatro, e não vigiar a tela.</div></details></div><div class='qz'><p>5. Como montar a tabela com o paciente, e como ela vira o plano de ação?</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver comentário</summary><div class='gab-in'>Uma linha por sessão, nas últimas sessões. Começar pelo risco ("quando tu quase recaiu, o que estava acontecendo?"), que cai numa das dimensões; depois a proteção ("o que, de tudo que a gente fez, teria segurado?"), que é uma técnica já conhecida. A tabela vai com o paciente, e o plano de ação é a coluna da direita em ordem: o que fazer primeiro quando o sinal da esquerda aparecer.</div></details></div><div class='qz'><p>6. Pense num paciente teu perto da alta. Preenche as quatro linhas: um risco e uma proteção por dimensão.</p><textarea placeholder='Sua resposta…'></textarea><details class='gab'><summary>Ver critérios</summary><div class='gab-in'>Não há resposta certa. Uma boa resposta preenche as quatro dimensões com riscos específicos do contexto do paciente (e não com "usar o celular") e com proteções que são técnicas já treinadas com ele, uma por linha, escritas de um jeito que ele reconheça. O erro comum é colocar a tela como risco em todas as linhas e "reduzir o uso" como proteção, o que não protege de nada.</div></details></div></div></div><div class='savebar'><button id='exp'>Exportar respostas</button><button id='lmp'>Limpar</button><span class='saved' id='saved'>Salvo neste aparelho</span></div><div class='refs'><h2>Referências</h2><ol><li>Marlatt, G. A., &amp; Donovan, D. M. (Eds.). (2005). <em>Relapse prevention: Maintenance strategies in the treatment of addictive behaviors</em> (2nd ed.). Guilford Press.</li><li>Witkiewitz, K., &amp; Marlatt, G. A. (2004). Relapse prevention for alcohol and drug problems: That was Zen, this is Tao. <em>American Psychologist, 59</em>(4), 224–235.</li><li>W&ouml;lfling, K., M&uuml;ller, K. W., Dreier, M., Ruckes, C., Deuster, O., Batra, A., Mann, K., Musalek, M., Sch&uuml;tz, C., Hanke, S., &amp; Beutel, M. E. (2019). Efficacy of short-term treatment of internet and computer game addiction: A randomized clinical trial. <em>JAMA Psychiatry, 76</em>(10), 1018–1025.</li></ol></div><div class='nmet'><b>Nota de método</b>Material dirigido a psicólogos. É o vigésimo vídeo de uma disciplina de pós-graduação; a psicoeducação para cuidadores e familiares vem no vídeo 21.<br><br><strong>Fonte.</strong> Este resumo foi escrito a partir dos <b>slides</b> do vídeo, sem transcrição da fala. A tabela foi redesenhada com o conteúdo do slide. Os quadros "o que os seis passos têm de novo", "como montar a tabela com o paciente" e a seção final em processos foram desenvolvidos pelo autor do material a partir da lógica da disciplina. O exemplo do advogado é vinheta didática do slide.<br><br><strong>Referências.</strong> Os slides não citam fontes. O modelo de prevenção de recaída é o de Marlatt, citado como respaldo; a estrutura da fase final corresponde à do protocolo STICA (vídeo 8).<br><br>Nenhuma citação foi construída para preencher lacuna.</div><div class='cta'><img class='ph' alt='Prof. Júlio Gonçalves' src='/assets/julio.jpg'><div class='in'><div class='k'>Aprenda muito mais na</div><h3>Comunidade Lógica Psicológica</h3><ul><li>Aprofundar o raciocínio clínico com ciência, processos e análise funcional.</li><li>Estruturar uma prática ética, com pensamento crítico e evidências atualizadas.</li><li>Desenvolver o self clínico com supervisão, leituras guiadas e rede.</li></ul><a class='go' href='https://psicojulio.com/comunidade-logica-psicologica/' target='_blank' rel='noopener'>Participar da comunidade &#8594;</a></div></div><div class='foot'><img class='foot-logo' alt='Lógica Psicológica' src='/assets/logo.png'><div class='contato'><a href='mailto:contato@psicojulio.com'>contato@psicojulio.com</a> &middot; <a href='tel:+5547999338021'>(47) 99933-8021</a><br>Rua Concórdia, 703, São Vicente, Itajaí — 88309-645<br><span class='cnpj'>CNPJ 49.649.803/0001-60</span></div></div></main></div><button class='toc-fab' id='fab'>&#9776; Seções</button><div class='overlay' id='ov'></div><script>
+(function(){
+  var K='mat-Aula-DT20-';
+  document.querySelectorAll('.ck input').forEach(function(c,i){
+    var k=K+'ck'+i;
+    try{ if(localStorage.getItem(k)==='1'){c.checked=true;c.closest('.ck').classList.add('done');} }catch(e){}
+    c.addEventListener('change',function(){
+      c.closest('.ck').classList.toggle('done',c.checked);
+      try{ localStorage.setItem(k,c.checked?'1':'0'); }catch(e){} flag();
+    });
+  });
+  document.querySelectorAll('.qz textarea').forEach(function(t,i){
+    var k=K+'q'+i;
+    try{ var v=localStorage.getItem(k); if(v)t.value=v; }catch(e){}
+    t.addEventListener('input',function(){ try{ localStorage.setItem(k,t.value); }catch(e){} flag(); });
+  });
+  var s=document.getElementById('saved'),tm;
+  function flag(){ if(!s)return; s.classList.add('on'); clearTimeout(tm); tm=setTimeout(function(){s.classList.remove('on');},1600); }
+  var b=document.getElementById('exp');
+  if(b) b.addEventListener('click',function(){
+    var out='RESPOSTAS — Prevenção à recaída: seis passos e uma tabela de riscos e proteções\n\n';
+    document.querySelectorAll('.qz').forEach(function(q){
+      out+= q.querySelector('p').innerText+'\n'+(q.querySelector('textarea').value||'(sem resposta)')+'\n\n';
+    });
+    var a=document.createElement('a');
+    a.href=URL.createObjectURL(new Blob([out],{type:'text/plain'}));
+    a.download='Aula-DT20-respostas.txt'; a.click();
+  });
+  var l=document.getElementById('lmp');
+  if(l) l.addEventListener('click',function(){
+    if(!confirm('Apagar suas anotações deste material?'))return;
+    try{ Object.keys(localStorage).filter(function(k){return k.indexOf(K)===0;}).forEach(function(k){localStorage.removeItem(k);}); }catch(e){}
+    location.reload();
+  });
+  var f=document.getElementById('fab'),o=document.getElementById('ov'),sd=document.getElementById('side');
+  if(f)f.onclick=function(){sd.classList.toggle('open');o.classList.toggle('open');};
+  if(o)o.onclick=function(){sd.classList.remove('open');o.classList.remove('open');};
+})();
+</script></body></html>
