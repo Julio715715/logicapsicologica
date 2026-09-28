@@ -1,0 +1,377 @@
+<!DOCTYPE html><html lang='pt-BR'><head><meta charset='utf-8'><meta name='viewport' content='width=device-width, initial-scale=1'><link rel='icon' type='image/png' sizes='32x32' href='/favicon-32.png'><link rel='icon' type='image/png' sizes='192x192' href='/favicon-192.png'><link rel='apple-touch-icon' href='/apple-touch-icon.png'><link rel='icon' href='/favicon.ico' sizes='any'><link rel='preconnect' href='https://fonts.googleapis.com'><link rel='preconnect' href='https://fonts.gstatic.com' crossorigin><link href='https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400;1,500&display=swap' rel='stylesheet'><title>Edição 3 · O que vale ler · Lógica Psicológica</title><style>
+:root{--olive:#5b5c2a;--olive-dk:#43441f;--sage:#9ca575;--sage-dk:#7c8054;--cream:#f8f3e6;--cream-dp:#efe7d3;--gilt:#a8894f;--gilt-lt:#c3a468;--ink:#2f2e24;--muted:#6c6a55;--card:#fffdf7;}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;} html,body{margin:0;padding:0;}
+body{font-family:'Plus Jakarta Sans',system-ui,-apple-system,Segoe UI,sans-serif;background:var(--cream);color:var(--ink);font-size:17px;line-height:1.62;font-weight:400;-webkit-font-smoothing:antialiased;}
+a{color:var(--olive);} strong{font-weight:700;color:var(--olive-dk);} em{color:var(--sage-dk);}
+:focus-visible{outline:2px solid var(--gilt);outline-offset:2px;}
+.topbar{position:sticky;top:0;z-index:30;background:rgba(248,243,230,.94);backdrop-filter:blur(6px);border-bottom:1px solid var(--cream-dp);}
+.topbar .in{max-width:1100px;margin:0 auto;padding:11px 20px;display:flex;align-items:center;gap:12px;}
+.topbar img{height:22px;display:block;}
+.topbar .sp{flex:1;}
+.topbar .tag{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);}
+.backlink{font-weight:800;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--olive-dk);text-decoration:none;border:1px solid var(--cream-dp);background:var(--card);border-radius:20px;padding:7px 14px;white-space:nowrap;line-height:1;transition:border-color .18s,color .18s;}
+.backlink:hover{border-color:var(--gilt-lt);color:var(--gilt);}
+@media(max-width:430px){.topbar .tag{display:none;}}
+.shell{display:flex;gap:34px;max-width:1100px;margin:0 auto;padding:0 20px;align-items:flex-start;}
+.side{flex:0 0 252px;width:252px;position:sticky;top:56px;align-self:flex-start;height:calc(100vh - 66px);overflow:hidden;background:linear-gradient(165deg,#5b5c2a,#3b3c1b);color:var(--cream);border-radius:0 0 16px 16px;padding:18px 18px 16px;display:flex;flex-direction:column;}
+.side .nav{flex:1 1 auto;overflow-y:auto;min-height:0;scrollbar-width:thin;scrollbar-color:rgba(248,243,230,.28) transparent;}
+.side .nav::-webkit-scrollbar{width:6px;} .side .nav::-webkit-scrollbar-thumb{background:rgba(248,243,230,.28);border-radius:3px;}
+.side .brand{display:block;margin-bottom:14px;}
+.side .brand img{width:100%;max-width:148px;height:auto;display:block;}
+.side .st{font-weight:800;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt-lt);margin:13px 0 6px;padding-top:11px;border-top:1px solid rgba(248,243,230,.18);}
+.side .st.first{margin-top:0;padding-top:0;border-top:none;}
+.side a{display:block;text-decoration:none;color:var(--cream);padding:8px 11px;border-radius:9px;font-size:14.5px;font-weight:700;line-height:1.25;margin-bottom:3px;border:1px solid transparent;}
+.side a .s{display:block;font-size:11.8px;font-weight:400;color:#d9d3bd;margin-top:2px;line-height:1.3;}
+.side a:hover{background:rgba(248,243,230,.10);}
+.side a.on{background:var(--cream);color:var(--olive-dk);border-color:var(--cream);}
+.side a.on .s{color:var(--muted);}
+.side .home{font-weight:800;font-size:12.5px;letter-spacing:.02em;padding:5px 11px;}
+.side .navlink{font-weight:700;font-size:13px;color:#e7e1cb;padding:5px 11px;}
+.side .sig{flex:0 0 auto;margin-top:12px;padding-top:12px;border-top:1px solid rgba(248,243,230,.18);display:flex;align-items:center;gap:11px;}
+.side .sig img{width:40px;height:40px;flex:none;border-radius:50%;object-fit:cover;object-position:center 18%;border:2px solid rgba(248,243,230,.35);}
+.side .sig .who{font-weight:800;font-size:12.5px;color:var(--cream);line-height:1.3;}
+.side .sig .who span{display:block;font-weight:400;font-size:11.5px;color:#cfc9b2;letter-spacing:.04em;margin-top:2px;}
+.side .sub{display:block;margin-top:10px;text-align:center;background:var(--cream);color:var(--olive-dk);font-weight:800;font-size:13px;letter-spacing:.02em;text-decoration:none;padding:10px 14px;border-radius:22px;transition:background .18s;}
+.side .sub:hover{background:#fff;color:var(--olive-dk);}
+.main{flex:1 1 auto;max-width:730px;width:100%;padding:0 0 50px;}
+.toc-fab{display:none;} .overlay{display:none;}
+@media(max-width:960px){
+ .shell{display:block;padding:0;} .main{max-width:760px;margin:0 auto;padding:0 20px 50px;}
+ .side{position:fixed;top:0;left:0;height:100vh;width:292px;z-index:60;transform:translateX(-100%);transition:transform .25s;box-shadow:2px 0 22px rgba(0,0,0,.28);padding:26px 22px;max-height:none;border-radius:0;}
+ .side.open{transform:none;}
+ .toc-fab{display:block;position:fixed;bottom:18px;right:18px;z-index:50;background:var(--olive-dk);color:var(--cream);font-weight:800;font-size:13px;letter-spacing:.04em;border:none;border-radius:30px;padding:13px 20px;box-shadow:0 4px 14px rgba(0,0,0,.24);cursor:pointer;}
+ .overlay{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:55;opacity:0;pointer-events:none;transition:opacity .25s;}
+ .overlay.open{display:block;opacity:1;pointer-events:auto;}
+}
+@media(min-width:961px) and (max-height:820px){
+ .side a .s{display:none;}
+ .side .brand{margin-bottom:10px;} .side .brand img{max-width:132px;}
+ .side .st{margin:10px 0 5px;padding-top:9px;}
+}
+@media(min-width:961px) and (max-height:680px){
+ .side .brand img{max-width:110px;}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;}}
+.hero{padding:40px 0 6px;}
+.hero .kick{font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:12px;color:var(--gilt);margin:0 0 14px;}
+.hero h1{font-weight:800;font-size:46px;line-height:1.03;letter-spacing:-.022em;color:var(--ink);margin:0 0 16px;}
+.hero h1 .ac{color:var(--olive);}
+.hero p{color:var(--muted);font-size:17.5px;max-width:620px;margin:0;}
+.divider{width:56px;height:3px;background:var(--gilt-lt);border-radius:2px;margin:26px 0 4px;}
+h2{font-weight:800;color:var(--ink);font-size:25px;letter-spacing:-.015em;line-height:1.15;margin:38px 0 10px;scroll-margin-top:74px;}
+h3{font-weight:800;color:var(--olive);font-size:17px;letter-spacing:-.005em;margin:26px 0 6px;}
+p{margin:0 0 12px;}
+ul.clean{list-style:none;padding:0;margin:10px 0 14px;}
+ul.clean li{position:relative;padding:0 0 10px 26px;}
+ul.clean li::before{content:"\03A8";font-weight:800;color:var(--gilt);position:absolute;left:0;top:0;}
+.pull{font-weight:800;color:var(--olive-dk);font-size:23px;line-height:1.3;letter-spacing:-.015em;border-left:4px solid var(--gilt-lt);padding:6px 0 6px 20px;margin:28px 0;}
+.portas{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:26px 0 8px;}
+@media(max-width:720px){.portas{grid-template-columns:1fr;}}
+.porta{display:block;text-decoration:none;background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:20px 18px;transition:border-color .18s,transform .18s;}
+.porta:hover{border-color:var(--sage);transform:translateY(-2px);}
+.porta .pk{font-weight:800;font-size:16px;letter-spacing:-.01em;color:var(--ink);line-height:1.2;}
+.porta .pd{font-size:14.5px;color:var(--muted);margin-top:8px;line-height:1.45;}
+.porta .pa{display:block;margin-top:14px;font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gilt);}
+.temas{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0;}
+@media(max-width:560px){.temas{grid-template-columns:1fr;}}
+.tema{display:flex;flex-direction:column;text-decoration:none;background:var(--card);border:1px solid var(--cream-dp);border-top:4px solid var(--sage);border-radius:14px;padding:18px 18px 16px;transition:border-top-color .18s,box-shadow .18s,transform .18s;}
+.tema:hover{border-top-color:var(--olive);box-shadow:0 2px 14px rgba(67,68,31,.08);transform:translateY(-2px);}
+.tema .tk{font-weight:800;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--gilt);}
+.tema .tt{font-weight:800;font-size:19px;letter-spacing:-.015em;color:var(--ink);margin:6px 0 5px;line-height:1.2;}
+.tema .td{font-size:14px;color:var(--muted);line-height:1.45;flex:1 1 auto;}
+.tema .tm{margin-top:12px;padding-top:10px;border-top:1px solid var(--cream-dp);font-weight:700;font-size:12.5px;color:var(--sage-dk);}
+.book{background:var(--cream-dp);border-radius:14px;padding:18px 20px;margin:18px 0 24px;}
+.book .bk{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:7px;}
+.book .bt{font-weight:800;font-size:19px;letter-spacing:-.015em;color:var(--ink);margin-bottom:4px;line-height:1.2;}
+.book .bsub{color:var(--muted);font-size:14px;margin-bottom:14px;line-height:1.4;}
+.book a{display:inline-block;font-weight:800;font-size:12.5px;letter-spacing:.02em;color:var(--cream);background:var(--olive);padding:11px 22px;border-radius:26px;text-decoration:none;}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0;}
+@media(max-width:560px){.cards{grid-template-columns:1fr;}}
+.card{background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:6px;}
+.card.live{border-color:var(--sage);box-shadow:0 2px 12px rgba(67,68,31,.06);}
+.card:not(.live){opacity:.7;}
+.card .ct{display:flex;align-items:center;justify-content:space-between;min-height:26px;}
+.card .n{font-weight:800;font-size:24px;color:var(--sage-dk);line-height:1;letter-spacing:-.02em;}
+.card .dt{font-weight:800;font-size:12px;letter-spacing:.1em;color:var(--gilt);}
+.card.bydate .dt{font-size:15px;color:var(--sage-dk);}
+.card .tt{font-weight:800;color:var(--ink);font-size:16.5px;line-height:1.25;letter-spacing:-.01em;margin-top:2px;}
+.card .pr{color:var(--muted);font-size:13.5px;}
+.card .acts{display:flex;gap:8px;margin-top:10px;}
+.card .go,.card .pdf{font-weight:800;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;padding:9px 16px;border-radius:20px;text-decoration:none;}
+.card .go{color:var(--cream);background:var(--olive);} .card .pdf{color:var(--olive-dk);border:1.5px solid var(--gilt-lt);}
+.card .soon{font-weight:800;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:10px;}
+.empty{background:var(--card);border:1px dashed var(--cream-dp);border-radius:14px;padding:26px;text-align:center;color:var(--muted);}
+.cta{position:relative;overflow:hidden;border-radius:16px;margin:30px 0 8px;background:linear-gradient(150deg,#5b5c2a,#43441f);color:var(--cream);display:grid;grid-template-columns:minmax(0,290px) minmax(0,1fr);}
+.cta .ph{width:100%;height:100%;min-height:330px;object-fit:cover;object-position:center 22%;display:block;opacity:.95;}
+.cta .in{padding:26px 26px 28px;align-self:center;}
+.cta .in .k{color:#ddd6bf;margin-bottom:6px;font-size:14.5px;}
+.cta .in h3{font-weight:800;font-size:22px;letter-spacing:-.015em;color:var(--cream);margin:0 0 14px;}
+.cta ul{list-style:none;padding:0;margin:0 0 18px;}
+.cta li{position:relative;padding:0 0 10px 24px;font-size:14.5px;color:#f1ecdc;line-height:1.45;}
+.cta li::before{content:"\03A8";color:var(--gilt-lt);position:absolute;left:0;font-weight:800;}
+.cta a.go{display:block;text-align:center;background:var(--cream);color:var(--olive-dk);font-weight:800;font-size:14.5px;text-decoration:none;padding:14px;border-radius:28px;}
+@media(max-width:720px){.cta{grid-template-columns:1fr;} .cta .ph{min-height:230px;height:230px;}}
+.foot{text-align:center;color:var(--muted);font-size:12.5px;margin-top:38px;padding-top:20px;border-top:1px solid var(--cream-dp);}
+.foot .foot-logo{height:30px;width:auto;display:inline-block;margin-bottom:8px;}
+.contato{margin-top:14px;font-size:12.5px;color:var(--muted);line-height:1.7;}
+.contato a{color:var(--gilt);text-decoration:none;} .contato .cnpj{font-size:11.5px;opacity:.85;}
+
+.mhero{padding:36px 0 4px;}
+.mhero .kick{font-weight:800;letter-spacing:.14em;text-transform:uppercase;font-size:11.5px;color:var(--gilt);margin:0 0 12px;}
+.mhero h1{font-weight:800;font-size:42px;line-height:1.04;letter-spacing:-.022em;color:var(--ink);margin:0 0 10px;}
+.mhero .sub{font-weight:700;font-size:19px;color:var(--sage-dk);line-height:1.3;margin:0 0 12px;letter-spacing:-.01em;}
+.mhero .meta{font-weight:800;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);}
+.mhero .tema{margin:18px 0 0;padding-left:18px;border-left:4px solid var(--cream-dp);color:var(--muted);font-size:16.5px;}
+.usar{background:var(--cream-dp);border-radius:12px;padding:16px 18px;margin:24px 0 14px;font-size:14.5px;color:var(--muted);line-height:1.55;}
+.usar b{display:block;font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--olive-dk);margin-bottom:6px;}
+.pdfbtn{display:inline-block;font-weight:800;font-size:13px;letter-spacing:.02em;color:var(--cream);background:var(--olive);padding:13px 24px;border-radius:26px;text-decoration:none;}
+.ess{background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:20px 22px;margin:26px 0;}
+.ess .et{font-weight:800;font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--gilt);margin-bottom:12px;}
+.ess ul{list-style:none;padding:0;margin:0;}
+.ess li{position:relative;padding:0 0 12px 26px;font-size:15.8px;line-height:1.5;}
+.ess li:last-child{padding-bottom:0;}
+.ess li::before{content:"\03A8";position:absolute;left:0;top:0;color:var(--gilt-lt);font-weight:800;}
+details.sec{border-bottom:1px solid var(--cream-dp);}
+details.sec[open]{padding-bottom:16px;}
+details.sec summary{list-style:none;cursor:pointer;padding:18px 0;display:flex;align-items:baseline;gap:12px;}
+details.sec summary::-webkit-details-marker{display:none;}
+details.sec summary h2{font-weight:800;font-size:21px;letter-spacing:-.015em;color:var(--ink);margin:0;line-height:1.2;flex:1;}
+details.sec summary .arw{color:var(--gilt);font-weight:800;font-size:13px;transition:transform .2s;}
+details.sec[open] summary .arw{transform:rotate(90deg);}
+details.sec .lead{color:var(--sage-dk);font-weight:500;margin:0 0 14px;font-size:16px;}
+details.sec p{font-size:16.5px;}
+ul.key{list-style:none;padding:0;margin:12px 0;}
+ul.key li{position:relative;padding:0 0 11px 26px;font-size:16px;line-height:1.5;}
+ul.key li::before{content:"\03A8";position:absolute;left:0;top:0;color:var(--gilt);font-weight:800;}
+.dial{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0;}
+@media(max-width:620px){.dial{grid-template-columns:1fr;}}
+.dial .d{background:var(--card);border:1px solid var(--cream-dp);border-top:3px solid var(--sage);border-radius:12px;padding:14px 16px;}
+.dial .dt{font-weight:800;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--olive-dk);margin-bottom:7px;}
+.dial p{margin:0;font-size:14.5px;color:var(--muted);line-height:1.45;}
+.obs{background:var(--cream-dp);border-radius:12px;padding:16px 18px;margin:18px 0;}
+.obs h4{font-weight:800;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--olive-dk);margin:0 0 7px;}
+.obs p{margin:0;font-size:15.5px;}
+.callout{background:var(--card);border-left:4px solid var(--gilt-lt);border-radius:0 12px 12px 0;padding:16px 18px;margin:20px 0;font-size:15.5px;line-height:1.55;}
+.callout .co-t{font-weight:800;font-size:10.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--gilt);margin-bottom:7px;}
+span.ref{font-size:13.5px;color:var(--muted);}
+/* diagrama */
+figure.dg{margin:24px 0;background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:18px 16px 12px;}
+figure.dg svg{width:100%;height:auto;display:block;}
+figure.dg figcaption{margin-top:10px;font-size:13px;color:var(--muted);text-align:center;line-height:1.45;}
+.dg-t{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:10px;text-align:center;}
+/* ferramentas */
+.tools{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:32px 0 0;}
+@media(max-width:720px){.tools{grid-template-columns:1fr;}}
+.tool{background:var(--card);border:1px solid var(--cream-dp);border-radius:14px;padding:20px;}
+.tool .tt{font-weight:800;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt);margin-bottom:14px;}
+.ck{display:flex;gap:11px;align-items:flex-start;padding:9px 0;font-size:15px;line-height:1.45;cursor:pointer;}
+.ck input{margin:4px 0 0;accent-color:var(--olive);width:17px;height:17px;flex:none;cursor:pointer;}
+.ck.done span{text-decoration:line-through;opacity:.5;}
+.qz{margin-bottom:18px;} .qz:last-child{margin-bottom:0;}
+.qz p{font-size:15px;margin:0 0 7px;line-height:1.45;font-weight:500;}
+.qz textarea{width:100%;min-height:66px;border:1px solid var(--cream-dp);border-radius:10px;background:var(--cream);font-family:inherit;font-size:14.5px;color:var(--ink);padding:10px 12px;resize:vertical;line-height:1.5;}
+.qz textarea:focus{outline:2px solid var(--gilt-lt);outline-offset:1px;}
+.savebar{display:flex;align-items:center;gap:12px;margin-top:16px;flex-wrap:wrap;}
+.savebar button{font-weight:800;font-size:11px;letter-spacing:.08em;text-transform:uppercase;border:1.5px solid var(--cream-dp);background:none;color:var(--olive-dk);border-radius:22px;padding:10px 18px;cursor:pointer;font-family:inherit;}
+.savebar button:hover{border-color:var(--gilt-lt);color:var(--gilt);}
+.saved{font-weight:800;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--sage-dk);opacity:0;transition:opacity .3s;}
+.saved.on{opacity:1;}
+.refs h2,.nmet h2{font-weight:800;font-size:21px;letter-spacing:-.015em;color:var(--ink);margin:34px 0 10px;}
+.refs ol{padding-left:20px;font-size:13.8px;color:var(--muted);line-height:1.6;}
+.refs li{margin-bottom:9px;}
+.nmet{background:var(--card);border-left:4px solid var(--gilt-lt);border-radius:0 12px 12px 0;padding:16px 20px;margin:26px 0 0;font-size:14px;color:var(--muted);line-height:1.6;}
+.nmet b{display:block;font-weight:800;font-size:10px;letter-spacing:.13em;text-transform:uppercase;color:var(--olive-dk);margin-bottom:7px;}
+.side .idx a{font-size:13.5px;font-weight:500;padding:7px 12px;line-height:1.3;}
+
+/* gabarito expansível */
+.qz .gab{margin-top:8px;border-top:1px solid #E9E3CE;padding-top:8px;}
+.qz .gab summary{cursor:pointer;list-style:none;font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#A8894F;}
+.qz .gab summary::-webkit-details-marker{display:none;}
+.qz .gab summary::before{content:'+ ';font-weight:800;}
+.qz .gab[open] summary::before{content:'\2212 ';}
+.qz .gab-in{margin-top:8px;background:#F8F3E6;border-left:2px solid #C3A468;border-radius:0 6px 6px 0;padding:10px 12px;font-size:.94rem;line-height:1.55;color:#403F32;}
+.qz .gab-in p{margin:0 0 6px;}.qz .gab-in p:last-child{margin:0;}
+
+/* newsletter */
+.nw{background:#FFFDF7;border:1px solid #EFE7D3;border-radius:14px;padding:22px 24px;margin-bottom:16px;transition:border-color .18s,transform .18s,box-shadow .18s;}.nw:hover{border-color:#D8CDAE;transform:translateY(-2px);box-shadow:0 6px 18px rgba(67,68,31,.07);}.nw:has(details[open]){border-color:#C3A468;}
+
+.nw-k{font-size:.72rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#A8894F;margin-bottom:6px;}
+.nw h3{margin:0 0 8px;font-size:1.24rem;line-height:1.3;}
+.nw-r{margin:0 0 10px;color:#403F32;}
+.nw-d{border-top:1px solid #F0EAD9;padding-top:12px;margin-top:14px;}.nw-d summary{cursor:pointer;list-style:none;font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:#A8894F;}
+.nw-d summary::-webkit-details-marker{display:none;}
+.nw-d summary::before{content:'+ ';}
+.nw-d[open] summary::before{content:'− ';}
+.nw-in{margin-top:14px;}
+.ficha{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px;}
+.ficha .chip{background:#EFE9DA;border-radius:999px;padding:6px 13px;font-size:12.5px;color:#403F32;}
+.ficha .chip b{display:block;font-size:9.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#A8894F;margin-bottom:1px;}
+.nwfig{margin:0 0 14px;background:#F8F3E6;border:1px solid #E9E1CB;border-radius:10px;padding:14px 16px;}
+.nwfig svg{width:100%;height:auto;display:block;}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px;}
+.nw-c{background:#F5F0E2;border-left:2px solid #C3A468;border-radius:0 8px 8px 0;padding:12px 15px;}
+.nw-c.lim{border-left-color:#A05A3C;background:#F7EDE7;}
+.nw-c > b{display:block;font-size:.7rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:#A8894F;margin-bottom:8px;}
+.nw-c.lim > b{color:#A05A3C;}
+.nw-c ul{margin:0;padding:0;list-style:none;}
+.nw-c li{position:relative;padding-left:15px;margin-bottom:7px;font-size:14.2px;line-height:1.5;color:#403F32;}
+.nw-c li:last-child{margin-bottom:0;}
+.nw-c li:before{content:'';position:absolute;left:0;top:8px;width:5px;height:5px;border-radius:50%;background:#C3A468;}
+.nw-c.lim li:before{background:#A05A3C;}
+.nw-q{background:#43441F;border-radius:10px;padding:14px 17px;margin-bottom:12px;color:#F0EDE0;font-size:15px;line-height:1.5;}
+.nw-q span{display:block;font-size:.68rem;font-weight:800;letter-spacing:.11em;text-transform:uppercase;color:#9CA575;margin-bottom:6px;}
+.nw-f{font-size:.85rem;color:#6C6A55;line-height:1.5;}
+.nw-f a{color:#856832;font-weight:700;white-space:nowrap;}
+@media(max-width:760px){.duo{grid-template-columns:1fr;}}
+
+.nw-q{padding:15px 18px;font-size:14.8px;line-height:1.55;}
+.nw-q strong,.nw-q b{color:#F8F3E6;}
+.nw-q .lb{display:block;font-size:.68rem;font-weight:800;letter-spacing:.11em;text-transform:uppercase;color:#9CA575;margin-bottom:7px;}
+.nw-q .ac{margin:0;}
+.nw-q .pg{margin:12px 0 0;padding-top:11px;border-top:1px solid rgba(240,237,224,.2);font-size:14px;color:#CFCBB6;}
+.nw-q .pg b{display:block;color:#9CA575;font-weight:800;font-size:.68rem;letter-spacing:.11em;text-transform:uppercase;margin-bottom:5px;}
+.nwfoto{display:flex;gap:16px;align-items:center;}.nwfoto img{width:132px;flex:none;border-radius:8px;}.nwfoto figcaption{margin:0;font-size:.92rem;line-height:1.5;color:#403F32;}@media(max-width:560px){.nwfoto{flex-direction:column;align-items:flex-start;}}
+</style></head><body><div class='topbar'><div class='in'><a href='/'><img alt='Lógica Psicológica' src='/assets/logo.png'></a><a class='backlink' href='/newsletter/' title='Voltar para a Newsletter'>&#8592; Voltar</a><div class='sp'></div><div class='tag'>Newsletter</div></div></div><div class='shell'><aside class='side' id='side'><a class='brand' href='/'><img alt='Lógica Psicológica' src='/assets/logo-creme.png'></a><div class='nav'><div class='st first'>Navegação</div><a class='home' href='/newsletter/'>&#8592; Edições</a><a class='navlink' href='/'>Início do portal</a><div class='st'>Nesta edição</div><div class='idx'><a href='#i1'>As bets acabaram, e o paciente?</a><a href='#i2'>Proibir funciona? A Noruega mediu</a><a href='#i3'>TCC para jogo: o efeito some depois</a></div></div><div class='sig'><img alt='Prof. Júlio Gonçalves' src='/assets/julio.jpg'><div class='who'>Prof. Júlio Gonçalves<span>MSc · CRP 12/17614</span></div></div><a class='sub' href='https://psicojulio.com/comunidade-logica-psicologica/' target='_blank' rel='noopener'>Inscreva-se</a></aside><main class='main'><div class='mhero'><div class='kick'>Newsletter · Lógica Psicológica</div><h1>O que vale ler</h1><div class='sub'>Edição 3</div><div class='meta'>Seleção e comentário de Prof. Júlio Gonçalves · Publicada em setembro de 2026 · Três leituras</div><p class='tema'>O governo encerrou as apostas online por medida provisória e deu doze dias para o objeto sumir. A edição pergunta o que acontece com quem tinha a aposta como forma de regular o dia: o que a Noruega mediu quando baniu as máquinas, e o que a TCC consegue sustentar depois que o tratamento acaba. Cada item com o que sustenta e o que não autoriza dizer.</p></div><div class='usar'><b>Como ler</b>Cada item traz o achado em três linhas. Abrindo, você encontra a ficha do estudo, uma figura do resultado, o que muda na clínica ao lado do que ele não autoriza dizer, e uma ação para a semana.</div><a class='pdfbtn' href='edicao-03.pdf'>&#8681; Baixar a edição em PDF <span style='font-weight:500;opacity:.75'>&mdash; uma página, para ler e compartilhar</span></a><article class='nw' id='i1'>
+<div class='nw-k'>A notícia da semana &middot; Medida Provisória 1.394</div>
+<h3>Tchê, as bets acabaram. O paciente que apostava continua na tua sala</h3>
+<p class='nw-r'>Em 25 de setembro o governo publicou a MP 1.394 e encerrou as apostas online no país: apostas suspensas na hora, saque do saldo até 5 de outubro, sites fora do ar a partir do dia 6 e devolução pelos bancos entre 9 e 14. Os números que justificaram a medida são grandes: <strong>R$ 62,5 bilhões perdidos pelas famílias em 2025</strong>, custo social estimado em R$ 38,8 bilhões por ano, 1,3 milhão de pedidos de autoexclusão. O que a lei não faz é responder o que acontece com quem tinha a aposta como forma de regular o dia e perdeu o objeto com data marcada.</p>
+<details class='nw-d'><summary>Ler completo</summary><div class='nw-in'>
+<div class='ficha'><span class='chip'><b>Instrumento</b>MP 1.394, de 25 de setembro de 2026</span><span class='chip'><b>Prazos</b>saque até 5/10; sites fora do ar de 6/10; devolução de 9 a 14/10</span><span class='chip'><b>Perdas das famílias</b>R$ 62,5 bilhões em 2025 (Comsefaz)</span><span class='chip'><b>Autoexclusão</b>1,3 milhão de pedidos</span><span class='chip'><b>Tramitação</b>ainda passa pelo Congresso</span></div>
+<figure class='nwfig'><svg viewBox='0 0 720 200' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Linha do tempo da MP 1.394: apostas suspensas em 25 de setembro, saque até 5 de outubro, sites fora do ar de 6 a 7, devolução de 9 a 14, Caixa a partir de 14'>
+<line x1='40' y1='90' x2='680' y2='90' stroke='#c9c2a8' stroke-width='3'/>
+<circle cx='60' cy='90' r='9' fill='#a05a3c'/><circle cx='230' cy='90' r='9' fill='#43441f'/>
+<circle cx='400' cy='90' r='9' fill='#43441f'/><circle cx='540' cy='90' r='9' fill='#7c8054'/><circle cx='660' cy='90' r='9' fill='#7c8054'/>
+<text x='60' y='58' text-anchor='middle' font-family='Plus Jakarta Sans,sans-serif' font-size='13' font-weight='800' fill='#a05a3c'>25 set</text>
+<text x='60' y='120' text-anchor='middle' font-family='Plus Jakarta Sans,sans-serif' font-size='11.5' fill='#2f2e24'>MP 1.394 publicada</text>
+<text x='60' y='137' text-anchor='middle' font-family='Plus Jakarta Sans,sans-serif' font-size='11.5' fill='#2f2e24'>apostas suspensas</text>
+<text x='230' y='58' text-anchor='middle' font-family='Plus Jakarta Sans,sans-serif' font-size='13' font-weight='800' fill='#43441f'>até 5 out</text>
+<text x='230' y='120' text-anchor='middle' font-family='Plus Jakarta Sans,sans-serif' font-size='11.5' fill='#2f2e24'>saque voluntário</text>
+<text x='230' y='137' text-anchor='middle' font-family='Plus Jakarta Sans,sans-serif' font-size='11.5' fill='#2f2e24'>do saldo</text>
+<text x='400' y='58' text-anchor='middle' font-family='Plus Jakarta Sans,sans-serif' font-size='13' font-weight='800' fill='#43441f'>6 e 7 out</text>
+<text x='400' y='120' text-anchor='middle' font-family='Plus Jakarta Sans,sans-serif' font-size='11.5' fill='#2f2e24'>sites e apps</text>
+<text x='400' y='137' text-anchor='middle' font-family='Plus Jakarta Sans,sans-serif' font-size='11.5' fill='#2f2e24'>fora do ar</text>
+<text x='540' y='58' text-anchor='middle' font-family='Plus Jakarta Sans,sans-serif' font-size='13' font-weight='800' fill='#7c8054'>9 a 14 out</text>
+<text x='540' y='120' text-anchor='middle' font-family='Plus Jakarta Sans,sans-serif' font-size='11.5' fill='#2f2e24'>devolução</text>
+<text x='540' y='137' text-anchor='middle' font-family='Plus Jakarta Sans,sans-serif' font-size='11.5' fill='#2f2e24'>pelos bancos</text>
+<text x='660' y='58' text-anchor='middle' font-family='Plus Jakarta Sans,sans-serif' font-size='13' font-weight='800' fill='#7c8054'>14 out</text>
+<text x='660' y='120' text-anchor='middle' font-family='Plus Jakarta Sans,sans-serif' font-size='11.5' fill='#2f2e24'>Caixa assume</text>
+<text x='660' y='137' text-anchor='middle' font-family='Plus Jakarta Sans,sans-serif' font-size='11.5' fill='#2f2e24'>o que faltar</text>
+<text x='360' y='180' text-anchor='middle' font-family='Plus Jakarta Sans,sans-serif' font-size='11' font-style='italic' fill='#8d876f'>Do objeto disponível 24 horas por dia ao objeto indisponível: doze dias.</text>
+</svg>
+<figcaption>O calendário da Medida Provisória 1.394. Para quem tinha a aposta como forma de regular o dia, é uma retirada abrupta com data marcada. A MP ainda passa pelo Congresso.</figcaption></figure>
+<div class='duo'>
+<div class='nw-c'><b>Muda na clínica</b><ul>
+<li>Para quem apostava todo dia, a proibição é uma retirada abrupta do objeto, e não do processo. O que a aposta fazia por essa pessoa (fugir do tédio, buscar ganho rápido, recuperar a perda de ontem, sentir alguma coisa) continua precisando ser feito por alguma coisa. A pergunta clínica das próximas semanas é o que vai ocupar o lugar.</li><li>A dívida não foi revogada. Boa parte do sofrimento ligado às bets é financeiro e relacional, e isso segue igual no dia 6 de outubro. Vergonha, conflito em casa e cobrança são processos que a formulação precisa carregar mesmo sem nenhuma aposta nova.</li><li>Quem nunca contou que apostava pode contar agora, porque a notícia deu licença para o assunto. A pergunta direta na sessão (“tu apostava? quanto? o que a aposta fazia por ti?”) rende mais nesta janela do que em qualquer outra.</li></ul></div>
+<div class='nw-c lim'><b>Não autoriza dizer</b><ul>
+<li>Que proibir resolve o transtorno. A lei tira um objeto; a evidência que existe sobre banimento mostra que o comportamento migra em parte (item 2), e o mercado ilegal já existia antes da regulamentação de 2023.</li><li>Que os números do governo são medidas de sofrimento. R$ 62,5 bilhões é perda financeira agregada; custo social é estimativa de modelo. Nenhum dos dois diz quantas pessoas têm transtorno do jogo, nem quantas estão em tratamento.</li><li>Que a MP é definitiva. Medida provisória vale por 60 dias, prorrogáveis por mais 60, e o Congresso pode alterar ou derrubar. A retirada pode ser seguida de uma volta parcial, e isso também é dado clínico.</li></ul></div>
+</div>
+<div class='nw-q'><span class='lb'>Ação para a clínica</span>
+<p class='ac'>Nas próximas quatro semanas, pergunte a todo paciente adulto se apostava, com que frequência e o que a aposta fazia por ele. Para quem apostava, mapeie na formulação: o gatilho (tédio, dinheiro curto, jogo na TV), o processo (busca de alívio, busca de ganho, recuperar perda) e o que está ocupando o lugar desde o dia 25. Se a resposta for “nada”, esse é o alvo. Se for outro comportamento de fuga, o processo continua igual e mudou de roupa.</p>
+<p class='pg'><b>E uma pergunta</b>Quando um paciente teu deixa de fazer algo porque o objeto sumiu, e não porque o processo mudou, o que você registra na formulação: melhora ou pausa?</p></div>
+<div class='nw-f'>Brasil (2026). Medida Provisória n.º 1.394, de 25 de setembro de 2026. Números: Agência Brasil e Boletim Fiscal dos Estados (Comsefaz), citados por O Tempo, 27 de setembro de 2026. <a href='https://agenciabrasil.ebc.com.br/economia/noticia/2026-09/mp-proibe-bets-no-brasil-e-determina-devolucao-de-saldo-ao-apostador' target='_blank' rel='noopener'>Ver a notícia &#8599;</a></div>
+</div></details></article>
+<article class='nw' id='i2'>
+<div class='nw-k'>O que a evidência diz sobre proibir &middot; Frontiers in Psychiatry</div>
+<h3>Proibir funciona? A Noruega mediu, e a resposta tem duas partes</h3>
+<p class='nw-r'>A Noruega baniu as máquinas caça-níquel em 2007, bloqueou pagamentos a operadores estrangeiros e, em 2014, lançou uma versão regulada do jogo online. Engebø, Torsheim e Pallesen juntaram os inquéritos de 2005 a 2018. <strong>A participação em caça-níqueis caiu de 18,7% para 1,5%</strong> e as ligações para a linha de ajuda caíram quase 70% em três anos. O jogo online, por outro lado, subiu de 0,7% para 5,6% depois que ganhou versão oficial.</p>
+<details class='nw-d'><summary>Ler completo</summary><div class='nw-in'>
+<div class='ficha'><span class='chip'><b>Desenho</b>série de inquéritos populacionais, 2005 a 2018</span><span class='chip'><b>País</b>Noruega, monopólio estatal</span><span class='chip'><b>Medidas</b>banimento de máquinas, bloqueio de pagamento, limite de perda</span><span class='chip'><b>Publicado</b>Frontiers in Psychiatry, 2021</span></div>
+<figure class='nwfig'><svg viewBox='0 0 720 230' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Noruega: caça-níqueis caem de 18,7 para 1,5 por cento após o banimento; jogo online sobe de 0,7 para 5,6 por cento após a versão regulada; ligações à linha de ajuda caem 70 por cento'>
+<text x='20' y='28' font-family='Plus Jakarta Sans,sans-serif' font-size='11' font-weight='800' letter-spacing='1.4' fill='#a8894f'>PARTICIPAÇÃO ANUAL, ADULTOS</text>
+<text x='20' y='60' font-family='Plus Jakarta Sans,sans-serif' font-size='12.5' font-weight='800' fill='#2f2e24'>Caça-níqueis</text>
+<rect x='20' y='68' width='374' height='18' rx='4' fill='#a05a3c'/>
+<text x='402' y='82' font-family='Plus Jakarta Sans,sans-serif' font-size='12' font-weight='800' fill='#a05a3c'>18,7% antes do banimento (2007)</text>
+<rect x='20' y='92' width='30' height='18' rx='4' fill='#c9c2a8'/>
+<text x='58' y='106' font-family='Plus Jakarta Sans,sans-serif' font-size='12' fill='#6c6a55'>1,5% depois</text>
+<text x='20' y='146' font-family='Plus Jakarta Sans,sans-serif' font-size='12.5' font-weight='800' fill='#2f2e24'>Jogo online</text>
+<rect x='20' y='154' width='14' height='18' rx='4' fill='#c9c2a8'/>
+<text x='42' y='168' font-family='Plus Jakarta Sans,sans-serif' font-size='12' fill='#6c6a55'>0,7% antes da versão regulada (2014)</text>
+<rect x='20' y='178' width='112' height='18' rx='4' fill='#7c8054'/>
+<text x='140' y='192' font-family='Plus Jakarta Sans,sans-serif' font-size='12' font-weight='800' fill='#7c8054'>5,6% depois</text>
+<rect x='470' y='120' width='230' height='92' rx='11' fill='#FFFDF7' stroke='#EFE7D3' stroke-width='1.4'/>
+<text x='488' y='146' font-family='Plus Jakarta Sans,sans-serif' font-size='11' font-weight='800' letter-spacing='1.4' fill='#a8894f'>LINHA DE AJUDA</text>
+<text x='488' y='178' font-family='Plus Jakarta Sans,sans-serif' font-size='26' font-weight='800' fill='#43441f'>&minus;70%</text>
+<text x='488' y='198' font-family='Plus Jakarta Sans,sans-serif' font-size='11' fill='#6c6a55'>ligações: 2.100 (2005) para 657 (2008)</text>
+</svg>
+<figcaption>Engebø, Torsheim e Pallesen (2021). Tirar o objeto de circulação derrubou o jogo problemático ligado a ele; oferecer uma versão regulada do jogo online fez a participação nesse formato subir. Dados de inquéritos transversais, autorrelato.</figcaption></figure>
+<div class='duo'>
+<div class='nw-c'><b>Muda na clínica</b><ul>
+<li>Tirar o objeto de circulação reduziu o jogo problemático ligado àquele objeto. O dado mais próximo de desfecho clínico, as ligações para a linha de ajuda, caiu junto. Isso dá alguma base para esperar queda de demanda aguda no Brasil.</li><li>O jogo migra. Quando o Estado norueguês ofereceu jogo online regulado, a participação nesse formato multiplicou por oito. No Brasil, o caminho de migração mais provável é o mercado ilegal, que já operava antes de 2023 e que a MP tenta bloquear via Anatel e lojas de aplicativo.</li><li>A lição para a sessão: perguntar não só se o paciente parou, mas para onde foi. Jogos de celular com compras, criptomoedas, rifas em grupo de WhatsApp e loterias seguem disponíveis.</li></ul></div>
+<div class='nw-c lim'><b>Não autoriza dizer</b><ul>
+<li>Que o resultado se transfere para o Brasil. A Noruega tem monopólio estatal, identificação obrigatória do jogador e limite de perda por pessoa; nada disso existe aqui.</li><li>Que a queda foi causada só pelo banimento. Os autores dizem que é difícil isolar o efeito de cada medida, e os dados são transversais, de autorrelato.</li><li>Que a demanda por tratamento cai junto com a oferta. Ligação para linha de ajuda mede procura por ajuda, não prevalência de transtorno.</li></ul></div>
+</div>
+<div class='nw-q'><span class='lb'>Ação para a clínica</span>
+<p class='ac'>Para cada paciente que apostava, liste com ele os substitutos disponíveis a partir de 6 de outubro: sites fora da regulação, jogos com compra dentro do app, cripto, rifas, loteria. Combine um registro simples de duas semanas, com uma linha por dia: vontade de apostar (0 a 10), o que fez em vez disso, e quanto gastou em qualquer um dos substitutos. O registro mostra se o processo migrou antes de o paciente perceber.</p>
+<p class='pg'><b>E uma pergunta</b>Se o teu paciente trocou a bet por um jogo de celular que cobra por vidas, a rede dele mudou ou só o nó de entrada?</p></div>
+<div class='nw-f'>Engebø, J., Torsheim, T., &amp; Pallesen, S. (2021). Regulatory measures' effect on gambling participation: Experiences from Norway. <em>Frontiers in Psychiatry, 12</em>, 672471. <a href='https://doi.org/10.3389/fpsyt.2021.672471' target='_blank' rel='noopener'>Ver o estudo &#8599;</a></div>
+</div></details></article>
+<article class='nw' id='i3'>
+<div class='nw-k'>Umbrella review &middot; Clinical Psychology Review</div>
+<h3>A TCC funciona para jogo. No seguimento, o efeito some</h3>
+<p class='nw-r'>Pfund e colegas juntaram cinco metanálises, 56 estudos e 5.389 pessoas tratadas com técnicas cognitivo-comportamentais para jogo problemático. Ao fim do tratamento, o efeito sobre a gravidade é grande (g = 0,91) e sobre a frequência, médio (g = 0,52). <strong>No seguimento, gravidade e frequência deixam de diferir do grupo controle.</strong> Só sete estudos mediram além do fim do tratamento.</p>
+<details class='nw-d'><summary>Ler completo</summary><div class='nw-in'>
+<div class='ficha'><span class='chip'><b>Desenho</b>umbrella review com metanálise</span><span class='chip'><b>Base</b>5 metanálises, 56 estudos, 5.389 pessoas</span><span class='chip'><b>Efeito pós-tratamento</b>g = 0,91 (gravidade), 0,52 (frequência), 0,32 (intensidade)</span><span class='chip'><b>Seguimento</b>sem diferença significativa; 7 estudos</span><span class='chip'><b>Publicado</b>Clinical Psychology Review, 2023</span></div>
+<figure class='nwfig'><svg viewBox='0 0 720 236' xmlns='http://www.w3.org/2000/svg' role='img' aria-label='Efeito da TCC sobre gravidade, frequência e intensidade do jogo ao fim do tratamento; no seguimento, gravidade e frequência deixam de diferir do controle'>
+<line x1='40' y1='200' x2='460' y2='200' stroke='#c9c2a8' stroke-width='1.4'/>
+<rect x='70' y='54.4' width='44' height='145.6' rx='4' fill='#5b5c2a'/><text x='92' y='48.4' text-anchor='middle' font-family='Plus Jakarta Sans,sans-serif' font-size='12' font-weight='800' fill='#2f2e24'>0,91</text><text x='92' y='220' text-anchor='middle' font-family='Plus Jakarta Sans,sans-serif' font-size='10.5' fill='#6c6a55'>pós</text><rect x='124' y='168' width='44' height='32' rx='4' fill='none' stroke='#a05a3c' stroke-dasharray='4 3'/><text x='146' y='158' text-anchor='middle' font-family='Plus Jakarta Sans,sans-serif' font-size='11' font-weight='800' fill='#a05a3c'>n.s.</text><text x='146' y='220' text-anchor='middle' font-family='Plus Jakarta Sans,sans-serif' font-size='10.5' fill='#6c6a55'>seguimento</text><rect x='210' y='116.8' width='44' height='83.2' rx='4' fill='#5b5c2a'/><text x='232' y='110.8' text-anchor='middle' font-family='Plus Jakarta Sans,sans-serif' font-size='12' font-weight='800' fill='#2f2e24'>0,52</text><text x='232' y='220' text-anchor='middle' font-family='Plus Jakarta Sans,sans-serif' font-size='10.5' fill='#6c6a55'>pós</text><rect x='264' y='168' width='44' height='32' rx='4' fill='none' stroke='#a05a3c' stroke-dasharray='4 3'/><text x='286' y='158' text-anchor='middle' font-family='Plus Jakarta Sans,sans-serif' font-size='11' font-weight='800' fill='#a05a3c'>n.s.</text><text x='286' y='220' text-anchor='middle' font-family='Plus Jakarta Sans,sans-serif' font-size='10.5' fill='#6c6a55'>seguimento</text><rect x='368' y='148.8' width='44' height='51.2' rx='4' fill='#5b5c2a'/><text x='390' y='142.8' text-anchor='middle' font-family='Plus Jakarta Sans,sans-serif' font-size='12' font-weight='800' fill='#2f2e24'>0,32</text><text x='390' y='220' text-anchor='middle' font-family='Plus Jakarta Sans,sans-serif' font-size='10.5' fill='#6c6a55'>pós</text>
+<text x='110' y='24' text-anchor='middle' font-family='Plus Jakarta Sans,sans-serif' font-size='11.5' font-weight='800' fill='#43441f'>Gravidade</text>
+<text x='250' y='24' text-anchor='middle' font-family='Plus Jakarta Sans,sans-serif' font-size='11.5' font-weight='800' fill='#43441f'>Frequência</text>
+<text x='390' y='24' text-anchor='middle' font-family='Plus Jakarta Sans,sans-serif' font-size='11.5' font-weight='800' fill='#43441f'>Intensidade</text>
+<rect x='500' y='34' width='220' height='166' rx='11' fill='#FFFDF7' stroke='#EFE7D3' stroke-width='1.4'/>
+<text x='516' y='60' font-family='Plus Jakarta Sans,sans-serif' font-size='10.5' font-weight='800' letter-spacing='1.2' fill='#a8894f'>NO SEGUIMENTO</text>
+<text x='516' y='88' font-family='Plus Jakarta Sans,sans-serif' font-size='12' fill='#2f2e24'>gravidade e frequência</text>
+<text x='516' y='104' font-family='Plus Jakarta Sans,sans-serif' font-size='12' fill='#2f2e24'>deixam de diferir do controle</text>
+<text x='516' y='132' font-family='Plus Jakarta Sans,sans-serif' font-size='12' fill='#2f2e24'>só 7 estudos mediram</text>
+<text x='516' y='148' font-family='Plus Jakarta Sans,sans-serif' font-size='12' fill='#2f2e24'>além do fim do tratamento</text>
+<text x='516' y='180' font-family='Plus Jakarta Sans,sans-serif' font-size='10' font-style='italic' fill='#a05a3c'>56 estudos, 5.389 pessoas, 5 metanálises</text>
+</svg>
+<figcaption>Hedges's g da TCC contra controle mínimo ou nenhum tratamento, ao fim do tratamento (Pfund et al., 2023). Barra cheia: pós-tratamento. Tracejado (n.s.): no seguimento, a diferença para o controle deixa de ser significativa; o artigo não informa o tamanho residual.</figcaption></figure>
+<div class='duo'>
+<div class='nw-c'><b>Muda na clínica</b><ul>
+<li>A TCC muda o jogo enquanto está acontecendo. É o mesmo padrão do Furukawa da Edição 1: resposta ao fim do tratamento e manutenção são desfechos diferentes, e o segundo é o que importa para quem perdeu o objeto por lei e vai reencontrá-lo, de outra forma, em algumas semanas.</li><li>O que sustenta a mudança depois da alta é o que a pessoa faz no lugar. Reestruturar a crença de que o próximo jogo recupera a perda funciona durante; a rede do caso precisa de um comportamento que faça, no dia a dia, o que a aposta fazia.</li><li>As amostras eram brancas, empregadas, com faculdade e sem comorbidade. O apostador brasileiro típico das pesquisas desta semana é outro: endividado, com dificuldade de parar (22% dos que apostam, IFec RJ) e recuperando perda com aposta nova (42%).</li></ul></div>
+<div class='nw-c lim'><b>Não autoriza dizer</b><ul>
+<li>Que a TCC não serve. O efeito ao fim do tratamento é dos maiores que existem em psicoterapia; o problema é o que acontece depois, e isso pede outra pergunta, não outra terapia.</li><li>Que o seguimento mostrou piora. Mostrou ausência de diferença significativa em poucos estudos, o que também pode ser falta de poder estatístico.</li><li>Que vale para o Brasil sem adaptação. Nenhum dos 56 estudos foi feito aqui, e o contexto de proibição abrupta não aparece em nenhum.</li></ul></div>
+</div>
+<div class='nw-q'><span class='lb'>Ação para a clínica</span>
+<p class='ac'>Se tem paciente em tratamento por jogo, não trate a MP como alta. Marque uma reavaliação para quatro semanas depois de 6 de outubro, quando a novidade da proibição tiver passado, e meça gravidade e frequência de novo, incluindo os substitutos. Se você usa reestruturação de crenças sobre azar e recuperação de perda, acrescente ao plano um comportamento concreto que ocupe o horário em que a pessoa apostava.</p>
+<p class='pg'><b>E uma pergunta</b>O teu plano de tratamento para jogo tem alguma coisa que continua funcionando quando o paciente não está mais na tua frente?</p></div>
+<div class='nw-f'>Pfund, R. A., Forman, D. P., Whalen, S. K., Zech, J. M., Ginley, M. K., Peter, S. C., McAfee, N. W., &amp; Whelan, J. P. (2023). Cognitive-behavioral treatment for gambling harm: Umbrella review and meta-analysis. <em>Clinical Psychology Review, 105</em>, 102336. <a href='https://doi.org/10.1016/j.cpr.2023.102336' target='_blank' rel='noopener'>Ver o artigo &#8599;</a></div>
+</div></details></article><div class='nmet'><b>Nota de método</b>A seleção é editorial e não pretende ser exaustiva: privilegia achados com desenho sólido e consequência prática para quem atende. Cada item é <strong>parafraseado</strong> a partir do resumo publicado, sem transcrição, e traz o link para a fonte primária — a leitura do original continua sendo responsabilidade de quem for citar. O campo <em>o que o estudo não autoriza dizer</em> e a ação para a clínica são partes fixas do formato. A ação é sempre formulada em termos de processos, e não de diagnóstico.</div><div class='cta'><img class='ph' alt='Prof. Júlio Gonçalves' src='/assets/julio.jpg'><div class='in'><div class='k'>Aprenda muito mais na</div><h3>Comunidade Lógica Psicológica</h3><ul><li>Aprofundar o raciocínio clínico com ciência, processos e análise funcional.</li><li>Estruturar uma prática ética, com pensamento crítico e evidências atualizadas.</li><li>Desenvolver o self clínico com supervisão, leituras guiadas e rede.</li></ul><a class='go' href='https://psicojulio.com/comunidade-logica-psicologica/' target='_blank' rel='noopener'>Participar da comunidade &#8594;</a></div></div><div class='foot'><img class='foot-logo' alt='Lógica Psicológica' src='/assets/logo.png'><div class='contato'><a href='mailto:contato@psicojulio.com'>contato@psicojulio.com</a> &middot; <a href='tel:+5547999338021'>(47) 99933-8021</a><br>Rua Concórdia, 703, São Vicente, Itajaí — 88309-645<br><span class='cnpj'>CNPJ 49.649.803/0001-60</span></div></div></main></div><button class='toc-fab' id='fab'>&#9776; Seções</button><div class='overlay' id='ov'></div><script>
+(function(){
+  var K='mat-Aula-Nutricao-';
+  document.querySelectorAll('.ck input').forEach(function(c,i){
+    var k=K+'ck'+i;
+    try{ if(localStorage.getItem(k)==='1'){c.checked=true;c.closest('.ck').classList.add('done');} }catch(e){}
+    c.addEventListener('change',function(){
+      c.closest('.ck').classList.toggle('done',c.checked);
+      try{ localStorage.setItem(k,c.checked?'1':'0'); }catch(e){} flag();
+    });
+  });
+  document.querySelectorAll('.qz textarea').forEach(function(t,i){
+    var k=K+'q'+i;
+    try{ var v=localStorage.getItem(k); if(v)t.value=v; }catch(e){}
+    t.addEventListener('input',function(){ try{ localStorage.setItem(k,t.value); }catch(e){} flag(); });
+  });
+  var s=document.getElementById('saved'),tm;
+  function flag(){ if(!s)return; s.classList.add('on'); clearTimeout(tm); tm=setTimeout(function(){s.classList.remove('on');},1600); }
+  var b=document.getElementById('exp');
+  if(b) b.addEventListener('click',function(){
+    var out='RESPOSTAS — Nutrição e psicologia clínica\n\n';
+    document.querySelectorAll('.qz').forEach(function(q){
+      out+= q.querySelector('p').innerText+'\n'+(q.querySelector('textarea').value||'(sem resposta)')+'\n\n';
+    });
+    var a=document.createElement('a');
+    a.href=URL.createObjectURL(new Blob([out],{type:'text/plain'}));
+    a.download='Aula-Nutricao-respostas.txt'; a.click();
+  });
+  var l=document.getElementById('lmp');
+  if(l) l.addEventListener('click',function(){
+    if(!confirm('Apagar suas anotações deste material?'))return;
+    try{ Object.keys(localStorage).filter(function(k){return k.indexOf(K)===0;}).forEach(function(k){localStorage.removeItem(k);}); }catch(e){}
+    location.reload();
+  });
+  var f=document.getElementById('fab'),o=document.getElementById('ov'),sd=document.getElementById('side');
+  if(f)f.onclick=function(){sd.classList.toggle('open');o.classList.toggle('open');};
+  if(o)o.onclick=function(){sd.classList.remove('open');o.classList.remove('open');};
+})();
+</script></body></html>
