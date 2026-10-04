@@ -1,0 +1,133 @@
+{
+  "numero": 3,
+  "mes": "setembro de 2026",
+  "ao_leitor": "O governo encerrou as apostas online por medida provisória e deu doze dias para o objeto sumir. A edição pergunta o que acontece com quem tinha a aposta como forma de regular o dia: o que a Noruega mediu quando baniu as máquinas, e o que a TCC consegue sustentar depois que o tratamento acaba. Cada item com o que sustenta e o que não autoriza dizer.",
+  "destaque": 0,
+  "foto_capa": "capa.png",
+  "foto_materia": 0,
+  "legenda_foto": "Ilustração · Medida Provisória 1.394",
+  "materias": [
+    {
+      "retranca": "A notícia da semana · Medida Provisória 1.394",
+      "titulo": "Tchê, as bets acabaram. O paciente que apostava continua na tua sala",
+      "linha_fina": "Em 25 de setembro o governo publicou a MP 1.394 e encerrou as apostas online no país: apostas suspensas na hora, saque do saldo até 5 de outubro, sites fora do ar a partir do dia 6 e devolução pelos bancos entre 9 e 14. Os números que justificaram a medida são grandes: <strong>R$ 62,5 bilhões perdidos pelas famílias em 2025</strong>, custo social estimado em R$ 38,8 bilhões por ano, 1,3 milhão de pedidos de autoexclusão. O que a lei não faz é responder o que acontece com quem tinha a aposta como forma de regular o dia e perdeu o objeto com data marcada.",
+      "ficha": [
+        [
+          "Instrumento",
+          "MP 1.394, de 25 de setembro de 2026"
+        ],
+        [
+          "Prazos",
+          "saque até 5/10; sites fora do ar de 6/10; devolução de 9 a 14/10"
+        ],
+        [
+          "Perdas das famílias",
+          "R$ 62,5 bilhões em 2025 (Comsefaz)"
+        ],
+        [
+          "Autoexclusão",
+          "1,3 milhão de pedidos"
+        ],
+        [
+          "Tramitação",
+          "ainda passa pelo Congresso"
+        ]
+      ],
+      "figura_svg": "figura1.svg",
+      "legenda_figura": "O calendário da Medida Provisória 1.394. Para quem tinha a aposta como forma de regular o dia, é uma retirada abrupta com data marcada. A MP ainda passa pelo Congresso.",
+      "muda_na_clinica": [
+        "Para quem apostava todo dia, a proibição é uma retirada abrupta do objeto, e não do processo. O que a aposta fazia por essa pessoa (fugir do tédio, buscar ganho rápido, recuperar a perda de ontem, sentir alguma coisa) continua precisando ser feito por alguma coisa. A pergunta clínica das próximas semanas é o que vai ocupar o lugar.",
+        "A dívida não foi revogada. Boa parte do sofrimento ligado às bets é financeiro e relacional, e isso segue igual no dia 6 de outubro. Vergonha, conflito em casa e cobrança são processos que a formulação precisa carregar mesmo sem nenhuma aposta nova.",
+        "Quem nunca contou que apostava pode contar agora, porque a notícia deu licença para o assunto. A pergunta direta na sessão (“tu apostava? quanto? o que a aposta fazia por ti?”) rende mais nesta janela do que em qualquer outra."
+      ],
+      "nao_autoriza_dizer": [
+        "Que proibir resolve o transtorno. A lei tira um objeto; a evidência que existe sobre banimento mostra que o comportamento migra em parte (item 2), e o mercado ilegal já existia antes da regulamentação de 2023.",
+        "Que os números do governo são medidas de sofrimento. R$ 62,5 bilhões é perda financeira agregada; custo social é estimativa de modelo. Nenhum dos dois diz quantas pessoas têm transtorno do jogo, nem quantas estão em tratamento.",
+        "Que a MP é definitiva. Medida provisória vale por 60 dias, prorrogáveis por mais 60, e o Congresso pode alterar ou derrubar. A retirada pode ser seguida de uma volta parcial, e isso também é dado clínico."
+      ],
+      "acao_para_a_clinica": "Nas próximas quatro semanas, pergunte a todo paciente adulto se apostava, com que frequência e o que a aposta fazia por ele. Para quem apostava, mapeie na formulação: o gatilho (tédio, dinheiro curto, jogo na TV), o processo (busca de alívio, busca de ganho, recuperar perda) e o que está ocupando o lugar desde o dia 25. Se a resposta for “nada”, esse é o alvo. Se for outro comportamento de fuga, o processo continua igual e mudou de roupa.",
+      "pergunta": "Quando um paciente teu deixa de fazer algo porque o objeto sumiu, e não porque o processo mudou, o que você registra na formulação: melhora ou pausa?",
+      "referencia": "Brasil (2026). Medida Provisória n.º 1.394, de 25 de setembro de 2026. Números: Agência Brasil e Boletim Fiscal dos Estados (Comsefaz), citados por O Tempo, 27 de setembro de 2026."
+    },
+    {
+      "retranca": "O que a evidência diz sobre proibir · Frontiers in Psychiatry",
+      "titulo": "Proibir funciona? A Noruega mediu, e a resposta tem duas partes",
+      "linha_fina": "A Noruega baniu as máquinas caça-níquel em 2007, bloqueou pagamentos a operadores estrangeiros e, em 2014, lançou uma versão regulada do jogo online. Engebø, Torsheim e Pallesen juntaram os inquéritos de 2005 a 2018. <strong>A participação em caça-níqueis caiu de 18,7% para 1,5%</strong> e as ligações para a linha de ajuda caíram quase 70% em três anos. O jogo online, por outro lado, subiu de 0,7% para 5,6% depois que ganhou versão oficial.",
+      "ficha": [
+        [
+          "Desenho",
+          "série de inquéritos populacionais, 2005 a 2018"
+        ],
+        [
+          "País",
+          "Noruega, monopólio estatal"
+        ],
+        [
+          "Medidas",
+          "banimento de máquinas, bloqueio de pagamento, limite de perda"
+        ],
+        [
+          "Publicado",
+          "Frontiers in Psychiatry, 2021"
+        ]
+      ],
+      "figura_svg": "figura2.svg",
+      "legenda_figura": "Engebø, Torsheim e Pallesen (2021). Tirar o objeto de circulação derrubou o jogo problemático ligado a ele; oferecer uma versão regulada do jogo online fez a participação nesse formato subir. Dados de inquéritos transversais, autorrelato.",
+      "muda_na_clinica": [
+        "Tirar o objeto de circulação reduziu o jogo problemático ligado àquele objeto. O dado mais próximo de desfecho clínico, as ligações para a linha de ajuda, caiu junto. Isso dá alguma base para esperar queda de demanda aguda no Brasil.",
+        "O jogo migra. Quando o Estado norueguês ofereceu jogo online regulado, a participação nesse formato multiplicou por oito. No Brasil, o caminho de migração mais provável é o mercado ilegal, que já operava antes de 2023 e que a MP tenta bloquear via Anatel e lojas de aplicativo.",
+        "A lição para a sessão: perguntar não só se o paciente parou, mas para onde foi. Jogos de celular com compras, criptomoedas, rifas em grupo de WhatsApp e loterias seguem disponíveis."
+      ],
+      "nao_autoriza_dizer": [
+        "Que o resultado se transfere para o Brasil. A Noruega tem monopólio estatal, identificação obrigatória do jogador e limite de perda por pessoa; nada disso existe aqui.",
+        "Que a queda foi causada só pelo banimento. Os autores dizem que é difícil isolar o efeito de cada medida, e os dados são transversais, de autorrelato.",
+        "Que a demanda por tratamento cai junto com a oferta. Ligação para linha de ajuda mede procura por ajuda, não prevalência de transtorno."
+      ],
+      "acao_para_a_clinica": "Para cada paciente que apostava, liste com ele os substitutos disponíveis a partir de 6 de outubro: sites fora da regulação, jogos com compra dentro do app, cripto, rifas, loteria. Combine um registro simples de duas semanas, com uma linha por dia: vontade de apostar (0 a 10), o que fez em vez disso, e quanto gastou em qualquer um dos substitutos. O registro mostra se o processo migrou antes de o paciente perceber.",
+      "pergunta": "Se o teu paciente trocou a bet por um jogo de celular que cobra por vidas, a rede dele mudou ou só o nó de entrada?",
+      "referencia": "Engebø, J., Torsheim, T., & Pallesen, S. (2021). Regulatory measures' effect on gambling participation: Experiences from Norway. <em>Frontiers in Psychiatry, 12</em>, 672471."
+    },
+    {
+      "retranca": "Umbrella review · Clinical Psychology Review",
+      "titulo": "A TCC funciona para jogo. No seguimento, o efeito some",
+      "linha_fina": "Pfund e colegas juntaram cinco metanálises, 56 estudos e 5.389 pessoas tratadas com técnicas cognitivo-comportamentais para jogo problemático. Ao fim do tratamento, o efeito sobre a gravidade é grande (g = 0,91) e sobre a frequência, médio (g = 0,52). <strong>No seguimento, gravidade e frequência deixam de diferir do grupo controle.</strong> Só sete estudos mediram além do fim do tratamento.",
+      "ficha": [
+        [
+          "Desenho",
+          "umbrella review com metanálise"
+        ],
+        [
+          "Base",
+          "5 metanálises, 56 estudos, 5.389 pessoas"
+        ],
+        [
+          "Efeito pós-tratamento",
+          "g = 0,91 (gravidade), 0,52 (frequência), 0,32 (intensidade)"
+        ],
+        [
+          "Seguimento",
+          "sem diferença significativa; 7 estudos"
+        ],
+        [
+          "Publicado",
+          "Clinical Psychology Review, 2023"
+        ]
+      ],
+      "figura_svg": "figura3.svg",
+      "legenda_figura": "Hedges's g da TCC contra controle mínimo ou nenhum tratamento, ao fim do tratamento (Pfund et al., 2023). Barra cheia: pós-tratamento. Tracejado (n.s.): no seguimento, a diferença para o controle deixa de ser significativa; o artigo não informa o tamanho residual.",
+      "muda_na_clinica": [
+        "A TCC muda o jogo enquanto está acontecendo. É o mesmo padrão do Furukawa da Edição 1: resposta ao fim do tratamento e manutenção são desfechos diferentes, e o segundo é o que importa para quem perdeu o objeto por lei e vai reencontrá-lo, de outra forma, em algumas semanas.",
+        "O que sustenta a mudança depois da alta é o que a pessoa faz no lugar. Reestruturar a crença de que o próximo jogo recupera a perda funciona durante; a rede do caso precisa de um comportamento que faça, no dia a dia, o que a aposta fazia.",
+        "As amostras eram brancas, empregadas, com faculdade e sem comorbidade. O apostador brasileiro típico das pesquisas desta semana é outro: endividado, com dificuldade de parar (22% dos que apostam, IFec RJ) e recuperando perda com aposta nova (42%)."
+      ],
+      "nao_autoriza_dizer": [
+        "Que a TCC não serve. O efeito ao fim do tratamento é dos maiores que existem em psicoterapia; o problema é o que acontece depois, e isso pede outra pergunta, não outra terapia.",
+        "Que o seguimento mostrou piora. Mostrou ausência de diferença significativa em poucos estudos, o que também pode ser falta de poder estatístico.",
+        "Que vale para o Brasil sem adaptação. Nenhum dos 56 estudos foi feito aqui, e o contexto de proibição abrupta não aparece em nenhum."
+      ],
+      "acao_para_a_clinica": "Se tem paciente em tratamento por jogo, não trate a MP como alta. Marque uma reavaliação para quatro semanas depois de 6 de outubro, quando a novidade da proibição tiver passado, e meça gravidade e frequência de novo, incluindo os substitutos. Se você usa reestruturação de crenças sobre azar e recuperação de perda, acrescente ao plano um comportamento concreto que ocupe o horário em que a pessoa apostava.",
+      "pergunta": "O teu plano de tratamento para jogo tem alguma coisa que continua funcionando quando o paciente não está mais na tua frente?",
+      "referencia": "Pfund, R. A., Forman, D. P., Whalen, S. K., Zech, J. M., Ginley, M. K., Peter, S. C., McAfee, N. W., & Whelan, J. P. (2023). Cognitive-behavioral treatment for gambling harm: Umbrella review and meta-analysis. <em>Clinical Psychology Review, 105</em>, 102336."
+    }
+  ]
+}
