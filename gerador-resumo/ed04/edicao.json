@@ -1,0 +1,92 @@
+{
+  "numero": 4,
+  "mes": "outubro de 2026",
+  "ao_leitor": "O projeto que reserva a palavra psicoterapia a psicólogos e psiquiatras virou o mais acessado da Câmara e anda na Comissão de Saúde. A edição olha o que a evidência mediu quando comparou não especialistas com profissionais, e descobre que a pergunta certa é outra. Nas páginas seguintes: os sites de aposta saem do ar na segunda, com milhares de endereços novos nascendo por semana, e o aplicativo que a tua paciente consulta de madrugada, que nenhum projeto alcança.",
+  "destaque": 0,
+  "foto_capa": "capa.png",
+  "foto_materia": 0,
+  "legenda_foto": "Ilustração · O que a placa garante, e o que ela não garante",
+  "materias": [
+    {
+      "retranca": "A notícia da semana · PL 2.386/2023 e SUG 1/2024",
+      "titulo": "Tchê, o Congresso quer decidir quem pode fazer psicoterapia. A evidência mediu outra coisa",
+      "linha_fina": "O PL 2.386/2023 reserva a psicoterapia a psicólogos com CRP e a psiquiatras, com multa de até <strong>R$ 50 mil</strong> para quem oferecer o serviço sem registro. Foi o projeto mais acessado da Câmara em junho, tem relatório favorável e espera votação na Comissão de Saúde. No Senado, a relatora Mara Gabrilli conduz duas sugestões no mesmo sentido, com apoio do CFP. A revisão Cochrane que comparou não especialistas com profissionais não achou diferença, com 106 pessoas. Em 27 ensaios em países de renda baixa e média, agentes comunitários e pares tiveram efeito moderado contra controle. Nenhum desses estudos mediu o diploma; mediram protocolo, supervisão e seleção de caso.",
+      "ficha": [
+        ["Projeto", "PL 2.386/2023, dep. Henderson Pinto (MDB-PA); relator Amom Mandel"],
+        ["Onde está", "Comissão de Saúde da Câmara; depois CCJ e plenário"],
+        ["No Senado", "SUG 1/2024 e SUG 40/2019 na CDH, relatora Mara Gabrilli (PSD-SP)"],
+        ["Evidência 1", "Cochrane 2005: 5 estudos; não especialista × profissional, SMD 0,09 (IC −0,23 a 0,40)"],
+        ["Evidência 2", "Singla et al. 2017: 27 ensaios, g 0,49 (IC 0,36 a 0,62) contra controle"]
+      ],
+      "figura_svg": "figura1.svg",
+      "legenda_figura": "Os dois tamanhos de efeito que existem sobre a pergunta, e o caminho do projeto. O intervalo da comparação com profissionais cruza o zero e vem de 106 pessoas: pouco para afirmar igualdade ou diferença.",
+      "muda_na_clinica": [
+        "O que a evidência mede quando compara não especialistas com profissionais é tratamento estruturado, supervisão semanal e seleção de casos. Se tu quer saber o que te distingue de quem não tem formação, a resposta está nessas três coisas. A placa da porta não entra na conta. Formulação, manejo de risco e supervisão têm que estar visíveis na tua prática, para ti e para o paciente.",
+        "A discussão pública abriu uma janela para explicar ao paciente o que é psicoterapia e o que ele pode cobrar de ti: avaliação, hipótese de trabalho, meta combinada, revisão de progresso. Quem já atende sem nada disso vai sentir a lei como ameaça por outro motivo.",
+        "Os ensaios com agentes comunitários funcionaram porque alguém formado desenhou o protocolo e supervisionou cada caso. Isso é trabalho de psicólogo também, e pode ser a tua função daqui a alguns anos: supervisionar quem entrega, em vez de entregar tudo sozinho."
+      ],
+      "nao_autoriza_dizer": [
+        "Que qualquer pessoa treinada num protocolo equivale a um psicólogo. Os ensaios com não especialistas excluíram risco alto, selecionaram quadros leves e moderados e mantiveram supervisão por profissionais. Fora dessas condições, a evidência não existe.",
+        "Que a lei garante qualidade. Profissional registrado também erra, e o Cochrane não encontrou diferença entre os grupos. O registro garante responsabilidade e um conselho para reclamar, e isso já é muito; qualidade se mede no caso.",
+        "Que o projeto já vale. Ele espera votação em comissão, depois CCJ, plenário, Senado e sanção. O relatório poupa yoga e meditação, e o texto final pode mudar de novo."
+      ],
+      "acao_para_a_clinica": "Escreve numa página o que tu faz que alguém sem formação não faz: avaliação de risco, formulação do caso, meta combinada com o paciente, revisão de progresso, supervisão, registro e sigilo. Mostra a página para um colega e pede que ele aponte o que está vago. Se a página ficou vazia ou genérica, o problema que tu tem o Congresso não resolve.",
+      "pergunta": "Se a lei passar amanhã, o que muda concretamente na tua sessão de terça às 15h?",
+      "referencia": "Câmara dos Deputados. PL 2.386/2023, relatório do dep. Amom Mandel (maio de 2026). CFP (2025). Em audiência no Senado, CFP defende psicoterapia restrita a profissionais da Psicologia e psiquiatras. den Boer, P. C. A. M., Wiersma, D., Russo, S., &amp; van den Bosch, R. J. (2005). Paraprofessionals for anxiety and depressive disorders. <em>Cochrane Database of Systematic Reviews</em>, CD004688. Singla, D. R., Kohrt, B. A., Murray, L. K., Anand, A., Chorpita, B. F., &amp; Patel, V. (2017). Psychological treatments for the world: Lessons from low- and middle-income countries. <em>Annual Review of Clinical Psychology, 13</em>, 149–181."
+    },
+    {
+      "retranca": "Acompanhamento · Medida Provisória 1.394",
+      "titulo": "Os sites saem do ar na segunda. Numa semana nasceram 6.401 endereços novos",
+      "linha_fina": "A partir de 6 de outubro as operadoras bloqueiam os sites de aposta e as lojas da Apple e do Google retiram 186 aplicativos. O governo pediu a derrubada de 5.209 domínios e a Anatel já bloqueou 2.387. No mesmo período, o monitoramento da Legitbet contou <strong>6.401 sites ilegais novos entre 22 e 28 de setembro</strong>, com pico de 3.094 num só dia, logo depois do anúncio. Oito plataformas receberam dez dias para tirar anúncios do ar. A MP precisa ser votada em até 120 dias e pode caducar em março de 2027.",
+      "ficha": [
+        ["Prazos", "saldo até 5/10; bloqueio de 6/10; devolução de 9 a 14/10"],
+        ["Derrubada", "5.209 domínios pedidos; 2.387 bloqueados pela Anatel; 186 apps"],
+        ["Oferta nova", "6.401 sites ilegais entre 22 e 28/9 (Legitbet)"],
+        ["Anúncios", "8 plataformas, 10 dias; 300 páginas e 90 perfis removidos"],
+        ["Validade", "120 dias; pode caducar em março de 2027"]
+      ],
+      "figura_svg": "figura2.svg",
+      "legenda_figura": "O que foi pedido, o que foi bloqueado e o que nasceu numa semana. São números de oferta: contam endereços, não apostadores.",
+      "muda_na_clinica": [
+        "O objeto mudou de endereço. A pergunta útil nesta semana: onde o paciente apostaria hoje, se quisesse. Quem responde na hora, com nome de site ou de grupo de Telegram, já conhece o caminho.",
+        "O prazo da MP virou variável clínica. Paciente que diz que vai esperar voltar está dizendo que o processo segue intacto, só em pausa. Isso rende mais trabalho de formulação do que a abstinência forçada em si.",
+        "Combina um registro de duas semanas com uma linha por dia: vontade de apostar de 0 a 10, o que fez em vez disso e quanto gastou em qualquer substituto, incluindo jogo de celular com compra dentro do app, rifa e cripto. O registro mostra a migração antes de o paciente nomear."
+      ],
+      "nao_autoriza_dizer": [
+        "Que o bloqueio zera o acesso. Os dados do próprio governo mostram que a oferta se refaz em dias, e endereço novo não precisa de loja de aplicativo.",
+        "Que site novo significa apostador novo. Os 6.401 endereços são dado de oferta. Quantas pessoas seguem apostando, ninguém mediu ainda.",
+        "Que a migração é inevitável para cada paciente. Na Noruega, tirar as máquinas de circulação derrubou a participação e as ligações para a linha de ajuda, mesmo com o jogo online crescendo. Para parte das pessoas, perder o objeto basta."
+      ],
+      "acao_para_a_clinica": "Nesta semana, pergunta a cada paciente que apostava onde ele apostaria hoje, e anota a resposta literal. Quem cita um lugar específico ganha o registro de duas semanas. Quem diz que vai esperar a lei cair ganha uma pergunta a mais: o que ele faria com o dinheiro e com as horas se a bet nunca voltasse. A resposta a essa segunda pergunta é o começo do plano.",
+      "pergunta": "Teu paciente parou de apostar ou só ficou sem endereço?",
+      "referencia": "Correio Braziliense (set. 2026). Mutirão para derrubar bets ilegais mobiliza governo e Anatel. Brasil (2026). Medida Provisória n.º 1.394, de 25 de setembro de 2026. Engebø, J., Torsheim, T., &amp; Pallesen, S. (2021). Regulatory measures' effect on gambling participation: Experiences from Norway. <em>Frontiers in Psychiatry, 12</em>, 672471."
+    },
+    {
+      "retranca": "O que a lei não alcança · JAMA Pediatrics, NEJM AI e OpenAI",
+      "titulo": "A lei fala de quem faz psicoterapia. O aplicativo não é pessoa, e a tua paciente conversa com ele",
+      "linha_fina": "O projeto da Câmara regula pessoas. Enquanto isso, <strong>19% dos jovens de 12 a 21 anos</strong> já pediram conselho de saúde mental a um chatbot, e 63% desses não contaram a ninguém. A própria OpenAI informou que 0,15% dos usuários semanais mostram sinais de ideação suicida nas conversas, algo como 1,2 milhão de pessoas, e que mais de 170 clínicos revisaram as respostas. O único ensaio randomizado de um chatbot terapêutico, o Therabot, teve efeito grande contra lista de espera e precisou de 28 intervenções humanas em oito semanas. O CFP abriu uma série sobre o tema e ainda não tem resolução.",
+      "ficha": [
+        ["Levantamento", "1.009 jovens de 12 a 21 anos, EUA, nov. 2025 (McBain et al., 2026)"],
+        ["Ensaio", "Therabot, 210 adultos, 8 semanas, contra lista de espera (Heinz et al., 2025)"],
+        ["Efeito", "d de 0,63 a 0,90; 28 intervenções humanas"],
+        ["OpenAI", "0,15% dos usuários semanais com sinais de ideação suicida; 170 clínicos"],
+        ["Regulação", "PL 2.386 alcança pessoas; CFP sem resolução sobre chatbots"]
+      ],
+      "figura_svg": "figura3.svg",
+      "legenda_figura": "O que o paciente já usa e o que a lei alcança. Os números da OpenAI vêm de classificadores aplicados ao texto das conversas, não de avaliação clínica.",
+      "muda_na_clinica": [
+        "Pergunta a todo paciente o que ele usa quando está mal, e pede para ver a conversa. O que o chatbot respondeu é material de sessão: dá para tratar como pensamento automático em voz alta, com a vantagem de estar por escrito.",
+        "O silêncio é dado clínico. Quem pergunta ao aplicativo e não conta ao terapeuta está testando se a sessão aguenta o assunto. Quando tu pergunta primeiro, tu responde a esse teste.",
+        "A regulação da psicoterapia vai levar anos e não vai tocar no aplicativo. O que protege a tua paciente nesse intervalo é tu saber que ela usa, o que ela pergunta e o que faz com a resposta."
+      ],
+      "nao_autoriza_dizer": [
+        "Que o chatbot faz psicoterapia. O Therabot só foi comparado com quem ficou esperando, e a equipe interveio 28 vezes: 15 por risco, 13 para corrigir respostas. Nunca foi comparado com terapeuta.",
+        "Que os 19% valem para o Brasil. Amostra americana, autorrelato, novembro de 2025. Aqui, não há número.",
+        "Que a OpenAI mediu transtorno. São classificadores sobre texto, com as regras definidas pela empresa. O número serve para dimensionar o fenômeno, não para diagnosticar ninguém."
+      ],
+      "acao_para_a_clinica": "Nesta semana, inclui na tua avaliação inicial duas perguntas fixas: se a pessoa usa algum aplicativo de conversa quando está mal e o que faz com a resposta. Para quem já está em atendimento, pede para trazer uma conversa recente e lê junto, procurando o que o aplicativo validou sem perguntar. Decide por escrito, para ti, onde a IA edita o teu trabalho e onde ela não entra.",
+      "pergunta": "O que a tua paciente perguntou ao aplicativo às duas da manhã que ela ainda não te perguntou?",
+      "referencia": "McBain, R. K., Cantor, J. H., Breslau, J., et al. (2026). AI chatbot use and disclosure for mental health among US adolescents and young adults. <em>JAMA Pediatrics, 180</em>(8). Heinz, M. V., Mackin, D. M., Trudeau, B. M., et al. (2025). Randomized trial of a generative AI chatbot for mental health treatment. <em>NEJM AI, 2</em>(4). OpenAI (28 out. 2025). Strengthening ChatGPT's responses in sensitive conversations. CFP (2025). Chatbot, IA, algoritmo: afinal, o que é tudo isso?"
+    }
+  ]
+}
